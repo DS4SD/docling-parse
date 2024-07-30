@@ -102,8 +102,15 @@ namespace pdf_lib
 
 	  //FIXME: this seems pretty dangerous ...
 	  
-	  logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
-					   << "\t message: " << "ignoring the multipart stream";
+	  logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__
+					   << "\t message: " << "refactored the multipart buffer stream";
+
+	  for(auto stream: contents().getArrayAsVector())
+	    {
+	      logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+					      << "parsing stream";
+	      QPDFObjectHandle::parseContentStream(stream, this);	      
+	    }
 	}
       else
 	{
