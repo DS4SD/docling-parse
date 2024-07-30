@@ -5,6 +5,11 @@ description = "Simple package to extract text with coordinates from programmatic
 authors = ["Peter Staar <taa@zurich.ibm.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "docling_parse"}]
+include = [
+    {path = "deepsearch_parse/*.so", format = "wheel"}
+]
+build = "build.py"
 
 [tool.poetry.dependencies]
 python = "^3.9"
