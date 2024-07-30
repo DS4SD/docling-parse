@@ -101,7 +101,7 @@ endif()
 include(cmake/subdirlist.cmake)
 
 #include(cmake/extlib_fmt.cmake)
-#include(cmake/extlib_json.cmake)
+include(cmake/extlib_json.cmake)
 #include(cmake/extlib_json_schema.cmake)
 #include(cmake/extlib_loguru.cmake)
 #include(cmake/extlib_cxxopts.cmake)

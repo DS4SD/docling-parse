@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 			     logging_lib::SUCCESS);      
       */
     }
-
+  
   int result=-1;
   
   switch(argc)
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 				   logging_lib::INFO    | 
 				   logging_lib::SUCCESS);
 	  }
-
+	
 	pdf_lib::interface<pdf_lib::PARSER> my_interface;
 	
 	result = my_interface.query(filename);

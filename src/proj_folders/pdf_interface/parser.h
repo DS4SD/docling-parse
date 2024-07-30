@@ -30,7 +30,7 @@ namespace pdf_lib
 
     int query(std::string input_file);
 
-  private:
+    //private:
 
     bool read_input(std::string input_file);
 
@@ -44,7 +44,8 @@ namespace pdf_lib
     void clean_pages(container_lib::container& raw_doc);
     void clean_page(container_lib::container& raw_page);
 
-    bool is_acceptable(container_lib::container& doc_raw, container_lib::container& statistics);
+    bool is_acceptable(container_lib::container& doc_raw,
+		       container_lib::container& statistics);
 
   private:
 
@@ -189,7 +190,7 @@ namespace pdf_lib
         {
           return -1;
         }
-
+	
         // write .raw file
         {
           IO::writer<IO::JSON_CONTAINER> writer;
