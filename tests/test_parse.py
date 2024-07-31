@@ -5,11 +5,11 @@ GENERATE = False
 import glob
 import json
 
-from docling_parse import pdf_parser
+from docling_parse import docling_parse
 
 def test_01_load_nlp_models():
 
-    parser = pdf_parser()
+    parser = docling_parse.pdf_parser()
     doc = parser.find_cells("/Users/taa/Downloads/2305.14962v1.pdf")
 
     print(doc.keys())
