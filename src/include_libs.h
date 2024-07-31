@@ -1,5 +1,12 @@
 //-*-C++-*-
 
+#include <set>
+#include <map>
+#include <vector>
+#include <assert.h>
+#include <complex>
+
+/*
 #include <cmath>
 #include <cerrno>
 #include <cstdlib>
@@ -29,7 +36,9 @@
 #include <utility>
 #include <thread>
 #include <future>
-//#include <chrono>
+*/
+
+/*
 #include <functional>
 #include <atomic>
 #include <bitset>
@@ -43,23 +52,4 @@
 #include <iterator>
 #include <random>
 #include <array>
-//#include <optional>
-
-#ifdef __HAVE_OMP
-#include <omp.h>
-#endif
-
-#ifdef __HAVE_LIBPCRE
-#include <pcre.h>
-#endif
-
-//using namespace std;
-
-#if (defined(__IBMC__) || defined(__IBMCPP__)) && defined(__USE_XL)
-#include <mass.h>
-#include <massv.h>
-#include <mass_simd.h>
-
-#include "essl.h"
-#endif
-
+*/

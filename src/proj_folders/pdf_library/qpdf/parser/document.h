@@ -18,7 +18,7 @@ Date: 18/08/2017
 #include <string>
 
 #include "pdf_library/core/parser/document.h"
-#include "logging_library.h"
+//#include "logging_library.h"
 
 namespace pdf_lib
 {

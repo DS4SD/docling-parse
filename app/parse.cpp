@@ -17,19 +17,19 @@ Date: 18/08/2017
 
 #include "include_libs.h"
 
-#include "meta_library.h"
-
 //#include "comp_library.h"
-#include <string_library.h>
-#include "logging_library.h"
-#include <system_library.h>
+#include <utils/meta_library.h>
+#include <utils/logging_library.h>
+#include <utils/string_library.h>
+#include <utils/system_library.h>
 
 //#include <profiler_library.h>
 
-#include <function_library.h>
-#include <container_library.h>
+//#include <function_library.h>
+#include <utils/container_library.h>
 
-//#include <IO_library.h>
+#include <utils/IO_library.h>
+/*
 #include <IO_library/IO_types.h>
 #include <IO_library/ROUTINES/IO_routines.h>
 
@@ -37,16 +37,17 @@ Date: 18/08/2017
 #include <IO_library/template_writer.h>
 
 #include <IO_library/TXT.h>
-#include <IO_library/CSV.h>
+//#include <IO_library/CSV.h>
 #include <IO_library/JSON.h>
-#include <IO_library/BCON.h>
+//#include <IO_library/BCON.h>
+*/
 
 //#include <db_library.h>
 
 //#include "math_library.h"
-#include "math_library/geometry_library/geometric_objects.h"
+#include <utils/geometric_objects.h>
 
-#include "logging_library.h"
+//#include "logging_library.h"
 
 #include "pdf_library.h"
 #include "pdf_parser.h"
