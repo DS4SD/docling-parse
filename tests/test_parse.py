@@ -11,7 +11,7 @@ def test_reference_documents():
 
     parser = docling_parse.pdf_parser()
 
-    pdf_docs = glob.glob("./docling_parse/pdf_docs/tests/*.pdf")
+    pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
     assert len(pdf_docs)>0, "len(pdf_docs)==0 -> nothing to test"
     
@@ -39,3 +39,9 @@ def test_reference_documents():
                     true_text = true_cell['content']['rnormalized']
                     
                     assert pred_text==true_text, f"pred_text!=true_text => {pred_text}!={true_text}"
+                    
+                    pred_bbox = pred_cell['box']['device']
+                    true_bbox = true_cell['box']['device']
+
+                    for i in range(0,4):
+                        assert round(pred_bbox[i])==round(true_bbox[i]), "round(pred_bbox[i])!=round(true_bbox[i])"

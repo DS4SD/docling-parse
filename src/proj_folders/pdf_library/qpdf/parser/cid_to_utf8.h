@@ -50,7 +50,10 @@ namespace pdf_lib
 
     cid_to_utf8::cid_to_utf8()
     {
-      directory = PDF_DATA_DIR;
+      // FIXME
+      //directory = PDF_DATA_DIR;
+      directory = resource_utils::get_resources_dir(true);
+      
       directory += directory.back()!='/'? "/":"";
       
       cid2sup = {

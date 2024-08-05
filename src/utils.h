@@ -7,10 +7,11 @@ class resource_utils
 {
 public:
 
-  static inline std::filesystem::path HARDCODED_RESOURCES_DIR = PDF_DATA_DIR;
+  // FIXME
+  //static inline std::filesystem::path HARDCODED_RESOURCES_DIR = PDF_DATA_DIR;
   
   const static inline std::filesystem::path package_name = "docling_parse";
-  const static inline std::filesystem::path resources_relative_path = "resources";
+  const static inline std::filesystem::path resources_relative_path = "pdf_resources";
 
 public:
 
@@ -20,7 +21,7 @@ public:
 
 private:
 
-  static inline std::filesystem::path ROOT_DIR = ROOT_PATH;
+  static inline std::filesystem::path ROOT_DIR = ROOT_PATH; // ROOT_PATH is the default provided during compilation
   static inline std::filesystem::path PACKAGE_DIR = ROOT_PATH / package_name;
   static inline std::filesystem::path RESOURCES_DIR = PACKAGE_DIR / resources_relative_path;
 };
