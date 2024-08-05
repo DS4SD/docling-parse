@@ -3,84 +3,18 @@
 #ifndef PYBIND_PDF_PARSER_H
 #define PYBIND_PDF_PARSER_H
 
-/*
 #include <utf8/utf8.h>
 
 #include "include_libs.h"
 
-#include "meta_library.h"
-
-//#include "comp_library.h"
-#include <string_library.h>
-#include <logging_library.h>
-#include <system_library.h>
-
-//#include <profiler_library.h>
-
-//#include <function_library.h>
-#include <container_library.h>
-
-//#include <IO_library.h>
-#include <IO_library/IO_types.h>
-#include <IO_library/ROUTINES/IO_routines.h>
-
-#include <IO_library/template_reader.h>
-#include <IO_library/template_writer.h>
-
-#include <IO_library/TXT.h>
-//#include <IO_library/CSV.h>
-#include <IO_library/JSON.h>
-//#include <IO_library/BCON.h>
-
-//#include <db_library.h>
-
-//#include "math_library.h"
-#include "math_library/geometry_library/geometric_objects.h"
-
-#include "logging_library.h"
-
-#include "pdf_library.h"
-#include "pdf_parser.h"
-
-#include "pdf_interface.h"
-#include "pdf_interface/parser.h"
-*/
-
-#include <utf8/utf8.h>
-
-#include "include_libs.h"
-
-//#include "comp_library.h"
+#include <utils.h>
 #include <utils/meta_library.h>
 #include <utils/logging_library.h>
 #include <utils/string_library.h>
 #include <utils/system_library.h>
-
-//#include <profiler_library.h>
-
-//#include <function_library.h>
 #include <utils/container_library.h>
-
 #include <utils/IO_library.h>
-/*
-#include <IO_library/IO_types.h>
-#include <IO_library/ROUTINES/IO_routines.h>
-
-#include <IO_library/template_reader.h>
-#include <IO_library/template_writer.h>
-
-#include <IO_library/TXT.h>
-//#include <IO_library/CSV.h>
-#include <IO_library/JSON.h>
-//#include <IO_library/BCON.h>
-*/
-
-//#include <db_library.h>
-
-//#include "math_library.h"
 #include <utils/geometric_objects.h>
-
-//#include "logging_library.h"
 
 #include "pdf_library.h"
 #include "pdf_parser.h"
@@ -88,11 +22,11 @@
 #include "pdf_interface.h"
 #include "pdf_interface/parser.h"
 
+#include "pybind/docling_resources.h"
 
 namespace docling
 {
-  class docling_parser//: //public base_log,
-  //public base_resources
+  class docling_parser: public docling_resources
   {
   public:
 
@@ -108,13 +42,19 @@ namespace docling
   };
 
   docling_parser::docling_parser():
+    docling_resources(),
     interface()
   {
-    std::string font_data_dir = PDF_DATA_DIR;
+    //std::string font_data_dir = PDF_DATA_DIR;
 
-    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-				    << "using default font-data path : " << font_data_dir;
+    std::string font_data_dir = resource_utils::get_resources_dir(true);
+    
+    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+    //<< "using default font-data path : " << font_data_dir;
 
+    std::cout << __FILE__ << ":" << __LINE__ << "\t"
+	      << "using default font-data path : " << font_data_dir << "\n";
+    
     pdf_lib::core::object<pdf_lib::core::FONT>::initialize(font_data_dir);
   }
 

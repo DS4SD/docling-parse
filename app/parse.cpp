@@ -12,42 +12,18 @@ Email: {taa, dol, cau, ttt}@zurich.ibm.com
 Date: 18/08/2017
 **********************************************************/
 
-
 #include <utf8/utf8.h>
 
 #include "include_libs.h"
 
-//#include "comp_library.h"
+#include <utils.h>
 #include <utils/meta_library.h>
 #include <utils/logging_library.h>
 #include <utils/string_library.h>
 #include <utils/system_library.h>
-
-//#include <profiler_library.h>
-
-//#include <function_library.h>
 #include <utils/container_library.h>
-
 #include <utils/IO_library.h>
-/*
-#include <IO_library/IO_types.h>
-#include <IO_library/ROUTINES/IO_routines.h>
-
-#include <IO_library/template_reader.h>
-#include <IO_library/template_writer.h>
-
-#include <IO_library/TXT.h>
-//#include <IO_library/CSV.h>
-#include <IO_library/JSON.h>
-//#include <IO_library/BCON.h>
-*/
-
-//#include <db_library.h>
-
-//#include "math_library.h"
 #include <utils/geometric_objects.h>
-
-//#include "logging_library.h"
 
 #include "pdf_library.h"
 #include "pdf_parser.h"
