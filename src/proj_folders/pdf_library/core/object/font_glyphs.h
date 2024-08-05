@@ -15,7 +15,7 @@ Date: 18/08/2017
 #ifndef PDF_LIB_CORE_OBJECT_FONT_GLYPHS_H
 #define PDF_LIB_CORE_OBJECT_FONT_GLYPHS_H
 
-#include "logging_library.h"
+//#include "logging_library.h"
 
 namespace pdf_lib
 {

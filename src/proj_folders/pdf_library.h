@@ -19,8 +19,8 @@ Date: 18/08/2017
 #include <qpdf/QPDF.hh>
 #endif
 
-#include "logging_library.h"
-#include "container_library.h"
+//#include "logging_library.h"
+//#include "container_library.h"
 
 #include "pdf_library/core.h"
 #include <pdf_library/qpdf.h>

@@ -26,7 +26,7 @@ namespace pdf_lib
       OCR_PARSER,
 
       PARSER,
-      ASSEMBLER
+      //ASSEMBLER
     };
   
   template<interface_type type>

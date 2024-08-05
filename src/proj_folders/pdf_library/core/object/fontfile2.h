@@ -15,7 +15,7 @@ Date: 18/08/2017
 #ifndef PDF_LIB_CORE_OBJECT_FONT_FILE_2_H
 #define PDF_LIB_CORE_OBJECT_FONT_FILE_2_H
 
-#include "logging_library.h"
+//#include "logging_library.h"
 
 namespace pdf_lib
 {
