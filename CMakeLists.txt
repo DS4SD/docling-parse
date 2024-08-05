@@ -63,8 +63,6 @@ message(STATUS "    cmake path: " ${CMAKE_MODULE_PATH})
 message(STATUS "  cmake system: " ${CMAKE_SYSTEM_PROCESSOR})
 message(STATUS "cmake osx arch: " ${CMAKE_OSX_ARCHITECTURES})
 
-
-
 # ************************
 # ***  cxx-flags       ***
 # ************************

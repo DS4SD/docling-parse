@@ -7,17 +7,35 @@ import json
 
 from docling_parse import docling_parse
 
-def test_01_load_nlp_models():
+def test_reference_documents():
 
     parser = docling_parse.pdf_parser()
-    doc = parser.find_cells("/Users/taa/Downloads/2305.14962v1.pdf")
 
-    print(doc.keys())
+    pdf_docs = glob.glob("./docling_parse/pdf_docs/tests/*.pdf")
+
+    assert len(pdf_docs)>0, "len(pdf_docs)==0 -> nothing to test"
     
-    for i,page in enumerate(doc["pages"]):
-        print(page.keys())
-        
-        for j,cell in enumerate(page["cells"]):
-            print(i, "\t", j, "\t", cell['content']['rnormalized'])
+    for pdf_doc in pdf_docs:
+        print(pdf_doc)
+        pred_doc = parser.find_cells(pdf_doc)
 
-    assert True
+        if GENERATE:
+            with open(pdf_doc+".json", "w") as fw:
+                fw.write(json.dumps(pred_doc, indent=2))
+
+            assert True
+        else:
+            with open(pdf_doc+".json", "r") as fr:
+                true_doc = json.load(fr)
+
+            assert pred_doc["pages"]==true_doc["pages"], "pred_doc[\"pages\"]!=true_doc[\"pages\"]"
+                
+            for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
+
+                assert pred_page["cells"]==true_page["cells"], "pred_page[\"cells\"]!=true_page[\"cells\"]"
+                
+                for pred_cell,true_cell in zip(pred_page["cells"], true_page["cells"]):
+                    pred_text = pred_cell['content']['rnormalized']
+                    true_text = true_cell['content']['rnormalized']
+                    
+                    assert pred_text==true_text, f"pred_text!=true_text => {pred_text}!={true_text}"
