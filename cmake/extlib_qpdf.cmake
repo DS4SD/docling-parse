@@ -27,7 +27,7 @@ ExternalProject_Add(extlib_qpdf
 
     INSTALL_DIR ${EXTERNALS_PREFIX_PATH}
 
-    CONFIGURE_COMMAND ./configure --enable-shard=no \\
+    CONFIGURE_COMMAND ./configure --enable-shared=no \\
       --prefix=${EXTERNALS_PREFIX_PATH} \\
       CPPFLAGS=-I${EXTERNALS_PREFIX_PATH}/include \\
       LDFLAGS=-L${EXTERNALS_PREFIX_PATH}/lib/

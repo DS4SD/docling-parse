@@ -12,7 +12,7 @@ rm -rf build; cmake -B ./build; cd build; make
 
 ### Python
 
-To build the package, simply run,
+To build the package, simply run (make sure [poetry](https://python-poetry.org/) is [installed](https://python-poetry.org/docs/#installing-with-the-official-installer)),
 
 ```
 poetry build
@@ -25,7 +25,7 @@ poetry build
 In the build-folder, run 
 
 ```
-./parse.exe <input-file>
+./parse.exe <input-file> <optional-logging:true>
 ```
 
 If you dont have an input file, then a template input file will be printed on the terminal.
