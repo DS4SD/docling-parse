@@ -45,6 +45,8 @@ namespace pdf_lib
   template<typename scalar_type>
   void post_processor<CLEAN_TEXTCELLS, scalar_type>::execute(container_lib::container& doc)
   {
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    
     container_lib::container& pages = doc[core::keys<core::DOCUMENT>::pages()];
     
     for(int l=0; l<pages.get_size(); l++)
@@ -72,7 +74,9 @@ namespace pdf_lib
 
   template<typename scalar_type>
   std::string post_processor<CLEAN_TEXTCELLS, scalar_type>::clean_text(std::string text)
-  {    
+  {
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    
     std::string result="";
 
     if(text.size()==0)
@@ -137,7 +141,13 @@ namespace pdf_lib
 
 	for(int l=0; l<result.size()-1; )
 	  {
-	    if(result[l+0]==' ' and
+	    if(result.size()<=l+1)
+	      {
+		break;
+	      }
+	    
+	    if(l+1<result.size() and
+	       result[l+0]==' ' and
 	       result[l+1]==' '   )
 	      {
 		result.erase(l, 1);
@@ -150,7 +160,9 @@ namespace pdf_lib
 	  }
 	
 	if(not found)
-	  break;
+	  {
+	    break;
+	  }
       }
     
     return result;
