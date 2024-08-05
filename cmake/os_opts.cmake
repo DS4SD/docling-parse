@@ -31,7 +31,7 @@ elseif(UNIX)
    #set(LIB_LINK json loguru cxxopts pcre2 fasttext utf8 andromeda_pos ${OPENSSL_LIBRARIES} z)
    #set(LIB_LINK json loguru cxxopts pcre2 fasttext utf8 ${OPENSSL_LIBRARIES} z)
    #set(LIB_LINK fmt json loguru cxxopts pcre2 sentencepiece sentencepiece_train fasttext utf8 z)
-   set(LIB_LINK pcre2 ldap z)
+   set(LIB_LINK qpdf jpeg utf8 ldap z)
    
    list(APPEND LIB_LINK dl m pthread rt resolv)
 
