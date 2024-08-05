@@ -37,8 +37,20 @@ python = "^3.9"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.2"
+black = {extras = ["jupyter"], version = "^24.4.2"}
+pre-commit = "^3.7.1"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+py_version=310

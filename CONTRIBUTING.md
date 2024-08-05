@@ -2,13 +2,13 @@
 Our project welcomes external contributions. If you have an itch, please feel
 free to scratch it.
 
-To contribute code or documentation, please submit a [pull request](https://github.com/DS4SD/docling/pulls).
+To contribute code or documentation, please submit a [pull request](https://github.com/DS4SD/docling-parse/pulls).
 
 A good way to familiarize yourself with the codebase and contribution process is
-to look for and tackle low-hanging fruit in the [issue tracker](https://github.com/DS4SD/docling/issues).
+to look for and tackle low-hanging fruit in the [issue tracker](https://github.com/DS4SD/docling-parse/issues).
 Before embarking on a more ambitious contribution, please quickly [get in touch](#communication) with us.
 
-For general questions or support requests, please refer to the [discussion section](https://github.com/DS4SD/docling/discussions).
+For general questions or support requests, please refer to the [discussion section](https://github.com/DS4SD/docling-parse/discussions).
 
 **Note: We appreciate your effort, and want to avoid a situation where a contribution
 requires extensive rework (by you or by us), sits in backlog for a long time, or
@@ -16,14 +16,14 @@ cannot be accepted at all!**
 
 ### Proposing new features
 
-If you would like to implement a new feature, please [raise an issue](https://github.com/DS4SD/docling/issues)
+If you would like to implement a new feature, please [raise an issue](https://github.com/DS4SD/docling-parse/issues)
 before sending a pull request so the feature can be discussed. This is to avoid
 you wasting your valuable time working on a feature that the project developers
 are not interested in accepting into the code base.
 
 ### Fixing bugs
 
-If you would like to fix a bug, please [raise an issue](https://github.com/DS4SD/docling/issues) before sending a
+If you would like to fix a bug, please [raise an issue](https://github.com/DS4SD/docling-parse/issues) before sending a
 pull request so it can be tracked.
 
 ### Merge approval
@@ -74,7 +74,7 @@ git commit -s
 
 ## Communication
 
-Please feel free to connect with us using the [discussion section](https://github.com/DS4SD/docling/discussions).
+Please feel free to connect with us using the [discussion section](https://github.com/DS4SD/docling-parse/discussions).
 
 
 
@@ -127,10 +127,10 @@ poetry install
 If for whatever reason you need to work in a specific (older) version of Python, run:
 
 ```bash
-poetry env use $(which python3.8)
+poetry env use $(which python3.9)
 ```
 
-This creates a Virtual Environment with Python 3.8. For other versions, replace `$(which python3.8)` by the path to the interpreter (e.g., `/usr/bin/python3.8`) or use `$(which pythonX.Y)`.
+This creates a Virtual Environment with Python 3.9. For other versions, replace `$(which python3.9)` by the path to the interpreter (e.g., `/usr/bin/python3.9`) or use `$(which pythonX.Y)`.
 
 
 #### Add a new dependency
@@ -161,24 +161,3 @@ pre-commit run --all-files
 
 Note: Checks like `Black` and `isort` will "fail" if they modify files. This is because `pre-commit` doesn't like to see files modified by their Hooks. In these cases, `git add` the modified files and `git commit` again.
 
-
-
-## Documentation
-
-We use [MkDocs](https://www.mkdocs.org/) to write documentation.
-
-To run the documentation server, do:
-
-```bash
-mkdocs serve
-```
-
-The server will be available on [http://localhost:8000](http://localhost:8000).
-
-### Pushing Documentation to GitHub pages
-
-Run the following:
-
-```bash
-mkdocs gh-deploy
-```
