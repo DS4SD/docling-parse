@@ -107,7 +107,10 @@ namespace pdf_lib
     // Make sure all font-related informatioin is read and
     // the static objects in the FONT are initialized!!
 
-    std::string font_data_dir = PDF_DATA_DIR;
+    // FIXME
+    //std::string font_data_dir = PDF_DATA_DIR;
+    std::string font_data_dir = resource_utils::get_resources_dir(true);
+
     std::vector<std::string> font_data_key = {"font-data", "path"};
     if (input.has(font_data_key))
       {
