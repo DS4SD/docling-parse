@@ -39,9 +39,9 @@ ExternalProject_Add(extlib_qpdf
       --enable-implicit-crypto=false \\
       --enable-crypto-native=yes\\
       --prefix=${EXTERNALS_PREFIX_PATH} \\
-      --libdir=${EXTERNALS_LIBDIR} \\
+      --libdir=${EXTERNALS_PREFIX_PATH}/lib \\
       CPPFLAGS=-I${EXTERNALS_PREFIX_PATH}/include \\
-      LDFLAGS=-L${EXTERNALS_LIBDIR} 
+      LDFLAGS=-L${EXTERNALS_PREFIX_PATH}/lib 
 
     #CMAKE_ARGS \\
     #  -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH} 
@@ -53,5 +53,5 @@ ExternalProject_Add(extlib_qpdf
     LOG_BUILD ON)
 
 add_library(qpdf STATIC IMPORTED)
-set_target_properties(qpdf PROPERTIES IMPORTED_LOCATION ${EXTERNALS_LIBDIR}/libqpdf.a)
+set_target_properties(qpdf PROPERTIES IMPORTED_LOCATION ${EXTERNALS_PREFIX_PATH}/lib/libqpdf.a)
 add_dependencies(qpdf extlib_qpdf)
