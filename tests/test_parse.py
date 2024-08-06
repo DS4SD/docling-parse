@@ -28,7 +28,10 @@ def test_reference_documents():
             with open(pdf_doc+".json", "r") as fr:
                 true_doc = json.load(fr)
 
-            assert pred_doc["pages"]==true_doc["pages"], "pred_doc[\"pages\"]!=true_doc[\"pages\"]"
+            num_true_pages=len(true_doc["pages"])
+            num_pred_pages=len(pred_doc["pages"])
+            
+            assert num_true_pages==num_pred_pages, f"len(pred_doc[\"pages\"])!=len(true_doc[\"pages\"]) => {num_true_pages}!={num_pred_pages}"
                 
             for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
 
