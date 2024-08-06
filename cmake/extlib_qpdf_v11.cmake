@@ -12,6 +12,12 @@ include(CMakeParseArguments)
 set(QPDF_URL https://github.com/qpdf/qpdf.git)
 set(QPDF_TAG v11.9.1 )
 
+if(UNIX)
+  set(QPDF_EXTRA_CXX_FLAGS "-fPIC ")
+else()
+  set(QPDF_EXTRA_CXX_FLAGS " ")
+endif()
+
 ExternalProject_Add(extlib_qpdf
     PREFIX extlib_qpdf
 
@@ -31,6 +37,7 @@ ExternalProject_Add(extlib_qpdf
     -DBUILD_SHARED_LIBS=ON \\
     -DUSE_IMPLICIT_CRYPTO=OFF \\
     -DREQUIRE_CRYPTO_NATIVE=ON \\
+    -DCMAKE_CXX_FLAGS=${QPDF_EXTRA_CXX_FLAGS} \\
     -DLIBJPEG_LIBRARY=${EXTERNALS_PREFIX_PATH}/lib/libjpeg.a \\
     -DLIBJPEG_LIB_PATH=${EXTERNALS_PREFIX_PATH}/lib/libjpeg.a \\
     -DLIBJPEG_LIBDIR=${EXTERNALS_PREFIX_PATH}/lib \\
