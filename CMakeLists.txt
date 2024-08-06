@@ -42,7 +42,7 @@ if(NOT "${TOPLEVEL_PREFIX_PATH}/cmake" IN_LIST CMAKE_MODULE_PATH)
 endif()
 
 if(NOT DEFINED CMAKE_PDF_DATA_DIR)
-    set(CMAKE_PDF_DATA_DIR "${TOPLEVEL_PREFIX_PATH}/src_data/proj_folders/pdf_library/data")
+    set(CMAKE_PDF_DATA_DIR "${TOPLEVEL_PREFIX_PATH}/docling_parse/pdf_resources")
 endif()
 
 set(ENV_ARCH $ENV{CIBW_ARCHS})
