@@ -22,7 +22,7 @@ pip install docling-parse
 Convert a PDF
 
 ```sh
-from docling_parse import pdf_parser
+from docling_parse.docling_parse import pdf_parser
 
 parser = pdf_parser()
 doc = parser.find_cells("mydoc.pdf")
@@ -32,6 +32,18 @@ for i, page in enumerate(doc["pages"]):
         print(i, "\t", j, "\t", cell["content"]["rnormalized"])
 ```
 
+Use the CLI
+
+```sh
+$ docling-parse -h
+usage: docling-parse [-h] -p PDF
+
+Process a PDF file.
+
+options:
+  -h, --help         show this help message and exit
+  -p PDF, --pdf PDF  Path to the PDF file
+```
 
 ## Development
 
