@@ -1,10 +1,11 @@
 # Docling Parse
 
 [![PyPI version](https://img.shields.io/pypi/v/docling-parse)](https://pypi.org/project/docling-parse/)
-![Python](https://img.shields.io/badge/python-3.09%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/docling-parse)](https://pypi.org/project/docling-parse/)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Pybind11](https://img.shields.io/badge/build-pybind11-blue)](https://github.com/pybind/pybind11/)
-[![License MIT](https://img.shields.io/github/license/DS4SD/docling)](https://opensource.org/licenses/MIT)
+[![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux-blue)](https://github.com/DS4SD/docling-parse/)
+[![License MIT](https://img.shields.io/github/license/DS4SD/docling-parse)](https://opensource.org/licenses/MIT)
 
 Simple package to extract text with coordinates from programmatic PDFs.
 This package is part of the [Docling](https://github.com/DS4SD/docling) conversion.
