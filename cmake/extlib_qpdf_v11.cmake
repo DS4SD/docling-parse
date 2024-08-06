@@ -41,8 +41,9 @@ ExternalProject_Add(extlib_qpdf
     -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH}
 
     LOG_DOWNLOAD ON
-    LOG_CONFIGURE ON
-    LOG_BUILD ON)
+    # LOG_CONFIGURE ON
+    # LOG_BUILD ON
+  )
 
 add_library(qpdf STATIC IMPORTED)
 set_target_properties(qpdf PROPERTIES IMPORTED_LOCATION ${EXTERNALS_PREFIX_PATH}/lib/libqpdf.a)

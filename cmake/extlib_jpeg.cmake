@@ -29,7 +29,8 @@ ExternalProject_Add(extlib_jpeg
 
     BUILD_IN_SOURCE ON
     LOG_DOWNLOAD ON
-    LOG_BUILD ON)
+    # LOG_BUILD ON
+)
 
 add_library(jpeg STATIC IMPORTED)
 set_target_properties(jpeg PROPERTIES IMPORTED_LOCATION ${EXTERNALS_PREFIX_PATH}/lib/libjpeg.a)
