@@ -49,4 +49,4 @@ def build_local(multi_threaded=True):
 
 if "__main__"==__name__:
 
-    build_local(multi_threaded=True)
+    build_local(multi_threaded=False)

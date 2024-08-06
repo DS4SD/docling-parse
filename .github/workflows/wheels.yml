@@ -47,6 +47,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      # - uses: ./.github/actions/setup-deps
+
       - name: Install poetry
         run: pipx install poetry==1.8.3 --python $(which python3)
         shell: bash
