@@ -47,7 +47,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      # - uses: ./.github/actions/setup-deps
+      - name: Install dependencies [linux]
+        if: matrix.os.platform == 'linux'
+        run: sudo apt-get install libldap-common
+        shell: bash
 
       - name: Install poetry
         run: pipx install poetry==1.8.3 --python $(which python3)

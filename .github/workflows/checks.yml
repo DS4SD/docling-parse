@@ -9,7 +9,9 @@ jobs:
         python-version: ['3.9', '3.10', '3.11', '3.12']
     steps:
       - uses: actions/checkout@v4
-      # - uses: ./.github/actions/setup-deps
+      - name: Install dependencies [linux]
+        run: sudo apt-get install libldap-common
+        shell: bash
       - uses: ./.github/actions/setup-poetry
         with:
           python-version: ${{ matrix.python-version }}
