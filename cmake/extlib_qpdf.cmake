@@ -28,6 +28,7 @@ ExternalProject_Add(extlib_qpdf
     INSTALL_DIR ${EXTERNALS_PREFIX_PATH}
 
     CONFIGURE_COMMAND ./configure --enable-shared=no \\
+      --with-pic \\
       --enable-implicit-crypto=false \\
       --enable-crypto-native=yes\\
       --prefix=${EXTERNALS_PREFIX_PATH} \\
