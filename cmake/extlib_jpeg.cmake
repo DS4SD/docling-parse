@@ -6,7 +6,7 @@ include(ExternalProject)
 include(CMakeParseArguments)
 
 set(JPEG_URL https://github.com/libjpeg-turbo/libjpeg-turbo.git)
-set(JPEG_TAG 3.0.0)
+set(JPEG_TAG 3.0.3)
 
 ExternalProject_Add(extlib_jpeg
     PREFIX extlib_jpeg

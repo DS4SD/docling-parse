@@ -12,12 +12,6 @@ include(CMakeParseArguments)
 set(QPDF_URL https://github.com/qpdf/qpdf.git)
 set(QPDF_TAG v11.9.1 )
 
-if(APPLE)
-  set(QPDF_EXTRA_CONFIGURE_COMMAND "--target=${CMAKE_OSX_ARCHITECTURES} --host=arm64 --build=arm64")
-else()
-  set(QPDF_EXTRA_CONFIGURE_COMMAND " ")
-endif()
-
 ExternalProject_Add(extlib_qpdf
     PREFIX extlib_qpdf
 
@@ -37,6 +31,11 @@ ExternalProject_Add(extlib_qpdf
     -DBUILD_SHARED_LIBS=OFF \\
     -DUSE_IMPLICIT_CRYPTO=OFF \\
     -DREQUIRE_CRYPTO_NATIVE=ON \\
+    -DLIBJPEG_LIBRARY=${EXTERNALS_PREFIX_PATH}/lib/libjpeg.a \\
+    -DLIBJPEG_LIB_PATH=${EXTERNALS_PREFIX_PATH}/lib/libjpeg.a \\
+    -DLIBJPEG_LIBDIR=${EXTERNALS_PREFIX_PATH}/lib \\
+    -DLIBJPEG_H_PATH=${EXTERNALS_PREFIX_PATH}/include \\
+    -DLIBJPEG_INCLUDEDIR=${EXTERNALS_PREFIX_PATH}/include \\
     -DCMAKE_OSX_ARCHITECTURES=${CMAKE_OSX_ARCHITECTURES} \\
     -DCMAKE_INSTALL_LIBDIR=${EXTERNALS_PREFIX_PATH}/lib \\
     -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH}
