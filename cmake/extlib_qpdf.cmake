@@ -32,7 +32,7 @@ ExternalProject_Add(extlib_qpdf
       --enable-crypto-native=yes\\
       --prefix=${EXTERNALS_PREFIX_PATH} \\
       CPPFLAGS=-I${EXTERNALS_PREFIX_PATH}/include \\
-      LDFLAGS=-L${EXTERNALS_PREFIX_PATH}/lib/
+      LDFLAGS=-L${EXTERNALS_PREFIX_PATH}/lib/ -L${EXTERNALS_PREFIX_PATH}/lib64/ 
 
     #CMAKE_ARGS \\
     #  -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH} 
