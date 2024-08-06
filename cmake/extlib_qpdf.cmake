@@ -31,6 +31,7 @@ ExternalProject_Add(extlib_qpdf
       --enable-implicit-crypto=false \\
       --enable-crypto-native=yes\\
       --prefix=${EXTERNALS_PREFIX_PATH} \\
+      --libdir=${EXTERNALS_LIBDIR} \\
       CPPFLAGS=-I${EXTERNALS_PREFIX_PATH}/include \\
       LDFLAGS=-L${EXTERNALS_LIBDIR} 
 
