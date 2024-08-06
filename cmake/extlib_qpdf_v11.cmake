@@ -10,8 +10,7 @@ include(CMakeParseArguments)
 
 #set(QPDF_URL git@github.ibm.com:CognitiveCore/qpdf-multipart-stream-patched.git)
 set(QPDF_URL https://github.com/qpdf/qpdf.git)
-#set(QPDF_TAG v11.0.0)
-set(QPDF_TAG release-qpdf-10.0.4)
+set(QPDF_TAG v11.9.1 )
 
 if(APPLE)
   set(QPDF_EXTRA_CONFIGURE_COMMAND "--target=${CMAKE_OSX_ARCHITECTURES} --host=arm64 --build=arm64")
@@ -33,22 +32,15 @@ ExternalProject_Add(extlib_qpdf
 
     INSTALL_DIR ${EXTERNALS_PREFIX_PATH}
 
-    CONFIGURE_COMMAND ./configure --enable-shared=no \\
-      --with-pic \\
-      ${QPDF_EXTRA_CONFIGURE_COMMAND} \\
-      --enable-implicit-crypto=false \\
-      --enable-crypto-native=yes\\
-      --prefix=${EXTERNALS_PREFIX_PATH} \\
-      --libdir=${EXTERNALS_PREFIX_PATH}/lib \\
-      CPPFLAGS=-I${EXTERNALS_PREFIX_PATH}/include \\
-      LDFLAGS=-L${EXTERNALS_PREFIX_PATH}/lib 
+    CMAKE_ARGS \\
+    -DCMAKE_POSITION_INDEPENDENT_CODE=ON \\
+    -DBUILD_SHARED_LIBS=OFF \\
+    -DUSE_IMPLICIT_CRYPTO=OFF \\
+    -DREQUIRE_CRYPTO_NATIVE=ON \\
+    -DCMAKE_OSX_ARCHITECTURES=${CMAKE_OSX_ARCHITECTURES} \\
+    -DCMAKE_INSTALL_LIBDIR=${EXTERNALS_PREFIX_PATH}/lib \\
+    -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH}
 
-    #CMAKE_ARGS \\
-    #  -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH} 
-    #  -DCMAKE_INSTALL_LIBDIR=lib \\
-    #  -DCMAKE_CXX_FLAGS=${CMAKE_LIB_FLAGS}
-
-    BUILD_IN_SOURCE ON
     LOG_DOWNLOAD ON
     LOG_CONFIGURE ON
     LOG_BUILD ON)
