@@ -41,6 +41,9 @@ black = {extras = ["jupyter"], version = "^24.4.2"}
 pre-commit = "^3.7.1"
 isort = "^5.10.1"
 
+[tool.poetry.scripts]
+docling-parse = "docling_parse.run:main"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
