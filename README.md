@@ -1,4 +1,6 @@
-# docling-parse
+# Docling-parse
+
+Dockling-parse provides PDF document parsing for programmatic documents in an easy, self-contained package.
 
 ## Install
 

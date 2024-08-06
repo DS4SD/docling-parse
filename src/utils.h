@@ -30,8 +30,8 @@ bool resource_utils::set_resources_dir(std::filesystem::path path)
 {
   RESOURCES_DIR = path;
 
-  std::cout << __FILE__ << ":" << __LINE__ << "\t"
-	    << "updated the resources-dir" << "\n";
+  //std::cout << __FILE__ << ":" << __LINE__ << "\t"
+  //<< "updated the resources-dir" << "\n";
     
   if(std::filesystem::exists(RESOURCES_DIR))
     {
