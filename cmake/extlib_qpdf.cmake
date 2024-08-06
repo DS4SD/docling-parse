@@ -13,6 +13,12 @@ set(QPDF_URL https://github.com/qpdf/qpdf.git)
 #set(QPDF_TAG v11.0.0)
 set(QPDF_TAG release-qpdf-10.0.4)
 
+if(APPLE)
+  set(QPDF_EXTRA_CONFIGURE_COMMAND "--target=${CMAKE_OSX_ARCHITECTURES}")
+else()
+  set(QPDF_EXTRA_CONFIGURE_COMMAND " ")
+endif()
+
 ExternalProject_Add(extlib_qpdf
     PREFIX extlib_qpdf
 
@@ -29,6 +35,7 @@ ExternalProject_Add(extlib_qpdf
 
     CONFIGURE_COMMAND ./configure --enable-shared=no \\
       --with-pic \\
+      ${QPDF_EXTRA_CONFIGURE_COMMAND} \\
       --enable-implicit-crypto=false \\
       --enable-crypto-native=yes\\
       --prefix=${EXTERNALS_PREFIX_PATH} \\
