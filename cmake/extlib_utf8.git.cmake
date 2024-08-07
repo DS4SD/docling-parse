@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 3.5)
 
 message(STATUS "entering in extlib_utf8.cmake")
 
@@ -6,12 +5,13 @@ include(ExternalProject)
 include(CMakeParseArguments)
 
 set(UTF8_URL https://github.com/nemtrif/utfcpp.git)
+set(UTF8_TAG v4.0.5)
 
 ExternalProject_Add(extlib_utf8
     PREFIX extlib_utf8
 
     GIT_REPOSITORY ${UTF8_URL}
-    #GIT_TAG ${UTF8_TAG}
+    GIT_TAG ${UTF8_TAG}
 
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""

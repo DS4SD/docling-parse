@@ -81,27 +81,20 @@ message(STATUS "cxx-standard: " ${CMAKE_CXX_STANDARD})
 
 if(NOT EXISTS ${EXTERNALS_PREFIX_PATH})
   execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH})
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/lib)
   execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/bin)
+  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/lib)
   execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/include)
   execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/resources)
 endif()
 
 include(cmake/subdirlist.cmake)
 
-#include(cmake/extlib_fmt.cmake)
 include(cmake/extlib_json.cmake)
-#include(cmake/extlib_json_schema.cmake)
-#include(cmake/extlib_loguru.cmake)
-#include(cmake/extlib_cxxopts.cmake)
-#include(cmake/extlib_pcre2.cmake)
 include(cmake/extlib_utf8.git.cmake)
-#include(cmake/extlib_utf8.svn.cmake)
 include(cmake/extlib_jpeg.cmake)
-include(cmake/extlib_qpdf.cmake)
-#include(cmake/extlib_fasttext.cmake)
+# include(cmake/extlib_qpdf_v10.cmake)
+include(cmake/extlib_qpdf_v11.cmake)
 include(cmake/extlib_pybind11.cmake)
-#include(cmake/extlib_sentencepiece.cmake)
 
 include(cmake/os_opts.cmake)
 
@@ -161,6 +154,7 @@ FetchContent_MakeAvailable(pybind11)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
 
+add_dependencies(docling_parse json utf8)  # we have to list the headers-only deps here
 target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
 
 target_link_libraries(docling_parse PRIVATE parse)

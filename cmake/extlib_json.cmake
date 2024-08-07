@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 3.5)
 
 message(STATUS "entering in extlib_json.cmake")
 
@@ -6,13 +5,13 @@ include(ExternalProject)
 include(CMakeParseArguments)
 
 set(JSON_URL https://github.com/nlohmann/json.git)
-#set(JSON_TAG v3.10.5)
+set(JSON_TAG v3.11.3)
 
 ExternalProject_Add(extlib_json
     PREFIX extlib_json
 
     GIT_REPOSITORY ${JSON_URL}
-    #GIT_TAG ${JSON_TAG}
+    GIT_TAG ${JSON_TAG}
 
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""
