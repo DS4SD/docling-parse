@@ -60,6 +60,11 @@ jobs:
         run: |
           poetry run python --version
 
+      - name: Setup pypi for poetry
+        run: |
+          poetry config keyring.enabled false
+          poetry config pypi-token.pypi ${{ secrets.PIPY_TOKEN }}
+
       - name: Convert python version to cpXYZ
         run: |
           version=${{ matrix.python-version }}
@@ -140,14 +145,14 @@ jobs:
         run: |
           ls -l ./
           ls -l ./dist
-          poetry publish --dry-run --no-interaction -vvv --username=__token__ --password=${{ secrets.PYPI_TOKEN }}
+          poetry publish --dry-run --no-interaction -vvv
 
       - name: publish wheels (on publishing) [macos]
         if: ${{ matrix.os.platform == 'macos' && startsWith(github.ref, 'refs/tags/') }}
         run: |
           ls -l ./
           ls -l ./dist
-          poetry publish --no-interaction -vvv --username=__token__ --password=${{ secrets.PYPI_TOKEN }}
+          poetry publish --no-interaction -vvv
 
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
@@ -175,12 +180,12 @@ jobs:
         run: |
           ls -l ./
           ls -l ./dist
-          poetry publish --dry-run --no-interaction -vvv --username=__token__ --password=${{ secrets.PYPI_TOKEN }}
+          poetry publish --dry-run --no-interaction -vvv
 
       - name: publish wheels (on publishing) [linux]
         if: ${{ matrix.os.platform == 'linux' && startsWith(github.ref, 'refs/tags/') }}
         run: |
           ls -l ./
           ls -l ./dist
-          poetry publish --no-interaction -vvv --username=__token__ --password=${{ secrets.PYPI_TOKEN }}
+          poetry publish --no-interaction -vvv
 

@@ -7,10 +7,6 @@ on:
 permissions:
   contents: read
 
-env:
-  # disable keyring (https://github.com/actions/runner-images/issues/6185):
-  PYTHON_KEYRING_BACKEND: keyring.backends.null.Keyring
-
 jobs:
   build-and-publish:
     uses: ./.github/workflows/wheels.yml
