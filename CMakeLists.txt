@@ -161,6 +161,7 @@ FetchContent_MakeAvailable(pybind11)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
 
+add_dependencies(docling_parse json utf8)  # we have to list the headers-only deps here
 target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
 
 target_link_libraries(docling_parse PRIVATE parse)
