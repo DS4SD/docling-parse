@@ -63,7 +63,7 @@ jobs:
       - name: Setup pypi for poetry
         run: |
           poetry config keyring.enabled false
-          poetry config pypi-token.pypi ${{ secrets.PIPY_TOKEN }}
+          poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
 
       - name: Convert python version to cpXYZ
         run: |
