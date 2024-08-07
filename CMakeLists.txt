@@ -89,20 +89,12 @@ endif()
 
 include(cmake/subdirlist.cmake)
 
-#include(cmake/extlib_fmt.cmake)
 include(cmake/extlib_json.cmake)
-#include(cmake/extlib_json_schema.cmake)
-#include(cmake/extlib_loguru.cmake)
-#include(cmake/extlib_cxxopts.cmake)
-#include(cmake/extlib_pcre2.cmake)
 include(cmake/extlib_utf8.git.cmake)
-#include(cmake/extlib_utf8.svn.cmake)
 include(cmake/extlib_jpeg.cmake)
-# include(cmake/extlib_qpdf.cmake)
+# include(cmake/extlib_qpdf_v10.cmake)
 include(cmake/extlib_qpdf_v11.cmake)
-#include(cmake/extlib_fasttext.cmake)
 include(cmake/extlib_pybind11.cmake)
-#include(cmake/extlib_sentencepiece.cmake)
 
 include(cmake/os_opts.cmake)
 

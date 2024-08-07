@@ -1,16 +1,10 @@
-cmake_minimum_required(VERSION 3.5)
 
 message(STATUS "entering in extlib_qpdf.cmake")
 
 include(ExternalProject)
 include(CMakeParseArguments)
 
-#set(PCRE2_URL https://github.com/PCRE2Project/pcre2.git)
-#set(PCRE2_TAG pcre2-10.40)
-
-#set(QPDF_URL git@github.ibm.com:CognitiveCore/qpdf-multipart-stream-patched.git)
 set(QPDF_URL https://github.com/qpdf/qpdf.git)
-#set(QPDF_TAG v11.0.0)
 set(QPDF_TAG release-qpdf-10.0.4)
 
 if(APPLE)
