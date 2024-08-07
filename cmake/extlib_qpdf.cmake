@@ -14,7 +14,7 @@ set(QPDF_URL https://github.com/qpdf/qpdf.git)
 set(QPDF_TAG release-qpdf-10.0.4)
 
 if(APPLE)
-  set(QPDF_EXTRA_CONFIGURE_COMMAND "--target=${CMAKE_OSX_ARCHITECTURES} --host=arm64 --build=arm64")
+  set(QPDF_EXTRA_CONFIGURE_COMMAND "--target=${CMAKE_OSX_ARCHITECTURES}")
 else()
   set(QPDF_EXTRA_CONFIGURE_COMMAND " ")
 endif()
@@ -42,11 +42,6 @@ ExternalProject_Add(extlib_qpdf
       --libdir=${EXTERNALS_PREFIX_PATH}/lib \\
       CPPFLAGS=-I${EXTERNALS_PREFIX_PATH}/include \\
       LDFLAGS=-L${EXTERNALS_PREFIX_PATH}/lib 
-
-    #CMAKE_ARGS \\
-    #  -DCMAKE_INSTALL_PREFIX=${EXTERNALS_PREFIX_PATH} 
-    #  -DCMAKE_INSTALL_LIBDIR=lib \\
-    #  -DCMAKE_CXX_FLAGS=${CMAKE_LIB_FLAGS}
 
     BUILD_IN_SOURCE ON
     LOG_DOWNLOAD ON
