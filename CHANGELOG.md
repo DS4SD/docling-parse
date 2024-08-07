@@ -1,3 +1,9 @@
+## [v0.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v0.1.0) - 2024-08-07
+
+### Feature
+
+* First release to pypi ([#4](https://github.com/DS4SD/docling-parse/issues/4)) ([`f762774`](https://github.com/DS4SD/docling-parse/commit/f762774a8db2bd198b9c017a36a25fdd98ac1b41))
+
 ## [v0.0.1](https://github.com/DS4SD/docling-parse/releases/tag/v0.0.1) - 2024-08-07
 
 ### Fix
