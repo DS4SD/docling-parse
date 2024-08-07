@@ -10,3 +10,4 @@ permissions:
 jobs:
   build-and-publish:
     uses: ./.github/workflows/wheels.yml
+    secrets: inherit
