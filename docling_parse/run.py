@@ -2,9 +2,10 @@ import argparse
 import io
 import os
 
-#from docling_parse.docling_parse import pdf_parser
+# from docling_parse.docling_parse import pdf_parser
 import docling_parse
 from docling_parse import pdf_parser
+
 
 def main():
     # Create the argument parser
@@ -39,13 +40,13 @@ def main():
 
     # Open the file in binary mode and read its contents
     with open(args.pdf, "rb") as file:
-            file_content = file.read()
+        file_content = file.read()
 
     # Create a BytesIO object and write the file contents to it
     bytes_io = io.BytesIO(file_content)
-    
+
     doc = parser.find_cells_from_bytesio(bytes_io)
-    
+
     # print(json.dumps(data, indent=2))
     print("keys: ", doc.keys())
     for i, page in enumerate(doc["pages"]):
@@ -53,6 +54,7 @@ def main():
 
         for j, cell in enumerate(page["cells"]):
             print(i, "\t", j, "\t", cell["content"]["rnormalized"])
-            
+
+
 if __name__ == "__main__":
     main()
