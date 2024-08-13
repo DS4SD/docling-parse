@@ -15,9 +15,12 @@ Date: 18/08/2017
 #ifndef PDF_LIBRARY_H
 #define PDF_LIBRARY_H
 
-#ifdef __HAVE_QPDF
+//#ifdef __HAVE_QPDF
+
+#define POINTERHOLDER_TRANSITION 0
 #include <qpdf/QPDF.hh>
-#endif
+
+//#endif
 
 //#include "logging_library.h"
 //#include "container_library.h"
