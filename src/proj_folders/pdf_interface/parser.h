@@ -39,6 +39,9 @@ namespace pdf_lib
     bool parse_pdf_page(std::string id,
                         container_lib::container& raw_page);
 
+    bool parse_pdf_page(const char* buffer, std::size_t size,
+			container_lib::container& raw_page);
+
     bool clean_raw_page(container_lib::container& raw_page);
 
     void clean_pages(container_lib::container& raw_doc);
@@ -477,6 +480,44 @@ namespace pdf_lib
     {
       pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> parser(doc);
       parser.load_document(filename).process_all();
+    }
+    //catch(...)
+    //{
+    //logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+    //                           << "\t ERROR in pdf-parsing !!\n";
+    //return false;
+    //}
+
+    try
+      {
+        pdf_lib::core::writer writer;
+        writer.execute(doc, raw_page);
+      }
+    catch (...)
+      {
+        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+                                         << "\t ERROR in conversion pdf_lib::core::DOCUMENT --> container !!\n";
+        return false;
+      }
+
+    return true;
+  }
+
+  bool interface<PARSER>::parse_pdf_page(const char* buffer, std::size_t size,
+                                         container_lib::container &raw_page)
+  {
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+
+    raw_page.clear();
+
+    pdf_lib::core::object<pdf_lib::core::DOCUMENT> doc;
+
+    //try
+    {
+      std::string desc = "parsing document buffer via BytesIO";
+      
+      pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> parser(doc);
+      parser.load_buffer(desc.c_str(), buffer, size).process_all();
     }
     //catch(...)
     //{

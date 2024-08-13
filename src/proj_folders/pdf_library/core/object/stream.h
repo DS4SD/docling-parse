@@ -15,7 +15,7 @@ Date: 18/08/2017
 #ifndef PDF_LIBRARY_OBJECT_XOBJECT
 #define PDF_LIBRARY_OBJECT_XOBJECT
 
-#include<qpdf/QPDF.hh>
+//#include<qpdf/QPDF.hh>
 
 #include<pdf_library/core.h>
 
