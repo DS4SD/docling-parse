@@ -1,3 +1,9 @@
+## [v0.2.0](https://github.com/DS4SD/docling-parse/releases/tag/v0.2.0) - 2024-08-13
+
+### Feature
+
+* Add reading from BytesIO ([#6](https://github.com/DS4SD/docling-parse/issues/6)) ([`195777b`](https://github.com/DS4SD/docling-parse/commit/195777b656969d5021b7d8d55d2d208b61dfcb0f))
+
 ## [v0.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v0.1.0) - 2024-08-07
 
 ### Feature
