@@ -60,7 +60,8 @@ jobs:
         run: |
           poetry run python --version
 
-      - name: Setup pypi for poetry
+      - name: Setup pypi for poetry [for releases only]
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
         run: |
           poetry config keyring.enabled false
           poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
