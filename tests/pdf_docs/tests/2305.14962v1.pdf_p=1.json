@@ -1,0 +1,2714 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.416537534309773,
+        "/CQWFHR+SFBX1000": 4.403464956462883,
+        "/GOFYPY+Arial-BoldMT": 0.536998184644038,
+        "/GOFYPY+ArialMT": 1.184146968795352,
+        "/IHRBTF+SFBX1200": 2.348530826291714,
+        "/IMULES+SFTI1000": 2.49467077375025,
+        "/RQVTRN+SFBX0900": 2.642099575926112,
+        "/TFWOKM+SFRM0900": 1.956301572809351
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.627084077581068,
+        "/CQWFHR+SFBX1000": 5.830539831858762,
+        "/GOFYPY+Arial-BoldMT": 3.562772896090979,
+        "/GOFYPY+ArialMT": 2.635405428279788,
+        "/IHRBTF+SFBX1200": 6.366940956516109,
+        "/IMULES+SFTI1000": 5.075200930328741,
+        "/RQVTRN+SFBX0900": 4.352139065496353,
+        "/TFWOKM+SFRM0900": 4.24469380738686
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 1336,
+        "/CQWFHR+SFBX1000": 14,
+        "/GOFYPY+Arial-BoldMT": 28,
+        "/GOFYPY+ArialMT": 117,
+        "/IHRBTF+SFBX1200": 9,
+        "/IMULES+SFTI1000": 67,
+        "/RQVTRN+SFBX0900": 6,
+        "/TFWOKM+SFRM0900": 66
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/GOFYPY+Arial-BoldMT",
+      "/GOFYPY+ArialMT",
+      "/IHRBTF+SFBX1200",
+      "/IMULES+SFTI1000",
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              692.10498,
+              139.37193,
+              700.17474
+            ],
+            "device": [
+              134.765,
+              690.1593,
+              139.37193,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              272.23605,
+              690.1593,
+              280.77161,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "C."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              285.03979,
+              690.1593,
+              330.35175,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "Auer, et al."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              142.56671,
+              674.99896
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              480.59171,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "styles that they can perform well on. A highly generalising model for structure"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              654.24695,
+              150.81175,
+              663.04395
+            ],
+            "device": [
+              134.765,
+              652.31421,
+              349.32452,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "and layout understanding has yet to be achieved."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              149.709,
+              642.29095,
+              168.10693,
+              651.08795
+            ],
+            "device": [
+              149.709,
+              640.35822,
+              480.59482,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR has organized various competitions in the past to benchmark the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              630.33594,
+              200.42053,
+              639.13293
+            ],
+            "device": [
+              134.765,
+              628.4032,
+              480.59473,
+              637.2002
+            ]
+          },
+          "content": {
+            "rnormalized": "state-of-the-art and encourage the development of novel approaches and solu-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              618.38092,
+              155.84686,
+              627.17792
+            ],
+            "device": [
+              134.765,
+              616.44818,
+              480.5928,
+              625.24518
+            ]
+          },
+          "content": {
+            "rnormalized": "tions to layout segmentation problems in documents [4,2,3,21]. In this report, we"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              606.4259,
+              162.51382,
+              615.2229
+            ],
+            "device": [
+              134.765,
+              604.49316,
+              244.11746,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "present the results of our"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              247.465,
+              606.4259,
+              265.95261,
+              615.2229
+            ],
+            "device": [
+              247.465,
+              604.49316,
+              480.59592,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Competition on Robust Layout Segmen-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              594.47089,
+              160.21844,
+              603.26788
+            ],
+            "device": [
+              134.765,
+              592.53815,
+              267.98389,
+              601.33514
+            ]
+          },
+          "content": {
+            "rnormalized": "tation in Corporate Documents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              267.98401,
+              594.47089,
+              270.75061,
+              603.26788
+            ],
+            "device": [
+              267.98401,
+              592.53815,
+              480.59485,
+              601.33514
+            ]
+          },
+          "content": {
+            "rnormalized": ", which posed the challenge to accurately segment"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              582.51587,
+              148.59808,
+              591.31287
+            ],
+            "device": [
+              134.76501,
+              580.58313,
+              480.58975,
+              589.38013
+            ]
+          },
+          "content": {
+            "rnormalized": "the layout of a broad range of document styles and domains, including corporate"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              570.55988,
+              148.62598,
+              579.35687
+            ],
+            "device": [
+              134.76501,
+              568.62714,
+              480.58588,
+              577.42413
+            ]
+          },
+          "content": {
+            "rnormalized": "reports, technical literature and patents. Participants were challenged to develop"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              558.60486,
+              139.74532,
+              567.40186
+            ],
+            "device": [
+              134.76501,
+              556.67212,
+              480.58978,
+              565.46912
+            ]
+          },
+          "content": {
+            "rnormalized": "a method that could identify layout components in document pages as bounding"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              546.64984,
+              140.29825,
+              555.44684
+            ],
+            "device": [
+              134.76501,
+              544.7171,
+              480.59464,
+              553.5141
+            ]
+          },
+          "content": {
+            "rnormalized": "boxes. These components include paragraphs, (sub)titles, tables, figures, lists,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              534.69482,
+              193.97174,
+              543.49182
+            ],
+            "device": [
+              134.76501,
+              532.76208,
+              480.59171,
+              541.55908
+            ]
+          },
+          "content": {
+            "rnormalized": "mathematical formulas, and several more. The performance of submissions was"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              522.73981,
+              144.44867,
+              531.5368
+            ],
+            "device": [
+              134.76501,
+              520.80707,
+              480.5867,
+              529.60406
+            ]
+          },
+          "content": {
+            "rnormalized": "evaluated using the commonplace mean average precision metric (mAP) used in"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              510.78381,
+              148.59808,
+              519.58081
+            ],
+            "device": [
+              134.76501,
+              508.85107,
+              480.5918,
+              517.64807
+            ]
+          },
+          "content": {
+            "rnormalized": "the COCO object detection competition [13]. To raise the bar over previous com-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              498.82883,
+              140.29825,
+              507.62579
+            ],
+            "device": [
+              134.76501,
+              496.89609,
+              480.58676,
+              505.69305
+            ]
+          },
+          "content": {
+            "rnormalized": "petitions, we proposed to use our recently published DocLayNet dataset [16] for"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              486.87384,
+              148.04517,
+              495.67081
+            ],
+            "device": [
+              134.76501,
+              484.9411,
+              480.59381,
+              493.73807
+            ]
+          },
+          "content": {
+            "rnormalized": "model training, and engineered a challenging, multi-modal competition dataset"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              474.91885,
+              154.13132,
+              483.71582
+            ],
+            "device": [
+              134.76501,
+              472.98611,
+              344.12009,
+              481.78308
+            ]
+          },
+          "content": {
+            "rnormalized": "with a unique distribution of new page samples."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              149.70901,
+              462.96387,
+              168.93784,
+              471.76083
+            ],
+            "device": [
+              149.70901,
+              461.03113,
+              480.58786,
+              469.82809
+            ]
+          },
+          "content": {
+            "rnormalized": "Below, we present a detailed overview of this competition, including its"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              451.00888,
+              173.05527,
+              459.80585
+            ],
+            "device": [
+              134.76501,
+              449.07614,
+              374.44421,
+              457.87311
+            ]
+          },
+          "content": {
+            "rnormalized": "datasets, evaluation metrics, participation, and results."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              419.52386,
+              141.48862,
+              430.09225
+            ],
+            "device": [
+              134.76501,
+              417.20456,
+              141.48862,
+              427.77295
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.93822,
+              419.52386,
+              205.51709,
+              430.09225
+            ],
+            "device": [
+              154.93822,
+              417.20456,
+              205.51709,
+              427.77295
+            ]
+          },
+          "content": {
+            "rnormalized": "Datasets"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              196.06892,
+              362.41699,
+              212.35657,
+              367.78696
+            ],
+            "device": [
+              196.06892,
+              361.39871,
+              212.35657,
+              366.76868
+            ]
+          },
+          "content": {
+            "rnormalized": "Patents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              214.86926,
+              339.13409,
+              221.80989,
+              344.50406
+            ],
+            "device": [
+              214.86926,
+              338.11581,
+              221.80989,
+              343.48578
+            ]
+          },
+          "content": {
+            "rnormalized": "8%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.77432,
+              338.11469,
+              179.99193,
+              343.48465
+            ],
+            "device": [
+              160.77432,
+              337.09641,
+              179.99193,
+              342.46637
+            ]
+          },
+          "content": {
+            "rnormalized": "Scientific"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              195.87828,
+              325.8783,
+              205.48949,
+              331.24826
+            ],
+            "device": [
+              195.87828,
+              324.86002,
+              205.48949,
+              330.22998
+            ]
+          },
+          "content": {
+            "rnormalized": "17%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              180.35869,
+              266.54333,
+              197.17468,
+              271.9133
+            ],
+            "device": [
+              180.35869,
+              265.52505,
+              197.17468,
+              270.89502
+            ]
+          },
+          "content": {
+            "rnormalized": "Reports"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              205.2507,
+              286.83939,
+              214.86191,
+              292.20935
+            ],
+            "device": [
+              205.2507,
+              285.82111,
+              214.86191,
+              291.19107
+            ]
+          },
+          "content": {
+            "rnormalized": "32%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              256.59827,
+              268.41071,
+              259.53302,
+              273.78067
+            ],
+            "device": [
+              256.59827,
+              267.39243,
+              273.68356,
+              272.76239
+            ]
+          },
+          "content": {
+            "rnormalized": "Tenders"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.99797,
+              287.85794,
+              245.9386,
+              293.22791
+            ],
+            "device": [
+              238.99797,
+              286.83966,
+              245.9386,
+              292.20963
+            ]
+          },
+          "content": {
+            "rnormalized": "6%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              276.73633,
+              298.04294,
+              287.94699,
+              303.4129
+            ],
+            "device": [
+              276.73633,
+              297.02466,
+              287.94699,
+              302.39462
+            ]
+          },
+          "content": {
+            "rnormalized": "Laws"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              248.64647,
+              304.021,
+              258.25766,
+              309.39096
+            ],
+            "device": [
+              248.64647,
+              303.00272,
+              258.25766,
+              308.37268
+            ]
+          },
+          "content": {
+            "rnormalized": "16%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              257.92682,
+              352.98102,
+              276.07812,
+              358.35098
+            ],
+            "device": [
+              257.92682,
+              351.96274,
+              276.07812,
+              357.3327
+            ]
+          },
+          "content": {
+            "rnormalized": "Manuals"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.38675,
+              333.98721,
+              247.99796,
+              339.35718
+            ],
+            "device": [
+              238.38675,
+              332.96893,
+              247.99796,
+              338.3389
+            ]
+          },
+          "content": {
+            "rnormalized": "21%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              209.82849,
+              254.74527,
+              213.3502,
+              261.18924
+            ],
+            "device": [
+              209.82849,
+              253.52333,
+              241.23175,
+              259.96732
+            ]
+          },
+          "content": {
+            "rnormalized": "Total: 80863"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 12
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              207.95975,
+              375.41388,
+              243.08171,
+              382.93185
+            ],
+            "device": [
+              207.95975,
+              373.98828,
+              243.08171,
+              381.50626
+            ]
+          },
+          "content": {
+            "rnormalized": "DocLayNet"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+Arial-BoldMT",
+            "size": 14
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              359.79031,
+              353.05276,
+              376.07797,
+              358.42273
+            ],
+            "device": [
+              359.79031,
+              352.03448,
+              376.07797,
+              357.40445
+            ]
+          },
+          "content": {
+            "rnormalized": "Patents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              376.43777,
+              338.72797,
+              386.04898,
+              344.09793
+            ],
+            "device": [
+              376.43777,
+              337.70969,
+              386.04898,
+              343.07965
+            ]
+          },
+          "content": {
+            "rnormalized": "10%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.73444,
+              277.72452,
+              360.55045,
+              283.09448
+            ],
+            "device": [
+              343.73444,
+              276.70624,
+              360.55045,
+              282.0762
+            ]
+          },
+          "content": {
+            "rnormalized": "Reports"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              366.7312,
+              288.90381,
+              376.34241,
+              294.27377
+            ],
+            "device": [
+              366.7312,
+              287.88553,
+              376.34241,
+              293.25549
+            ]
+          },
+          "content": {
+            "rnormalized": "59%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              433.81213,
+              323.03983,
+              451.96344,
+              328.40979
+            ],
+            "device": [
+              433.81213,
+              322.02155,
+              451.96344,
+              327.39151
+            ]
+          },
+          "content": {
+            "rnormalized": "Manuals"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              412.51807,
+              319.96988,
+              422.12927,
+              325.33984
+            ],
+            "device": [
+              412.51807,
+              318.9516,
+              422.12927,
+              324.32156
+            ]
+          },
+          "content": {
+            "rnormalized": "23%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              402.21307,
+              353.4649,
+              414.22589,
+              358.83487
+            ],
+            "device": [
+              402.21307,
+              352.44662,
+              414.22589,
+              357.81659
+            ]
+          },
+          "content": {
+            "rnormalized": "Other"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              394.10455,
+              338.98557,
+              401.04517,
+              344.35553
+            ],
+            "device": [
+              394.10455,
+              337.96729,
+              401.04517,
+              343.33725
+            ]
+          },
+          "content": {
+            "rnormalized": "9%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 10
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              377.36563,
+              254.74527,
+              380.88733,
+              261.18924
+            ],
+            "device": [
+              377.36563,
+              253.52333,
+              402.3595,
+              259.96732
+            ]
+          },
+          "content": {
+            "rnormalized": "Total: 498"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+ArialMT",
+            "size": 12
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              357.54492,
+              375.41388,
+              422.1806,
+              382.93185
+            ],
+            "device": [
+              357.54492,
+              373.98828,
+              422.1806,
+              381.50626
+            ]
+          },
+          "content": {
+            "rnormalized": "Competition dataset"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/GOFYPY+Arial-BoldMT",
+            "size": 14
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              168.009,
+              226.233,
+              185.87186,
+              234.1593
+            ],
+            "device": [
+              168.009,
+              224.49352,
+              195.88823,
+              232.41982
+            ]
+          },
+          "content": {
+            "rnormalized": "Fig. 1."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              198.96201,
+              226.233,
+              230.11128,
+              234.30276
+            ],
+            "device": [
+              198.96201,
+              224.28729,
+              447.3501,
+              232.35706
+            ]
+          },
+          "content": {
+            "rnormalized": "Dataset statistics of DocLayNet and the competition dataset."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              172.51801,
+              149.40207,
+              181.32495
+            ],
+            "device": [
+              134.76501,
+              170.58527,
+              149.40207,
+              179.3922
+            ]
+          },
+          "content": {
+            "rnormalized": "2.1"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.85905,
+              172.51801,
+              177.88214,
+              181.32495
+            ],
+            "device": [
+              160.85905,
+              170.58527,
+              230.70883,
+              179.3922
+            ]
+          },
+          "content": {
+            "rnormalized": "Related Work"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              152.98801,
+              145.96996,
+              161.78499
+            ],
+            "device": [
+              134.76501,
+              151.05527,
+              486.69089,
+              159.85223
+            ]
+          },
+          "content": {
+            "rnormalized": "Layout segmentation datasets published in the recent past, such as PubLayNet [25]"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              141.033,
+              143.64667,
+              149.82999
+            ],
+            "device": [
+              134.76501,
+              139.10027,
+              480.59283,
+              147.89723
+            ]
+          },
+          "content": {
+            "rnormalized": "or DocBank [12], have enabled a big leap forward for ML-driven document un-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              129.078,
+              185.75459,
+              137.87498
+            ],
+            "device": [
+              134.76501,
+              127.14526,
+              480.58987,
+              135.94223
+            ]
+          },
+          "content": {
+            "rnormalized": "derstanding approaches due to their huge ground-truth size compared to earlier"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 134.765,
+          "x1": 480.5954,
+          "y": 247.15401
+        },
+        {
+          "x0": 134.765,
+          "x1": 480.5954,
+          "y": 385.48618
+        },
+        {
+          "x0": 177.43776,
+          "x1": 225.51395,
+          "y": 312.43671
+        },
+        {
+          "x0": 177.43776,
+          "x1": 225.51395,
+          "y": 312.43671
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            134.765,
+            247.15401,
+            480.5954,
+            385.48618
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            134.765,
+            480.5954,
+            480.5954,
+            134.765,
+            134.765
+          ],
+          "y-values": [
+            247.15401,
+            247.15401,
+            385.48618,
+            385.48618,
+            247.15401
+          ]
+        },
+        {
+          "bbox": [
+            202.35307,
+            312.43671,
+            225.51395,
+            360.51288
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            225.51395,
+            223.7868,
+            222.06329,
+            220.34505,
+            218.63373,
+            216.93097,
+            215.23849,
+            213.55789,
+            211.89273,
+            210.24649,
+            208.62067,
+            207.01688,
+            205.43665,
+            203.88153,
+            202.35307,
+            225.51395,
+            225.51395
+          ],
+          "y-values": [
+            360.51288,
+            360.48187,
+            360.38892,
+            360.23419,
+            360.01801,
+            359.74054,
+            359.40195,
+            359.0025,
+            358.54291,
+            358.02423,
+            357.44711,
+            356.81213,
+            356.1199,
+            355.37103,
+            354.56619,
+            312.43671,
+            360.51288
+          ]
+        },
+        {
+          "bbox": [
+            177.43776,
+            312.43671,
+            225.51395,
+            354.56619
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            202.35307,
+            199.1983,
+            196.20822,
+            193.39441,
+            190.7684,
+            188.34177,
+            186.12604,
+            184.13275,
+            182.38199,
+            180.88895,
+            179.65784,
+            178.69292,
+            177.99844,
+            177.57864,
+            177.43776,
+            225.51395,
+            202.35307
+          ],
+          "y-values": [
+            354.56619,
+            352.67108,
+            350.54822,
+            348.2088,
+            345.664,
+            342.92508,
+            340.00317,
+            336.90948,
+            333.67236,
+            330.32306,
+            326.87708,
+            323.34995,
+            319.75714,
+            316.11423,
+            312.43671,
+            312.43671,
+            354.56619
+          ]
+        },
+        {
+          "bbox": [
+            177.43776,
+            264.36255,
+            245.9838,
+            312.43671
+          ],
+          "sub-paths": [
+            0,
+            31
+          ],
+          "type": "unknown",
+          "x-values": [
+            177.43776,
+            177.56245,
+            177.93433,
+            178.55002,
+            179.4062,
+            180.49957,
+            181.82677,
+            183.38446,
+            185.16071,
+            187.13963,
+            189.31207,
+            191.66885,
+            194.20078,
+            196.89871,
+            199.75345,
+            202.74181,
+            205.83823,
+            209.03,
+            212.30431,
+            215.64845,
+            219.04968,
+            222.49522,
+            225.95644,
+            229.40436,
+            232.82581,
+            236.20766,
+            239.53671,
+            242.7998,
+            245.9838,
+            225.51395,
+            177.43776
+          ],
+          "y-values": [
+            312.43671,
+            308.9765,
+            305.54514,
+            302.15567,
+            298.82098,
+            295.55414,
+            292.3681,
+            289.27582,
+            286.30368,
+            283.47592,
+            280.80231,
+            278.2926,
+            275.95657,
+            273.80399,
+            271.84464,
+            270.09583,
+            268.5712,
+            267.27487,
+            266.211,
+            265.38367,
+            264.79709,
+            264.45538,
+            264.36255,
+            264.51822,
+            264.91989,
+            265.565,
+            266.45108,
+            267.57559,
+            268.93607,
+            312.43671,
+            312.43671
+          ]
+        },
+        {
+          "bbox": [
+            225.51395,
+            268.93607,
+            260.56,
+            312.43671
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            245.9838,
+            247.14813,
+            248.29626,
+            249.42758,
+            250.54144,
+            251.63728,
+            252.71448,
+            253.77243,
+            254.80988,
+            255.82559,
+            256.81906,
+            257.78976,
+            258.73718,
+            259.66077,
+            260.56,
+            225.51395,
+            245.9838
+          ],
+          "y-values": [
+            268.93607,
+            269.50323,
+            270.10129,
+            270.72989,
+            271.38861,
+            272.07718,
+            272.79517,
+            273.54224,
+            274.31757,
+            275.12015,
+            275.94958,
+            276.80539,
+            277.68707,
+            278.59418,
+            279.52628,
+            312.43671,
+            268.93607
+          ]
+        },
+        {
+          "bbox": [
+            225.51395,
+            279.52628,
+            273.5592,
+            324.39276
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            260.56,
+            262.83777,
+            264.91559,
+            266.78705,
+            268.44565,
+            269.88492,
+            271.09845,
+            272.07974,
+            272.81946,
+            273.31262,
+            273.5592,
+            273.5592,
+            273.31262,
+            272.81946,
+            272.07974,
+            225.51395,
+            260.56
+          ],
+          "y-values": [
+            279.52628,
+            282.13403,
+            284.88992,
+            287.78223,
+            290.79919,
+            293.92908,
+            297.16016,
+            300.48065,
+            303.86316,
+            307.27917,
+            310.71527,
+            314.15811,
+            317.59424,
+            321.01025,
+            324.39276,
+            312.43671,
+            279.52628
+          ]
+        },
+        {
+          "bbox": [
+            225.51395,
+            312.43671,
+            272.07974,
+            360.51288
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            272.07974,
+            270.73956,
+            269.00403,
+            266.88983,
+            264.4137,
+            261.59225,
+            258.4422,
+            254.98019,
+            251.25375,
+            247.31841,
+            243.20287,
+            238.93591,
+            234.54626,
+            230.0627,
+            225.51396,
+            225.51395,
+            272.07974
+          ],
+          "y-values": [
+            324.39276,
+            328.74493,
+            332.92834,
+            336.91751,
+            340.68713,
+            344.2117,
+            347.46594,
+            350.42435,
+            353.04184,
+            355.28363,
+            357.13992,
+            358.60083,
+            359.65652,
+            360.29715,
+            360.51288,
+            312.43671,
+            324.39276
+          ]
+        },
+        {
+          "bbox": [
+            367.95209,
+            312.43671,
+            389.84644,
+            350.89764
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            389.84644,
+            388.18127,
+            386.52118,
+            384.86847,
+            383.22546,
+            381.59436,
+            379.9776,
+            378.37747,
+            376.79883,
+            375.24646,
+            373.72247,
+            372.22888,
+            370.76794,
+            369.34161,
+            367.95209,
+            389.84644,
+            389.84644
+          ],
+          "y-values": [
+            350.89764,
+            350.86157,
+            350.75363,
+            350.57416,
+            350.32346,
+            350.00195,
+            349.60995,
+            349.14783,
+            348.61688,
+            348.0188,
+            347.35461,
+            346.6254,
+            345.83212,
+            344.97586,
+            344.05762,
+            312.43671,
+            350.89764
+          ]
+        },
+        {
+          "bbox": [
+            351.39771,
+            273.99023,
+            425.11908,
+            344.05762
+          ],
+          "sub-paths": [
+            0,
+            59
+          ],
+          "type": "unknown",
+          "x-values": [
+            367.95209,
+            365.90857,
+            363.97495,
+            362.15686,
+            360.45984,
+            358.88947,
+            357.45135,
+            356.15106,
+            354.99832,
+            354.00073,
+            353.16046,
+            352.47983,
+            351.961,
+            351.60626,
+            351.41785,
+            351.39771,
+            351.54535,
+            351.85922,
+            352.33771,
+            352.97925,
+            353.78229,
+            354.74524,
+            355.86194,
+            357.12387,
+            358.526,
+            360.06326,
+            361.73062,
+            363.52301,
+            365.43536,
+            367.45465,
+            369.56616,
+            371.76245,
+            374.03604,
+            376.37946,
+            378.78522,
+            381.24585,
+            383.74417,
+            386.26236,
+            388.79211,
+            391.32513,
+            393.85303,
+            396.36755,
+            398.86041,
+            401.31372,
+            403.71033,
+            406.04297,
+            408.30408,
+            410.48627,
+            412.58215,
+            414.58417,
+            416.47784,
+            418.25031,
+            419.89648,
+            421.41144,
+            422.79016,
+            424.02765,
+            425.11908,
+            389.84644,
+            367.95209
+          ],
+          "y-values": [
+            344.05762,
+            342.54022,
+            340.89557,
+            339.12991,
+            337.24936,
+            335.26013,
+            333.16837,
+            330.98029,
+            328.711,
+            326.3768,
+            323.98575,
+            321.54587,
+            319.06516,
+            316.55164,
+            314.01334,
+            311.46814,
+            308.93399,
+            306.41913,
+            303.93167,
+            301.47983,
+            299.07178,
+            296.71567,
+            294.42844,
+            292.22589,
+            290.11472,
+            288.10147,
+            286.19278,
+            284.39529,
+            282.71561,
+            281.16608,
+            279.75714,
+            278.49246,
+            277.37573,
+            276.41055,
+            275.60068,
+            274.94971,
+            274.46295,
+            274.14313,
+            273.99023,
+            274.00424,
+            274.18503,
+            274.53262,
+            275.04694,
+            275.72504,
+            276.56143,
+            277.5524,
+            278.69418,
+            279.98303,
+            281.41519,
+            282.98691,
+            284.68762,
+            286.50479,
+            288.43176,
+            290.46185,
+            292.58838,
+            294.80472,
+            297.10416,
+            312.43671,
+            344.05762
+          ]
+        },
+        {
+          "bbox": [
+            389.84644,
+            297.10416,
+            428.30676,
+            345.375
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            425.11908,
+            426.51306,
+            427.51013,
+            428.10852,
+            428.30676,
+            428.10321,
+            427.49634,
+            426.4845,
+            425.08118,
+            423.31396,
+            421.20245,
+            418.76611,
+            416.02454,
+            412.99725,
+            409.7038,
+            389.84644,
+            425.11908
+          ],
+          "y-values": [
+            297.10416,
+            300.82651,
+            304.64786,
+            308.53668,
+            312.46149,
+            316.39081,
+            320.29315,
+            324.13705,
+            327.85593,
+            331.38773,
+            334.70773,
+            337.7912,
+            340.6134,
+            343.14957,
+            345.375,
+            312.43671,
+            297.10416
+          ]
+        },
+        {
+          "bbox": [
+            389.84644,
+            312.43671,
+            409.7038,
+            350.89764
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            409.7038,
+            408.41156,
+            407.09265,
+            405.7486,
+            404.38098,
+            402.99127,
+            401.58112,
+            400.15192,
+            398.70728,
+            397.25067,
+            395.78375,
+            394.30823,
+            392.82568,
+            391.33789,
+            389.84644,
+            389.84644,
+            409.7038
+          ],
+          "y-values": [
+            345.375,
+            346.12024,
+            346.81421,
+            347.45621,
+            348.04556,
+            348.58167,
+            349.06378,
+            349.49127,
+            349.86304,
+            350.17822,
+            350.43661,
+            350.63797,
+            350.7821,
+            350.86871,
+            350.89764,
+            312.43671,
+            345.375
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 480.5954,
+          "y0": 247.15401,
+          "y1": 385.48618
+        },
+        {
+          "x": 134.765,
+          "y0": 247.15401,
+          "y1": 385.48618
+        },
+        {
+          "x": 225.51395,
+          "y0": 312.43671,
+          "y1": 360.51288
+        },
+        {
+          "x": 273.5592,
+          "y0": 310.71527,
+          "y1": 314.15811
+        },
+        {
+          "x": 225.51396,
+          "y0": 312.43671,
+          "y1": 360.51288
+        },
+        {
+          "x": 389.84644,
+          "y0": 312.43671,
+          "y1": 350.89764
+        },
+        {
+          "x": 389.84644,
+          "y0": 312.43671,
+          "y1": 350.89764
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

@@ -42,6 +42,11 @@ namespace pdf_lib
 
       virtual void parse() = 0;
 
+      virtual void set_object(core::object<OT>& _obj)
+      {
+	_object = _obj;
+      }
+      
     private:
 
       core::object<OT>& _object;

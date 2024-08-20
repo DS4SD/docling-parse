@@ -28,6 +28,7 @@ namespace pdf_lib
       public core::object<core::DOCUMENT>
     {
     public:
+
       virtual object<PAGE>& get_page(size_t index);
       virtual object<PAGE>& get_page();
 
@@ -50,7 +51,7 @@ namespace pdf_lib
 
     object<PAGE> & object<DOCUMENT>::get_page()
     {
-      logging_lib::info("pdf-parser") << "qpdf::object<DOCUMENT>::get_page()";
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
 
       _pages.push_back(new object<PAGE>());
  

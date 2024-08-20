@@ -38,6 +38,8 @@ namespace docling
     
     nlohmann::json find_cells(std::string path);
 
+    nlohmann::json find_cells_on_page(std::string path, int page);
+
     nlohmann::json find_cells_from_bytesio(pybind11::object bytes_io);
 
   private:
@@ -63,7 +65,13 @@ namespace docling
   }
 
   void docling_parser::set_loglevel()
-  {}
+  {
+    logging_lib::set_level("pdf-parser", 
+			   logging_lib::ERROR   | 
+			   logging_lib::WARNING | 
+			   logging_lib::INFO    | 
+			   logging_lib::SUCCESS);
+  }
 
   nlohmann::json docling_parser::get_raw(std::string path)
   {
@@ -111,6 +119,69 @@ namespace docling
     return data;
   }
 
+  nlohmann::json docling_parser::find_cells_on_page(std::string path, int page)
+  {
+    // load pdf file
+    /*
+    if (not interface.load_document(path))
+      {
+        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+                                         << "could not load the PDF file";
+	
+        nlohmann::json data;
+        data["message"] = "could not parse the PDF file";
+        return data;
+      }
+    */
+    
+    container_lib::container doc_raw;
+
+    // parse the pdf file on path
+    if (not interface.parse_pdf_page(path, page, doc_raw))
+      {
+        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+                                         << "could not parse the PDF file";
+
+        nlohmann::json data;
+        data["message"] = "could not parse the PDF file";
+        return data;
+      }
+
+    // only keep page -> bring it to the first and then resize array
+    if(page>0)
+      {
+	doc_raw["pages"][0] = doc_raw["pages"][page];
+      }
+    doc_raw["pages"].resize(1);
+    
+    if (not interface.clean_raw_page(doc_raw))
+      {
+        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+                                         << "could not clean the raw file";
+
+        nlohmann::json data;
+        data["message"] = "could not clean the raw file";
+        return data;
+      }
+
+    interface.clean_pages(doc_raw);
+
+    // remove font information ...
+    for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
+      {
+	if(doc_raw["pages"][pid].has("fonts"))
+	  {
+	    doc_raw["pages"][pid].erase("fonts");
+	  }
+      }
+    
+    IO::writer<IO::JSON_CONTAINER> writer;
+    std::string result = writer.to_string(doc_raw);
+    
+    nlohmann::json data = nlohmann::json::parse(result);
+    return data;
+  }
+  
   nlohmann::json docling_parser::find_cells_from_bytesio(pybind11::object bytes_io)
   {
     // Check if the object is a BytesIO object
