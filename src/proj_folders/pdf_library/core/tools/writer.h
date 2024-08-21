@@ -105,7 +105,8 @@ namespace pdf_lib
     void writer::execute(object<DOCUMENT>&         document,			 
 			 container_lib::container& document_container)
     {
-      //std::cout << "\n\t" << __FUNCTION__ << "\t #-pages : " << document.count() << "\n";
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__
+				      << "\t" << __FUNCTION__ << "\t #-pages : " << document.count() << "\n";
 
       document_container.clear();
       document_container.set_object();
@@ -115,11 +116,23 @@ namespace pdf_lib
       
       for(size_t i=0; i<document.count(); i++)
         {
-          object<PAGE>&             page           = document.get_page(i);
-          container_lib::container& page_container = pages[i];
-	  
-	  execute(page, page_container);
-        }
+	  logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__
+					  << "\t" << __FUNCTION__ << " -> writing page " << i;
+
+	  if(document.has_page(i))
+	    {
+	      object<PAGE>&             page           = document.get_page(i);
+	      container_lib::container& page_container = pages[i];
+	      
+	      execute(page, page_container);
+	    }
+	  else
+	    {
+	      pages[i].set_object();
+	      logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__
+					      << "\t" << __FUNCTION__ << " -> page was not initialised";
+	    }
+	}
     }
 
     void writer::execute(object<PAGE>&             page,

@@ -34,6 +34,10 @@ namespace pdf_lib
 
       virtual core::object<PAGE>     & process_page(size_t index = 0) = 0;
       virtual core::object<DOCUMENT> & process_all() = 0;
+
+      virtual int number_of_pages() = 0;
+      virtual core::object<core::DOCUMENT> & process_page_from_document(int page) = 0;
+      
       //*/
     };
   }

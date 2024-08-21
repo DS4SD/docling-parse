@@ -32,10 +32,13 @@ namespace pdf_lib
     public:
 
       parser(core::object<core::DOCUMENT> & object);
-      ~parser();
+      virtual ~parser();
 
       virtual parser & load_document(const std::string file);
 
+      //virtual int set_pages_in_document();
+      virtual int number_of_pages();
+      
       virtual parser & load_buffer(char const* description,
 				   char const* buf,
 				   size_t      length);
@@ -43,6 +46,9 @@ namespace pdf_lib
       virtual core::object<core::PAGE>     & process_page(size_t index = 0);
       virtual core::object<core::DOCUMENT> & process_all();
 
+
+      virtual core::object<core::DOCUMENT> & process_page_from_document(int page);
+      
       virtual void parse();
 
     private:
@@ -75,13 +81,12 @@ namespace pdf_lib
 
       return *this;
     }
-
+    
     parser<core::DOCUMENT> & parser<core::DOCUMENT>::load_buffer(char const* description,
 								 char const* buf,
 								 size_t length)
     {
       logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
-      
       
       try
         {
@@ -98,6 +103,14 @@ namespace pdf_lib
       return *this;
     }
 
+    /*
+    void parser<core::DOCUMENT>::set_pages_in_document()
+    {
+      int numpages = number_of_pages();
+      
+    }
+    */
+    
     void parser<core::DOCUMENT>::parse()
     {
       logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
@@ -133,6 +146,39 @@ namespace pdf_lib
 
       return object();
     }
+
+    int parser<core::DOCUMENT>::number_of_pages()
+    {
+      int cnt=0;
+      for(QPDFObjectHandle handle : _qpdf.getAllPages())
+	{
+	  cnt += 1;
+	}
+
+      return cnt;
+    }
+    
+    core::object<core::DOCUMENT> & parser<core::DOCUMENT>::process_page_from_document(int page)
+    {
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+
+      int cnt=0;
+      for(QPDFObjectHandle handle : _qpdf.getAllPages())
+        {
+	  if(cnt==page)
+	    {
+	      core::object<core::PAGE>& page = object().get_page(cnt);
+	  
+	      parser<core::PAGE> p(handle, page);
+	      p.process_page();
+	    }
+
+	  cnt += 1;
+	}
+
+      return object();
+    }
+    
   }
 }
 

@@ -1,0 +1,2931 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.586508480201206,
+        "/IHRBTF+SFBX1200": 3.251812024500037,
+        "/MHJTWW+SFBX1440": 3.458729084668878,
+        "/OKRMAF+CMR7": 1.376166436910496,
+        "/PXBGHL+CMSY7": 2.194417277070976,
+        "/RQVTRN+SFBX0900": 1.321051630167271,
+        "/TFWOKM+SFRM0900": 2.154131953758106,
+        "/Times-Roman": 8.888000266081244,
+        "/WBODEQ+SFTT0900": 0.3734496976950076,
+        "/YUIILM+SFTI0900": 2.245212350613668
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.611535799775955,
+        "/IHRBTF+SFBX1200": 6.209162307828861,
+        "/MHJTWW+SFBX1440": 8.175638479568333,
+        "/OKRMAF+CMR7": 3.780884036624482,
+        "/PXBGHL+CMSY7": 2.075633540392637,
+        "/RQVTRN+SFBX0900": 5.147311454489641,
+        "/TFWOKM+SFRM0900": 4.287929248034247,
+        "/Times-Roman": 0.4499999887500003,
+        "/WBODEQ+SFTT0900": 4.706463505385288,
+        "/YUIILM+SFTI0900": 4.689038562535339
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 619,
+        "/IHRBTF+SFBX1200": 13,
+        "/MHJTWW+SFBX1440": 66,
+        "/OKRMAF+CMR7": 108,
+        "/PXBGHL+CMSY7": 54,
+        "/RQVTRN+SFBX0900": 18,
+        "/TFWOKM+SFRM0900": 1225,
+        "/Times-Roman": 40,
+        "/WBODEQ+SFTT0900": 40,
+        "/YUIILM+SFTI0900": 67
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/IHRBTF+SFBX1200",
+      "/MHJTWW+SFBX1440",
+      "/OKRMAF+CMR7",
+      "/PXBGHL+CMSY7",
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900",
+      "/Times-Roman",
+      "/WBODEQ+SFTT0900",
+      "/YUIILM+SFTI0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              152.38,
+              666.20203,
+              181.67494,
+              678.88409
+            ],
+            "device": [
+              152.38,
+              663.41888,
+              462.97522,
+              676.10089
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Competition on Robust Layout"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/MHJTWW+SFBX1440",
+            "size": 14.34619998931885
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              172.59,
+              648.26904,
+              225.50308,
+              660.95111
+            ],
+            "device": [
+              172.59,
+              645.4859,
+              442.76047,
+              658.16791
+            ]
+          },
+          "content": {
+            "rnormalized": "Segmentation in Corporate Documents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/MHJTWW+SFBX1440",
+            "size": 14.34619998931885
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              150.18799,
+              613.34802,
+              193.43065,
+              622.14502
+            ],
+            "device": [
+              150.18799,
+              611.41528,
+              218.07912,
+              620.21228
+            ]
+          },
+          "content": {
+            "rnormalized": "Christoph Auer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              218.08398,
+              616.96405,
+              236.22563,
+              623.1568
+            ],
+            "device": [
+              218.08398,
+              615.61115,
+              236.22563,
+              621.80389
+            ]
+          },
+          "content": {
+            "rnormalized": "[0000"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              236.22398,
+              616.96405,
+              242.4509,
+              623.5473
+            ],
+            "device": [
+              236.22398,
+              615.61115,
+              242.4509,
+              622.1944
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              242.45099,
+              616.96405,
+              258.33731,
+              623.1568
+            ],
+            "device": [
+              242.45099,
+              615.61115,
+              258.33731,
+              621.80389
+            ]
+          },
+          "content": {
+            "rnormalized": "0001"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              258.336,
+              616.96405,
+              264.5629,
+              623.5473
+            ],
+            "device": [
+              258.336,
+              615.61115,
+              264.5629,
+              622.1944
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              264.56201,
+              616.96405,
+              280.44833,
+              623.1568
+            ],
+            "device": [
+              264.56201,
+              615.61115,
+              280.44833,
+              621.80389
+            ]
+          },
+          "content": {
+            "rnormalized": "5761"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              280.44702,
+              616.96405,
+              286.67392,
+              623.5473
+            ],
+            "device": [
+              280.44702,
+              615.61115,
+              286.67392,
+              622.1944
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              286.67401,
+              616.96405,
+              304.81564,
+              623.1568
+            ],
+            "device": [
+              286.67401,
+              611.41528,
+              393.31363,
+              620.21228
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{0422]}$, Ahmed Nassar[0000"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              393.31299,
+              616.96405,
+              399.53989,
+              623.5473
+            ],
+            "device": [
+              393.31299,
+              615.61115,
+              399.53989,
+              622.1944
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.539,
+              616.96405,
+              415.42532,
+              623.1568
+            ],
+            "device": [
+              399.539,
+              615.61115,
+              415.42532,
+              621.80389
+            ]
+          },
+          "content": {
+            "rnormalized": "0002"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              415.42401,
+              616.96405,
+              421.65091,
+              623.5473
+            ],
+            "device": [
+              415.42401,
+              615.61115,
+              421.65091,
+              622.1944
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              421.651,
+              616.96405,
+              437.53732,
+              623.1568
+            ],
+            "device": [
+              421.651,
+              615.61115,
+              437.53732,
+              621.80389
+            ]
+          },
+          "content": {
+            "rnormalized": "9468"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              437.53601,
+              616.96405,
+              443.76291,
+              623.5473
+            ],
+            "device": [
+              437.53601,
+              615.61115,
+              443.76291,
+              622.1944
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              443.76202,
+              616.96405,
+              461.90366,
+              623.1568
+            ],
+            "device": [
+              443.76202,
+              611.41528,
+              465.16763,
+              620.21228
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{0822]}$,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.40704,
+              601.39301,
+              191.2597,
+              610.19
+            ],
+            "device": [
+              154.40704,
+              599.46027,
+              220.22498,
+              608.25726
+            ]
+          },
+          "content": {
+            "rnormalized": "Maksym Lysak"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              220.22804,
+              605.008,
+              238.36969,
+              611.20074
+            ],
+            "device": [
+              220.22804,
+              603.65509,
+              238.36969,
+              609.84784
+            ]
+          },
+          "content": {
+            "rnormalized": "[0000"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.36804,
+              605.008,
+              244.59496,
+              611.59125
+            ],
+            "device": [
+              238.36804,
+              603.65509,
+              244.59496,
+              610.23834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.59505,
+              605.008,
+              260.48135,
+              611.20074
+            ],
+            "device": [
+              244.59505,
+              603.65509,
+              260.48135,
+              609.84784
+            ]
+          },
+          "content": {
+            "rnormalized": "0002"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              260.48004,
+              605.008,
+              266.70694,
+              611.59125
+            ],
+            "device": [
+              260.48004,
+              603.65509,
+              266.70694,
+              610.23834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              266.70605,
+              605.008,
+              282.59238,
+              611.20074
+            ],
+            "device": [
+              266.70605,
+              603.65509,
+              282.59238,
+              609.84784
+            ]
+          },
+          "content": {
+            "rnormalized": "3723"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              282.59106,
+              605.008,
+              288.81796,
+              611.59125
+            ],
+            "device": [
+              282.59106,
+              603.65509,
+              288.81796,
+              610.23834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              288.81805,
+              605.008,
+              306.95969,
+              611.20074
+            ],
+            "device": [
+              288.81805,
+              599.46027,
+              389.0947,
+              608.25726
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{6960]}$, Michele Dolfi[0000"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              389.09308,
+              605.008,
+              395.31998,
+              611.59125
+            ],
+            "device": [
+              389.09308,
+              603.65509,
+              395.31998,
+              610.23834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.32007,
+              605.008,
+              411.20639,
+              611.20074
+            ],
+            "device": [
+              395.32007,
+              603.65509,
+              411.20639,
+              609.84784
+            ]
+          },
+          "content": {
+            "rnormalized": "0001"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              411.20508,
+              605.008,
+              417.43198,
+              611.59125
+            ],
+            "device": [
+              411.20508,
+              603.65509,
+              417.43198,
+              610.23834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              417.43207,
+              605.008,
+              433.31839,
+              611.20074
+            ],
+            "device": [
+              417.43207,
+              603.65509,
+              433.31839,
+              609.84784
+            ]
+          },
+          "content": {
+            "rnormalized": "7216"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              433.31607,
+              605.008,
+              439.54297,
+              611.59125
+            ],
+            "device": [
+              433.31607,
+              603.65509,
+              439.54297,
+              610.23834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              439.54306,
+              605.008,
+              457.68469,
+              611.20074
+            ],
+            "device": [
+              439.54306,
+              599.46027,
+              460.94867,
+              608.25726
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{8505]}$,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              140.13107,
+              589.43799,
+              155.62491,
+              598.23499
+            ],
+            "device": [
+              140.13107,
+              587.50525,
+              225.59525,
+              596.30225
+            ]
+          },
+          "content": {
+            "rnormalized": "Nikolaos Livathinos"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              225.59506,
+              593.05298,
+              243.73671,
+              599.24573
+            ],
+            "device": [
+              225.59506,
+              591.70007,
+              243.73671,
+              597.89282
+            ]
+          },
+          "content": {
+            "rnormalized": "[0000"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              243.73607,
+              593.05298,
+              249.96298,
+              599.63623
+            ],
+            "device": [
+              243.73607,
+              591.70007,
+              249.96298,
+              598.28333
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              249.96207,
+              593.05298,
+              265.84839,
+              599.24573
+            ],
+            "device": [
+              249.96207,
+              591.70007,
+              265.84839,
+              597.89282
+            ]
+          },
+          "content": {
+            "rnormalized": "0001"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              265.84708,
+              593.05298,
+              272.07397,
+              599.63623
+            ],
+            "device": [
+              265.84708,
+              591.70007,
+              272.07397,
+              598.28333
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.07407,
+              593.05298,
+              287.96039,
+              599.24573
+            ],
+            "device": [
+              272.07407,
+              591.70007,
+              287.96039,
+              597.89282
+            ]
+          },
+          "content": {
+            "rnormalized": "8513"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              287.95908,
+              593.05298,
+              294.18597,
+              599.63623
+            ],
+            "device": [
+              287.95908,
+              591.70007,
+              294.18597,
+              598.28333
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              294.18509,
+              593.05298,
+              312.32672,
+              599.24573
+            ],
+            "device": [
+              294.18509,
+              587.50525,
+              406.13773,
+              596.30225
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{3491]}$, and Peter Staar[0000"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              406.13611,
+              593.05298,
+              412.36301,
+              599.63623
+            ],
+            "device": [
+              406.13611,
+              591.70007,
+              412.36301,
+              598.28333
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              412.3631,
+              593.05298,
+              428.24942,
+              599.24573
+            ],
+            "device": [
+              412.3631,
+              591.70007,
+              428.24942,
+              597.89282
+            ]
+          },
+          "content": {
+            "rnormalized": "0002"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              428.24811,
+              593.05298,
+              434.47501,
+              599.63623
+            ],
+            "device": [
+              428.24811,
+              591.70007,
+              434.47501,
+              598.28333
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              434.47412,
+              593.05298,
+              450.36044,
+              599.24573
+            ],
+            "device": [
+              434.47412,
+              591.70007,
+              450.36044,
+              597.89282
+            ]
+          },
+          "content": {
+            "rnormalized": "8088"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              450.35913,
+              593.05298,
+              456.58603,
+              599.63623
+            ],
+            "device": [
+              450.35913,
+              591.70007,
+              456.58603,
+              598.28333
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/PXBGHL+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              456.58612,
+              593.05298,
+              474.72775,
+              599.24573
+            ],
+            "device": [
+              456.58612,
+              591.70007,
+              474.72775,
+              597.89282
+            ]
+          },
+          "content": {
+            "rnormalized": "0823]"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/OKRMAF+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              279.1051,
+              568.55701,
+              297.40015,
+              576.62677
+            ],
+            "device": [
+              279.1051,
+              566.61133,
+              336.25153,
+              574.68103
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM Research"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              213.55411,
+              557.599,
+              293.564,
+              565.06799
+            ],
+            "device": [
+              213.55411,
+              555.60846,
+              401.80368,
+              563.07745
+            ]
+          },
+          "content": {
+            "rnormalized": "{cau,ahn,mly,dol,nli,taa}@zurich.ibm.com"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              514.48602,
+              206.63582,
+              522.41229
+            ],
+            "device": [
+              163.11111,
+              512.74652,
+              206.63582,
+              520.67285
+            ]
+          },
+          "content": {
+            "rnormalized": "Abstract."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              211.61711,
+              514.48602,
+              218.27107,
+              522.55579
+            ],
+            "device": [
+              211.61711,
+              512.54034,
+              452.24484,
+              520.61005
+            ]
+          },
+          "content": {
+            "rnormalized": "Transforming documents into machine-processable represen-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              503.52704,
+              190.80205,
+              511.5968
+            ],
+            "device": [
+              163.11111,
+              501.58133,
+              452.24713,
+              509.65109
+            ]
+          },
+          "content": {
+            "rnormalized": "tations is a challenging task due to their complex structures and variabil-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              492.56805,
+              169.2531,
+              500.63782
+            ],
+            "device": [
+              163.11111,
+              490.62234,
+              452.2435,
+              498.69211
+            ]
+          },
+          "content": {
+            "rnormalized": "ity in formats. Recovering the layout structure and content from PDF"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              481.60907,
+              178.52077,
+              489.67883
+            ],
+            "device": [
+              163.11111,
+              479.66336,
+              452.24884,
+              487.73312
+            ]
+          },
+          "content": {
+            "rnormalized": "files or scanned material has remained a key problem for decades. IC-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              470.65009,
+              170.14795,
+              478.71985
+            ],
+            "device": [
+              163.11111,
+              468.70438,
+              452.24075,
+              476.77414
+            ]
+          },
+          "content": {
+            "rnormalized": "DAR has a long tradition in hosting competitions to benchmark the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              459.6911,
+              223.84503,
+              467.76086
+            ],
+            "device": [
+              163.11111,
+              457.74539,
+              452.24075,
+              465.81516
+            ]
+          },
+          "content": {
+            "rnormalized": "state-of-the-art and encourage the development of novel solutions to doc-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              448.73212,
+              185.12363,
+              456.80188
+            ],
+            "device": [
+              163.11111,
+              446.78641,
+              452.2435,
+              454.85617
+            ]
+          },
+          "content": {
+            "rnormalized": "ument layout understanding. In this report, we present the results of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              437.77313,
+              176.43967,
+              445.8429
+            ],
+            "device": [
+              163.11111,
+              435.82742,
+              176.43967,
+              443.89719
+            ]
+          },
+          "content": {
+            "rnormalized": "our"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              180.01511,
+              437.77313,
+              197.0943,
+              445.69046
+            ],
+            "device": [
+              180.01511,
+              436.03366,
+              452.2449,
+              443.95099
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Competition on Robust Layout Segmentation in Cor-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YUIILM+SFTI0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              426.81512,
+              167.81488,
+              434.73245
+            ],
+            "device": [
+              163.11111,
+              425.07565,
+              234.8423,
+              432.99298
+            ]
+          },
+          "content": {
+            "rnormalized": "porate Documents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YUIILM+SFTI0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              234.84512,
+              426.81512,
+              237.40413,
+              434.88489
+            ],
+            "device": [
+              234.84512,
+              424.86942,
+              452.24789,
+              432.93918
+            ]
+          },
+          "content": {
+            "rnormalized": ", which posed the challenge to accurately segment the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              415.85614,
+              181.54155,
+              423.9259
+            ],
+            "device": [
+              163.11111,
+              413.91043,
+              452.24875,
+              421.98019
+            ]
+          },
+          "content": {
+            "rnormalized": "page layout in a broad range of document styles and domains, includ-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              404.89716,
+              175.39508,
+              412.96692
+            ],
+            "device": [
+              163.11111,
+              402.95145,
+              452.2442,
+              411.02121
+            ]
+          },
+          "content": {
+            "rnormalized": "ing corporate reports, technical literature and patents. To raise the bar"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              393.93817,
+              167.71805,
+              402.00793
+            ],
+            "device": [
+              163.11111,
+              391.99246,
+              452.24161,
+              400.06223
+            ]
+          },
+          "content": {
+            "rnormalized": "over previous competitions, we engineered a hard competition dataset"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              382.97919,
+              177.95409,
+              391.04895
+            ],
+            "device": [
+              163.11111,
+              381.03348,
+              452.24878,
+              389.10324
+            ]
+          },
+          "content": {
+            "rnormalized": "and proposed the recent DocLayNet dataset for training. We recorded"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              372.0202,
+              172.32498,
+              380.08997
+            ],
+            "device": [
+              163.11111,
+              370.07449,
+              172.11711,
+              378.14426
+            ]
+          },
+          "content": {
+            "rnormalized": "45"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              372.0202,
+              172.32498,
+              380.08997
+            ],
+            "device": [
+              176.6201,
+              370.07449,
+              452.24075,
+              378.14426
+            ]
+          },
+          "content": {
+            "rnormalized": "team registrations and received official submissions from 21 teams."
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              361.06122,
+              171.55478,
+              369.13098
+            ],
+            "device": [
+              163.11111,
+              359.11551,
+              452.24524,
+              367.18527
+            ]
+          },
+          "content": {
+            "rnormalized": "In the presented solutions, we recognize interesting combinations of re-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              350.10223,
+              176.42264,
+              358.172
+            ],
+            "device": [
+              163.11111,
+              348.15652,
+              452.24243,
+              356.22629
+            ]
+          },
+          "content": {
+            "rnormalized": "cent computer vision models, data augmentation strategies and ensemble"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              339.14325,
+              188.19551,
+              347.21301
+            ],
+            "device": [
+              163.11111,
+              337.19754,
+              452.24066,
+              345.2673
+            ]
+          },
+          "content": {
+            "rnormalized": "methods to achieve remarkable accuracy in the task we posed. A clear"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              328.18427,
+              184.63226,
+              336.25403
+            ],
+            "device": [
+              163.11111,
+              326.23856,
+              452.24802,
+              334.30832
+            ]
+          },
+          "content": {
+            "rnormalized": "trend towards adoption of vision-transformer based methods is evident."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              317.22626,
+              178.98164,
+              325.29602
+            ],
+            "device": [
+              163.11111,
+              315.28055,
+              452.24698,
+              323.35031
+            ]
+          },
+          "content": {
+            "rnormalized": "The results demonstrate substantial progress towards achieving robust"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              306.26727,
+              177.95409,
+              314.33704
+            ],
+            "device": [
+              163.11111,
+              304.32156,
+              441.22192,
+              312.39133
+            ]
+          },
+          "content": {
+            "rnormalized": "and highly generalizing methods for document layout understanding."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11111,
+              284.06027,
+              189.536,
+              291.98657
+            ],
+            "device": [
+              163.11111,
+              282.3208,
+              211.94212,
+              290.2471
+            ]
+          },
+          "content": {
+            "rnormalized": "Keywords:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              216.55212,
+              284.06027,
+              228.19589,
+              292.13004
+            ],
+            "device": [
+              216.55212,
+              282.11456,
+              452.24512,
+              290.18433
+            ]
+          },
+          "content": {
+            "rnormalized": "Document Layout Analysis \u00b7 Machine Learning \u00b7 Computer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.11113,
+              273.10226,
+              188.4968,
+              281.17203
+            ],
+            "device": [
+              163.11113,
+              271.15656,
+              359.07333,
+              279.22632
+            ]
+          },
+          "content": {
+            "rnormalized": "Vision \u00b7 Object Detection \u00b7 ICDAR Competition"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              238.11627,
+              141.48874,
+              248.68466
+            ],
+            "device": [
+              134.76514,
+              235.79697,
+              141.48874,
+              246.36536
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.93834,
+              238.11627,
+              167.41599,
+              248.68466
+            ],
+            "device": [
+              154.93834,
+              235.79697,
+              228.93385,
+              246.36536
+            ]
+          },
+          "content": {
+            "rnormalized": "Introduction"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              212.76427,
+              147.35388,
+              221.56125
+            ],
+            "device": [
+              134.76514,
+              210.83153,
+              480.5889,
+              219.62849
+            ]
+          },
+          "content": {
+            "rnormalized": "Document understanding is a key business process in the data-driven economy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              200.80927,
+              155.84599,
+              209.60625
+            ],
+            "device": [
+              134.76514,
+              198.87653,
+              480.59186,
+              207.67349
+            ]
+          },
+          "content": {
+            "rnormalized": "since documents are central to knowledge discovery and business insights. Con-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              188.85426,
+              140.0224,
+              197.65125
+            ],
+            "device": [
+              134.76514,
+              186.92152,
+              480.59393,
+              195.71849
+            ]
+          },
+          "content": {
+            "rnormalized": "verting documents into a machine-processable format is a particular challenge"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              176.89827,
+              150.25798,
+              185.69525
+            ],
+            "device": [
+              134.76514,
+              174.96553,
+              480.59094,
+              183.7625
+            ]
+          },
+          "content": {
+            "rnormalized": "due to their huge variability in formats and complex structure. Recovering the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              164.94327,
+              142.51205,
+              173.74025
+            ],
+            "device": [
+              134.76514,
+              163.01053,
+              480.59094,
+              171.8075
+            ]
+          },
+          "content": {
+            "rnormalized": "layout structure and content from either PDF files or scanned material has re-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              152.98827,
+              166.30473,
+              161.78525
+            ],
+            "device": [
+              134.76514,
+              151.05553,
+              480.58679,
+              159.85249
+            ]
+          },
+          "content": {
+            "rnormalized": "mained a key problem since decades, and is as relevant-as-ever today. One can"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              141.03326,
+              151.36482,
+              149.83025
+            ],
+            "device": [
+              134.76514,
+              139.10052,
+              480.59381,
+              147.89749
+            ]
+          },
+          "content": {
+            "rnormalized": "find vast amounts of approaches and solutions to this task [7,11,18,14,15,16],"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76514,
+              129.07826,
+              145.27867,
+              137.87524
+            ],
+            "device": [
+              134.76514,
+              127.14552,
+              480.59088,
+              135.94249
+            ]
+          },
+          "content": {
+            "rnormalized": "all of which are constrained to different degrees in the domains and document"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 90,
+          "box": {
+            "baseline": [
+              14.000223,
+              231.99997,
+              31.999775,
+              587.52002
+            ],
+            "device": [
+              18.340225,
+              231.99997,
+              36.339779,
+              587.52002
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv:2305.14962v1 [cs.CV] 24 May 2023"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/Times-Roman",
+            "size": 20
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "ignored-cells": [],
+      "images": [],
+      "paths": [],
+      "width": 612
+    }
+  ]
+}

@@ -13,11 +13,24 @@ PYBIND11_MODULE(docling_parse, m) {
   
   pybind11::class_<docling::docling_parser>(m, "pdf_parser")
     .def(pybind11::init())
+
     .def("set_loglevel", &docling::docling_parser::set_loglevel)
+
+    .def("unload_documents", &docling::docling_parser::unload_documents)
+
     .def("find_cells",
 	 pybind11::overload_cast<std::string>(&docling::docling_parser::find_cells),
-	 "parse pdf-document from path into json")
+	 "parse pdf-document from path into json")    
+
     .def("find_cells_from_bytesio",
 	 &docling::docling_parser::find_cells_from_bytesio,
-	 "A function to read a BytesIO object");  
+	 "parse pdf-document from a BytesIO object")
+
+    .def("find_cells_on_page",
+	 &docling::docling_parser::find_cells_on_page,
+	 "parse specific page in pdf-document from path into json")
+
+    .def("find_cells_from_bytesio_on_page",
+	 &docling::docling_parser::find_cells_from_bytesio_on_page,
+	 "parse pdf-document from a BytesIO object for a specific page");
 }

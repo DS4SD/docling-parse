@@ -32,6 +32,8 @@ namespace pdf_lib
 
       object();
 
+      virtual void clear();
+      
       std::vector<float>      get_bbox();
       std::pair<float, float> get_dimensions();
 
@@ -102,6 +104,13 @@ namespace pdf_lib
     object<PAGE>::object():
       object<STREAM>()
     {
+    }
+
+    void object<PAGE>::clear()
+    {
+      _cells.clear();
+      _paths.clear();
+      _images.clear();
     }
     
     std::vector<float> object<PAGE>::get_bbox()

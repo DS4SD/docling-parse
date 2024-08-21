@@ -29,8 +29,15 @@ namespace pdf_lib
     public:
 
       object();
-      ~object();
+      virtual ~object();
 
+      virtual bool has_page(size_t index);
+      
+      virtual void resize_pages(int total_pages);
+      
+      //virtual void clear_page(size_t index);
+      virtual bool delete_page(size_t index);
+      
       virtual object<PAGE>& get_page(size_t index);
       virtual object<PAGE>& get_page();
 
@@ -46,9 +53,9 @@ namespace pdf_lib
 
     private:
 
-      std::vector<core::object<PAGE> *> _pages;
+      std::vector<core::object<PAGE>* > _pages;
 
-      container_lib::container   overview;
+      container_lib::container overview;
     };
 
     object<DOCUMENT>::object()
@@ -58,25 +65,83 @@ namespace pdf_lib
     object<DOCUMENT>::~object()
     {
       for(auto page: _pages)
-	delete page;
+	{
+	  delete page;
+	}
     }
 
+    void object<DOCUMENT>::resize_pages(int total_pages)
+    {
+      _pages.resize(total_pages, NULL);
+    }
+
+    /*
+    void object<DOCUMENT>::clear_page(size_t index)
+    {
+      for(size_t i=0; i<_pages.size(); i++)
+	{
+	  if(i==index and _pages.at(index)!=NULL)
+	    {
+	      delete _pages.at(index);
+	      _pages.at(index) = NULL;
+	    }
+	}
+    }
+    */
+    
+    bool object<DOCUMENT>::has_page(size_t index)
+    {
+      if(index<_pages.size() and _pages.at(index)!=NULL)
+	{
+	  return true;
+	}
+
+      return false;
+    }
+
+    bool object<DOCUMENT>::delete_page(size_t index)
+    {
+      if(index<_pages.size() and _pages.at(index)!=NULL)
+	{
+	  delete _pages.at(index);
+	  _pages.at(index) = NULL;
+	}
+
+      return true;
+    }
+    
     object<PAGE> & object<DOCUMENT>::get_page(size_t index)
     {
+      /*
       if(index < _pages.size())
-        return * _pages.at(index);
-
+	{
+	  return *_pages.at(index);
+	}
+      
       while(_pages.size() < index)
         {
           _pages.push_back(new object<PAGE>());
         }
 
       return get_page();
+      */
+
+      while(_pages.size() < index)
+        {
+          _pages.push_back(NULL);//new object<PAGE>());
+        }
+
+      if(_pages.at(index)==NULL)
+	{
+	  _pages.at(index) = new object<PAGE>();
+	}
+
+      return *_pages.at(index);
     }
 
     object<PAGE> & object<DOCUMENT>::get_page()
     {
-      logging_lib::info("pdf-parser") << "core::object<DOCUMENT>::get_page()";
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
 
       _pages.push_back(new object<PAGE>());
 
