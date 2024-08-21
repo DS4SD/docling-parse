@@ -1,3 +1,9 @@
+## [v0.3.0](https://github.com/DS4SD/docling-parse/releases/tag/v0.3.0) - 2024-08-21
+
+### Feature
+
+* Read page by page ([#7](https://github.com/DS4SD/docling-parse/issues/7)) ([`92e02ec`](https://github.com/DS4SD/docling-parse/commit/92e02ec4c1bdfc3e5cb899de8ea0e3384848560d))
+
 ## [v0.2.0](https://github.com/DS4SD/docling-parse/releases/tag/v0.2.0) - 2024-08-13
 
 ### Feature
