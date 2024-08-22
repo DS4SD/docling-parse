@@ -39,7 +39,7 @@ def build_local(multi_threaded=True):
 
     cmd = f"cmake --build {BUILD_DIR} --target install"
     if multi_threaded:
-        cmd += " -j"
+        cmd += " -j 4"
     success = run(cmd, cwd=ROOT_DIR)
     if not success:
         raise RuntimeError("Error building.")
@@ -47,4 +47,4 @@ def build_local(multi_threaded=True):
 
 if "__main__" == __name__:
 
-    build_local(multi_threaded=True)
+    build_local(multi_threaded=False)
