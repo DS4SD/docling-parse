@@ -1,3 +1,13 @@
+## [v1.0.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.0.0) - 2024-08-22
+
+### Feature
+
+* Adding load/unload from key ([#9](https://github.com/DS4SD/docling-parse/issues/9)) ([`dd122d0`](https://github.com/DS4SD/docling-parse/commit/dd122d0c938e0054d22540949c9ee5b839c34c54))
+
+### Breaking
+
+* adding load/unload from key ([#9](https://github.com/DS4SD/docling-parse/issues/9)) ([`dd122d0`](https://github.com/DS4SD/docling-parse/commit/dd122d0c938e0054d22540949c9ee5b839c34c54))
+
 ## [v0.3.1](https://github.com/DS4SD/docling-parse/releases/tag/v0.3.1) - 2024-08-22
 
 ### Fix
