@@ -725,8 +725,17 @@ namespace pdf_lib
     
     auto& doc = loaded_documents.at(key);
     auto& parser = loaded_parsers.at(key);
-    
-    parser->process_page_from_document(page);
+
+    try
+      {
+	parser->process_page_from_document(page);
+      }
+    catch (...)
+      {
+        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+					 << " error with process_page_from_document";
+	return false;
+      }
     
     try
       {
@@ -739,7 +748,7 @@ namespace pdf_lib
     catch (...)
       {
         logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
-                                         << "\t ERROR in conversion pdf_lib::core::DOCUMENT --> container !!\n";
+                                         << " ERROR in conversion pdf_lib::core::DOCUMENT --> container !!\n";
         return false;
       }
 

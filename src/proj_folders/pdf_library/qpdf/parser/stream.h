@@ -417,14 +417,30 @@ namespace pdf_lib
 	{
 	  std::string op = object.getOperatorValue();
 
-	  std::regex expr("[0-9]+\\.?[0-9]*?");
-	  if(std::regex_match(op, expr))
+	  std::regex expr_01("[0-9]+\\.?[0-9]*?");
+	  if(std::regex_match(op, expr_01))
 	    {
 	      std::string::size_type sz;
 	      float value = std::stof(op, &sz);
 
 	      return value;
 	    }
+
+	  std::regex expr_02("([0-9]+\\.[0-9]+)\\-([0-9]+)");
+	  std::smatch match;
+	  if(std::regex_match(op, match, expr_02))
+	    {
+	      logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__
+					      << "\t--> re-identified " << op << " as parameter with value: "
+					      << match[1].str();
+	      
+	      std::string tmp = match[1].str();
+	      
+	      std::string::size_type sz;
+	      float value = std::stof(tmp, &sz);
+
+	      return value;
+	    }	  
 	}
       else
 	{
@@ -432,6 +448,9 @@ namespace pdf_lib
 	  return value;
 	}
 
+      logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__
+				       << "could not interprete a parameter correctly!";
+      
       return 0;
     }
 
@@ -557,8 +576,9 @@ namespace pdf_lib
 	    // FIXME: QPDF sees numbers sometimes as operators. This is clearly wrong.
 	    // With this trick, we try to circumvent the problem. The clean fix however 
 	    // is to fix the QPDF-library
-	    std::regex expr("\\-?[0-9]+\\.?[0-9]*?");
-	    if(std::regex_match(op, expr))
+	    std::regex expr_01("\\-?[0-9]+\\.?[0-9]*?");
+
+	    if(std::regex_match(op, expr_01))
 	      {
 		logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__
 						<< "\t--> re-identified as parameter!";
@@ -567,6 +587,19 @@ namespace pdf_lib
 	      }
 	  }
 
+	  // weird parameter of shape: \d\.\d+\-\d+ (eg 0.00-80)
+	  {
+	    std::regex expr_01("([0-9]+\\.[0-9]+)\\-([0-9]+)");
+	    std::smatch match;
+	    if(std::regex_match(op, match, expr_01))
+	      {
+		logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__
+						<< "\t--> re-identified " << op << "as parameter";
+		_parameters.push_back(object);
+		return;
+	      }
+	  }
+	  
 	  // Deal with cases such as `Do1`, where an operator and parameter are "glued" together ...
 	  
 	  std::string val="null";
@@ -575,10 +608,12 @@ namespace pdf_lib
 	      logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
 					      << "unknown operator: " << op;
 	      
-	      std::regex expr("([A-Za-z]+)(\\-?[0-9]+\\.?[0-9]*?)");
+	      std::regex expr_01("([A-Za-z]+)(\\-?[0-9]+\\.?[0-9]*?)"); // concatenated operator-parameter
+	      //std::regex expr_02("(\d+\.\d+)\-(\d+)"); 
+
 	      std::smatch match;
 
-	      if(std::regex_match(op, match, expr))
+	      if(std::regex_match(op, match, expr_01))
 		{
 		  std::string op_ = match[1].str();
 		  std::string val_ = match[2].str();
