@@ -691,7 +691,23 @@ namespace pdf_lib
     auto& parser = loaded_parsers.at(key);
 
     doc->resize_pages(0);
-    parser->process_all();
+    try
+      {
+	parser->process_all();
+      }
+    catch (const std::exception& e)  // Catch standard exceptions
+      {
+	logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+					 << " error with process_page_from_document: "
+					 << e.what();
+	return false;
+      }
+    catch (...)  // Catch any other types of exceptions
+      {
+	logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+					 << " unknown error with process_page_from_document";
+	return false;
+      }
     
     try
       {
@@ -725,8 +741,24 @@ namespace pdf_lib
     
     auto& doc = loaded_documents.at(key);
     auto& parser = loaded_parsers.at(key);
-    
-    parser->process_page_from_document(page);
+
+    try
+      {
+	parser->process_page_from_document(page);
+      }
+    catch (const std::exception& e)  // Catch standard exceptions
+      {
+	logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+					 << " error with process_page_from_document: "
+					 << e.what();
+	return false;
+      }    
+    catch (...)
+      {
+        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+					 << " error with process_page_from_document";
+	return false;
+      }
     
     try
       {
@@ -739,7 +771,7 @@ namespace pdf_lib
     catch (...)
       {
         logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
-                                         << "\t ERROR in conversion pdf_lib::core::DOCUMENT --> container !!\n";
+                                         << " ERROR in conversion pdf_lib::core::DOCUMENT --> container !!\n";
         return false;
       }
 
@@ -755,10 +787,18 @@ namespace pdf_lib
 
     pdf_lib::core::object<pdf_lib::core::DOCUMENT> doc;
 
-    {
-      pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> parser(doc);
-      parser.load_document(filename).process_all();
-    }
+    try
+      {
+	pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> parser(doc);
+	parser.load_document(filename).process_all();
+      }
+    catch (const std::exception& e)  // Catch standard exceptions
+      {
+	logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__
+					 << " error with process_page_from_document: "
+					 << e.what();
+	return false;
+      }
 
     try
       {
