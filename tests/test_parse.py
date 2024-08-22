@@ -35,6 +35,7 @@ def verify_reference_output(true_doc, pred_doc):
     
     return True    
 
+"""
 def test_reference_documents_from_filenames():
 
     parser = docling_parse.pdf_parser()
@@ -57,7 +58,9 @@ def test_reference_documents_from_filenames():
                 true_doc = json.load(fr)
 
             assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
+"""
 
+"""
 def test_reference_documents_from_filenames_page_by_page():
 
     parser = docling_parse.pdf_parser()
@@ -83,7 +86,8 @@ def test_reference_documents_from_filenames_page_by_page():
                     true_doc = json.load(fr)
 
                 assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"            
-            
+"""
+
 def test_reference_documents_from_filenames_with_keys():
 
     parser = docling_parse.pdf_parser()
@@ -121,8 +125,8 @@ def test_reference_documents_from_filenames_with_keys():
             with open(pdf_doc+".json", "r") as fr:
                 true_doc = json.load(fr)
 
-            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"            
-
+            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
+            
 def test_reference_documents_from_filenames_with_keys_page_by_page():
 
     parser = docling_parse.pdf_parser()
@@ -168,7 +172,8 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
 
         keys = parser.list_loaded_keys()
         assert len(keys)==0, "len(keys)==0"
-                                                
+
+"""
 def test_reference_documents_from_bytesio():
 
     parser = docling_parse.pdf_parser()
@@ -198,7 +203,10 @@ def test_reference_documents_from_bytesio():
             with open(pdf_doc+".json", "r") as fr:
                 true_doc = json.load(fr)
 
-            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"                                    
+            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
+"""
+
+"""
 def test_reference_documents_from_bytesio_page_by_page():
 
     parser = docling_parse.pdf_parser()
@@ -232,7 +240,8 @@ def test_reference_documents_from_bytesio_page_by_page():
                     true_doc = json.load(fr)
 
                 assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
-                
+"""
+
 def test_reference_documents_from_bytesio_with_keys():
 
     parser = docling_parse.pdf_parser()
@@ -272,8 +281,7 @@ def test_reference_documents_from_bytesio_with_keys():
             with open(pdf_doc+".json", "r") as fr:
                 true_doc = json.load(fr)
 
-            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"            
-                
+            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"                        
 def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
     parser = docling_parse.pdf_parser()

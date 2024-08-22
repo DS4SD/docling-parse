@@ -2,10 +2,11 @@ import argparse
 import io
 import os
 
+from tabulate import tabulate
+
 # from docling_parse.docling_parse import pdf_parser
 import docling_parse
 from docling_parse import pdf_parser
-
 
 def main():
     # Create the argument parser
@@ -28,6 +29,65 @@ def main():
     # Print the path to the PDF file (or add your processing logic here)
 
     parser = docling_parse.pdf_parser()
+
+    doc_file = args.pdf # filename
+    doc_key = f"key={args.pdf}" # unique document key (eg hash, UUID, etc)
+    
+    # Load the document
+    success = parser.load_document(doc_key, doc_file)
+    
+    # Get number of pages
+    num_pages = parser.number_of_pages(doc_key)
+
+    # Parse page by page to minimize memory footprint
+    for page in range(0, num_pages):
+        json_doc = parser.find_cells_from_key_on_page(doc_key, page)
+        json_page = json_doc["pages"][0]
+        
+        page_dimensions = [
+            json_page["dimensions"]["width"],
+            json_page["dimensions"]["height"]]
+        
+        # find text cells
+        cells=[]
+        for cell_id,cell in enumerate(json_page["cells"]):
+    	    cells.append([page,
+	                  cell_id,
+		          cell["content"]["rnormalized"], # text
+	                  cell["box"]["device"][0], # x0 (lower left x)
+		          cell["box"]["device"][1], # y0 (lower left y)
+		          cell["box"]["device"][2], # x1 (upper right x)
+		          cell["box"]["device"][3], # y1 (upper right y)	
+		          ])
+
+        print(f"cells of page: {page}")
+        print(tabulate(cells, headers=["page", "cell-id", "text",
+                                       "x0", "y0", "x1", "y1"]))
+            
+        # find bitmap images
+        images=[]
+        for image_id,image in enumerate(json_page["images"]):
+    	    images.append([page,
+	                   image_id,
+	                   image["box"][0], # x0 (lower left x)
+		           image["box"][1], # y0 (lower left y)
+		           image["box"][2], # x1 (upper right x)
+		           image["box"][3], # y1 (upper right y)
+		           ])
+
+        # find paths
+        paths=[]
+        for path_id,path in enumerate(json_page["paths"]):
+    	    paths.append([page,
+	                  path_id,
+	                  path["x-values"], # array of x values
+	                  path["y-values"], # array of y values
+		          ])
+                         
+    # Unload the document
+    parser.unload_document(doc_key)    
+    
+    """
     doc = parser.find_cells(args.pdf)
 
     # print(json.dumps(data, indent=2))
@@ -55,6 +115,7 @@ def main():
         for j, cell in enumerate(page["cells"]):
             print(i, "\t", j, "\t", cell["content"]["rnormalized"])
 
-
+    """
+    
 if __name__ == "__main__":
     main()

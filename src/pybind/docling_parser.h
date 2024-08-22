@@ -51,6 +51,7 @@ namespace docling
     nlohmann::json find_cells_from_key_on_page(std::string key, int page);
 
     // to be deprecated
+    /*
     nlohmann::json get_raw(std::string path);
     
     nlohmann::json find_cells(std::string path);
@@ -61,6 +62,7 @@ namespace docling
 
     nlohmann::json find_cells_from_bytesio_on_page(pybind11::object bytes_io,
 						   int page);
+    */
     
   private:
 
@@ -71,15 +73,7 @@ namespace docling
     docling_resources(),
     interface()
   {
-    //std::string font_data_dir = PDF_DATA_DIR;
-
     std::string font_data_dir = resource_utils::get_resources_dir(true);
-
-    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-    //<< "using default font-data path : " << font_data_dir;
-
-    //std::cout << __FILE__ << ":" << __LINE__ << "\t"
-    //<< "using default font-data path : " << font_data_dir << "\n";
 
     pdf_lib::core::object<pdf_lib::core::FONT>::initialize(font_data_dir);
   }
@@ -166,13 +160,15 @@ namespace docling
   {
     return interface.number_of_pages(key);
   }
-  
+
+  /*
   nlohmann::json docling_parser::get_raw(std::string path)
   {
     nlohmann::json data;// = nlohmann::json::parse(result);
     return data;
   }
-
+  */
+  
   nlohmann::json docling_parser::find_cells_from_key(std::string key)
   {
     container_lib::container doc_raw;
@@ -267,7 +263,7 @@ namespace docling
 
 
   // to be deprecated
-  
+  /*  
   nlohmann::json docling_parser::find_cells(std::string path)
   {
     container_lib::container doc_raw;
@@ -307,7 +303,9 @@ namespace docling
     nlohmann::json data = nlohmann::json::parse(result);
     return data;
   }
+  */
 
+  /*
   nlohmann::json docling_parser::find_cells_on_page(std::string path, int page)
   {
     container_lib::container doc_raw;
@@ -359,7 +357,9 @@ namespace docling
     nlohmann::json data = nlohmann::json::parse(result);
     return data;
   }
-  
+  */
+
+  /*
   nlohmann::json docling_parser::find_cells_from_bytesio(pybind11::object bytes_io)
   {
     // Check if the object is a BytesIO object
@@ -419,7 +419,9 @@ namespace docling
     nlohmann::json output = nlohmann::json::parse(result);
     return output;
   }
+  */
 
+  /*
   nlohmann::json docling_parser::find_cells_from_bytesio_on_page(pybind11::object bytes_io, int page)
   {
     // Check if the object is a BytesIO object
@@ -491,6 +493,7 @@ namespace docling
     nlohmann::json output = nlohmann::json::parse(result);
     return output;
   }
+  */
   
 }
 

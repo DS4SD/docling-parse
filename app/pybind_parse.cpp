@@ -29,12 +29,12 @@ PYBIND11_MODULE(docling_parse, m) {
 
     .def("find_cells_from_key",
 	 pybind11::overload_cast<std::string>(&docling::docling_parser::find_cells_from_key),
-	 "parse pdf-document from path into json")    
+	 "parse pdf-document using doc-key into json")    
 
     .def("find_cells_from_key_on_page",
 	 &docling::docling_parser::find_cells_from_key_on_page,
-	 "parse specific page in pdf-document from path into json")
-    
+	 "parse specific page in pdf-document using doc-key from path into json")
+    /*
     .def("find_cells",
 	 pybind11::overload_cast<std::string>(&docling::docling_parser::find_cells),
 	 "parse pdf-document from path into json")    
@@ -49,5 +49,6 @@ PYBIND11_MODULE(docling_parse, m) {
 
     .def("find_cells_from_bytesio_on_page",
 	 &docling::docling_parser::find_cells_from_bytesio_on_page,
-	 "parse pdf-document from a BytesIO object for a specific page");
+	 "parse pdf-document from a BytesIO object for a specific page")*/
+    ;
 }

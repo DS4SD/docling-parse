@@ -21,15 +21,69 @@ pip install docling-parse
 
 Convert a PDF
 
-```sh
+```python
 from docling_parse.docling_parse import pdf_parser
 
+# Do this only once to load fonts (avoid initialising it many times)
 parser = pdf_parser()
-doc = parser.find_cells("mydoc.pdf")
 
-for i, page in enumerate(doc["pages"]):
-    for j, cell in enumerate(page["cells"]):
-        print(i, "\t", j, "\t", cell["content"]["rnormalized"])
+doc_file = "my-doc.pdf" # filename
+doc_key = f"key={pdf_doc}" # unique document key (eg hash, UUID, etc)
+
+# Load the document from file using filename doc_file
+success = parser.load_document(doc_key, doc_file)
+
+# Open the file in binary mode and read its contents
+# with open(pdf_doc, "rb") as file:
+#      file_content = file.read()
+
+# Create a BytesIO object and write the file contents to it
+# bytes_io = io.BytesIO(file_content)
+# success = parser.load_document_from_bytesio(doc_key, bytes_io)
+
+# Get number of pages
+num_pages = parser.number_of_pages(doc_key)
+
+# Parse page by page to minimize memory footprint
+for page in range(0, num_pages):
+    json_page = parser.find_cells_from_key_on_page(doc_key, page)
+
+    page_dimensions = [json_page["dimensions"]["width"], json_page["dimensions"]["height"]]
+
+    # find text cells
+    cells=[]
+    for cell_id,cell in enumerate(json_page["cells"]):
+    	cells.append([page,
+	              cell_id,
+		      cell["content"]["rnormalized"], # text
+	              cell["box"]["device"][0], # x0 (lower left x)
+		      cell["box"]["device"][1], # y0 (lower left y)
+		      cell["box"]["device"][2], # x1 (upper right x)
+		      cell["box"]["device"][3], # y1 (upper right y)	
+		      ])
+
+    # find bitmap images
+    images=[]
+    for image_id,image in enumerate(json_page["images"]):
+    	images.append([page,
+	               image_id,
+	               image["box"][0], # x0 (lower left x)
+		       image["box"][1], # y0 (lower left y)
+		       image["box"][2], # x1 (upper right x)
+		       image["box"][3], # y1 (upper right y)
+		       ])
+
+    # find paths
+    paths=[]
+    for path_id,path in enumerate(json_page["paths"]):
+    	paths.append([page,
+	              path_id,
+	              path["x-values"], # array of x values
+	              path["y-values"], # array of y values
+		      ])
+
+# Unload the document
+parser.unload_document(doc_key)
 ```
 
 Use the CLI
