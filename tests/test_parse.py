@@ -108,7 +108,7 @@ def test_reference_documents_from_filenames_with_keys():
         assert len(keys)==1, "len(keys)==1"
         
         #print(" => find_cells_from_key ...")
-        pred_doc = parser.find_cells_from_key(doc_key)
+        pred_doc = parser.parse_pdf_from_key(doc_key)
         
         #print(" => unload_document ...")
         parser.unload_document(doc_key)
@@ -154,7 +154,7 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
             fname = f"{pdf_doc}_p={page}.json"
             #print(f"testing {fname}")
 
-            pred_doc = parser.find_cells_from_key_on_page(doc_key, page)
+            pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
             if GENERATE:
                 with open(fname, "w") as fw:
@@ -265,7 +265,7 @@ def test_reference_documents_from_bytesio_with_keys():
         keys = parser.list_loaded_keys()
         assert len(keys)==1, "len(keys)==1"
         
-        pred_doc = parser.find_cells_from_key(doc_key)
+        pred_doc = parser.parse_pdf_from_key(doc_key)
 
         parser.unload_document(doc_key)
 
@@ -311,7 +311,7 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
         for page in range(0, num_pages):
             fname = f"{pdf_doc}_p={page}.json"
 
-            pred_doc = parser.find_cells_from_key_on_page(doc_key, page)
+            pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
             if GENERATE:
                 with open(fname, "w") as fw:

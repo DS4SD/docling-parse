@@ -27,10 +27,13 @@ from docling_parse.docling_parse import pdf_parser
 # Do this only once to load fonts (avoid initialising it many times)
 parser = pdf_parser()
 
+# parser.set_loglevel(1) # 1=error, 2=warning, 3=success, 4=info
+
 doc_file = "my-doc.pdf" # filename
 doc_key = f"key={pdf_doc}" # unique document key (eg hash, UUID, etc)
 
-# Load the document from file using filename doc_file
+# Load the document from file using filename doc_file. This only loads
+# the QPDF document, but no extracted data
 success = parser.load_document(doc_key, doc_file)
 
 # Open the file in binary mode and read its contents
@@ -41,13 +44,23 @@ success = parser.load_document(doc_key, doc_file)
 # bytes_io = io.BytesIO(file_content)
 # success = parser.load_document_from_bytesio(doc_key, bytes_io)
 
+# Parse the entire document in one go, easier, but could require
+# a lot (more) memory as parsing page-by-page
+# json_doc = parser.parse_pdf_from_key(doc_key)	
+
 # Get number of pages
 num_pages = parser.number_of_pages(doc_key)
 
 # Parse page by page to minimize memory footprint
 for page in range(0, num_pages):
-    json_page = parser.find_cells_from_key_on_page(doc_key, page)
 
+    # Internal memory for page is auto-deleted after this call.
+    # No need to unload a specifc page 
+    json_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
+
+    # parsed page is the first one!				  
+    json_page = json_doc["pages"][0] 
+    
     page_dimensions = [json_page["dimensions"]["width"], json_page["dimensions"]["height"]]
 
     # find text cells
@@ -82,8 +95,11 @@ for page in range(0, num_pages):
 	              path["y-values"], # array of y values
 		      ])
 
-# Unload the document
+# Unload the (QPDF) document and buffers
 parser.unload_document(doc_key)
+
+# Unloads everything at once
+# parser.unload_documents()
 ```
 
 Use the CLI

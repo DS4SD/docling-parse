@@ -46,9 +46,9 @@ namespace docling
 
     int number_of_pages(std::string key);
 
-    nlohmann::json find_cells_from_key(std::string key);
+    nlohmann::json parse_pdf_from_key(std::string key);
 
-    nlohmann::json find_cells_from_key_on_page(std::string key, int page);
+    nlohmann::json parse_pdf_from_key_on_page(std::string key, int page);
 
     // to be deprecated
     /*
@@ -169,7 +169,7 @@ namespace docling
   }
   */
   
-  nlohmann::json docling_parser::find_cells_from_key(std::string key)
+  nlohmann::json docling_parser::parse_pdf_from_key(std::string key)
   {
     container_lib::container doc_raw;
 
@@ -209,7 +209,7 @@ namespace docling
     return data;
   }
 
-  nlohmann::json docling_parser::find_cells_from_key_on_page(std::string key, int page)
+  nlohmann::json docling_parser::parse_pdf_from_key_on_page(std::string key, int page)
   {
     container_lib::container doc_raw;
 
@@ -261,8 +261,8 @@ namespace docling
     return data;
   }
 
+  // *************** to be deprecated ******************
 
-  // to be deprecated
   /*  
   nlohmann::json docling_parser::find_cells(std::string path)
   {

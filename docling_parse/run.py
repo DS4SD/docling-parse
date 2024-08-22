@@ -8,7 +8,6 @@ from tabulate import tabulate
 import docling_parse
 from docling_parse import pdf_parser
 
-
 def main():
     # Create the argument parser
     parser = argparse.ArgumentParser(description="Process a PDF file.")
@@ -42,7 +41,7 @@ def main():
 
     # Parse page by page to minimize memory footprint
     for page in range(0, num_pages):
-        json_doc = parser.find_cells_from_key_on_page(doc_key, page)
+        json_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
         json_page = json_doc["pages"][0]
 
         page_dimensions = [
