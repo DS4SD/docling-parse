@@ -54,6 +54,10 @@ def main():
     # Parse page by page to minimize memory footprint
     for page in range(0, num_pages):
         json_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
+
+        if "pages" not in json_doc:  # page could not get parsed
+            continue
+
         json_page = json_doc["pages"][0]
 
         page_dimensions = [
