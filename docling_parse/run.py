@@ -15,6 +15,11 @@ def main():
 
     # Add an argument for the path to the PDF file
     parser.add_argument(
+        "-l", "--log-level", type=int, required=False, default=2,
+        help="log-level 1,2,3,4")
+    
+    # Add an argument for the path to the PDF file
+    parser.add_argument(
         "-p", "--pdf", type=str, help="Path to the PDF file", required=True
     )
 
@@ -30,7 +35,8 @@ def main():
     # Print the path to the PDF file (or add your processing logic here)
 
     parser = docling_parse.pdf_parser()
-
+    parser.set_loglevel(args.log_level)
+    
     doc_file = args.pdf  # filename
     doc_key = f"key={args.pdf}"  # unique document key (eg hash, UUID, etc)
 
