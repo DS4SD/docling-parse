@@ -8,6 +8,7 @@ from tabulate import tabulate
 import docling_parse
 from docling_parse import pdf_parser
 
+
 def main():
     # Create the argument parser
     parser = argparse.ArgumentParser(description="Process a PDF file.")
