@@ -1,0 +1,3073 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/RQVTRN+SFBX0900": 3.170519385427373,
+        "/TFWOKM+SFRM0900": 2.160783936656138,
+        "/WBODEQ+SFTT0900": 0.4852259507393974
+      },
+      "mean-char-width": {
+        "/RQVTRN+SFBX0900": 5.303627479313566,
+        "/TFWOKM+SFRM0900": 4.311990626455174,
+        "/WBODEQ+SFTT0900": 4.706463406788314
+      },
+      "number-of-chars": {
+        "/RQVTRN+SFBX0900": 5,
+        "/TFWOKM+SFRM0900": 2674,
+        "/WBODEQ+SFTT0900": 431
+      }
+    },
+    "styles": [
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900",
+      "/WBODEQ+SFTT0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.375,
+              692.10498,
+              221.39143,
+              700.17474
+            ],
+            "device": [
+              204.375,
+              690.1593,
+              496.65533,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Comp. on Robust Layout Segmentation in Corporate Docs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              520.49701,
+              692.10498,
+              529.71088,
+              700.17474
+            ],
+            "device": [
+              520.49701,
+              690.1593,
+              529.71088,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "11"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              666.20197,
+              146.53696,
+              674.27173
+            ],
+            "device": [
+              139.371,
+              664.25629,
+              146.27512,
+              672.32599
+            ]
+          },
+          "content": {
+            "rnormalized": "4."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              666.20197,
+              146.53696,
+              674.27173
+            ],
+            "device": [
+              150.71373,
+              664.25629,
+              480.59534,
+              672.32599
+            ]
+          },
+          "content": {
+            "rnormalized": "G\u00f6bel, M., Hassan, T., Oro, E., Orsi, G.: Icdar 2013 table competition. In: 2013"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              655.24298,
+              169.43288,
+              663.31274
+            ],
+            "device": [
+              151.51801,
+              653.2973,
+              480.59113,
+              661.367
+            ]
+          },
+          "content": {
+            "rnormalized": "12th International Conference on Document Analysis and Recognition. pp. 1449-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              644.284,
+              169.94576,
+              652.35376
+            ],
+            "device": [
+              151.51801,
+              642.33832,
+              201.16498,
+              650.40802
+            ]
+          },
+          "content": {
+            "rnormalized": "1453 (2013)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.23801,
+              644.284,
+              293.66083,
+              651.75299
+            ],
+            "device": [
+              204.23801,
+              642.29346,
+              383.07465,
+              649.76245
+            ]
+          },
+          "content": {
+            "rnormalized": "https://doi.org/10.1109/ICDAR.2013.292"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              633.315,
+              146.53696,
+              641.38477
+            ],
+            "device": [
+              139.371,
+              631.36932,
+              146.4946,
+              639.43903
+            ]
+          },
+          "content": {
+            "rnormalized": "5."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              633.315,
+              146.53696,
+              641.38477
+            ],
+            "device": [
+              151.07436,
+              631.36932,
+              480.59097,
+              639.43903
+            ]
+          },
+          "content": {
+            "rnormalized": "Guillou, P.: Document ai | processing of doclaynet dataset to be used by lay-"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              622.35602,
+              164.82594,
+              630.42578
+            ],
+            "device": [
+              151.51801,
+              620.41034,
+              447.92209,
+              628.48004
+            ]
+          },
+          "content": {
+            "rnormalized": "out models of the hugging face hub (finetuning, inference) (Jan 2023),"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              452.354,
+              622.35602,
+              480.59277,
+              629.82501
+            ],
+            "device": [
+              452.354,
+              620.36548,
+              480.59277,
+              627.83447
+            ]
+          },
+          "content": {
+            "rnormalized": "https:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              611.39703,
+              240.94081,
+              618.86603
+            ],
+            "device": [
+              151.51801,
+              609.40649,
+              344.47403,
+              616.87549
+            ]
+          },
+          "content": {
+            "rnormalized": "//medium.com/@pierre_guillou/308d8bd81cdb"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              600.42902,
+              146.53696,
+              608.49878
+            ],
+            "device": [
+              139.371,
+              598.48334,
+              146.13322,
+              606.55304
+            ]
+          },
+          "content": {
+            "rnormalized": "6."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              600.42902,
+              146.53696,
+              608.49878
+            ],
+            "device": [
+              150.48062,
+              598.48334,
+              411.77911,
+              606.55304
+            ]
+          },
+          "content": {
+            "rnormalized": "He, K., Gkioxari, G., Doll\u00e1r, P., Girshick, R.: Mask r-cnn (2018)"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              589.46002,
+              146.53696,
+              597.52979
+            ],
+            "device": [
+              139.371,
+              587.51434,
+              145.96812,
+              595.58405
+            ]
+          },
+          "content": {
+            "rnormalized": "7."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              589.46002,
+              146.53696,
+              597.52979
+            ],
+            "device": [
+              150.20938,
+              587.51434,
+              480.58917,
+              595.58405
+            ]
+          },
+          "content": {
+            "rnormalized": "Huang, Y., Lv, T., Cui, L., Lu, Y., Wei, F.: Layoutlmv3: Pre-training for document"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              578.50104,
+              158.68396,
+              586.5708
+            ],
+            "device": [
+              151.51801,
+              576.55536,
+              338.40735,
+              584.62506
+            ]
+          },
+          "content": {
+            "rnormalized": "ai with unified text and image masking (2022)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              567.53204,
+              146.53696,
+              575.60181
+            ],
+            "device": [
+              139.371,
+              565.58636,
+              146.43982,
+              573.65607
+            ]
+          },
+          "content": {
+            "rnormalized": "8."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              567.53204,
+              146.53696,
+              575.60181
+            ],
+            "device": [
+              150.9843,
+              565.58636,
+              438.75375,
+              573.65607
+            ]
+          },
+          "content": {
+            "rnormalized": "Jocher, G., Chaurasia, A., Qiu, J.: YOLO by Ultralytics (Jan 2023),"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              442.94202,
+              567.53204,
+              480.59372,
+              575.00104
+            ],
+            "device": [
+              442.94202,
+              565.5415,
+              480.59372,
+              573.0105
+            ]
+          },
+          "content": {
+            "rnormalized": "https://"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              556.57306,
+              240.94081,
+              564.04205
+            ],
+            "device": [
+              151.51801,
+              554.58252,
+              311.52881,
+              562.05151
+            ]
+          },
+          "content": {
+            "rnormalized": "github.com/ultralytics/ultralytics"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              545.60504,
+              146.53696,
+              553.6748
+            ],
+            "device": [
+              139.371,
+              543.65936,
+              146.62428,
+              551.72906
+            ]
+          },
+          "content": {
+            "rnormalized": "9."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.371,
+              545.60504,
+              146.53696,
+              553.6748
+            ],
+            "device": [
+              151.2874,
+              543.65936,
+              480.58737,
+              551.72906
+            ]
+          },
+          "content": {
+            "rnormalized": "Jocher, G., Chaurasia, A., Stoken, A., Borovec, J., NanoCode012, Kwon, Y.,"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              534.64606,
+              166.61563,
+              542.71582
+            ],
+            "device": [
+              151.51801,
+              532.70038,
+              480.58847,
+              540.77008
+            ]
+          },
+          "content": {
+            "rnormalized": "Michael, K., TaoXie, Fang, J., imyhxy, Lorna, Yifu, Z., Wong, C., V, A., Montes,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              523.68707,
+              163.67285,
+              531.75684
+            ],
+            "device": [
+              151.51801,
+              521.74139,
+              480.58673,
+              529.8111
+            ]
+          },
+          "content": {
+            "rnormalized": "D., Wang, Z., Fati, C., Nadar, J., Laughing, UnglvKitDe, Sonck, V., tkianai,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              512.72809,
+              192.01476,
+              520.79785
+            ],
+            "device": [
+              151.51801,
+              510.78238,
+              480.58676,
+              518.85211
+            ]
+          },
+          "content": {
+            "rnormalized": "yxNONG, Skalski, P., Hogan, A., Nair, D., Strobel, M., Jain, M.: ultralytics/yolov5:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              501.7691,
+              168.15337,
+              509.83887
+            ],
+            "device": [
+              151.51801,
+              499.82339,
+              421.55725,
+              507.89316
+            ]
+          },
+          "content": {
+            "rnormalized": "v7.0 - YOLOv5 SOTA Realtime Instance Segmentation (Nov 2022)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              424.117,
+              501.7691,
+              480.59457,
+              509.23813
+            ],
+            "device": [
+              424.117,
+              499.77856,
+              480.59457,
+              507.24759
+            ]
+          },
+          "content": {
+            "rnormalized": "https://doi."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51801,
+              490.81012,
+              240.94081,
+              498.27914
+            ],
+            "device": [
+              151.51801,
+              488.81958,
+              273.87708,
+              496.2886
+            ]
+          },
+          "content": {
+            "rnormalized": "org/10.5281/zenodo.7347926"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              273.879,
+              490.81012,
+              276.43802,
+              498.87988
+            ],
+            "device": [
+              273.879,
+              488.86441,
+              276.43802,
+              496.93417
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              279.51001,
+              490.81012,
+              359.5199,
+              498.27914
+            ],
+            "device": [
+              279.51001,
+              488.81958,
+              458.34665,
+              496.2886
+            ]
+          },
+          "content": {
+            "rnormalized": "https://doi.org/10.5281/zenodo.7347926"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              479.84113,
+              146.5379,
+              487.91089
+            ],
+            "device": [
+              134.76501,
+              477.89542,
+              146.10686,
+              485.96518
+            ]
+          },
+          "content": {
+            "rnormalized": "10."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              479.84113,
+              146.5379,
+              487.91089
+            ],
+            "device": [
+              150.54512,
+              477.89542,
+              480.58664,
+              485.96518
+            ]
+          },
+          "content": {
+            "rnormalized": "Li, F., Zhang, H., xu, H., Liu, S., Zhang, L., Ni, L.M., Shum, H.Y.: Mask dino:"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              468.88214,
+              158.17198,
+              476.9519
+            ],
+            "device": [
+              151.51802,
+              466.93643,
+              480.59473,
+              475.0062
+            ]
+          },
+          "content": {
+            "rnormalized": "Towards a unified transformer-based framework for object detection and segmen-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              457.92413,
+              175.57487,
+              465.9939
+            ],
+            "device": [
+              151.51802,
+              455.97842,
+              204.23506,
+              464.04819
+            ]
+          },
+          "content": {
+            "rnormalized": "tation (2022)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              446.95514,
+              146.5379,
+              455.0249
+            ],
+            "device": [
+              134.76501,
+              445.00943,
+              145.6788,
+              453.07919
+            ]
+          },
+          "content": {
+            "rnormalized": "11."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              446.95514,
+              146.5379,
+              455.0249
+            ],
+            "device": [
+              149.94957,
+              445.00943,
+              480.5928,
+              453.07919
+            ]
+          },
+          "content": {
+            "rnormalized": "Li, J., Xu, Y., Lv, T., Cui, L., Zhang, C., Wei, F.: Dit: Self-supervised pre-training"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              435.99615,
+              162.54401,
+              444.06592
+            ],
+            "device": [
+              151.51802,
+              434.05045,
+              458.27823,
+              442.12021
+            ]
+          },
+          "content": {
+            "rnormalized": "for document image transformer. In: ACM Multimedia 2022 (October 2022)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              425.02716,
+              146.5379,
+              433.09692
+            ],
+            "device": [
+              134.76501,
+              423.08145,
+              147.29691,
+              431.15121
+            ]
+          },
+          "content": {
+            "rnormalized": "12."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              425.02716,
+              146.5379,
+              433.09692
+            ],
+            "device": [
+              152.2009,
+              423.08145,
+              480.59186,
+              431.15121
+            ]
+          },
+          "content": {
+            "rnormalized": "Li, M., Xu, Y., Cui, L., Huang, S., Wei, F., Li, Z., Zhou, M.: Docbank:"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              414.06818,
+              158.42664,
+              422.13794
+            ],
+            "device": [
+              151.51802,
+              412.12247,
+              480.59485,
+              420.19223
+            ]
+          },
+          "content": {
+            "rnormalized": "A benchmark dataset for document layout analysis. In: Proceedings of the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              403.10919,
+              169.43289,
+              411.17896
+            ],
+            "device": [
+              151.51802,
+              401.16348,
+              169.43289,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "28th"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              176.73154,
+              403.10919,
+              185.1752,
+              411.17896
+            ],
+            "device": [
+              176.73154,
+              401.16348,
+              228.9671,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "International"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              236.26575,
+              403.10919,
+              280.57233,
+              411.17896
+            ],
+            "device": [
+              236.26575,
+              401.16348,
+              280.57233,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "Conference"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              287.87097,
+              403.10919,
+              297.59592,
+              411.17896
+            ],
+            "device": [
+              287.87097,
+              401.16348,
+              297.59592,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              304.90353,
+              403.10919,
+              365.30121,
+              411.17896
+            ],
+            "device": [
+              304.90353,
+              401.16348,
+              365.30121,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "Computational"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              372.59985,
+              403.10919,
+              418.38229,
+              411.17896
+            ],
+            "device": [
+              372.59985,
+              401.16348,
+              418.38229,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "Linguistics."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              425.68991,
+              403.10919,
+              438.48495,
+              411.17896
+            ],
+            "device": [
+              425.68991,
+              401.16348,
+              438.48495,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "pp."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              445.7836,
+              403.10919,
+              480.59116,
+              411.17896
+            ],
+            "device": [
+              445.7836,
+              401.16348,
+              480.59116,
+              409.23325
+            ]
+          },
+          "content": {
+            "rnormalized": "949-960."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              392.15021,
+              191.11813,
+              400.21997
+            ],
+            "device": [
+              151.51802,
+              390.2045,
+              480.59479,
+              398.27426
+            ]
+          },
+          "content": {
+            "rnormalized": "COLING, International Committee on Computational Linguistics (dec 2020)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              381.1922,
+              240.94083,
+              388.66122
+            ],
+            "device": [
+              151.51802,
+              379.20166,
+              373.20599,
+              386.67068
+            ]
+          },
+          "content": {
+            "rnormalized": "https://doi.org/10.18653/v1/2020.coling-main.82"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              373.20801,
+              381.1922,
+              375.76703,
+              389.26196
+            ],
+            "device": [
+              373.20801,
+              379.24649,
+              375.76703,
+              387.31625
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              381.76102,
+              381.1922,
+              466.47736,
+              388.66122
+            ],
+            "device": [
+              381.76102,
+              379.20166,
+              480.58777,
+              386.67068
+            ]
+          },
+          "content": {
+            "rnormalized": "https://aclanthology."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              370.23322,
+              226.82144,
+              377.70224
+            ],
+            "device": [
+              151.51802,
+              368.24268,
+              260.25983,
+              375.7117
+            ]
+          },
+          "content": {
+            "rnormalized": "org/2020.coling-main.82"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76402,
+              359.26422,
+              146.53691,
+              367.33398
+            ],
+            "device": [
+              134.76402,
+              357.31851,
+              145.76581,
+              365.38828
+            ]
+          },
+          "content": {
+            "rnormalized": "13."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76402,
+              359.26422,
+              146.53691,
+              367.33398
+            ],
+            "device": [
+              150.07103,
+              357.31851,
+              480.58905,
+              365.38828
+            ]
+          },
+          "content": {
+            "rnormalized": "Lin, T.Y., Maire, M., Belongie, S., Bourdev, L., Girshick, R., Hays, J., Perona, P.,"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              348.30524,
+              192.59311,
+              356.375
+            ],
+            "device": [
+              151.51802,
+              346.35953,
+              480.59473,
+              354.42929
+            ]
+          },
+          "content": {
+            "rnormalized": "Ramanan, D., Zitnick, C.L., Doll\u00e1r, P.: Microsoft coco: Common objects in context"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              337.34625,
+              177.11171,
+              345.41602
+            ],
+            "device": [
+              151.51802,
+              335.40054,
+              177.11171,
+              343.47031
+            ]
+          },
+          "content": {
+            "rnormalized": "(2015)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76402,
+              326.37726,
+              146.53691,
+              334.44702
+            ],
+            "device": [
+              134.76402,
+              324.43155,
+              146.26791,
+              332.50131
+            ]
+          },
+          "content": {
+            "rnormalized": "14."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76402,
+              326.37726,
+              146.53691,
+              334.44702
+            ],
+            "device": [
+              150.76956,
+              324.43155,
+              480.58725,
+              332.50131
+            ]
+          },
+          "content": {
+            "rnormalized": "Livathinos, N., Berrospi, C., Lysak, M., Kuropiatnyk, V., Nassar, A., Carvalho,"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              315.41827,
+              163.54465,
+              323.48804
+            ],
+            "device": [
+              151.51802,
+              313.47256,
+              480.59021,
+              321.54233
+            ]
+          },
+          "content": {
+            "rnormalized": "A., Dolfi, M., Auer, C., Dinkla, K., Staar, P.: Robust pdf document conversion"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              304.46027,
+              172.55409,
+              312.53003
+            ],
+            "device": [
+              151.51802,
+              302.51456,
+              480.59479,
+              310.58432
+            ]
+          },
+          "content": {
+            "rnormalized": "using recurrent neural networks. Proceedings of the AAAI Conference on Artificial"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51802,
+              293.50128,
+              159.96169,
+              301.57104
+            ],
+            "device": [
+              151.51802,
+              291.55557,
+              197.07721,
+              299.62534
+            ]
+          },
+          "content": {
+            "rnormalized": "Intelligence"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              199.39902,
+              293.50128,
+              210.00627,
+              301.42758
+            ],
+            "device": [
+              199.39902,
+              291.76181,
+              210.00627,
+              299.68811
+            ]
+          },
+          "content": {
+            "rnormalized": "35"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              210.00702,
+              293.50128,
+              228.94585,
+              301.57104
+            ],
+            "device": [
+              210.00702,
+              291.55557,
+              332.37686,
+              299.62534
+            ]
+          },
+          "content": {
+            "rnormalized": "(17), 15137-15145 (May 2021),"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              334.69904,
+              293.50128,
+              419.41537,
+              300.97031
+            ],
+            "device": [
+              334.69904,
+              291.51074,
+              480.59042,
+              298.97977
+            ]
+          },
+          "content": {
+            "rnormalized": "https://ojs.aaai.org/index.php/"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              282.5423,
+              240.94084,
+              290.01132
+            ],
+            "device": [
+              151.51804,
+              280.55176,
+              259.75772,
+              288.02078
+            ]
+          },
+          "content": {
+            "rnormalized": "AAAI/article/view/17777"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76404,
+              271.5733,
+              146.53693,
+              279.64307
+            ],
+            "device": [
+              134.76404,
+              269.62759,
+              145.89655,
+              277.69736
+            ]
+          },
+          "content": {
+            "rnormalized": "15."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76404,
+              271.5733,
+              146.53693,
+              279.64307
+            ],
+            "device": [
+              150.25288,
+              269.62759,
+              480.58817,
+              277.69736
+            ]
+          },
+          "content": {
+            "rnormalized": "Nassar, A., Livathinos, N., Lysak, M., Staar, P.: Tableformer: Table structure un-"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              260.61432,
+              198.68219,
+              268.68408
+            ],
+            "device": [
+              151.51804,
+              258.66861,
+              480.59387,
+              266.73837
+            ]
+          },
+          "content": {
+            "rnormalized": "derstanding with transformers. In: Proceedings of the IEEE/CVF Conference on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              249.65532,
+              191.97803,
+              257.72507
+            ],
+            "device": [
+              151.51804,
+              247.70961,
+              473.44312,
+              255.77937
+            ]
+          },
+          "content": {
+            "rnormalized": "Computer Vision and Pattern Recognition (CVPR). pp. 4614-4623 (June 2022)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76404,
+              238.68732,
+              146.53693,
+              246.75708
+            ],
+            "device": [
+              134.76404,
+              236.74161,
+              146.49925,
+              244.81137
+            ]
+          },
+          "content": {
+            "rnormalized": "16."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76404,
+              238.68732,
+              146.53693,
+              246.75708
+            ],
+            "device": [
+              151.09142,
+              236.74161,
+              480.58908,
+              244.81137
+            ]
+          },
+          "content": {
+            "rnormalized": "Pfitzmann, B., Auer, C., Dolfi, M., Nassar, A.S., Staar, P.W.J.: Doclaynet: A"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              227.72832,
+              170.99306,
+              235.79808
+            ],
+            "device": [
+              151.51804,
+              225.78261,
+              480.59021,
+              233.85237
+            ]
+          },
+          "content": {
+            "rnormalized": "large human-annotated dataset for document-layout segmentation. In: Zhang, A.,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              216.76932,
+              179.28519,
+              224.83908
+            ],
+            "device": [
+              151.51804,
+              214.82361,
+              480.59119,
+              222.89337
+            ]
+          },
+          "content": {
+            "rnormalized": "Rangwala, H. (eds.) KDD \u201922: The 28th ACM SIGKDD Conference on Knowledge"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              205.81032,
+              173.44984,
+              213.88008
+            ],
+            "device": [
+              151.51804,
+              203.86461,
+              480.59113,
+              211.93437
+            ]
+          },
+          "content": {
+            "rnormalized": "Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022. pp."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              194.85132,
+              195.53947,
+              202.92108
+            ],
+            "device": [
+              151.51804,
+              192.90561,
+              251.58038,
+              200.97537
+            ]
+          },
+          "content": {
+            "rnormalized": "3743-3751. ACM (2022)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              254.65204,
+              194.85132,
+              334.66193,
+              202.32033
+            ],
+            "device": [
+              254.65204,
+              192.86078,
+              438.19516,
+              200.32979
+            ]
+          },
+          "content": {
+            "rnormalized": "https://doi.org/10.1145/3534678.3539043"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76404,
+              183.88232,
+              146.53693,
+              191.95209
+            ],
+            "device": [
+              134.76404,
+              181.93661,
+              145.85489,
+              190.00638
+            ]
+          },
+          "content": {
+            "rnormalized": "17."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76404,
+              183.88232,
+              146.53693,
+              191.95209
+            ],
+            "device": [
+              150.19498,
+              181.93661,
+              480.59442,
+              190.00638
+            ]
+          },
+          "content": {
+            "rnormalized": "Solovyev, R., Wang, W., Gabruseva, T.: Weighted boxes fusion: Ensembling boxes"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51804,
+              172.92332,
+              170.22195,
+              180.99309
+            ],
+            "device": [
+              151.51804,
+              170.97762,
+              428.54401,
+              179.04738
+            ]
+          },
+          "content": {
+            "rnormalized": "from different object detection models. Image and Vision Computing"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              431.57605,
+              172.92332,
+              447.48694,
+              180.84962
+            ],
+            "device": [
+              431.57605,
+              171.18384,
+              447.48694,
+              179.11014
+            ]
+          },
+          "content": {
+            "rnormalized": "107"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              447.48706,
+              172.92332,
+              450.04608,
+              180.99309
+            ],
+            "device": [
+              447.48706,
+              170.97762,
+              480.59283,
+              179.04738
+            ]
+          },
+          "content": {
+            "rnormalized": ", 104117"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51807,
+              161.96432,
+              179.67078,
+              170.03409
+            ],
+            "device": [
+              151.51807,
+              160.01862,
+              179.67078,
+              168.08838
+            ]
+          },
+          "content": {
+            "rnormalized": "(2021)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              182.74106,
+              161.96432,
+              258.04446,
+              169.43333
+            ],
+            "device": [
+              182.74106,
+              159.97379,
+              389.81647,
+              167.44279
+            ]
+          },
+          "content": {
+            "rnormalized": "https://doi.org/10.1016/j.imavis.2021.104117"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/WBODEQ+SFTT0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76405,
+              150.99632,
+              146.53694,
+              159.06609
+            ],
+            "device": [
+              134.76405,
+              149.05061,
+              145.62122,
+              157.12038
+            ]
+          },
+          "content": {
+            "rnormalized": "18."
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76405,
+              150.99632,
+              146.53694,
+              159.06609
+            ],
+            "device": [
+              149.86983,
+              149.05061,
+              480.59,
+              157.12038
+            ]
+          },
+          "content": {
+            "rnormalized": "Staar, P.W.J., Dolfi, M., Auer, C., Bekas, C.: Corpus conversion service: A machine"
+          },
+          "enumeration": {
+            "match": 9,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51805,
+              140.03732,
+              183.78812,
+              148.10709
+            ],
+            "device": [
+              151.51805,
+              138.09161,
+              480.59299,
+              146.16138
+            ]
+          },
+          "content": {
+            "rnormalized": "learning platform to ingest documents at scale. In: Proceedings of the 24th ACM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.51805,
+              129.07832,
+              188.42914,
+              137.14809
+            ],
+            "device": [
+              151.51805,
+              127.13261,
+              480.59125,
+              135.20238
+            ]
+          },
+          "content": {
+            "rnormalized": "SIGKDD International Conference on Knowledge Discovery and Data Mining. p."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "ignored-cells": [],
+      "images": [],
+      "paths": [],
+      "width": 612
+    }
+  ]
+}

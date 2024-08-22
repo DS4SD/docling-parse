@@ -1,0 +1,3133 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/AAAAAC+Calibri": 3.652532722592853,
+        "/BUDZTF+SFRM1000": 2.381138212402519,
+        "/CQWFHR+SFBX1000": 2.096891757476881,
+        "/IHRBTF+SFBX1200": 6.341032667340341,
+        "/IMULES+SFTI1000": 1.759399062182688,
+        "/RQVTRN+SFBX0900": 2.642099575926112,
+        "/TFWOKM+SFRM0900": 2.327810389429127
+      },
+      "mean-char-width": {
+        "/AAAAAC+Calibri": 1.720629098365183,
+        "/BUDZTF+SFRM1000": 4.678882196607913,
+        "/CQWFHR+SFBX1000": 5.396930982540117,
+        "/IHRBTF+SFBX1200": 7.002159244099401,
+        "/IMULES+SFTI1000": 4.96356712252095,
+        "/RQVTRN+SFBX0900": 4.35214160862744,
+        "/TFWOKM+SFRM0900": 4.418693164067349
+      },
+      "number-of-chars": {
+        "/AAAAAC+Calibri": 80,
+        "/BUDZTF+SFRM1000": 1197,
+        "/CQWFHR+SFBX1000": 21,
+        "/IHRBTF+SFBX1200": 5,
+        "/IMULES+SFTI1000": 5,
+        "/RQVTRN+SFBX0900": 6,
+        "/TFWOKM+SFRM0900": 52
+      }
+    },
+    "styles": [
+      "/AAAAAC+Calibri",
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/IHRBTF+SFBX1200",
+      "/IMULES+SFTI1000",
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              692.10498,
+              139.37193,
+              700.17474
+            ],
+            "device": [
+              134.765,
+              690.1593,
+              139.37193,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              272.23605,
+              690.1593,
+              280.77161,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "C."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              285.03979,
+              690.1593,
+              330.35175,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "Auer, et al."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              172.94467,
+              674.99896
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              480.58777,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "guidance on how to consistently annotate the layout of DocLayNet pages were"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              654.24695,
+              176.319,
+              663.04395
+            ],
+            "device": [
+              134.765,
+              652.31421,
+              395.17236,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "published in the accompanying layout annotation guideline."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              149.709,
+              642.29095,
+              157.17896,
+              651.08795
+            ],
+            "device": [
+              149.709,
+              640.35822,
+              480.58884,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "Additionally, DocLayNet provides a JSON representation of each page with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              630.33594,
+              148.59807,
+              639.13293
+            ],
+            "device": [
+              134.765,
+              628.4032,
+              480.58676,
+              637.2002
+            ]
+          },
+          "content": {
+            "rnormalized": "the original text tokens and coordinates from the programmatic PDF code. This"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              618.38092,
+              145.27853,
+              627.17792
+            ],
+            "device": [
+              134.765,
+              616.44818,
+              480.5918,
+              625.24518
+            ]
+          },
+          "content": {
+            "rnormalized": "opens the opportunity for new multi-modal ML approaches to the layout seg-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              606.4259,
+              153.02444,
+              615.2229
+            ],
+            "device": [
+              134.765,
+              604.49316,
+              220.28796,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "mentation problem."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              580.31689,
+              149.40205,
+              589.12384
+            ],
+            "device": [
+              134.765,
+              578.38416,
+              149.40205,
+              587.1911
+            ]
+          },
+          "content": {
+            "rnormalized": "2.3"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.85904,
+              580.31689,
+              174.85948,
+              589.12384
+            ],
+            "device": [
+              160.85904,
+              578.38416,
+              263.69202,
+              587.1911
+            ]
+          },
+          "content": {
+            "rnormalized": "Competition dataset"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              564.1709,
+              141.95799,
+              572.9679
+            ],
+            "device": [
+              134.765,
+              562.23816,
+              480.59174,
+              571.03516
+            ]
+          },
+          "content": {
+            "rnormalized": "To assess the layout segmentation performance of each team\u2019s submissions, we"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              552.21588,
+              180.71849,
+              561.01288
+            ],
+            "device": [
+              134.765,
+              550.28314,
+              480.58585,
+              559.08014
+            ]
+          },
+          "content": {
+            "rnormalized": "engineered a competition dataset of 498 new pages in the same representation as"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              540.26086,
+              148.59807,
+              549.05786
+            ],
+            "device": [
+              134.765,
+              538.32812,
+              480.59073,
+              547.12512
+            ]
+          },
+          "content": {
+            "rnormalized": "the original DocLayNet dataset, which was provided to the participants without"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              528.30585,
+              145.27853,
+              537.10284
+            ],
+            "device": [
+              134.765,
+              526.37311,
+              480.59177,
+              535.1701
+            ]
+          },
+          "content": {
+            "rnormalized": "any annotation ground-truth. This competition dataset includes a mix of corpo-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              516.35083,
+              151.9465,
+              525.14783
+            ],
+            "device": [
+              134.765,
+              514.41809,
+              410.82272,
+              523.21509
+            ]
+          },
+          "content": {
+            "rnormalized": "rate document samples as shown in Fig. 2. Samples in the new"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              414.35101,
+              516.35083,
+              439.16885,
+              525.14783
+            ],
+            "device": [
+              414.35101,
+              514.41809,
+              439.16885,
+              523.21509
+            ]
+          },
+          "content": {
+            "rnormalized": "Other"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              443.76602,
+              516.35083,
+              480.59177,
+              525.14783
+            ],
+            "device": [
+              443.76602,
+              514.41809,
+              480.59177,
+              523.21509
+            ]
+          },
+          "content": {
+            "rnormalized": "category"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              504.39484,
+              149.98189,
+              513.19183
+            ],
+            "device": [
+              134.76501,
+              502.4621,
+              418.0256,
+              511.25906
+            ]
+          },
+          "content": {
+            "rnormalized": "expose layouts which fall outside of the DocLayNet layout space."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              476.29382,
+              141.48862,
+              486.86221
+            ],
+            "device": [
+              134.76501,
+              473.97452,
+              141.48862,
+              484.54291
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.93822,
+              476.29382,
+              164.28958,
+              486.86221
+            ],
+            "device": [
+              154.93822,
+              473.97452,
+              182.10162,
+              484.54291
+            ]
+          },
+          "content": {
+            "rnormalized": "Task"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              456.16281,
+              145.00159,
+              464.95978
+            ],
+            "device": [
+              134.76501,
+              454.23007,
+              480.59375,
+              463.02704
+            ]
+          },
+          "content": {
+            "rnormalized": "We designed the competition objective as a straightforward object detection"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              444.20782,
+              155.57091,
+              453.00479
+            ],
+            "device": [
+              134.76501,
+              442.27509,
+              480.58679,
+              451.07205
+            ]
+          },
+          "content": {
+            "rnormalized": "task, since this is well-understood in the computer-vision community and fits"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              432.25284,
+              148.59808,
+              441.0498
+            ],
+            "device": [
+              134.76501,
+              430.3201,
+              480.59067,
+              439.11707
+            ]
+          },
+          "content": {
+            "rnormalized": "the representation format of our DocLayNet dataset. Participants of our compe-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              420.29785,
+              158.55869,
+              429.09482
+            ],
+            "device": [
+              134.76501,
+              418.36511,
+              480.59271,
+              427.16208
+            ]
+          },
+          "content": {
+            "rnormalized": "tition were challenged to develop methods that can identify layout components"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              408.34186,
+              143.06485,
+              417.13882
+            ],
+            "device": [
+              134.76501,
+              406.40912,
+              480.59579,
+              415.20609
+            ]
+          },
+          "content": {
+            "rnormalized": "in document pages as rectangular bounding boxes, labelled with one of the 11"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              396.38687,
+              163.14946,
+              405.18384
+            ],
+            "device": [
+              134.76501,
+              394.45413,
+              480.59482,
+              403.2511
+            ]
+          },
+          "content": {
+            "rnormalized": "classes defined in the DocLayNet dataset (see Fig. 3). The performance of each"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              384.43188,
+              163.03987,
+              393.22885
+            ],
+            "device": [
+              134.76501,
+              382.49915,
+              480.58975,
+              391.29611
+            ]
+          },
+          "content": {
+            "rnormalized": "team\u2019s approach was evaluated on our competition dataset using the well estab-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              372.4769,
+              159.71933,
+              381.27386
+            ],
+            "device": [
+              134.76501,
+              370.54416,
+              252.57079,
+              379.34113
+            ]
+          },
+          "content": {
+            "rnormalized": "lished COCO mAP metric."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              202.15504,
+              177.7086,
+              206.01233,
+              182.49881
+            ],
+            "device": [
+              202.15504,
+              176.65326,
+              209.0222,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Text"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              216.44846,
+              177.7086,
+              220.37793,
+              182.49881
+            ],
+            "device": [
+              216.44846,
+              176.65326,
+              228.78532,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Caption"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              236.29897,
+              177.7086,
+              238.81923,
+              182.49881
+            ],
+            "device": [
+              236.29897,
+              176.65326,
+              250.2677,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "List-Item"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              257.80011,
+              177.7086,
+              261.66287,
+              182.49881
+            ],
+            "device": [
+              257.80011,
+              176.65326,
+              271.06873,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Formula"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              278.53098,
+              177.7086,
+              282.31372,
+              182.49881
+            ],
+            "device": [
+              278.53098,
+              176.65326,
+              287.23849,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Table"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              313.44519,
+              177.7086,
+              317.19418,
+              182.49881
+            ],
+            "device": [
+              313.44519,
+              176.65326,
+              338.08887,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Section-Header"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              294.69507,
+              177.7086,
+              297.59744,
+              182.49881
+            ],
+            "device": [
+              294.69507,
+              176.65326,
+              305.95187,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Picture"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              345.2616,
+              177.7086,
+              349.14478,
+              182.49881
+            ],
+            "device": [
+              345.2616,
+              176.65326,
+              365.81866,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Page-Header"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              373.36533,
+              177.7086,
+              377.2485,
+              182.49881
+            ],
+            "device": [
+              373.36533,
+              176.65326,
+              392.82706,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Page-Footer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              400.36841,
+              177.7086,
+              403.17035,
+              182.49881
+            ],
+            "device": [
+              400.36841,
+              176.65326,
+              407.38504,
+              181.44347
+            ]
+          },
+          "content": {
+            "rnormalized": "Title"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AAAAAC+Calibri",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              196.26601,
+              151.608,
+              214.12888,
+              159.5343
+            ],
+            "device": [
+              196.26601,
+              149.86852,
+              224.14525,
+              157.79482
+            ]
+          },
+          "content": {
+            "rnormalized": "Fig. 3."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              227.21901,
+              151.608,
+              262.41122,
+              159.67776
+            ],
+            "device": [
+              227.21901,
+              149.66229,
+              416.02087,
+              157.73206
+            ]
+          },
+          "content": {
+            "rnormalized": "Example page with bounding-box annotations."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 177.993,
+          "x1": 437.34204,
+          "y": 351.68903
+        },
+        {
+          "x0": 177.993,
+          "x1": 437.34204,
+          "y": 172.58231
+        },
+        {
+          "x0": 177.993,
+          "x1": 437.46844,
+          "y": 351.68903
+        },
+        {
+          "x0": 177.993,
+          "x1": 437.46844,
+          "y": 172.53
+        },
+        {
+          "x0": 182.59778,
+          "x1": 432.22891,
+          "y": 183.21191
+        }
+      ],
+      "ignored-cells": [],
+      "images": [
+        {
+          "box": [
+            177.65749,
+            177.37392,
+            444.43439,
+            355.54169
+          ],
+          "height": 2252,
+          "width": 3372
+        }
+      ],
+      "paths": [
+        {
+          "bbox": [
+            177.993,
+            172.58231,
+            437.34204,
+            351.68903
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            177.993,
+            437.34204,
+            437.34204,
+            177.993,
+            177.993
+          ],
+          "y-values": [
+            351.68903,
+            351.68903,
+            172.58231,
+            172.58231,
+            351.68903
+          ]
+        },
+        {
+          "bbox": [
+            177.993,
+            172.53,
+            437.46844,
+            351.68903
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            177.993,
+            437.46844,
+            437.46844,
+            177.993,
+            177.993
+          ],
+          "y-values": [
+            351.68903,
+            351.68903,
+            172.53,
+            172.53,
+            351.68903
+          ]
+        },
+        {
+          "bbox": [
+            197.80661,
+            177.10437,
+            201.06935,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            197.80661,
+            197.8497,
+            197.97243,
+            198.16501,
+            198.41765,
+            198.72055,
+            199.06392,
+            199.43799,
+            199.81204,
+            200.15541,
+            200.45831,
+            200.71095,
+            200.90353,
+            201.02626,
+            201.06935,
+            201.02626,
+            200.90353,
+            200.71095,
+            200.45831,
+            200.15541,
+            199.81204,
+            199.43799,
+            199.06392,
+            198.72055,
+            198.41765,
+            198.16501,
+            197.97243,
+            197.8497,
+            197.80661,
+            197.80661
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            197.80661,
+            177.10437,
+            201.06935,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            197.80661,
+            197.8497,
+            197.97243,
+            198.16501,
+            198.41763,
+            198.72055,
+            199.06392,
+            199.43797,
+            199.81204,
+            200.15541,
+            200.45831,
+            200.71095,
+            200.90353,
+            201.02626,
+            201.06935,
+            201.02626,
+            200.90353,
+            200.71095,
+            200.45831,
+            200.15541,
+            199.81204,
+            199.43797,
+            199.06392,
+            198.72055,
+            198.41763,
+            198.16501,
+            197.97243,
+            197.8497,
+            197.80661,
+            197.80661
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            212.10004,
+            177.10437,
+            215.36276,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            212.10004,
+            212.14313,
+            212.26585,
+            212.45844,
+            212.71106,
+            213.01398,
+            213.35735,
+            213.7314,
+            214.10547,
+            214.44884,
+            214.75174,
+            215.00438,
+            215.19696,
+            215.31969,
+            215.36276,
+            215.31969,
+            215.19696,
+            215.00438,
+            214.75174,
+            214.44884,
+            214.10547,
+            213.7314,
+            213.35735,
+            213.01398,
+            212.71106,
+            212.45844,
+            212.26585,
+            212.14313,
+            212.10004,
+            212.10004
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            212.10004,
+            177.10437,
+            215.36278,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            212.10004,
+            212.14313,
+            212.26585,
+            212.45844,
+            212.71106,
+            213.01398,
+            213.35735,
+            213.7314,
+            214.10547,
+            214.44884,
+            214.75174,
+            215.00438,
+            215.19696,
+            215.31969,
+            215.36278,
+            215.31969,
+            215.19696,
+            215.00438,
+            214.75174,
+            214.44884,
+            214.10547,
+            213.7314,
+            213.35735,
+            213.01398,
+            212.71106,
+            212.45844,
+            212.26585,
+            212.14313,
+            212.10004,
+            212.10004
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            231.95055,
+            177.10437,
+            235.21329,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            231.95055,
+            231.99364,
+            232.11636,
+            232.30894,
+            232.56158,
+            232.8645,
+            233.20789,
+            233.58194,
+            233.95599,
+            234.29938,
+            234.60226,
+            234.8549,
+            235.04749,
+            235.1702,
+            235.21329,
+            235.1702,
+            235.04749,
+            234.8549,
+            234.60226,
+            234.29938,
+            233.95599,
+            233.58194,
+            233.20789,
+            232.8645,
+            232.56158,
+            232.30894,
+            232.11636,
+            231.99364,
+            231.95055,
+            231.95055
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            231.95055,
+            177.10437,
+            235.21329,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            231.95055,
+            231.99364,
+            232.11636,
+            232.30894,
+            232.56157,
+            232.86449,
+            233.20786,
+            233.58191,
+            233.95598,
+            234.29935,
+            234.60225,
+            234.85489,
+            235.04747,
+            235.1702,
+            235.21329,
+            235.1702,
+            235.04747,
+            234.85489,
+            234.60225,
+            234.29935,
+            233.95598,
+            233.58191,
+            233.20786,
+            232.86449,
+            232.56157,
+            232.30894,
+            232.11636,
+            231.99364,
+            231.95055,
+            231.95055
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            253.45166,
+            177.10437,
+            256.71442,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            253.45166,
+            253.49475,
+            253.61749,
+            253.81007,
+            254.06271,
+            254.36563,
+            254.709,
+            255.08307,
+            255.45712,
+            255.80051,
+            256.10339,
+            256.35602,
+            256.54861,
+            256.67133,
+            256.71442,
+            256.67133,
+            256.54861,
+            256.35602,
+            256.10339,
+            255.80051,
+            255.45712,
+            255.08307,
+            254.709,
+            254.36563,
+            254.06271,
+            253.81007,
+            253.61749,
+            253.49475,
+            253.45166,
+            253.45166
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            253.45166,
+            177.10437,
+            256.71439,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            253.45166,
+            253.49475,
+            253.61748,
+            253.81006,
+            254.06268,
+            254.3656,
+            254.70897,
+            255.08302,
+            255.45709,
+            255.80046,
+            256.10336,
+            256.35599,
+            256.54858,
+            256.6713,
+            256.71439,
+            256.6713,
+            256.54858,
+            256.35599,
+            256.10336,
+            255.80046,
+            255.45709,
+            255.08302,
+            254.70897,
+            254.3656,
+            254.06268,
+            253.81006,
+            253.61748,
+            253.49475,
+            253.45166,
+            253.45166
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            274.18256,
+            177.10437,
+            277.44528,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            274.18256,
+            274.22565,
+            274.34836,
+            274.54095,
+            274.79358,
+            275.09647,
+            275.43985,
+            275.8139,
+            276.18796,
+            276.53134,
+            276.83426,
+            277.08688,
+            277.27948,
+            277.40222,
+            277.44528,
+            277.40222,
+            277.27948,
+            277.08688,
+            276.83426,
+            276.53134,
+            276.18796,
+            275.8139,
+            275.43985,
+            275.09647,
+            274.79358,
+            274.54095,
+            274.34836,
+            274.22565,
+            274.18256,
+            274.18256
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            274.18256,
+            177.10437,
+            277.44528,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            274.18256,
+            274.22565,
+            274.34836,
+            274.54095,
+            274.79358,
+            275.0965,
+            275.43988,
+            275.81393,
+            276.18799,
+            276.53137,
+            276.83426,
+            277.08688,
+            277.27948,
+            277.40219,
+            277.44528,
+            277.40219,
+            277.27948,
+            277.08688,
+            276.83426,
+            276.53137,
+            276.18799,
+            275.81393,
+            275.43988,
+            275.0965,
+            274.79358,
+            274.54095,
+            274.34836,
+            274.22565,
+            274.18256,
+            274.18256
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            309.09671,
+            177.10437,
+            312.35944,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            309.09671,
+            309.1398,
+            309.26254,
+            309.45514,
+            309.70776,
+            310.01068,
+            310.35403,
+            310.72809,
+            311.10217,
+            311.44556,
+            311.74844,
+            312.00107,
+            312.19366,
+            312.31635,
+            312.35944,
+            312.31635,
+            312.19366,
+            312.00107,
+            311.74844,
+            311.44556,
+            311.10217,
+            310.72809,
+            310.35403,
+            310.01068,
+            309.70776,
+            309.45514,
+            309.26254,
+            309.1398,
+            309.09671,
+            309.09671
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            309.09671,
+            177.10437,
+            312.35944,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            309.09671,
+            309.1398,
+            309.26251,
+            309.45511,
+            309.70773,
+            310.01065,
+            310.35403,
+            310.72809,
+            311.10214,
+            311.44553,
+            311.74841,
+            312.00104,
+            312.19363,
+            312.31635,
+            312.35944,
+            312.31635,
+            312.19363,
+            312.00104,
+            311.74841,
+            311.44553,
+            311.10214,
+            310.72809,
+            310.35403,
+            310.01065,
+            309.70773,
+            309.45511,
+            309.26251,
+            309.1398,
+            309.09671,
+            309.09671
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            290.34662,
+            177.10437,
+            293.60934,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            290.34662,
+            290.38971,
+            290.51245,
+            290.70502,
+            290.95764,
+            291.26056,
+            291.60394,
+            291.978,
+            292.35205,
+            292.69543,
+            292.99835,
+            293.25098,
+            293.44354,
+            293.56628,
+            293.60934,
+            293.56628,
+            293.44354,
+            293.25098,
+            292.99835,
+            292.69543,
+            292.35205,
+            291.978,
+            291.60394,
+            291.26056,
+            290.95764,
+            290.70502,
+            290.51245,
+            290.38971,
+            290.34662,
+            290.34662
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            290.34662,
+            177.10437,
+            293.60934,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            290.34662,
+            290.38971,
+            290.51242,
+            290.70502,
+            290.95764,
+            291.26056,
+            291.60394,
+            291.978,
+            292.35205,
+            292.69543,
+            292.99832,
+            293.25095,
+            293.44354,
+            293.56625,
+            293.60934,
+            293.56625,
+            293.44354,
+            293.25095,
+            292.99832,
+            292.69543,
+            292.35205,
+            291.978,
+            291.60394,
+            291.26056,
+            290.95764,
+            290.70502,
+            290.51242,
+            290.38971,
+            290.34662,
+            290.34662
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            340.91318,
+            177.10437,
+            344.1759,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            340.91318,
+            340.95627,
+            341.07901,
+            341.27161,
+            341.52423,
+            341.82715,
+            342.1705,
+            342.54456,
+            342.91861,
+            343.26199,
+            343.56488,
+            343.81754,
+            344.0101,
+            344.13281,
+            344.1759,
+            344.13281,
+            344.0101,
+            343.81754,
+            343.56488,
+            343.26199,
+            342.91861,
+            342.54456,
+            342.1705,
+            341.82715,
+            341.52423,
+            341.27158,
+            341.07901,
+            340.95627,
+            340.91318,
+            340.91318
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            340.91318,
+            177.10437,
+            344.1759,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            340.91318,
+            340.95627,
+            341.07898,
+            341.27158,
+            341.5242,
+            341.82712,
+            342.1705,
+            342.54456,
+            342.91861,
+            343.26199,
+            343.56488,
+            343.8175,
+            344.0101,
+            344.13281,
+            344.1759,
+            344.13281,
+            344.0101,
+            343.8175,
+            343.56488,
+            343.26199,
+            342.91861,
+            342.54456,
+            342.1705,
+            341.82712,
+            341.5242,
+            341.27158,
+            341.07898,
+            340.95627,
+            340.91318,
+            340.91318
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            369.01691,
+            177.10437,
+            372.27966,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            369.01691,
+            369.06,
+            369.18274,
+            369.37531,
+            369.62793,
+            369.93085,
+            370.27423,
+            370.64832,
+            371.02234,
+            371.36572,
+            371.66864,
+            371.92126,
+            372.11383,
+            372.23657,
+            372.27966,
+            372.23657,
+            372.11383,
+            371.92126,
+            371.66864,
+            371.36572,
+            371.02237,
+            370.64832,
+            370.27423,
+            369.93085,
+            369.62793,
+            369.37531,
+            369.18274,
+            369.06,
+            369.01691,
+            369.01691
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            369.01691,
+            177.10437,
+            372.27963,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            369.01691,
+            369.06,
+            369.18271,
+            369.37531,
+            369.62793,
+            369.93085,
+            370.27423,
+            370.64828,
+            371.02234,
+            371.36572,
+            371.66861,
+            371.92123,
+            372.11383,
+            372.23654,
+            372.27963,
+            372.23654,
+            372.11383,
+            371.92123,
+            371.66861,
+            371.36572,
+            371.02234,
+            370.64828,
+            370.27423,
+            369.93085,
+            369.62793,
+            369.37531,
+            369.18271,
+            369.06,
+            369.01691,
+            369.01691
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            396.02002,
+            177.10437,
+            399.28275,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            396.02002,
+            396.06308,
+            396.18582,
+            396.37839,
+            396.63104,
+            396.93393,
+            397.27728,
+            397.65137,
+            398.02539,
+            398.36877,
+            398.67169,
+            398.92432,
+            399.11691,
+            399.23962,
+            399.28275,
+            399.23965,
+            399.11691,
+            398.92432,
+            398.67169,
+            398.36877,
+            398.02539,
+            397.65137,
+            397.27731,
+            396.93393,
+            396.63104,
+            396.37839,
+            396.18582,
+            396.06308,
+            396.02002,
+            396.02002
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36169,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36169,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            396.02002,
+            177.10437,
+            399.28275,
+            180.36711
+          ],
+          "sub-paths": [
+            0,
+            30
+          ],
+          "type": "unknown",
+          "x-values": [
+            396.02002,
+            396.06311,
+            396.18582,
+            396.37842,
+            396.63104,
+            396.93396,
+            397.27734,
+            397.6514,
+            398.02545,
+            398.36884,
+            398.67172,
+            398.92435,
+            399.11694,
+            399.23965,
+            399.28275,
+            399.23965,
+            399.11694,
+            398.92435,
+            398.67172,
+            398.36884,
+            398.02545,
+            397.6514,
+            397.27734,
+            396.93396,
+            396.63104,
+            396.37842,
+            396.18582,
+            396.06311,
+            396.02002,
+            396.02002
+          ],
+          "y-values": [
+            178.73575,
+            179.1098,
+            179.45317,
+            179.75609,
+            180.00871,
+            180.20129,
+            180.32402,
+            180.36711,
+            180.32402,
+            180.20129,
+            180.00871,
+            179.75609,
+            179.45317,
+            179.1098,
+            178.73575,
+            178.36168,
+            178.01831,
+            177.71541,
+            177.46277,
+            177.27019,
+            177.14746,
+            177.10437,
+            177.14746,
+            177.27019,
+            177.46277,
+            177.71541,
+            178.01831,
+            178.36168,
+            178.73575,
+            178.73575
+          ]
+        },
+        {
+          "bbox": [
+            182.59778,
+            183.21188,
+            432.22891,
+            183.21191
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            182.59778,
+            432.22891
+          ],
+          "y-values": [
+            183.21191,
+            183.21188
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 437.34204,
+          "y0": 172.58231,
+          "y1": 351.68903
+        },
+        {
+          "x": 177.993,
+          "y0": 172.58231,
+          "y1": 351.68903
+        },
+        {
+          "x": 437.46844,
+          "y0": 172.53,
+          "y1": 351.68903
+        },
+        {
+          "x": 177.993,
+          "y0": 172.53,
+          "y1": 351.68903
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

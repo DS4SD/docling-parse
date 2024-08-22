@@ -1,0 +1,1551 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.407858554009125,
+        "/CQWFHR+SFBX1000": 2.446373810898738,
+        "/IHRBTF+SFBX1200": 1.761398168646507,
+        "/IMULES+SFTI1000": 2.815029184273833,
+        "/TFWOKM+SFRM0900": 2.449730965601903
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.64725384255927,
+        "/CQWFHR+SFBX1000": 6.477848840708937,
+        "/IHRBTF+SFBX1200": 6.361959563017042,
+        "/IMULES+SFTI1000": 4.597857482101325,
+        "/TFWOKM+SFRM0900": 4.817213789885133
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 1750,
+        "/CQWFHR+SFBX1000": 108,
+        "/IHRBTF+SFBX1200": 12,
+        "/IMULES+SFTI1000": 25,
+        "/TFWOKM+SFRM0900": 56
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/IHRBTF+SFBX1200",
+      "/IMULES+SFTI1000",
+      "/TFWOKM+SFRM0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.375,
+              692.10498,
+              221.39143,
+              700.17474
+            ],
+            "device": [
+              204.375,
+              690.1593,
+              496.65533,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Comp. on Robust Layout Segmentation in Corporate Docs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              525.10571,
+              692.10498,
+              529.71265,
+              700.17474
+            ],
+            "device": [
+              525.10571,
+              690.1593,
+              529.71265,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "9"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              174.19099,
+              674.99896
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              480.59085,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "YOLOv8 [8]. Training was conducted over 150 epochs using BCELoss with Focal-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              654.24695,
+              156.59305,
+              663.04395
+            ],
+            "device": [
+              134.765,
+              652.31421,
+              480.5899,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "Loss, and mosaic augmentation was cancelled for the final 20 epochs. Addition-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              642.29095,
+              150.5358,
+              651.08795
+            ],
+            "device": [
+              134.765,
+              640.35822,
+              480.58774,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "ally, a DiT model [11] (dit-large) was fine-tuned using the DocLayNet dataset. To"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              630.33594,
+              160.24634,
+              639.13293
+            ],
+            "device": [
+              134.765,
+              628.4032,
+              480.58676,
+              637.2002
+            ]
+          },
+          "content": {
+            "rnormalized": "improve vertical text detection, the team added multi-scale image training. Pre-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              618.38092,
+              168.57309,
+              627.17792
+            ],
+            "device": [
+              134.765,
+              616.44818,
+              480.59467,
+              625.24518
+            ]
+          },
+          "content": {
+            "rnormalized": "dictions for the final submission were ensembled from three detectors to achieve"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              606.4259,
+              149.7597,
+              615.2229
+            ],
+            "device": [
+              134.765,
+              604.49316,
+              229.83011,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "superior performance."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              575.8269,
+              142.73309,
+              584.63385
+            ],
+            "device": [
+              134.765,
+              573.89417,
+              238.52748,
+              582.70111
+            ]
+          },
+          "content": {
+            "rnormalized": "Team INNERCONV"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              555.18988,
+              141.26659,
+              563.98688
+            ],
+            "device": [
+              134.765,
+              553.25714,
+              480.59073,
+              562.05414
+            ]
+          },
+          "content": {
+            "rnormalized": "For the task of layout prediction, the team uses the MaskDINO model [10]."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              543.23486,
+              184.48236,
+              552.03186
+            ],
+            "device": [
+              134.765,
+              541.30212,
+              480.59174,
+              550.09912
+            ]
+          },
+          "content": {
+            "rnormalized": "MaskDINO is derivative of DINO [22] which introduces a mask prediction branch"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              531.27985,
+              143.06483,
+              540.07684
+            ],
+            "device": [
+              134.765,
+              529.34711,
+              480.58972,
+              538.1441
+            ]
+          },
+          "content": {
+            "rnormalized": "in parallel to the box prediction branch of DINO. It achieves better alignment"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              519.32483,
+              142.78888,
+              528.12183
+            ],
+            "device": [
+              134.765,
+              517.39209,
+              480.59369,
+              526.18909
+            ]
+          },
+          "content": {
+            "rnormalized": "of features between detection and segmentation. In training, only the image"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              507.36984,
+              170.84157,
+              516.16681
+            ],
+            "device": [
+              134.765,
+              505.4371,
+              480.59274,
+              514.23407
+            ]
+          },
+          "content": {
+            "rnormalized": "representation of the DocLayNet dataset is used. In inference, the team applied"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              495.41385,
+              148.59807,
+              504.21082
+            ],
+            "device": [
+              134.765,
+              493.48111,
+              480.59366,
+              502.27808
+            ]
+          },
+          "content": {
+            "rnormalized": "the Weighted Boxes Fusion (WBF) technique [17] to ensemble the predictions"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              483.45886,
+              145.27853,
+              492.25583
+            ],
+            "device": [
+              134.765,
+              481.52612,
+              323.61606,
+              490.32309
+            ]
+          },
+          "content": {
+            "rnormalized": "on multiple scales of the same input image."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              452.85986,
+              142.73309,
+              461.66681
+            ],
+            "device": [
+              134.765,
+              450.92712,
+              255.55455,
+              459.73407
+            ]
+          },
+          "content": {
+            "rnormalized": "Team LC-OCR (CVTE)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              432.22388,
+              141.26659,
+              441.02084
+            ],
+            "device": [
+              134.765,
+              430.29114,
+              480.59464,
+              439.0881
+            ]
+          },
+          "content": {
+            "rnormalized": "For the task of layout prediction, the team applied two models, VSR [24] and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              420.26889,
+              145.96994,
+              429.06586
+            ],
+            "device": [
+              134.765,
+              418.33615,
+              480.59073,
+              427.13312
+            ]
+          },
+          "content": {
+            "rnormalized": "LayoutLMv3 [7], which use pre-trained weights. Prediction results from both"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              408.3129,
+              148.04515,
+              417.10986
+            ],
+            "device": [
+              134.765,
+              406.38016,
+              397.02847,
+              415.17712
+            ]
+          },
+          "content": {
+            "rnormalized": "models are merged in inference. Detections for the classes"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              401.73297,
+              408.3129,
+              408.23456,
+              417.10986
+            ],
+            "device": [
+              401.73297,
+              406.38016,
+              439.03094,
+              415.17712
+            ]
+          },
+          "content": {
+            "rnormalized": "Footnote"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              439.03397,
+              408.3129,
+              441.80057,
+              417.10986
+            ],
+            "device": [
+              439.03397,
+              406.38016,
+              441.80057,
+              415.17712
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              446.50497,
+              408.3129,
+              473.75168,
+              417.10986
+            ],
+            "device": [
+              446.50497,
+              406.38016,
+              477.82538,
+              415.17712
+            ]
+          },
+          "content": {
+            "rnormalized": "Picture"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              477.82498,
+              408.3129,
+              480.59158,
+              417.10986
+            ],
+            "device": [
+              477.82498,
+              406.38016,
+              480.59158,
+              415.17712
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              396.35791,
+              141.89223,
+              405.15488
+            ],
+            "device": [
+              134.76498,
+              394.42517,
+              157.92503,
+              403.22214
+            ]
+          },
+          "content": {
+            "rnormalized": "Table"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.03198,
+              396.35791,
+              179.07874,
+              405.15488
+            ],
+            "device": [
+              163.03198,
+              394.42517,
+              179.07874,
+              403.22214
+            ]
+          },
+          "content": {
+            "rnormalized": "and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              183.43597,
+              396.35791,
+              204.05357,
+              405.15488
+            ],
+            "device": [
+              183.43597,
+              394.42517,
+              204.05357,
+              403.22214
+            ]
+          },
+          "content": {
+            "rnormalized": "Title"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              209.15797,
+              396.35791,
+              216.35097,
+              405.15488
+            ],
+            "device": [
+              209.15797,
+              394.42517,
+              480.58701,
+              403.22214
+            ]
+          },
+          "content": {
+            "rnormalized": "were taken from LayoutLMv3, the remainder of classes from"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              384.40292,
+              157.86626,
+              393.19989
+            ],
+            "device": [
+              134.76498,
+              382.47018,
+              480.59473,
+              391.26715
+            ]
+          },
+          "content": {
+            "rnormalized": "VSR. In VSR, the team included the text cell information provided in the JSON"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              372.44794,
+              170.84155,
+              381.2449
+            ],
+            "device": [
+              134.76498,
+              370.5152,
+              263.25266,
+              379.31216
+            ]
+          },
+          "content": {
+            "rnormalized": "representation of DocLayNet."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              341.84894,
+              142.73308,
+              350.65588
+            ],
+            "device": [
+              134.76498,
+              339.9162,
+              413.14697,
+              348.72314
+            ]
+          },
+          "content": {
+            "rnormalized": "Team DXM-DI-AI-CV-TEAM (Du Xiaoman Financial)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              321.21194,
+              141.26657,
+              330.00891
+            ],
+            "device": [
+              134.76498,
+              319.27921,
+              480.59064,
+              328.07617
+            ]
+          },
+          "content": {
+            "rnormalized": "For the task of layout prediction, the team trained different versions of Cascade"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              309.25696,
+              158.06053,
+              318.05392
+            ],
+            "device": [
+              134.76498,
+              307.32422,
+              480.59467,
+              316.12119
+            ]
+          },
+          "content": {
+            "rnormalized": "Mask R-CNN [6] models, based on a DiT[11] backbone (DiT-large), and fuse"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              297.30197,
+              178.50578,
+              306.09894
+            ],
+            "device": [
+              134.76498,
+              295.36923,
+              311.86713,
+              304.1662
+            ]
+          },
+          "content": {
+            "rnormalized": "prediction results using different models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              266.70297,
+              176.22733,
+              275.50992
+            ],
+            "device": [
+              134.76498,
+              264.77023,
+              373.42108,
+              273.57718
+            ]
+          },
+          "content": {
+            "rnormalized": "Baseline of ICDAR 2023 DocLayNet organizers"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              246.06697,
+              141.95798,
+              254.86395
+            ],
+            "device": [
+              134.76498,
+              244.13423,
+              480.58975,
+              252.9312
+            ]
+          },
+          "content": {
+            "rnormalized": "To set a comparison baseline for the competition, the organizers used a YOLOv5"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              234.11098,
+              148.04514,
+              242.90796
+            ],
+            "device": [
+              134.76498,
+              232.17824,
+              480.59375,
+              240.9752
+            ]
+          },
+          "content": {
+            "rnormalized": "model (medium size), and trained it solely on the DocLayNet training dataset,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              222.15598,
+              154.13129,
+              230.95296
+            ],
+            "device": [
+              134.76498,
+              220.22324,
+              480.59372,
+              229.0202
+            ]
+          },
+          "content": {
+            "rnormalized": "with images re-scaled to square 1024 by 1024 pixels. The model was trained from"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              210.20097,
+              160.30112,
+              218.99796
+            ],
+            "device": [
+              134.76498,
+              208.26823,
+              480.58585,
+              217.0652
+            ]
+          },
+          "content": {
+            "rnormalized": "scratch with default settings for 80 epochs. We applied standard augmentation"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              198.24597,
+              147.49121,
+              207.04295
+            ],
+            "device": [
+              134.76498,
+              196.31323,
+              468.23813,
+              205.1102
+            ]
+          },
+          "content": {
+            "rnormalized": "techniques such as mosaic, scale, flipping, rotation, mix-up and image levels."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              165.65398,
+              141.48859,
+              176.22237
+            ],
+            "device": [
+              134.76498,
+              163.33467,
+              141.48859,
+              173.90306
+            ]
+          },
+          "content": {
+            "rnormalized": "6"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.93819,
+              165.65398,
+              224.55811,
+              176.22237
+            ],
+            "device": [
+              154.93819,
+              163.33467,
+              224.55811,
+              173.90306
+            ]
+          },
+          "content": {
+            "rnormalized": "Conclusions"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              141.03297,
+              145.00156,
+              149.82996
+            ],
+            "device": [
+              134.76498,
+              139.10023,
+              480.58875,
+              147.8972
+            ]
+          },
+          "content": {
+            "rnormalized": "We believe that this ICDAR competition served its purpose well to benchmark"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              129.07797,
+              148.59805,
+              137.87495
+            ],
+            "device": [
+              134.76498,
+              127.14523,
+              480.59277,
+              135.9422
+            ]
+          },
+          "content": {
+            "rnormalized": "the state-of-the-art solutions to the layout segmentation task in documents, and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "ignored-cells": [],
+      "images": [],
+      "paths": [],
+      "width": 612
+    }
+  ]
+}

@@ -131,6 +131,8 @@ namespace docling
   
   bool docling_parser::load_document_from_bytesio(std::string key, pybind11::object bytes_io)
   {
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    
     // Check if the object is a BytesIO object
     if (!pybind11::hasattr(bytes_io, "read")) {
       
@@ -146,7 +148,8 @@ namespace docling
     // Get a pointer to the data
     std::string data_str = data.cast<std::string>();
     
-    return interface.load_document(key, data_str.c_str(), data_str.size());
+    //return interface.load_document(key, data_str.c_str(), data_str.size());
+    return interface.load_document_from_buffer(key, data_str);
   }
   
   bool docling_parser::unload_document(std::string key)

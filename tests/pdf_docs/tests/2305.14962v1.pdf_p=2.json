@@ -1,0 +1,2217 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.48592983634736,
+        "/CQWFHR+SFBX1000": 3.244664071621299,
+        "/IMULES+SFTI1000": 2.199241613192212,
+        "/RQVTRN+SFBX0900": 2.642099575926112,
+        "/TFWOKM+SFRM0900": 2.267965862934047,
+        "/YUIILM+SFTI0900": 1.583468311236025,
+        "/YWBOHZ+SFRM0700": 6.157830756231744
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.58442869785632,
+        "/CQWFHR+SFBX1000": 5.662479303383079,
+        "/IMULES+SFTI1000": 4.685626063420176,
+        "/RQVTRN+SFBX0900": 4.35214160862744,
+        "/TFWOKM+SFRM0900": 4.421554536530638,
+        "/YUIILM+SFTI0900": 4.585954893355896,
+        "/YWBOHZ+SFRM0700": 5.879602274694601
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 1097,
+        "/CQWFHR+SFBX1000": 19,
+        "/IMULES+SFTI1000": 88,
+        "/RQVTRN+SFBX0900": 6,
+        "/TFWOKM+SFRM0900": 153,
+        "/YUIILM+SFTI0900": 5,
+        "/YWBOHZ+SFRM0700": 1
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/IMULES+SFTI1000",
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900",
+      "/YUIILM+SFTI0900",
+      "/YWBOHZ+SFRM0700"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.375,
+              692.10498,
+              221.39143,
+              700.17474
+            ],
+            "device": [
+              204.375,
+              690.1593,
+              496.65533,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Comp. on Robust Layout Segmentation in Corporate Docs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              525.10571,
+              692.10498,
+              529.71265,
+              700.17474
+            ],
+            "device": [
+              525.10571,
+              690.1593,
+              529.71265,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              141.95799,
+              674.99896
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              480.58972,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "work. However, these datasets still remain limited to a narrow domain of pre-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              654.24695,
+              172.39175,
+              663.04395
+            ],
+            "device": [
+              134.765,
+              652.31421,
+              480.59079,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "dominantly scientific documents, which is owed to their automatic ground-truth"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              642.29095,
+              180.16656,
+              651.08795
+            ],
+            "device": [
+              134.765,
+              640.35822,
+              369.57849,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "generation approach from mostly uniform XML or L"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              365.99402,
+              644.34998,
+              371.87363,
+              650.50781
+            ],
+            "device": [
+              365.99402,
+              642.99707,
+              371.87363,
+              649.15491
+            ]
+          },
+          "content": {
+            "rnormalized": "A"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YWBOHZ+SFRM0700",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              370.37903,
+              642.29095,
+              377.57202,
+              651.08795
+            ],
+            "device": [
+              370.37903,
+              640.35822,
+              377.57202,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "T"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              375.91302,
+              640.14697,
+              382.69159,
+              648.94397
+            ],
+            "device": [
+              375.91302,
+              638.21423,
+              382.69159,
+              647.01123
+            ]
+          },
+          "content": {
+            "rnormalized": "E"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              381.44601,
+              642.29095,
+              388.91599,
+              651.08795
+            ],
+            "device": [
+              381.44601,
+              640.35822,
+              388.71603,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "X"
+          },
+          "enumeration": {
+            "match": 7,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              381.44601,
+              642.29095,
+              388.91599,
+              651.08795
+            ],
+            "device": [
+              393.56302,
+              640.35822,
+              480.58783,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "sources. Despite ex-"
+          },
+          "enumeration": {
+            "match": 6,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              630.33594,
+              140.29825,
+              639.13293
+            ],
+            "device": [
+              134.76501,
+              628.4032,
+              480.59366,
+              637.2002
+            ]
+          },
+          "content": {
+            "rnormalized": "posing many different publisher layouts, all documents strongly share common"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              618.38092,
+              158.08846,
+              627.17792
+            ],
+            "device": [
+              134.76501,
+              616.44818,
+              480.58887,
+              625.24518
+            ]
+          },
+          "content": {
+            "rnormalized": "traits and general structure. This has led to a saturation of ML model accuracy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              606.4259,
+              173.05428,
+              615.2229
+            ],
+            "device": [
+              134.76501,
+              604.49316,
+              480.59171,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "baselines at a very high level, with little room for improvement [21]. Yet, all"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              594.47089,
+              169.34819,
+              603.26788
+            ],
+            "device": [
+              134.76501,
+              592.53815,
+              480.59473,
+              601.33514
+            ]
+          },
+          "content": {
+            "rnormalized": "publicly proposed ML models trained on these datasets generalize rather poorly"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              582.51587,
+              143.61877,
+              591.31287
+            ],
+            "device": [
+              134.76501,
+              580.58313,
+              480.58676,
+              589.38013
+            ]
+          },
+          "content": {
+            "rnormalized": "to out-of-domain document samples, such as those found in the corporate world."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              570.55988,
+              141.2666,
+              579.35687
+            ],
+            "device": [
+              134.76501,
+              568.62714,
+              480.58774,
+              577.42413
+            ]
+          },
+          "content": {
+            "rnormalized": "For example, tables in invoices or manuals are difficult to detect correctly with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              558.60486,
+              148.04517,
+              567.40186
+            ],
+            "device": [
+              134.76501,
+              556.67212,
+              341.15823,
+              565.46912
+            ]
+          },
+          "content": {
+            "rnormalized": "models trained on scientific literature or books."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              525.70288,
+              149.40207,
+              534.50983
+            ],
+            "device": [
+              134.76501,
+              523.77014,
+              149.40207,
+              532.57709
+            ]
+          },
+          "content": {
+            "rnormalized": "2.2"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.85905,
+              525.70288,
+              175.37057,
+              534.50983
+            ],
+            "device": [
+              160.85905,
+              523.77014,
+              257.62479,
+              532.57709
+            ]
+          },
+          "content": {
+            "rnormalized": "DocLayNet dataset"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              502.76288,
+              151.91762,
+              511.55984
+            ],
+            "device": [
+              134.76501,
+              500.83014,
+              480.59283,
+              509.62711
+            ]
+          },
+          "content": {
+            "rnormalized": "The DocLayNet dataset [16] addresses these known limitations by providing"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              490.80789,
+              162.43315,
+              499.60486
+            ],
+            "device": [
+              134.76501,
+              488.87515,
+              480.58664,
+              497.67212
+            ]
+          },
+          "content": {
+            "rnormalized": "80,863 page samples from a broad range of document styles and domains, which"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              478.85291,
+              148.07306,
+              487.64987
+            ],
+            "device": [
+              134.76501,
+              476.92017,
+              480.58878,
+              485.71713
+            ]
+          },
+          "content": {
+            "rnormalized": "are fully layout annotated by human experts to a high-quality standard. Do-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              466.89792,
+              150.39633,
+              475.69489
+            ],
+            "device": [
+              134.76501,
+              464.96518,
+              480.59271,
+              473.76215
+            ]
+          },
+          "content": {
+            "rnormalized": "cLayNet is the first large-scale dataset covering a wide range of layout styles and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              454.94193,
+              173.55341,
+              463.73889
+            ],
+            "device": [
+              134.76501,
+              453.00919,
+              480.59573,
+              461.80615
+            ]
+          },
+          "content": {
+            "rnormalized": "domains, which includes Financial reports, Patents, Manuals, Laws, Tenders,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              442.98694,
+              150.81177,
+              451.78391
+            ],
+            "device": [
+              134.76501,
+              441.0542,
+              480.59082,
+              449.85117
+            ]
+          },
+          "content": {
+            "rnormalized": "and Technical Papers. It defines 11 class labels for rectangular bounding-box"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              431.03195,
+              188.49431,
+              439.82892
+            ],
+            "device": [
+              134.76501,
+              429.09921,
+              223.45407,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "annotations, namely"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              227.15201,
+              431.03195,
+              261.51501,
+              439.82892
+            ],
+            "device": [
+              227.15201,
+              429.09921,
+              261.51501,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "Caption"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.51501,
+              431.03195,
+              264.28162,
+              439.82892
+            ],
+            "device": [
+              261.51501,
+              429.09921,
+              264.28162,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              267.97803,
+              431.03195,
+              274.47961,
+              439.82892
+            ],
+            "device": [
+              267.97803,
+              429.09921,
+              305.276,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "Footnote"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              305.27902,
+              431.03195,
+              308.04562,
+              439.82892
+            ],
+            "device": [
+              305.27902,
+              429.09921,
+              308.04562,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              311.74301,
+              431.03195,
+              318.2446,
+              439.82892
+            ],
+            "device": [
+              311.74301,
+              429.09921,
+              347.89529,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "Formula"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              347.89801,
+              431.03195,
+              350.66461,
+              439.82892
+            ],
+            "device": [
+              347.89801,
+              429.09921,
+              350.66461,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              354.362,
+              431.03195,
+              393.69934,
+              439.82892
+            ],
+            "device": [
+              354.362,
+              429.09921,
+              393.69934,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "List-item"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              393.69901,
+              431.03195,
+              396.46561,
+              439.82892
+            ],
+            "device": [
+              393.69901,
+              429.09921,
+              396.46561,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              400.16202,
+              431.03195,
+              432.88217,
+              439.82892
+            ],
+            "device": [
+              400.16202,
+              429.09921,
+              449.55557,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "Page-footer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              449.55402,
+              431.03195,
+              452.32062,
+              439.82892
+            ],
+            "device": [
+              449.55402,
+              429.09921,
+              452.32062,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              456.01703,
+              431.03195,
+              480.59177,
+              439.82892
+            ],
+            "device": [
+              456.01703,
+              429.09921,
+              480.59177,
+              437.89618
+            ]
+          },
+          "content": {
+            "rnormalized": "Page-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              419.07697,
+              144.4377,
+              427.87393
+            ],
+            "device": [
+              134.76501,
+              417.14423,
+              162.89342,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "header"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              162.89102,
+              419.07697,
+              165.65764,
+              427.87393
+            ],
+            "device": [
+              162.89102,
+              417.14423,
+              165.65764,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              168.59402,
+              419.07697,
+              195.84074,
+              427.87393
+            ],
+            "device": [
+              168.59402,
+              417.14423,
+              199.91446,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "Picture"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              199.91302,
+              419.07697,
+              202.67964,
+              427.87393
+            ],
+            "device": [
+              199.91302,
+              417.14423,
+              202.67964,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              205.61603,
+              419.07697,
+              215.79781,
+              427.87393
+            ],
+            "device": [
+              205.61603,
+              417.14423,
+              268.61752,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "Section-header"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              268.61502,
+              419.07697,
+              271.38162,
+              427.87393
+            ],
+            "device": [
+              268.61502,
+              417.14423,
+              271.38162,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              274.31802,
+              419.07697,
+              281.44528,
+              427.87393
+            ],
+            "device": [
+              274.31802,
+              417.14423,
+              297.47809,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "Table"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.48102,
+              419.07697,
+              300.24762,
+              427.87393
+            ],
+            "device": [
+              297.48102,
+              417.14423,
+              300.24762,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.18402,
+              419.07697,
+              310.31128,
+              427.87393
+            ],
+            "device": [
+              303.18402,
+              417.14423,
+              322.05521,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "Text"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              325.93903,
+              419.07697,
+              341.98578,
+              427.87393
+            ],
+            "device": [
+              325.93903,
+              417.14423,
+              341.98578,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              344.92303,
+              419.07697,
+              365.54065,
+              427.87393
+            ],
+            "device": [
+              344.92303,
+              417.14423,
+              365.54065,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": "Title"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              365.54004,
+              419.07697,
+              368.30664,
+              427.87393
+            ],
+            "device": [
+              365.54004,
+              417.14423,
+              480.58612,
+              425.94119
+            ]
+          },
+          "content": {
+            "rnormalized": ". Detailed instructions and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              141.78,
+              152.62787,
+              149.7063
+            ],
+            "device": [
+              134.765,
+              140.04051,
+              162.64424,
+              147.96681
+            ]
+          },
+          "content": {
+            "rnormalized": "Fig. 2."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              165.90399,
+              141.78,
+              189.45604,
+              149.84976
+            ],
+            "device": [
+              165.90399,
+              139.83429,
+              341.47775,
+              147.90405
+            ]
+          },
+          "content": {
+            "rnormalized": "Select samples in the competition dataset ("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              341.47699,
+              141.78,
+              364.40677,
+              149.69733
+            ],
+            "device": [
+              341.47699,
+              140.04051,
+              364.40677,
+              147.95786
+            ]
+          },
+          "content": {
+            "rnormalized": "Other"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YUIILM+SFTI0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              368.62799,
+              141.78,
+              406.27432,
+              149.84976
+            ],
+            "device": [
+              368.62799,
+              139.83429,
+              480.5896,
+              147.90405
+            ]
+          },
+          "content": {
+            "rnormalized": "category) which fall outside"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              130.821,
+              142.18738,
+              138.89076
+            ],
+            "device": [
+              134.76498,
+              128.87529,
+              298.12296,
+              136.94505
+            ]
+          },
+          "content": {
+            "rnormalized": "of the layout distribution in DocLayNet."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 134.765,
+          "x1": 480.54431,
+          "y": 393.25671
+        },
+        {
+          "x0": 134.765,
+          "x1": 480.54431,
+          "y": 162.701
+        },
+        {
+          "x0": 134.765,
+          "x1": 480.76807,
+          "y": 393.25671
+        },
+        {
+          "x0": 134.765,
+          "x1": 480.76807,
+          "y": 162.588
+        },
+        {
+          "x0": 337.89285,
+          "x1": 473.52039,
+          "y": 358.58398
+        },
+        {
+          "x0": 337.89285,
+          "x1": 473.52039,
+          "y": 197.2608
+        },
+        {
+          "x0": 142.01273,
+          "x1": 334.35892,
+          "y": 391.18509
+        },
+        {
+          "x0": 142.01273,
+          "x1": 334.35892,
+          "y": 286.58051
+        },
+        {
+          "x0": 142.04935,
+          "x1": 234.08731,
+          "y": 283.58731
+        },
+        {
+          "x0": 142.04935,
+          "x1": 234.08731,
+          "y": 163.68407
+        },
+        {
+          "x0": 241.26927,
+          "x1": 334.39554,
+          "y": 283.58731
+        },
+        {
+          "x0": 241.26927,
+          "x1": 334.39554,
+          "y": 163.68407
+        }
+      ],
+      "ignored-cells": [],
+      "images": [
+        {
+          "box": [
+            338.1189,
+            197.48683,
+            473.29437,
+            358.35791
+          ],
+          "height": 2354,
+          "width": 1978
+        },
+        {
+          "box": [
+            142.27538,
+            163.91014,
+            233.86127,
+            283.36133
+          ],
+          "height": 1196,
+          "width": 917
+        },
+        {
+          "box": [
+            241.4953,
+            163.91014,
+            334.16949,
+            283.36133
+          ],
+          "height": 1200,
+          "width": 931
+        }
+      ],
+      "paths": [
+        {
+          "bbox": [
+            134.765,
+            162.701,
+            480.54431,
+            393.25671
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            134.765,
+            480.54431,
+            480.54431,
+            134.765,
+            134.765
+          ],
+          "y-values": [
+            393.25671,
+            393.25671,
+            162.701,
+            162.701,
+            393.25671
+          ]
+        },
+        {
+          "bbox": [
+            134.765,
+            162.588,
+            480.76807,
+            393.25671
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            134.765,
+            480.76807,
+            480.76807,
+            134.765,
+            134.765
+          ],
+          "y-values": [
+            393.25671,
+            393.25671,
+            162.588,
+            162.588,
+            393.25671
+          ]
+        },
+        {
+          "bbox": [
+            337.89285,
+            197.2608,
+            473.52039,
+            358.58398
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            337.89285,
+            473.52039,
+            473.52039,
+            337.89285,
+            337.89285
+          ],
+          "y-values": [
+            358.58398,
+            358.58398,
+            197.2608,
+            197.2608,
+            358.58398
+          ]
+        },
+        {
+          "bbox": [
+            142.01273,
+            286.58051,
+            334.35892,
+            391.18509
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            142.01273,
+            334.35892,
+            334.35892,
+            142.01273,
+            142.01273
+          ],
+          "y-values": [
+            391.18509,
+            391.18509,
+            286.58051,
+            286.58051,
+            391.18509
+          ]
+        },
+        {
+          "bbox": [
+            142.04935,
+            163.68407,
+            234.08731,
+            283.58731
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            142.04935,
+            234.08731,
+            234.08731,
+            142.04935,
+            142.04935
+          ],
+          "y-values": [
+            283.58731,
+            283.58731,
+            163.68407,
+            163.68407,
+            283.58731
+          ]
+        },
+        {
+          "bbox": [
+            241.26927,
+            163.68407,
+            334.39554,
+            283.58731
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            241.26927,
+            334.39554,
+            334.39554,
+            241.26927,
+            241.26927
+          ],
+          "y-values": [
+            283.58731,
+            283.58731,
+            163.68407,
+            163.68407,
+            283.58731
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 480.54431,
+          "y0": 162.701,
+          "y1": 393.25671
+        },
+        {
+          "x": 134.765,
+          "y0": 162.701,
+          "y1": 393.25671
+        },
+        {
+          "x": 480.76807,
+          "y0": 162.588,
+          "y1": 393.25671
+        },
+        {
+          "x": 134.765,
+          "y0": 162.588,
+          "y1": 393.25671
+        },
+        {
+          "x": 473.52039,
+          "y0": 197.2608,
+          "y1": 358.58398
+        },
+        {
+          "x": 337.89285,
+          "y0": 197.2608,
+          "y1": 358.58398
+        },
+        {
+          "x": 334.35892,
+          "y0": 286.58051,
+          "y1": 391.18509
+        },
+        {
+          "x": 142.01273,
+          "y0": 286.58051,
+          "y1": 391.18509
+        },
+        {
+          "x": 234.08731,
+          "y0": 163.68407,
+          "y1": 283.58731
+        },
+        {
+          "x": 142.04935,
+          "y0": 163.68407,
+          "y1": 283.58731
+        },
+        {
+          "x": 334.39554,
+          "y0": 163.68407,
+          "y1": 283.58731
+        },
+        {
+          "x": 241.26927,
+          "y0": 163.68407,
+          "y1": 283.58731
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

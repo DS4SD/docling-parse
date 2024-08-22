@@ -1,0 +1,2099 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.277409283457628,
+        "/CQWFHR+SFBX1000": 1.437868672824109,
+        "/IHRBTF+SFBX1200": 2.64209725296976,
+        "/IMULES+SFTI1000": 2.827605010272477,
+        "/TFWOKM+SFRM0900": 1.931216492408139,
+        "/XYXHZH+SFRM0600": 5.308102814698592,
+        "/YWBOHZ+SFRM0700": 6.157864352708448
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.587150816099337,
+        "/CQWFHR+SFBX1000": 5.338875797851387,
+        "/IHRBTF+SFBX1200": 6.674188693492089,
+        "/IMULES+SFTI1000": 4.901918508664741,
+        "/TFWOKM+SFRM0900": 4.46433195553322,
+        "/XYXHZH+SFRM0600": 3.652311406266171,
+        "/YWBOHZ+SFRM0700": 3.970182341080704
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 2279,
+        "/CQWFHR+SFBX1000": 49,
+        "/IHRBTF+SFBX1200": 12,
+        "/IMULES+SFTI1000": 28,
+        "/TFWOKM+SFRM0900": 117,
+        "/XYXHZH+SFRM0600": 2,
+        "/YWBOHZ+SFRM0700": 2
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/IHRBTF+SFBX1200",
+      "/IMULES+SFTI1000",
+      "/TFWOKM+SFRM0900",
+      "/XYXHZH+SFRM0600",
+      "/YWBOHZ+SFRM0700"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.375,
+              692.10498,
+              221.39143,
+              700.17474
+            ],
+            "device": [
+              204.375,
+              690.1593,
+              496.65533,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Comp. on Robust Layout Segmentation in Corporate Docs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              525.10571,
+              692.10498,
+              529.71265,
+              700.17474
+            ],
+            "device": [
+              525.10571,
+              690.1593,
+              529.71265,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              190.8903,
+              675.00891
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              231.59947,
+              673.07617
+            ]
+          },
+          "content": {
+            "rnormalized": "Submission format:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              236.80899,
+              666.20197,
+              259.49481,
+              674.99896
+            ],
+            "device": [
+              236.80899,
+              664.26923,
+              480.59283,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "Since the COCO dataset format [13] and tooling is well"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              654.24695,
+              182.46094,
+              663.04395
+            ],
+            "device": [
+              134.76498,
+              652.31421,
+              480.59464,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "established in the object detection community, we provided a standard COCO"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              642.29095,
+              166.36037,
+              651.08795
+            ],
+            "device": [
+              134.76498,
+              640.35822,
+              480.59265,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "dataset file as part of our competition dataset, which includes the definition of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              630.33594,
+              154.79478,
+              639.13293
+            ],
+            "device": [
+              134.76498,
+              628.4032,
+              480.58878,
+              637.2002
+            ]
+          },
+          "content": {
+            "rnormalized": "class labels and image identifiers, but no ground-truth annotation data. Submis-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              618.38092,
+              155.90164,
+              627.17792
+            ],
+            "device": [
+              134.76498,
+              616.44818,
+              480.59271,
+              625.24518
+            ]
+          },
+          "content": {
+            "rnormalized": "sions were expected in the format of a JSON file complying with the commonly"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              606.4259,
+              154.18608,
+              615.2229
+            ],
+            "device": [
+              134.76498,
+              604.49316,
+              154.18608,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "used"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              158.72198,
+              606.4259,
+              188.24915,
+              615.2229
+            ],
+            "device": [
+              158.72198,
+              604.49316,
+              220.54988,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "COCO results"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              225.89899,
+              606.4259,
+              234.25362,
+              615.2229
+            ],
+            "device": [
+              225.89899,
+              604.49316,
+              480.59589,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "schema, including complete bounding-box predictions for"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              594.47089,
+              148.59805,
+              603.26788
+            ],
+            "device": [
+              134.76498,
+              592.53815,
+              480.59076,
+              601.33514
+            ]
+          },
+          "content": {
+            "rnormalized": "each page sample, matching to the identifiers defined in our provided dataset"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              582.51587,
+              150.25783,
+              591.31287
+            ],
+            "device": [
+              134.76498,
+              580.58313,
+              150.25783,
+              589.38013
+            ]
+          },
+          "content": {
+            "rnormalized": "file."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              555.83887,
+              148.33604,
+              564.64581
+            ],
+            "device": [
+              134.76498,
+              553.90613,
+              227.99202,
+              562.71307
+            ]
+          },
+          "content": {
+            "rnormalized": "Evaluation metric:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              233.70599,
+              555.83887,
+              246.70918,
+              564.63586
+            ],
+            "device": [
+              233.70599,
+              553.90613,
+              480.59216,
+              562.70312
+            ]
+          },
+          "content": {
+            "rnormalized": "All submissions were evaluated using the Mean Average"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              543.88385,
+              174.27267,
+              552.68085
+            ],
+            "device": [
+              134.76498,
+              541.95111,
+              480.59274,
+              550.74811
+            ]
+          },
+          "content": {
+            "rnormalized": "Precision (mAP) @ Intersection-over-Union (IoU) [0.50:0.95] metric, as used in"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              531.92883,
+              148.59805,
+              540.72583
+            ],
+            "device": [
+              134.76498,
+              529.99609,
+              480.5907,
+              538.79309
+            ]
+          },
+          "content": {
+            "rnormalized": "the COCO object detection competition. In detail, we calculate the average"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              519.97382,
+              173.02734,
+              528.77081
+            ],
+            "device": [
+              134.76498,
+              518.04108,
+              480.59369,
+              526.83807
+            ]
+          },
+          "content": {
+            "rnormalized": "precision for a sequence of IoU thresholds ranging from 0.50 to 0.95 with a step"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              508.01782,
+              150.31262,
+              516.81482
+            ],
+            "device": [
+              134.76498,
+              506.08508,
+              270.41571,
+              514.88208
+            ]
+          },
+          "content": {
+            "rnormalized": "size of 0.05, using the standard"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              273.771,
+              508.01782,
+              288.27954,
+              516.81482
+            ],
+            "device": [
+              273.771,
+              506.08508,
+              321.11926,
+              514.88208
+            ]
+          },
+          "content": {
+            "rnormalized": "pycocotools"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              325.28601,
+              508.01782,
+              354.39273,
+              516.81482
+            ],
+            "device": [
+              325.28601,
+              506.08508,
+              354.39273,
+              514.88208
+            ]
+          },
+          "content": {
+            "rnormalized": "library"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              354.392,
+              511.63382,
+              358.36218,
+              517.79169
+            ],
+            "device": [
+              354.392,
+              506.08508,
+              480.58997,
+              514.88208
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{1}$. This metric was computed"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YWBOHZ+SFRM0700",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              496.06284,
+              146.69022,
+              504.8598
+            ],
+            "device": [
+              134.76498,
+              494.1301,
+              480.59473,
+              502.92706
+            ]
+          },
+          "content": {
+            "rnormalized": "for every document category in the competition dataset separately. Then, the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              484.10785,
+              158.00475,
+              492.90482
+            ],
+            "device": [
+              134.76498,
+              482.17511,
+              480.58878,
+              490.97208
+            ]
+          },
+          "content": {
+            "rnormalized": "mean of the mAPs across all categories was computed with equal weights per"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              472.15286,
+              171.59073,
+              480.94983
+            ],
+            "device": [
+              134.76498,
+              470.22012,
+              480.59473,
+              479.01709
+            ]
+          },
+          "content": {
+            "rnormalized": "category. The final ranking of every team\u2019s submissions was based on the overall"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              460.19788,
+              157.31334,
+              468.99484
+            ],
+            "device": [
+              134.76498,
+              458.26514,
+              159.25307,
+              467.0621
+            ]
+          },
+          "content": {
+            "rnormalized": "mAP."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              431.52887,
+              141.48859,
+              442.09726
+            ],
+            "device": [
+              134.76498,
+              429.20956,
+              141.48859,
+              439.77795
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.93819,
+              431.52887,
+              190.04822,
+              442.09726
+            ],
+            "device": [
+              154.93819,
+              429.20956,
+              228.67546,
+              439.77795
+            ]
+          },
+          "content": {
+            "rnormalized": "Competition"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              410.82986,
+              146.21898,
+              419.63681
+            ],
+            "device": [
+              134.76498,
+              408.89713,
+              181.8542,
+              417.70407
+            ]
+          },
+          "content": {
+            "rnormalized": "Schedule:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              187.41599,
+              410.82986,
+              204.59749,
+              419.62683
+            ],
+            "device": [
+              187.41599,
+              408.89713,
+              480.58646,
+              417.69409
+            ]
+          },
+          "content": {
+            "rnormalized": "Our competition was officially announced on December 19th, 2022"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              398.87488,
+              150.81174,
+              407.67184
+            ],
+            "device": [
+              134.76498,
+              396.94214,
+              480.58972,
+              405.73911
+            ]
+          },
+          "content": {
+            "rnormalized": "and ended on April 3rd, 2023. The regular competition phase ended on March"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              386.91888,
+              156.8989,
+              395.71585
+            ],
+            "device": [
+              134.76498,
+              384.98615,
+              480.58575,
+              393.78311
+            ]
+          },
+          "content": {
+            "rnormalized": "26th, 2023 and the final week was run as a dedicated extension phase. Results"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              374.9639,
+              142.78886,
+              383.76086
+            ],
+            "device": [
+              134.76498,
+              373.03116,
+              310.39667,
+              381.82812
+            ]
+          },
+          "content": {
+            "rnormalized": "of both phases are reflected in section 5."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              348.2879,
+              166.74094,
+              357.09485
+            ],
+            "device": [
+              134.76498,
+              346.35516,
+              166.74094,
+              355.16211
+            ]
+          },
+          "content": {
+            "rnormalized": "Setup:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              172.82599,
+              348.2879,
+              183.06256,
+              357.08487
+            ],
+            "device": [
+              172.82599,
+              346.35516,
+              330.3407,
+              355.15213
+            ]
+          },
+          "content": {
+            "rnormalized": "We launched a competition website"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              330.336,
+              351.90289,
+              334.30618,
+              358.06076
+            ],
+            "device": [
+              330.336,
+              350.54999,
+              334.30618,
+              356.70786
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YWBOHZ+SFRM0700",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              338.96201,
+              348.2879,
+              347.81577,
+              357.08487
+            ],
+            "device": [
+              338.96201,
+              346.35516,
+              480.59631,
+              355.15213
+            ]
+          },
+          "content": {
+            "rnormalized": "to provide task descriptions, in-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              336.33292,
+              180.27615,
+              345.12988
+            ],
+            "device": [
+              134.765,
+              334.40018,
+              480.58871,
+              343.19714
+            ]
+          },
+          "content": {
+            "rnormalized": "structions, resources and news updates for the competition. For submission man-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              324.37692,
+              167.41144,
+              333.17389
+            ],
+            "device": [
+              134.765,
+              322.44418,
+              480.59271,
+              331.24115
+            ]
+          },
+          "content": {
+            "rnormalized": "agement, automatic online evaluation and tracking team submissions on a leader"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              312.42194,
+              140.29823,
+              321.2189
+            ],
+            "device": [
+              134.765,
+              310.4892,
+              278.93378,
+              319.28616
+            ]
+          },
+          "content": {
+            "rnormalized": "board, we relied on the free-to-use"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              281.241,
+              312.42194,
+              311.46054,
+              321.2189
+            ],
+            "device": [
+              281.241,
+              310.4892,
+              311.46054,
+              319.28616
+            ]
+          },
+          "content": {
+            "rnormalized": "EvalAI"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              315.33398,
+              312.42194,
+              352.71265,
+              321.2189
+            ],
+            "device": [
+              315.33398,
+              310.4892,
+              480.58859,
+              319.28616
+            ]
+          },
+          "content": {
+            "rnormalized": "platform [19]. To ensure fair conditions"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              300.46695,
+              150.81174,
+              309.26392
+            ],
+            "device": [
+              134.76498,
+              298.53421,
+              480.5918,
+              307.33118
+            ]
+          },
+          "content": {
+            "rnormalized": "and prevent reverse engineering of our ground-truth, each team was originally"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              288.51196,
+              154.16017,
+              297.30893
+            ],
+            "device": [
+              134.76498,
+              286.57922,
+              480.58981,
+              295.37619
+            ]
+          },
+          "content": {
+            "rnormalized": "granted 10 submission attempts on the evaluation platform. We increased this"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              276.55698,
+              155.23813,
+              285.35394
+            ],
+            "device": [
+              134.76498,
+              274.62424,
+              480.58679,
+              283.4212
+            ]
+          },
+          "content": {
+            "rnormalized": "limit by 5 attempts for the extension phase. The feature in EvalAI to declare"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              264.60199,
+              185.89105,
+              273.39896
+            ],
+            "device": [
+              134.76498,
+              262.66925,
+              480.59467,
+              271.46622
+            ]
+          },
+          "content": {
+            "rnormalized": "submissions private or public allowed teams to create multiple private submis-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              252.646,
+              155.90164,
+              261.44296
+            ],
+            "device": [
+              134.76498,
+              250.71326,
+              480.59378,
+              259.51022
+            ]
+          },
+          "content": {
+            "rnormalized": "sions and check how they perform in evaluation before deciding to re-submit"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              240.69099,
+              149.7049,
+              249.48798
+            ],
+            "device": [
+              134.76498,
+              238.75826,
+              480.59473,
+              247.55522
+            ]
+          },
+          "content": {
+            "rnormalized": "one of them as an official entry. The test-score for each submission was provided"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              228.73599,
+              167.71628,
+              237.53297
+            ],
+            "device": [
+              134.76498,
+              226.80325,
+              480.59167,
+              235.60022
+            ]
+          },
+          "content": {
+            "rnormalized": "directly after submission. The latter has advantages and disadvantages. On the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              216.78099,
+              149.7049,
+              225.57797
+            ],
+            "device": [
+              134.76498,
+              214.84825,
+              480.59177,
+              223.64522
+            ]
+          },
+          "content": {
+            "rnormalized": "one hand, teams have a direct feedback on the quality of their results and can"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              204.82599,
+              166.05652,
+              213.62297
+            ],
+            "device": [
+              134.76498,
+              202.89325,
+              480.58679,
+              211.69022
+            ]
+          },
+          "content": {
+            "rnormalized": "explore different strategies, which is one of the main motivations of this com-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              192.87099,
+              140.29822,
+              201.66797
+            ],
+            "device": [
+              134.76498,
+              190.93825,
+              480.58987,
+              199.73521
+            ]
+          },
+          "content": {
+            "rnormalized": "petition. On the other hand, it can also be used to overfit the model. For this"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              180.91499,
+              166.58154,
+              189.71198
+            ],
+            "device": [
+              134.76498,
+              178.98225,
+              480.58865,
+              187.77922
+            ]
+          },
+          "content": {
+            "rnormalized": "explicit reason, we limited the number of submissions of each team to 10 (with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              168.95999,
+              175.4901,
+              177.75697
+            ],
+            "device": [
+              134.76498,
+              167.02725,
+              480.59274,
+              175.82422
+            ]
+          },
+          "content": {
+            "rnormalized": "extension 15). To set a baseline for the leader board, the competition organizers"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              157.00499,
+              166.33247,
+              165.80197
+            ],
+            "device": [
+              134.76498,
+              155.07225,
+              423.44818,
+              163.86922
+            ]
+          },
+          "content": {
+            "rnormalized": "created an initial submission entry, which was visible to all teams."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              137.506,
+              143.84599,
+              141.15831,
+              149.1541
+            ],
+            "device": [
+              137.506,
+              142.68634,
+              141.15831,
+              147.99445
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/XYXHZH+SFRM0600",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              144.72699,
+              140.03699,
+              149.84502,
+              148.10675
+            ],
+            "device": [
+              144.72699,
+              138.09128,
+              261.78064,
+              146.16104
+            ]
+          },
+          "content": {
+            "rnormalized": "pypi.org/project/pycocotools"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              137.506,
+              132.88699,
+              141.15831,
+              138.1951
+            ],
+            "device": [
+              137.506,
+              131.72734,
+              141.15831,
+              137.03545
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/XYXHZH+SFRM0600",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              144.72699,
+              129.07799,
+              185.26408,
+              137.14775
+            ],
+            "device": [
+              144.72699,
+              127.13228,
+              280.49622,
+              135.20204
+            ]
+          },
+          "content": {
+            "rnormalized": "ds4sd.github.io/icdar23-doclaynet"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 134.765,
+          "x1": 191.45801,
+          "y": 150.49699
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            134.765,
+            150.49699,
+            191.45801,
+            150.49699
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            134.765,
+            191.45801
+          ],
+          "y-values": [
+            150.49699,
+            150.49699
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

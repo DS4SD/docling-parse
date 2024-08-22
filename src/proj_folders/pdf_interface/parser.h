@@ -49,7 +49,8 @@ namespace pdf_lib
     bool load_document(std::string key, std::string filename);
 
     bool load_document(std::string key, const char* buffer, std::size_t size);
-
+    bool load_document_from_buffer(std::string key, std::string buffer);
+    
     bool unload_document(std::string filename);
     
     bool unload_documents();
@@ -113,6 +114,7 @@ namespace pdf_lib
     std::vector<parser_task> tasks;
     std::vector<ocr_merge_task> ocr_merge_tasks;
 
+    std::map<std::string, std::string> loaded_buffers;
     std::map<std::string, std::shared_ptr<pdf_lib::core::object<pdf_lib::core::DOCUMENT> > > loaded_documents;
     std::map<std::string, std::shared_ptr<pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> > > loaded_parsers;
   };
@@ -135,6 +137,7 @@ namespace pdf_lib
   
   void interface<PARSER>::clear()
   {
+    loaded_buffers.clear();
     loaded_documents.clear();
     loaded_parsers.clear();
   }
@@ -192,9 +195,6 @@ namespace pdf_lib
       {
 	auto doc = std::make_shared<pdf_lib::core::object<pdf_lib::core::DOCUMENT> >();
 	auto parser = std::make_shared<pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> >(*doc);
-	
-	//pdf_lib::core::object<pdf_lib::core::DOCUMENT> doc;
-	//pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> parser(doc);
 
 	parser->load_document(filename);
 	doc->resize_pages(parser->number_of_pages());
@@ -202,6 +202,9 @@ namespace pdf_lib
 	loaded_documents[key] = doc;
 	loaded_parsers[key] = parser;
 
+	logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+					<< "document loaded with " << key << " for filename " << filename;
+	
 	return true;
       }
 
@@ -247,8 +250,8 @@ namespace pdf_lib
 	auto doc = std::make_shared<pdf_lib::core::object<pdf_lib::core::DOCUMENT> >();
 	auto parser = std::make_shared<pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> >(*doc);
 
-	std::string desc = "parsing document buffer via BytesIO";
-	parser->load_buffer(desc.c_str(), buffer, size);
+	//std::string desc = "parsing document buffer via BytesIO";
+	parser->load_buffer(key.c_str(), buffer, size);
 	
 	doc->resize_pages(parser->number_of_pages());
 	
@@ -260,11 +263,40 @@ namespace pdf_lib
     
     return false;
   }
+
+  bool interface<PARSER>::load_document_from_buffer(std::string key, std::string buffer)
+  {
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    
+    if(loaded_buffers.count(key)==0 and
+       loaded_documents.count(key)==0 and
+       loaded_parsers.count(key)==0)
+      {
+	loaded_buffers[key] = buffer;
+	
+	auto doc = std::make_shared<pdf_lib::core::object<pdf_lib::core::DOCUMENT> >();
+	auto parser = std::make_shared<pdf_lib::qpdf::parser<pdf_lib::core::DOCUMENT> >(*doc);
+
+	std::string desc = "parsing document buffer via BytesIO";
+	//parser->load_buffer(key.c_str(), buffer, size);
+	parser->load_buffer(desc.c_str(), loaded_buffers.at(key).c_str(), loaded_buffers.at(key).size());
+	
+	doc->resize_pages(parser->number_of_pages());
+	
+	loaded_documents[key] = doc;
+	loaded_parsers[key] = parser;
+
+	return true;
+      }
+    
+    return false;
+  }
+
   
   bool interface<PARSER>::unload_document(std::string filename)
   {
     logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
-    
+
     if(loaded_documents.count(filename))
       {
 	loaded_documents.erase(filename);
@@ -275,6 +307,11 @@ namespace pdf_lib
 	loaded_parsers.erase(filename);
       }
 
+    if(loaded_buffers.count(filename))
+      {
+	loaded_buffers.erase(filename);
+      }
+    
     return true;
   }
 
@@ -285,9 +322,6 @@ namespace pdf_lib
 
     return true;
   }
-
-
-
   
   int interface<PARSER>::query(std::string input_file)
   {
@@ -688,7 +722,8 @@ namespace pdf_lib
     
     auto& doc = loaded_documents.at(key);
     auto& parser = loaded_parsers.at(key);
-    
+
+    doc->resize_pages(0);
     parser->process_all();
     
     try
@@ -707,7 +742,7 @@ namespace pdf_lib
   }
   
   bool interface<PARSER>::parse_pdf_from_key(std::string key, int page,
-                                         container_lib::container &raw_page)
+					     container_lib::container &raw_page)
   {
     logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
 
