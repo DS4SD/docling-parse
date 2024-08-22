@@ -58,6 +58,9 @@ for page in range(0, num_pages):
     # No need to unload a specifc page 
     json_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
+    if "pages" not in json_doc:  # page could not get parsed
+       continue
+
     # parsed page is the first one!				  
     json_page = json_doc["pages"][0] 
     
