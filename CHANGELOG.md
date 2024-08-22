@@ -1,3 +1,9 @@
+## [v1.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.0) - 2024-08-22
+
+### Feature
+
+* Deal with qpdf errors on a page by page basis ([#11](https://github.com/DS4SD/docling-parse/issues/11)) ([`400fcb3`](https://github.com/DS4SD/docling-parse/commit/400fcb30b1813206bb98a17d85537af1471837a2))
+
 ## [v1.0.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.0.0) - 2024-08-22
 
 ### Feature
