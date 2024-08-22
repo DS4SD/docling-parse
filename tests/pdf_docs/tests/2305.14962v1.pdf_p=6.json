@@ -1,0 +1,5809 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BMQQDV+DejaVuSans": 2.852416066280655,
+        "/BUDZTF+SFRM1000": 2.361157919579186,
+        "/CQWFHR+SFBX1000": 1.761386020329136,
+        "/IMULES+SFTI1000": 3.622280238705912,
+        "/RQVTRN+SFBX0900": 2.642099575926112,
+        "/TFWOKM+SFRM0900": 2.426988626459437
+      },
+      "mean-char-width": {
+        "/BMQQDV+DejaVuSans": 2.7807961765804,
+        "/BUDZTF+SFRM1000": 4.603305431406372,
+        "/CQWFHR+SFBX1000": 5.343788642722677,
+        "/IMULES+SFTI1000": 4.940334847946264,
+        "/RQVTRN+SFBX0900": 4.35214160862744,
+        "/TFWOKM+SFRM0900": 4.562131116022805
+      },
+      "number-of-chars": {
+        "/BMQQDV+DejaVuSans": 69,
+        "/BUDZTF+SFRM1000": 1725,
+        "/CQWFHR+SFBX1000": 20,
+        "/IMULES+SFTI1000": 34,
+        "/RQVTRN+SFBX0900": 6,
+        "/TFWOKM+SFRM0900": 133
+      }
+    },
+    "styles": [
+      "/BMQQDV+DejaVuSans",
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/IMULES+SFTI1000",
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.375,
+              692.10498,
+              221.39143,
+              700.17474
+            ],
+            "device": [
+              204.375,
+              690.1593,
+              496.65533,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR 2023 Comp. on Robust Layout Segmentation in Corporate Docs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              525.10571,
+              692.10498,
+              529.71265,
+              700.17474
+            ],
+            "device": [
+              525.10571,
+              690.1593,
+              529.71265,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "7"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              158.00476,
+              674.99896
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              480.58868,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "competitive field with many teams achieving similar levels of mAP performance,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              654.24695,
+              167.44034,
+              663.04395
+            ],
+            "device": [
+              134.765,
+              652.31421,
+              480.5957,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "ranging from 0.64 (rank 2) to 0.55 (rank 16). Two more teams ranked just slightly"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              642.29095,
+              145.27853,
+              651.08795
+            ],
+            "device": [
+              134.765,
+              640.35822,
+              328.56949,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "above our baseline mAP of 0.49 (see Fig. 4)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              175.77377,
+              522.42285,
+              178.96127,
+              528.2616
+            ],
+            "device": [
+              175.77377,
+              521.24005,
+              178.96127,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              191.76132,
+              522.42285,
+              194.94882,
+              528.2616
+            ],
+            "device": [
+              191.76132,
+              521.24005,
+              194.94882,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              207.74889,
+              522.42285,
+              210.93639,
+              528.2616
+            ],
+            "device": [
+              207.74889,
+              521.24005,
+              210.93639,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              223.73645,
+              522.42285,
+              226.92395,
+              528.2616
+            ],
+            "device": [
+              223.73645,
+              521.24005,
+              226.92395,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              239.724,
+              522.42285,
+              242.9115,
+              528.2616
+            ],
+            "device": [
+              239.724,
+              521.24005,
+              242.9115,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              255.71158,
+              522.42285,
+              258.89908,
+              528.2616
+            ],
+            "device": [
+              255.71158,
+              521.24005,
+              258.89908,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "6"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              271.69913,
+              522.42285,
+              274.88663,
+              528.2616
+            ],
+            "device": [
+              271.69913,
+              521.24005,
+              274.88663,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "7"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              287.68668,
+              522.42285,
+              290.87418,
+              528.2616
+            ],
+            "device": [
+              287.68668,
+              521.24005,
+              290.87418,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.67422,
+              522.42285,
+              306.86172,
+              528.2616
+            ],
+            "device": [
+              303.67422,
+              521.24005,
+              306.86172,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "9"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              318.06949,
+              522.42285,
+              324.44449,
+              528.2616
+            ],
+            "device": [
+              318.06949,
+              521.24005,
+              324.44449,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "10"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              334.05707,
+              522.42285,
+              340.43207,
+              528.2616
+            ],
+            "device": [
+              334.05707,
+              521.24005,
+              340.43207,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "11"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              350.04462,
+              522.42285,
+              356.41962,
+              528.2616
+            ],
+            "device": [
+              350.04462,
+              521.24005,
+              356.41962,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "12"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              366.0322,
+              522.42285,
+              372.4072,
+              528.2616
+            ],
+            "device": [
+              366.0322,
+              521.24005,
+              372.4072,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "13"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              382.01974,
+              522.42285,
+              388.39474,
+              528.2616
+            ],
+            "device": [
+              382.01974,
+              521.24005,
+              388.39474,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "14"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              398.00729,
+              522.42285,
+              404.38229,
+              528.2616
+            ],
+            "device": [
+              398.00729,
+              521.24005,
+              404.38229,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "15"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              413.99484,
+              522.42285,
+              420.36984,
+              528.2616
+            ],
+            "device": [
+              413.99484,
+              521.24005,
+              420.36984,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "16"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              429.98242,
+              522.42285,
+              436.35742,
+              528.2616
+            ],
+            "device": [
+              429.98242,
+              521.24005,
+              436.35742,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "17"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              445.96997,
+              522.42285,
+              452.34497,
+              528.2616
+            ],
+            "device": [
+              445.96997,
+              521.24005,
+              452.34497,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "18"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              461.95752,
+              522.42285,
+              468.33252,
+              528.2616
+            ],
+            "device": [
+              461.95752,
+              521.24005,
+              468.33252,
+              527.0788
+            ]
+          },
+          "content": {
+            "rnormalized": "19"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.87592,
+              512.96051,
+              307.95886,
+              520.74548
+            ],
+            "device": [
+              303.87592,
+              511.38345,
+              338.61154,
+              519.16846
+            ]
+          },
+          "content": {
+            "rnormalized": "Team rank"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 8
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              145.98413,
+              537.41931,
+              157.1404,
+              543.25806
+            ],
+            "device": [
+              145.98413,
+              536.23651,
+              157.1404,
+              542.07526
+            ]
+          },
+          "content": {
+            "rnormalized": "0.50"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              145.98413,
+              555.08716,
+              157.1404,
+              560.9259
+            ],
+            "device": [
+              145.98413,
+              553.90436,
+              157.1404,
+              559.7431
+            ]
+          },
+          "content": {
+            "rnormalized": "0.55"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              145.98413,
+              572.75507,
+              157.1404,
+              578.59381
+            ],
+            "device": [
+              145.98413,
+              571.57227,
+              157.1404,
+              577.41101
+            ]
+          },
+          "content": {
+            "rnormalized": "0.60"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              145.98413,
+              590.42291,
+              157.1404,
+              596.26166
+            ],
+            "device": [
+              145.98413,
+              589.24011,
+              157.1404,
+              595.07886
+            ]
+          },
+          "content": {
+            "rnormalized": "0.65"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              145.98413,
+              608.09076,
+              157.1404,
+              613.9295
+            ],
+            "device": [
+              145.98413,
+              606.90796,
+              157.1404,
+              612.7467
+            ]
+          },
+          "content": {
+            "rnormalized": "0.70"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 6
+          }
+        },
+        {
+          "angle": 90,
+          "box": {
+            "baseline": [
+              133.46143,
+              552.33105,
+              141.24637,
+              593.44788
+            ],
+            "device": [
+              135.03848,
+              552.33105,
+              142.82341,
+              593.44788
+            ]
+          },
+          "content": {
+            "rnormalized": "Overall mAP"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BMQQDV+DejaVuSans",
+            "size": 8
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              491.198,
+              152.62787,
+              499.1243
+            ],
+            "device": [
+              134.765,
+              489.45853,
+              162.64424,
+              497.38483
+            ]
+          },
+          "content": {
+            "rnormalized": "Fig. 4."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              166.39999,
+              491.198,
+              215.47849,
+              499.26776
+            ],
+            "device": [
+              166.39999,
+              489.25229,
+              480.59433,
+              497.32205
+            ]
+          },
+          "content": {
+            "rnormalized": "Distribution of overall mAP achieved by teams. Numbers and ranks refer to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              480.23901,
+              172.4436,
+              488.30878
+            ],
+            "device": [
+              134.765,
+              478.2933,
+              200.64473,
+              486.36307
+            ]
+          },
+          "content": {
+            "rnormalized": "extension phase."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              149.709,
+              446.25,
+              201.75064,
+              455.04697
+            ],
+            "device": [
+              149.709,
+              444.31726,
+              480.59091,
+              453.11423
+            ]
+          },
+          "content": {
+            "rnormalized": "Throughout the extension phase, we observed mostly small improvements of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              434.29501,
+              139.7453,
+              443.09198
+            ],
+            "device": [
+              134.765,
+              432.36227,
+              429.48364,
+              441.15924
+            ]
+          },
+          "content": {
+            "rnormalized": "overall mAP within a 1-2% range, with few exceptions such as team"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              432.57202,
+              434.29501,
+              442.75378,
+              443.09198
+            ],
+            "device": [
+              432.57202,
+              432.36227,
+              460.57486,
+              441.15924
+            ]
+          },
+          "content": {
+            "rnormalized": "docdog"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              464.54401,
+              434.29501,
+              480.59076,
+              443.09198
+            ],
+            "device": [
+              464.54401,
+              432.36227,
+              480.59076,
+              441.15924
+            ]
+          },
+          "content": {
+            "rnormalized": "and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              422.34003,
+              156.345,
+              431.13699
+            ],
+            "device": [
+              134.76501,
+              420.40729,
+              156.345,
+              429.20425
+            ]
+          },
+          "content": {
+            "rnormalized": "team"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.19501,
+              422.34003,
+              167.59921,
+              431.13699
+            ],
+            "device": [
+              160.19501,
+              420.40729,
+              187.96576,
+              429.20425
+            ]
+          },
+          "content": {
+            "rnormalized": "Acodis"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              187.96201,
+              422.34003,
+              190.72862,
+              431.13699
+            ],
+            "device": [
+              187.96201,
+              420.40729,
+              480.59439,
+              429.20425
+            ]
+          },
+          "content": {
+            "rnormalized": ", which managed to improve by 4% and 6% over their result from"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              410.38504,
+              148.59808,
+              419.18201
+            ],
+            "device": [
+              134.76501,
+              408.4523,
+              351.87292,
+              417.24927
+            ]
+          },
+          "content": {
+            "rnormalized": "the regular competition phase, respectively. Team"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              355.245,
+              410.38504,
+              373.24643,
+              419.18201
+            ],
+            "device": [
+              355.245,
+              408.4523,
+              373.24643,
+              417.24927
+            ]
+          },
+          "content": {
+            "rnormalized": "PIX"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              378.19501,
+              410.38504,
+              404.47833,
+              419.18201
+            ],
+            "device": [
+              378.19501,
+              408.4523,
+              480.59265,
+              417.24927
+            ]
+          },
+          "content": {
+            "rnormalized": "joined as a new entrant"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              398.43005,
+              143.06485,
+              407.22702
+            ],
+            "device": [
+              134.76501,
+              396.49731,
+              255.78174,
+              405.29428
+            ]
+          },
+          "content": {
+            "rnormalized": "in the extension phase only."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              149.70901,
+              386.42307,
+              166.86162,
+              395.22003
+            ],
+            "device": [
+              149.70901,
+              384.49033,
+              480.59381,
+              393.28729
+            ]
+          },
+          "content": {
+            "rnormalized": "The highest, and also most consistent performance across submissions, is ob-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              374.46808,
+              152.27827,
+              383.26505
+            ],
+            "device": [
+              134.76501,
+              372.53534,
+              189.26242,
+              381.33231
+            ]
+          },
+          "content": {
+            "rnormalized": "served in the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              191.84401,
+              374.46808,
+              220.49046,
+              383.26505
+            ],
+            "device": [
+              191.84401,
+              372.53534,
+              220.49046,
+              381.33231
+            ]
+          },
+          "content": {
+            "rnormalized": "Patent"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              224.01801,
+              374.46808,
+              260.84375,
+              383.26505
+            ],
+            "device": [
+              224.01801,
+              372.53534,
+              480.5878,
+              381.33231
+            ]
+          },
+          "content": {
+            "rnormalized": "category, with 12 teams achieving an mAP of 0.79 or better."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              362.51309,
+              154.18611,
+              371.31006
+            ],
+            "device": [
+              134.76501,
+              360.58035,
+              480.58789,
+              369.37732
+            ]
+          },
+          "content": {
+            "rnormalized": "This is consistent with our expectations, since Patent document layouts are the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              350.55811,
+              155.84688,
+              359.35507
+            ],
+            "device": [
+              134.76501,
+              348.62537,
+              424.6647,
+              357.42233
+            ]
+          },
+          "content": {
+            "rnormalized": "most uniform and structured. The diverse, free-style layouts in the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              427.89801,
+              350.55811,
+              435.16373,
+              359.35507
+            ],
+            "device": [
+              427.89801,
+              348.62537,
+              460.49268,
+              357.42233
+            ]
+          },
+          "content": {
+            "rnormalized": "Reports"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              464.54401,
+              350.55811,
+              480.59076,
+              359.35507
+            ],
+            "device": [
+              464.54401,
+              348.62537,
+              480.59076,
+              357.42233
+            ]
+          },
+          "content": {
+            "rnormalized": "and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              338.60211,
+              163.65556,
+              347.39908
+            ],
+            "device": [
+              134.76501,
+              336.66937,
+              163.65556,
+              345.46634
+            ]
+          },
+          "content": {
+            "rnormalized": "Others"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              168.46501,
+              338.60211,
+              211.15475,
+              347.39908
+            ],
+            "device": [
+              168.46501,
+              336.66937,
+              480.59521,
+              345.46634
+            ]
+          },
+          "content": {
+            "rnormalized": "categories posed a considerably bigger challenge, with mAPs generally"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              326.64713,
+              167.44035,
+              335.44409
+            ],
+            "device": [
+              134.76501,
+              324.71439,
+              340.83038,
+              333.51135
+            ]
+          },
+          "content": {
+            "rnormalized": "ranging in the low 60%s and 50%s respectively."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              149.70901,
+              314.64014,
+              156.90201,
+              323.4371
+            ],
+            "device": [
+              149.70901,
+              312.7074,
+              480.58792,
+              321.50436
+            ]
+          },
+          "content": {
+            "rnormalized": "Two interesting observations can be made. On one hand, we find significantly"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              302.68515,
+              142.51193,
+              311.48212
+            ],
+            "device": [
+              134.76501,
+              300.75241,
+              480.59274,
+              309.54938
+            ]
+          },
+          "content": {
+            "rnormalized": "lower mAPs in the submissions across our competition set categories than those"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              290.73016,
+              154.68423,
+              299.52713
+            ],
+            "device": [
+              134.76501,
+              288.79742,
+              480.59268,
+              297.59439
+            ]
+          },
+          "content": {
+            "rnormalized": "which were achieved for example on PubMed Central papers in the ICDAR"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              278.77518,
+              154.68623,
+              287.57214
+            ],
+            "device": [
+              134.76501,
+              276.84244,
+              480.58981,
+              285.6394
+            ]
+          },
+          "content": {
+            "rnormalized": "2021 Competition on Scientific Literature Parsing[21]. This can be attributed"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              266.82019,
+              140.29825,
+              275.61716
+            ],
+            "device": [
+              134.76501,
+              264.88745,
+              480.58972,
+              273.68442
+            ]
+          },
+          "content": {
+            "rnormalized": "both to the more challenging layouts and higher class count of the DocLayNet"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              254.86519,
+              169.12701,
+              263.66217
+            ],
+            "device": [
+              134.76501,
+              252.93245,
+              480.58871,
+              261.72943
+            ]
+          },
+          "content": {
+            "rnormalized": "dataset, as well as to the distribution bias and hard samples we engineered the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              242.90919,
+              158.00478,
+              251.70618
+            ],
+            "device": [
+              134.76501,
+              240.97646,
+              480.59177,
+              249.77342
+            ]
+          },
+          "content": {
+            "rnormalized": "competition dataset to expose. On the other hand, we see a significant spread of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              230.95419,
+              161.24162,
+              239.75117
+            ],
+            "device": [
+              134.76501,
+              229.02145,
+              480.59082,
+              237.81842
+            ]
+          },
+          "content": {
+            "rnormalized": "mAPs across the final submissions, with almost all teams exceeding the baseline"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              218.99919,
+              140.29825,
+              227.79617
+            ],
+            "device": [
+              134.76501,
+              217.06645,
+              480.59174,
+              225.86342
+            ]
+          },
+          "content": {
+            "rnormalized": "by a significant margin. This delivers evidence that the participating teams have"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              207.04419,
+              166.3325,
+              215.84117
+            ],
+            "device": [
+              134.76501,
+              205.11145,
+              480.58975,
+              213.90842
+            ]
+          },
+          "content": {
+            "rnormalized": "created solutions that differentiate themselves significantly from previous off-the-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              195.08919,
+              154.46307,
+              203.88617
+            ],
+            "device": [
+              134.76501,
+              193.15645,
+              480.5907,
+              201.95341
+            ]
+          },
+          "content": {
+            "rnormalized": "shelf object detection methods (see baseline). It also shows that the investment"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              183.13419,
+              143.61877,
+              191.93117
+            ],
+            "device": [
+              134.76501,
+              181.20145,
+              480.59473,
+              189.99841
+            ]
+          },
+          "content": {
+            "rnormalized": "to develop sophisticated methods is beneficial to obtain superior performance on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              171.17819,
+              150.86656,
+              179.97517
+            ],
+            "device": [
+              134.76501,
+              169.24545,
+              188.54611,
+              178.04242
+            ]
+          },
+          "content": {
+            "rnormalized": "this dataset."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              141.03319,
+              151.36569,
+              149.84012
+            ],
+            "device": [
+              134.76501,
+              139.10045,
+              252.54985,
+              147.90738
+            ]
+          },
+          "content": {
+            "rnormalized": "Models and Strategies:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              259.229,
+              141.03319,
+              268.35873,
+              149.83017
+            ],
+            "device": [
+              259.229,
+              139.10045,
+              480.591,
+              147.89742
+            ]
+          },
+          "content": {
+            "rnormalized": "In the solutions presented by the top five teams,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              129.07819,
+              141.95801,
+              137.87517
+            ],
+            "device": [
+              134.76501,
+              127.14544,
+              480.58676,
+              135.94241
+            ]
+          },
+          "content": {
+            "rnormalized": "we were pleased to see novel and interesting combinations of recent computer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 127.70254,
+          "x1": 488.55215,
+          "y": 502.44458
+        },
+        {
+          "x0": 127.70254,
+          "x1": 488.55215,
+          "y": 622.72778
+        },
+        {
+          "x0": 162.97726,
+          "x1": 479.53091,
+          "y": 532.08105
+        },
+        {
+          "x0": 162.97726,
+          "x1": 479.53091,
+          "y": 613.70654
+        },
+        {
+          "x0": 160.05371,
+          "x1": 162.97726,
+          "y": 539.32483
+        },
+        {
+          "x0": 160.05371,
+          "x1": 162.97726,
+          "y": 556.99268
+        },
+        {
+          "x0": 160.05371,
+          "x1": 162.97726,
+          "y": 574.66058
+        },
+        {
+          "x0": 160.05371,
+          "x1": 162.97726,
+          "y": 592.32843
+        },
+        {
+          "x0": 160.05371,
+          "x1": 162.97726,
+          "y": 609.99628
+        },
+        {
+          "x0": 162.97726,
+          "x1": 479.53091,
+          "y": 532.08105
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            127.70254,
+            502.44458,
+            488.55215,
+            622.72778
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            127.70254,
+            488.55215,
+            488.55215,
+            127.70254,
+            127.70254
+          ],
+          "y-values": [
+            502.44458,
+            502.44458,
+            622.72778,
+            622.72778,
+            502.44458
+          ]
+        },
+        {
+          "bbox": [
+            162.97726,
+            532.08105,
+            479.53091,
+            613.70654
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            479.53091,
+            479.53091,
+            162.97726,
+            162.97726
+          ],
+          "y-values": [
+            532.08105,
+            532.08105,
+            613.70654,
+            613.70654,
+            532.08105
+          ]
+        },
+        {
+          "bbox": [
+            177.36606,
+            529.15747,
+            177.36606,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            177.36606,
+            177.36606
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            193.35362,
+            529.15747,
+            193.35362,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            193.35362,
+            193.35362
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            209.34119,
+            529.15747,
+            209.34119,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            209.34119,
+            209.34119
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            225.32874,
+            529.15747,
+            225.32874,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            225.32874,
+            225.32874
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            241.31628,
+            529.15747,
+            241.31628,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            241.31628,
+            241.31628
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            257.30386,
+            529.15747,
+            257.30386,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            257.30386,
+            257.30386
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            273.29141,
+            529.15747,
+            273.29141,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            273.29141,
+            273.29141
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            289.27896,
+            529.15747,
+            289.27896,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            289.27896,
+            289.27896
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            305.26654,
+            529.15747,
+            305.26654,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            305.26654,
+            305.26654
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            321.25409,
+            529.15747,
+            321.25409,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            321.25409,
+            321.25409
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            337.24164,
+            529.15747,
+            337.24164,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            337.24164,
+            337.24164
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            353.22922,
+            529.15747,
+            353.22922,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            353.22922,
+            353.22922
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            369.21677,
+            529.15747,
+            369.21677,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            369.21677,
+            369.21677
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            385.20432,
+            529.15747,
+            385.20432,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            385.20432,
+            385.20432
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            401.19186,
+            529.15747,
+            401.19186,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            401.19186,
+            401.19186
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            417.17944,
+            529.15747,
+            417.17944,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            417.17944,
+            417.17944
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            433.16702,
+            529.15747,
+            433.16702,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            433.16702,
+            433.16702
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            449.15457,
+            529.15747,
+            449.15457,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            449.15457,
+            449.15457
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            465.14212,
+            529.15747,
+            465.14212,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            465.14212,
+            465.14212
+          ],
+          "y-values": [
+            532.08105,
+            529.15747
+          ]
+        },
+        {
+          "bbox": [
+            160.05371,
+            539.32483,
+            162.97726,
+            539.32483
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            160.05371
+          ],
+          "y-values": [
+            539.32483,
+            539.32483
+          ]
+        },
+        {
+          "bbox": [
+            160.05371,
+            556.99268,
+            162.97726,
+            556.99268
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            160.05371
+          ],
+          "y-values": [
+            556.99268,
+            556.99268
+          ]
+        },
+        {
+          "bbox": [
+            160.05371,
+            574.66058,
+            162.97726,
+            574.66058
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            160.05371
+          ],
+          "y-values": [
+            574.66058,
+            574.66058
+          ]
+        },
+        {
+          "bbox": [
+            160.05371,
+            592.32843,
+            162.97726,
+            592.32843
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            160.05371
+          ],
+          "y-values": [
+            592.32843,
+            592.32843
+          ]
+        },
+        {
+          "bbox": [
+            160.05371,
+            609.99628,
+            162.97726,
+            609.99628
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            160.05371
+          ],
+          "y-values": [
+            609.99628,
+            609.99628
+          ]
+        },
+        {
+          "bbox": [
+            174.02486,
+            606.65509,
+            180.70726,
+            613.33746
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            177.36606,
+            177.74306,
+            178.11235,
+            178.47066,
+            178.81471,
+            179.14125,
+            179.44699,
+            179.72864,
+            179.98013,
+            180.19666,
+            180.37686,
+            180.51938,
+            180.62285,
+            180.68593,
+            180.70726,
+            180.68593,
+            180.62285,
+            180.51938,
+            180.37686,
+            180.19666,
+            179.98013,
+            179.72864,
+            179.44699,
+            179.14125,
+            178.81471,
+            178.47066,
+            178.11235,
+            177.74306,
+            177.36606,
+            176.98906,
+            176.61977,
+            176.26146,
+            175.9174,
+            175.59087,
+            175.28513,
+            175.00348,
+            174.75198,
+            174.53546,
+            174.35526,
+            174.21274,
+            174.10927,
+            174.04619,
+            174.02486,
+            174.04619,
+            174.10927,
+            174.21274,
+            174.35526,
+            174.53546,
+            174.75198,
+            175.00348,
+            175.28513,
+            175.59087,
+            175.9174,
+            176.26146,
+            176.61977,
+            176.98906,
+            177.36606,
+            177.36606
+          ],
+          "y-values": [
+            606.65509,
+            606.67639,
+            606.7395,
+            606.84296,
+            606.98547,
+            607.16565,
+            607.3822,
+            607.63367,
+            607.91534,
+            608.22107,
+            608.54761,
+            608.89166,
+            609.25,
+            609.61926,
+            609.99628,
+            610.37329,
+            610.74255,
+            611.10089,
+            611.44495,
+            611.77148,
+            612.07721,
+            612.35889,
+            612.61035,
+            612.8269,
+            613.00708,
+            613.1496,
+            613.25305,
+            613.31616,
+            613.33746,
+            613.31616,
+            613.25305,
+            613.1496,
+            613.00708,
+            612.8269,
+            612.61035,
+            612.35889,
+            612.07721,
+            611.77148,
+            611.44495,
+            611.10089,
+            610.74255,
+            610.37329,
+            609.99628,
+            609.61926,
+            609.25,
+            608.89166,
+            608.54761,
+            608.22107,
+            607.91534,
+            607.63367,
+            607.3822,
+            607.16565,
+            606.98547,
+            606.84296,
+            606.7395,
+            606.67639,
+            606.65509,
+            606.65509
+          ]
+        },
+        {
+          "bbox": [
+            190.01242,
+            585.45367,
+            196.69482,
+            592.13605
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            193.35362,
+            193.73062,
+            194.09991,
+            194.45822,
+            194.80228,
+            195.12881,
+            195.43456,
+            195.7162,
+            195.9677,
+            196.18423,
+            196.36443,
+            196.50694,
+            196.61041,
+            196.67349,
+            196.69482,
+            196.67349,
+            196.61041,
+            196.50694,
+            196.36443,
+            196.18422,
+            195.9677,
+            195.7162,
+            195.43456,
+            195.12881,
+            194.80228,
+            194.45822,
+            194.09991,
+            193.73062,
+            193.35362,
+            192.97662,
+            192.60733,
+            192.24902,
+            191.90497,
+            191.57843,
+            191.27269,
+            190.99104,
+            190.73955,
+            190.52301,
+            190.34282,
+            190.2003,
+            190.09683,
+            190.03375,
+            190.01242,
+            190.03375,
+            190.09683,
+            190.2003,
+            190.34282,
+            190.52303,
+            190.73955,
+            190.99104,
+            191.27269,
+            191.57843,
+            191.90497,
+            192.24902,
+            192.60733,
+            192.97662,
+            193.35362,
+            193.35362
+          ],
+          "y-values": [
+            585.45367,
+            585.47498,
+            585.53809,
+            585.64154,
+            585.78406,
+            585.96423,
+            586.18079,
+            586.43225,
+            586.71393,
+            587.01965,
+            587.34619,
+            587.69025,
+            588.04858,
+            588.41785,
+            588.79486,
+            589.17188,
+            589.54114,
+            589.89948,
+            590.24353,
+            590.57007,
+            590.87579,
+            591.15747,
+            591.40894,
+            591.62549,
+            591.80566,
+            591.94818,
+            592.05164,
+            592.11475,
+            592.13605,
+            592.11475,
+            592.05164,
+            591.94818,
+            591.80566,
+            591.62549,
+            591.40894,
+            591.15747,
+            590.87579,
+            590.57007,
+            590.24353,
+            589.89948,
+            589.54114,
+            589.17188,
+            588.79486,
+            588.41785,
+            588.04858,
+            587.69025,
+            587.34619,
+            587.01965,
+            586.71393,
+            586.43225,
+            586.18079,
+            585.96423,
+            585.78406,
+            585.64154,
+            585.53809,
+            585.47498,
+            585.45367,
+            585.45367
+          ]
+        },
+        {
+          "bbox": [
+            205.99998,
+            581.9201,
+            212.68239,
+            588.60248
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            209.34119,
+            209.71819,
+            210.08748,
+            210.44579,
+            210.78984,
+            211.11638,
+            211.42212,
+            211.70377,
+            211.95526,
+            212.17178,
+            212.35199,
+            212.49451,
+            212.59798,
+            212.66106,
+            212.68239,
+            212.66106,
+            212.59798,
+            212.49451,
+            212.35199,
+            212.17178,
+            211.95526,
+            211.70377,
+            211.42212,
+            211.11638,
+            210.78984,
+            210.44579,
+            210.08748,
+            209.71819,
+            209.34119,
+            208.96419,
+            208.59489,
+            208.23659,
+            207.89253,
+            207.56599,
+            207.26025,
+            206.97861,
+            206.72711,
+            206.51059,
+            206.33038,
+            206.18787,
+            206.0844,
+            206.02132,
+            205.99998,
+            206.02132,
+            206.0844,
+            206.18787,
+            206.33038,
+            206.51059,
+            206.72711,
+            206.97861,
+            207.26025,
+            207.56599,
+            207.89253,
+            208.23659,
+            208.59489,
+            208.96419,
+            209.34119,
+            209.34119
+          ],
+          "y-values": [
+            581.9201,
+            581.94141,
+            582.00452,
+            582.10797,
+            582.25049,
+            582.43066,
+            582.64722,
+            582.89868,
+            583.18036,
+            583.48608,
+            583.81262,
+            584.15668,
+            584.51501,
+            584.88428,
+            585.26129,
+            585.63831,
+            586.00757,
+            586.36591,
+            586.70996,
+            587.0365,
+            587.34222,
+            587.6239,
+            587.87537,
+            588.09192,
+            588.27209,
+            588.41461,
+            588.51807,
+            588.58118,
+            588.60248,
+            588.58118,
+            588.51807,
+            588.41461,
+            588.27209,
+            588.09192,
+            587.87537,
+            587.6239,
+            587.34222,
+            587.0365,
+            586.70996,
+            586.36591,
+            586.00757,
+            585.63831,
+            585.26129,
+            584.88428,
+            584.51501,
+            584.15668,
+            583.81262,
+            583.48608,
+            583.18036,
+            582.89868,
+            582.64722,
+            582.43066,
+            582.25049,
+            582.10797,
+            582.00452,
+            581.94141,
+            581.9201,
+            581.9201
+          ]
+        },
+        {
+          "bbox": [
+            221.98755,
+            581.9201,
+            228.66995,
+            588.60248
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            225.32875,
+            225.70575,
+            226.07504,
+            226.43335,
+            226.7774,
+            227.10394,
+            227.40968,
+            227.69133,
+            227.94283,
+            228.15936,
+            228.33955,
+            228.48207,
+            228.58554,
+            228.64862,
+            228.66995,
+            228.64862,
+            228.58554,
+            228.48207,
+            228.33955,
+            228.15935,
+            227.94283,
+            227.69133,
+            227.40968,
+            227.10394,
+            226.7774,
+            226.43335,
+            226.07504,
+            225.70575,
+            225.32875,
+            224.95175,
+            224.58246,
+            224.22415,
+            223.8801,
+            223.55356,
+            223.24782,
+            222.96617,
+            222.71468,
+            222.49814,
+            222.31795,
+            222.17543,
+            222.07196,
+            222.00888,
+            221.98755,
+            222.00888,
+            222.07196,
+            222.17543,
+            222.31795,
+            222.49815,
+            222.71468,
+            222.96617,
+            223.24782,
+            223.55356,
+            223.8801,
+            224.22415,
+            224.58246,
+            224.95175,
+            225.32875,
+            225.32875
+          ],
+          "y-values": [
+            581.9201,
+            581.94141,
+            582.00452,
+            582.10797,
+            582.25049,
+            582.43066,
+            582.64722,
+            582.89868,
+            583.18036,
+            583.48608,
+            583.81262,
+            584.15668,
+            584.51501,
+            584.88428,
+            585.26129,
+            585.63831,
+            586.00757,
+            586.36591,
+            586.70996,
+            587.0365,
+            587.34222,
+            587.6239,
+            587.87537,
+            588.09192,
+            588.27209,
+            588.41461,
+            588.51807,
+            588.58118,
+            588.60248,
+            588.58118,
+            588.51807,
+            588.41461,
+            588.27209,
+            588.09192,
+            587.87537,
+            587.6239,
+            587.34222,
+            587.0365,
+            586.70996,
+            586.36591,
+            586.00757,
+            585.63831,
+            585.26129,
+            584.88428,
+            584.51501,
+            584.15668,
+            583.81262,
+            583.48608,
+            583.18036,
+            582.89868,
+            582.64722,
+            582.43066,
+            582.25049,
+            582.10797,
+            582.00452,
+            581.94141,
+            581.9201,
+            581.9201
+          ]
+        },
+        {
+          "bbox": [
+            237.97511,
+            581.9201,
+            244.65752,
+            588.60248
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            241.31631,
+            241.69331,
+            242.06261,
+            242.42091,
+            242.76497,
+            243.09151,
+            243.39725,
+            243.67889,
+            243.93039,
+            244.14691,
+            244.32712,
+            244.46964,
+            244.5731,
+            244.63618,
+            244.65752,
+            244.63618,
+            244.5731,
+            244.46964,
+            244.32712,
+            244.14691,
+            243.93039,
+            243.67889,
+            243.39725,
+            243.09151,
+            242.76497,
+            242.42091,
+            242.06261,
+            241.69331,
+            241.31631,
+            240.93932,
+            240.57002,
+            240.21172,
+            239.86766,
+            239.54112,
+            239.23538,
+            238.95374,
+            238.70224,
+            238.48572,
+            238.30551,
+            238.16299,
+            238.05952,
+            237.99644,
+            237.97511,
+            237.99644,
+            238.05952,
+            238.16299,
+            238.30551,
+            238.48572,
+            238.70224,
+            238.95374,
+            239.23538,
+            239.54112,
+            239.86766,
+            240.21172,
+            240.57002,
+            240.93932,
+            241.31631,
+            241.31631
+          ],
+          "y-values": [
+            581.9201,
+            581.94141,
+            582.00452,
+            582.10797,
+            582.25049,
+            582.43066,
+            582.64722,
+            582.89868,
+            583.18036,
+            583.48608,
+            583.81262,
+            584.15668,
+            584.51501,
+            584.88428,
+            585.26129,
+            585.63831,
+            586.00757,
+            586.36591,
+            586.70996,
+            587.0365,
+            587.34222,
+            587.6239,
+            587.87537,
+            588.09192,
+            588.27209,
+            588.41461,
+            588.51807,
+            588.58118,
+            588.60248,
+            588.58118,
+            588.51807,
+            588.41461,
+            588.27209,
+            588.09192,
+            587.87537,
+            587.6239,
+            587.34222,
+            587.0365,
+            586.70996,
+            586.36591,
+            586.00757,
+            585.63831,
+            585.26129,
+            584.88428,
+            584.51501,
+            584.15668,
+            583.81262,
+            583.48608,
+            583.18036,
+            582.89868,
+            582.64722,
+            582.43066,
+            582.25049,
+            582.10797,
+            582.00452,
+            581.94141,
+            581.9201,
+            581.9201
+          ]
+        },
+        {
+          "bbox": [
+            253.96266,
+            574.85297,
+            260.64505,
+            581.53534
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            257.30386,
+            257.68085,
+            258.05014,
+            258.40848,
+            258.75253,
+            259.07907,
+            259.3848,
+            259.66644,
+            259.91794,
+            260.13446,
+            260.31467,
+            260.45718,
+            260.56067,
+            260.62375,
+            260.64505,
+            260.62375,
+            260.56067,
+            260.45718,
+            260.31467,
+            260.13446,
+            259.91794,
+            259.66644,
+            259.3848,
+            259.07907,
+            258.75253,
+            258.40848,
+            258.05014,
+            257.68085,
+            257.30386,
+            256.92688,
+            256.55759,
+            256.19925,
+            255.85521,
+            255.52867,
+            255.22293,
+            254.94128,
+            254.68979,
+            254.47327,
+            254.29306,
+            254.15054,
+            254.04707,
+            253.98399,
+            253.96266,
+            253.98399,
+            254.04707,
+            254.15054,
+            254.29306,
+            254.47327,
+            254.68979,
+            254.94128,
+            255.22293,
+            255.52867,
+            255.85521,
+            256.19925,
+            256.55759,
+            256.92688,
+            257.30386,
+            257.30386
+          ],
+          "y-values": [
+            574.85297,
+            574.87427,
+            574.93738,
+            575.04083,
+            575.18335,
+            575.36353,
+            575.58008,
+            575.83154,
+            576.11322,
+            576.41895,
+            576.74548,
+            577.08954,
+            577.44788,
+            577.81714,
+            578.19415,
+            578.57117,
+            578.94043,
+            579.29877,
+            579.64282,
+            579.96936,
+            580.27509,
+            580.55676,
+            580.80823,
+            581.02478,
+            581.20496,
+            581.34747,
+            581.45093,
+            581.51404,
+            581.53534,
+            581.51404,
+            581.45093,
+            581.34747,
+            581.20496,
+            581.02478,
+            580.80823,
+            580.55676,
+            580.27509,
+            579.96936,
+            579.64282,
+            579.29877,
+            578.94043,
+            578.57117,
+            578.19415,
+            577.81714,
+            577.44788,
+            577.08954,
+            576.74548,
+            576.41895,
+            576.11322,
+            575.83154,
+            575.58008,
+            575.36353,
+            575.18335,
+            575.04083,
+            574.93738,
+            574.87427,
+            574.85297,
+            574.85297
+          ]
+        },
+        {
+          "bbox": [
+            269.95023,
+            574.85297,
+            276.6326,
+            581.53534
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            273.29141,
+            273.6684,
+            274.03769,
+            274.39603,
+            274.74008,
+            275.06662,
+            275.37234,
+            275.65399,
+            275.90549,
+            276.12201,
+            276.30222,
+            276.44473,
+            276.54822,
+            276.6113,
+            276.6326,
+            276.6113,
+            276.54822,
+            276.44473,
+            276.30222,
+            276.12201,
+            275.90549,
+            275.65399,
+            275.37234,
+            275.06662,
+            274.74008,
+            274.39603,
+            274.03769,
+            273.6684,
+            273.29141,
+            272.91443,
+            272.54514,
+            272.1868,
+            271.84274,
+            271.5162,
+            271.21048,
+            270.92883,
+            270.67734,
+            270.46082,
+            270.28061,
+            270.13809,
+            270.03461,
+            269.97153,
+            269.95023,
+            269.97153,
+            270.03461,
+            270.13809,
+            270.28061,
+            270.46082,
+            270.67734,
+            270.92883,
+            271.21048,
+            271.5162,
+            271.84274,
+            272.1868,
+            272.54514,
+            272.91443,
+            273.29141,
+            273.29141
+          ],
+          "y-values": [
+            574.85297,
+            574.87427,
+            574.93738,
+            575.04083,
+            575.18335,
+            575.36353,
+            575.58008,
+            575.83154,
+            576.11322,
+            576.41895,
+            576.74548,
+            577.08954,
+            577.44788,
+            577.81714,
+            578.19415,
+            578.57117,
+            578.94043,
+            579.29877,
+            579.64282,
+            579.96936,
+            580.27509,
+            580.55676,
+            580.80823,
+            581.02478,
+            581.20496,
+            581.34747,
+            581.45093,
+            581.51404,
+            581.53534,
+            581.51404,
+            581.45093,
+            581.34747,
+            581.20496,
+            581.02478,
+            580.80823,
+            580.55676,
+            580.27509,
+            579.96936,
+            579.64282,
+            579.29877,
+            578.94043,
+            578.57117,
+            578.19415,
+            577.81714,
+            577.44788,
+            577.08954,
+            576.74548,
+            576.41895,
+            576.11322,
+            575.83154,
+            575.58008,
+            575.36353,
+            575.18335,
+            575.04083,
+            574.93738,
+            574.87427,
+            574.85297,
+            574.85297
+          ]
+        },
+        {
+          "bbox": [
+            285.93777,
+            571.3194,
+            292.62015,
+            578.00177
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            289.27896,
+            289.65594,
+            290.02524,
+            290.38358,
+            290.72763,
+            291.05417,
+            291.35989,
+            291.64154,
+            291.89304,
+            292.10956,
+            292.28976,
+            292.43228,
+            292.53577,
+            292.59885,
+            292.62015,
+            292.59885,
+            292.53577,
+            292.43228,
+            292.28976,
+            292.10956,
+            291.89304,
+            291.64154,
+            291.35989,
+            291.05417,
+            290.72763,
+            290.38358,
+            290.02524,
+            289.65594,
+            289.27896,
+            288.90198,
+            288.53268,
+            288.17435,
+            287.83029,
+            287.50375,
+            287.19803,
+            286.91638,
+            286.66489,
+            286.44836,
+            286.26816,
+            286.12564,
+            286.02216,
+            285.95908,
+            285.93777,
+            285.95908,
+            286.02216,
+            286.12564,
+            286.26816,
+            286.44836,
+            286.66489,
+            286.91638,
+            287.19803,
+            287.50375,
+            287.83029,
+            288.17435,
+            288.53268,
+            288.90198,
+            289.27896,
+            289.27896
+          ],
+          "y-values": [
+            571.3194,
+            571.3407,
+            571.40381,
+            571.50726,
+            571.64978,
+            571.82996,
+            572.04651,
+            572.29797,
+            572.57965,
+            572.88538,
+            573.21191,
+            573.55597,
+            573.91431,
+            574.28357,
+            574.66058,
+            575.0376,
+            575.40686,
+            575.7652,
+            576.10925,
+            576.43579,
+            576.74152,
+            577.02319,
+            577.27466,
+            577.49121,
+            577.67139,
+            577.8139,
+            577.91736,
+            577.98047,
+            578.00177,
+            577.98047,
+            577.91736,
+            577.8139,
+            577.67139,
+            577.49121,
+            577.27466,
+            577.02319,
+            576.74152,
+            576.43579,
+            576.10925,
+            575.7652,
+            575.40686,
+            575.0376,
+            574.66058,
+            574.28357,
+            573.91431,
+            573.55597,
+            573.21191,
+            572.88538,
+            572.57965,
+            572.29797,
+            572.04651,
+            571.82996,
+            571.64978,
+            571.50726,
+            571.40381,
+            571.3407,
+            571.3194,
+            571.3194
+          ]
+        },
+        {
+          "bbox": [
+            301.92532,
+            567.78583,
+            308.6077,
+            574.4682
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            305.26651,
+            305.64349,
+            306.01279,
+            306.37112,
+            306.71518,
+            307.04172,
+            307.34744,
+            307.62909,
+            307.88058,
+            308.09711,
+            308.27731,
+            308.41983,
+            308.52332,
+            308.5864,
+            308.6077,
+            308.5864,
+            308.52332,
+            308.41983,
+            308.27731,
+            308.09711,
+            307.88058,
+            307.62909,
+            307.34744,
+            307.04172,
+            306.71518,
+            306.37112,
+            306.01279,
+            305.64349,
+            305.26651,
+            304.88953,
+            304.52023,
+            304.1619,
+            303.81784,
+            303.4913,
+            303.18558,
+            302.90393,
+            302.65244,
+            302.43591,
+            302.25571,
+            302.11319,
+            302.0097,
+            301.94662,
+            301.92532,
+            301.94662,
+            302.0097,
+            302.11319,
+            302.25571,
+            302.43591,
+            302.65244,
+            302.90393,
+            303.18558,
+            303.4913,
+            303.81784,
+            304.1619,
+            304.52023,
+            304.88953,
+            305.26651,
+            305.26651
+          ],
+          "y-values": [
+            567.78583,
+            567.80713,
+            567.87024,
+            567.97369,
+            568.11621,
+            568.29639,
+            568.51294,
+            568.7644,
+            569.04608,
+            569.35181,
+            569.67834,
+            570.0224,
+            570.38074,
+            570.75,
+            571.12701,
+            571.50403,
+            571.87329,
+            572.23163,
+            572.57568,
+            572.90222,
+            573.20795,
+            573.48962,
+            573.74109,
+            573.95764,
+            574.13782,
+            574.28033,
+            574.38379,
+            574.4469,
+            574.4682,
+            574.4469,
+            574.38379,
+            574.28033,
+            574.13782,
+            573.95764,
+            573.74109,
+            573.48962,
+            573.20795,
+            572.90222,
+            572.57568,
+            572.23163,
+            571.87329,
+            571.50403,
+            571.12701,
+            570.75,
+            570.38074,
+            570.0224,
+            569.67834,
+            569.35181,
+            569.04608,
+            568.7644,
+            568.51294,
+            568.29639,
+            568.11621,
+            567.97369,
+            567.87024,
+            567.80713,
+            567.78583,
+            567.78583
+          ]
+        },
+        {
+          "bbox": [
+            317.91287,
+            564.25226,
+            324.59525,
+            570.93463
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            321.25406,
+            321.63104,
+            322.00034,
+            322.35867,
+            322.70273,
+            323.02927,
+            323.33499,
+            323.61664,
+            323.86813,
+            324.08466,
+            324.26486,
+            324.40738,
+            324.51086,
+            324.57394,
+            324.59525,
+            324.57394,
+            324.51086,
+            324.40738,
+            324.26486,
+            324.08466,
+            323.86813,
+            323.61664,
+            323.33499,
+            323.02927,
+            322.70273,
+            322.35867,
+            322.00034,
+            321.63104,
+            321.25406,
+            320.87708,
+            320.50778,
+            320.14944,
+            319.80539,
+            319.47885,
+            319.17313,
+            318.89148,
+            318.63998,
+            318.42346,
+            318.24326,
+            318.10074,
+            317.99725,
+            317.93417,
+            317.91287,
+            317.93417,
+            317.99725,
+            318.10074,
+            318.24326,
+            318.42346,
+            318.63998,
+            318.89148,
+            319.17313,
+            319.47885,
+            319.80539,
+            320.14944,
+            320.50778,
+            320.87708,
+            321.25406,
+            321.25406
+          ],
+          "y-values": [
+            564.25226,
+            564.27356,
+            564.33667,
+            564.44012,
+            564.58264,
+            564.76282,
+            564.97937,
+            565.23083,
+            565.51251,
+            565.81824,
+            566.14478,
+            566.48883,
+            566.84717,
+            567.21643,
+            567.59344,
+            567.97046,
+            568.33972,
+            568.69806,
+            569.04211,
+            569.36865,
+            569.67438,
+            569.95605,
+            570.20752,
+            570.42407,
+            570.60425,
+            570.74677,
+            570.85022,
+            570.91333,
+            570.93463,
+            570.91333,
+            570.85022,
+            570.74677,
+            570.60425,
+            570.42407,
+            570.20752,
+            569.95605,
+            569.67438,
+            569.36865,
+            569.04211,
+            568.69806,
+            568.33972,
+            567.97046,
+            567.59344,
+            567.21643,
+            566.84717,
+            566.48883,
+            566.14478,
+            565.81824,
+            565.51251,
+            565.23083,
+            564.97937,
+            564.76282,
+            564.58264,
+            564.44012,
+            564.33667,
+            564.27356,
+            564.25226,
+            564.25226
+          ]
+        },
+        {
+          "bbox": [
+            333.90042,
+            564.25226,
+            340.58279,
+            570.93463
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            337.24161,
+            337.61859,
+            337.98788,
+            338.34622,
+            338.69028,
+            339.01682,
+            339.32254,
+            339.60419,
+            339.85568,
+            340.0722,
+            340.25241,
+            340.39493,
+            340.49841,
+            340.56149,
+            340.58279,
+            340.56149,
+            340.49841,
+            340.39493,
+            340.25241,
+            340.0722,
+            339.85568,
+            339.60419,
+            339.32254,
+            339.01682,
+            338.69028,
+            338.34622,
+            337.98788,
+            337.61859,
+            337.24161,
+            336.86462,
+            336.49533,
+            336.13699,
+            335.79294,
+            335.4664,
+            335.16068,
+            334.87903,
+            334.62753,
+            334.41101,
+            334.2308,
+            334.08829,
+            333.9848,
+            333.92172,
+            333.90042,
+            333.92172,
+            333.9848,
+            334.08829,
+            334.2308,
+            334.41101,
+            334.62753,
+            334.87903,
+            335.16068,
+            335.4664,
+            335.79294,
+            336.13699,
+            336.49533,
+            336.86462,
+            337.24161,
+            337.24161
+          ],
+          "y-values": [
+            564.25226,
+            564.27356,
+            564.33667,
+            564.44012,
+            564.58264,
+            564.76282,
+            564.97937,
+            565.23083,
+            565.51251,
+            565.81824,
+            566.14478,
+            566.48883,
+            566.84717,
+            567.21643,
+            567.59344,
+            567.97046,
+            568.33972,
+            568.69806,
+            569.04211,
+            569.36865,
+            569.67438,
+            569.95605,
+            570.20752,
+            570.42407,
+            570.60425,
+            570.74677,
+            570.85022,
+            570.91333,
+            570.93463,
+            570.91333,
+            570.85022,
+            570.74677,
+            570.60425,
+            570.42407,
+            570.20752,
+            569.95605,
+            569.67438,
+            569.36865,
+            569.04211,
+            568.69806,
+            568.33972,
+            567.97046,
+            567.59344,
+            567.21643,
+            566.84717,
+            566.48883,
+            566.14478,
+            565.81824,
+            565.51251,
+            565.23083,
+            564.97937,
+            564.76282,
+            564.58264,
+            564.44012,
+            564.33667,
+            564.27356,
+            564.25226,
+            564.25226
+          ]
+        },
+        {
+          "bbox": [
+            349.88797,
+            564.25226,
+            356.57034,
+            570.93463
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            353.22916,
+            353.60614,
+            353.97543,
+            354.33377,
+            354.67783,
+            355.00436,
+            355.31009,
+            355.59174,
+            355.84323,
+            356.05975,
+            356.23996,
+            356.38248,
+            356.48596,
+            356.54904,
+            356.57034,
+            356.54904,
+            356.48596,
+            356.38248,
+            356.23996,
+            356.05975,
+            355.84323,
+            355.59174,
+            355.31009,
+            355.00436,
+            354.67783,
+            354.33377,
+            353.97543,
+            353.60614,
+            353.22916,
+            352.85217,
+            352.48288,
+            352.12454,
+            351.78049,
+            351.45395,
+            351.14822,
+            350.86658,
+            350.61508,
+            350.39856,
+            350.21835,
+            350.07584,
+            349.97235,
+            349.90927,
+            349.88797,
+            349.90927,
+            349.97235,
+            350.07584,
+            350.21835,
+            350.39856,
+            350.61508,
+            350.86658,
+            351.14822,
+            351.45395,
+            351.78049,
+            352.12454,
+            352.48288,
+            352.85217,
+            353.22916,
+            353.22916
+          ],
+          "y-values": [
+            564.25226,
+            564.27356,
+            564.33667,
+            564.44012,
+            564.58264,
+            564.76282,
+            564.97937,
+            565.23083,
+            565.51251,
+            565.81824,
+            566.14478,
+            566.48883,
+            566.84717,
+            567.21643,
+            567.59344,
+            567.97046,
+            568.33972,
+            568.69806,
+            569.04211,
+            569.36865,
+            569.67438,
+            569.95605,
+            570.20752,
+            570.42407,
+            570.60425,
+            570.74677,
+            570.85022,
+            570.91333,
+            570.93463,
+            570.91333,
+            570.85022,
+            570.74677,
+            570.60425,
+            570.42407,
+            570.20752,
+            569.95605,
+            569.67438,
+            569.36865,
+            569.04211,
+            568.69806,
+            568.33972,
+            567.97046,
+            567.59344,
+            567.21643,
+            566.84717,
+            566.48883,
+            566.14478,
+            565.81824,
+            565.51251,
+            565.23083,
+            564.97937,
+            564.76282,
+            564.58264,
+            564.44012,
+            564.33667,
+            564.27356,
+            564.25226,
+            564.25226
+          ]
+        },
+        {
+          "bbox": [
+            365.87552,
+            560.71869,
+            372.55789,
+            567.40106
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            369.21671,
+            369.59369,
+            369.96298,
+            370.32132,
+            370.66537,
+            370.99191,
+            371.29764,
+            371.57928,
+            371.83078,
+            372.0473,
+            372.22751,
+            372.37003,
+            372.47351,
+            372.53659,
+            372.55789,
+            372.53659,
+            372.47351,
+            372.37003,
+            372.22751,
+            372.0473,
+            371.83078,
+            371.57928,
+            371.29764,
+            370.99191,
+            370.66537,
+            370.32132,
+            369.96298,
+            369.59369,
+            369.21671,
+            368.83972,
+            368.47043,
+            368.11209,
+            367.76804,
+            367.4415,
+            367.13577,
+            366.85413,
+            366.60263,
+            366.38611,
+            366.2059,
+            366.06339,
+            365.9599,
+            365.89682,
+            365.87552,
+            365.89682,
+            365.9599,
+            366.06339,
+            366.2059,
+            366.38611,
+            366.60263,
+            366.85413,
+            367.13577,
+            367.4415,
+            367.76804,
+            368.11209,
+            368.47043,
+            368.83972,
+            369.21671,
+            369.21671
+          ],
+          "y-values": [
+            560.71869,
+            560.73999,
+            560.8031,
+            560.90656,
+            561.04907,
+            561.22925,
+            561.4458,
+            561.69727,
+            561.97894,
+            562.28467,
+            562.61121,
+            562.95526,
+            563.3136,
+            563.68286,
+            564.05988,
+            564.43689,
+            564.80615,
+            565.16449,
+            565.50854,
+            565.83508,
+            566.14081,
+            566.42249,
+            566.67395,
+            566.8905,
+            567.07068,
+            567.2132,
+            567.31665,
+            567.37976,
+            567.40106,
+            567.37976,
+            567.31665,
+            567.2132,
+            567.07068,
+            566.8905,
+            566.67395,
+            566.42249,
+            566.14081,
+            565.83508,
+            565.50854,
+            565.16449,
+            564.80615,
+            564.43689,
+            564.05988,
+            563.68286,
+            563.3136,
+            562.95526,
+            562.61121,
+            562.28467,
+            561.97894,
+            561.69727,
+            561.4458,
+            561.22925,
+            561.04907,
+            560.90656,
+            560.8031,
+            560.73999,
+            560.71869,
+            560.71869
+          ]
+        },
+        {
+          "bbox": [
+            381.86307,
+            560.71869,
+            388.54544,
+            567.40106
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            385.20425,
+            385.58124,
+            385.95053,
+            386.30887,
+            386.65292,
+            386.97946,
+            387.28519,
+            387.56683,
+            387.81833,
+            388.03485,
+            388.21506,
+            388.35757,
+            388.46106,
+            388.52414,
+            388.54544,
+            388.52414,
+            388.46106,
+            388.35757,
+            388.21506,
+            388.03485,
+            387.81833,
+            387.56683,
+            387.28519,
+            386.97946,
+            386.65292,
+            386.30887,
+            385.95053,
+            385.58124,
+            385.20425,
+            384.82727,
+            384.45798,
+            384.09964,
+            383.75558,
+            383.42905,
+            383.12332,
+            382.84167,
+            382.59018,
+            382.37366,
+            382.19345,
+            382.05093,
+            381.94745,
+            381.88437,
+            381.86307,
+            381.88437,
+            381.94745,
+            382.05093,
+            382.19345,
+            382.37366,
+            382.59018,
+            382.84167,
+            383.12332,
+            383.42905,
+            383.75558,
+            384.09964,
+            384.45798,
+            384.82727,
+            385.20425,
+            385.20425
+          ],
+          "y-values": [
+            560.71869,
+            560.73999,
+            560.8031,
+            560.90656,
+            561.04907,
+            561.22925,
+            561.4458,
+            561.69727,
+            561.97894,
+            562.28467,
+            562.61121,
+            562.95526,
+            563.3136,
+            563.68286,
+            564.05988,
+            564.43689,
+            564.80615,
+            565.16449,
+            565.50854,
+            565.83508,
+            566.14081,
+            566.42249,
+            566.67395,
+            566.8905,
+            567.07068,
+            567.2132,
+            567.31665,
+            567.37976,
+            567.40106,
+            567.37976,
+            567.31665,
+            567.2132,
+            567.07068,
+            566.8905,
+            566.67395,
+            566.42249,
+            566.14081,
+            565.83508,
+            565.50854,
+            565.16449,
+            564.80615,
+            564.43689,
+            564.05988,
+            563.68286,
+            563.3136,
+            562.95526,
+            562.61121,
+            562.28467,
+            561.97894,
+            561.69727,
+            561.4458,
+            561.22925,
+            561.04907,
+            560.90656,
+            560.8031,
+            560.73999,
+            560.71869,
+            560.71869
+          ]
+        },
+        {
+          "bbox": [
+            397.85062,
+            560.71869,
+            404.53299,
+            567.40106
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            401.1918,
+            401.56879,
+            401.93808,
+            402.29642,
+            402.64047,
+            402.96701,
+            403.27274,
+            403.55438,
+            403.80588,
+            404.0224,
+            404.20261,
+            404.34512,
+            404.44861,
+            404.51169,
+            404.53299,
+            404.51169,
+            404.44861,
+            404.34512,
+            404.20261,
+            404.0224,
+            403.80588,
+            403.55438,
+            403.27274,
+            402.96701,
+            402.64047,
+            402.29642,
+            401.93808,
+            401.56879,
+            401.1918,
+            400.81482,
+            400.44553,
+            400.08719,
+            399.74313,
+            399.4166,
+            399.11087,
+            398.82922,
+            398.57773,
+            398.36121,
+            398.181,
+            398.03848,
+            397.935,
+            397.87192,
+            397.85062,
+            397.87192,
+            397.935,
+            398.03848,
+            398.181,
+            398.36121,
+            398.57773,
+            398.82922,
+            399.11087,
+            399.4166,
+            399.74313,
+            400.08719,
+            400.44553,
+            400.81482,
+            401.1918,
+            401.1918
+          ],
+          "y-values": [
+            560.71869,
+            560.73999,
+            560.8031,
+            560.90656,
+            561.04907,
+            561.22925,
+            561.4458,
+            561.69727,
+            561.97894,
+            562.28467,
+            562.61121,
+            562.95526,
+            563.3136,
+            563.68286,
+            564.05988,
+            564.43689,
+            564.80615,
+            565.16449,
+            565.50854,
+            565.83508,
+            566.14081,
+            566.42249,
+            566.67395,
+            566.8905,
+            567.07068,
+            567.2132,
+            567.31665,
+            567.37976,
+            567.40106,
+            567.37976,
+            567.31665,
+            567.2132,
+            567.07068,
+            566.8905,
+            566.67395,
+            566.42249,
+            566.14081,
+            565.83508,
+            565.50854,
+            565.16449,
+            564.80615,
+            564.43689,
+            564.05988,
+            563.68286,
+            563.3136,
+            562.95526,
+            562.61121,
+            562.28467,
+            561.97894,
+            561.69727,
+            561.4458,
+            561.22925,
+            561.04907,
+            560.90656,
+            560.8031,
+            560.73999,
+            560.71869,
+            560.71869
+          ]
+        },
+        {
+          "bbox": [
+            413.83817,
+            553.65155,
+            420.52054,
+            560.33392
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            417.17935,
+            417.55634,
+            417.92563,
+            418.28397,
+            418.62802,
+            418.95456,
+            419.26028,
+            419.54193,
+            419.79343,
+            420.00995,
+            420.19016,
+            420.33267,
+            420.43616,
+            420.49924,
+            420.52054,
+            420.49924,
+            420.43616,
+            420.33267,
+            420.19016,
+            420.00995,
+            419.79343,
+            419.54193,
+            419.26028,
+            418.95456,
+            418.62802,
+            418.28397,
+            417.92563,
+            417.55634,
+            417.17935,
+            416.80237,
+            416.43307,
+            416.07474,
+            415.73068,
+            415.40414,
+            415.09842,
+            414.81677,
+            414.56528,
+            414.34875,
+            414.16855,
+            414.02603,
+            413.92255,
+            413.85947,
+            413.83817,
+            413.85947,
+            413.92255,
+            414.02603,
+            414.16855,
+            414.34875,
+            414.56528,
+            414.81677,
+            415.09842,
+            415.40414,
+            415.73068,
+            416.07474,
+            416.43307,
+            416.80237,
+            417.17935,
+            417.17935
+          ],
+          "y-values": [
+            553.65155,
+            553.67285,
+            553.73596,
+            553.83942,
+            553.98193,
+            554.16211,
+            554.37866,
+            554.63013,
+            554.9118,
+            555.21753,
+            555.54407,
+            555.88812,
+            556.24646,
+            556.61572,
+            556.99274,
+            557.36975,
+            557.73901,
+            558.09735,
+            558.44141,
+            558.76794,
+            559.07367,
+            559.35535,
+            559.60681,
+            559.82336,
+            560.00354,
+            560.14606,
+            560.24951,
+            560.31262,
+            560.33392,
+            560.31262,
+            560.24951,
+            560.14606,
+            560.00354,
+            559.82336,
+            559.60681,
+            559.35535,
+            559.07367,
+            558.76794,
+            558.44141,
+            558.09735,
+            557.73901,
+            557.36975,
+            556.99274,
+            556.61572,
+            556.24646,
+            555.88812,
+            555.54407,
+            555.21753,
+            554.9118,
+            554.63013,
+            554.37866,
+            554.16211,
+            553.98193,
+            553.83942,
+            553.73596,
+            553.67285,
+            553.65155,
+            553.65155
+          ]
+        },
+        {
+          "bbox": [
+            429.82571,
+            532.45013,
+            436.50809,
+            539.13251
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            433.1669,
+            433.54388,
+            433.91318,
+            434.27151,
+            434.61557,
+            434.94211,
+            435.24783,
+            435.52948,
+            435.78098,
+            435.9975,
+            436.1777,
+            436.32022,
+            436.42371,
+            436.48679,
+            436.50809,
+            436.48679,
+            436.42371,
+            436.32022,
+            436.1777,
+            435.9975,
+            435.78098,
+            435.52948,
+            435.24783,
+            434.94211,
+            434.61557,
+            434.27151,
+            433.91318,
+            433.54388,
+            433.1669,
+            432.78992,
+            432.42062,
+            432.06229,
+            431.71823,
+            431.39169,
+            431.08597,
+            430.80432,
+            430.55283,
+            430.3363,
+            430.1561,
+            430.01358,
+            429.9101,
+            429.84702,
+            429.82571,
+            429.84702,
+            429.9101,
+            430.01358,
+            430.1561,
+            430.3363,
+            430.55283,
+            430.80432,
+            431.08597,
+            431.39169,
+            431.71823,
+            432.06229,
+            432.42062,
+            432.78992,
+            433.1669,
+            433.1669
+          ],
+          "y-values": [
+            532.45013,
+            532.47144,
+            532.53455,
+            532.638,
+            532.78052,
+            532.96069,
+            533.17725,
+            533.42871,
+            533.71039,
+            534.01611,
+            534.34265,
+            534.68671,
+            535.04504,
+            535.41431,
+            535.79132,
+            536.16833,
+            536.5376,
+            536.89594,
+            537.23999,
+            537.56653,
+            537.87225,
+            538.15393,
+            538.4054,
+            538.62195,
+            538.80212,
+            538.94464,
+            539.0481,
+            539.11121,
+            539.13251,
+            539.11121,
+            539.0481,
+            538.94464,
+            538.80212,
+            538.62195,
+            538.4054,
+            538.15393,
+            537.87225,
+            537.56653,
+            537.23999,
+            536.89594,
+            536.5376,
+            536.16833,
+            535.79132,
+            535.41431,
+            535.04504,
+            534.68671,
+            534.34265,
+            534.01611,
+            533.71039,
+            533.42871,
+            533.17725,
+            532.96069,
+            532.78052,
+            532.638,
+            532.53455,
+            532.47144,
+            532.45013,
+            532.45013
+          ]
+        },
+        {
+          "bbox": [
+            445.81326,
+            532.45013,
+            452.49564,
+            539.13251
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            449.15445,
+            449.53143,
+            449.90073,
+            450.25906,
+            450.60312,
+            450.92966,
+            451.23538,
+            451.51703,
+            451.76852,
+            451.98505,
+            452.16525,
+            452.30777,
+            452.41125,
+            452.47433,
+            452.49564,
+            452.47433,
+            452.41125,
+            452.30777,
+            452.16525,
+            451.98505,
+            451.76852,
+            451.51703,
+            451.23538,
+            450.92966,
+            450.60312,
+            450.25906,
+            449.90073,
+            449.53143,
+            449.15445,
+            448.77747,
+            448.40817,
+            448.04984,
+            447.70578,
+            447.37924,
+            447.07352,
+            446.79187,
+            446.54037,
+            446.32385,
+            446.14365,
+            446.00113,
+            445.89764,
+            445.83456,
+            445.81326,
+            445.83456,
+            445.89764,
+            446.00113,
+            446.14365,
+            446.32385,
+            446.54037,
+            446.79187,
+            447.07352,
+            447.37924,
+            447.70578,
+            448.04984,
+            448.40817,
+            448.77747,
+            449.15445,
+            449.15445
+          ],
+          "y-values": [
+            532.45013,
+            532.47144,
+            532.53455,
+            532.638,
+            532.78052,
+            532.96069,
+            533.17725,
+            533.42871,
+            533.71039,
+            534.01611,
+            534.34265,
+            534.68671,
+            535.04504,
+            535.41431,
+            535.79132,
+            536.16833,
+            536.5376,
+            536.89594,
+            537.23999,
+            537.56653,
+            537.87225,
+            538.15393,
+            538.4054,
+            538.62195,
+            538.80212,
+            538.94464,
+            539.0481,
+            539.11121,
+            539.13251,
+            539.11121,
+            539.0481,
+            538.94464,
+            538.80212,
+            538.62195,
+            538.4054,
+            538.15393,
+            537.87225,
+            537.56653,
+            537.23999,
+            536.89594,
+            536.5376,
+            536.16833,
+            535.79132,
+            535.41431,
+            535.04504,
+            534.68671,
+            534.34265,
+            534.01611,
+            533.71039,
+            533.42871,
+            533.17725,
+            532.96069,
+            532.78052,
+            532.638,
+            532.53455,
+            532.47144,
+            532.45013,
+            532.45013
+          ]
+        },
+        {
+          "bbox": [
+            461.80081,
+            532.45013,
+            468.48318,
+            539.13251
+          ],
+          "sub-paths": [
+            0,
+            58
+          ],
+          "type": "unknown",
+          "x-values": [
+            465.142,
+            465.51898,
+            465.88828,
+            466.24661,
+            466.59067,
+            466.91721,
+            467.22293,
+            467.50458,
+            467.75607,
+            467.9726,
+            468.1528,
+            468.29532,
+            468.3988,
+            468.46188,
+            468.48318,
+            468.46188,
+            468.3988,
+            468.29532,
+            468.1528,
+            467.9726,
+            467.75607,
+            467.50458,
+            467.22293,
+            466.91721,
+            466.59067,
+            466.24661,
+            465.88828,
+            465.51898,
+            465.142,
+            464.76501,
+            464.39572,
+            464.03738,
+            463.69333,
+            463.36679,
+            463.06107,
+            462.77942,
+            462.52792,
+            462.3114,
+            462.1312,
+            461.98868,
+            461.88519,
+            461.82211,
+            461.80081,
+            461.82211,
+            461.88519,
+            461.98868,
+            462.1312,
+            462.3114,
+            462.52792,
+            462.77942,
+            463.06107,
+            463.36679,
+            463.69333,
+            464.03738,
+            464.39572,
+            464.76501,
+            465.142,
+            465.142
+          ],
+          "y-values": [
+            532.45013,
+            532.47144,
+            532.53455,
+            532.638,
+            532.78052,
+            532.96069,
+            533.17725,
+            533.42871,
+            533.71039,
+            534.01611,
+            534.34265,
+            534.68671,
+            535.04504,
+            535.41431,
+            535.79132,
+            536.16833,
+            536.5376,
+            536.89594,
+            537.23999,
+            537.56653,
+            537.87225,
+            538.15393,
+            538.4054,
+            538.62195,
+            538.80212,
+            538.94464,
+            539.0481,
+            539.11121,
+            539.13251,
+            539.11121,
+            539.0481,
+            538.94464,
+            538.80212,
+            538.62195,
+            538.4054,
+            538.15393,
+            537.87225,
+            537.56653,
+            537.23999,
+            536.89594,
+            536.5376,
+            536.16833,
+            535.79132,
+            535.41431,
+            535.04504,
+            534.68671,
+            534.34265,
+            534.01611,
+            533.71039,
+            533.42871,
+            533.17725,
+            532.96069,
+            532.78052,
+            532.638,
+            532.53455,
+            532.47144,
+            532.45013,
+            532.45013
+          ]
+        },
+        {
+          "bbox": [
+            162.97726,
+            532.08105,
+            162.97726,
+            613.70654
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            162.97726
+          ],
+          "y-values": [
+            532.08105,
+            613.70654
+          ]
+        },
+        {
+          "bbox": [
+            162.97726,
+            532.08105,
+            479.53091,
+            532.08105
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            162.97726,
+            479.53091
+          ],
+          "y-values": [
+            532.08105,
+            532.08105
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 488.55215,
+          "y0": 502.44458,
+          "y1": 622.72778
+        },
+        {
+          "x": 127.70254,
+          "y0": 502.44458,
+          "y1": 622.72778
+        },
+        {
+          "x": 479.53091,
+          "y0": 532.08105,
+          "y1": 613.70654
+        },
+        {
+          "x": 162.97726,
+          "y0": 532.08105,
+          "y1": 613.70654
+        },
+        {
+          "x": 177.36606,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 193.35362,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 209.34119,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 225.32874,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 241.31628,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 257.30386,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 273.29141,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 289.27896,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 305.26654,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 321.25409,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 337.24164,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 353.22922,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 369.21677,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 385.20432,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 401.19186,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 417.17944,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 433.16702,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 449.15457,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 465.14212,
+          "y0": 529.15747,
+          "y1": 532.08105
+        },
+        {
+          "x": 162.97726,
+          "y0": 532.08105,
+          "y1": 613.70654
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

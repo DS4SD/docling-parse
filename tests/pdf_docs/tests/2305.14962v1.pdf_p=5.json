@@ -1,0 +1,8704 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.356751436300261,
+        "/CQWFHR+SFBX1000": 2.089780869058931,
+        "/EHBNPV+FontAwesome": 2.973856537266809,
+        "/IHRBTF+SFBX1200": 2.642104772275966,
+        "/IMULES+SFTI1000": 2.706759317967132,
+        "/RQVTRN+SFBX0900": 1.951551487784133,
+        "/TFWOKM+SFRM0900": 2.546145309793823,
+        "/YUIILM+SFTI0900": 5.278232966323151
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.610018635512088,
+        "/CQWFHR+SFBX1000": 5.451686443449965,
+        "/EHBNPV+FontAwesome": 1.918813023975434,
+        "/IHRBTF+SFBX1200": 6.241061384173968,
+        "/IMULES+SFTI1000": 4.807796401879243,
+        "/RQVTRN+SFBX0900": 5.683094523317321,
+        "/TFWOKM+SFRM0900": 4.207360990439222,
+        "/YUIILM+SFTI0900": 3.980628303847106
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 754,
+        "/CQWFHR+SFBX1000": 59,
+        "/EHBNPV+FontAwesome": 42,
+        "/IHRBTF+SFBX1200": 8,
+        "/IMULES+SFTI1000": 13,
+        "/RQVTRN+SFBX0900": 264,
+        "/TFWOKM+SFRM0900": 580,
+        "/YUIILM+SFTI0900": 6
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/EHBNPV+FontAwesome",
+      "/IHRBTF+SFBX1200",
+      "/IMULES+SFTI1000",
+      "/RQVTRN+SFBX0900",
+      "/TFWOKM+SFRM0900",
+      "/YUIILM+SFTI0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              692.10498,
+              139.37193,
+              700.17474
+            ],
+            "device": [
+              134.765,
+              690.1593,
+              139.37193,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "6"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              272.23605,
+              690.1593,
+              280.77161,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "C."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              285.03979,
+              690.1593,
+              330.35175,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "Auer, et al."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              141.4886,
+              676.77039
+            ],
+            "device": [
+              134.765,
+              663.88263,
+              141.4886,
+              674.45105
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              154.9382,
+              666.20197,
+              198.1431,
+              676.77039
+            ],
+            "device": [
+              154.9382,
+              663.88263,
+              198.1431,
+              674.45105
+            ]
+          },
+          "content": {
+            "rnormalized": "Results"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IHRBTF+SFBX1200",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              643.13794,
+              149.40205,
+              651.94489
+            ],
+            "device": [
+              134.765,
+              641.2052,
+              149.40205,
+              650.01215
+            ]
+          },
+          "content": {
+            "rnormalized": "5.1"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.85904,
+              643.13794,
+              175.50905,
+              651.94489
+            ],
+            "device": [
+              160.85904,
+              641.2052,
+              207.90842,
+              650.01215
+            ]
+          },
+          "content": {
+            "rnormalized": "Overview"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              624.05792,
+              157.47972,
+              632.85492
+            ],
+            "device": [
+              134.765,
+              622.12518,
+              480.58978,
+              630.92218
+            ]
+          },
+          "content": {
+            "rnormalized": "After the competition ended, we counted 45 team registrations, which altogether"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              612.10291,
+              166.33249,
+              620.8999
+            ],
+            "device": [
+              134.765,
+              610.17017,
+              480.5867,
+              618.96716
+            ]
+          },
+          "content": {
+            "rnormalized": "created 374 private or public submissions. Out of these, 21 team decided to make"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              600.14789,
+              143.61876,
+              608.94489
+            ],
+            "device": [
+              134.765,
+              598.21515,
+              480.59576,
+              607.01215
+            ]
+          },
+          "content": {
+            "rnormalized": "at least one public submission which counts towards the final ranking. Table 1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              588.19287,
+              149.20679,
+              596.98987
+            ],
+            "device": [
+              134.765,
+              586.26013,
+              480.59375,
+              595.05713
+            ]
+          },
+          "content": {
+            "rnormalized": "shows the results achieved by the participating teams for the regular submission"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              576.23785,
+              159.1664,
+              585.03485
+            ],
+            "device": [
+              134.765,
+              574.30511,
+              480.59473,
+              583.10211
+            ]
+          },
+          "content": {
+            "rnormalized": "phase and the extension phase of the competition. More detailed analysis and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              564.28284,
+              186.3623,
+              573.07983
+            ],
+            "device": [
+              134.765,
+              562.3501,
+              463.08746,
+              571.14709
+            ]
+          },
+          "content": {
+            "rnormalized": "descriptions of selected methods from the participants are presented below."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              533.90381,
+              142.14345,
+              541.83008
+            ],
+            "device": [
+              134.765,
+              532.16431,
+              172.45705,
+              540.09064
+            ]
+          },
+          "content": {
+            "rnormalized": "Table 1."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              176.01199,
+              533.90381,
+              208.41298,
+              541.97357
+            ],
+            "device": [
+              176.01199,
+              531.95813,
+              480.59067,
+              540.02783
+            ]
+          },
+          "content": {
+            "rnormalized": "Leaderboard of our competition with all teams ranking above our baseline"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              522.94482,
+              156.53899,
+              531.01459
+            ],
+            "device": [
+              134.76498,
+              520.99915,
+              388.76068,
+              529.06885
+            ]
+          },
+          "content": {
+            "rnormalized": "(rank 19). Ranks are shown separately for the regular phase ("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              388.763,
+              522.94482,
+              392.64365,
+              530.86218
+            ],
+            "device": [
+              388.763,
+              521.20532,
+              400.16824,
+              529.12268
+            ]
+          },
+          "content": {
+            "rnormalized": "reg"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YUIILM+SFTI0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              400.96701,
+              522.94482,
+              404.54999,
+              531.01459
+            ],
+            "device": [
+              400.96701,
+              520.99915,
+              480.59497,
+              529.06885
+            ]
+          },
+          "content": {
+            "rnormalized": ") and the extension"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              511.98584,
+              157.34062,
+              520.0556
+            ],
+            "device": [
+              134.76501,
+              510.04013,
+              163.99011,
+              518.10986
+            ]
+          },
+          "content": {
+            "rnormalized": "phase ("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              163.99402,
+              511.98584,
+              175.53108,
+              519.9032
+            ],
+            "device": [
+              163.99402,
+              510.24637,
+              175.53108,
+              518.1637
+            ]
+          },
+          "content": {
+            "rnormalized": "ext"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YUIILM+SFTI0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              276.53699,
+              491.11499,
+              304.80804,
+              499.04129
+            ],
+            "device": [
+              276.53699,
+              489.37552,
+              377.32559,
+              497.30182
+            ]
+          },
+          "content": {
+            "rnormalized": "mAPs after extension"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              416.336,
+              491.11499,
+              455.07532,
+              499.04129
+            ],
+            "device": [
+              416.336,
+              489.37552,
+              455.07532,
+              497.30182
+            ]
+          },
+          "content": {
+            "rnormalized": "Ranking"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              480.15601,
+              146.68045,
+              488.08231
+            ],
+            "device": [
+              139.302,
+              478.41653,
+              164.66525,
+              486.34283
+            ]
+          },
+          "content": {
+            "rnormalized": "Team"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              480.15601,
+              275.11206,
+              488.08231
+            ],
+            "device": [
+              261.54501,
+              478.41653,
+              392.32086,
+              486.34283
+            ]
+          },
+          "content": {
+            "rnormalized": "Overall Rep Man Pat Other"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              480.15601,
+              412.99756,
+              488.08231
+            ],
+            "device": [
+              395.505,
+              478.41653,
+              412.99756,
+              486.34283
+            ]
+          },
+          "content": {
+            "rnormalized": "reg."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64441,
+              480.15601,
+              444.18179,
+              488.08231
+            ],
+            "device": [
+              426.64441,
+              478.41653,
+              444.18179,
+              486.34283
+            ]
+          },
+          "content": {
+            "rnormalized": "ext."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77484,
+              480.15601,
+              475.03607,
+              488.08231
+            ],
+            "device": [
+              457.77484,
+              478.41653,
+              475.03607,
+              486.34283
+            ]
+          },
+          "content": {
+            "rnormalized": "Diff"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              468.79901,
+              150.49835,
+              476.72531
+            ],
+            "device": [
+              139.302,
+              467.05954,
+              172.00876,
+              474.98584
+            ]
+          },
+          "content": {
+            "rnormalized": "docdog"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              468.79901,
+              280.40225,
+              476.72531
+            ],
+            "device": [
+              261.54501,
+              467.05954,
+              280.40225,
+              474.98584
+            ]
+          },
+          "content": {
+            "rnormalized": "0.70"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.89569,
+              468.79901,
+              316.75293,
+              476.72531
+            ],
+            "device": [
+              297.89569,
+              467.05954,
+              315.65436,
+              474.98584
+            ]
+          },
+          "content": {
+            "rnormalized": "0.66"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.89569,
+              468.79901,
+              316.75293,
+              476.72531
+            ],
+            "device": [
+              320.64902,
+              467.05954,
+              338.40768,
+              474.98584
+            ]
+          },
+          "content": {
+            "rnormalized": "0.69"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.44,
+              468.79901,
+              359.81982,
+              476.86877
+            ],
+            "device": [
+              343.44,
+              466.8533,
+              359.81982,
+              474.92307
+            ]
+          },
+          "content": {
+            "rnormalized": "0.84"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              365.08801,
+              468.79901,
+              383.94525,
+              476.72531
+            ],
+            "device": [
+              365.08801,
+              467.05954,
+              383.94525,
+              474.98584
+            ]
+          },
+          "content": {
+            "rnormalized": "0.62"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              468.79901,
+              400.11194,
+              476.86877
+            ],
+            "device": [
+              395.505,
+              466.8533,
+              400.11194,
+              474.92307
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              468.79901,
+              431.25046,
+              476.86877
+            ],
+            "device": [
+              426.64352,
+              466.8533,
+              431.25046,
+              474.92307
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              457.84003,
+              225.96495,
+              465.76633
+            ],
+            "device": [
+              139.302,
+              456.10056,
+              225.96495,
+              464.02686
+            ]
+          },
+          "content": {
+            "rnormalized": "BOE_AIoT_CTO"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              457.84,
+              277.92484,
+              465.90976
+            ],
+            "device": [
+              261.54501,
+              455.89429,
+              277.92484,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.64"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              457.84,
+              314.2818,
+              465.90976
+            ],
+            "device": [
+              297.90198,
+              455.89429,
+              314.56952,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.54"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              457.84,
+              314.2818,
+              465.90976
+            ],
+            "device": [
+              319.25735,
+              455.89429,
+              335.9249,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.67"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              457.84,
+              359.81857,
+              465.90976
+            ],
+            "device": [
+              343.43875,
+              455.89429,
+              360.11023,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.84"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              457.84,
+              359.81857,
+              465.90976
+            ],
+            "device": [
+              364.79916,
+              455.89429,
+              381.47064,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.52"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              457.84,
+              400.11194,
+              465.90976
+            ],
+            "device": [
+              395.505,
+              455.89429,
+              400.11194,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              457.84,
+              431.25046,
+              465.90976
+            ],
+            "device": [
+              426.64352,
+              455.89429,
+              431.25046,
+              463.96405
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              446.88098,
+              174.78653,
+              454.80728
+            ],
+            "device": [
+              139.302,
+              445.14151,
+              206.41101,
+              453.06781
+            ]
+          },
+          "content": {
+            "rnormalized": "INNERCONV"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              446.88101,
+              277.92484,
+              454.95078
+            ],
+            "device": [
+              261.54501,
+              444.9353,
+              277.92484,
+              453.00507
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              446.88101,
+              314.2818,
+              454.95078
+            ],
+            "device": [
+              297.90198,
+              444.9353,
+              314.56952,
+              453.00507
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              446.88101,
+              314.2818,
+              454.95078
+            ],
+            "device": [
+              319.25735,
+              444.9353,
+              335.9249,
+              453.00507
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.44,
+              446.88101,
+              362.29724,
+              454.80731
+            ],
+            "device": [
+              343.44,
+              445.14154,
+              362.29724,
+              453.06784
+            ]
+          },
+          "content": {
+            "rnormalized": "0.85"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              365.08801,
+              446.88101,
+              381.46783,
+              454.95078
+            ],
+            "device": [
+              365.08801,
+              444.9353,
+              381.46783,
+              453.00507
+            ]
+          },
+          "content": {
+            "rnormalized": "0.48"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              446.88101,
+              400.11194,
+              454.95078
+            ],
+            "device": [
+              395.505,
+              444.9353,
+              400.11194,
+              453.00507
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              446.88101,
+              431.25046,
+              454.95078
+            ],
+            "device": [
+              426.64352,
+              444.9353,
+              431.25046,
+              453.00507
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              435.922,
+              180.44791,
+              443.8483
+            ],
+            "device": [
+              139.302,
+              434.18253,
+              180.44791,
+              442.10883
+            ]
+          },
+          "content": {
+            "rnormalized": "LC-OCR"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              435.922,
+              277.92484,
+              443.99176
+            ],
+            "device": [
+              261.54501,
+              433.97629,
+              277.92484,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              435.922,
+              314.2818,
+              443.99176
+            ],
+            "device": [
+              297.90198,
+              433.97629,
+              314.56952,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.61"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              435.922,
+              314.2818,
+              443.99176
+            ],
+            "device": [
+              319.25735,
+              433.97629,
+              335.9249,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.65"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              435.922,
+              359.81857,
+              443.99176
+            ],
+            "device": [
+              343.43875,
+              433.97629,
+              360.11023,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.77"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              435.922,
+              359.81857,
+              443.99176
+            ],
+            "device": [
+              364.79916,
+              433.97629,
+              381.47064,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.48"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              435.922,
+              400.11194,
+              443.99176
+            ],
+            "device": [
+              395.505,
+              433.97629,
+              400.11194,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              435.922,
+              431.25046,
+              443.99176
+            ],
+            "device": [
+              426.64352,
+              433.97629,
+              431.25046,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              435.922,
+              463.53345,
+              444.84357
+            ],
+            "device": [
+              457.77701,
+              434.64877,
+              463.53345,
+              443.57034
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              435.922,
+              468.14093,
+              443.99176
+            ],
+            "device": [
+              463.534,
+              433.97629,
+              468.14093,
+              442.04605
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              424.96301,
+              147.42915,
+              432.88931
+            ],
+            "device": [
+              139.302,
+              423.22354,
+              251.52994,
+              431.14984
+            ]
+          },
+          "content": {
+            "rnormalized": "DXM-DI-AI-CV-TEAM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              424.96301,
+              277.92484,
+              433.03278
+            ],
+            "device": [
+              261.54501,
+              423.0173,
+              277.92484,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              424.96301,
+              314.2818,
+              433.03278
+            ],
+            "device": [
+              297.90198,
+              423.0173,
+              314.56952,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "0.54"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              424.96301,
+              314.2818,
+              433.03278
+            ],
+            "device": [
+              319.25735,
+              423.0173,
+              335.9249,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              424.96301,
+              359.81857,
+              433.03278
+            ],
+            "device": [
+              343.43875,
+              423.0173,
+              360.11023,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "0.82"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              424.96301,
+              359.81857,
+              433.03278
+            ],
+            "device": [
+              364.79916,
+              423.0173,
+              381.47064,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "0.51"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              424.96301,
+              400.11194,
+              433.03278
+            ],
+            "device": [
+              395.505,
+              423.0173,
+              400.11194,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              424.96301,
+              431.25046,
+              433.03278
+            ],
+            "device": [
+              426.64352,
+              423.0173,
+              431.25046,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              424.96301,
+              463.53345,
+              433.88458
+            ],
+            "device": [
+              457.77701,
+              423.68979,
+              463.53345,
+              432.61136
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              424.96301,
+              468.14093,
+              433.03278
+            ],
+            "device": [
+              463.534,
+              423.0173,
+              468.14093,
+              431.08707
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              414.00403,
+              172.81392,
+              421.93033
+            ],
+            "device": [
+              139.302,
+              412.26456,
+              172.81392,
+              420.19086
+            ]
+          },
+          "content": {
+            "rnormalized": "alexsue"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              414.004,
+              277.92484,
+              422.07376
+            ],
+            "device": [
+              261.54501,
+              412.05829,
+              277.92484,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.61"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              414.004,
+              314.2818,
+              422.07376
+            ],
+            "device": [
+              297.90198,
+              412.05829,
+              314.56952,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.53"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              414.004,
+              314.2818,
+              422.07376
+            ],
+            "device": [
+              319.25735,
+              412.05829,
+              335.9249,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              414.004,
+              359.81857,
+              422.07376
+            ],
+            "device": [
+              343.43875,
+              412.05829,
+              360.11023,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.81"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              414.004,
+              359.81857,
+              422.07376
+            ],
+            "device": [
+              364.79916,
+              412.05829,
+              381.47064,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              414.004,
+              400.11194,
+              422.07376
+            ],
+            "device": [
+              395.505,
+              412.05829,
+              400.11194,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "6"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              414.004,
+              431.25046,
+              422.07376
+            ],
+            "device": [
+              426.64352,
+              412.05829,
+              431.25046,
+              420.12805
+            ]
+          },
+          "content": {
+            "rnormalized": "6"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              403.04498,
+              158.55017,
+              410.97128
+            ],
+            "device": [
+              139.302,
+              401.30551,
+              158.55017,
+              409.23181
+            ]
+          },
+          "content": {
+            "rnormalized": "PIX"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              403.04501,
+              277.92484,
+              411.11478
+            ],
+            "device": [
+              261.54501,
+              401.0993,
+              277.92484,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "0.61"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              403.04501,
+              314.2818,
+              411.11478
+            ],
+            "device": [
+              297.90198,
+              401.0993,
+              314.56952,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "0.52"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              403.04501,
+              314.2818,
+              411.11478
+            ],
+            "device": [
+              319.25735,
+              401.0993,
+              335.9249,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "0.63"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              403.04501,
+              359.81857,
+              411.11478
+            ],
+            "device": [
+              343.43875,
+              401.0993,
+              360.11023,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "0.82"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              403.04501,
+              359.81857,
+              411.11478
+            ],
+            "device": [
+              364.79916,
+              401.0993,
+              381.47064,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "0.46"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              403.04501,
+              398.57599,
+              411.11478
+            ],
+            "device": [
+              395.505,
+              401.0993,
+              398.57599,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64081,
+              403.04501,
+              431.24774,
+              411.11478
+            ],
+            "device": [
+              426.64081,
+              401.0993,
+              431.24774,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "7"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77933,
+              403.04501,
+              462.38626,
+              411.11478
+            ],
+            "device": [
+              457.77933,
+              401.0993,
+              462.38626,
+              409.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "*"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              392.086,
+              147.3063,
+              400.0123
+            ],
+            "device": [
+              139.302,
+              390.34653,
+              170.34726,
+              398.27283
+            ]
+          },
+          "content": {
+            "rnormalized": "Acodis"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              392.086,
+              277.92484,
+              400.15576
+            ],
+            "device": [
+              261.54501,
+              390.14029,
+              277.92484,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.60"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              392.086,
+              314.2818,
+              400.15576
+            ],
+            "device": [
+              297.90198,
+              390.14029,
+              314.56952,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.53"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              392.086,
+              314.2818,
+              400.15576
+            ],
+            "device": [
+              319.25735,
+              390.14029,
+              335.9249,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.62"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              392.086,
+              359.81857,
+              400.15576
+            ],
+            "device": [
+              343.43875,
+              390.14029,
+              360.11023,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.80"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              392.086,
+              359.81857,
+              400.15576
+            ],
+            "device": [
+              364.79916,
+              390.14029,
+              381.47064,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.46"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              392.086,
+              404.71887,
+              400.15576
+            ],
+            "device": [
+              395.505,
+              390.14029,
+              404.71887,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "15"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              392.086,
+              431.24866,
+              400.15576
+            ],
+            "device": [
+              426.64172,
+              390.14029,
+              431.24866,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              392.086,
+              463.53345,
+              401.00757
+            ],
+            "device": [
+              457.77701,
+              390.81277,
+              463.53345,
+              399.73434
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              392.086,
+              468.14093,
+              400.15576
+            ],
+            "device": [
+              463.534,
+              390.14029,
+              468.14093,
+              398.21005
+            ]
+          },
+          "content": {
+            "rnormalized": "7"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              381.12701,
+              170.18767,
+              389.05331
+            ],
+            "device": [
+              139.302,
+              379.38754,
+              170.18767,
+              387.31384
+            ]
+          },
+          "content": {
+            "rnormalized": "Linkus"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              381.12701,
+              277.92484,
+              389.19678
+            ],
+            "device": [
+              261.54501,
+              379.1813,
+              277.92484,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "0.59"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              381.12701,
+              314.2818,
+              389.19678
+            ],
+            "device": [
+              297.90198,
+              379.1813,
+              314.56952,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              381.12701,
+              314.2818,
+              389.19678
+            ],
+            "device": [
+              319.25735,
+              379.1813,
+              335.9249,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "0.64"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              381.12701,
+              359.81857,
+              389.19678
+            ],
+            "device": [
+              343.43875,
+              379.1813,
+              360.11023,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "0.77"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              381.12701,
+              359.81857,
+              389.19678
+            ],
+            "device": [
+              364.79916,
+              379.1813,
+              381.47064,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "0.48"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              381.12701,
+              400.11194,
+              389.19678
+            ],
+            "device": [
+              395.505,
+              379.1813,
+              400.11194,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "7"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              381.12701,
+              431.25046,
+              389.19678
+            ],
+            "device": [
+              426.64352,
+              379.1813,
+              431.25046,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "9"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              381.12701,
+              463.53345,
+              390.04858
+            ],
+            "device": [
+              457.77701,
+              379.85379,
+              463.53345,
+              388.77536
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              381.12701,
+              468.14093,
+              389.19678
+            ],
+            "device": [
+              463.534,
+              379.1813,
+              468.14093,
+              387.25107
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              370.16901,
+              165.00957,
+              378.09531
+            ],
+            "device": [
+              139.302,
+              368.42953,
+              165.00957,
+              376.35583
+            ]
+          },
+          "content": {
+            "rnormalized": "TTW"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              370.16901,
+              277.92484,
+              378.23877
+            ],
+            "device": [
+              261.54501,
+              368.2233,
+              277.92484,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "0.58"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              370.16901,
+              314.2818,
+              378.23877
+            ],
+            "device": [
+              297.90198,
+              368.2233,
+              314.56952,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              370.16901,
+              314.2818,
+              378.23877
+            ],
+            "device": [
+              319.25735,
+              368.2233,
+              335.9249,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "0.61"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              370.16901,
+              359.81857,
+              378.23877
+            ],
+            "device": [
+              343.43875,
+              368.2233,
+              360.11023,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "0.80"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              370.16901,
+              359.81857,
+              378.23877
+            ],
+            "device": [
+              364.79916,
+              368.2233,
+              381.47064,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "0.42"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              370.16901,
+              400.11194,
+              378.23877
+            ],
+            "device": [
+              395.505,
+              368.2233,
+              400.11194,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              370.16901,
+              435.85739,
+              378.23877
+            ],
+            "device": [
+              426.64352,
+              368.2233,
+              435.85739,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "10"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              370.16901,
+              463.53345,
+              379.09058
+            ],
+            "device": [
+              457.77701,
+              368.89578,
+              463.53345,
+              377.81735
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              370.16901,
+              468.14093,
+              378.23877
+            ],
+            "device": [
+              463.534,
+              368.2233,
+              468.14093,
+              376.29306
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              359.21002,
+              164.4949,
+              367.13632
+            ],
+            "device": [
+              139.302,
+              357.47055,
+              169.50534,
+              365.39685
+            ]
+          },
+          "content": {
+            "rnormalized": "amdoc"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              359.20999,
+              277.92484,
+              367.27975
+            ],
+            "device": [
+              261.54501,
+              357.26428,
+              277.92484,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.58"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              359.20999,
+              314.2818,
+              367.27975
+            ],
+            "device": [
+              297.90198,
+              357.26428,
+              314.56952,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.47"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              359.20999,
+              314.2818,
+              367.27975
+            ],
+            "device": [
+              319.25735,
+              357.26428,
+              335.9249,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.62"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              359.20999,
+              359.81857,
+              367.27975
+            ],
+            "device": [
+              343.43875,
+              357.26428,
+              360.11023,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.80"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              359.20999,
+              359.81857,
+              367.27975
+            ],
+            "device": [
+              364.79916,
+              357.26428,
+              381.47064,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "0.42"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              359.20999,
+              404.71887,
+              367.27975
+            ],
+            "device": [
+              395.505,
+              357.26428,
+              404.71887,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "12"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              359.20999,
+              435.85559,
+              367.27975
+            ],
+            "device": [
+              426.64172,
+              357.26428,
+              435.85559,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "11"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              359.20999,
+              463.53345,
+              368.13156
+            ],
+            "device": [
+              457.77701,
+              357.93677,
+              463.53345,
+              366.85834
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              359.20999,
+              468.14093,
+              367.27975
+            ],
+            "device": [
+              463.534,
+              357.26428,
+              468.14093,
+              365.33405
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              348.25098,
+              154.96719,
+              356.17728
+            ],
+            "device": [
+              139.302,
+              346.51151,
+              189.75232,
+              354.43781
+            ]
+          },
+          "content": {
+            "rnormalized": "CVC-DAG"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              348.25101,
+              277.92484,
+              356.32077
+            ],
+            "device": [
+              261.54501,
+              346.3053,
+              277.92484,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "0.58"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              348.25101,
+              314.2818,
+              356.32077
+            ],
+            "device": [
+              297.90198,
+              346.3053,
+              314.56952,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              348.25101,
+              314.2818,
+              356.32077
+            ],
+            "device": [
+              319.25735,
+              346.3053,
+              335.9249,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "0.61"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              348.25101,
+              359.81857,
+              356.32077
+            ],
+            "device": [
+              343.43875,
+              346.3053,
+              360.11023,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "0.77"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              348.25101,
+              359.81857,
+              356.32077
+            ],
+            "device": [
+              364.79916,
+              346.3053,
+              381.47064,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "0.44"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              348.25101,
+              400.11194,
+              356.32077
+            ],
+            "device": [
+              395.505,
+              346.3053,
+              400.11194,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "9"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64352,
+              348.25101,
+              435.85739,
+              356.32077
+            ],
+            "device": [
+              426.64352,
+              346.3053,
+              435.85739,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "12"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              348.25101,
+              463.53345,
+              357.17258
+            ],
+            "device": [
+              457.77701,
+              346.97778,
+              463.53345,
+              355.89935
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              348.25101,
+              468.14093,
+              356.32077
+            ],
+            "device": [
+              463.534,
+              346.3053,
+              468.14093,
+              354.37506
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              337.29199,
+              168.10298,
+              345.21829
+            ],
+            "device": [
+              139.302,
+              335.55252,
+              193.54962,
+              343.47882
+            ]
+          },
+          "content": {
+            "rnormalized": "SPDB LAB"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              337.29199,
+              277.92484,
+              345.36176
+            ],
+            "device": [
+              261.54501,
+              335.34628,
+              277.92484,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              337.29199,
+              314.2818,
+              345.36176
+            ],
+            "device": [
+              297.90198,
+              335.34628,
+              314.56952,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.48"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              337.29199,
+              314.2818,
+              345.36176
+            ],
+            "device": [
+              319.25735,
+              335.34628,
+              335.9249,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              337.29199,
+              359.81857,
+              345.36176
+            ],
+            "device": [
+              343.43875,
+              335.34628,
+              360.11023,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.80"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              337.29199,
+              359.81857,
+              345.36176
+            ],
+            "device": [
+              364.79916,
+              335.34628,
+              381.47064,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "0.44"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              337.29199,
+              404.71887,
+              345.36176
+            ],
+            "device": [
+              395.505,
+              335.34628,
+              404.71887,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "10"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              337.29199,
+              435.85559,
+              345.36176
+            ],
+            "device": [
+              426.64172,
+              335.34628,
+              435.85559,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "13"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              337.29199,
+              463.53345,
+              346.21356
+            ],
+            "device": [
+              457.77701,
+              336.01877,
+              463.53345,
+              344.94034
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              337.29199,
+              468.14093,
+              345.36176
+            ],
+            "device": [
+              463.534,
+              335.34628,
+              468.14093,
+              343.41605
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              326.33301,
+              209.79225,
+              334.25931
+            ],
+            "device": [
+              139.302,
+              324.59354,
+              209.79225,
+              332.51984
+            ]
+          },
+          "content": {
+            "rnormalized": "Alphastream.ai"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              326.33301,
+              277.92484,
+              334.40277
+            ],
+            "device": [
+              261.54501,
+              324.3873,
+              277.92484,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              326.33301,
+              314.2818,
+              334.40277
+            ],
+            "device": [
+              297.90198,
+              324.3873,
+              314.56952,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "0.47"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              326.33301,
+              314.2818,
+              334.40277
+            ],
+            "device": [
+              319.25735,
+              324.3873,
+              335.9249,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              326.33301,
+              359.81857,
+              334.40277
+            ],
+            "device": [
+              343.43875,
+              324.3873,
+              360.11023,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "0.79"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              326.33301,
+              359.81857,
+              334.40277
+            ],
+            "device": [
+              364.79916,
+              324.3873,
+              381.47064,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "0.45"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              326.33301,
+              404.71887,
+              334.40277
+            ],
+            "device": [
+              395.505,
+              324.3873,
+              404.71887,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "11"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              326.33301,
+              435.85559,
+              334.40277
+            ],
+            "device": [
+              426.64172,
+              324.3873,
+              435.85559,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "14"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              326.33301,
+              463.53345,
+              335.25458
+            ],
+            "device": [
+              457.77701,
+              325.05978,
+              463.53345,
+              333.98135
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              326.33301,
+              468.14093,
+              334.40277
+            ],
+            "device": [
+              463.534,
+              324.3873,
+              468.14093,
+              332.45706
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              315.37402,
+              168.86154,
+              323.30032
+            ],
+            "device": [
+              139.302,
+              313.63455,
+              168.86154,
+              321.56085
+            ]
+          },
+          "content": {
+            "rnormalized": "Hisign"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              315.37399,
+              277.92484,
+              323.44376
+            ],
+            "device": [
+              261.54501,
+              313.42828,
+              277.92484,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              315.37399,
+              314.2818,
+              323.44376
+            ],
+            "device": [
+              297.90198,
+              313.42828,
+              314.56952,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.48"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              315.37399,
+              314.2818,
+              323.44376
+            ],
+            "device": [
+              319.25735,
+              313.42828,
+              335.9249,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.62"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              315.37399,
+              359.81857,
+              323.44376
+            ],
+            "device": [
+              343.43875,
+              313.42828,
+              360.11023,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.79"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              315.37399,
+              359.81857,
+              323.44376
+            ],
+            "device": [
+              364.79916,
+              313.42828,
+              381.47064,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "0.39"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              315.37399,
+              404.71887,
+              323.44376
+            ],
+            "device": [
+              395.505,
+              313.42828,
+              404.71887,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "13"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              315.37399,
+              435.85559,
+              323.44376
+            ],
+            "device": [
+              426.64172,
+              313.42828,
+              435.85559,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "15"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              315.37399,
+              463.53345,
+              324.29556
+            ],
+            "device": [
+              457.77701,
+              314.10077,
+              463.53345,
+              323.02234
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              315.37399,
+              468.14093,
+              323.44376
+            ],
+            "device": [
+              463.534,
+              313.42828,
+              468.14093,
+              321.49805
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              304.41498,
+              153.80067,
+              312.34128
+            ],
+            "device": [
+              139.302,
+              302.67551,
+              167.99538,
+              310.60181
+            ]
+          },
+          "content": {
+            "rnormalized": "DLVC"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              304.41501,
+              277.92484,
+              312.48477
+            ],
+            "device": [
+              261.54501,
+              302.4693,
+              277.92484,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "0.55"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              304.41501,
+              314.2818,
+              312.48477
+            ],
+            "device": [
+              297.90198,
+              302.4693,
+              314.56952,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "0.53"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              304.41501,
+              314.2818,
+              312.48477
+            ],
+            "device": [
+              319.25735,
+              302.4693,
+              335.9249,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "0.57"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              304.41501,
+              359.81857,
+              312.48477
+            ],
+            "device": [
+              343.43875,
+              302.4693,
+              360.11023,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "0.74"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              304.41501,
+              359.81857,
+              312.48477
+            ],
+            "device": [
+              364.79916,
+              302.4693,
+              381.47064,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "0.38"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              304.41501,
+              404.71887,
+              312.48477
+            ],
+            "device": [
+              395.505,
+              302.4693,
+              404.71887,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "14"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              304.41501,
+              435.85559,
+              312.48477
+            ],
+            "device": [
+              426.64172,
+              302.4693,
+              435.85559,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "16"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              304.41501,
+              463.53345,
+              313.33658
+            ],
+            "device": [
+              457.77701,
+              303.14178,
+              463.53345,
+              312.06335
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              304.41501,
+              468.14093,
+              312.48477
+            ],
+            "device": [
+              463.534,
+              302.4693,
+              468.14093,
+              310.53906
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              293.45599,
+              147.3063,
+              301.38229
+            ],
+            "device": [
+              139.302,
+              291.71652,
+              217.44954,
+              299.64282
+            ]
+          },
+          "content": {
+            "rnormalized": "Vamshikancharla"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              293.45599,
+              277.92484,
+              301.52576
+            ],
+            "device": [
+              261.54501,
+              291.51028,
+              277.92484,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              293.45599,
+              314.2818,
+              301.52576
+            ],
+            "device": [
+              297.90198,
+              291.51028,
+              314.56952,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.36"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              293.45599,
+              314.2818,
+              301.52576
+            ],
+            "device": [
+              319.25735,
+              291.51028,
+              335.9249,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.48"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              293.45599,
+              359.81857,
+              301.52576
+            ],
+            "device": [
+              343.43875,
+              291.51028,
+              360.11023,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.76"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              293.45599,
+              359.81857,
+              301.52576
+            ],
+            "device": [
+              364.79916,
+              291.51028,
+              381.47064,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "0.37"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              293.45599,
+              404.71887,
+              301.52576
+            ],
+            "device": [
+              395.505,
+              291.51028,
+              404.71887,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "16"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              293.45599,
+              435.85559,
+              301.52576
+            ],
+            "device": [
+              426.64172,
+              291.51028,
+              435.85559,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "17"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              293.45599,
+              463.53345,
+              302.37756
+            ],
+            "device": [
+              457.77701,
+              292.18277,
+              463.53345,
+              301.10434
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              293.45599,
+              468.14093,
+              301.52576
+            ],
+            "device": [
+              463.534,
+              291.51028,
+              468.14093,
+              299.58005
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              282.49701,
+              167.15613,
+              290.42331
+            ],
+            "device": [
+              139.302,
+              280.75754,
+              167.15613,
+              288.68384
+            ]
+          },
+          "content": {
+            "rnormalized": "Azure"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              282.49701,
+              277.92484,
+              290.56677
+            ],
+            "device": [
+              261.54501,
+              280.5513,
+              277.92484,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              282.49701,
+              314.2818,
+              290.56677
+            ],
+            "device": [
+              297.90198,
+              280.5513,
+              314.56952,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "0.44"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              282.49701,
+              314.2818,
+              290.56677
+            ],
+            "device": [
+              319.25735,
+              280.5513,
+              335.9249,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "0.55"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              282.49701,
+              359.81857,
+              290.56677
+            ],
+            "device": [
+              343.43875,
+              280.5513,
+              360.11023,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "0.59"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              282.49701,
+              359.81857,
+              290.56677
+            ],
+            "device": [
+              364.79916,
+              280.5513,
+              381.47064,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "0.38"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              282.49701,
+              404.71887,
+              290.56677
+            ],
+            "device": [
+              395.505,
+              280.5513,
+              404.71887,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "17"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              282.49701,
+              435.85559,
+              290.56677
+            ],
+            "device": [
+              426.64172,
+              280.5513,
+              435.85559,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "18"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              282.49701,
+              463.53345,
+              291.41858
+            ],
+            "device": [
+              457.77701,
+              281.22379,
+              463.53345,
+              290.14536
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              282.49701,
+              468.14093,
+              290.56677
+            ],
+            "device": [
+              463.534,
+              280.5513,
+              468.14093,
+              288.62106
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              271.53802,
+              159.09085,
+              279.46432
+            ],
+            "device": [
+              139.302,
+              269.79855,
+              241.44812,
+              277.72485
+            ]
+          },
+          "content": {
+            "rnormalized": "ICDAR23 DocLayNet"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              139.302,
+              260.58002,
+              186.42133,
+              268.50632
+            ],
+            "device": [
+              139.302,
+              258.84055,
+              236.61165,
+              266.76685
+            ]
+          },
+          "content": {
+            "rnormalized": "organizers (Baseline)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RQVTRN+SFBX0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              261.54501,
+              271.53799,
+              277.92484,
+              279.60776
+            ],
+            "device": [
+              261.54501,
+              269.59229,
+              277.92484,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "0.49"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              271.53799,
+              314.2818,
+              279.60776
+            ],
+            "device": [
+              297.90198,
+              269.59229,
+              314.56952,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "0.38"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.90198,
+              271.53799,
+              314.2818,
+              279.60776
+            ],
+            "device": [
+              319.25735,
+              269.59229,
+              335.9249,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "0.52"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              271.53799,
+              359.81857,
+              279.60776
+            ],
+            "device": [
+              343.43875,
+              269.59229,
+              360.11023,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "0.70"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.43875,
+              271.53799,
+              359.81857,
+              279.60776
+            ],
+            "device": [
+              364.79916,
+              269.59229,
+              381.47064,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "0.35"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.505,
+              271.53799,
+              404.71887,
+              279.60776
+            ],
+            "device": [
+              395.505,
+              269.59229,
+              404.71887,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "18"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.64172,
+              271.53799,
+              435.85559,
+              279.60776
+            ],
+            "device": [
+              426.64172,
+              269.59229,
+              435.85559,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "19"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.77701,
+              271.53799,
+              463.53345,
+              280.45956
+            ],
+            "device": [
+              457.77701,
+              270.26477,
+              463.53345,
+              279.18634
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2220"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EHBNPV+FontAwesome",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              463.534,
+              271.53799,
+              468.14093,
+              279.60776
+            ],
+            "device": [
+              463.534,
+              269.59229,
+              468.14093,
+              277.66205
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              207.933,
+              149.40204,
+              216.73993
+            ],
+            "device": [
+              134.76498,
+              206.00026,
+              149.40204,
+              214.80719
+            ]
+          },
+          "content": {
+            "rnormalized": "5.2"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.85902,
+              207.933,
+              200.19536,
+              216.73993
+            ],
+            "device": [
+              160.85902,
+              206.00026,
+              242.95583,
+              214.80719
+            ]
+          },
+          "content": {
+            "rnormalized": "General analysis"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              188.854,
+              147.22221,
+              197.66095
+            ],
+            "device": [
+              134.76498,
+              186.92126,
+              306.04398,
+              195.7282
+            ]
+          },
+          "content": {
+            "rnormalized": "Layout segmentation performance:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              310.06598,
+              188.854,
+              317.53595,
+              197.65099
+            ],
+            "device": [
+              310.06598,
+              186.92126,
+              480.59576,
+              195.71823
+            ]
+          },
+          "content": {
+            "rnormalized": "It is apparent that the top-ranking team"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              176.89801,
+              149.15198,
+              185.69499
+            ],
+            "device": [
+              134.76498,
+              174.96527,
+              480.58676,
+              183.76224
+            ]
+          },
+          "content": {
+            "rnormalized": "(docdog) has presented a solution that is performing notably superior compared"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              164.94301,
+              143.61874,
+              173.73999
+            ],
+            "device": [
+              134.76498,
+              163.01027,
+              480.58682,
+              171.80724
+            ]
+          },
+          "content": {
+            "rnormalized": "to the remainder of the field, as evidenced by their 6% lead in total mAP score"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              152.98801,
+              139.74529,
+              161.78499
+            ],
+            "device": [
+              134.76498,
+              151.05527,
+              480.5867,
+              159.85223
+            ]
+          },
+          "content": {
+            "rnormalized": "over the second best submission. This result is achieved through outperforming"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              141.033,
+              144.44864,
+              149.82999
+            ],
+            "device": [
+              134.76498,
+              139.10027,
+              235.41014,
+              147.89723
+            ]
+          },
+          "content": {
+            "rnormalized": "every other team in the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.21399,
+              141.033,
+              245.47971,
+              149.82999
+            ],
+            "device": [
+              238.21399,
+              139.10027,
+              270.80862,
+              147.89723
+            ]
+          },
+          "content": {
+            "rnormalized": "Reports"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              274.42899,
+              141.033,
+              311.25473,
+              149.82999
+            ],
+            "device": [
+              274.42899,
+              139.10027,
+              480.591,
+              147.89723
+            ]
+          },
+          "content": {
+            "rnormalized": "category (5% lead) and the particularly difficult"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76498,
+              129.078,
+              163.65553,
+              137.87498
+            ],
+            "device": [
+              134.76498,
+              127.14526,
+              163.65553,
+              135.94223
+            ]
+          },
+          "content": {
+            "rnormalized": "Others"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              169.04099,
+              129.078,
+              205.86673,
+              137.87498
+            ],
+            "device": [
+              169.04099,
+              127.14526,
+              480.59338,
+              135.94223
+            ]
+          },
+          "content": {
+            "rnormalized": "category (10% lead). From the second rank down, we observe a very"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 137.908,
+          "x1": 477.44897,
+          "y": 476.66901
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            259.95099,
+            487.827,
+            259.95099,
+            498.78601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            487.827,
+            498.78601
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            487.827,
+            393.91101,
+            498.78601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            487.827,
+            498.78601
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            476.86801,
+            259.95099,
+            487.82703
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            476.86801,
+            487.82703
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            476.86801,
+            393.91101,
+            487.82703
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            476.86801,
+            487.82703
+          ]
+        },
+        {
+          "bbox": [
+            137.908,
+            476.66901,
+            477.44897,
+            476.66901
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            137.908,
+            477.44897
+          ],
+          "y-values": [
+            476.66901,
+            476.66901
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            465.51099,
+            259.95099,
+            476.46997
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            465.51099,
+            476.46997
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            465.51099,
+            393.91101,
+            476.46997
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            465.51099,
+            476.46997
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            454.552,
+            259.95099,
+            465.51099
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            454.552,
+            465.51099
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            454.552,
+            393.91101,
+            465.51099
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            454.552,
+            465.51099
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            443.59299,
+            259.95099,
+            454.552
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            443.59299,
+            454.552
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            443.59299,
+            393.91101,
+            454.552
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            443.59299,
+            454.552
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            432.634,
+            259.95099,
+            443.59302
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            432.634,
+            443.59302
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            432.634,
+            393.91101,
+            443.59302
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            432.634,
+            443.59302
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            421.67499,
+            259.95099,
+            432.63397
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            421.67499,
+            432.63397
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            421.67499,
+            393.91101,
+            432.63397
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            421.67499,
+            432.63397
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            410.716,
+            259.95099,
+            421.67499
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            410.716,
+            421.67499
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            410.716,
+            393.91101,
+            421.67499
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            410.716,
+            421.67499
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            399.758,
+            259.95099,
+            410.71698
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            399.758,
+            410.71698
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            399.758,
+            393.91101,
+            410.71698
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            399.758,
+            410.71698
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            388.79901,
+            259.95099,
+            399.758
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            388.79901,
+            399.758
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            388.79901,
+            393.91101,
+            399.758
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            388.79901,
+            399.758
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            377.84,
+            259.95099,
+            388.79901
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            377.84,
+            388.79901
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            377.84,
+            393.91101,
+            388.79901
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            377.84,
+            388.79901
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            366.88101,
+            259.95099,
+            377.84003
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            366.88101,
+            377.84003
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            366.88101,
+            393.91101,
+            377.84003
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            366.88101,
+            377.84003
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            355.922,
+            259.95099,
+            366.88098
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            355.922,
+            366.88098
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            355.922,
+            393.91101,
+            366.88098
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            355.922,
+            366.88098
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            344.96301,
+            259.95099,
+            355.922
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            344.96301,
+            355.922
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            344.96301,
+            393.91101,
+            355.922
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            344.96301,
+            355.922
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            334.004,
+            259.95099,
+            344.96301
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            334.004,
+            344.96301
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            334.004,
+            393.91101,
+            344.96301
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            334.004,
+            344.96301
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            323.04501,
+            259.95099,
+            334.00403
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            323.04501,
+            334.00403
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            323.04501,
+            393.91101,
+            334.00403
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            323.04501,
+            334.00403
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            312.086,
+            259.95099,
+            323.04498
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            312.086,
+            323.04498
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            312.086,
+            393.91101,
+            323.04498
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            312.086,
+            323.04498
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            301.12701,
+            259.95099,
+            312.086
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            301.12701,
+            312.086
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            301.12701,
+            393.91101,
+            312.086
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            301.12701,
+            312.086
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            290.16901,
+            259.95099,
+            301.12799
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            290.16901,
+            301.12799
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            290.16901,
+            393.91101,
+            301.12799
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            290.16901,
+            301.12799
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            279.20999,
+            259.95099,
+            290.16901
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            279.20999,
+            290.16901
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            279.20999,
+            393.91101,
+            290.16901
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            279.20999,
+            290.16901
+          ]
+        },
+        {
+          "bbox": [
+            259.95099,
+            257.29199,
+            259.95099,
+            279.20999
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            259.95099,
+            259.95099
+          ],
+          "y-values": [
+            257.29199,
+            279.20999
+          ]
+        },
+        {
+          "bbox": [
+            393.91101,
+            257.29199,
+            393.91101,
+            279.20999
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            393.91101,
+            393.91101
+          ],
+          "y-values": [
+            257.29199,
+            279.20999
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 259.95099,
+          "y0": 487.827,
+          "y1": 498.78601
+        },
+        {
+          "x": 393.91101,
+          "y0": 487.827,
+          "y1": 498.78601
+        },
+        {
+          "x": 259.95099,
+          "y0": 476.86801,
+          "y1": 487.82703
+        },
+        {
+          "x": 393.91101,
+          "y0": 476.86801,
+          "y1": 487.82703
+        },
+        {
+          "x": 259.95099,
+          "y0": 465.51099,
+          "y1": 476.46997
+        },
+        {
+          "x": 393.91101,
+          "y0": 465.51099,
+          "y1": 476.46997
+        },
+        {
+          "x": 259.95099,
+          "y0": 454.552,
+          "y1": 465.51099
+        },
+        {
+          "x": 393.91101,
+          "y0": 454.552,
+          "y1": 465.51099
+        },
+        {
+          "x": 259.95099,
+          "y0": 443.59299,
+          "y1": 454.552
+        },
+        {
+          "x": 393.91101,
+          "y0": 443.59299,
+          "y1": 454.552
+        },
+        {
+          "x": 259.95099,
+          "y0": 432.634,
+          "y1": 443.59302
+        },
+        {
+          "x": 393.91101,
+          "y0": 432.634,
+          "y1": 443.59302
+        },
+        {
+          "x": 259.95099,
+          "y0": 421.67499,
+          "y1": 432.63397
+        },
+        {
+          "x": 393.91101,
+          "y0": 421.67499,
+          "y1": 432.63397
+        },
+        {
+          "x": 259.95099,
+          "y0": 410.716,
+          "y1": 421.67499
+        },
+        {
+          "x": 393.91101,
+          "y0": 410.716,
+          "y1": 421.67499
+        },
+        {
+          "x": 259.95099,
+          "y0": 399.758,
+          "y1": 410.71698
+        },
+        {
+          "x": 393.91101,
+          "y0": 399.758,
+          "y1": 410.71698
+        },
+        {
+          "x": 259.95099,
+          "y0": 388.79901,
+          "y1": 399.758
+        },
+        {
+          "x": 393.91101,
+          "y0": 388.79901,
+          "y1": 399.758
+        },
+        {
+          "x": 259.95099,
+          "y0": 377.84,
+          "y1": 388.79901
+        },
+        {
+          "x": 393.91101,
+          "y0": 377.84,
+          "y1": 388.79901
+        },
+        {
+          "x": 259.95099,
+          "y0": 366.88101,
+          "y1": 377.84003
+        },
+        {
+          "x": 393.91101,
+          "y0": 366.88101,
+          "y1": 377.84003
+        },
+        {
+          "x": 259.95099,
+          "y0": 355.922,
+          "y1": 366.88098
+        },
+        {
+          "x": 393.91101,
+          "y0": 355.922,
+          "y1": 366.88098
+        },
+        {
+          "x": 259.95099,
+          "y0": 344.96301,
+          "y1": 355.922
+        },
+        {
+          "x": 393.91101,
+          "y0": 344.96301,
+          "y1": 355.922
+        },
+        {
+          "x": 259.95099,
+          "y0": 334.004,
+          "y1": 344.96301
+        },
+        {
+          "x": 393.91101,
+          "y0": 334.004,
+          "y1": 344.96301
+        },
+        {
+          "x": 259.95099,
+          "y0": 323.04501,
+          "y1": 334.00403
+        },
+        {
+          "x": 393.91101,
+          "y0": 323.04501,
+          "y1": 334.00403
+        },
+        {
+          "x": 259.95099,
+          "y0": 312.086,
+          "y1": 323.04498
+        },
+        {
+          "x": 393.91101,
+          "y0": 312.086,
+          "y1": 323.04498
+        },
+        {
+          "x": 259.95099,
+          "y0": 301.12701,
+          "y1": 312.086
+        },
+        {
+          "x": 393.91101,
+          "y0": 301.12701,
+          "y1": 312.086
+        },
+        {
+          "x": 259.95099,
+          "y0": 290.16901,
+          "y1": 301.12799
+        },
+        {
+          "x": 393.91101,
+          "y0": 290.16901,
+          "y1": 301.12799
+        },
+        {
+          "x": 259.95099,
+          "y0": 279.20999,
+          "y1": 290.16901
+        },
+        {
+          "x": 393.91101,
+          "y0": 279.20999,
+          "y1": 290.16901
+        },
+        {
+          "x": 259.95099,
+          "y0": 257.29199,
+          "y1": 279.20999
+        },
+        {
+          "x": 393.91101,
+          "y0": 257.29199,
+          "y1": 279.20999
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

@@ -1,0 +1,1649 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/BUDZTF+SFRM1000": 2.287675936572701,
+        "/CQWFHR+SFBX1000": 2.339344226524529,
+        "/IMULES+SFTI1000": 2.932328857324047,
+        "/TFWOKM+SFRM0900": 3.103731356804319
+      },
+      "mean-char-width": {
+        "/BUDZTF+SFRM1000": 4.659457378084928,
+        "/CQWFHR+SFBX1000": 6.298496147923888,
+        "/IMULES+SFTI1000": 5.175163925080734,
+        "/TFWOKM+SFRM0900": 4.116473541521266
+      },
+      "number-of-chars": {
+        "/BUDZTF+SFRM1000": 2288,
+        "/CQWFHR+SFBX1000": 64,
+        "/IMULES+SFTI1000": 27,
+        "/TFWOKM+SFRM0900": 13
+      }
+    },
+    "styles": [
+      "/BUDZTF+SFRM1000",
+      "/CQWFHR+SFBX1000",
+      "/IMULES+SFTI1000",
+      "/TFWOKM+SFRM0900"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              692.10498,
+              139.37193,
+              700.17474
+            ],
+            "device": [
+              134.765,
+              690.1593,
+              139.37193,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              272.23605,
+              690.1593,
+              280.77161,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "C."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.23605,
+              692.10498,
+              281.44904,
+              700.17474
+            ],
+            "device": [
+              285.03979,
+              690.1593,
+              330.35175,
+              698.229
+            ]
+          },
+          "content": {
+            "rnormalized": "Auer, et al."
+          },
+          "enumeration": {
+            "match": 2,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/TFWOKM+SFRM0900",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              666.20197,
+              159.99728,
+              674.99896
+            ],
+            "device": [
+              134.765,
+              664.26923,
+              480.59372,
+              673.06622
+            ]
+          },
+          "content": {
+            "rnormalized": "vision models, data augmentation strategies and ensemble methods applied to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              654.24695,
+              151.69743,
+              663.04395
+            ],
+            "device": [
+              134.765,
+              652.31421,
+              480.58978,
+              661.11121
+            ]
+          },
+          "content": {
+            "rnormalized": "solve the layout segmentation task with high accuracy. All top-ranking solutions"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              642.29095,
+              162.43213,
+              651.08795
+            ],
+            "device": [
+              134.765,
+              640.35822,
+              480.58676,
+              649.15521
+            ]
+          },
+          "content": {
+            "rnormalized": "adopt, to different degrees, the recently emerging deep-learning models based on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              630.33594,
+              159.99728,
+              639.13293
+            ],
+            "device": [
+              134.765,
+              628.4032,
+              480.59079,
+              637.2002
+            ]
+          },
+          "content": {
+            "rnormalized": "vision transformer methods and self-supervised pre-training, such as the generic"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              618.38092,
+              163.95343,
+              627.17792
+            ],
+            "device": [
+              134.765,
+              616.44818,
+              480.59567,
+              625.24518
+            ]
+          },
+          "content": {
+            "rnormalized": "DINO[22] and MaskDINO[10] models, or the document-understanding focused"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              606.4259,
+              155.09966,
+              615.2229
+            ],
+            "device": [
+              134.765,
+              604.49316,
+              480.59271,
+              613.29016
+            ]
+          },
+          "content": {
+            "rnormalized": "DiT[11] and LayoutLMv3[7] models. The DocLayNet dataset was used for fine-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              594.47089,
+              162.98506,
+              603.26788
+            ],
+            "device": [
+              134.765,
+              592.53815,
+              480.58871,
+              601.33514
+            ]
+          },
+          "content": {
+            "rnormalized": "tuning in this context. Several solutions combine these new-generation vision"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              582.51587,
+              148.04515,
+              591.31287
+            ],
+            "device": [
+              134.765,
+              580.58313,
+              480.59473,
+              589.38013
+            ]
+          },
+          "content": {
+            "rnormalized": "models with more traditional, CNN-based object detectors such as YOLO [8]"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.765,
+              570.55988,
+              169.1001,
+              579.35687
+            ],
+            "device": [
+              134.765,
+              568.62714,
+              332.73285,
+              577.42413
+            ]
+          },
+          "content": {
+            "rnormalized": "through model ensemble, for example through"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              335.44501,
+              570.55988,
+              345.39365,
+              579.35687
+            ],
+            "device": [
+              335.44501,
+              568.62714,
+              434.70038,
+              577.42413
+            ]
+          },
+          "content": {
+            "rnormalized": "Weighted Boxes Fusion"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              438.17603,
+              570.55988,
+              440.94263,
+              579.35687
+            ],
+            "device": [
+              438.17603,
+              568.62714,
+              480.58881,
+              577.42413
+            ]
+          },
+          "content": {
+            "rnormalized": "[17]. Data"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              558.60486,
+              168.51831,
+              567.40186
+            ],
+            "device": [
+              134.76501,
+              556.67212,
+              480.5899,
+              565.46912
+            ]
+          },
+          "content": {
+            "rnormalized": "augmentation strategies used by the teams include multi-scale and mosaic meth-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              546.64984,
+              139.74532,
+              555.44684
+            ],
+            "device": [
+              134.76501,
+              544.7171,
+              480.5947,
+              553.5141
+            ]
+          },
+          "content": {
+            "rnormalized": "ods, as well as deriving synthetic datasets from DocLayNet. Two of the top five"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              534.69482,
+              160.27325,
+              543.49182
+            ],
+            "device": [
+              134.76501,
+              532.76208,
+              480.59164,
+              541.55908
+            ]
+          },
+          "content": {
+            "rnormalized": "teams reported that they include the additional text cell layer provided by Do-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              522.73981,
+              150.39633,
+              531.5368
+            ],
+            "device": [
+              134.76501,
+              520.80707,
+              480.58878,
+              529.60406
+            ]
+          },
+          "content": {
+            "rnormalized": "cLayNet and the competition dataset in their approach. No teams stated to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              510.78381,
+              160.79929,
+              519.58081
+            ],
+            "device": [
+              134.76501,
+              508.85107,
+              449.00635,
+              517.64807
+            ]
+          },
+          "content": {
+            "rnormalized": "create private ground-truth data that was not derived from DocLayNet."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              480.04282,
+              149.40207,
+              488.84976
+            ],
+            "device": [
+              134.76501,
+              478.11008,
+              149.40207,
+              486.91702
+            ]
+          },
+          "content": {
+            "rnormalized": "5.3"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              160.85905,
+              480.04282,
+              193.52742,
+              488.84976
+            ],
+            "device": [
+              160.85905,
+              478.11008,
+              263.75479,
+              486.91702
+            ]
+          },
+          "content": {
+            "rnormalized": "Method descriptions"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              459.26483,
+              153.99384,
+              468.0618
+            ],
+            "device": [
+              134.76501,
+              457.33209,
+              480.59476,
+              466.12906
+            ]
+          },
+          "content": {
+            "rnormalized": "Below we summarize the methods reported by the top five teams for compari-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              447.30984,
+              149.2068,
+              456.10681
+            ],
+            "device": [
+              134.76501,
+              445.37711,
+              480.59274,
+              454.17407
+            ]
+          },
+          "content": {
+            "rnormalized": "son reasons to our best understanding. We would like to extend our thanks to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              435.35486,
+              145.27855,
+              444.15182
+            ],
+            "device": [
+              134.76501,
+              433.42212,
+              480.58591,
+              442.21909
+            ]
+          },
+          "content": {
+            "rnormalized": "all competition teams who took the time to provide us with a comprehensive"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              423.39886,
+              182.43407,
+              432.19583
+            ],
+            "device": [
+              134.76501,
+              421.46613,
+              260.54187,
+              430.26309
+            ]
+          },
+          "content": {
+            "rnormalized": "description of their methods."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              392.65787,
+              142.73311,
+              401.46481
+            ],
+            "device": [
+              134.76501,
+              390.72513,
+              314.90176,
+              399.53207
+            ]
+          },
+          "content": {
+            "rnormalized": "Team docdog (Tencent WeChat AI)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              371.87988,
+              151.91762,
+              380.67685
+            ],
+            "device": [
+              134.76501,
+              369.94714,
+              480.58578,
+              378.74411
+            ]
+          },
+          "content": {
+            "rnormalized": "The team created a synthetic image dataset of 300,000 samples based on the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              359.9249,
+              169.10011,
+              368.72186
+            ],
+            "device": [
+              134.76501,
+              357.99216,
+              480.58868,
+              366.78912
+            ]
+          },
+          "content": {
+            "rnormalized": "training dataset. For the task of layout prediction, the team used two mod-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              347.96991,
+              148.65288,
+              356.76688
+            ],
+            "device": [
+              134.76501,
+              346.03717,
+              480.58878,
+              354.83414
+            ]
+          },
+          "content": {
+            "rnormalized": "els, YOLOv8 [8] and DINO [22]. An extra classification model was trained"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              336.01392,
+              143.61877,
+              344.81088
+            ],
+            "device": [
+              134.76501,
+              334.08118,
+              480.58673,
+              342.87814
+            ]
+          },
+          "content": {
+            "rnormalized": "to categorize the samples of the competition dataset into the document cat-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              324.05893,
+              166.94122,
+              332.8559
+            ],
+            "device": [
+              134.76501,
+              322.12619,
+              480.59467,
+              330.92316
+            ]
+          },
+          "content": {
+            "rnormalized": "egories. YOLOv8 models with different network sizes (medium, large, x-large)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              312.10394,
+              141.95801,
+              320.90091
+            ],
+            "device": [
+              134.76501,
+              310.1712,
+              480.58978,
+              318.96817
+            ]
+          },
+          "content": {
+            "rnormalized": "were trained, each with different input resolutions, for ensemble and optimization"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              300.14896,
+              142.78889,
+              308.94592
+            ],
+            "device": [
+              134.76501,
+              298.21622,
+              480.58676,
+              307.01318
+            ]
+          },
+          "content": {
+            "rnormalized": "of the detection performance. For the DINO model, the team applied a carefully"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              288.19397,
+              171.89264,
+              296.99094
+            ],
+            "device": [
+              134.76501,
+              286.26123,
+              480.58664,
+              295.0582
+            ]
+          },
+          "content": {
+            "rnormalized": "designed augmentation strategy and integrated focal modulation networks [20]"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              276.23798,
+              143.06485,
+              285.03494
+            ],
+            "device": [
+              134.76501,
+              274.30524,
+              480.59573,
+              283.1022
+            ]
+          },
+          "content": {
+            "rnormalized": "in the backbone for improved performance. Separate models were trained per"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              264.28299,
+              171.59076,
+              273.07996
+            ],
+            "device": [
+              134.76501,
+              262.35025,
+              480.59082,
+              271.14722
+            ]
+          },
+          "content": {
+            "rnormalized": "category, both with and without synthetic data. Model hyper-parameters were"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              252.32799,
+              177.37106,
+              261.12497
+            ],
+            "device": [
+              134.76501,
+              250.39525,
+              480.58679,
+              259.19223
+            ]
+          },
+          "content": {
+            "rnormalized": "optimized using a Tree-Structured Parzen Estimator (TPE) [1] to find the best"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              240.37299,
+              141.95801,
+              249.16997
+            ],
+            "device": [
+              134.76501,
+              238.44025,
+              480.59369,
+              247.23721
+            ]
+          },
+          "content": {
+            "rnormalized": "weights. Prediction results from the individual models were combined using"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              228.41798,
+              145.00159,
+              237.21497
+            ],
+            "device": [
+              134.76501,
+              226.48524,
+              480.58981,
+              235.28221
+            ]
+          },
+          "content": {
+            "rnormalized": "Weighted Boxes Fusion (WBF) [17] and fine-tuned using text cell coordinates"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              216.46298,
+              154.99008,
+              225.25996
+            ],
+            "device": [
+              134.76501,
+              214.53024,
+              480.59174,
+              223.32721
+            ]
+          },
+          "content": {
+            "rnormalized": "from the JSON representation of the samples in the competition dataset. Further"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76501,
+              204.50699,
+              159.11162,
+              213.30397
+            ],
+            "device": [
+              134.76501,
+              202.57425,
+              344.37314,
+              211.37122
+            ]
+          },
+          "content": {
+            "rnormalized": "detail on the approach is provided in the team\u2019s"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              347.69202,
+              204.50699,
+              357.64066,
+              213.30397
+            ],
+            "device": [
+              347.69202,
+              202.57425,
+              390.86594,
+              211.37122
+            ]
+          },
+          "content": {
+            "rnormalized": "WeLayout"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/IMULES+SFTI1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              395.13403,
+              204.50699,
+              411.18079,
+              213.30397
+            ],
+            "device": [
+              395.13403,
+              202.57425,
+              441.36545,
+              211.37122
+            ]
+          },
+          "content": {
+            "rnormalized": "paper [23]."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76505,
+              173.76599,
+              142.73314,
+              182.57294
+            ],
+            "device": [
+              134.76505,
+              171.83325,
+              259.59644,
+              180.64018
+            ]
+          },
+          "content": {
+            "rnormalized": "Team BOE_AIoT_CTO"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/CQWFHR+SFBX1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76505,
+              152.98799,
+              151.91765,
+              161.78497
+            ],
+            "device": [
+              134.76505,
+              151.05525,
+              480.59079,
+              159.85222
+            ]
+          },
+          "content": {
+            "rnormalized": "The team relied exclusively on the DocLayNet dataset for training, and ap-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76505,
+              141.03299,
+              155.79111,
+              149.82997
+            ],
+            "device": [
+              134.76505,
+              139.10025,
+              480.59164,
+              147.89722
+            ]
+          },
+          "content": {
+            "rnormalized": "plied scale and mosaic methods for image augmentation. For the task of lay-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              134.76505,
+              129.07799,
+              149.15204,
+              137.87497
+            ],
+            "device": [
+              134.76505,
+              127.14524,
+              480.59277,
+              135.94221
+            ]
+          },
+          "content": {
+            "rnormalized": "out prediction, the team trained two object detection models, YOLOv5 [9] and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/BUDZTF+SFRM1000",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "ignored-cells": [],
+      "images": [],
+      "paths": [],
+      "width": 612
+    }
+  ]
+}
