@@ -1,8 +1,0 @@
-name: 'Set up dependencies'
-description: 'Set up the dependencies'
-runs:
-  using: 'composite'
-  steps:
-    - name: Install dependencies
-      run: sudo apt-get install libldap-common
-      shell: bash
