@@ -804,12 +804,23 @@ namespace pdf_lib
 
             case core::Tc:
               {
-                assert(_parameters.size() == 1);
+                //assert(_parameters.size() == 1);
 		/*
 		logging_lib::info ("pdf-parser") << " Tc value : " << _parameters.at(0).getNumericValue();
                 stream()->Tc(_parameters.at(0).getNumericValue());
 		*/
-		stream()->Tc(get_numeric_value(_parameters.at(0)));
+		if(_parameters.size() == 1)
+		  {
+		    stream()->Tc(get_numeric_value(_parameters.at(0)));
+		  }
+		else
+		  {
+		    std::stringstream ss;
+		    ss << "Tc does not have the corrent required parameters (1!="<<_parameters.size()<<")";
+		    logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << ss.str();
+		    
+		    throw std::runtime_error(ss.str());
+		  }
               }
               break;
 
@@ -1384,7 +1395,6 @@ namespace pdf_lib
 	      }
 	      break;
 
-
             case core::d1:
               {
                 logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__  << "\t WARNING: implement " << op;
@@ -1392,6 +1402,12 @@ namespace pdf_lib
 	      break;
 
             case core::EMC:
+              {
+                logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__  << "\t WARNING: implement " << op;
+	      }
+	      break;
+
+	    case core::EX:
               {
                 logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__  << "\t WARNING: implement " << op;
 	      }

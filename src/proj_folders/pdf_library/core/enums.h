@@ -64,7 +64,7 @@ namespace pdf_lib
 
       d, d0, d1, Do,
 
-      EI, EMC, ET,
+      EI, EMC, ET, EX,
       
       Tc, Td, TD, Tf, Tj, TJ, TL, Tm,
       Ts, Tw, Tz, TS, 
@@ -138,6 +138,7 @@ namespace pdf_lib
 	case EI      : return "EI";
 	case EMC     : return "EMC";
 	case ET      : return "ET";
+	case EX      : return "EX";
 
 	case Tc      : return "Tc";
 	case Td      : return "Td";
@@ -227,14 +228,14 @@ namespace pdf_lib
       static std::map<std::string, core::operator_type> map = {
 	{   "b", core::b   }, {   "B", core::B  }, {  "b*", core::bS }, { "B*", core::BS},
 	{ "BDC", core::BDC }, {  "BI", core::BI }, { "BMC", core::BMC}, { "BT", core::BT}, { "BX", core::BX},
-
+	
 	{ "c", core::c }, { "cm", core::cm}, { "cs", core::cs }, { "CS", core::CS}, 
-
+	
 	{ "d", core::d }, { "d0", core::d0}, { "d1", core::d1 },
-
+	
 	{"Do", core::Do}, 
-
-	{ "EI", core::EI }, { "EMC", core::EMC}, {"ET", core::ET}, 
+	
+	{ "EI", core::EI }, { "EMC", core::EMC}, {"ET", core::ET}, {"EX", core::EX}, 
 
 	{"Tc", core::Tc}, {"Td", core::Td}, {"TD", core::TD}, {"Tf", core::Tf},
 	{"Tj", core::Tj}, {"TJ", core::TJ}, {"TL", core::TL}, {"Tm", core::Tm},
