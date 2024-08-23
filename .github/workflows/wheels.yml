@@ -1,6 +1,9 @@
 on:
   workflow_call:
 
+env:
+  CMAKE_BUILD_TYPE: Release
+
 jobs:
   build_wheels:
     name: Build wheel for py${{ matrix.python-version }} ${{ matrix.os.platform_id }} ${{ matrix.os.macos_version }}
@@ -47,11 +50,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      # - name: Install dependencies [linux]
-      #   if: matrix.os.platform == 'linux'
-      #   run: sudo apt-get install -y libldap-common
-      #   shell: bash
-
       - name: Install poetry
         run: pipx install poetry==1.8.3 --python $(which python3)
         shell: bash
@@ -86,6 +84,7 @@ jobs:
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
           CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
           ARCHFLAGS: -arch x86_64
+          BUILD_THREADS: "4"
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
@@ -122,6 +121,7 @@ jobs:
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
           CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
           ARCHFLAGS: -arch arm64
+          BUILD_THREADS: "4"
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
@@ -164,6 +164,7 @@ jobs:
           CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390*"
           CIBW_PROJECT_REQUIRES_PYTHON: ">=3.8"
           CIBW_BUILD_VERBOSITY: 3
+          BUILD_THREADS: "8"
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version

@@ -25,7 +25,7 @@ def run(cmd, cwd="./"):
     return False
 
 
-def build_local(multi_threaded=True):
+def build_local(num_threads: int):
 
     if not os.path.exists(BUILD_DIR):
         print("python executable: ", sys.executable)
@@ -38,13 +38,13 @@ def build_local(multi_threaded=True):
         print(f"build directory detected: {BUILD_DIR}")
 
     cmd = f"cmake --build {BUILD_DIR} --target install"
-    if multi_threaded:
-        cmd += " -j 4"
+    if num_threads > 1:
+        cmd += f" -j {num_threads}"
     success = run(cmd, cwd=ROOT_DIR)
     if not success:
         raise RuntimeError("Error building.")
 
 
 if "__main__" == __name__:
-
-    build_local(multi_threaded=False)
+    num_threads = int(os.getenv("BUILD_THREADS", "4"))
+    build_local(num_threads=num_threads)

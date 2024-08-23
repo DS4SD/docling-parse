@@ -1,6 +1,9 @@
 on:
   workflow_call:
 
+env:
+  CMAKE_BUILD_TYPE: Debug
+
 jobs:
   run-checks:
     runs-on: ubuntu-latest
@@ -18,10 +21,9 @@ jobs:
       - name: Run styling check
         run: poetry run pre-commit run --all-files
       - name: Install with poetry
-        run: poetry install
+        run: poetry install --all-extras
       - name: Testing
         run: |
           poetry run pytest -v tests
       - name: Build with poetry
         run: poetry build
-  

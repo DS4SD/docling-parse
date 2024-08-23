@@ -15,7 +15,6 @@ on:
 env:
   # disable keyring (https://github.com/actions/runner-images/issues/6185):
   PYTHON_KEYRING_BACKEND: keyring.backends.null.Keyring
-  BUILD_TYPE: Release
 
 jobs:
   code-checks:
