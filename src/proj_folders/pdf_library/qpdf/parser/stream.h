@@ -647,7 +647,7 @@ namespace pdf_lib
 
             case core::cm:
               {
-                assert(_parameters.size() == 6);
+                //assert(_parameters.size() == 6);
 		/*
                 stream()->cm(_parameters.at(0).getNumericValue(),
 			     _parameters.at(1).getNumericValue(),
@@ -659,14 +659,24 @@ namespace pdf_lib
 
 		//logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__
 		//<< "\t parameters size: " << _parameters.size();
-		
-                stream()->cm(get_numeric_value(_parameters.at(0)),
-			     get_numeric_value(_parameters.at(1)),
-			     get_numeric_value(_parameters.at(2)),
-			     get_numeric_value(_parameters.at(3)),
-			     get_numeric_value(_parameters.at(4)),
-			     get_numeric_value(_parameters.at(5)));
 
+		if(_parameters.size() == 6)
+		  {
+		    stream()->cm(get_numeric_value(_parameters.at(0)),
+				 get_numeric_value(_parameters.at(1)),
+				 get_numeric_value(_parameters.at(2)),
+				 get_numeric_value(_parameters.at(3)),
+				 get_numeric_value(_parameters.at(4)),
+				 get_numeric_value(_parameters.at(5)));
+		  }
+		else
+		  {
+		    std::stringstream ss;
+		    ss << "cm does not have the corrent required parameters (6!="<<_parameters.size()<<")";
+		    logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << ss.str();
+		    
+		    throw std::runtime_error(ss.str());
+		  }
               }
               break;
 
@@ -684,19 +694,31 @@ namespace pdf_lib
 
             case core::Td:
               {
-                assert(_parameters.size() == 2);
+                //assert(_parameters.size() == 2);
 		/*
                 stream()->Td(_parameters.at(0).getNumericValue(),
 			     _parameters.at(1).getNumericValue());
 		*/
-                stream()->Td(get_numeric_value(_parameters.at(0)),
-			     get_numeric_value(_parameters.at(1)));
+		if(_parameters.size() == 2)
+		  {
+		    stream()->Td(get_numeric_value(_parameters.at(0)),
+				 get_numeric_value(_parameters.at(1)));
+		  }
+		else
+		  {
+		    std::stringstream ss;
+		    ss << "Td does not have the corrent required parameters (2!="<<_parameters.size()<<")";
+		    logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << ss.str();
+		    
+		    throw std::runtime_error(ss.str());
+		  }		    
               }
               break;
 
             case core::TD:
               {
-                assert(_parameters.size() == 2);
+                //assert(_parameters.size() == 2);
+		
 		/*
 		logging_lib::info ("pdf-parser") << " TD values : " 
 						      << _parameters.at(0).getNumericValue() << ", "
@@ -705,14 +727,27 @@ namespace pdf_lib
                 stream()->TD(_parameters.at(0).getNumericValue(),
 			     _parameters.at(1).getNumericValue());
 		*/
-                stream()->TD(get_numeric_value(_parameters.at(0)),
-			     get_numeric_value(_parameters.at(1)));
+		
+		if(_parameters.size() == 2)
+		  {
+		    stream()->TD(get_numeric_value(_parameters.at(0)),
+				 get_numeric_value(_parameters.at(1)));
+		  }
+		else
+		  {
+		    std::stringstream ss;
+		    ss << "TD does not have the corrent required parameters (2!="<<_parameters.size()<<")";
+		    logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << ss.str();
+		    
+		    throw std::runtime_error(ss.str());
+		  }
+		
               }
               break;
 
             case core::Tm:
               {
-                assert(_parameters.size() == 6);
+                //assert(_parameters.size() == 6);
 		/*
                 stream()->Tm(_parameters.at(0).getNumericValue(),
 			     _parameters.at(1).getNumericValue(),
@@ -730,13 +765,24 @@ namespace pdf_lib
 						     << get_numeric_value(_parameters.at(4)) << ", "
 						     << get_numeric_value(_parameters.at(5)) << "";
 		*/
-
-                stream()->Tm(get_numeric_value(_parameters.at(0)),
-			     get_numeric_value(_parameters.at(1)),
-			     get_numeric_value(_parameters.at(2)),
-			     get_numeric_value(_parameters.at(3)),
-			     get_numeric_value(_parameters.at(4)),
-			     get_numeric_value(_parameters.at(5)));
+		if(_parameters.size() == 6)
+		  {
+		    stream()->Tm(get_numeric_value(_parameters.at(0)),
+				 get_numeric_value(_parameters.at(1)),
+				 get_numeric_value(_parameters.at(2)),
+				 get_numeric_value(_parameters.at(3)),
+				 get_numeric_value(_parameters.at(4)),
+				 get_numeric_value(_parameters.at(5)));
+		  }
+		else
+		  {
+		    std::stringstream ss;
+		    ss << "Tm does not have the corrent required parameters (2!="<<_parameters.size()<<")";
+		    logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << ss.str();
+		    
+		    throw std::runtime_error(ss.str());
+		  }
+		
               }
               break;
 
@@ -836,7 +882,9 @@ namespace pdf_lib
 										      stream()->font());
 
                 for(core::object<core::CELL> cell : cells)
-                  stream()->register_cell(cell);
+		  {
+		    stream()->register_cell(cell);
+		  }
               }
               break;
 
@@ -849,7 +897,9 @@ namespace pdf_lib
 										      stream()->font());
 		
 		for(core::object<core::CELL> cell : cells)
-                  stream()->register_cell(cell);
+		  {
+		    stream()->register_cell(cell);
+		  }
               }
               break;
 

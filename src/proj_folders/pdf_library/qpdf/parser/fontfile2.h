@@ -93,8 +93,6 @@ namespace pdf_lib
       catch(...)
 	{
 	}
-
-      //assert(false);
     }
 
     void parser<core::FONTFILE2>::handleObject(QPDFObjectHandle object)
