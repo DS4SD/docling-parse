@@ -1,3 +1,9 @@
+## [v1.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.1) - 2024-08-23
+
+### Fix
+
+* Replace assert with exceptions ([#12](https://github.com/DS4SD/docling-parse/issues/12)) ([`6565f32`](https://github.com/DS4SD/docling-parse/commit/6565f32bdeb17d9796a94ccf3c8f8c4e0e73bf49))
+
 ## [v1.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.0) - 2024-08-22
 
 ### Feature
