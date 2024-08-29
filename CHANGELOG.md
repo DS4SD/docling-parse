@@ -1,3 +1,9 @@
+## [v1.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.2) - 2024-08-29
+
+### Fix
+
+* Out-of-range vector error ([#15](https://github.com/DS4SD/docling-parse/issues/15)) ([`4ed034c`](https://github.com/DS4SD/docling-parse/commit/4ed034cc0fb3988a9216e3574b9f34c155dae452))
+
 ## [v1.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.1) - 2024-08-23
 
 ### Fix
