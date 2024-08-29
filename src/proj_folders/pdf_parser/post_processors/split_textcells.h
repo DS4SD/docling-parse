@@ -515,6 +515,13 @@ namespace pdf_lib
     while(splitting)
       {
 	splitting=false;
+
+	/*
+	for(int j=0; j<vlines.size(); j+=1)
+	  {
+	    logging_lib::info("pdf-parser") << "vline (" << j << "): " << vlines[j].x << "," << vlines[j].y0 << "," << vlines[j].y1;
+	  }
+	*/
 	
 	for(int i=0; i<cells.get_size(); i+=1)
 	  {
@@ -530,13 +537,15 @@ namespace pdf_lib
 	    //auto height = bbox.height();
 	    //auto width  = bbox.width();
 
-	    //logging_lib::info("pdf-parser") << "\t cell \""<< cell_m.text << "\"";
+	    //logging_lib::info("pdf-parser") << cell_m.text << "\t" << x0 << "," << y0 << "," << x1 << "," << y1 << "\n";
 	    for(int j=0; j<vlines.size(); j+=1)
 	      {	
 		//if((x0+0.00*width < vlines[j].x    and   vlines[j].x < x1-0.00*width) and
 		//(vlines[j].y0  < y0+0.05*height and y1-0.05*height < vlines[j].y1))
 		if(post_processor<BUILD_HV_LINES, scalar_type>::is_split_by_vline(x0, y0, x1, y1, vlines[j]))
 		  {
+		    //logging_lib::info("pdf-parser") << "vline: " << vlines[j].x << "," << vlines[j].y0 << "," << vlines[j].y1;
+		    
 		    logging_lib::warn("pdf-parser") << "\t --> splitting cell \""<< cell_m.text << "\"";
 		    splitting=split_cell_by_vline_on_page(i, cells, vlines[j]);
 		  }
