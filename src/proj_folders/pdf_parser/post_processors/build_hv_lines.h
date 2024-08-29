@@ -121,16 +121,16 @@ namespace pdf_lib
 							     std::vector<scalar_type>& x,
 							     std::vector<scalar_type>& y)
   {
-    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
     
     if(j+1<x.size())
       return false;
 
-    scalar_type x0 = x[j+0];
-    scalar_type y0 = y[j+0];
+    scalar_type x0 = x.at(j+0);
+    scalar_type y0 = y.at(j+0);
     
-    scalar_type x1 = x[j+1];
-    scalar_type y1 = y[j+1];
+    scalar_type x1 = x.at(j+1);
+    scalar_type y1 = y.at(j+1);
 
     if(std::abs(x1-x0)>1.e-3 and
        std::abs(y1-y0)<1.e-3)
@@ -144,16 +144,16 @@ namespace pdf_lib
 							     std::vector<scalar_type>& x,
 							     std::vector<scalar_type>& y)
   {
-    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
     
     if(j+1<x.size())
       return false;
 
-    scalar_type x0 = x[j+0];
-    scalar_type y0 = y[j+0];
+    scalar_type x0 = x.at(j+0);
+    scalar_type y0 = y.at(j+0);
     
-    scalar_type x1 = x[j+1];
-    scalar_type y1 = y[j+1];
+    scalar_type x1 = x.at(j+1);
+    scalar_type y1 = y.at(j+1);
 
     if(std::abs(x1-x0)<1.e-3 and
        std::abs(y1-y0)>1.e-3)
@@ -167,7 +167,7 @@ namespace pdf_lib
 								   scalar_type x1, scalar_type y1,
 								   std::vector<horizontal_line<scalar_type> >& hlines_)
   {
-    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
     
     horizontal_line<scalar_type> hline;
     hline.y = y0;
@@ -183,7 +183,7 @@ namespace pdf_lib
 								   scalar_type x1, scalar_type y1,
 								   std::vector<vertical_line<scalar_type> >& vlines_)
   {
-    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
     
     vertical_line<scalar_type> vline;
     vline.x = x0;
@@ -199,7 +199,7 @@ namespace pdf_lib
 								  std::vector<vertical_line  <scalar_type> >& vlines_,
 								  std::vector<horizontal_line<scalar_type> >& hlines_)
   {
-    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
     
     hlines_.clear();
     vlines_.clear();
@@ -213,15 +213,31 @@ namespace pdf_lib
 	x        <= paths[k][core::keys<core::PATH>::x_values()];
 	y        <= paths[k][core::keys<core::PATH>::y_values()];
 
+	/*
+	logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t #-subpaths: " << subpaths.size();
+	for(int i=0; i<subpaths.size(); i++)
+	  {
+	    logging_lib::info("pdf-parser") << i << "\t" << subpaths.at(i);
+	  }
+	*/
+	
 	for(int i=0; i<subpaths.size()-1; i++)
 	  {
-	    for(int j=subpaths[i+0]; j<subpaths[i+1]; j++)
+	    //logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t subpath (" << i << "): " << subpaths.size();
+	    for(int j=subpaths.at(i+0); j<subpaths.at(i+1); j++)
 	      {
-		scalar_type x0 = x[j+0];
-		scalar_type y0 = y[j+0];
+		//logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t x/y: " << j << "/" << x.size() << ":" << y.size();
+
+		if(j+1>=x.size() or j+1>=y.size()) // skip
+		  {
+		    continue;
+		  }
 		
-		scalar_type x1 = x[j+1];
-		scalar_type y1 = y[j+1];
+		scalar_type x0 = x.at(j+0);
+		scalar_type y0 = y.at(j+0);
+		
+		scalar_type x1 = x.at(j+1);
+		scalar_type y1 = y.at(j+1);
 
 		if(std::abs(y1-y0)<1.e-3 and std::abs(x1-x0)>1.e-3)
 		  register_hline(x0, y0, x1, y1, hlines_);
