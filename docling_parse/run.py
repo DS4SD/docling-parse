@@ -47,11 +47,11 @@ def main():
 
     # Load the document
     success = parser.load_document(doc_key, doc_file)
-    #parser.set_loglevel(args.log_level)
-    
+    # parser.set_loglevel(args.log_level)
+
     # Get number of pages
     num_pages = parser.number_of_pages(doc_key)
-    
+
     # Parse page by page to minimize memory footprint
     for page in range(0, num_pages):
         json_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
@@ -61,7 +61,7 @@ def main():
             continue
         else:
             print(f"page {page} is parsed ... ")
-            
+
         json_page = json_doc["pages"][0]
 
         page_dimensions = [
@@ -83,11 +83,13 @@ def main():
                     cell["box"]["device"][3],  # y1 (upper right y)
                 ]
             )
-                
+
         if False:
             print(f"cells of page: {page}")
             print(
-                tabulate(cells, headers=["page", "cell-id", "text", "x0", "y0", "x1", "y1"])
+                tabulate(
+                    cells, headers=["page", "cell-id", "text", "x0", "y0", "x1", "y1"]
+                )
             )
 
         # find bitmap images
@@ -119,7 +121,6 @@ def main():
     # Unload the document
     parser.unload_document(doc_key)
 
-        
     """
     doc = parser.find_cells(args.pdf)
 
