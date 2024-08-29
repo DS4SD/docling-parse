@@ -88,7 +88,7 @@ jobs:
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
-          poetry install
+          poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
@@ -125,7 +125,7 @@ jobs:
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
-          poetry install
+          poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
@@ -168,8 +168,7 @@ jobs:
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
-          poetry add cibuildwheel
-          # poetry install
+          poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir ./wheelhouse
           ls -l ./wheelhouse

@@ -42,6 +42,8 @@ black = {extras = ["jupyter"], version = "^24.4.2"}
 python-semantic-release = "^7.32.2"
 pre-commit = "^3.7.1"
 isort = "^5.10.1"
+
+[tool.poetry.group.build.dependencies]
 cibuildwheel = "^2.19.2"
 wheel = "^0.43.0"
 delocate = "^0.11.0"
