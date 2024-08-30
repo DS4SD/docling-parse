@@ -60,9 +60,9 @@ def main():
     overview = []
 
     doc_files = sorted(glob.glob(os.path.join(args.pdfdir, "*.pdf")))
-    if args.max_docs!=None:
-        doc_files = doc_files[0:args.max_docs]
-                       
+    if args.max_docs != None:
+        doc_files = doc_files[0 : args.max_docs]
+
     for doc_id, doc_file in enumerate(doc_files):
         print(doc_file)
 
