@@ -33,6 +33,16 @@ def main():
         required=True,
     )
 
+    # Add an argument for the path to the PDF file
+    parser.add_argument(
+        "-m",
+        "--max-docs",
+        type=int,
+        required=False,
+        default=None,
+        help="max number of documents to run on",
+    )
+
     # Parse the command-line arguments
     args = parser.parse_args()
     print(f"The provided PDF path is: {args.pdfdir}")
@@ -49,9 +59,11 @@ def main():
 
     overview = []
 
-    for doc_id, doc_file in enumerate(
-        sorted(glob.glob(os.path.join(args.pdfdir, "*.pdf")))
-    ):
+    doc_files = sorted(glob.glob(os.path.join(args.pdfdir, "*.pdf")))
+    if args.max_docs!=None:
+        doc_files = doc_files[0:args.max_docs]
+                       
+    for doc_id, doc_file in enumerate(doc_files):
         print(doc_file)
 
         doc_key = f"key={doc_file}"  # unique document key (eg hash, UUID, etc)
@@ -74,18 +86,18 @@ def main():
                 if "pages" not in json_doc:  # page could not get parsed
                     print(f"ERROR: page {page} is not parsed ... ")
                     failed = True
-                    continue
                 else:
-                    print(f"page {page} is parsed ... ")
-        except:
+                    print(f"SUCCESS: page {page} is parsed ... ")
+        except Exception as e:
+            print(f"ERROR: page {page} is not parsed: {e}")
             failed = True
 
         # Unload the document
         parser.unload_document(doc_key)
 
-        overview.append([doc_file, failed, num_pages])
+        overview.append([doc_file, (not failed), num_pages])
 
-    print(tabulate(overview, headers=["filename", "status", "#-pages"]))
+    print(tabulate(overview, headers=["filename", "success", "#-pages"]))
 
 
 if __name__ == "__main__":
