@@ -1,3 +1,9 @@
+## [v1.1.3](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.3) - 2024-08-30
+
+### Fix
+
+* Resolve more assert errors ([#16](https://github.com/DS4SD/docling-parse/issues/16)) ([`c3a6b03`](https://github.com/DS4SD/docling-parse/commit/c3a6b038571909a41b3abd237215b756c3eacc62))
+
 ## [v1.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.2) - 2024-08-29
 
 ### Fix
