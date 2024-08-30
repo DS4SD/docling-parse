@@ -200,8 +200,15 @@ namespace pdf_lib
 	auto itr = src.begin();
 	c = utf8::next(itr, src.end());	  
       }
-      assert(_range.first<=c and c<=_range.second);
+      //assert(_range.first<=c and c<=_range.second);
 
+      if(c<_range.first or _range.second<c)
+	{
+	  logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__ 
+					  << "\tchar-index " << c << " for " << tgt
+					  << " is out of range [" << _range.first << ", " << _range.second << "]";
+	}
+      
       _map[c] = tgt;
 
       return *this;
@@ -239,8 +246,15 @@ namespace pdf_lib
 	{
 	  for(uint32_t i = 0; i < end - begin + 1; i++)
 	    {
-	      assert(_range.first<=begin+i and begin+i<=_range.second);
+	      //assert(_range.first<=begin+i and begin+i<=_range.second);
 
+	      if(begin+i<_range.first or _range.second<begin+i)
+		{
+		  logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__ 
+						  << "\tchar-index " << begin+i //<< " for " << tgt.at(i)
+						  << " is out of range [" << _range.first << ", " << _range.second << "]";	      		  
+		}
+	      
 	      try
 		{
 		  std::string tmp(16, 0);
@@ -254,6 +268,9 @@ namespace pdf_lib
 		}
 	      catch(...)
 		{
+		  logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__  << "\t"
+						   << "could not determine char-value for cmap at index " << (begin+i);
+		  
 		  _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
 		}
 	    }
@@ -262,8 +279,15 @@ namespace pdf_lib
 	{
 	  for(uint32_t i = 0; i < end - begin + 1; i++)
 	    {
-	      assert(_range.first<=begin+i and begin+i<=_range.second);
+	      //assert(_range.first<=begin+i and begin+i<=_range.second);
 
+	      if(begin+i<_range.first or _range.second<begin+i)
+		{
+		  logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__ 
+						  << "\tchar-index " << begin+i //<< " for " << tgt.at(i)
+						  << " is out of range [" << _range.first << ", " << _range.second << "]";	      		  
+		}
+	      
 	      try
 		{
 		  std::string tmp(128, 0);
@@ -280,6 +304,8 @@ namespace pdf_lib
 		}
 	      catch(...)
 		{
+		  logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__  << "\t"
+						   << "could not determine char-value for cmap at index " << (begin+i);
 		  _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";		  
 		}
 
@@ -336,8 +362,15 @@ namespace pdf_lib
 	  //if(begin + i>255)
 	  //std::cout << src_begin << "\t" << tgt.at(i) << "\t" << __FUNCTION__ << "\n" ;
 
-	  assert(_range.first<=begin+i and begin+i<=_range.second);
+	  //assert(_range.first<=begin+i and begin+i<=_range.second);
 
+	  if(begin+i<_range.first or _range.second<begin+i)
+	    {
+	      logging_lib::warn("pdf-parser") << __FILE__ << ":" << __LINE__ 
+					      << "\tchar-index " << begin+i << " for " << tgt.at(i)
+					      << " is out of range [" << _range.first << ", " << _range.second << "]";	      
+	    }
+	  
 	  _map[begin + i] = tgt.at(i);
 	  
 	  //std::cout << __FUNCTION__ << "-2\t[" << src_begin << ":" << src_end 

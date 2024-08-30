@@ -63,6 +63,10 @@ namespace docling
     nlohmann::json find_cells_from_bytesio_on_page(pybind11::object bytes_io,
 						   int page);
     */
+
+  private:
+
+    void normalise_document(container_lib::container& doc_raw);
     
   private:
 
@@ -196,11 +200,15 @@ namespace docling
 
     interface.clean_pages(doc_raw);
 
+    normalise_document(doc_raw);
+
+    /*
     // remove font information ...
     for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
       {
         doc_raw["pages"][pid].erase("fonts");
       }    
+    */
     
     IO::writer<IO::JSON_CONTAINER> writer;
     std::string result = writer.to_string(doc_raw);
@@ -245,255 +253,54 @@ namespace docling
 
     interface.clean_pages(doc_raw);
 
-    // remove font information ...
+    normalise_document(doc_raw);
+    
+    IO::writer<IO::JSON_CONTAINER> writer;
+    std::string result = writer.to_string(doc_raw);
+    
+    nlohmann::json data = nlohmann::json::parse(result);
+    return data;
+  }
+
+  void docling_parser::normalise_document(container_lib::container& doc_raw)
+  {
     for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
       {
+	// remove font information ...
 	if(doc_raw["pages"][pid].has("fonts"))
 	  {
 	    doc_raw["pages"][pid].erase("fonts");
 	  }
-      }
-    
-    IO::writer<IO::JSON_CONTAINER> writer;
-    std::string result = writer.to_string(doc_raw);
-    
-    nlohmann::json data = nlohmann::json::parse(result);
-    return data;
-  }
 
-  // *************** to be deprecated ******************
-
-  /*  
-  nlohmann::json docling_parser::find_cells(std::string path)
-  {
-    container_lib::container doc_raw;
-
-    // parse the pdf file on path
-    if (not interface.parse_pdf_page(path, doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not parse the PDF file";
-
-        nlohmann::json data;
-        data["message"] = "could not parse the PDF file";
-        return data;
-      }
-    
-    if (not interface.clean_raw_page(doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not clean the raw file";
-
-        nlohmann::json data;
-        data["message"] = "could not clean the raw file";
-        return data;
-      }
-
-    interface.clean_pages(doc_raw);
-
-    // remove font information ...
-    for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
-      {
-        doc_raw["pages"][pid].erase("fonts");
-      }    
-    
-    IO::writer<IO::JSON_CONTAINER> writer;
-    std::string result = writer.to_string(doc_raw);
-    
-    nlohmann::json data = nlohmann::json::parse(result);
-    return data;
-  }
-  */
-
-  /*
-  nlohmann::json docling_parser::find_cells_on_page(std::string path, int page)
-  {
-    container_lib::container doc_raw;
-
-    // parse the pdf file on path
-    if (not interface.parse_pdf_page(path, page, doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not parse the PDF file";
-
-        nlohmann::json data;
-        data["message"] = "could not parse the PDF file";
-        return data;
-      }
-
-    // only keep page -> bring it to the first and then resize array
-    {
-      if(page>0)
-	{
-	  doc_raw["pages"][0] = doc_raw["pages"][page];
-	}
-      doc_raw["pages"].resize(1);
-    }
-    
-    if (not interface.clean_raw_page(doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not clean the raw file";
-
-        nlohmann::json data;
-        data["message"] = "could not clean the raw file";
-        return data;
-      }
-
-    interface.clean_pages(doc_raw);
-
-    // remove font information ...
-    for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
-      {
-	if(doc_raw["pages"][pid].has("fonts"))
+	// detect non utf8 comlpiant text
+	for(int cid=0; cid<doc_raw["pages"][pid]["cells"].get_size(); cid++)
 	  {
-	    doc_raw["pages"][pid].erase("fonts");
+	    std::string line="";
+	    line <= doc_raw["pages"][pid]["cells"][cid]["content"]["rnormalized"];
+
+	    //auto end_it = utf8::find_invalid(line.begin(), line.end());
+	    //std::cout << cid << "\t"  << (end_it==line.end()) << "\t" << line << "\n";
+
+	    IO::writer<IO::JSON_CONTAINER> writer;
+	    std::string result = writer.to_string(doc_raw["pages"][pid]["cells"][cid]);
+	    
+	    try
+	      {
+
+		//logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+		//<< result;
+		
+		nlohmann::json data = nlohmann::json::parse(result);	    
+	      }
+	    catch(...)
+	      {
+		// FIXME
+		std::string tmp = "<non-compliant-utf8-text>";
+		doc_raw["pages"][pid]["cells"][cid]["content"]["rnormalized"] <= tmp;
+	      }
 	  }
-      }
-    
-    IO::writer<IO::JSON_CONTAINER> writer;
-    std::string result = writer.to_string(doc_raw);
-    
-    nlohmann::json data = nlohmann::json::parse(result);
-    return data;
-  }
-  */
-
-  /*
-  nlohmann::json docling_parser::find_cells_from_bytesio(pybind11::object bytes_io)
-  {
-    // Check if the object is a BytesIO object
-    if (!pybind11::hasattr(bytes_io, "read")) {
-      
-        throw std::runtime_error("Expected a BytesIO object");
-    }
-
-    // Seek to the beginning of the BytesIO stream
-    bytes_io.attr("seek")(0);
-
-    // Read the entire content of the BytesIO stream
-    pybind11::bytes data = bytes_io.attr("read")();
-
-    // Get a pointer to the data
-    std::string data_str = data.cast<std::string>();
-
-    // Do something with the data (in this case, simply print the size)
-    //std::cout << "Read " << data_str.size() << " bytes from the BytesIO stream" << std::endl;
-
-    //std::string path;
-    
-    container_lib::container doc_raw;
-    
-    // parse the pdf file on path
-    if (not interface.parse_pdf_page(data_str.c_str(), data_str.size(), doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not parse the PDF file";
-
-        nlohmann::json data;
-        data["message"] = "could not parse the PDF file";
-        return data;
-      }
-    
-    if (not interface.clean_raw_page(doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not clean the raw file";
-
-        nlohmann::json data;
-        data["message"] = "could not clean the raw file";
-        return data;
-      }
-
-    interface.clean_pages(doc_raw);
-
-    // remove font information ...
-    for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
-      {
-        doc_raw["pages"][pid].erase("fonts");
       }    
-    
-    IO::writer<IO::JSON_CONTAINER> writer;
-    std::string result = writer.to_string(doc_raw);    
-
-    nlohmann::json output = nlohmann::json::parse(result);
-    return output;
   }
-  */
-
-  /*
-  nlohmann::json docling_parser::find_cells_from_bytesio_on_page(pybind11::object bytes_io, int page)
-  {
-    // Check if the object is a BytesIO object
-    if (!pybind11::hasattr(bytes_io, "read")) {
-      
-        throw std::runtime_error("Expected a BytesIO object");
-    }
-
-    // Seek to the beginning of the BytesIO stream
-    bytes_io.attr("seek")(0);
-
-    // Read the entire content of the BytesIO stream
-    pybind11::bytes data = bytes_io.attr("read")();
-
-    // Get a pointer to the data
-    std::string data_str = data.cast<std::string>();
-
-    // Do something with the data (in this case, simply print the size)
-    //std::cout << "Read " << data_str.size() << " bytes from the BytesIO stream" << std::endl;
-
-    //std::string path;
-    
-    container_lib::container doc_raw;
-    
-    // parse the pdf file on path
-    if (not interface.parse_pdf_page(data_str.c_str(), data_str.size(), page, doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not parse the PDF file";
-
-        nlohmann::json data;
-        data["message"] = "could not parse the PDF file";
-        return data;
-      }
-
-    // only keep page -> bring it to the first and then resize array
-    {
-      if(page>0)
-	{
-	  doc_raw["pages"][0] = doc_raw["pages"][page];
-	}
-      doc_raw["pages"].resize(1);
-    }
-    
-    if (not interface.clean_raw_page(doc_raw))
-      {
-        logging_lib::error("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
-                                         << "could not clean the raw file";
-
-        nlohmann::json data;
-        data["message"] = "could not clean the raw file";
-        return data;
-      }
-
-    interface.clean_pages(doc_raw);
-
-    // remove font information ...
-    for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
-      {
-	if(doc_raw["pages"][pid].has("fonts"))
-	  {	    
-	    doc_raw["pages"][pid].erase("fonts");
-	  }
-      }
-    
-    IO::writer<IO::JSON_CONTAINER> writer;
-    std::string result = writer.to_string(doc_raw);    
-
-    nlohmann::json output = nlohmann::json::parse(result);
-    return output;
-  }
-  */
   
 }
 
