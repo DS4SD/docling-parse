@@ -77,8 +77,8 @@ jobs:
           CIBW_ARCHS: x86_64
           CIBW_ARCHS_MACOS: x86_64
           CIBW_PLATFORM: macos
-          CIBW_SKIP: "pp* *-musllinux_* *_i686* *_s390* *arm64*"
-          CIBW_PROJECT_REQUIRES_PYTHON: ">=3.8"
+          CIBW_SKIP: "pp* *-musllinux_* *_i686* *_s390* *arm64* *pypy*"
+          CIBW_PROJECT_REQUIRES_PYTHON: "~=${{ matrix.python-version }}.0"
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: x86_64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
@@ -100,7 +100,10 @@ jobs:
           poetry run delocate-wheel --require-archs x86_64 -v ./wheelhouse/*.whl
           echo "step 3"
           ls -l wheelhouse
-          poetry run python -m zipfile --list wheelhouse/*.whl
+          for file in ./wheelhouse/*.whl; do
+            echo "Inspecting $file"
+            poetry run python -m zipfile --list "$file"
+          done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
@@ -114,8 +117,8 @@ jobs:
           CIBW_ARCHS: arm64
           CIBW_ARCHS_MACOS: arm64
           CIBW_PLATFORM: macos
-          CIBW_SKIP: "pp* *-musllinux_* *_i686* *x86_64* *_s390*"
-          CIBW_PROJECT_REQUIRES_PYTHON: ">=3.8"
+          CIBW_SKIP: "pp* *-musllinux_* *_i686* *x86_64* *_s390* *pypy*"
+          CIBW_PROJECT_REQUIRES_PYTHON: "~=${{ matrix.python-version }}.0"
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: arm64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
@@ -137,7 +140,10 @@ jobs:
           poetry run delocate-wheel --require-archs arm64 -v ./wheelhouse/*.whl
           echo "step 3"
           ls -l wheelhouse
-          poetry run python -m zipfile --list wheelhouse/*.whl
+          for file in ./wheelhouse/*.whl; do
+            echo "Inspecting $file"
+            poetry run python -m zipfile --list "$file"
+          done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
@@ -155,14 +161,20 @@ jobs:
           ls -l ./dist
           poetry publish --no-interaction -vvv
 
+      - name: Set up QEMU [linux]
+        if: matrix.os.name == 'ubuntu-latest'
+        uses: docker/setup-qemu-action@v3
+        with:
+            platforms: all
+
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
         env:
-          CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
-          CIBW_ARCHS: x86_64
+          # CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
+          CIBW_ARCHS: auto x86_64 aarch64
           CIBW_PLATFORM: linux
-          CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390*"
-          CIBW_PROJECT_REQUIRES_PYTHON: ">=3.8"
+          CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390* *pypy*"
+          CIBW_PROJECT_REQUIRES_PYTHON: "~=${{ matrix.python-version }}.0"
           CIBW_BUILD_VERBOSITY: 3
           BUILD_THREADS: "8"
         run: |
@@ -172,7 +184,10 @@ jobs:
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir ./wheelhouse
           ls -l ./wheelhouse
-          poetry run python -m zipfile --list ./wheelhouse/*.whl
+          for file in ./wheelhouse/*.whl; do
+            echo "Inspecting $file"
+            poetry run python -m zipfile --list "$file"
+          done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
