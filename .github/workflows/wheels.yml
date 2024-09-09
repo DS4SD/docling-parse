@@ -164,7 +164,7 @@ jobs:
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
         env:
-          CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
+          # CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
           CIBW_ARCHS: auto x86_64 aarch64
           CIBW_PLATFORM: linux
           CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390*"
