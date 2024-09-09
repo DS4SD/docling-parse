@@ -155,11 +155,17 @@ jobs:
           ls -l ./dist
           poetry publish --no-interaction -vvv
 
+      - name: Set up QEMU [linux]
+        if: matrix.os.name == 'ubuntu-latest'
+        uses: docker/setup-qemu-action@v3
+        with:
+            platforms: all
+
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
         env:
           CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
-          CIBW_ARCHS: x86_64
+          CIBW_ARCHS: auto x86_64 aarch64
           CIBW_PLATFORM: linux
           CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390*"
           CIBW_PROJECT_REQUIRES_PYTHON: ">=3.8"
