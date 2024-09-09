@@ -1,3 +1,9 @@
+## [v1.2.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.2.0) - 2024-09-09
+
+### Feature
+
+* Build linux arm64 architecture ([#17](https://github.com/DS4SD/docling-parse/issues/17)) ([`3f51a2c`](https://github.com/DS4SD/docling-parse/commit/3f51a2c571259491a79899db02cfe2de26a5c17f))
+
 ## [v1.1.3](https://github.com/DS4SD/docling-parse/releases/tag/v1.1.3) - 2024-08-30
 
 ### Fix
