@@ -100,7 +100,10 @@ jobs:
           poetry run delocate-wheel --require-archs x86_64 -v ./wheelhouse/*.whl
           echo "step 3"
           ls -l wheelhouse
-          poetry run python -m zipfile --list wheelhouse/*.whl
+          for file in ./wheelhouse/*.whl; do
+            echo "Inspecting $file"
+            poetry run python -m zipfile --list "$file"
+          done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
@@ -137,7 +140,10 @@ jobs:
           poetry run delocate-wheel --require-archs arm64 -v ./wheelhouse/*.whl
           echo "step 3"
           ls -l wheelhouse
-          poetry run python -m zipfile --list wheelhouse/*.whl
+          for file in ./wheelhouse/*.whl; do
+            echo "Inspecting $file"
+            poetry run python -m zipfile --list "$file"
+          done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
@@ -178,7 +184,10 @@ jobs:
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir ./wheelhouse
           ls -l ./wheelhouse
-          poetry run python -m zipfile --list ./wheelhouse/*.whl
+          for file in ./wheelhouse/*.whl; do
+            echo "Inspecting $file"
+            poetry run python -m zipfile --list "$file"
+          done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
