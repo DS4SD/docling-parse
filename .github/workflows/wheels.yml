@@ -78,7 +78,7 @@ jobs:
           CIBW_ARCHS_MACOS: x86_64
           CIBW_PLATFORM: macos
           CIBW_SKIP: "pp* *-musllinux_* *_i686* *_s390* *arm64*"
-          CIBW_PROJECT_REQUIRES_PYTHON: "==${{ matrix.python-version }}"
+          CIBW_PROJECT_REQUIRES_PYTHON: "${{ matrix.python-version }}"
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: x86_64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
@@ -115,7 +115,7 @@ jobs:
           CIBW_ARCHS_MACOS: arm64
           CIBW_PLATFORM: macos
           CIBW_SKIP: "pp* *-musllinux_* *_i686* *x86_64* *_s390*"
-          CIBW_PROJECT_REQUIRES_PYTHON: "==${{ matrix.python-version }}"
+          CIBW_PROJECT_REQUIRES_PYTHON: "${{ matrix.python-version }}"
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: arm64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
@@ -168,7 +168,7 @@ jobs:
           CIBW_ARCHS: auto x86_64 aarch64
           CIBW_PLATFORM: linux
           CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390*"
-          CIBW_PROJECT_REQUIRES_PYTHON: "==${{ matrix.python-version }}"
+          CIBW_PROJECT_REQUIRES_PYTHON: "${{ matrix.python-version }}"
           CIBW_BUILD_VERBOSITY: 3
           BUILD_THREADS: "8"
         run: |
