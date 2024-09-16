@@ -61,7 +61,7 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
 
-      - name: Set up custom PATH
+      - name: Set up custom PATH and set py version to cpXYZ [windows]
         if: ${{matrix.os.platform_id == 'win_amd64'}}
         shell: pwsh
         run: |
@@ -69,6 +69,9 @@ jobs:
           echo "C:\msys64\mingw64\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
           echo "C:\Users\runneradmin\.local\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
           echo "C:\nasm" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          $version = "${{ matrix.python-version }}"
+          $cp_version = "cp$($version -replace '\.', '')"
+          Add-Content -Path $env:GITHUB_ENV -Value "python_cp_version=$cp_version"
 
       - name: Setup pypi for poetry [for releases only]
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
@@ -82,14 +85,6 @@ jobs:
           version=${{ matrix.python-version }}
           cp_version="cp${version//.}"
           echo "python_cp_version=$cp_version" >> $GITHUB_ENV
-
-      - name: Convert Python version to cpXYZ
-        if: ${{matrix.os.platform_id == 'win_amd64'}}
-        shell: pwsh
-        run: |
-          $version = "${{ matrix.python-version }}"
-          $cp_version = "cp$($version -replace '\.', '')"
-          Add-Content -Path $env:GITHUB_ENV -Value "python_cp_version=$cp_version"
 
       - name: Build wheels [macos-x86_64]
         if: ${{matrix.os.platform_id == 'macosx_x86_64'}}
