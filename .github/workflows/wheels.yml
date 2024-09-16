@@ -163,20 +163,6 @@ jobs:
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
 
-      - name: publish wheels (dry run) [macos]
-        if: matrix.os.platform == 'macos'
-        run: |
-          ls -l ./
-          ls -l ./dist
-          poetry publish --dry-run --no-interaction -vvv
-
-      - name: publish wheels (on publishing) [macos]
-        if: ${{ matrix.os.platform == 'macos' && startsWith(github.ref, 'refs/tags/') }}
-        run: |
-          ls -l ./
-          ls -l ./dist
-          poetry publish --no-interaction -vvv
-
       - name: Set up QEMU [linux]
         if: matrix.os.name == 'ubuntu-latest'
         uses: docker/setup-qemu-action@v3
@@ -206,20 +192,6 @@ jobs:
           done
           mkdir ./dist
           cp wheelhouse/*.whl ./dist/
-
-      - name: publish wheels (dry run) [linux]
-        if: matrix.os.platform == 'linux'
-        run: |
-          ls -l ./
-          ls -l ./dist
-          poetry publish --dry-run --no-interaction -vvv
-
-      - name: publish wheels (on publishing) [linux]
-        if: ${{ matrix.os.platform == 'linux' && startsWith(github.ref, 'refs/tags/') }}
-        run: |
-          ls -l ./
-          ls -l ./dist
-          poetry publish --no-interaction -vvv
 
       - name: Set up MSYS2 [windows]
         if: ${{matrix.os.platform_id == 'win_amd64'}}
@@ -279,16 +251,11 @@ jobs:
           }
           Copy-Item -Path .\wheelhouse\*.whl -Destination .\dist\
 
-      - name: publish wheels (dry run) [windows]
-        if: ${{matrix.os.platform_id == 'win_amd64'}}
+      - name: publish wheels (dry run)
         run: |
-          ls -l .\
-          ls -l .\dist
           poetry publish --dry-run --no-interaction -vvv
 
-      - name: publish wheels (on publishing) [windows]
-        if: ${{ matrix.os.platform_id == 'win_amd64' && startsWith(github.ref, 'refs/tags/') }}
+      - name: publish wheels (on publishing) [for releases only]
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
         run: |
-          ls -l .\
-          ls -l .\dist
           poetry publish --no-interaction -vvv
