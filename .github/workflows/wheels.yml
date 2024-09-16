@@ -77,10 +77,19 @@ jobs:
           poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
 
       - name: Convert python version to cpXYZ
+        if: ${{matrix.os.platform_id != 'win_amd64'}}
         run: |
           version=${{ matrix.python-version }}
           cp_version="cp${version//.}"
           echo "python_cp_version=$cp_version" >> $GITHUB_ENV
+
+      - name: Convert Python version to cpXYZ
+        if: ${{matrix.os.platform_id == 'win_amd64'}}
+        shell: pwsh
+        run: |
+          $version = "${{ matrix.python-version }}"
+          $cp_version = "cp$($version -replace '\.', '')"
+          Add-Content -Path $env:GITHUB_ENV -Value "python_cp_version=$cp_version"
 
       - name: Build wheels [macos-x86_64]
         if: ${{matrix.os.platform_id == 'macosx_x86_64'}}
