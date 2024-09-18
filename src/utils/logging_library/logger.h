@@ -186,27 +186,50 @@ namespace logging_lib {
     return Logger(domain);
   }
 
+  // std::function<void(std::string, logging_level_type)> Logger::to_file(std::string filename, bool append)
+  // {
+  //   static std::map<std::string, std::ofstream> streams;
+  //   static char buffer[32];
+
+  //   if(not streams.count(filename))
+  //     streams[filename].open(filename, append ? std::ios::app : std::ios::out);
+
+  //   std::ofstream & stream = streams[filename];
+  //   return [&](std::string string, logging_level_type type) { 
+      
+  //     auto time = std::chrono::system_clock::now();
+  //     std::time_t t = std::chrono::system_clock::to_time_t(time);
+
+  //     std::tm timeinfo;
+  //     localtime_r(&t, &timeinfo);
+  //     strftime(buffer, 32, "%Y-%m-%d %H:%M:%S", &timeinfo);
+
+  //     stream << buffer << " [" << std::setw(7) << to_string(type) << "] " << string << std::endl;
+  //   };
+  // }
+
   std::function<void(std::string, logging_level_type)> Logger::to_file(std::string filename, bool append)
   {
     static std::map<std::string, std::ofstream> streams;
-    static char buffer[32];
-
-    if(not streams.count(filename))
-      streams[filename].open(filename, append ? std::ios::app : std::ios::out);
-
-    std::ofstream & stream = streams[filename];
     return [&](std::string string, logging_level_type type) { 
-      
       auto time = std::chrono::system_clock::now();
       std::time_t t = std::chrono::system_clock::to_time_t(time);
+      
+  #ifdef _WIN32
+      struct tm timeinfo;
+      localtime_s(&timeinfo, &t);
+  #else
+      struct tm timeinfo;
+      localtime_r(&t, &timeinfo);
+  #endif
 
-      struct tm * timeinfo;
-      timeinfo = localtime(&t);
-      strftime(buffer,32,"%F %T", timeinfo);
+      char buffer[80];
+      strftime(buffer, 80, "%d-%m-%Y %I:%M:%S", &timeinfo);
+      std::string str(buffer);
 
-      stream << buffer << " [" << std::setw(7) << to_string(type) << "] " << string << std::endl;
+      streams[filename] << buffer << " [" << std::setw(7) << to_string(type) << "] " << string;
     };
-  }
+  };
 
   void Logger::warn(std::string str, std::string domain)
   {

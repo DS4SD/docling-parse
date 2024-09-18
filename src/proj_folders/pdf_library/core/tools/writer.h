@@ -64,9 +64,11 @@ namespace pdf_lib
 		   std::pair<scalar_type, scalar_type> page_r0,
 		   std::pair<scalar_type, scalar_type> page_dim);      
 
-      template<typename scalar_type, long unsigned int N>
+      // template<typename scalar_type, long unsigned int N>
+      // std::vector<scalar_type> to_vector(std::array<scalar_type, N> arr);
+      template<typename scalar_type, std::size_t N>
       std::vector<scalar_type> to_vector(std::array<scalar_type, N> arr);
-      
+
       template<typename scalar_type>
       std::vector<scalar_type> get_bvec(std::array<scalar_type, 4> rhs);
 
@@ -308,14 +310,24 @@ namespace pdf_lib
       }
     }
 
-    template<typename scalar_type, long unsigned int N>
+  //   template<typename scalar_type, long unsigned int N>
+  //   std::vector<scalar_type> writer::to_vector(std::array<scalar_type, N> arr)
+  //   {
+  //     std::vector<scalar_type> result(N, 0);
+
+  //     for(int l=0; l<N; l++)
+	// result[l] = arr[l];
+      
+  //     return result;
+  //   }
+    template<typename scalar_type, std::size_t N>
     std::vector<scalar_type> writer::to_vector(std::array<scalar_type, N> arr)
     {
-      std::vector<scalar_type> result(N, 0);
+      std::vector<scalar_type> result(arr.size(), 0);
 
-      for(int l=0; l<N; l++)
-	result[l] = arr[l];
-      
+      for(std::size_t l = 0; l < arr.size(); ++l)
+        result[l] = arr[l];
+
       return result;
     }
 
@@ -746,4 +758,3 @@ namespace pdf_lib
 }
 
 #endif
-

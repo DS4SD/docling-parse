@@ -52,7 +52,8 @@ namespace pdf_lib
     {
       // FIXME
       //directory = PDF_DATA_DIR;
-      directory = resource_utils::get_resources_dir(true);
+      //directory = resource_utils::get_resources_dir(true);
+	  directory = resource_utils::get_resources_dir(true).string();
       
       directory += directory.back()!='/'? "/":"";
       

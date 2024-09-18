@@ -90,15 +90,24 @@ namespace system_lib
     return true;
   }
 
-  bool file_operations::is_file(std::string file_name)
-  {
-    struct stat st;
-    lstat(file_name.c_str(), &st);
+  // bool file_operations::is_file(std::string file_name)
+  // {
+  //   struct stat st;
+  //   lstat(file_name.c_str(), &st);
 
-    if (S_ISDIR(st.st_mode))
-      return false;
+  //   if (S_ISDIR(st.st_mode))
+  //     return false;
 
-    return true;
+  //   return true;
+  // }
+
+  bool file_operations::is_file(std::string file_name) {
+      try {
+          return std::filesystem::is_regular_file(file_name); //  Correct usage here
+      } catch (const std::exception& e) {
+          CGCR_ERR_S("system-lib") << "\t ERROR: Could not check if file exists. " << e.what() << "\n"; 
+          return false; // Handle the error gracefully
+      }
   }
 
   bool file_operations::delete_file(std::string file_name)
@@ -114,15 +123,24 @@ namespace system_lib
       }
   }
 
-  bool file_operations::is_directory(std::string dir_name)
-  {
-    struct stat st;
-    lstat(dir_name.c_str(), &st);
+  // bool file_operations::is_directory(std::string dir_name)
+  // {
+  //   struct stat st;
+  //   lstat(dir_name.c_str(), &st);
 
-    if (S_ISDIR(st.st_mode))
-      return true;
+  //   if (S_ISDIR(st.st_mode))
+  //     return true;
 
-    return false;
+  //   return false;
+  // }
+
+  bool file_operations::is_directory(std::string dir_name) {
+      try {
+          return std::filesystem::is_directory(dir_name);
+      } catch (const std::exception& e) {
+          CGCR_ERR_S("system-lib") << "\t ERROR: Could not check if directory exists. " << e.what() << "\n"; 
+          return false; // Handle the error gracefully
+      }
   }
 
   bool file_operations::create_directory(std::string dir_name) noexcept

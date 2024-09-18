@@ -308,7 +308,8 @@ namespace pdf_lib
 
     // FIXME
     //std::string font_data_dir = PDF_DATA_DIR;
-    std::string font_data_dir = resource_utils::get_resources_dir(true);
+    //std::string font_data_dir = resource_utils::get_resources_dir(true);
+    std::string font_data_dir = resource_utils::get_resources_dir(true).string();
 
     std::vector<std::string> font_data_key = {"font-data", "path"};
     if (input.has(font_data_key))

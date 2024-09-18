@@ -28,7 +28,8 @@ namespace docling
   
   std::string docling_resources::get_resources_path()
   {
-    return resource_utils::get_resources_dir(true);
+    // return resource_utils::get_resources_dir(true);
+    return resource_utils::get_resources_dir(true).string();
   }
   
   bool docling_resources::set_resources_path()
