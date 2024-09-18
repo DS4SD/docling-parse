@@ -1,3 +1,9 @@
+## [v1.2.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.2.1) - 2024-09-18
+
+### Fix
+
+* Clean code ([#20](https://github.com/DS4SD/docling-parse/issues/20)) ([`992df42`](https://github.com/DS4SD/docling-parse/commit/992df4235ca624b47ce63be71592fa895c732e07))
+
 ## [v1.2.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.2.0) - 2024-09-09
 
 ### Feature
