@@ -1,17 +1,5 @@
 //-*-C++-*-
 
-/***********************************************************
-IBM Confidential
-OCO Source Materials
-IBM Research Zurich Knowledge Graph Licensed Internal Code
-(C) Copyright IBM Corp. 2017
-Authors: Peter W. J. Staar, Christoph Auer,
-         Michele Dolfi, Leonidas Georgopoulos,
-         Aleksandros Sobczyk, Dimitrios Christofidellis
-Email: {taa, dol, cau, leg, obc, dic}@zurich.ibm.com
-Date: 22/10/2018
-**********************************************************/
-
 #ifndef JSONPARSER_WHATEVER_H
 #define JSONPARSER_WHATEVER_H
 

@@ -1,18 +1,5 @@
 //-*-C++-*-
 
-/***********************************************************
-IBM Confidential
-OCO Source Materials
-IBM Research Zurich Smart Annotator Licensed Internal Code
-(C) Copyright IBM Corp. 2017
-
-Authors: Peter W. J. Staar, Michele Dolfi, Christoph Auer,
-Matthieu Mottet 
-Email: {taa, dol, cau, ttt}@zurich.ibm.com
-Date: 18/08/2017
-**********************************************************/
-
-
 #ifndef DOCUMENT_POSTPROCESSOR_H
 #define DOCUMENT_POSTPROCESSOR_H
 
@@ -34,12 +21,6 @@ namespace pdf_lib
       REMOVE_EMPTY_CELLS,
       REMOVE_DUPLICATE_CELLS,
       REMOVE_OUTLIER_CELLS
-      
-      //DETECT_TEXTBOXES,
-      //DETECT_TEXTSTYLES,
-
-      //DETECT_PATHBOXES,
-      //CLASSIFY_PATHS
     };
 
   template<post_processor_name name, typename scalar_type>
@@ -50,8 +31,6 @@ namespace pdf_lib
 
     post_processor();
     ~post_processor();
-
-    //void execute(container_lib::container& raw_doc);
   };
   
   template<typename scalar_type>
