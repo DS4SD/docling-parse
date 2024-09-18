@@ -1,30 +1,10 @@
 //-*-C++-*-
 
-/***********************************************************
-IBM Confidential
-OCO Source Materials
-IBM Research Zurich Smart Annotator Licensed Internal Code
-(C) Copyright IBM Corp. 2017
-
-Authors: Peter W. J. Staar, Michele Dolfi, Christoph Auer,
-Matthieu Mottet 
-Email: {taa, dol, cau, ttt}@zurich.ibm.com
-Date: 18/08/2017
-**********************************************************/
-
-
 #ifndef DOCUMENT_TRANSFORMER_CONTRACT_TEXTCELLS_H
 #define DOCUMENT_TRANSFORMER_CONTRACT_TEXTCELLS_H
 
 namespace pdf_lib
 {
-  /*
-  template<typename scalar_type>
-  struct vertical_line
-  {
-    scalar_type x, y0, y1;
-  };
-  */
   
   template<typename scalar_type>
   class post_processor<CONTRACT_TEXTCELLS, scalar_type>
@@ -46,18 +26,6 @@ namespace pdf_lib
     void detect_special_characters(container_lib::container& raw_doc);
 
   private:
-
-    /*
-    void find_vlines(container_lib::container&                 paths,
-		     std::vector<vertical_line<scalar_type> >& vlines);
-
-    void split_cells(container_lib::container&                 cells,
-			      std::vector<vertical_line<scalar_type> >& vlines);
-    
-    bool split_cell(int                         i,
-		    container_lib::container&   cells,
-		    vertical_line<scalar_type>& vlines);
-    */
 
     void rotate_cells(container_lib::container& cells,
 		      int                       direction);

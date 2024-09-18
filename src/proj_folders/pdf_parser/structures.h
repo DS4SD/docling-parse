@@ -1,18 +1,5 @@
 //-*-C++-*-
 
-/***********************************************************
-IBM Confidential
-OCO Source Materials
-IBM Research Zurich Smart Annotator Licensed Internal Code
-(C) Copyright IBM Corp. 2017
-
-Authors: Peter W. J. Staar, Michele Dolfi, Christoph Auer,
-Matthieu Mottet 
-Email: {taa, dol, cau, ttt}@zurich.ibm.com
-Date: 18/08/2017
-**********************************************************/
-
-
 #ifndef DOCUMENT_POSTPROCESSOR_STRUCTURES_H
 #define DOCUMENT_POSTPROCESSOR_STRUCTURES_H
 
@@ -60,13 +47,6 @@ namespace pdf_lib
     rect.set(bbox);
   }
 
-  /*
-  template<typename scalar_type>
-  bool text_cell<scalar_type>::overlaps(text_cell<scalar_type>& cell)
-  {
-    return rect.overlaps(cell.rect);
-  }
-  */  
 }
 
 #endif

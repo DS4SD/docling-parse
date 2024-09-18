@@ -1,17 +1,5 @@
 //-*-C++-*-
 
-/***********************************************************
-IBM Confidential
-OCO Source Materials
-IBM Research Zurich Smart Annotator Licensed Internal Code
-(C) Copyright IBM Corp. 2017
-
-Authors: Peter W. J. Staar, Michele Dolfi, Christoph Auer,
-Matthieu Mottet
-Email: {taa, dol, cau, ttt}@zurich.ibm.com
-Date: 18/08/2017
-**********************************************************/
-
 #ifndef PDF_INTERFACE_ASSEMBLER_H
 #define PDF_INTERFACE_ASSEMBLER_H
 
@@ -21,8 +9,6 @@ namespace pdf_lib
   template<>
   class interface<ASSEMBLER>
   {
-    //typedef prof_lib::profiler<prof_lib::COUNTING_PROFILER> profiler_type;
-
     typedef std::map<int, std::string> document_type;
 
   public:
