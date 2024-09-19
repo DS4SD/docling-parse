@@ -5,7 +5,7 @@ include(ExternalProject)
 include(CMakeParseArguments)
 
 set(PYBIND11_URL https://github.com/pybind/pybind11.git)
-set(PYBIND11_TAG v2.10.0)
+set(PYBIND11_TAG v2.13.5)
 
 ExternalProject_Add(extlib_pybind11
     PREFIX extlib_pybind11

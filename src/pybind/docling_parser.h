@@ -77,7 +77,8 @@ namespace docling
     docling_resources(),
     interface()
   {
-    std::string font_data_dir = resource_utils::get_resources_dir(true);
+    // std::string font_data_dir = resource_utils::get_resources_dir(true);
+    std::string font_data_dir = resource_utils::get_resources_dir(true).string();
 
     pdf_lib::core::object<pdf_lib::core::FONT>::initialize(font_data_dir);
   }
