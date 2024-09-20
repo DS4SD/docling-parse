@@ -1,3 +1,9 @@
+## [v1.3.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.3.0) - 2024-09-20
+
+### Feature
+
+* Add windows support ([#22](https://github.com/DS4SD/docling-parse/issues/22)) ([`05e6aa3`](https://github.com/DS4SD/docling-parse/commit/05e6aa30d6de76694cf7f04be2633b2f5e129ef2))
+
 ## [v1.2.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.2.1) - 2024-09-18
 
 ### Fix
