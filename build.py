@@ -19,6 +19,8 @@ def get_pybind11_cmake_args():
         else:
             pybind11_include_dir = pybind11.get_include()
             pybind11_cmake_dir = pybind11.get_cmake_dir()
+        print(f"{pybind11_include_dir=}")
+        print(f"{pybind11_cmake_dir=}")
         return [f"-DPYBIND11_INCLUDE_DIR={pybind11_include_dir}", f"-Dpybind11_DIR={pybind11_cmake_dir}"]
 
 def run(cmd: List[str], cwd: str="./"):
@@ -38,19 +40,16 @@ def run(cmd: List[str], cwd: str="./"):
 
 def build_local(num_threads: int):
 
-    if not os.path.exists(BUILD_DIR):
-        print("python executable: ", sys.executable)
-        config_cmd = [
-            "cmake",
-            "-B", f"{BUILD_DIR}",
-            f"-DPYTHON_EXECUTABLE={sys.executable}",
-        ]
-        config_cmd.extend(get_pybind11_cmake_args())
-        success = run(config_cmd, cwd=ROOT_DIR)
-        if not success:
-            raise RuntimeError("Error building.")
-    else:
-        print(f"build directory detected: {BUILD_DIR}")
+    print("python executable: ", sys.executable)
+    config_cmd = [
+        "cmake",
+        "-B", f"{BUILD_DIR}",
+        f"-DPYTHON_EXECUTABLE={sys.executable}",
+    ]
+    config_cmd.extend(get_pybind11_cmake_args())
+    success = run(config_cmd, cwd=ROOT_DIR)
+    if not success:
+        raise RuntimeError("Error building.")
 
     build_cmd = [
         "cmake",
