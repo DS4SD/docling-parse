@@ -56,7 +56,7 @@ pytest = "^7.4.2"
 docling-parse = "docling_parse.run:main"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core", "pybind11>=2.13.1"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.black]

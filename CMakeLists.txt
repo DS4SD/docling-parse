@@ -102,7 +102,7 @@ include(cmake/extlib_utf8.git.cmake)
 include(cmake/extlib_jpeg.cmake)
 # include(cmake/extlib_qpdf_v10.cmake)
 include(cmake/extlib_qpdf_v11.cmake)
-include(cmake/extlib_pybind11.cmake)
+# include(cmake/extlib_pybind11.cmake)
 
 include(cmake/os_opts.cmake)
 
@@ -146,19 +146,9 @@ target_link_libraries(parse ${LIB_LINK})
 # ***  Python-binding     ***
 # ***************************
 
-# inspiration from
-# 1. https://github.com/pybind/cmake_example/blob/master/CMakeLists.txt`
-# 2. https://blog.devgenius.io/calling-python-and-c-code-using-pybind-99ab7fefa685
-# 3. https://github.com/pybind/cmake_example/issues/11
-
-include(FetchContent)
-FetchContent_Declare(pybind11
-  FETCHCONTENT_BASE_DIR extlib_pybind11 
-  GIT_REPOSITORY https://github.com/pybind/pybind11.git
-  GIT_TAG        v2.13.5
-  GIT_SHALLOW    TRUE
-)
-FetchContent_MakeAvailable(pybind11)
+# https://pybind11.readthedocs.io/en/stable/compiling.html
+set(PYBIND11_FINDPYTHON ON)
+find_package(pybind11 CONFIG REQUIRED)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
 
