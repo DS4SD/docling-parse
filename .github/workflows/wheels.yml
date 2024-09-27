@@ -116,7 +116,7 @@ jobs:
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
           done
-          mkdir ./dist
+          mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
 
       # there is an error with the tagging of wheels for macosx-arm64
@@ -156,7 +156,7 @@ jobs:
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
           done
-          mkdir ./dist
+          mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
 
       - name: Set up QEMU [linux]
@@ -165,6 +165,13 @@ jobs:
         with:
             platforms: all
 
+      - name: Build sdist
+        # build only on Linux to avoid too many duplicates of the sdist
+        if: matrix.os.name == 'ubuntu-latest' 
+        run: |
+          echo "Building wheel ${CIBW_BUILD}"
+          poetry build -f sdist
+        
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
         env:
@@ -186,7 +193,7 @@ jobs:
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
           done
-          mkdir ./dist
+          mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
 
       - name: Set up MSYS2 [windows]
