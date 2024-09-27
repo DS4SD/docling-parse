@@ -40,12 +40,11 @@ def run(cmd: List[str], cwd: str="./"):
 
 def build_local(num_threads: int):
 
-    print("python prefix: ", sys.exec_prefix)
+    print("python executable: ", sys.executable)
     config_cmd = [
         "cmake",
         "-B", f"{BUILD_DIR}",
-        f"-DPython_ROOT_DIR={sys.exec_prefix}",
-        f"-DPython3_ROOT_DIR={sys.exec_prefix}",
+        f"-DPYTHON_EXECUTABLE={sys.executable}",
     ]
     config_cmd.extend(get_pybind11_cmake_args())
     success = run(config_cmd, cwd=ROOT_DIR)
