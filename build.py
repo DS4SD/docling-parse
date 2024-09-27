@@ -5,6 +5,7 @@ import os
 import sys
 
 import subprocess
+from typing import List
 import pybind11
 
 ROOT_DIR = os.path.abspath("./")
@@ -20,9 +21,10 @@ def get_pybind11_cmake_args():
             pybind11_cmake_dir = pybind11.get_cmake_dir()
         return [f"-DPYBIND11_INCLUDE_DIR={pybind11_include_dir}", f"-Dpybind11_DIR={pybind11_cmake_dir}"]
 
-def run(cmd, cwd="./"):
+def run(cmd: List[str], cwd: str="./"):
 
-    print(f"\nlaunch: {" ".join(cmd)}")
+    print_cmd = " ".join(cmd)
+    print(f"\nlaunch: {print_cmd}")
 
     message = subprocess.run(cmd, cwd=cwd)
 
