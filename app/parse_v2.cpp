@@ -1,5 +1,26 @@
 //-*-C++-*-
 
+/*
+example input:
+
+{
+    "data":
+    {
+        "glyphs": "../resources/pdf/glyphs",
+        "cids": "../resources/pdf/cmap-resources",
+        "encodings": "../resources/pdf/encodings",
+        "fonts": "../resources/pdf/fonts"
+    },
+
+    "files":
+    [
+        {
+            "filename": "./data/simple_01.pdf"
+        }
+    ]
+}
+*/
+
 #include "v2.h"
 
 int main(int argc, char *argv[])
