@@ -14,13 +14,18 @@ namespace plib
     parser();
     ~parser();
 
-    void handleObject(QPDFObjectHandle);
-    void handleEOF();
+    //void handleObject(QPDFObjectHandle);
+    //void handleEOF();
+
+    void parse(std::string filename);
+    void parse(nlohmann::json config);
 
     bool initialise(nlohmann::json& data);
 
-    void parse(std::string filename);
+  private:
 
+    void execute_parse();
+    
     bool parse_input(std::string filename);
 
     bool parse_file(std::string inp_filename,
@@ -50,6 +55,18 @@ namespace plib
         return;
       }
 
+    execute_parse();
+  }
+
+  void parser::parse(nlohmann::json config)
+  {
+    input_file = config;
+
+    execute_parse();
+  }
+  
+  void parser::execute_parse()
+  {
     // initialise the fonts
     /*
       {
