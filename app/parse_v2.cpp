@@ -33,13 +33,13 @@ namespace plib
     bool initialise(nlohmann::json& data);
 
     void parse(std::string filename);
-    
+
     bool parse_input(std::string filename);
 
     bool parse_file(std::string     inp_filename,
-		    std::string     out_filename,
+                    std::string     out_filename,
                     nlohmann::json& task,
-		    bool pretty_print=true);
+                    bool pretty_print=true);
 
   private:
 
@@ -50,7 +50,7 @@ namespace plib
 
   parser::parser()
   {
-    //LOG_S(INFO) << "QPDF-version: " << QPDF::QPDFVersion();                
+    //LOG_S(INFO) << "QPDF-version: " << QPDF::QPDFVersion();
   }
 
   parser::~parser()
@@ -62,24 +62,24 @@ namespace plib
       {
         return;
       }
-    
+
     // initialise the fonts
     /*
-    {      
+      {
       utils::timer timer;
 
       assert(input_file.count("data")==1);
       pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(input_file["data"],
-							  timings);
+      timings);
 
       timings["fonts-initialisation"] = timer.get_time();
-    }
+      }
     */
     initialise(input_file["data"]);
-    
+
     // iterate over the files
     nlohmann::json files = input_file["files"];
-    for(auto& pair : files.items()) 
+    for(auto& pair : files.items())
       {
         LOG_S(INFO) << pair.key() << " : " << pair.value();
 
@@ -88,28 +88,28 @@ namespace plib
         std::string inp_filename;
         inp_filename = val["filename"];
 
-	std::string out_filename;
-	if(val.count("output")==1)
-	  {
-	    out_filename = val["output"];
-	  }
-	else
-	  {
-	    out_filename = inp_filename+".json";
-	  }
-	
-        std::ifstream ifs(inp_filename);        
-        if(ifs)
+        std::string out_filename;
+        if(val.count("output")==1)
           {
-            parse_file(inp_filename, out_filename, val);            
+            out_filename = val["output"];
           }
         else
           {
-            LOG_S(ERROR) << "filename: " << inp_filename << " does not exists";                    
+            out_filename = inp_filename+".json";
+          }
+
+        std::ifstream ifs(inp_filename);
+        if(ifs)
+          {
+            parse_file(inp_filename, out_filename, val);
+          }
+        else
+          {
+            LOG_S(ERROR) << "filename: " << inp_filename << " does not exists";
           }
       }
   }
-  
+
   bool parser::parse_input(std::string filename)
   {
     std::ifstream ifs(filename);
@@ -117,37 +117,37 @@ namespace plib
     if(ifs)
       {
         ifs >> input_file;
-        
-        LOG_S(INFO) << "input-filename: " << filename;    
-        LOG_S(INFO) << "input: " << input_file.dump(2);    
+
+        LOG_S(INFO) << "input-filename: " << filename;
+        LOG_S(INFO) << "input: " << input_file.dump(2);
       }
     else
       {
         LOG_S(ERROR) << "input-filename: " << filename << " does not exists";
         return false;
       }
-    
+
     return true;
   }
 
   bool parser::initialise(nlohmann::json& data)
   {
     if(timings.count("fonts-initialisation")==0)
-      {      
-	utils::timer timer;
-	
-	pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(data, timings);
-	
-	timings["fonts-initialisation"] = timer.get_time();
+      {
+        utils::timer timer;
+
+        pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(data, timings);
+
+        timings["fonts-initialisation"] = timer.get_time();
       }
 
     return true;
   }
-  
-  bool parser::parse_file(std::string inp_filename, 
-			       std::string out_filename, 
-                               nlohmann::json& task,
-			       bool pretty_print)
+
+  bool parser::parse_file(std::string inp_filename,
+                          std::string out_filename,
+                          nlohmann::json& task,
+                          bool pretty_print)
   {
     pdflib::pdf_decoder<pdflib::DOCUMENT> document_decoder(timings);
 
@@ -156,7 +156,7 @@ namespace plib
         LOG_S(ERROR) << "fonts are not initialised";
         return false;
       }
-    
+
     if(not document_decoder.process_document(inp_filename))
       {
         LOG_S(ERROR) << "aborting the parse of file "<< inp_filename;
@@ -178,13 +178,13 @@ namespace plib
     std::ofstream ofs(out_filename);
     if(pretty_print)
       {
-	ofs << std::setw(2) << json_document;
+        ofs << std::setw(2) << json_document;
       }
     else
       {
-	ofs << json_document;
+        ofs << json_document;
       }
-    
+
     return true;
   }
 
