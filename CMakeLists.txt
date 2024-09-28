@@ -126,7 +126,7 @@ include_directories(${SUBDIRS})
 # ***  Executables   ***
 # **********************
 
-add_executable(parse.exe "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
+add_executable(parse.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
 
 set_property(TARGET parse.exe PROPERTY CXX_STANDARD 20)
 
@@ -136,7 +136,7 @@ target_link_libraries(parse.exe ${LIB_LINK})
 # ***  Libraries     ***
 # **********************
 
-add_library(parse STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
+add_library(parse STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
 
 set_target_properties(parse PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
