@@ -1,29 +1,17 @@
 //-*-C++-*-
 
 /*
-#include <iostream>
-#include <fstream>
+example input:
 
-#define LOGURU_WITH_STREAMS 1
-#include <loguru.cpp>
-
-#include <nlohmann/json.hpp>
-
-#include "utf8.h"
-
-#include "pdf/enums.h"
-#include "pdf/utils.h"
-
-#include "pdf/pdf_resources/page_font/glyphs.h"
-
-#include "pdf/pdf_resources/page_font/font_cid.h"
-#include "pdf/pdf_resources/page_font/font_cids.h"
-
-#include "pdf/pdf_resources/page_font/encoding.h"
-#include "pdf/pdf_resources/page_font/encodings.h"
-
-#include "pdf/pdf_resources/page_font/base_font.h"
-#include "pdf/pdf_resources/page_font/base_fonts.h"
+{
+    "data":
+    {
+        "glyphs": "../resources/pdf/glyphs",
+        "cids": "../resources/pdf/cmap-resources",
+        "encodings": "../resources/pdf/encodings",
+        "fonts": "../resources/pdf/fonts"
+    }
+}
 */
 
 #include <v2.h>
