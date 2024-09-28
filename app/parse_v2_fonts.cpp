@@ -1,5 +1,6 @@
 //-*-C++-*-
 
+/*
 #include <iostream>
 #include <fstream>
 
@@ -23,6 +24,9 @@
 
 #include "pdf/pdf_resources/page_font/base_font.h"
 #include "pdf/pdf_resources/page_font/base_fonts.h"
+*/
+
+#include <v2.h>
 
 nlohmann::json read_input(std::string filename)
 {

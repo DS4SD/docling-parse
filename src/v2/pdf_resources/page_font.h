@@ -151,6 +151,9 @@ namespace pdflib
   {
     LOG_S(INFO) << __FUNCTION__;
 
+    std::string PDFS_RESOURCES_DIR = "docling_parse/pdf_resources/";
+    LOG_S(INFO) << "default pdf-resource-dir: " << PDFS_RESOURCES_DIR;
+    
     std::string pdf_resources_dir = data.value("pdf-resource-directory", PDFS_RESOURCES_DIR);
     pdf_resources_dir += (pdf_resources_dir.back()=='/'? "" : "/");
 
