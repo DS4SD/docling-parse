@@ -1,17 +1,5 @@
 //-*-C++-*-
 
-/***********************************************************
-IBM Confidential
-OCO Source Materials
-IBM Research Zurich Smart Annotator Licensed Internal Code
-(C) Copyright IBM Corp. 2017
-
-Authors: Peter W. J. Staar, Michele Dolfi, Christoph Auer,
-Matthieu Mottet 
-Email: {taa, dol, cau, ttt}@zurich.ibm.com
-Date: 18/08/2017
-**********************************************************/
-
 #include <utf8/utf8.h>
 
 #include <v1.h>
@@ -20,8 +8,6 @@ void print_input_file_format();
 
 int main(int argc, char *argv[])
 {
-  //typedef prof_lib::profiler<prof_lib::COUNTING_PROFILER> profiler_type;
-
 #ifdef VERBOSE
   bool verbose=true;
 #else
@@ -40,14 +26,6 @@ int main(int argc, char *argv[])
     {
       logging_lib::set_level("pdf-parser",
 			     logging_lib::ERROR);
-
-      /*
-      logging_lib::set_level("pdf-parser", 
-			     logging_lib::ERROR   | 
-			     logging_lib::WARNING | 
-			     logging_lib::INFO    | 
-			     logging_lib::SUCCESS);      
-      */
     }
   
   int result=-1;
@@ -116,27 +94,6 @@ void print_input_file_format()
     input_file[key][0]["raw-mets"] <= "raw-meta-filename";
   }
 
-  /*
-  auto& see = input_file["SEE"];
-  {
-    see["parse"].set_object();
-    {
-      see["parse"]["proj_key"]   <= "xxx";
-      see["parse"]["auth_token"] <= "xxx";
-      see["parse"]["callback"]   <= "xxx";
-      see["parse"]["status"]     <= "xxx";
-    }
-    
-    see["retrieve"].set_object();
-    {
-      see["parse"]["proj_key"]   <= "xxx";
-      see["parse"]["auth_token"] <= "xxx";
-      see["parse"]["callback"]   <= "xxx";
-      see["parse"]["status"]     <= "xxx";
-    }
-  }
-  */
-  
   IO::writer<IO::JSON_CONTAINER> writer;
   logging_lib::error("pdf-parser") << "input-file schema: \n"
 				   << writer.to_string(input_file);
