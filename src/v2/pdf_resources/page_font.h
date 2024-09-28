@@ -149,10 +149,10 @@ namespace pdflib
   void pdf_resource<PAGE_FONT>::initialise(nlohmann::json                 data,
 					   std::map<std::string, double>& timings)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    LOG_S(INFO) << __FUNCTION__ << ": " << data.dump(2);
 
-    std::string PDFS_RESOURCES_DIR = "docling_parse/pdf_resources/";
-    LOG_S(INFO) << "default pdf-resource-dir: " << PDFS_RESOURCES_DIR;
+    std::string PDFS_RESOURCES_DIR = "../docling_parse/pdf_resources_v2/";
+    LOG_S(WARNING) << "default pdf-resource-dir: " << PDFS_RESOURCES_DIR;
     
     std::string pdf_resources_dir = data.value("pdf-resource-directory", PDFS_RESOURCES_DIR);
     pdf_resources_dir += (pdf_resources_dir.back()=='/'? "" : "/");

@@ -6,10 +6,10 @@ example input:
 {
     "data":
     {
-        "glyphs": "../resources/pdf/glyphs",
-        "cids": "../resources/pdf/cmap-resources",
-        "encodings": "../resources/pdf/encodings",
-        "fonts": "../resources/pdf/fonts"
+        "glyphs": "../docling_parse/pdf_resources_v2/glyphs",
+        "cids": "../docling_parse/pdf_resources_v2/cmap-resources",
+        "encodings": "../docling_parse/pdf_resources_v2/encodings",
+        "fonts": "../docling_parse/pdf_resources_v2/fonts"    
     },
 
     "files":
