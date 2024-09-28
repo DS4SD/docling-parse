@@ -1,5 +1,28 @@
 //-*-C++-*-
 
+// sta libraries 
+#include <set>
+#include <map>
+#include <vector>
+#include <assert.h>
+#include <filesystem>
+#include <iostream>
+#include <string>
+#include <regex>
+#include <fstream>
+#include <iostream>
+
+// specific libraries
+#define LOGURU_WITH_STREAMS 1
+#include <loguru/loguru.cpp>
+
+#include <utf8/utf8.h>
+#include <nlohmann/json.hpp>
+
+#include <qpdf/QPDF.hh>
+#include <qpdf/QPDFPageObjectHelper.hh>
+
+// specifics of v2 parser
 #include <v2/enums.h>
 #include <v2/utils.h>
 
@@ -55,3 +78,5 @@
 #include <v2/pdf_decoders/stream.h>
 #include <v2/pdf_decoders/page.h>
 #include <v2/pdf_decoders/document.h>
+
+#include <v2/parser.h>
