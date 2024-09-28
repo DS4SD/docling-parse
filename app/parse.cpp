@@ -14,22 +14,7 @@ Date: 18/08/2017
 
 #include <utf8/utf8.h>
 
-#include "include_libs.h"
-
-#include <utils.h>
-#include <utils/meta_library.h>
-#include <utils/logging_library.h>
-#include <utils/string_library.h>
-#include <utils/system_library.h>
-#include <utils/container_library.h>
-#include <utils/IO_library.h>
-#include <utils/geometric_objects.h>
-
-#include "pdf_library.h"
-#include "pdf_parser.h"
-
-#include "pdf_interface.h"
-#include "pdf_interface/parser.h"
+#include <v1.h>
 
 void print_input_file_format();
 

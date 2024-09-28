@@ -5,9 +5,9 @@
 #include <pybind11/buffer_info.h>
 //#include <pybind11/numpy.h>
 
-#include <pybind/utils/pybind11_json.h>
+#include <v1/pybind/utils/pybind11_json.h>
 
-#include <pybind/docling_parser.h>
+#include <v1/pybind/docling_parser.h>
 
 PYBIND11_MODULE(docling_parse, m) {
   
