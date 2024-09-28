@@ -23,8 +23,8 @@ namespace plib
 
     bool parse_input(std::string filename);
 
-    bool parse_file(std::string     inp_filename,
-                    std::string     out_filename,
+    bool parse_file(std::string inp_filename,
+                    std::string out_filename,
                     nlohmann::json& task,
                     bool pretty_print=true);
 
@@ -42,7 +42,7 @@ namespace plib
 
   parser::~parser()
   {}
-
+  
   void parser::parse(std::string filename)
   {
     if(not parse_input(filename))

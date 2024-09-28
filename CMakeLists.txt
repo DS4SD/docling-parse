@@ -97,6 +97,7 @@ endif()
 
 include(cmake/subdirlist.cmake)
 
+include(cmake/extlib_cxxopts.cmake)
 include(cmake/extlib_loguru.cmake)
 include(cmake/extlib_json.cmake)
 include(cmake/extlib_utf8.git.cmake)
