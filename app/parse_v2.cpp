@@ -29,10 +29,11 @@ nlohmann::json create_config(std::filesystem::path filename,
   nlohmann::json config = nlohmann::json::object({});
 
   auto data = nlohmann::json::object({});
-  data["glyphs"] = pdf_resource_dir / "glyphs";
-  data["cids"] = pdf_resource_dir / "cmap-resources";
-  data["encodings"] = pdf_resource_dir / "encodings";
-  data["fonts"] = pdf_resource_dir / "fonts";
+  data["pdf-resource-directory"] = pdf_resource_dir;
+  //data["glyphs"] = pdf_resource_dir / "glyphs";
+  //data["cids"] = pdf_resource_dir / "cmap-resources";
+  //data["encodings"] = pdf_resource_dir / "encodings";
+  //data["fonts"] = pdf_resource_dir / "fonts";
 
   auto tasks = nlohmann::json::array({});
   {
