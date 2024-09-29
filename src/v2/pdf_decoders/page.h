@@ -131,7 +131,7 @@ namespace pdflib
       {
 	LOG_S(INFO) << json_page.dump(2);
       }
-    catch(std::exception e)
+    catch(const std::exception& e)
       {
 	LOG_S(ERROR) << "could not dump the json-representation of the page with error: " 
 		     << e.what();
