@@ -13,6 +13,9 @@ namespace docling
 {
   class docling_parser_v2: public docling_resources
   {
+    typedef pdflib::pdf_decoder<pdflib::DOCUMENT> decoder_type;
+    typedef std::shared_ptr<decoder_type> decoder_ptr_type;
+    
   public:
 
     docling_parser_v2();
@@ -39,8 +42,9 @@ namespace docling
 
     std::string pdf_resources_dir;
 
-    std::map<std::string, std::filesystem::path> key2doc;
-
+    //std::map<std::string, std::filesystem::path> key2doc;
+    std::map<std::string, decoder_ptr_type> key2doc;
+    
     //plib::parser parser;
   };
 
@@ -96,7 +100,9 @@ namespace docling
   {
     if (std::filesystem::exists(filename))
       {
-        key2doc[key] = std::filesystem::path(filename);
+        //key2doc[key] = std::filesystem::path(filename);
+	key2doc[key] = std::make_shared<decoder_type>();
+	key2doc.at(key)->process_document_from_file(filename);
 	return true;
       }
 
@@ -123,8 +129,18 @@ namespace docling
     // Get a pointer to the data
     std::string data_str = data.cast<std::string>();
 
-    //return interface.load_document(key, data_str.c_str(), data_str.size());
-    //return interface.load_document_from_buffer(key, data_str);
+    try
+      {
+	key2doc[key] = std::make_shared<decoder_type>();
+	key2doc.at(key)->process_document_from_bytesio(data_str);
+
+	return true;
+      }
+    catch(const std::exception& exc)
+      {
+	LOG_S(ERROR) << "could not docode bytesio object for key="<<key;
+	return false;
+      }
 
     return false;
   }
@@ -136,8 +152,11 @@ namespace docling
 	key2doc.erase(key);
 	return true;
       }
-
-    LOG_S(ERROR) << "key not found: " << key;
+    else
+      {
+	LOG_S(ERROR) << "key not found: " << key;
+      }
+    
     return false;    
   }
 
@@ -148,29 +167,52 @@ namespace docling
 
   int docling_parser_v2::number_of_pages(std::string key)
   {
-    LOG_S(ERROR);
+    auto itr = key2doc.find(key);
+
+    if(itr!=key2doc.end())
+      {
+	return (itr->second)->get_number_of_pages();
+      }
+    else
+      {
+	LOG_S(ERROR) << "key not found: " << key;	
+      }
+
     return -1;
   }
   
   nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key)
   {
-    nlohmann::json result = nlohmann::json::value_t::null;
+    auto itr = key2doc.find(key);
 
-    if(key2doc.count(key)==0)
+    if(itr==key2doc.end())
       {
 	LOG_S(ERROR) << "key not found: " << key;
-	return result;
+	return nlohmann::json::value_t::null;	
       }
+
+    auto& decoder = itr->second;
     
-    plib::parser parser;
-    
-    return result;
+    decoder->decode_document();
+    return decoder->get();
   }
 
   nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key, int page)
   {
-    nlohmann::json result;
-    return result;
+    auto itr = key2doc.find(key);
+
+    if(itr==key2doc.end())
+      {
+	LOG_S(ERROR) << "key not found: " << key;
+	return nlohmann::json::value_t::null;	
+      }
+
+    auto& decoder = itr->second;
+    
+    std::vector<int> pages = {page};
+    decoder->decode_document(pages);
+
+    return decoder->get();
   }
 
 }

@@ -158,7 +158,7 @@ namespace plib
         return false;
       }
 
-    if(not document_decoder.process_document(inp_filename))
+    if(not document_decoder.process_document_from_file(inp_filename))
       {
         LOG_S(ERROR) << "aborting the parse of file "<< inp_filename;
         return false;
