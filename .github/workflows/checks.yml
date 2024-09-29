@@ -24,6 +24,8 @@ jobs:
           ls -l docling_parse
       - name: Testing
         run: |
+          ls -l
+          ls -l docling_parse
           poetry run pytest -v tests
       - name: Build with poetry
         run: poetry build
