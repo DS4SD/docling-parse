@@ -14,14 +14,14 @@ BUILD_DIR = os.path.join(ROOT_DIR, "build")
 def get_pybind11_cmake_args():
         pybind11_sys_path = os.getenv("PYBIND11_SYSPATH")
         if pybind11_sys_path:
-            pybind11_include_dir = os.path.join(pybind11_sys_path, "include")
+            # pybind11_include_dir = os.path.join(pybind11_sys_path, "include")
             pybind11_cmake_dir = os.path.join(pybind11_sys_path, "share", "cmake", "pybind11")
         else:
-            pybind11_include_dir = pybind11.get_include()
+            # pybind11_include_dir = pybind11.get_include()
             pybind11_cmake_dir = pybind11.get_cmake_dir()
-        print(f"{pybind11_include_dir=}")
+        # print(f"{pybind11_include_dir=}")
         print(f"{pybind11_cmake_dir=}")
-        return [f"-DPYBIND11_INCLUDE_DIR={pybind11_include_dir}", f"-Dpybind11_DIR={pybind11_cmake_dir}"]
+        return [f"-Dpybind11_DIR={pybind11_cmake_dir}"]
 
 def run(cmd: List[str], cwd: str="./"):
 
@@ -40,11 +40,11 @@ def run(cmd: List[str], cwd: str="./"):
 
 def build_local(num_threads: int):
 
-    print("python executable: ", sys.executable)
+    print("python prefix: ", sys.exec_prefix)
     config_cmd = [
         "cmake",
         "-B", f"{BUILD_DIR}",
-        f"-DPYTHON_EXECUTABLE={sys.executable}",
+        f"-DPython_ROOT_DIR={sys.exec_prefix}",
     ]
     config_cmd.extend(get_pybind11_cmake_args())
     success = run(config_cmd, cwd=ROOT_DIR)

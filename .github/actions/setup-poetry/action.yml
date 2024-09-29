@@ -14,6 +14,9 @@ runs:
       with:
         python-version: ${{ inputs.python-version }}
         cache: 'poetry'
+    - name: Setup poetry env with correct python
+      run: poetry env use python3
+      shell: bash
     - name: Install only dependencies and not the package itself
       run: poetry install --all-extras --no-root
       shell: bash

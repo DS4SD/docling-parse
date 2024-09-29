@@ -147,7 +147,7 @@ target_link_libraries(parse ${LIB_LINK})
 # ***************************
 
 # https://pybind11.readthedocs.io/en/stable/compiling.html
-set(PYBIND11_FINDPYTHON ON)
+find_package (Python COMPONENTS Interpreter Development)
 find_package(pybind11 CONFIG REQUIRED)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
