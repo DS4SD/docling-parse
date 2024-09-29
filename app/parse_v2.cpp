@@ -2,13 +2,41 @@
 
 #include "v2.h"
 
+void set_loglevel(std::string level)
+{
+  if(level=="info")
+    {
+      loguru::g_stderr_verbosity = loguru::Verbosity_INFO;
+      //set_verbosity(loguru::Verbosity_INFO);
+    }
+  else if(level=="warning")
+    {
+      loguru::g_stderr_verbosity = loguru::Verbosity_WARNING;
+      //loguru::set_verbosity(loguru::Verbosity_WARNING);
+    }
+  else if(level=="error")
+    {
+      loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
+      //loguru::set_verbosity(loguru::Verbosity_ERROR);
+    }
+  else if(level=="fatal")
+    {
+      loguru::g_stderr_verbosity = loguru::Verbosity_FATAL;
+      //loguru::set_verbosity(loguru::Verbosity_ERROR);
+    }
+  else
+    loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;      {
+
+  }
+}
+
 nlohmann::json create_config(std::filesystem::path ifile,
                              std::filesystem::path ofile,
                              int page=-1,
                              std::filesystem::path pdf_resource_dir="../docling_parse/pdf_resources_v2/")
 {
   nlohmann::json config = nlohmann::json::object({});
-  
+
   auto data = nlohmann::json::object({});
   data["pdf-resource-directory"] = pdf_resource_dir;
 
@@ -19,15 +47,15 @@ nlohmann::json create_config(std::filesystem::path ifile,
 
     if(ofile.string()!="")
       {
-	task["output"] = ofile;
+        task["output"] = ofile;
       }
 
     if(page!=-1)
       {
-	std::vector<int> pages = {page};
-	task["page-numbers"] = pages;
+        std::vector<int> pages = {page};
+        task["page-numbers"] = pages;
       }
-    
+
     tasks.push_back(task);
   }
 
@@ -53,6 +81,7 @@ int main(int argc, char* argv[]) {
       ("create-config", "Create config file", cxxopts::value<std::string>())
       ("p,page", "Pages to process (default: -1 for all)", cxxopts::value<int>()->default_value("-1"))
       ("o,output", "Output file", cxxopts::value<std::string>())
+      ("l,loglevel", "loglevel [error;warning;success;info]", cxxopts::value<std::string>())
       ("h,help", "Print usage");
 
     // Parse command line arguments
@@ -66,6 +95,17 @@ int main(int argc, char* argv[]) {
       return 1;
     }
 
+    if (result.count("loglevel")){
+      std::string level = result["loglevel"].as<std::string>();
+
+      // Convert the string to lowercase
+      std::transform(level.begin(), level.end(), level.begin(), [](unsigned char c) {
+        return std::tolower(c);
+      });
+      
+      set_loglevel(level);
+    }
+    
     if (result.count("config")) {
       std::string config_file = result["config"].as<std::string>();
       LOG_F(INFO, "Config file: %s", config_file.c_str());
@@ -80,10 +120,10 @@ int main(int argc, char* argv[]) {
     }
 
     if (result.count("create-config")) {
-      
+
       std::string ifile = result["input"].as<std::string>();
       std::string ofile = "";
-      
+
       int page = result["page"].as<int>();
       LOG_F(INFO, "Page to process: %d", page);
 
@@ -91,17 +131,17 @@ int main(int argc, char* argv[]) {
         ofile = result["output"].as<std::string>();
         LOG_F(INFO, "Output file: %s", ofile.c_str());
       }
-      
+
       auto config = create_config(ifile, ofile, page);
       LOG_S(INFO) << "config: \n" << config.dump(2);
     }
-    
+
     // Retrieve and process the options
     if (result.count("input")) {
 
       std::string ifile = result["input"].as<std::string>();
       std::string ofile = ifile+".json";
-      
+
       int page = result["page"].as<int>();
       LOG_F(INFO, "Page to process: %d", page);
 
@@ -110,9 +150,9 @@ int main(int argc, char* argv[]) {
         LOG_F(INFO, "Output file: %s", ofile.c_str());
       }
       else {
-	LOG_F(INFO, "No output file found, defaulting to %s", ofile.c_str());
+        LOG_F(INFO, "No output file found, defaulting to %s", ofile.c_str());
       }
-	
+
       auto config = create_config(ifile, ofile, page);
       LOG_S(INFO) << "config: \n" << config.dump(2);
 

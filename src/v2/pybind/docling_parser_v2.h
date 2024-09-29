@@ -59,22 +59,22 @@ namespace docling
     if(level>=3)
       {
         loguru::g_stderr_verbosity = loguru::Verbosity_INFO;
-        //set_verbosity(loguru::Verbosity_INFO);
       }
     else if(level==2)
       {
         loguru::g_stderr_verbosity = loguru::Verbosity_WARNING;
-        //loguru::set_verbosity(loguru::Verbosity_WARNING);
       }
     else if(level==1)
       {
         loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
-        //loguru::set_verbosity(loguru::Verbosity_ERROR);
       }
     else if(level==0)
       {
+        loguru::g_stderr_verbosity = loguru::Verbosity_FATAL;
+      }
+    else
+      {
         loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
-        //loguru::set_verbosity(loguru::Verbosity_ERROR);
       }
   }
 

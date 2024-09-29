@@ -59,10 +59,16 @@ PYBIND11_MODULE(docling_parse, m) {
     .def("set_loglevel", &docling::docling_parser_v2::set_loglevel)
 
     .def("load_document", &docling::docling_parser_v2::load_document)
+    .def("load_document_from_bytesio", &docling::docling_parser_v2::load_document_from_bytesio)
+    
     .def("unload_document", &docling::docling_parser_v2::unload_document)
 
     .def("parse_pdf_from_key",
 	 pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
-	 "parse pdf-document using doc-key into json")    
+	 "parse pdf-document using doc-key into json")
+
+    .def("parse_pdf_from_key_on_page",
+	 &docling::docling_parser_v2::parse_pdf_from_key_on_page,
+	 "parse specific page in pdf-document using doc-key from path into json")    
     ;  
 }
