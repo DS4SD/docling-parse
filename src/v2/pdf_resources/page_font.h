@@ -281,9 +281,9 @@ namespace pdflib
 	  }
         else if(verbose)
           {	    
-            LOG_S(ERROR) << "fontname " << fontname
-			 << " does not have numb_to_width for " << c 
-			 << " (space-index=" << space_index << ")";
+            LOG_S(WARNING) << "fontname " << fontname
+			   << " does not have numb_to_width for " << c 
+			   << " (space-index=" << space_index << ")";
           }
 	else
 	  {}
@@ -294,14 +294,16 @@ namespace pdflib
       }
     else if(verbose)
       {
-        LOG_S(ERROR) << "font does not have numb_to_width for " << c
-                     << " nor a known font [base-font=" << base_font 
-		     << ", font-key=" << font_key << "]";
+        LOG_S(WARNING) << "font does not have numb_to_width for " << c
+		       << " nor a known font [base-font=" << base_font 
+		       << ", font-key=" << font_key << "]";
       }
 
     if(verbose)
-      LOG_S(ERROR) << "falling back on default width " << __FUNCTION__;
-
+      {
+	LOG_S(WARNING) << "falling back on default width " << __FUNCTION__;
+      }
+    
     return 500.0;
   }
 
@@ -1199,7 +1201,7 @@ namespace pdflib
 	  {
 	    LOG_S(INFO) << "descendant-font: " << desc_font.dump(2);
 	  }
-	catch(std::exception exc)
+	catch(const std::exception& exc)
 	  {
 	    LOG_S(ERROR) << "could not dump the descendant font with error: " 
 			 << exc.what();
@@ -1228,7 +1230,7 @@ namespace pdflib
 	  {
 	    LOG_S(INFO) << "descendant-font: " << desc_font.dump(2);
 	  }
-	catch(std::exception exc)
+	catch(const std::exception& exc)
 	  {
 	    LOG_S(ERROR) << "could not dump the descendant font with error: " 
 			 << exc.what();
