@@ -12,8 +12,9 @@
 #include <fstream>
 #include <iostream>
 
-#ifdef _MSC_VER
+#ifdef _WIN32
 #include <share.h> // to define _SH_DENYNO for loguru
+//#define _SH_DENYNO
 #endif
 
 // specific libraries
