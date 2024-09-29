@@ -14,9 +14,6 @@ namespace plib
     parser();
     ~parser();
 
-    //void handleObject(QPDFObjectHandle);
-    //void handleEOF();
-
     void parse(std::string filename);
     void parse(nlohmann::json config);
 
@@ -179,6 +176,8 @@ namespace plib
 
     nlohmann::json json_document = document_decoder.get();
 
+    LOG_S(WARNING) << "writing to: " << out_filename;
+    
     std::ofstream ofs(out_filename);
     if(pretty_print)
       {
