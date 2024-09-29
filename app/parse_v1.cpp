@@ -198,6 +198,12 @@ int main(int argc, char* argv[]) {
 
     if (result.count("loglevel")){
       std::string level = result["loglevel"].as<std::string>();
+
+      // Convert the string to lowercase
+      std::transform(level.begin(), level.end(), level.begin(), [](unsigned char c) {
+        return std::tolower(c);
+      });
+      
       set_loglevel(level);
     }
     
