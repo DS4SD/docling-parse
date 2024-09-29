@@ -1,6 +1,6 @@
 //-*-C++-*-
 
-// sta libraries 
+// std libraries 
 #include <set>
 #include <map>
 #include <vector>
@@ -11,6 +11,10 @@
 #include <regex>
 #include <fstream>
 #include <iostream>
+
+#ifdef _MSC_VER
+#include <share.h> // to define _SH_DENYNO for loguru
+#endif
 
 // specific libraries
 #include <cxxopts.hpp>

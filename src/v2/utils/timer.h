@@ -45,13 +45,34 @@ namespace utils
     switch(unit)
       {
       case NANO_SEC:
-	return std::chrono::duration_cast<std::chrono::nanoseconds>(end - beg).count();
+	{
+	  return std::chrono::duration_cast<std::chrono::nanoseconds>(end - beg).count();
+	}
+	break;
+	
       case MICRO_SEC:
-	return std::chrono::duration_cast<std::chrono::microseconds>(end - beg).count();
+	{
+	  return std::chrono::duration_cast<std::chrono::microseconds>(end - beg).count();
+	}
+	break;
+	
       case MILLI_SEC:
-	return std::chrono::duration_cast<std::chrono::microseconds>(end - beg).count()/1000.0;
+	{
+	  return std::chrono::duration_cast<std::chrono::microseconds>(end - beg).count()/1000.0;
+	}
+	break;
+	
       case SEC:
-	return std::chrono::duration_cast<std::chrono::microseconds>(end - beg).count()/1000000.0;
+	{
+	  return std::chrono::duration_cast<std::chrono::microseconds>(end - beg).count()/1000000.0;
+	}
+	break;
+	
+      default:
+	{
+	  LOG_S(ERROR) << "could not the right time-unit type";
+	  return 0.0;
+	}
       }	
   }
   

@@ -19,11 +19,12 @@ namespace pdf_lib
     void clear();
     
     int query(std::string input_file);
-
-    //private:
+    int query(container_lib::container& config);
+    int query();
 
     bool read_input(std::string input_file);
-
+    bool read_input(container_lib::container& config);
+    
     void parse(container_lib::container& input);
 
     std::vector<std::string> list_loaded_keys();
@@ -291,6 +292,20 @@ namespace pdf_lib
         return -1;
       }
 
+    return query();
+  }
+
+  int interface<PARSER>::query(container_lib::container& config)
+  {
+    logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+
+    read_input(config);
+
+    return query();
+  }
+  
+  int interface<PARSER>::query()
+  {
     // Make sure all font-related informatioin is read and
     // the static objects in the FONT are initialized!!
 
@@ -442,8 +457,16 @@ namespace pdf_lib
     input.clear();
 
     IO::reader<IO::JSON_CONTAINER> reader;
-    input = reader.from_file(input_file);
+    container_lib::container config = reader.from_file(input_file);
 
+    return read_input(config);
+  }
+
+  bool interface<PARSER>::read_input(container_lib::container& config)
+  {
+    input.clear();    
+    input = config;
+    
     {
       std::vector<std::string> max_cell_key = {"constants", "max-cells"};
       std::vector<std::string> max_path_key = {"constants", "max-paths"};
@@ -647,7 +670,7 @@ namespace pdf_lib
                                         << "\tinput has missing \"source.pdf_documents\" or \"merge_ocr\"";
         return false;
       }
-
+    
     return true;
   }
 
