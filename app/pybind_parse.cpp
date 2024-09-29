@@ -8,6 +8,7 @@
 #include <v1/pybind/utils/pybind11_json.h>
 
 #include <v1/pybind/docling_parser.h>
+#include <v2/pybind/docling_parser_v2.h>
 
 PYBIND11_MODULE(docling_parse, m) {
   
@@ -51,4 +52,17 @@ PYBIND11_MODULE(docling_parse, m) {
 	 &docling::docling_parser::find_cells_from_bytesio_on_page,
 	 "parse pdf-document from a BytesIO object for a specific page")*/
     ;
+
+  pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
+    .def(pybind11::init())
+
+    .def("set_loglevel", &docling::docling_parser_v2::set_loglevel)
+
+    .def("load_document", &docling::docling_parser_v2::load_document)
+    .def("unload_document", &docling::docling_parser_v2::unload_document)
+
+    .def("parse_pdf_from_key",
+	 pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
+	 "parse pdf-document using doc-key into json")    
+    ;  
 }
