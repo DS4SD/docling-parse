@@ -5,28 +5,9 @@
 
 #include <utf8/utf8.h>
 
-/*
-#include "v1/include_libs.h"
-
-#include <v1/proj_folders/utils.h>
-#include <utils/meta_library.h>
-#include <utils/logging_library.h>
-#include <utils/string_library.h>
-#include <utils/system_library.h>
-#include <utils/container_library.h>
-#include <utils/IO_library.h>
-#include <utils/geometric_objects.h>
-
-#include "pdf_library.h"
-#include "pdf_parser.h"
-
-#include "pdf_interface.h"
-#include "pdf_interface/parser.h"
-*/
-
 #include <v1.h>
 
-#include <v1/pybind/docling_resources.h>
+#include <pybind/docling_resources.h>
 
 namespace docling
 {
@@ -53,20 +34,6 @@ namespace docling
     nlohmann::json parse_pdf_from_key(std::string key);
 
     nlohmann::json parse_pdf_from_key_on_page(std::string key, int page);
-
-    // to be deprecated
-    /*
-    nlohmann::json get_raw(std::string path);
-    
-    nlohmann::json find_cells(std::string path);
-
-    nlohmann::json find_cells_on_page(std::string path, int page);
-
-    nlohmann::json find_cells_from_bytesio(pybind11::object bytes_io);
-
-    nlohmann::json find_cells_from_bytesio_on_page(pybind11::object bytes_io,
-						   int page);
-    */
 
   private:
 

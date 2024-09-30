@@ -5,10 +5,10 @@
 #include <pybind11/buffer_info.h>
 //#include <pybind11/numpy.h>
 
-#include <v1/pybind/utils/pybind11_json.h>
+#include <pybind/utils/pybind11_json.h>
 
-#include <v1/pybind/docling_parser.h>
-#include <v2/pybind/docling_parser_v2.h>
+#include <pybind/docling_parser_v1.h>
+#include <pybind/docling_parser_v2.h>
 
 PYBIND11_MODULE(docling_parse, m) {
   
@@ -35,34 +35,24 @@ PYBIND11_MODULE(docling_parse, m) {
     .def("parse_pdf_from_key_on_page",
 	 &docling::docling_parser::parse_pdf_from_key_on_page,
 	 "parse specific page in pdf-document using doc-key from path into json")
-    /*
-    .def("find_cells",
-	 pybind11::overload_cast<std::string>(&docling::docling_parser::find_cells),
-	 "parse pdf-document from path into json")    
-
-    .def("find_cells_from_bytesio",
-	 &docling::docling_parser::find_cells_from_bytesio,
-	 "parse pdf-document from a BytesIO object")
-
-    .def("find_cells_on_page",
-	 &docling::docling_parser::find_cells_on_page,
-	 "parse specific page in pdf-document from path into json")
-
-    .def("find_cells_from_bytesio_on_page",
-	 &docling::docling_parser::find_cells_from_bytesio_on_page,
-	 "parse pdf-document from a BytesIO object for a specific page")*/
     ;
 
   pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
     .def(pybind11::init())
 
     .def("set_loglevel", &docling::docling_parser_v2::set_loglevel)
+    .def("set_loglevel_with_label", &docling::docling_parser_v2::set_loglevel_with_label)
 
+    .def("is_loaded", &docling::docling_parser_v2::is_loaded)
+    .def("list_loaded_keys", &docling::docling_parser_v2::list_loaded_keys)
+    
     .def("load_document", &docling::docling_parser_v2::load_document)
     .def("load_document_from_bytesio", &docling::docling_parser_v2::load_document_from_bytesio)
     
     .def("unload_document", &docling::docling_parser_v2::unload_document)
 
+    .def("number_of_pages", &docling::docling_parser_v2::number_of_pages)
+    
     .def("parse_pdf_from_key",
 	 pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
 	 "parse pdf-document using doc-key into json")

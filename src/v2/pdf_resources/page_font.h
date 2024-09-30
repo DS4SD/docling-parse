@@ -11,6 +11,10 @@ namespace pdflib
   {
   public:
 
+    const static inline std::string RESOURCE_DIR_KEY = "pdf_resource_directory";
+    
+  public:
+
     pdf_resource();
     ~pdf_resource();
 
@@ -153,8 +157,14 @@ namespace pdflib
 
     std::string PDFS_RESOURCES_DIR = "../docling_parse/pdf_resources_v2/";
     LOG_S(WARNING) << "default pdf-resource-dir: " << PDFS_RESOURCES_DIR;
+
+    if(data.count(RESOURCE_DIR_KEY)==0)
+      {
+	LOG_S(WARNING) << "resource-dir-key is missing '" << RESOURCE_DIR_KEY << "' in data: \n" << data.dump(2);
+      }
     
-    std::string pdf_resources_dir = data.value("pdf-resource-directory", PDFS_RESOURCES_DIR);
+    //std::string pdf_resources_dir = data.value("pdf-resource-directory", PDFS_RESOURCES_DIR);
+    std::string pdf_resources_dir = data.value(RESOURCE_DIR_KEY, PDFS_RESOURCES_DIR);
     pdf_resources_dir += (pdf_resources_dir.back()=='/'? "" : "/");
 
     std::string glyphs_dir, cids_dir, encodings_dir, bfonts_dir;

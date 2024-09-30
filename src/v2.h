@@ -30,6 +30,9 @@
 #include <qpdf/QPDF.hh>
 #include <qpdf/QPDFPageObjectHelper.hh>
 
+// code to locate pdf-resources (eg fonts)
+#include <resources.h>
+
 // specifics of v2 parser
 #include <v2/enums.h>
 #include <v2/utils.h>
