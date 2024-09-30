@@ -3,9 +3,7 @@
 #ifndef PYBIND_PDF_PARSER_V2_H
 #define PYBIND_PDF_PARSER_V2_H
 
-//#include <utf8/utf8.h>
-
-#include <v1/pybind/docling_resources.h>
+#include <pybind/docling_resources.h>
 
 #include <v2.h>
 
@@ -21,6 +19,7 @@ namespace docling
     docling_parser_v2();
 
     void set_loglevel(int level=0);
+    void set_loglevel_with_label(std::string level="error");
 
     bool is_loaded(std::string key);
     std::vector<std::string> list_loaded_keys();
@@ -50,9 +49,19 @@ namespace docling
 
   docling_parser_v2::docling_parser_v2():
     docling_resources(),
-    pdf_resources_dir(resource_utils::get_resources_dir(true).string()),
+    pdf_resources_dir(resource_utils::get_resources_v2_dir(true).string()),
     key2doc({})
-  {}
+  {
+    LOG_S(WARNING) << "pdf_resources_dir: " << pdf_resources_dir;
+
+    auto RESOURCE_DIR_KEY = pdflib::pdf_resource<pdflib::PAGE_FONT>::RESOURCE_DIR_KEY;
+    
+    nlohmann::json data = nlohmann::json::object({});
+    data[RESOURCE_DIR_KEY] = pdf_resources_dir;
+
+    std::map<std::string, double> timings = {};
+    pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(data, timings);
+  }
 
   void docling_parser_v2::set_loglevel(int level)
   {
@@ -69,6 +78,30 @@ namespace docling
         loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
       }
     else if(level==0)
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_FATAL;
+      }
+    else
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
+      }
+  }
+
+  void docling_parser_v2::set_loglevel_with_label(std::string level)
+  {
+    if(level=="info")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_INFO;
+      }
+    else if(level=="warning")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_WARNING;
+      }
+    else if(level=="error")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
+      }
+    else if(level=="fatal")
       {
         loguru::g_stderr_verbosity = loguru::Verbosity_FATAL;
       }
@@ -183,6 +216,8 @@ namespace docling
   
   nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key)
   {
+    LOG_S(WARNING) << __FUNCTION__;
+    
     auto itr = key2doc.find(key);
 
     if(itr==key2doc.end())
@@ -190,20 +225,23 @@ namespace docling
 	LOG_S(ERROR) << "key not found: " << key;
 	return nlohmann::json::value_t::null;	
       }
-
+    
     auto& decoder = itr->second;
     
     decoder->decode_document();
+    LOG_S(WARNING) << "decoding done ...";
+      
     return decoder->get();
   }
 
   nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key, int page)
   {
+    LOG_S(WARNING) << __FUNCTION__;
     auto itr = key2doc.find(key);
 
     if(itr==key2doc.end())
       {
-	LOG_S(ERROR) << "key not found: " << key;
+	LOG_S(ERROR) << "key not found: " << key << " " << key2doc.count(key);
 	return nlohmann::json::value_t::null;	
       }
 
@@ -211,7 +249,8 @@ namespace docling
     
     std::vector<int> pages = {page};
     decoder->decode_document(pages);
-
+    LOG_S(WARNING) << "decoding done ...";
+    
     return decoder->get();
   }
 
