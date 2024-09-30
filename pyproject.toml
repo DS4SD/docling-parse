@@ -29,7 +29,18 @@ readme = "README.md"
 packages = [{include = "docling_parse"}]
 include = [
     {path = "docling_parse/*.so", format = "wheel"},
-    {path = "docling_parse/pdf_resources", format = "wheel"}
+    {path = "docling_parse/*.pyd", format = "wheel"},
+    {path = "docling_parse/pdf_resources", format = ["sdist", "wheel"]},
+    {path = "docling_parse/pdf_resources", format = ["sdist", "wheel"]},
+    {path = "CMakeLists.txt", format = "sdist"},
+    {path = "build.py", format = "sdist"},
+    {path = "*.md", format = "sdist"},
+    {path = "poetry.lock", format = "sdist"},
+    {path = "app/*.cpp", format = "sdist"},
+    {path = "cmake/", format = "sdist"},
+    {path = "app/", format = "sdist"},
+    {path = "src/", format = "sdist"},
+    {path = "tests/", format = "sdist"},
 ]
 build = "build.py"
 
@@ -56,7 +67,7 @@ pytest = "^7.4.2"
 docling-parse = "docling_parse.run:main"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core", "pybind11>=2.13.1"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.black]
