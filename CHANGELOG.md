@@ -1,3 +1,9 @@
+## [v1.3.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.3.1) - 2024-09-30
+
+### Fix
+
+* Sdist and wheels content ([#28](https://github.com/DS4SD/docling-parse/issues/28)) ([`f3febc5`](https://github.com/DS4SD/docling-parse/commit/f3febc53a2a6565b16847113633f92d1a2dab48a))
+
 ## [v1.3.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.3.0) - 2024-09-20
 
 ### Feature
