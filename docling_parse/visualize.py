@@ -1,5 +1,6 @@
 import argparse
 import io
+import json
 import os
 
 from tabulate import tabulate
@@ -79,12 +80,91 @@ def parse_args():
     return args.log_level, args.version, args.pdf, args.interactive, args.output_dir
 
 
-def visualise_v1(log_level: str, pdf: str):
+def visualise_v1(log_level: str, pdf_path: str, interactive: str, output_dir: str):
 
-    return 0
+    parser = docling_parse.pdf_parser()
+    parser.set_loglevel_with_label(log_level)
+
+    doc_key = "key"
+    success = parser.load_document(doc_key, pdf_path)
+
+    if success == False:
+        return
+
+    doc = parser.parse_pdf_from_key(doc_key)
+
+    parser.unload_document(doc_key)
+
+    # dims = doc["page-dimensions"]
+    print(doc.keys())
+
+    for page in doc["pages"]:
+        print(page.keys())
+
+        H = page["height"]
+        W = page["width"]
+
+        # Create a blank white image
+        img = Image.new("RGB", (round(W), round(H)), "white")
+        draw = ImageDraw.Draw(img)
+
+        for cell in page["cells"]:
+            bbox = cell["box"]["device"]
+
+            x0 = bbox[0]
+            y0 = bbox[1]
+            x1 = bbox[2]
+            y1 = bbox[3]
+
+            # Define the four corners of the rectangle
+            bl = (x0, H - y0)
+            br = (x1, H - y0)
+            tr = (x1, H - y1)
+            tl = (x0, H - y1)
+
+            # Draw the rectangle as a polygon
+            draw.polygon([bl, br, tr, tl], outline="black", fill="blue")
+
+        for image in page["images"]:
+            print(image)
+
+            bbox = image["box"]
+
+            x0 = bbox[0]
+            y0 = bbox[1]
+            x1 = bbox[2]
+            y1 = bbox[3]
+
+            # Define the four corners of the rectangle
+            bl = (x0, H - y0)
+            br = (x1, H - y0)
+            tr = (x1, H - y1)
+            tl = (x0, H - y1)
+
+            # Draw the rectangle as a polygon
+            draw.polygon([bl, br, tr, tl], outline="black", fill="yellow")
+
+        for path in page["paths"]:
+            i = path["sub-paths"]
+            x = path["x-values"]
+            y = path["y-values"]
+
+            for l in range(0, len(i), 2):
+                i0 = i[l + 0]
+                i1 = i[l + 1]
+
+                for i in range(i0, i1 - 1):
+                    draw.line(
+                        (x[i], H - y[i], x[i + 1], H - y[i + 1]),
+                        fill="black",
+                        width=3,
+                    )
+
+        img.show()
+        break
 
 
-def visualise_v2(log_level: str, pdf_path: str):
+def visualise_v2(log_level: str, pdf_path: str, interactive: str, output_dir: str):
 
     parser = docling_parse.pdf_parser_v2()
     parser.set_loglevel_with_label(log_level)
@@ -161,7 +241,6 @@ def visualise_v2(log_level: str, pdf_path: str):
 
                 # Draw each rectangle by connecting its four points
                 for line in lines:
-                    print(line)
 
                     i = line["i"]
                     x = line["x"]
@@ -191,9 +270,9 @@ def main():
     log_level, version, pdf, interactive, output_dir = parse_args()
 
     if version == "v1":
-        visualise_v1(log_level, pdf)
+        visualise_v1(log_level, pdf, interactive, output_dir)
     elif version == "v2":
-        visualise_v2(log_level, pdf)
+        visualise_v2(log_level, pdf, interactive, output_dir)
     else:
         return -1
 
