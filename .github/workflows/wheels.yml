@@ -256,9 +256,9 @@ jobs:
 
       - name: publish wheels (dry run)
         run: |
-          poetry publish --dry-run --no-interaction -vvv
+          poetry publish --skip-existing --dry-run --no-interaction -vvv
 
       - name: publish wheels (on publishing) [for releases only]
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
         run: |
-          poetry publish --no-interaction -vvv
+          poetry publish --skip-existing --no-interaction -vvv
