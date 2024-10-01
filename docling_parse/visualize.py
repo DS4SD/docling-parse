@@ -10,31 +10,37 @@ from docling_parse import pdf_parser
 
 try:
     from PIL import Image, ImageDraw
+
     PIL_INSTALLED = True
 except ImportError:
     PIL_INSTALLED = False
     print("Pillow is not installed. Skipping image processing.")
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Process a PDF file.")
 
     # Restrict log-level to specific values
-    parser.add_argument("-l", "--log-level",
-                        type=str,
-                        choices=["info", "warning", "error", "fatal"],
-                        required=False,
-                        default="error",
-                        help="Log level [info, warning, error, fatal]",
-                        )
+    parser.add_argument(
+        "-l",
+        "--log-level",
+        type=str,
+        choices=["info", "warning", "error", "fatal"],
+        required=False,
+        default="error",
+        help="Log level [info, warning, error, fatal]",
+    )
 
     # Restrict version to specific values
-    parser.add_argument("-v", "--version",
-                        type=str,
-                        choices=["v1", "v2"],
-                        required=False,
-                        default="v2",
-                        help="Version [v1, v2]",
-                        )
+    parser.add_argument(
+        "-v",
+        "--version",
+        type=str,
+        choices=["v1", "v2"],
+        required=False,
+        default="v2",
+        help="Version [v1, v2]",
+    )
 
     # Add an argument for the path to the PDF file
     parser.add_argument(
@@ -42,18 +48,22 @@ def parse_args():
     )
 
     # Add an optional boolean argument for interactive mode
-    parser.add_argument("-i", "--interactive",
-                        action="store_true",
-                        help="Enable interactive mode (default: False)"
-                        )
+    parser.add_argument(
+        "-i",
+        "--interactive",
+        action="store_true",
+        help="Enable interactive mode (default: False)",
+    )
 
     # Add an argument for the output directory, defaulting to "./tmp"
-    parser.add_argument("-o", "--output-dir",
-                        type=str,
-                        required=False,
-                        default="./tmp",
-                        help="Path to the output directory (default: ./tmp)"
-                        )
+    parser.add_argument(
+        "-o",
+        "--output-dir",
+        type=str,
+        required=False,
+        default="./tmp",
+        help="Path to the output directory (default: ./tmp)",
+    )
 
     # Parse the command-line arguments
     args = parser.parse_args()
@@ -68,11 +78,13 @@ def parse_args():
 
     return args.log_level, args.version, args.pdf, args.interactive, args.output_dir
 
-def visualise_v1(log_level:str, pdf:str):
+
+def visualise_v1(log_level: str, pdf: str):
 
     return 0
 
-def visualise_v2(log_level:str, pdf_path:str):
+
+def visualise_v2(log_level: str, pdf_path: str):
 
     parser = docling_parse.pdf_parser_v2()
     parser.set_loglevel_with_label(log_level)
@@ -80,9 +92,9 @@ def visualise_v2(log_level:str, pdf_path:str):
     doc_key = "key"
     success = parser.load_document(doc_key, pdf_path)
 
-    if success==False:
+    if success == False:
         return
-    
+
     doc = parser.parse_pdf_from_key(doc_key)
 
     parser.unload_document(doc_key)
@@ -95,18 +107,18 @@ def visualise_v2(log_level:str, pdf_path:str):
             cells = page[_]["cells"]["data"]
             cells_header = page[_]["cells"]["header"]
             print(cells_header)
-            
+
             images = page[_]["images"]["data"]
             images_header = page[_]["images"]["header"]
             print(images_header)
-            
+
             lines = page[_]["lines"]
 
             if PIL_INSTALLED:
 
                 W = dimension["width"]
                 H = dimension["height"]
-                
+
                 # Create a blank white image
                 img = Image.new("RGB", (round(W), round(H)), "white")
                 draw = ImageDraw.Draw(img)
@@ -118,65 +130,73 @@ def visualise_v2(log_level:str, pdf_path:str):
                     y0 = row[images_header.index("y0")]
                     x1 = row[images_header.index("x1")]
                     y1 = row[images_header.index("y1")]
-                    
+
                     # Define the four corners of the rectangle
-                    bl = (x0, H-y0)
-                    br = (x1, H-y0)
-                    tr = (x1, H-y1)
-                    tl = (x0, H-y1)
-                    
+                    bl = (x0, H - y0)
+                    br = (x1, H - y0)
+                    tr = (x1, H - y1)
+                    tl = (x0, H - y1)
+
                     # Draw the rectangle as a polygon
-                    draw.polygon([bl,br,tr,tl], outline="black", fill="yellow")
-                
+                    draw.polygon([bl, br, tr, tl], outline="black", fill="yellow")
+
                 # Draw each rectangle by connecting its four points
                 for row in cells:
 
-                    x=[]
-                    y=[]
-                    for _ in range(0,4):
+                    x = []
+                    y = []
+                    for _ in range(0, 4):
                         x.append(row[cells_header.index(f"r_x{_}")])
                         y.append(row[cells_header.index(f"r_y{_}")])
-                    
-                    rect = [(x[0], H-y[0]),
-                            (x[1], H-y[1]),
-                            (x[2], H-y[2]),
-                            (x[3], H-y[3])]
+
+                    rect = [
+                        (x[0], H - y[0]),
+                        (x[1], H - y[1]),
+                        (x[2], H - y[2]),
+                        (x[3], H - y[3]),
+                    ]
 
                     # You can change the outline and fill color
-                    draw.polygon(rect, outline="black", fill="blue")  
+                    draw.polygon(rect, outline="black", fill="blue")
 
                 # Draw each rectangle by connecting its four points
                 for line in lines:
                     print(line)
-                    
+
                     i = line["i"]
                     x = line["x"]
                     y = line["y"]
 
                     for l in range(0, len(i), 2):
-                        i0 = i[l+0]
-                        i1 = i[l+1]
+                        i0 = i[l + 0]
+                        i1 = i[l + 1]
 
-                        for i in range(i0, i1-1):
-                            draw.line((x[i], H-y[i], x[i+1], H-y[i+1]), fill="black", width=3)
-                    
+                        for i in range(i0, i1 - 1):
+                            draw.line(
+                                (x[i], H - y[i], x[i + 1], H - y[i + 1]),
+                                fill="black",
+                                width=3,
+                            )
+
                 # Show the image
                 img.show()
 
                 input()
-            
+
     return 0
+
 
 def main():
 
     log_level, version, pdf, interactive, output_dir = parse_args()
-    
-    if version=="v1":
+
+    if version == "v1":
         visualise_v1(log_level, pdf)
-    elif version=="v2":
+    elif version == "v2":
         visualise_v2(log_level, pdf)
     else:
         return -1
 
+
 if __name__ == "__main__":
-    main()    
+    main()
