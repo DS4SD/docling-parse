@@ -136,6 +136,8 @@ jobs:
             echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
+            poetry run python .github/scripts/check_wheel.py $file
+
             echo "Testing usage of the wheel"
             python3 -m venv test-venv
             source test-venv/bin/activate
@@ -194,6 +196,8 @@ jobs:
             echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
+            poetry run python .github/scripts/check_wheel.py $file
+
             echo "Testing usage of the wheel"
             python3 -m venv test-venv
             source test-venv/bin/activate
@@ -246,6 +250,8 @@ jobs:
             poetry run python -m zipfile --list "$file" | grep \\.so
             echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
+
+            poetry run python .github/scripts/check_wheel.py $file
 
             echo "Testing usage of the wheel"
             if [[ $file == *"x86_64"* ]]; then
