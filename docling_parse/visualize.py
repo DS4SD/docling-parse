@@ -200,8 +200,8 @@ def visualise_v2(
     log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
 ):
 
-    parser = docling_parse.pdf_parser_v2()
-    parser.set_loglevel_with_label(log_level)
+    parser = docling_parse.pdf_parser_v2(log_level)
+    #parser.set_loglevel_with_label(log_level)
 
     doc_key = "key"
     success = parser.load_document(doc_key, pdf_path)
@@ -225,11 +225,9 @@ def visualise_v2(
 
             cells = page[_]["cells"]["data"]
             cells_header = page[_]["cells"]["header"]
-            print(cells_header)
 
             images = page[_]["images"]["data"]
             images_header = page[_]["images"]["header"]
-            print(images_header)
 
             lines = page[_]["lines"]
 
@@ -257,26 +255,7 @@ def visualise_v2(
                     tl = (x0, H - y1)
 
                     # Draw the rectangle as a polygon
-                    draw.polygon([bl, br, tr, tl], outline="black", fill="yellow")
-
-                # Draw each rectangle by connecting its four points
-                for row in cells:
-
-                    x = []
-                    y = []
-                    for i in range(0, 4):
-                        x.append(row[cells_header.index(f"r_x{i}")])
-                        y.append(row[cells_header.index(f"r_y{i}")])
-
-                    rect = [
-                        (x[0], H - y[0]),
-                        (x[1], H - y[1]),
-                        (x[2], H - y[2]),
-                        (x[3], H - y[3]),
-                    ]
-
-                    # You can change the outline and fill color
-                    draw.polygon(rect, outline="black", fill="blue")
+                    draw.polygon([bl, br, tr, tl], outline="green", fill="yellow")
 
                 # Draw each rectangle by connecting its four points
                 for line in lines:
@@ -295,6 +274,25 @@ def visualise_v2(
                                 fill="black",
                                 width=3,
                             )
+                    
+                # Draw each rectangle by connecting its four points
+                for row in cells:
+
+                    x = []
+                    y = []
+                    for i in range(0, 4):
+                        x.append(row[cells_header.index(f"r_x{i}")])
+                        y.append(row[cells_header.index(f"r_y{i}")])
+
+                    rect = [
+                        (x[0], H - y[0]),
+                        (x[1], H - y[1]),
+                        (x[2], H - y[2]),
+                        (x[3], H - y[3]),
+                    ]
+
+                    # You can change the outline and fill color
+                    draw.polygon(rect, outline="red", fill="blue")
 
                 # Show the image
                 if interactive:

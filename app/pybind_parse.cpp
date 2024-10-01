@@ -71,7 +71,8 @@ PYBIND11_MODULE(docling_parse, m) {
   // next generation parser, 10x faster with more finegrained output
   pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
     .def(pybind11::init())
-
+    .def(pybind11::init<const std::string&>())
+    
     .def("set_loglevel", &docling::docling_parser_v2::set_loglevel)
     .def("set_loglevel_with_label", &docling::docling_parser_v2::set_loglevel_with_label)
 

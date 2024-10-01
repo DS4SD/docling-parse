@@ -18,6 +18,8 @@ namespace docling
 
     docling_parser_v2();
 
+    docling_parser_v2(std::string level);
+
     void set_loglevel(int level=0);
     void set_loglevel_with_label(std::string level="error");
 
@@ -63,6 +65,25 @@ namespace docling
     pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(data, timings);
   }
 
+  docling_parser_v2::docling_parser_v2(std::string level):
+    docling_resources(),
+    pdf_resources_dir(resource_utils::get_resources_v2_dir(true).string()),
+    key2doc({})
+  {
+    set_loglevel_with_label(level);    
+
+    LOG_S(WARNING) << "pdf_resources_dir: " << pdf_resources_dir;
+
+    auto RESOURCE_DIR_KEY = pdflib::pdf_resource<pdflib::PAGE_FONT>::RESOURCE_DIR_KEY;
+    
+    nlohmann::json data = nlohmann::json::object({});
+    data[RESOURCE_DIR_KEY] = pdf_resources_dir;
+
+    std::map<std::string, double> timings = {};
+    pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(data, timings);
+  }
+
+  
   void docling_parser_v2::set_loglevel(int level)
   {
     if(level>=3)
