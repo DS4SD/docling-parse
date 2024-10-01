@@ -5,12 +5,12 @@ set(ext_name "qpdf")
 
 if(USE_SYSTEM_DEPS)
     find_package(PkgConfig)
-    pkg_check_modules(libqpdf REQUIRED libqpdf)
+    pkg_check_modules(libqpdf REQUIRED IMPORTED_TARGET libqpdf)
 
-    add_library(${ext_name} STATIC IMPORTED)
-    set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_LIBRARIES "${libqpdf_LIBRARIES}")
-    set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_DIRECTORIES "${libqpdf_LIBRARY_DIRS}")
-    set_target_properties(${ext_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "${libqpdf_INCLUDEDIR}")
+    add_library(${ext_name} ALIAS PkgConfig::libqpdf) 
+    #set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_LIBRARIES "${libqpdf_LIBRARIES}")
+    #set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_DIRECTORIES "${libqpdf_LIBRARY_DIRS}")
+    #set_target_properties(${ext_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "${libqpdf_INCLUDEDIR}")
 
 else()
 

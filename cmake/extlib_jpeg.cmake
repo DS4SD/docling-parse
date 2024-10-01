@@ -5,12 +5,12 @@ set(ext_name "jpeg")
 
 if(USE_SYSTEM_DEPS)
     find_package(PkgConfig)
-    pkg_check_modules(libjpeg REQUIRED libjpeg)
+    pkg_check_modules(libjpeg REQUIRED IMPORTED_TARGET libjpeg)
 
-    add_library(${ext_name} STATIC IMPORTED)
-    set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_LIBRARIES "${libjpeg_LIBRARIES}")
-    set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_DIRECTORIES "${libjpeg_LIBRARY_DIRS}")
-    set_target_properties(${ext_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "${libjpeg_INCLUDEDIR}")
+    add_library(${ext_name} ALIAS PkgConfig::libjpeg)
+    #set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_LIBRARIES "${libjpeg_LIBRARIES}")
+    #set_target_properties(${ext_name} PROPERTIES INTERFACE_LINK_DIRECTORIES "${libjpeg_LIBRARY_DIRS}")
+    #set_target_properties(${ext_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "${libjpeg_INCLUDEDIR}")
 
 else()
     include(ExternalProject)
