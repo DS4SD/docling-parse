@@ -98,8 +98,10 @@ jobs:
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
         run: |
+          PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
           echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
           echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building cache_tag: ${PY_CACHE_TAG}"
           echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
           poetry run python --version | grep ${{ matrix.python-version }} 
@@ -118,8 +120,8 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
-            poetry run python -m zipfile --list "$file" | grep .so
-            poetry run python -m zipfile --list "$file" | grep ${{ env.python_cp_version }}
+            poetry run python -m zipfile --list "$file" | grep \\.so
+            poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
             python3 -m venv test-venv
@@ -151,8 +153,10 @@ jobs:
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
         run: |
+          PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
           echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
           echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building cache_tag: ${PY_CACHE_TAG}"
           echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
           poetry run python --version | grep ${{ matrix.python-version }} 
@@ -171,8 +175,8 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
-            poetry run python -m zipfile --list "$file" | grep .so
-            poetry run python -m zipfile --list "$file" | grep ${{ env.python_cp_version }}
+            poetry run python -m zipfile --list "$file" | grep \\.so
+            poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
             python3 -m venv test-venv
@@ -209,8 +213,9 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           BUILD_THREADS: "8"
         run: |
-          echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
+          PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
           echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building cache_tag: ${PY_CACHE_TAG}"
           echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
           poetry run python --version | grep ${{ matrix.python-version }} 
@@ -221,8 +226,8 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
-            poetry run python -m zipfile --list "$file" | grep .so
-            poetry run python -m zipfile --list "$file" | grep ${{ env.python_cp_version }}
+            poetry run python -m zipfile --list "$file" | grep \\.so
+            poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
             if [[ $file == *"x86_64"* ]]; then
