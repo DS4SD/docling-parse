@@ -120,7 +120,9 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            echo "Checking if .so is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep \\.so
+            echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
@@ -175,7 +177,9 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            echo "Checking if .so is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep \\.so
+            echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
@@ -226,7 +230,9 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            echo "Checking if .so is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep \\.so
+            echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
