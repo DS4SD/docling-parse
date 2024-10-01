@@ -41,6 +41,7 @@ def run(cmd: List[str], cwd: str="./"):
 def build_local(num_threads: int):
 
     print("python prefix: ", sys.exec_prefix)
+    print("python executable: ", sys.executable)
     config_cmd = [
         "cmake",
         "-B", f"{BUILD_DIR}",
