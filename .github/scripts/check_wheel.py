@@ -36,7 +36,7 @@ def diagnose_unsupported(p: Path) -> str:
     # If the interpreter is version intolerant, what interpreter should it be using?
     idx = tag.interpreter.find("3")
     if idx >= 0 and idx < len(tag.interpreter) - 1:
-        supported_minor = int(tag.interpreter[idx + 1])
+        supported_minor = int(tag.interpreter[idx + 1:idx + 2])
         if sys.version_info.minor != supported_minor:
             return f"The python minor version is {sys.version_info.minor}, but the wheel only supports minor version {supported_minor}"
 
