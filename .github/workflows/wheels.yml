@@ -100,6 +100,7 @@ jobs:
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
+          poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
@@ -140,6 +141,7 @@ jobs:
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
+          poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
@@ -185,6 +187,7 @@ jobs:
         run: |
           echo "Building wheel ${CIBW_BUILD}"
           poetry run python --version
+          poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir ./wheelhouse
