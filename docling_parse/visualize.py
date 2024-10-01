@@ -201,7 +201,7 @@ def visualise_v2(
 ):
 
     parser = docling_parse.pdf_parser_v2(log_level)
-    #parser.set_loglevel_with_label(log_level)
+    # parser.set_loglevel_with_label(log_level)
 
     doc_key = "key"
     success = parser.load_document(doc_key, pdf_path)
@@ -274,7 +274,7 @@ def visualise_v2(
                                 fill="black",
                                 width=3,
                             )
-                    
+
                 # Draw each rectangle by connecting its four points
                 for row in cells:
 
