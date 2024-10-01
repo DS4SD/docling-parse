@@ -118,6 +118,8 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            poetry run python -m zipfile --list "$file" | grep .so
+            poetry run python -m zipfile --list "$file" | grep ${{ env.python_cp_version }}
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
@@ -161,6 +163,8 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            poetry run python -m zipfile --list "$file" | grep .so
+            poetry run python -m zipfile --list "$file" | grep ${{ env.python_cp_version }}
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
@@ -201,6 +205,8 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            poetry run python -m zipfile --list "$file" | grep .so
+            poetry run python -m zipfile --list "$file" | grep ${{ env.python_cp_version }}
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
