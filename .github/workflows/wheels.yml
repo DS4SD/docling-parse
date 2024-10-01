@@ -98,7 +98,9 @@ jobs:
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
         run: |
-          echo "Building wheel ${CIBW_BUILD}"
+          echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
+          echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
           poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
           poetry install --no-root --only=build
@@ -139,7 +141,9 @@ jobs:
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
         run: |
-          echo "Building wheel ${CIBW_BUILD}"
+          echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
+          echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
           poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
           poetry install --no-root --only=build
@@ -185,7 +189,9 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           BUILD_THREADS: "8"
         run: |
-          echo "Building wheel ${CIBW_BUILD}"
+          echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
+          echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
           poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
           poetry install --no-root --only=build
