@@ -111,7 +111,11 @@ def verify_reference_output(true_doc, pred_doc):
             true_header = true_page[_]["images"]["header"]
 
             assert verify_images(true_images, true_header, pred_images, pred_header), f"verify {_} images"
-            
+
+            pred_lines = pred_page[_]["lines"]
+            true_lines = true_page[_]["lines"]
+
+            verify_lines(true_lines, pred_lines)
         
     return True    
 
