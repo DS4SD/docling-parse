@@ -102,7 +102,7 @@ jobs:
           echo "Building cp: ${{ env.python_cp_version }}"
           echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
-          poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
+          poetry run python --version | grep ${{ matrix.os.macos_version }} 
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
@@ -145,7 +145,7 @@ jobs:
           echo "Building cp: ${{ env.python_cp_version }}"
           echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
-          poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
+          poetry run python --version | grep ${{ matrix.os.macos_version }} 
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
@@ -193,7 +193,7 @@ jobs:
           echo "Building cp: ${{ env.python_cp_version }}"
           echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
-          poetry run python --version | grep ${{ matrix.os.macos_version }} -qz
+          poetry run python --version | grep ${{ matrix.os.macos_version }} 
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir ./wheelhouse
