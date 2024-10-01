@@ -84,42 +84,52 @@ message(STATUS "cxx-flags   : " ${CMAKE_CXX_FLAGS})
 message(STATUS "cxx-standard: " ${CMAKE_CXX_STANDARD})
 
 # ************************
-# *** libraries        ***
+# *** dependencies     ***
 # ************************
 
-if(NOT EXISTS ${EXTERNALS_PREFIX_PATH})
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH})
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/bin)
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/lib)
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/include)
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/resources)
+option(USE_SYSTEM_DEPS OFF "If enabled, the build will find and link to system dependencies, otherwise they are sourced from the original repos and compiled on the fly.")
+
+# prepare setup for building external packages
+if(NOT USE_SYSTEM_DEPS)
+    if(NOT EXISTS ${EXTERNALS_PREFIX_PATH})
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH})
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/bin)
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/lib)
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/include)
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/resources)
+    endif()
 endif()
 
-include(cmake/subdirlist.cmake)
 
+# include dependencies
 include(cmake/extlib_json.cmake)
 include(cmake/extlib_utf8.git.cmake)
 include(cmake/extlib_jpeg.cmake)
-# include(cmake/extlib_qpdf_v10.cmake)
 include(cmake/extlib_qpdf_v11.cmake)
-# include(cmake/extlib_pybind11.cmake)
 
+# aggregate the targets created by the dependencies
+set(DEPENDENCIES qpdf jpeg utf8 json)
+
+
+# ************************
+# *** libraries        ***
+# ************************
+
+# define LIB_LINK and OS_DEPENDENCIES
 include(cmake/os_opts.cmake)
+list(APPEND DEPENDENCIES ${OS_DEPENDENCIES})
 
 # ***********************
 # ***  includes       ***
 # ***********************
 
-include_directories(${EXTERNALS_PREFIX_PATH}/include)
-
-subdirlist(EXTERNALS_INCLUDES ${EXTERNALS_PREFIX_PATH}/include)	
-include_directories(${EXTERNALS_INCLUDES})
-
-message(STATUS "subdirs: " ${SUBDIRS})
+# define subdirlist utility
+include(cmake/subdirlist.cmake)
 
 include_directories(${TOPLEVEL_PREFIX_PATH}/src)
 
 subdirlist(SUBDIRS ${TOPLEVEL_PREFIX_PATH}/src)
+message(STATUS "subdirs: " ${SUBDIRS})
 include_directories(${SUBDIRS})
 
 # **********************
@@ -127,20 +137,20 @@ include_directories(${SUBDIRS})
 # **********************
 
 add_executable(parse.exe "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
-
 set_property(TARGET parse.exe PROPERTY CXX_STANDARD 20)
-
-target_link_libraries(parse.exe ${LIB_LINK})
+add_dependencies(parse.exe ${DEPENDENCIES})
+target_include_directories(parse.exe INTERFACE ${DEPENDENCIES})
+target_link_libraries(parse.exe ${DEPENDENCIES} ${LIB_LINK})
 
 # **********************
 # ***  Libraries     ***
 # **********************
 
-add_library(parse STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
-
-set_target_properties(parse PROPERTIES POSITION_INDEPENDENT_CODE ON)
-
-target_link_libraries(parse ${LIB_LINK})
+add_library(libparse STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
+add_dependencies(libparse ${DEPENDENCIES})
+target_include_directories(libparse INTERFACE ${DEPENDENCIES})
+set_target_properties(libparse PROPERTIES POSITION_INDEPENDENT_CODE ON)
+target_link_libraries(libparse ${DEPENDENCIES} ${LIB_LINK})
 
 # ***************************
 # ***  Python-binding     ***
@@ -151,11 +161,10 @@ find_package (Python COMPONENTS Interpreter Development)
 find_package(pybind11 CONFIG REQUIRED)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
-
-add_dependencies(docling_parse json utf8)  # we have to list the headers-only deps here
-target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
-
-target_link_libraries(docling_parse PRIVATE parse)
+add_dependencies(docling_parse libparse)
+target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
+target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${CMAKE_PROJECT_VERSION})
+target_link_libraries(docling_parse PRIVATE libparse)
 
 # *****************
 # ***  Install  ***
