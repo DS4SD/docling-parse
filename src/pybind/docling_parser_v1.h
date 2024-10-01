@@ -11,14 +11,15 @@
 
 namespace docling
 {
-  class docling_parser: public docling_resources
+  class docling_parser_v1: public docling_resources
   {
   public:
 
-    docling_parser();
+    docling_parser_v1();
 
     void set_loglevel(int level=0);
-
+    void set_loglevel_with_label(std::string level="error");
+    
     bool is_loaded(std::string key);
     std::vector<std::string> list_loaded_keys();
     
@@ -44,7 +45,7 @@ namespace docling
     pdf_lib::interface<pdf_lib::PARSER> interface;
   };
 
-  docling_parser::docling_parser():
+  docling_parser_v1::docling_parser_v1():
     docling_resources(),
     interface()
   {
@@ -54,7 +55,7 @@ namespace docling
     pdf_lib::core::object<pdf_lib::core::FONT>::initialize(font_data_dir);
   }
 
-  void docling_parser::set_loglevel(int level)
+  void docling_parser_v1::set_loglevel(int level)
   {
     if(level>3)
       {    
@@ -84,22 +85,50 @@ namespace docling
       }
   }
 
-  std::vector<std::string> docling_parser::list_loaded_keys()
+  void docling_parser_v1::set_loglevel_with_label(std::string level)
+  {
+    if(level=="info")
+      {
+	logging_lib::set_level("pdf-parser", 
+			       logging_lib::ERROR   | 
+			       logging_lib::WARNING | 
+			       logging_lib::INFO    | 
+			       logging_lib::SUCCESS);
+      }	
+    else if(level=="warning")
+      {
+	logging_lib::set_level("pdf-parser", 
+			       logging_lib::ERROR   | 
+			       logging_lib::WARNING );
+      }
+    else if(level=="error")
+      {
+	logging_lib::set_level("pdf-parser", 
+			       logging_lib::ERROR);
+      }
+    else
+      {
+	logging_lib::set_level("pdf-parser", 
+			       logging_lib::ERROR);
+      }
+  }
+  
+  std::vector<std::string> docling_parser_v1::list_loaded_keys()
   {
     return interface.list_loaded_keys();
   }
   
-  bool docling_parser::is_loaded(std::string key)
+  bool docling_parser_v1::is_loaded(std::string key)
   {
     return interface.is_loaded(key);
   }
   
-  bool docling_parser::load_document(std::string key, std::string filename)
+  bool docling_parser_v1::load_document(std::string key, std::string filename)
   {
     return interface.load_document(key, filename);
   }
   
-  bool docling_parser::load_document_from_bytesio(std::string key, pybind11::object bytes_io)
+  bool docling_parser_v1::load_document_from_bytesio(std::string key, pybind11::object bytes_io)
   {
     logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
     
@@ -122,30 +151,30 @@ namespace docling
     return interface.load_document_from_buffer(key, data_str);
   }
   
-  bool docling_parser::unload_document(std::string key)
+  bool docling_parser_v1::unload_document(std::string key)
   {
     return interface.unload_document(key);
   }
   
-  void docling_parser::unload_documents()
+  void docling_parser_v1::unload_documents()
   {
     interface.unload_documents();
   }
 
-  int docling_parser::number_of_pages(std::string key)
+  int docling_parser_v1::number_of_pages(std::string key)
   {
     return interface.number_of_pages(key);
   }
 
   /*
-  nlohmann::json docling_parser::get_raw(std::string path)
+  nlohmann::json docling_parser_v1::get_raw(std::string path)
   {
     nlohmann::json data;// = nlohmann::json::parse(result);
     return data;
   }
   */
   
-  nlohmann::json docling_parser::parse_pdf_from_key(std::string key)
+  nlohmann::json docling_parser_v1::parse_pdf_from_key(std::string key)
   {
     container_lib::container doc_raw;
 
@@ -189,7 +218,7 @@ namespace docling
     return data;
   }
 
-  nlohmann::json docling_parser::parse_pdf_from_key_on_page(std::string key, int page)
+  nlohmann::json docling_parser_v1::parse_pdf_from_key_on_page(std::string key, int page)
   {
     container_lib::container doc_raw;
 
@@ -234,7 +263,7 @@ namespace docling
     return data;
   }
 
-  void docling_parser::normalise_document(container_lib::container& doc_raw)
+  void docling_parser_v1::normalise_document(container_lib::container& doc_raw)
   {
     for(int pid=0; pid<doc_raw["pages"].get_size(); pid++)
       {
