@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-poetry
       - name: Run build in docker
         run: ./.github/scripts/build_rhel.sh
         shell: bash
