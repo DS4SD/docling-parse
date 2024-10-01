@@ -56,7 +56,9 @@ jobs:
           update-environment: false
 
       - name: Install Poetry
-        run: python -m pip install poetry==1.8.3
+        run: |
+          python -m pip install poetry==1.8.3
+          poetry env use python3
 
       - name: Set up custom PATH and set py version to cpXYZ [windows]
         if: ${{matrix.os.platform_id == 'win_amd64'}}
@@ -98,6 +100,7 @@ jobs:
           CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
+          PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
         run: |
           PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
           echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
@@ -155,6 +158,7 @@ jobs:
           CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
+          PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
         run: |
           PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
           echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
