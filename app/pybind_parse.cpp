@@ -39,7 +39,8 @@ PYBIND11_MODULE(docling_parse, m) {
 	 "parse specific page in pdf-document using doc-key from path into json")
     ;
 
-  // exact copy of `pdf_parser` 
+  // exact copy of `pdf_parser`
+  /*
   pybind11::class_<docling::docling_parser_v1>(m, "pdf_parser_v1")
     .def(pybind11::init())
 
@@ -65,7 +66,8 @@ PYBIND11_MODULE(docling_parse, m) {
 	 &docling::docling_parser_v1::parse_pdf_from_key_on_page,
 	 "parse specific page in pdf-document using doc-key from path into json")
     ;
-
+  */
+  
   // next generation parser, 10x faster with more finegrained output
   pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
     .def(pybind11::init())

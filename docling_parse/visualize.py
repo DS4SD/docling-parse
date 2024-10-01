@@ -5,9 +5,7 @@ import os
 
 from tabulate import tabulate
 
-# from docling_parse.docling_parse import pdf_parser
 import docling_parse
-from docling_parse import pdf_parser
 
 try:
     from PIL import Image, ImageDraw
@@ -45,12 +43,11 @@ def parse_args():
 
     # Add an argument for the path to the PDF file
     parser.add_argument(
-        "-p", "--pdf", type=str, help="Path to the PDF file", required=True
+        "-i", "--input-pdf", type=str, help="Path to the PDF file", required=True
     )
 
     # Add an optional boolean argument for interactive mode
     parser.add_argument(
-        "-i",
         "--interactive",
         action="store_true",
         help="Enable interactive mode (default: False)",
@@ -62,25 +59,44 @@ def parse_args():
         "--output-dir",
         type=str,
         required=False,
-        default="./tmp",
-        help="Path to the output directory (default: ./tmp)",
+        default=None,
+        help="Path to the output directory (default: None)",
+    )
+
+    # Add an argument for the output directory, defaulting to "./tmp"
+    parser.add_argument(
+        "-p",
+        "--page",
+        type=int,
+        required=False,
+        default=-1,
+        help="page to be displayed (default: -1 -> all)",
     )
 
     # Parse the command-line arguments
     args = parser.parse_args()
 
     # Check if the PDF file exists
-    assert os.path.exists(args.pdf), f"PDF file does not exist: {args.pdf}"
+    assert os.path.exists(args.input_pdf), f"PDF file does not exist: {args.input_pdf}"
 
     # Check if the output directory exists, create it if not
-    if not os.path.exists(args.output_dir):
+    if (args.output_dir is not None) and (not os.path.exists(args.output_dir)):
         os.makedirs(args.output_dir)
         print(f"Output directory '{args.output_dir}' created.")
 
-    return args.log_level, args.version, args.pdf, args.interactive, args.output_dir
+    return (
+        args.log_level,
+        args.version,
+        args.input_pdf,
+        args.interactive,
+        args.output_dir,
+        int(args.page),
+    )
 
 
-def visualise_v1(log_level: str, pdf_path: str, interactive: str, output_dir: str):
+def visualise_v1(
+    log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
+):
 
     parser = docling_parse.pdf_parser()
     parser.set_loglevel_with_label(log_level)
@@ -91,15 +107,16 @@ def visualise_v1(log_level: str, pdf_path: str, interactive: str, output_dir: st
     if success == False:
         return
 
-    doc = parser.parse_pdf_from_key(doc_key)
+    doc = None
+
+    if page_num == -1:
+        doc = parser.parse_pdf_from_key(doc_key)
+    else:
+        doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
 
     parser.unload_document(doc_key)
 
-    # dims = doc["page-dimensions"]
-    print(doc.keys())
-
-    for page in doc["pages"]:
-        print(page.keys())
+    for pi, page in enumerate(doc["pages"]):
 
         H = page["height"]
         W = page["width"]
@@ -126,7 +143,6 @@ def visualise_v1(log_level: str, pdf_path: str, interactive: str, output_dir: st
             draw.polygon([bl, br, tr, tl], outline="black", fill="blue")
 
         for image in page["images"]:
-            print(image)
 
             bbox = image["box"]
 
@@ -160,11 +176,29 @@ def visualise_v1(log_level: str, pdf_path: str, interactive: str, output_dir: st
                         width=3,
                     )
 
-        img.show()
-        break
+        if interactive:
+            img.show()
+
+        if output_dir is not None and page_num == -1:
+            oname = os.path.join(
+                output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v1.png"
+            )
+            print(f"output: {oname}")
+
+            img.save(oname)
+
+        elif output_dir is not None and page_num != -1:
+            oname = os.path.join(
+                output_dir, f"{os.path.basename(pdf_path)}_page={page_num}.v1.png"
+            )
+            print(f"output: {oname}")
+
+            img.save(oname)
 
 
-def visualise_v2(log_level: str, pdf_path: str, interactive: str, output_dir: str):
+def visualise_v2(
+    log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
+):
 
     parser = docling_parse.pdf_parser_v2()
     parser.set_loglevel_with_label(log_level)
@@ -175,11 +209,16 @@ def visualise_v2(log_level: str, pdf_path: str, interactive: str, output_dir: st
     if success == False:
         return
 
-    doc = parser.parse_pdf_from_key(doc_key)
+    doc = None
+
+    if page_num == -1:
+        doc = parser.parse_pdf_from_key(doc_key)
+    else:
+        doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
 
     parser.unload_document(doc_key)
 
-    for page in doc["pages"]:
+    for pi, page in enumerate(doc["pages"]):
 
         for _ in ["original", "sanitized"]:
             dimension = page[_]["dimension"]
@@ -225,9 +264,9 @@ def visualise_v2(log_level: str, pdf_path: str, interactive: str, output_dir: st
 
                     x = []
                     y = []
-                    for _ in range(0, 4):
-                        x.append(row[cells_header.index(f"r_x{_}")])
-                        y.append(row[cells_header.index(f"r_y{_}")])
+                    for i in range(0, 4):
+                        x.append(row[cells_header.index(f"r_x{i}")])
+                        y.append(row[cells_header.index(f"r_y{i}")])
 
                     rect = [
                         (x[0], H - y[0]),
@@ -258,21 +297,37 @@ def visualise_v2(log_level: str, pdf_path: str, interactive: str, output_dir: st
                             )
 
                 # Show the image
-                img.show()
+                if interactive:
+                    img.show()
 
-                input()
+                if output_dir is not None and page_num == -1:
+                    oname = os.path.join(
+                        output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
+                    )
+                    print(f"output: {oname}")
+
+                    img.save(oname)
+
+                elif output_dir is not None and page_num != -1:
+                    oname = os.path.join(
+                        output_dir,
+                        f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
+                    )
+                    print(f"output: {oname}")
+
+                    img.save(oname)
 
     return 0
 
 
 def main():
 
-    log_level, version, pdf, interactive, output_dir = parse_args()
+    log_level, version, pdf, interactive, output_dir, page = parse_args()
 
     if version == "v1":
-        visualise_v1(log_level, pdf, interactive, output_dir)
+        visualise_v1(log_level, pdf, interactive, output_dir, page)
     elif version == "v2":
-        visualise_v2(log_level, pdf, interactive, output_dir)
+        visualise_v2(log_level, pdf, interactive, output_dir, page)
     else:
         return -1
 
