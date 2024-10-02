@@ -1,3 +1,13 @@
+## [v1.4.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.4.0) - 2024-10-02
+
+### Feature
+
+* Build using system deps ([#33](https://github.com/DS4SD/docling-parse/issues/33)) ([`e1c8e49`](https://github.com/DS4SD/docling-parse/commit/e1c8e4980faab35bfdf6d1a78d8749745c560889))
+
+### Fix
+
+* Python version in wheels ([#31](https://github.com/DS4SD/docling-parse/issues/31)) ([`8d903ba`](https://github.com/DS4SD/docling-parse/commit/8d903baf61a7706066374c23265e115a9513c3ba))
+
 ## [v1.3.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.3.1) - 2024-09-30
 
 ### Fix
