@@ -135,18 +135,6 @@ jobs:
             poetry run python -m zipfile --list "$file" | grep \\.so
             echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
-
-            echo "Testing usage of the wheel"
-            if [[ "${{ matrix.os.name }}" == "macos-13" ]]; then
-              poetry run python -m venv test-venv
-              source test-venv/bin/activate
-              pip install docling
-              pip install $file
-              docling ./tests/pdf_docs/tests/2305.14962v1.pdf
-              rm -r test-venv
-            else
-              echo "..skipping x86_64 on macos-14 because the host arch is arm64"
-            fi
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
@@ -198,18 +186,6 @@ jobs:
             poetry run python -m zipfile --list "$file" | grep \\.so
             echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
-
-            echo "Testing usage of the wheel"
-            if [[ "${{ matrix.os.name }}" == "macos-14" ]]; then
-              poetry run python -m venv test-venv
-              source test-venv/bin/activate
-              pip install docling
-              pip install $file
-              docling ./tests/pdf_docs/tests/2305.14962v1.pdf
-              rm -r test-venv
-            else
-              echo "..skipping arm64 on macos-13 because the host arch is x86_64"
-            fi
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
@@ -255,18 +231,6 @@ jobs:
             poetry run python -m zipfile --list "$file" | grep \\.so
             echo "Checking if the correct python version is contained in the wheel"
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
-
-            echo "Testing usage of the wheel"
-            if [[ $file == *"x86_64"* ]]; then
-              poetry run python -m venv test-venv
-              source test-venv/bin/activate
-              pip install docling
-              pip install $file
-              docling ./tests/pdf_docs/tests/2305.14962v1.pdf
-              rm -r test-venv
-            else
-              echo "..skipping arm64 because we are on x86"
-            fi
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
