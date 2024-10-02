@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.12..3.26)
 
 project(docling_parse VERSION 1.0.0 LANGUAGES CXX C)
 #set(CMAKE_VERBOSE_MAKEFILE off)
@@ -157,7 +157,7 @@ target_link_libraries(libparse ${DEPENDENCIES} ${LIB_LINK})
 # ***************************
 
 # https://pybind11.readthedocs.io/en/stable/compiling.html
-find_package (Python COMPONENTS Interpreter Development)
+# https://pybind11.readthedocs.io/en/stable/compiling.html#configuration-variables
 find_package(pybind11 CONFIG REQUIRED)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
