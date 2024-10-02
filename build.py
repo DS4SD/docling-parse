@@ -40,11 +40,15 @@ def run(cmd: List[str], cwd: str="./"):
 
 def build_local(num_threads: int):
 
+    USE_SYSTEM_DEPS = os.getenv("USE_SYSTEM_DEPS", "OFF")
+
+
     print("python prefix: ", sys.exec_prefix)
     print("python executable: ", sys.executable)
     config_cmd = [
         "cmake",
         "-B", f"{BUILD_DIR}",
+        f"-DUSE_SYSTEM_DEPS={USE_SYSTEM_DEPS}",
         f"-DPYTHON_EXECUTABLE={sys.executable}",
     ]
     config_cmd.extend(get_pybind11_cmake_args())

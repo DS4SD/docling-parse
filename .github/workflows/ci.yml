@@ -21,4 +21,6 @@ jobs:
     uses: ./.github/workflows/checks.yml
   build-wheels:
     uses: ./.github/workflows/wheels.yml
+  rhel-build:
+    uses: ./.github/workflows/rhel.yml
   

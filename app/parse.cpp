@@ -12,7 +12,7 @@ Email: {taa, dol, cau, ttt}@zurich.ibm.com
 Date: 18/08/2017
 **********************************************************/
 
-#include <utf8/utf8.h>
+#include <utf8.h>
 
 #include "include_libs.h"
 
