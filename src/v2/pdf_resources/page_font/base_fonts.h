@@ -220,61 +220,6 @@ namespace pdflib
       }    
   }
 
-  /*
-  template<typename glyphs_type>
-  void base_fonts::initialise(std::string dirname, glyphs_type& glyphs)
-  {
-    std::vector<std::string> paths = {
-      "/standard/Courier.afm",
-      "/standard/Courier-Bold.afm",
-      "/standard/Courier-BoldOblique.afm",
-      "/standard/Courier-Oblique.afm",
-
-      "/standard/Helvetica.afm",
-      "/standard/Helvetica-Bold.afm",
-      "/standard/Helvetica-BoldOblique.afm",
-      "/standard/Helvetica-Oblique.afm",
-
-      "/standard/Times-Bold.afm",
-      "/standard/Times-BoldItalic.afm",
-      "/standard/Times-Italic.afm",
-      "/standard/Times-Roman.afm",
-
-      "/standard/Symbol.afm",
-      "/standard/ZapfDingbats.afm",
-
-      // Microsoft specializations
-      "/custom/Microsoft/Arial.afm",
-      "/custom/Microsoft/Arial_Bold.afm",
-      "/custom/Microsoft/Arial_Italic.afm",
-      "/custom/Microsoft/Arial_Bold_Italic.afm",
-
-      "/custom/Microsoft/Times_New_Roman.afm"    ,   
-      "/custom/Microsoft/Times_New_Roman_Bold.afm",        
-      "/custom/Microsoft/Times_New_Roman_Italic.afm",    
-      "/custom/Microsoft/Times_New_Roman_Bold_Italic.afm"};
-
-    int cnt=0;
-    for(auto path:paths)
-      {
-        std::string fontname = read_fontname(dirname+path);
-
-	base_font bf(dirname+path, glyphs);
-	name_to_basefont.emplace(std::pair<std::string, base_font>(fontname, bf));	
-
-	//
-	//name_to_basefont[fontname] = bf;
-        //name_to_basefont[fontname].initialise(dirname+path, glyphs);
-
-        if(cnt<14)
-          {
-            core_14_fonts.insert(fontname);
-            cnt += 1;
-          }
-      }    
-  }
-  */
-
   std::string base_fonts::read_fontname(std::string filename)
   {
     std::string fontname = "unknown";

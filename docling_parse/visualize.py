@@ -291,6 +291,10 @@ def visualise_v2(
                         (x[3], H - y[3]),
                     ]
 
+                    if "glyph" in row[cells_header.index("text")]:
+                        print(f" skip cell -> {row}")
+                        continue
+
                     # You can change the outline and fill color
                     draw.polygon(rect, outline="red", fill="blue")
 

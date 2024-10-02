@@ -160,6 +160,8 @@ namespace pdf_lib
           if(_handle.getKey("/FontDescriptor").hasKey("/FontName"))
             {
               name = _handle.getKey("/FontDescriptor").getKey("/FontName").getName();
+	      logging_lib::info("pdf-parser")  << __FILE__ << ":" << __LINE__ << "\t"
+					       << "registered name: " << name;
             }
           else
             {
@@ -207,6 +209,8 @@ namespace pdf_lib
           if(_handle.hasKey("/BaseFont"))
             {
               name = _handle.getKey("/BaseFont").getName();
+	      logging_lib::info("pdf-parser")  << __FILE__ << ":" << __LINE__ << "\t"
+					       << "registered name: " << name;	      
             }
           else
             {
@@ -221,6 +225,8 @@ namespace pdf_lib
           if(_handle.hasKey("/Name"))
             {
               name = _handle.getKey("/Name").getName();
+	      logging_lib::info("pdf-parser")  << __FILE__ << ":" << __LINE__ << "\t"
+					       << "registered name: " << name;
             }
           else
             {
@@ -233,6 +239,8 @@ namespace pdf_lib
           if(_handle.hasKey("/BaseFont"))
             {
               name = _handle.getKey("/BaseFont").getName();
+	      logging_lib::info("pdf-parser")  << __FILE__ << ":" << __LINE__ << "\t"
+					       << "registered name: " << name;
             }
           else
             {
@@ -247,6 +255,10 @@ namespace pdf_lib
         }
 
       name = normalize_font_name(name);
+
+      logging_lib::info("pdf-parser")  << __FILE__ << ":" << __LINE__ << "\t"
+				       << "normalised name: " << name;
+      
       return name;
     }
 
@@ -382,6 +394,9 @@ namespace pdf_lib
           else if(item.isName())
             {
               //std::cout << "\t" << c << "\t" << item.getName() << "\t" << item.getName().substr(1) << "\n";
+	      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+					      << c << "\t" << item.getName() << "\t" << item.getName().substr(1);
+	      
               object().set_difference(c++, item.getName().substr(1));
             }
           else
@@ -402,9 +417,16 @@ namespace pdf_lib
       std::string name = object().get_name();
       //std::cout << "name: " << name << "\n";
 
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+				      << "name: " << name;
+      
       std::string subtype = object().get_subtype();
       //std::cout << "subtype: " << subtype << "\n";
 
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+				      << "subtype: " << subtype;
+      
+      
       if(_handle.hasKey("/ToUnicode") and
          _handle.getKey("/ToUnicode").isStream())
         {
@@ -887,6 +909,8 @@ namespace pdf_lib
         }
 
       std::string name = _handle.getKey("/Subtype").getName();
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t detected /Subtype: " << name;
+
       //std::cout << name << "\n";
       
       if(bbox.isInitialized())
@@ -904,6 +928,8 @@ namespace pdf_lib
 
       if(_handle.hasKey("/Widths"))
         {
+	  logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t detected /Widths";
+	  
           std::vector<QPDFObjectHandle> raw = _handle.getKey("/Widths").getArrayAsVector();
           uint32_t first_char = 0;
 
