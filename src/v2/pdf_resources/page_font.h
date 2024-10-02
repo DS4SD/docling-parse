@@ -1391,11 +1391,13 @@ namespace pdflib
                         diff_numb_to_char[numb] = glyphs[name_];
                         LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
                       }
+		    /*
                     else if(name_.size()>0)
                       {
                         diff_numb_to_char[numb] = name_;
                         LOG_S(WARNING) << "differences["<<numb<<"] -> " << name_;
-                      }		    
+                      }
+		    */
                     else
                       {
                         diff_numb_to_char[numb] = name;

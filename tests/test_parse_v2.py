@@ -86,9 +86,9 @@ def verify_reference_output(true_doc, pred_doc):
     assert num_true_pages==num_pred_pages, message
                 
     for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
-        print(pred_page.keys())
-        print(pred_page["original"].keys())
-        print(pred_page["original"]["lines"])
+        # print(pred_page.keys())
+        # print(pred_page["original"].keys())
+        # print(pred_page["original"]["lines"])
 
         for _ in ["original", "sanitized"]:
             true_dimension = pred_page[_]["dimension"]
@@ -121,8 +121,8 @@ def verify_reference_output(true_doc, pred_doc):
 
 def test_reference_documents_from_filenames_with_keys():
 
-    parser = docling_parse.pdf_parser_v2()
-    parser.set_loglevel_with_label("fatal")
+    parser = docling_parse.pdf_parser_v2("fatal")
+    # parser.set_loglevel_with_label("fatal")
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -130,7 +130,7 @@ def test_reference_documents_from_filenames_with_keys():
     
     for pdf_doc in pdf_docs:
         doc_key = f"key={pdf_doc}"
-        print("testing: ", pdf_doc)
+        # print("testing: ", pdf_doc)
         
         #print(" => load_document ...")
         success = parser.load_document(doc_key, pdf_doc)
@@ -162,8 +162,8 @@ def test_reference_documents_from_filenames_with_keys():
 
 def test_reference_documents_from_filenames_with_keys_page_by_page():
 
-    parser = docling_parse.pdf_parser_v2()
-    parser.set_loglevel_with_label("fatal")
+    parser = docling_parse.pdf_parser_v2("fatal")
+    # parser.set_loglevel_with_label("fatal")
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -207,8 +207,8 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
 
 def test_reference_documents_from_bytesio_with_keys():
 
-    parser = docling_parse.pdf_parser_v2()
-    parser.set_loglevel_with_label("fatal")
+    parser = docling_parse.pdf_parser_v2("fatal")
+    #parser.set_loglevel_with_label("fatal")
 
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -252,8 +252,8 @@ def test_reference_documents_from_bytesio_with_keys():
             
 def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
-    parser = docling_parse.pdf_parser_v2()
-    parser.set_loglevel_with_label("fatal")    
+    parser = docling_parse.pdf_parser_v2("fatal")
+    # parser.set_loglevel_with_label("fatal")    
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
