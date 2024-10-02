@@ -482,7 +482,8 @@ namespace pdflib
 	    
 	    LOG_S(ERROR) << " Symbol not found in special font: " << c
 			 << "; Encoding: "  << to_string(encoding)
-			 << "; font-name: " << font_name;
+			 << "; font-name: " << font_name
+			 << " (corresponding font: " << fontname << ")";
 	    
 	    return notdef;
 	  }
@@ -1366,6 +1367,8 @@ namespace pdflib
                       {
                         diff_numb_to_char[numb] = cmap_numb_to_char[numb];
                       }
+
+		    // FIXME: might need to be commented out or fixed
                     else if(name_to_descr.count(name)==1 and 
                             cmap_numb_to_char.count(numb)==0)
                       {
@@ -1375,24 +1378,31 @@ namespace pdflib
                                        <<", numb="<<numb<<") for TYPE_3 font:" << font_name;
 
                         diff_numb_to_char[numb] = "glyph["+font_name+"|"+name+"]";
-                      }
+			//diff_numb_to_char[numb] = "glyph["+font_name+"|"+name+"]";
+		      }
+
                     else if(glyphs.has(name))
                       {
                         diff_numb_to_char[numb] = glyphs[name];
-                        //LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                        LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
                       }
                     else if(glyphs.has(name_))
                       {
                         diff_numb_to_char[numb] = glyphs[name_];
-                        //LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                        LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
                       }
+                    else if(name_.size()>0)
+                      {
+                        diff_numb_to_char[numb] = name_;
+                        LOG_S(WARNING) << "differences["<<numb<<"] -> " << name_;
+                      }		    
                     else
                       {
                         diff_numb_to_char[numb] = name;
-                        //LOG_S(WARNING) << "differences["<<numb<<"] -> " << name;
+                        LOG_S(WARNING) << "differences["<<numb<<"] -> " << name;
                       }
 
-                    //LOG_S(INFO) << "\tdifferences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                    LOG_S(INFO) << font_name << ": differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
 
                     numb += 1;
                   }

@@ -46,7 +46,8 @@ namespace pdf_lib
 					    core::object<core::DIFFERENCES>& differences,
 					    QPDFObjectHandle                 encoding)
     {
-      logging_lib::info("pdf-parser") << "qpdf::parser<core::DIFFERENCES>::parse()";
+      logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+				      << __FUNCTION__ << " on " << font_name;
 
       differences.initialize();
 
@@ -62,7 +63,8 @@ namespace pdf_lib
     {
       if(encoding.hasKey("/Differences"))
 	{
-	  logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t" << __FUNCTION__;
+	  logging_lib::info("pdf-parser") << __FILE__ << ":" << __LINE__ << "\t"
+					  << __FUNCTION__;
 	  
 	  QPDFObjectHandle              differences_arr = encoding.getKey("/Differences");
 	  std::vector<QPDFObjectHandle> differences_vec = differences_arr.getArrayAsVector();
