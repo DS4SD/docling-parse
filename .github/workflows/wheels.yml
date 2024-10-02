@@ -137,12 +137,16 @@ jobs:
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
-            poetry run python -m venv test-venv
-            source test-venv/bin/activate
-            pip install docling
-            pip install $file
-            docling ./tests/pdf_docs/tests/2305.14962v1.pdf
-            rm -r test-venv
+            if [[ $file == *"x86_64"* ]]; then
+              poetry run python -m venv test-venv
+              source test-venv/bin/activate
+              pip install docling
+              pip install $file
+              docling ./tests/pdf_docs/tests/2305.14962v1.pdf
+              rm -r test-venv
+            else
+              echo "..skipping arm64 because we are on x86"
+            fi
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
@@ -166,6 +170,7 @@ jobs:
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
+          CUDA_VISIBLE_DEVICES: "cpu"
         run: |
           PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
           echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
@@ -195,12 +200,16 @@ jobs:
             poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
 
             echo "Testing usage of the wheel"
-            poetry run python -m venv test-venv
-            source test-venv/bin/activate
-            pip install docling
-            pip install $file
-            docling ./tests/pdf_docs/tests/2305.14962v1.pdf
-            rm -r test-venv
+            if [[ $file == *"arm64"* ]]; then
+              poetry run python -m venv test-venv
+              source test-venv/bin/activate
+              pip install docling
+              pip install $file
+              docling ./tests/pdf_docs/tests/2305.14962v1.pdf
+              rm -r test-venv
+            else
+              echo "..skipping x86 because we are on arm64"
+            fi
           done
           mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
