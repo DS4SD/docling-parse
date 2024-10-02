@@ -10,7 +10,7 @@ poetry build -f sdist
 
 docker build -f - . <<EOF
     FROM quay.io/centos/centos:stream9
-    # RUN dnf config-manager --set-enabled crb
+    RUN dnf config-manager --set-enabled crb
     # RUN dnf copr -y enable cheimes/deepsearch-glm rhel-9-x86_64
     RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm \
        && dnf clean all
