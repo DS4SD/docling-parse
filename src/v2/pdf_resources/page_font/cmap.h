@@ -75,10 +75,10 @@ namespace pdflib
 
   void cmap_parser::print()
   {
-    //for(auto itr=_map.begin(); itr!=_map.end(); itr++)
-    //{
-    //LOG_S(INFO) << itr->first << "\t" << itr->second;
-    //}
+    for(auto itr=_map.begin(); itr!=_map.end(); itr++)
+      {
+	LOG_S(INFO) << itr->first << "\t" << itr->second;
+      }
   }
 
   void cmap_parser::parse(std::vector<qpdf_instruction>& instructions)
