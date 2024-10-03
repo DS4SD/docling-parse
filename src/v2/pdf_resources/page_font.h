@@ -228,8 +228,10 @@ namespace pdflib
   {
     if(subtype==TYPE_3)
       {
-        //return 1.0;
-        return 1000.0;
+	double unit = 1.0; // 1000.0	
+	LOG_S(WARNING) << "font-scale of the unit for TYPE_3: " << unit;
+	
+        return unit;
       }
 
     return 1.0;
@@ -542,17 +544,22 @@ namespace pdflib
                                     nlohmann::json&  json_font_,
                                     QPDFObjectHandle qpdf_font_)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    LOG_S(INFO) << __FUNCTION__ << " font: " << font_key_;
 
     /*
-    try
+      if(true)
       {
-	LOG_S(INFO) << "font [key=" << font_key << "]: " << json_font_.dump();
+      print_obj(qpdf_font_);
+      
+      try
+      {
+      LOG_S(INFO) << "font [key='" << font_key_ << "']:\n" << json_font_.dump(2);
       }
-    catch(std::exception e)
+      catch(std::exception e)
       {
-	LOG_S(ERROR) << "could not dump the json-representation of the font [key=" 
-		     << font_key << "] with error: " << e.what();
+      LOG_S(ERROR) << "could not dump the json-representation of the font [key=" 
+      << font_key_ << "] with error: " << e.what();
+      }
       }
     */
     
@@ -590,9 +597,9 @@ namespace pdflib
     unknown_numbs.clear();
 
     /*
-    if(true)
+      if(true)
       {
-        print_tables();
+      print_tables();
       }
     */
   }
@@ -1037,6 +1044,7 @@ namespace pdflib
 
     if(fchar==-1 and lchar==-1 and values.size()==0)
       {
+	LOG_S(WARNING) << "did not detect any /Widths";
         return;
       }
 
@@ -1050,6 +1058,7 @@ namespace pdflib
     for(int ind=fchar; ind<=lchar; ind++)
       {
         numb_to_widths[ind] = values[cnt++];
+	LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
       }
   }
 
@@ -1136,8 +1145,6 @@ namespace pdflib
             LOG_S(FATAL) << "unknown type in " << __FUNCTION__;
           }
       }
-
-    //assert(false);
   }
 
   void pdf_resource<PAGE_FONT>::init_cmap()
@@ -1174,7 +1181,7 @@ namespace pdflib
           cmap_parser parser;
           parser.parse(stream);
 
-          parser.print();
+          //parser.print();
 
           cmap_numb_to_char = parser.get();
         }
@@ -1369,6 +1376,7 @@ namespace pdflib
                       }
 
 		    // FIXME: might need to be commented out or fixed
+		    /*
                     else if(name_to_descr.count(name)==1 and 
                             cmap_numb_to_char.count(numb)==0)
                       {
@@ -1380,16 +1388,17 @@ namespace pdflib
                         diff_numb_to_char[numb] = "glyph["+font_name+"|"+name+"]";
 			//diff_numb_to_char[numb] = "glyph["+font_name+"|"+name+"]";
 		      }
-
+		    */
+		    
                     else if(glyphs.has(name))
                       {
                         diff_numb_to_char[numb] = glyphs[name];
-                        LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                        //LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
                       }
                     else if(glyphs.has(name_))
                       {
                         diff_numb_to_char[numb] = glyphs[name_];
-                        LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                        //LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
                       }
 		    /*
                     else if(name_.size()>0)
@@ -1455,7 +1464,7 @@ namespace pdflib
 
                 assert(qpdf_char_proc.isStream());
 
-                std::vector<qpdf_instruction> stream;
+                std::vector<qpdf_instruction> stream={};
 
                 // decode the stream
                 {
@@ -1464,13 +1473,16 @@ namespace pdflib
                   decoder.print();
                 }
 
+		LOG_S(INFO) << "key: " << key << " => #-streams: " << stream.size();
+		
                 // interprete the stream
                 {
                   char_processor parser;
                   parser.parse(stream);
 
                   name_to_descr[key] = parser.parse(stream);
-                  
+		  //LOG_S(INFO) << key << ": " << name_to_descr.at(key);
+
                   //parser.print();          
                   //cmap_numb_to_char = parser.get();
 

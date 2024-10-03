@@ -221,6 +221,7 @@ def visualise_v2(
     for pi, page in enumerate(doc["pages"]):
 
         for _ in ["original", "sanitized"]:
+
             dimension = page[_]["dimension"]
 
             cells = page[_]["cells"]["data"]
