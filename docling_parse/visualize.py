@@ -221,6 +221,7 @@ def visualise_v2(
     for pi, page in enumerate(doc["pages"]):
 
         for _ in ["original", "sanitized"]:
+
             dimension = page[_]["dimension"]
 
             cells = page[_]["cells"]["data"]
@@ -277,7 +278,7 @@ def visualise_v2(
 
                 # Draw each rectangle by connecting its four points
                 for row in cells:
-
+                    
                     x = []
                     y = []
                     for i in range(0, 4):

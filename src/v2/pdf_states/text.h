@@ -218,10 +218,10 @@ namespace pdflib
   void pdf_state<TEXT>::Tf(std::vector<qpdf_instruction>& instructions)
   {
     assert(instructions.size()==2);
-
+    
     font_name = instructions[0].to_utf8_string();
     font_size = instructions[1].to_double();
-
+    
     if(page_fonts.count(font_name)>0)
       {
         font_size *= page_fonts[font_name].get_unit();
@@ -310,10 +310,10 @@ namespace pdflib
 
     std::string text="";
 
-    std::vector<double> widths;
-    std::vector<std::string> chars;
+    std::vector<double> widths={};
+    std::vector<std::string> chars={};
 
-    std::vector<pdf_resource<PAGE_CELL> > cells;
+    std::vector<pdf_resource<PAGE_CELL> > cells={};
 
     double space_width=0;
     {
@@ -326,10 +326,12 @@ namespace pdflib
         double      width_ = font.get_width(item.first);
         std::string chars_ = font.get_string(item.first);
 
-        //LOG_S(INFO) << item.second << " --> " << item.first << "\t" << width_ << "\t'" << chars_ << "'";
+        //LOG_S(INFO) << item.first << " --> " << item.second << "\twidth_: " << width_ << "\tchars_: '" << chars_ << "'";
 
         double char_width = (width_ / 1000.0 * font_size * h_scaling);
 
+	//LOG_S(INFO) << "char_width: " << char_width << ", width_: " << width_ << ", font_size: " << font_size << ", h_scaling: " << h_scaling;	
+	
         double delta_width=0;
         if(chars_==" ")
           {
@@ -340,6 +342,8 @@ namespace pdflib
             delta_width += char_spacing*h_scaling;
           }
 
+	//LOG_S(INFO) << "delta_width: " << delta_width;
+	
         if(delta_width >= space_width)
           {
             //LOG_S(WARNING) << "delta_width (="<<delta_width<<") >= space_width ("<<space_width<<")";
@@ -389,20 +393,24 @@ namespace pdflib
   }
 
   void pdf_state<TEXT>::add_cell(pdf_resource<PAGE_FONT>& font,
-                                 std::string text,  double width,
+                                 std::string text, double width,
                                  int stack_size,
                                  std::vector<pdf_resource<PAGE_CELL> >& cells)
   {
-    LOG_S(INFO) << __FUNCTION__ << " with text='"<<text << "', width="<<width;
+    LOG_S(INFO) << __FUNCTION__ << " with text='" << text << "', width=" << width;
 
     double font_descent = font.get_descent();
     double font_ascent  = font.get_ascent();
 
+    LOG_S(INFO) << "font_descent: " << font_descent << ", font_ascent: " << font_ascent;
+    
     double space_width=0;
     {
       double w0 = font.get_space_width();
       double w1 = (w0 / 1000.0 * font_size * h_scaling);// + (char_spacing+word_spacing)*h_scaling;
 
+      LOG_S(INFO) << __FUNCTION__ << "w0: " << w0 << ", w1: " << w1 << ", font_size: " << font_size << ", h_scaling: " << h_scaling;
+      
       std::array<double, 8> rect = compute_rect(font_descent, font_ascent, w1);
       space_width = std::sqrt((rect[2]-rect[0])*(rect[2]-rect[0])+
                               (rect[3]-rect[1])*(rect[3]-rect[1]));
