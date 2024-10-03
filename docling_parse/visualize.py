@@ -278,7 +278,7 @@ def visualise_v2(
 
                 # Draw each rectangle by connecting its four points
                 for row in cells:
-                    
+
                     x = []
                     y = []
                     for i in range(0, 4):
