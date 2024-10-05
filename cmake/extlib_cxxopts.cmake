@@ -1,33 +1,47 @@
-cmake_minimum_required (VERSION 3.5)
 
 message(STATUS "entering in extlib_cxxopts.cmake")
 
-include(ExternalProject)
-include(CMakeParseArguments)
+set(ext_name_cxxopts "cxxopts")
 
-set(CXXOPTS_TAG v2.2.0)
-set(CXXOPTS_URL https://github.com/jarro2783/cxxopts.git)
+if(USE_SYSTEM_DEPS)
+    message(STATUS "using system-deps in extlib_cxxopts.cmake")
 
-ExternalProject_Add(extlib_cxxopts
-    PREFIX extlib_cxxopts
+    # this will define the cxxopts target
+    find_package(cxxopts REQUIRED)
 
-    GIT_TAG ${CXXOPTS_TAG}
-    GIT_REPOSITORY ${CXXOPTS_URL}
+    add_library(${ext_name_cxxopts} INTERFACE IMPORTED)
+    add_dependencies(${ext_name_cxxopts} cxxopts)
 
-    INSTALL_DIR ${CXXOPTS_PREFIX_INSTALL_DIR}
+else()
+    message(STATUS "ignoring system-deps extlib_utf8.cmake")
 
-    UPDATE_COMMAND ""
-    CONFIGURE_COMMAND ""
+    include(ExternalProject)
+    include(CMakeParseArguments)
 
-    BUILD_COMMAND ""
-    BUILD_ALWAYS OFF
+    set(CXXOPTS_TAG v2.2.0)
+    set(CXXOPTS_URL https://github.com/jarro2783/cxxopts.git)
 
-    INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/include/ ${EXTERNALS_PREFIX_PATH}/include/
+    ExternalProject_Add(extlib_cxxopts
+	PREFIX extlib_cxxopts
 
-    LOG_DOWNLOAD ON
-    LOG_BUILD ON
+    	GIT_REPOSITORY ${CXXOPTS_URL}
+    	GIT_TAG ${CXXOPTS_TAG}
+
+    	UPDATE_COMMAND ""
+    	CONFIGURE_COMMAND ""
+
+    	BUILD_COMMAND ""
+    	BUILD_ALWAYS OFF
+
+	INSTALL_DIR     ${EXTERNALS_PREFIX_PATH}
+    	INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/include/ ${EXTERNALS_PREFIX_PATH}/include/
+
+    	LOG_DOWNLOAD ON
+    	LOG_BUILD ON
     )
 
-add_library(cxxopts INTERFACE)
-add_custom_target(install_extlib_cxxopts DEPENDS extlib_cxxopts)
-add_dependencies(cxxopts install_extlib_cxxopts)
+    add_library(${ext_name_cxxopts} INTERFACE IMPORTED)
+    add_dependencies(${ext_name_cxxopts} extlib_cxxopts)
+    set_target_properties(${ext_name_cxxopts} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES ${EXTERNALS_PREFIX_PATH}/include)
+
+endif()

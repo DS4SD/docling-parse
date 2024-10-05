@@ -1,6 +1,7 @@
 //-*-C++-*-
 
-#include <utf8/utf8.h>
+//#include <utf8/utf8.h>
+#include <utf8.h>
 
 #include <v1.h>
 
