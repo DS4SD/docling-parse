@@ -3,7 +3,7 @@
 #ifndef PYBIND_PDF_PARSER_H
 #define PYBIND_PDF_PARSER_H
 
-#include <utf8/utf8.h>
+#include <utf8.h>
 
 #include <v1.h>
 
