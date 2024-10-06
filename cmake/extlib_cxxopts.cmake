@@ -18,8 +18,9 @@ else()
     include(ExternalProject)
     include(CMakeParseArguments)
 
-    set(CXXOPTS_TAG v2.2.0)
     set(CXXOPTS_URL https://github.com/jarro2783/cxxopts.git)
+    #set(CXXOPTS_TAG v2.2.0)
+    set(CXXOPTS_TAG v3.2.0)
 
     ExternalProject_Add(extlib_cxxopts
 	PREFIX extlib_cxxopts
@@ -42,6 +43,7 @@ else()
 
     add_library(${ext_name_cxxopts} INTERFACE IMPORTED)
     add_dependencies(${ext_name_cxxopts} extlib_cxxopts)
-    set_target_properties(${ext_name_cxxopts} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES ${EXTERNALS_PREFIX_PATH}/include)
+    set_target_properties(${ext_name_cxxopts} PROPERTIES
+      INTERFACE_INCLUDE_DIRECTORIES ${EXTERNALS_PREFIX_PATH}/include)
 
 endif()

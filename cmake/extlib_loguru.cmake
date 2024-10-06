@@ -22,13 +22,13 @@ else()
     execute_process(COMMAND mkdir -p ${LOGURU_INCLUDE_DIR})
 
     set(LOGURU_URL https://github.com/emilk/loguru)
-    #set(LOGURU_TAG v2.1.0)
+    set(LOGURU_TAG v2.1.0)
 
     ExternalProject_Add(extlib_loguru
 	PREFIX extlib_loguru
 
     	GIT_REPOSITORY ${LOGURU_URL}
-    	#GIT_TAG ${LOGURU_TAG}
+    	GIT_TAG ${LOGURU_TAG}
 
     	UPDATE_COMMAND ""
     	CONFIGURE_COMMAND ""
