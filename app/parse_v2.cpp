@@ -95,8 +95,9 @@ int main(int argc, char* argv[]) {
       return 1;
     }
 
+    std::string level = "warning";
     if (result.count("loglevel")){
-      std::string level = result["loglevel"].as<std::string>();
+      level = result["loglevel"].as<std::string>();
 
       // Convert the string to lowercase
       std::transform(level.begin(), level.end(), level.begin(), [](unsigned char c) {
@@ -158,7 +159,7 @@ int main(int argc, char* argv[]) {
 
       utils::timer timer;
 
-      plib::parser parser;
+      plib::parser parser(level);
       parser.parse(config);
 
       LOG_S(INFO) << "total-time [sec]: " << timer.get_time();
@@ -171,7 +172,8 @@ int main(int argc, char* argv[]) {
       return 0;
     }
 
-  } catch (const cxxopts::OptionException& e) {
+    //} catch (const cxxopts::OptionException& e) {
+  } catch (const cxxopts::exceptions::exception& e) {
     LOG_F(ERROR, "Error parsing options: %s", e.what());
     return 1;
   }

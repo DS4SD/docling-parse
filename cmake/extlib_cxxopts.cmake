@@ -19,8 +19,8 @@ else()
     include(CMakeParseArguments)
 
     set(CXXOPTS_URL https://github.com/jarro2783/cxxopts.git)
-    set(CXXOPTS_TAG v2.2.0)
-    #set(CXXOPTS_TAG v3.2.0)
+    #set(CXXOPTS_TAG v2.2.0)
+    set(CXXOPTS_TAG v3.2.0)
 
     ExternalProject_Add(extlib_cxxopts
 	PREFIX extlib_cxxopts
