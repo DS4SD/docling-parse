@@ -349,13 +349,13 @@ files = [
 
 [[package]]
 name = "cibuildwheel"
-version = "2.21.1"
+version = "2.21.2"
 description = "Build Python wheels on CI with minimal configuration."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "cibuildwheel-2.21.1-py3-none-any.whl", hash = "sha256:cd50ae4ef79cd095565558fda41d5056ae3edf1291a73245326d8a7a692f0c48"},
-    {file = "cibuildwheel-2.21.1.tar.gz", hash = "sha256:b186b2723b928b9ca4d5d08d555f4f0fe0c3c69d5b80bb7fddd838dddc0c7f65"},
+    {file = "cibuildwheel-2.21.2-py3-none-any.whl", hash = "sha256:60c3bd4e374c459dda09c4be5da5084e86e19310dbd9052f630b76bf3942aabb"},
+    {file = "cibuildwheel-2.21.2.tar.gz", hash = "sha256:57b04c8afe1db6e03e78f9a4af8525410344a65a585a3369755433ce5fbc7754"},
 ]
 
 [package.dependencies]
@@ -1735,8 +1735,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-<<<<<<< HEAD
-content-hash = "89d04defd474e4828ae97a60c75121205a7b4dd19b8c7a78fd704c85c40fb620"
-=======
-content-hash = "264ea9ccfbffc8d7f2030a893b8a7e06ccbdf8068f6d327f67296fc9dff261fa"
->>>>>>> main
+content-hash = "9775a94fd7aa0bd336229f0b66976cad280a16d13e05a284175b3756f0d3c693"
