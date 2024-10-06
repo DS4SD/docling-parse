@@ -18,14 +18,14 @@ docker build -f - . <<EOF
             gcc gcc-c++ git make cmake pkgconfig glibc-devel \
             python3.11 python3.11-pip python3.11-devel \
             libjpeg-turbo-devel libpng-devel qpdf-devel json-devel utf8cpp-devel zlib-devel \
-            loguru-devel  \
+            loguru-devel cxxopts-devel \
         && dnf clean all
     
     RUN mkdir /src
     COPY ./dist/*.tar.gz /src/
 
     RUN USE_SYSTEM_DEPS=ON pip3.11 install /src/docling_parse*.tar.gz \
-        && python3.11 -c 'from docling_parse.docling_parse import pdf_parser'
+        && python3.11 -c 'from docling_parse.docling_parse import pdf_parser, pdf_parser_v2'
     
     COPY ./tests /src/tests
     RUN cd /src \

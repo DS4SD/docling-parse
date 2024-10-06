@@ -100,7 +100,6 @@ if(NOT USE_SYSTEM_DEPS)
     endif()
 endif()
 
-
 # include dependencies
 include(cmake/extlib_cxxopts.cmake)
 include(cmake/extlib_loguru.cmake)
