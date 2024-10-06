@@ -18,7 +18,7 @@ docker build -f - . <<EOF
             gcc gcc-c++ git make cmake pkgconfig glibc-devel \
             python3.11 python3.11-pip python3.11-devel \
             libjpeg-turbo-devel libpng-devel qpdf-devel json-devel utf8cpp-devel zlib-devel \
-            loguru-devel cxxopts-devel \
+            loguru-devel \
         && dnf clean all
     
     RUN mkdir /src
