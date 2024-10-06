@@ -131,12 +131,20 @@ include_directories(${EXTERNALS_PREFIX_PATH}/include)
 include_directories(${TOPLEVEL_PREFIX_PATH}/src)
 
 subdirlist(SUBDIRS ${TOPLEVEL_PREFIX_PATH}/src)
-message(STATUS "subdirs: " ${SUBDIRS})
 include_directories(${SUBDIRS})
 
 # **********************
 # ***  Executables   ***
 # **********************
+
+string(REPLACE ";" ";" SUBDIRS_SEMICOLON "${SUBDIRS}")
+message(STATUS "subdirs: ${SUBDIRS_SEMICOLON}")
+
+string(REPLACE ";" ";" DEPENDENCIES_SEMICOLON "${DEPENDENCIES}")
+message(STATUS "cmake dependencies: ${DEPENDENCIES_SEMICOLON}")
+
+string(REPLACE ";" ";" LIBLINK_SEMICOLON "${LIB_LINK}")
+message(STATUS "cmake lib-link: ${LIBLINK_SEMICOLON}")
 
 # add_executable(parse.exe "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
 add_executable(parse_v1.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
@@ -159,9 +167,9 @@ target_include_directories(parse_v2.exe INTERFACE ${DEPENDENCIES})
 target_include_directories(parse_v2_fonts.exe INTERFACE ${DEPENDENCIES})
 
 # target_link_libraries(parse.exe ${DEPENDENCIES} ${LIB_LINK})
-target_link_libraries(parse_v1.exe ${LIB_LINK})
-target_link_libraries(parse_v2.exe ${LIB_LINK})
-target_link_libraries(parse_v2_fonts.exe ${LIB_LINK})
+target_link_libraries(parse_v1.exe ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v2.exe ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v2_fonts.exe ${DEPENDENCIES} ${LIB_LINK})
 
 # **********************
 # ***  Libraries     ***
