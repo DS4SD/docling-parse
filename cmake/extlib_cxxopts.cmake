@@ -13,7 +13,7 @@ if(USE_SYSTEM_DEPS)
     add_dependencies(${ext_name_cxxopts} cxxopts)
 
 else()
-    message(STATUS "ignoring system-deps extlib_utf8.cmake")
+    message(STATUS "ignoring system-deps extlib_cxxopts.cmake")
 
     include(ExternalProject)
     include(CMakeParseArguments)

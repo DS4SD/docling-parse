@@ -110,7 +110,7 @@ include(cmake/extlib_jpeg.cmake)
 include(cmake/extlib_qpdf_v11.cmake)
 
 # aggregate the targets created by the dependencies
-set(DEPENDENCIES qpdf jpeg utf8 json)
+set(DEPENDENCIES qpdf jpeg utf8 json loguru cxxopts)
 
 # ************************
 # *** libraries        ***
@@ -127,6 +127,7 @@ list(APPEND DEPENDENCIES ${OS_DEPENDENCIES})
 # define subdirlist utility
 include(cmake/subdirlist.cmake)
 
+include_directories(${EXTERNALS_PREFIX_PATH}/include)
 include_directories(${TOPLEVEL_PREFIX_PATH}/src)
 
 subdirlist(SUBDIRS ${TOPLEVEL_PREFIX_PATH}/src)
@@ -214,15 +215,3 @@ target_link_libraries(docling_parse PRIVATE libparse_v1 libparse_v2)
 # *****************
 
 install(TARGETS docling_parse DESTINATION "${TOPLEVEL_PREFIX_PATH}/docling_parse")
-
-# *****************
-# ***  Testing  ***
-# *****************
-
-#function(do_test target arg result)
-#  add_test(NAME Comp${arg} COMMAND ${target} ${arg})
-#  set_tests_properties(Comp${arg} PROPERTIES PASS_REGULAR_EXPRESSION ${result})
-# endfunction()
-
-# do a bunch of result based tests
-# do_test(Tutorial 4 "4 is 2")
