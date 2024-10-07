@@ -12,8 +12,12 @@ namespace plib
   public:
 
     parser();
+    parser(std::string loglevel);
+
     ~parser();
 
+    void set_loglevel_with_label(std::string level);
+    
     void parse(std::string filename);
     void parse(nlohmann::json config);
 
@@ -21,6 +25,8 @@ namespace plib
 
   private:
 
+
+    
     void execute_parse();
     
     bool parse_input(std::string filename);
@@ -42,8 +48,38 @@ namespace plib
     //LOG_S(INFO) << "QPDF-version: " << QPDF::QPDFVersion();
   }
 
+  parser::parser(std::string loglevel)
+  {
+    set_loglevel_with_label(loglevel);
+    LOG_S(INFO) << "QPDF-version: " << QPDF::QPDFVersion();
+  }
+  
   parser::~parser()
   {}
+
+  void parser::set_loglevel_with_label(std::string level)
+  {
+    if(level=="info")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_INFO;
+      }
+    else if(level=="warning")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_WARNING;
+      }
+    else if(level=="error")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
+      }
+    else if(level=="fatal")
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_FATAL;
+      }
+    else
+      {
+        loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;
+      }
+  }
   
   void parser::parse(std::string filename)
   {

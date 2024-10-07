@@ -12,16 +12,16 @@ jobs:
         python-version: ['3.9', '3.10', '3.11', '3.12']
     steps:
       - uses: actions/checkout@v4
-      # - name: Install dependencies [linux]
-      #   run: sudo apt-get install -y libldap-common
-      #   shell: bash
       - uses: ./.github/actions/setup-poetry
         with:
           python-version: ${{ matrix.python-version }}
       - name: Run styling check
         run: poetry run pre-commit run --all-files
       - name: Install with poetry
-        run: poetry install --all-extras
+        run: |
+          poetry install --all-extras
+          ls -l
+          ls -l docling_parse
       - name: Testing
         run: |
           poetry run pytest -v tests

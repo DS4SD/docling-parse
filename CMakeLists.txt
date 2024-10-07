@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.12..3.26)
 
 project(docling_parse VERSION 1.0.0 LANGUAGES CXX C)
 #set(CMAKE_VERBOSE_MAKEFILE off)
@@ -84,41 +84,49 @@ message(STATUS "cxx-flags   : " ${CMAKE_CXX_FLAGS})
 message(STATUS "cxx-standard: " ${CMAKE_CXX_STANDARD})
 
 # ************************
-# *** libraries        ***
+# *** dependencies     ***
 # ************************
 
-if(NOT EXISTS ${EXTERNALS_PREFIX_PATH})
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH})
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/bin)
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/lib)
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/include)
-  execute_process(COMMAND mkdir ${EXTERNALS_PREFIX_PATH}/resources)
+option(USE_SYSTEM_DEPS OFF "If enabled, the build will find and link to system dependencies, otherwise they are sourced from the original repos and compiled on the fly.")
+
+# prepare setup for building external packages
+if(NOT USE_SYSTEM_DEPS)
+    if(NOT EXISTS ${EXTERNALS_PREFIX_PATH})
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH})
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/bin)
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/lib)
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/include)
+        file(MAKE_DIRECTORY ${EXTERNALS_PREFIX_PATH}/resources)
+    endif()
 endif()
 
-include(cmake/subdirlist.cmake)
-
+# include dependencies
 include(cmake/extlib_cxxopts.cmake)
 include(cmake/extlib_loguru.cmake)
 include(cmake/extlib_json.cmake)
 include(cmake/extlib_utf8.git.cmake)
 include(cmake/extlib_jpeg.cmake)
-# include(cmake/extlib_qpdf_v10.cmake)
 include(cmake/extlib_qpdf_v11.cmake)
-include(cmake/extlib_pybind11.cmake)
 
+# aggregate the targets created by the dependencies
+set(DEPENDENCIES qpdf jpeg utf8 json loguru cxxopts)
+
+# ************************
+# *** libraries        ***
+# ************************
+
+# define LIB_LINK and OS_DEPENDENCIES
 include(cmake/os_opts.cmake)
+list(APPEND DEPENDENCIES ${OS_DEPENDENCIES})
 
 # ***********************
 # ***  includes       ***
 # ***********************
 
+# define subdirlist utility
+include(cmake/subdirlist.cmake)
+
 include_directories(${EXTERNALS_PREFIX_PATH}/include)
-
-subdirlist(EXTERNALS_INCLUDES ${EXTERNALS_PREFIX_PATH}/include)	
-include_directories(${EXTERNALS_INCLUDES})
-
-message(STATUS "subdirs: " ${SUBDIRS})
-
 include_directories(${TOPLEVEL_PREFIX_PATH}/src)
 
 subdirlist(SUBDIRS ${TOPLEVEL_PREFIX_PATH}/src)
@@ -128,70 +136,89 @@ include_directories(${SUBDIRS})
 # ***  Executables   ***
 # **********************
 
+string(REPLACE ";" ";" SUBDIRS_SEMICOLON "${SUBDIRS}")
+message(STATUS "subdirs: ${SUBDIRS_SEMICOLON}")
+
+string(REPLACE ";" ";" DEPENDENCIES_SEMICOLON "${DEPENDENCIES}")
+message(STATUS "cmake dependencies: ${DEPENDENCIES_SEMICOLON}")
+
+string(REPLACE ";" ";" LIBLINK_SEMICOLON "${LIB_LINK}")
+message(STATUS "cmake lib-link: ${LIBLINK_SEMICOLON}")
+
+# add_executable(parse.exe "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
 add_executable(parse_v1.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
 add_executable(parse_v2.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v2.cpp")
 add_executable(parse_v2_fonts.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v2_fonts.cpp")
 
+# set_property(TARGET parse.exe PROPERTY CXX_STANDARD 20)
 set_property(TARGET parse_v1.exe PROPERTY CXX_STANDARD 20)
 set_property(TARGET parse_v2.exe PROPERTY CXX_STANDARD 20)
 set_property(TARGET parse_v2_fonts.exe PROPERTY CXX_STANDARD 20)
 
-target_link_libraries(parse_v1.exe ${LIB_LINK})
-target_link_libraries(parse_v2.exe ${LIB_LINK})
-target_link_libraries(parse_v2_fonts.exe ${LIB_LINK})
+# add_dependencies(parse.exe ${DEPENDENCIES})
+add_dependencies(parse_v1.exe ${DEPENDENCIES})
+add_dependencies(parse_v2.exe ${DEPENDENCIES})
+add_dependencies(parse_v2_fonts.exe ${DEPENDENCIES})
+
+# target_include_directories(parse.exe INTERFACE ${DEPENDENCIES})
+target_include_directories(parse_v1.exe INTERFACE ${DEPENDENCIES})
+target_include_directories(parse_v2.exe INTERFACE ${DEPENDENCIES})
+target_include_directories(parse_v2_fonts.exe INTERFACE ${DEPENDENCIES})
+
+# target_link_libraries(parse.exe ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v1.exe ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v2.exe ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v2_fonts.exe ${DEPENDENCIES} ${LIB_LINK})
 
 # **********************
 # ***  Libraries     ***
 # **********************
 
-add_library(parse_v1 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
-add_library(parse_v2 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
+# add_library(libparse STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
+add_library(libparse_v1 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
+add_library(libparse_v2 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
 
-set_target_properties(parse_v1 PROPERTIES POSITION_INDEPENDENT_CODE ON)
-set_target_properties(parse_v2 PROPERTIES POSITION_INDEPENDENT_CODE ON)
+# add_dependencies(libparse ${DEPENDENCIES})
+add_dependencies(libparse_v1 ${DEPENDENCIES})
+add_dependencies(libparse_v2 ${DEPENDENCIES})
 
-target_link_libraries(parse_v1 ${LIB_LINK})
-target_link_libraries(parse_v2 ${LIB_LINK})
+# target_include_directories(libparse INTERFACE ${DEPENDENCIES})
+target_include_directories(libparse_v1 INTERFACE ${DEPENDENCIES})
+target_include_directories(libparse_v2 INTERFACE ${DEPENDENCIES})
+
+# set_target_properties(libparse PROPERTIES POSITION_INDEPENDENT_CODE ON)
+set_target_properties(libparse_v1 PROPERTIES POSITION_INDEPENDENT_CODE ON)
+set_target_properties(libparse_v2 PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+# target_link_libraries(libparse ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(libparse_v1 ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(libparse_v2 ${DEPENDENCIES} ${LIB_LINK})
 
 # ***************************
 # ***  Python-binding     ***
 # ***************************
 
-# inspiration from
-# 1. https://github.com/pybind/cmake_example/blob/master/CMakeLists.txt`
-# 2. https://blog.devgenius.io/calling-python-and-c-code-using-pybind-99ab7fefa685
-# 3. https://github.com/pybind/cmake_example/issues/11
-
-include(FetchContent)
-FetchContent_Declare(pybind11
-  FETCHCONTENT_BASE_DIR extlib_pybind11 
-  GIT_REPOSITORY https://github.com/pybind/pybind11.git
-  GIT_TAG        v2.13.5
-  GIT_SHALLOW    TRUE
-)
-FetchContent_MakeAvailable(pybind11)
+# https://pybind11.readthedocs.io/en/stable/compiling.html
+# https://pybind11.readthedocs.io/en/stable/compiling.html#configuration-variables
+find_package(pybind11 CONFIG REQUIRED)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
 
-add_dependencies(docling_parse json utf8)  # we have to list the headers-only deps here
-target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
+# add_dependencies(docling_parse json utf8)  # we have to list the headers-only deps here
+# add_dependencies(docling_parse libparse)
+add_dependencies(docling_parse libparse_v1 libparse_v2)
 
-target_link_libraries(docling_parse PRIVATE parse_v1)
+# target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
+target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
+
+# target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
+target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${CMAKE_PROJECT_VERSION})
+
+# target_link_libraries(docling_parse PRIVATE libparse)
+target_link_libraries(docling_parse PRIVATE libparse_v1 libparse_v2)
 
 # *****************
 # ***  Install  ***
 # *****************
 
 install(TARGETS docling_parse DESTINATION "${TOPLEVEL_PREFIX_PATH}/docling_parse")
-
-# *****************
-# ***  Testing  ***
-# *****************
-
-#function(do_test target arg result)
-#  add_test(NAME Comp${arg} COMMAND ${target} ${arg})
-#  set_tests_properties(Comp${arg} PROPERTIES PASS_REGULAR_EXPRESSION ${result})
-# endfunction()
-
-# do a bunch of result based tests
-# do_test(Tutorial 4 "4 is 2")

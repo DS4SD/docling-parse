@@ -14,7 +14,7 @@ jobs:
       # list of github vm: https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners#standard-github-hosted-runners-for-public-repositories
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.10", "3.11", "3.12"]
 
         os:
           - name: "ubuntu-latest"
@@ -51,11 +51,21 @@ jobs:
 
       - name: Setup Python
         uses: actions/setup-python@v5
+        id: py
         with:
           python-version: ${{ matrix.python-version }}
+          update-environment: false
 
       - name: Install Poetry
-        run: python -m pip install poetry==1.8.3
+        run: |
+          which python
+          python --version
+          which python3
+          python3 --version
+          echo "pythonpath: ${{ steps.py.outputs.python-path }}"
+          ${{ steps.py.outputs.python-path }} --version
+          pipx install poetry==1.8.3
+          poetry env use ${{ steps.py.outputs.python-path }}
 
       - name: Set up custom PATH and set py version to cpXYZ [windows]
         if: ${{matrix.os.platform_id == 'win_amd64'}}
@@ -97,9 +107,15 @@ jobs:
           CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
+          PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
         run: |
-          echo "Building wheel ${CIBW_BUILD}"
+          PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
+          echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
+          echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building cache_tag: ${PY_CACHE_TAG}"
+          echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
+          poetry run python --version | grep ${{ matrix.python-version }} 
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
@@ -115,8 +131,12 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            echo "Checking if .so is contained in the wheel"
+            poetry run python -m zipfile --list "$file" | grep \\.so
+            echo "Checking if the correct python version is contained in the wheel"
+            poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
           done
-          mkdir ./dist
+          mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
 
       # there is an error with the tagging of wheels for macosx-arm64
@@ -137,9 +157,16 @@ jobs:
           CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
+          PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
+          CUDA_VISIBLE_DEVICES: "cpu"
         run: |
-          echo "Building wheel ${CIBW_BUILD}"
+          PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
+          echo "Building wheel ${CIBW_BUILD} ${{ env.CIBW_BUILD }}"
+          echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building cache_tag: ${PY_CACHE_TAG}"
+          echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
+          poetry run python --version | grep ${{ matrix.python-version }} 
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir wheelhouse
@@ -155,8 +182,12 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            echo "Checking if .so is contained in the wheel"
+            poetry run python -m zipfile --list "$file" | grep \\.so
+            echo "Checking if the correct python version is contained in the wheel"
+            poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
           done
-          mkdir ./dist
+          mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
 
       - name: Set up QEMU [linux]
@@ -165,6 +196,13 @@ jobs:
         with:
             platforms: all
 
+      - name: Build sdist
+        # build only on Linux to avoid too many duplicates of the sdist
+        if: matrix.os.name == 'ubuntu-latest' 
+        run: |
+          echo "Building wheel ${CIBW_BUILD}"
+          poetry build -f sdist
+        
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
         env:
@@ -176,8 +214,12 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           BUILD_THREADS: "8"
         run: |
-          echo "Building wheel ${CIBW_BUILD}"
+          PY_CACHE_TAG=$(poetry run python -c 'import sys;print(sys.implementation.cache_tag)')
+          echo "Building cp: ${{ env.python_cp_version }}"
+          echo "Building cache_tag: ${PY_CACHE_TAG}"
+          echo "Building platform_id: ${{ matrix.os.platform_id }}"
           poetry run python --version
+          poetry run python --version | grep ${{ matrix.python-version }} 
           poetry install --no-root --only=build
           cat ./pyproject.toml
           poetry run python -m cibuildwheel --output-dir ./wheelhouse
@@ -185,8 +227,12 @@ jobs:
           for file in ./wheelhouse/*.whl; do
             echo "Inspecting $file"
             poetry run python -m zipfile --list "$file"
+            echo "Checking if .so is contained in the wheel"
+            poetry run python -m zipfile --list "$file" | grep \\.so
+            echo "Checking if the correct python version is contained in the wheel"
+            poetry run python -m zipfile --list "$file" | grep ${PY_CACHE_TAG}
           done
-          mkdir ./dist
+          mkdir -p ./dist
           cp wheelhouse/*.whl ./dist/
 
       - name: Set up MSYS2 [windows]
@@ -196,12 +242,15 @@ jobs:
           update: true
           install: >
             mingw-w64-x86_64-toolchain 
-            mingw-w64-i686-toolchain
+            mingw-w64-x86_64-gcc-libs
             
-      - name: Set up QPDF external-libs [windows]
+      - name: Set up external-libs [windows]
         if: ${{matrix.os.platform_id == 'win_amd64'}}
         shell: pwsh
         run: |
+          Copy-Item -Path "C:/mingw64/bin/libgcc_s_seh-1.dll" -Destination ".\docling_parse"
+          Copy-Item -Path "C:/mingw64/bin/libstdc++-6.dll" -Destination ".\docling_parse"
+          Copy-Item -Path "C:/mingw64/bin/libwinpthread-1.dll" -Destination ".\docling_parse"
           New-Item -Path 'C:\windows-libs' -ItemType Directory -Force
           Invoke-WebRequest -Uri 'https://github.com/qpdf/external-libs/releases/download/release-2024-06-07/qpdf-external-libs-bin.zip' -OutFile 'C:\windows-libs\qpdf-external-libs-bin.zip'
           Expand-Archive -Path 'C:\windows-libs\qpdf-external-libs-bin.zip' -DestinationPath 'C:\windows-libs' -Force
@@ -222,11 +271,11 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CIBW_ARCHS: AMD64
           CIBW_PROJECT_REQUIRES_PYTHON: "~=${{ matrix.python-version }}.0"
-          PKG_CONFIG_PATH: "C:/msys64/mingw64/lib/pkgconfig"
-          PKG_CONFIG_EXECUTABLE: "C:/msys64/usr/bin/pkg-config.exe"
-          CMAKE_PREFIX_PATH: "C:/msys64/mingw64;C:/windows-libs/external-libs"
-          CMAKE_LIBRARY_PATH: "C:/msys64/mingw64/lib;C:/windows-libs/external-libs/lib-mingw64"
-          CMAKE_INCLUDE_PATH: "C:/msys64/mingw64/include;C:/windows-libs/external-libs/include"
+          PKG_CONFIG_PATH: "C:/msys64/usr/lib/pkgconfig"
+          PKG_CONFIG_EXECUTABLE: "C:/mingw64/bin/pkg-config.exe"
+          CMAKE_PREFIX_PATH: "C:/msys64/mingw64;C:/mingw64;C:/windows-libs/external-libs"
+          CMAKE_LIBRARY_PATH: "C:/msys64/mingw64/lib;C:/mingw64/lib;C:/windows-libs/external-libs/lib-mingw64"
+          CMAKE_INCLUDE_PATH: "C:/msys64/mingw64/include;C:/mingw64/include;C:/windows-libs/external-libs/include"
           CMAKE_GENERATOR: "MSYS Makefiles"
           BUILD_THREADS: 1
           ASM_NASM: "C:/nasm/nasm.exe"
@@ -249,9 +298,9 @@ jobs:
 
       - name: publish wheels (dry run)
         run: |
-          poetry publish --dry-run --no-interaction -vvv
+          poetry publish --skip-existing --dry-run --no-interaction -vvv
 
       - name: publish wheels (on publishing) [for releases only]
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
         run: |
-          poetry publish --no-interaction -vvv
+          poetry publish --skip-existing --no-interaction -vvv
