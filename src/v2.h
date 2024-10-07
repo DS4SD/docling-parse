@@ -23,7 +23,8 @@
 #define LOGURU_WITH_STREAMS 1
 #include <loguru/loguru.cpp>
 
-#include <utf8/utf8.h>
+//#include <utf8/utf8.h>
+#include <utf8.h>
 #include <nlohmann/json.hpp>
 
 #define POINTERHOLDER_TRANSITION 0 // eliminate warnings from QPDF

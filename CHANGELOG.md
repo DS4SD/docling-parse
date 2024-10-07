@@ -1,3 +1,25 @@
+## [v1.4.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.4.1) - 2024-10-02
+
+### Fix
+
+* Windows build properly linking to system libraries ([#36](https://github.com/DS4SD/docling-parse/issues/36)) ([`e26ed05`](https://github.com/DS4SD/docling-parse/commit/e26ed056c22400552918c3a97dfb13614c9a03f5))
+
+## [v1.4.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.4.0) - 2024-10-02
+
+### Feature
+
+* Build using system deps ([#33](https://github.com/DS4SD/docling-parse/issues/33)) ([`e1c8e49`](https://github.com/DS4SD/docling-parse/commit/e1c8e4980faab35bfdf6d1a78d8749745c560889))
+
+### Fix
+
+* Python version in wheels ([#31](https://github.com/DS4SD/docling-parse/issues/31)) ([`8d903ba`](https://github.com/DS4SD/docling-parse/commit/8d903baf61a7706066374c23265e115a9513c3ba))
+
+## [v1.3.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.3.1) - 2024-09-30
+
+### Fix
+
+* Sdist and wheels content ([#28](https://github.com/DS4SD/docling-parse/issues/28)) ([`f3febc5`](https://github.com/DS4SD/docling-parse/commit/f3febc53a2a6565b16847113633f92d1a2dab48a))
+
 ## [v1.3.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.3.0) - 2024-09-20
 
 ### Feature
