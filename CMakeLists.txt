@@ -145,27 +145,22 @@ message(STATUS "cmake dependencies: ${DEPENDENCIES_SEMICOLON}")
 string(REPLACE ";" ";" LIBLINK_SEMICOLON "${LIB_LINK}")
 message(STATUS "cmake lib-link: ${LIBLINK_SEMICOLON}")
 
-# add_executable(parse.exe "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
 add_executable(parse_v1.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
 add_executable(parse_v2.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v2.cpp")
 add_executable(parse_v2_fonts.exe "${TOPLEVEL_PREFIX_PATH}/app/parse_v2_fonts.cpp")
 
-# set_property(TARGET parse.exe PROPERTY CXX_STANDARD 20)
 set_property(TARGET parse_v1.exe PROPERTY CXX_STANDARD 20)
 set_property(TARGET parse_v2.exe PROPERTY CXX_STANDARD 20)
 set_property(TARGET parse_v2_fonts.exe PROPERTY CXX_STANDARD 20)
 
-# add_dependencies(parse.exe ${DEPENDENCIES})
 add_dependencies(parse_v1.exe ${DEPENDENCIES})
 add_dependencies(parse_v2.exe ${DEPENDENCIES})
 add_dependencies(parse_v2_fonts.exe ${DEPENDENCIES})
 
-# target_include_directories(parse.exe INTERFACE ${DEPENDENCIES})
 target_include_directories(parse_v1.exe INTERFACE ${DEPENDENCIES})
 target_include_directories(parse_v2.exe INTERFACE ${DEPENDENCIES})
 target_include_directories(parse_v2_fonts.exe INTERFACE ${DEPENDENCIES})
 
-# target_link_libraries(parse.exe ${DEPENDENCIES} ${LIB_LINK})
 target_link_libraries(parse_v1.exe ${DEPENDENCIES} ${LIB_LINK})
 target_link_libraries(parse_v2.exe ${DEPENDENCIES} ${LIB_LINK})
 target_link_libraries(parse_v2_fonts.exe ${DEPENDENCIES} ${LIB_LINK})
@@ -174,25 +169,20 @@ target_link_libraries(parse_v2_fonts.exe ${DEPENDENCIES} ${LIB_LINK})
 # ***  Libraries     ***
 # **********************
 
-# add_library(libparse STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse.cpp")
-add_library(libparse_v1 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
-add_library(libparse_v2 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
+add_library(parse_v1 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
+add_library(parse_v2 STATIC "${TOPLEVEL_PREFIX_PATH}/app/parse_v1.cpp")
 
-# add_dependencies(libparse ${DEPENDENCIES})
-add_dependencies(libparse_v1 ${DEPENDENCIES})
-add_dependencies(libparse_v2 ${DEPENDENCIES})
+add_dependencies(parse_v1 ${DEPENDENCIES})
+add_dependencies(parse_v2 ${DEPENDENCIES})
 
-# target_include_directories(libparse INTERFACE ${DEPENDENCIES})
-target_include_directories(libparse_v1 INTERFACE ${DEPENDENCIES})
-target_include_directories(libparse_v2 INTERFACE ${DEPENDENCIES})
+target_include_directories(parse_v1 INTERFACE ${DEPENDENCIES})
+target_include_directories(parse_v2 INTERFACE ${DEPENDENCIES})
 
-# set_target_properties(libparse PROPERTIES POSITION_INDEPENDENT_CODE ON)
-set_target_properties(libparse_v1 PROPERTIES POSITION_INDEPENDENT_CODE ON)
-set_target_properties(libparse_v2 PROPERTIES POSITION_INDEPENDENT_CODE ON)
+set_target_properties(parse_v1 PROPERTIES POSITION_INDEPENDENT_CODE ON)
+set_target_properties(parse_v2 PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
-# target_link_libraries(libparse ${DEPENDENCIES} ${LIB_LINK})
-target_link_libraries(libparse_v1 ${DEPENDENCIES} ${LIB_LINK})
-target_link_libraries(libparse_v2 ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v1 ${DEPENDENCIES} ${LIB_LINK})
+target_link_libraries(parse_v2 ${DEPENDENCIES} ${LIB_LINK})
 
 # ***************************
 # ***  Python-binding     ***
@@ -204,18 +194,13 @@ find_package(pybind11 CONFIG REQUIRED)
 
 pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
 
-# add_dependencies(docling_parse json utf8)  # we have to list the headers-only deps here
-# add_dependencies(docling_parse libparse)
-add_dependencies(docling_parse libparse_v1 libparse_v2)
+add_dependencies(docling_parse parse_v1 parse_v2)
 
-# target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
 target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
 
-# target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
 target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${CMAKE_PROJECT_VERSION})
 
-# target_link_libraries(docling_parse PRIVATE libparse)
-target_link_libraries(docling_parse PRIVATE libparse_v1 libparse_v2)
+target_link_libraries(docling_parse PRIVATE parse_v1 parse_v2)
 
 # *****************
 # ***  Install  ***
