@@ -166,9 +166,9 @@ def visualise_v1(
             y = path["y-values"]
 
             for l in range(0, len(i), 2):
-                if l+1>=len(i):
+                if l + 1 >= len(i):
                     continue
-                
+
                 i0 = i[l + 0]
                 i1 = i[l + 1]
 
