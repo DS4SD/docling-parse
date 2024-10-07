@@ -15,6 +15,11 @@ namespace pdflib
 {
   nlohmann::json to_json(QPDFObjectHandle obj, std::set<std::string> prev_objs={}, int level=0)
   {
+    //const static int max_level=32;
+    const static int max_level=128;
+    
+    LOG_S(INFO) << "to_json (level=" << level << "): " << prev_objs.size();
+    
     nlohmann::json result;
 
     if(obj.isDictionary() or obj.isArray())
@@ -38,16 +43,28 @@ namespace pdflib
             prev_objs.insert(this_obj);
           }
       }
-
-    if(level<128)
+    
+    if(level<max_level)
       {
+	const static std::set<std::string> keys_to_be_skipped = {"/Parent", "/P", "/Annots"};
+	
         if(obj.isDictionary())
           {
+	    /*
+	    LOG_S(INFO) << "detected dict: ";
             for(auto key : obj.getKeys())
               {
-                if(key=="/Parent" or key=="/P")
+		LOG_S(INFO) << " -> key: " << key;
+	      }
+	    */
+	    
+            for(auto key : obj.getKeys())
+              {
+		//LOG_S(INFO) << "key: " << key;
+
+                if(keys_to_be_skipped.count(key)==1)
                   {
-                    result[key] = "[skipping '/P']";
+                    result[key] = "[skipping " + key + "]";
                   }
                 else
                   {
@@ -57,6 +74,7 @@ namespace pdflib
           }
         else if(obj.isArray())
           {
+	    LOG_S(INFO) << "array: " << obj.getArrayNItems();
             for(int l=0; l<obj.getArrayNItems(); l++)
               {
                 QPDFObjectHandle new_obj = obj.getArrayItem(l);
@@ -137,7 +155,8 @@ namespace pdflib
         else
           {
             std::string val = obj.unparse() + " ["+obj.getTypeName()+"]";
-
+	    LOG_S(INFO) << "unidentified value: " << val;
+	      
 	    if(utf8::is_valid(val.begin(), val.end()))
 	      {
 		result = val;
@@ -157,8 +176,8 @@ namespace pdflib
       }
     else
       {
-        //LOG_S(ERROR) << __FUNCTION__ << "\t level=" << level << "\t" << obj.unparse();
-        //result = "[exceeding recursion]";
+        LOG_S(WARNING) << __FUNCTION__ << "\t level=" << level << "\t" << obj.unparse();
+        result = "[exceeding recursion]";
       }
 
     return result;
