@@ -129,7 +129,7 @@ namespace pdflib
     
     try
       {
-	LOG_S(INFO) << json_page.dump(2);
+	LOG_S(INFO) << "json_page: \n" << json_page.dump(2);
       }
     catch(const std::exception& e)
       {

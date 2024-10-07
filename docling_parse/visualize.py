@@ -166,12 +166,15 @@ def visualise_v1(
             y = path["y-values"]
 
             for l in range(0, len(i), 2):
+                if l+1>=len(i):
+                    continue
+                
                 i0 = i[l + 0]
                 i1 = i[l + 1]
 
-                for i in range(i0, i1 - 1):
+                for k in range(i0, i1 - 1):
                     draw.line(
-                        (x[i], H - y[i], x[i + 1], H - y[i + 1]),
+                        (x[k], H - y[k], x[k + 1], H - y[k + 1]),
                         fill="black",
                         width=3,
                     )
@@ -269,9 +272,9 @@ def visualise_v2(
                         i0 = i[l + 0]
                         i1 = i[l + 1]
 
-                        for i in range(i0, i1 - 1):
+                        for k in range(i0, i1 - 1):
                             draw.line(
-                                (x[i], H - y[i], x[i + 1], H - y[i + 1]),
+                                (x[k], H - y[k], x[k + 1], H - y[k + 1]),
                                 fill="black",
                                 width=3,
                             )
