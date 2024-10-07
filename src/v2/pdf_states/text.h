@@ -52,6 +52,9 @@ namespace pdflib
 
   private:
 
+    bool verify(std::vector<qpdf_instruction>& instructions,
+		std::size_t num_instr, std::string name);
+    
     void move_cursor(double tx, double ty);
 
     std::vector<pdf_resource<PAGE_CELL> > generate_cells(qpdf_instruction instruction,
@@ -159,6 +162,31 @@ namespace pdflib
     return *this;
   }
 
+  bool pdf_state<TEXT>::verify(std::vector<qpdf_instruction>& instructions,
+			       std::size_t num_instr, std::string name)
+  {
+    if(instructions.size()==num_instr)
+      {
+	return true;
+      }
+
+    if(instructions.size()>num_instr)
+      {
+	LOG_S(ERROR) << "#-instructions " << instructions.size()
+		     << " exceeds expected value " << num_instr << " for "
+		     << __FUNCTION__;
+	LOG_S(ERROR) << " => we can continue but might have incorrect results!";
+	
+	return true;
+      }
+    
+    LOG_S(ERROR) << "#-instructions " << instructions.size()
+		 << " does not match expected value " << num_instr << " for "
+		 << __FUNCTION__;
+
+    return false;
+  }
+  
   void pdf_state<TEXT>::BT()
   {
     //for(int l=0; l<9; l++)
@@ -181,15 +209,17 @@ namespace pdflib
 
   void pdf_state<TEXT>::Tc(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     char_spacing = instructions[0].to_double();
   }
 
   void pdf_state<TEXT>::Td(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==2);
-
+    //assert(instructions.size()==2);
+    if(not verify(instructions, 2, __FUNCTION__) ) { return; }
+    
     double tx = instructions[0].to_double();
     double ty = instructions[1].to_double();
 
@@ -206,8 +236,9 @@ namespace pdflib
 
   void pdf_state<TEXT>::TD(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==2);
-
+    //assert(instructions.size()==2);
+    if(not verify(instructions, 2, __FUNCTION__) ) { return; }
+    
     double tx = instructions[0].to_double();
     double ty = instructions[1].to_double();
 
@@ -217,7 +248,8 @@ namespace pdflib
 
   void pdf_state<TEXT>::Tf(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==2);
+    //assert(instructions.size()==2);
+    if(not verify(instructions, 2, __FUNCTION__) ) { return; }
     
     font_name = instructions[0].to_utf8_string();
     font_size = instructions[1].to_double();
@@ -234,7 +266,9 @@ namespace pdflib
 
   void pdf_state<TEXT>::Tj(std::vector<qpdf_instruction>& instructions, int stack_size)
   {
-    assert(instructions.size()==1);
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     instr_count += 1;
 
     std::vector<pdf_resource<PAGE_CELL> > cells = generate_cells(instructions[0],
@@ -249,7 +283,9 @@ namespace pdflib
 
   void pdf_state<TEXT>::TJ(std::vector<qpdf_instruction>& instructions, int stack_size)
   {
-    assert(instructions.size()==1);
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     instr_count += 1;
 
     for(auto item : instructions[0].obj.getArrayAsVector())
@@ -409,7 +445,8 @@ namespace pdflib
       double w0 = font.get_space_width();
       double w1 = (w0 / 1000.0 * font_size * h_scaling);// + (char_spacing+word_spacing)*h_scaling;
 
-      LOG_S(INFO) << __FUNCTION__ << "w0: " << w0 << ", w1: " << w1 << ", font_size: " << font_size << ", h_scaling: " << h_scaling;
+      LOG_S(INFO) << __FUNCTION__ << " -> w0: " << w0 << ", w1: " << w1 << ", "
+		  << "font_size: " << font_size << ", h_scaling: " << h_scaling;
       
       std::array<double, 8> rect = compute_rect(font_descent, font_ascent, w1);
       space_width = std::sqrt((rect[2]-rect[0])*(rect[2]-rect[0])+
@@ -705,7 +742,9 @@ namespace pdflib
 
   void pdf_state<TEXT>::TL(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     double tl = instructions[0].to_double();
 
     TL(tl);
@@ -718,8 +757,9 @@ namespace pdflib
 
   void pdf_state<TEXT>::Tm(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==6);
-
+    //assert(instructions.size()==6);
+    if(not verify(instructions, 6, __FUNCTION__) ) { return; }
+    
     double a = instructions[0].to_double();
     double b = instructions[1].to_double();
 
@@ -756,7 +796,9 @@ namespace pdflib
   */
   void pdf_state<TEXT>::Tr(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     int mode = instructions[0].to_int();
 
     rendering_mode = mode;
@@ -764,21 +806,25 @@ namespace pdflib
 
   void pdf_state<TEXT>::Ts(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     rise = instructions[0].to_double();
   }
 
   void pdf_state<TEXT>::TStar(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==0);
-
+    //assert(instructions.size()==0);
+    if(not verify(instructions, 0, __FUNCTION__) ) { return; }
+    
     this->Td(0, -leading);
   }
 
   void pdf_state<TEXT>::Tw(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     double tw = instructions[0].to_double();
 
     word_spacing = tw;
@@ -787,7 +833,9 @@ namespace pdflib
   // section 9.3.4 [p 258]
   void pdf_state<TEXT>::Tz(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     double th = instructions[0].to_double();
 
     h_scaling = th / 100.0;

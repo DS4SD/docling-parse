@@ -213,13 +213,30 @@ namespace pdflib
                 continue;
               }
 	    */
-
+	    
+	    /*
             for(auto p:parameters)
 	      {
 		LOG_S(INFO) << "\t" << std::setw(12) << p.key << " | " << p.val;
 	      }
             LOG_S(INFO) << " --> " << std::setw(12) << inst.key << " | " << inst.val;
-
+	    */
+	    
+	    for(auto itr=parameters.begin(); itr!=parameters.end(); )
+	      {
+		if(itr->key=="null" and itr->val=="null")
+		  {
+		    LOG_S(ERROR) << "\t" << std::setw(12) << itr->key << " | " << itr->val << " => erasing ...";
+		    itr = parameters.erase(itr);
+		  }
+		else
+		  {
+		    LOG_S(INFO) << "\t" << std::setw(12) << itr->key << " | " << itr->val;
+		    itr++;
+		  }
+	      }
+	    LOG_S(INFO) << " --> " << std::setw(12) << inst.key << " | " << inst.val;
+	    
             execute_operator(inst, parameters);
 
             parameters.clear();
