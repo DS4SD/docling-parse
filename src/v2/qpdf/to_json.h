@@ -13,6 +13,7 @@
 
 namespace pdflib
 {
+  // FIXME: add a begin time to cap the max time spent in this routine
   nlohmann::json to_json(QPDFObjectHandle obj, std::set<std::string> prev_objs={}, int level=0)
   {
     //const static int max_level=32;
