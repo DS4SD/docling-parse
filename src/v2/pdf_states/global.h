@@ -31,6 +31,11 @@ namespace pdflib
 
     void Do_form(pdf_resource<PAGE_XOBJECT>& xobj);
 
+  private:
+
+    bool verify(std::vector<qpdf_instruction>& instructions,
+		std::size_t num_instr, std::string name);
+    
   public:
 
     pdf_resource<PAGE_CELLS>& page_cells;
@@ -108,10 +113,37 @@ namespace pdflib
     return *this;
   }
 
+  bool pdf_state<GLOBAL>::verify(std::vector<qpdf_instruction>& instructions,
+				 std::size_t num_instr, std::string name)
+  {
+    if(instructions.size()==num_instr)
+      {
+	return true;
+      }
+
+    if(instructions.size()>num_instr)
+      {
+	LOG_S(ERROR) << "#-instructions " << instructions.size()
+		     << " exceeds expected value " << num_instr << " for "
+		     << __FUNCTION__;
+	LOG_S(ERROR) << " => we can continue but might have incorrect results!";
+	
+	return true;
+      }
+    
+    LOG_S(ERROR) << "#-instructions " << instructions.size()
+		 << " does not match expected value " << num_instr << " for "
+		 << __FUNCTION__;
+
+    return false;
+  }
+
+  
   void pdf_state<GLOBAL>::cm(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==6);
-
+    //assert(instructions.size()==6);
+    if(not verify(instructions, 6, __FUNCTION__) ) { return; }
+    
     std::array<double, 6> matrix;
 
     for(int d=0; d<6; d++)

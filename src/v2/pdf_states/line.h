@@ -58,6 +58,9 @@ namespace pdflib
 
   private:
 
+    bool verify(std::vector<qpdf_instruction>& instructions,
+		std::size_t num_instr, std::string name);
+    
     bool keep_line(pdf_resource<PAGE_LINE>& line);
 
     void close_last_path();
@@ -143,10 +146,36 @@ namespace pdflib
     return *this;
   }
 
+  bool pdf_state<LINE>::verify(std::vector<qpdf_instruction>& instructions,
+			       std::size_t num_instr, std::string name)
+  {
+    if(instructions.size()==num_instr)
+      {
+	return true;
+      }
+
+    if(instructions.size()>num_instr)
+      {
+	LOG_S(ERROR) << "#-instructions " << instructions.size()
+		     << " exceeds expected value " << num_instr << " for "
+		     << __FUNCTION__;
+	LOG_S(ERROR) << " => we can continue but might have incorrect results!";
+	
+	return true;
+      }
+    
+    LOG_S(ERROR) << "#-instructions " << instructions.size()
+		 << " does not match expected value " << num_instr << " for "
+		 << __FUNCTION__;
+
+    return false;
+  }
+  
   void pdf_state<LINE>::m(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==2);
-
+    //assert(instructions.size()==2);
+    if(not verify(instructions, 2, __FUNCTION__) ) { return; }
+    
     double x = instructions[0].to_double();
     double y = instructions[1].to_double();
 
@@ -155,8 +184,9 @@ namespace pdflib
 
   void pdf_state<LINE>::l(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==2);
-
+    //assert(instructions.size()==2);
+    if(not verify(instructions, 2, __FUNCTION__) ) { return; }
+    
     double x = instructions[0].to_double();
     double y = instructions[1].to_double();
 
@@ -165,8 +195,9 @@ namespace pdflib
 
   void pdf_state<LINE>::c(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==6);
-
+    //assert(instructions.size()==6);
+    if(not verify(instructions, 6, __FUNCTION__) ) { return; }
+    
     /*
     if(curr_lines.size()==0)
       {
@@ -204,8 +235,9 @@ namespace pdflib
 
   void pdf_state<LINE>::v(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==4);
-
+    //assert(instructions.size()==4);
+    if(not verify(instructions, 4, __FUNCTION__) ) { return; }
+    
     auto& line = curr_lines.back();
     std::pair<double, double> coor = line.back();    
 
@@ -226,8 +258,9 @@ namespace pdflib
 
   void pdf_state<LINE>::y(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==4);
-
+    //assert(instructions.size()==4);
+    if(not verify(instructions, 4, __FUNCTION__) ) { return; }
+    
     auto& line = curr_lines.back();
     std::pair<double, double> coor = line.back();    
 
@@ -248,15 +281,17 @@ namespace pdflib
 
   void pdf_state<LINE>::h(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==0);
-
+    //assert(instructions.size()==0);
+    if(not verify(instructions, 0, __FUNCTION__) ) { return; }
+    
     this->h();
   }
   
   void pdf_state<LINE>::re(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==4);
-
+    //assert(instructions.size()==4);
+    if(not verify(instructions, 4, __FUNCTION__) ) { return; }
+    
     double x = instructions[0].to_double();
     double y = instructions[1].to_double();
 

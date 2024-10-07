@@ -53,6 +53,11 @@ namespace pdflib
     void k(std::vector<qpdf_instruction>& instructions);
 
   private:
+
+    bool verify(std::vector<qpdf_instruction>& instructions,
+		std::size_t num_instr, std::string name);
+    
+  private:
     
     std::array<double, 9>& trafo_matrix;
 
@@ -132,39 +137,69 @@ namespace pdflib
     return *this;
   }
 
+  bool pdf_state<GRPH>::verify(std::vector<qpdf_instruction>& instructions,
+			       std::size_t num_instr, std::string name)
+  {
+    if(instructions.size()==num_instr)
+      {
+	return true;
+      }
+
+    if(instructions.size()>num_instr)
+      {
+	LOG_S(ERROR) << "#-instructions " << instructions.size()
+		     << " exceeds expected value " << num_instr << " for "
+		     << __FUNCTION__;
+	LOG_S(ERROR) << " => we can continue but might have incorrect results!";
+	
+	return true;
+      }
+    
+    LOG_S(ERROR) << "#-instructions " << instructions.size()
+		 << " does not match expected value " << num_instr << " for "
+		 << __FUNCTION__;
+
+    return false;
+  }
+  
   void pdf_state<GRPH>::w(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     line_width = instructions[0].to_double();
   }
 
   void pdf_state<GRPH>::J(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     line_cap = instructions[0].to_int();
   }
 
   void pdf_state<GRPH>::j(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     line_join = instructions[0].to_int();
   }
 
   void pdf_state<GRPH>::M(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     miter_limit = instructions[0].to_double();
   }
   
   // Table 56 – Examples of Line Dash Patterns [p 127/135]
   void pdf_state<GRPH>::d(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==2);
-
+    //assert(instructions.size()==2);
+    if(not verify(instructions, 2, __FUNCTION__) ) { return; }
+ 
     QPDFObjectHandle arr = instructions[0].obj;
 
     assert(arr.isArray());
@@ -189,16 +224,18 @@ namespace pdflib
 
   void pdf_state<GRPH>::i(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     assert(instructions[0].is_number());    
     flatness = instructions[0].to_double();    
   }
 
   void pdf_state<GRPH>::gs(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     std::string key = instructions[0].to_utf8_string();
 
     if(page_grphs.count(key)>0)
@@ -244,8 +281,9 @@ namespace pdflib
   
   void pdf_state<GRPH>::G(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     int r = std::round(255.0*instructions[0].to_double());
     int g = std::round(255.0*instructions[0].to_double());
     int b = std::round(255.0*instructions[0].to_double());
@@ -257,8 +295,9 @@ namespace pdflib
 
   void pdf_state<GRPH>::g(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==1);
-
+    //assert(instructions.size()==1);
+    if(not verify(instructions, 1, __FUNCTION__) ) { return; }
+    
     int r = std::round(255.0*instructions[0].to_double());
     int g = std::round(255.0*instructions[0].to_double());
     int b = std::round(255.0*instructions[0].to_double());
@@ -270,8 +309,9 @@ namespace pdflib
   
   void pdf_state<GRPH>::RG(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==3);
-
+    //assert(instructions.size()==3);
+    if(not verify(instructions, 3, __FUNCTION__) ) { return; }
+    
     int r = std::round(255.0*instructions[0].to_double());
     int g = std::round(255.0*instructions[1].to_double());
     int b = std::round(255.0*instructions[2].to_double());
@@ -283,8 +323,9 @@ namespace pdflib
 
   void pdf_state<GRPH>::rg(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==3);
-
+    //assert(instructions.size()==3);
+    if(not verify(instructions, 3, __FUNCTION__) ) { return; }
+    
     int r = std::round(255.0*instructions[0].to_double());
     int g = std::round(255.0*instructions[1].to_double());
     int b = std::round(255.0*instructions[2].to_double());
@@ -296,8 +337,9 @@ namespace pdflib
   
   void pdf_state<GRPH>::K(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==4);
-
+    //assert(instructions.size()==4);
+    if(not verify(instructions, 4, __FUNCTION__) ) { return; }
+    
     double c = instructions[0].to_double();
     double m = instructions[1].to_double();
     double y = instructions[2].to_double();
@@ -314,8 +356,9 @@ namespace pdflib
 
   void pdf_state<GRPH>::k(std::vector<qpdf_instruction>& instructions)
   {
-    assert(instructions.size()==4);
-
+    //assert(instructions.size()==4);
+    if(not verify(instructions, 4, __FUNCTION__) ) { return; }
+    
     double c = instructions[0].to_double();
     double m = instructions[1].to_double();
     double y = instructions[2].to_double();
