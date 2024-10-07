@@ -24,7 +24,6 @@ namespace pdflib
     ~pdf_decoder();
 
   private:
-
     
   };
 

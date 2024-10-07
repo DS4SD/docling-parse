@@ -37,7 +37,6 @@ namespace pdflib
 
   private:
 
-
   };
 
 }

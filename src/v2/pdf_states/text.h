@@ -531,10 +531,21 @@ namespace pdflib
       {
 	//LOG_S(INFO) << "detected encoding: " << to_string(encoding);
 
-        assert(values.size()%2==0);
+        //assert(values.size()%2==0);
 
+	if((values.size()%2)!=0)
+	  {
+	    LOG_S(WARNING) << "detected non-even values: potential for incorrect paths!";
+	  }
+	
         for(int l=0; l<values.size(); l+=2)
           {
+	    if(l+1>=values.size())
+	      {
+		LOG_S(ERROR) <<  "skipping last part of the path";
+		continue;
+	      }
+	    
             //LOG_S(INFO) << "1. value-stream: " << int(static_cast<unsigned char>(values[l+0])) << "\t"
             //<< static_cast<int>(values[l+0]);
 
