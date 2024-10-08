@@ -1,3 +1,9 @@
+## [v1.4.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.4.1) - 2024-10-02
+
+### Fix
+
+* Windows build properly linking to system libraries ([#36](https://github.com/DS4SD/docling-parse/issues/36)) ([`e26ed05`](https://github.com/DS4SD/docling-parse/commit/e26ed056c22400552918c3a97dfb13614c9a03f5))
+
 ## [v1.4.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.4.0) - 2024-10-02
 
 ### Feature
