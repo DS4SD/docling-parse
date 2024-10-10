@@ -21,7 +21,7 @@
 #include <cxxopts.hpp>
 
 #define LOGURU_WITH_STREAMS 1
-#include <loguru/loguru.cpp>
+#include <loguru.hpp>
 
 //#include <utf8/utf8.h>
 #include <utf8.h>
