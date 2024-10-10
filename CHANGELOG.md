@@ -1,3 +1,9 @@
+## [v1.5.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.5.0) - 2024-10-10
+
+### Feature
+
+* Python 3.13 support ([#39](https://github.com/DS4SD/docling-parse/issues/39)) ([`71a043e`](https://github.com/DS4SD/docling-parse/commit/71a043eb97e437c7e99970fab122bbd59fdee4b0))
+
 ## [v1.4.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.4.1) - 2024-10-02
 
 ### Fix
