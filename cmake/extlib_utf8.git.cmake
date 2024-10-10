@@ -4,6 +4,8 @@ message(STATUS "entering in extlib_utf8.cmake")
 set(ext_name "utf8")
 
 if(USE_SYSTEM_DEPS)
+    message(STATUS "using system-deps in extlib_utf8.cmake")
+
     # this will define the utf8cpp target
     find_package(utf8cpp REQUIRED)
 
@@ -11,6 +13,7 @@ if(USE_SYSTEM_DEPS)
     add_dependencies(${ext_name} utf8cpp)
 
 else()
+    message(STATUS "ignoring system-deps extlib_utf8.cmake")
 
     include(ExternalProject)
     include(CMakeParseArguments)
@@ -32,6 +35,9 @@ else()
 
         INSTALL_DIR     ${EXTERNALS_PREFIX_PATH}
         INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/source ${EXTERNALS_PREFIX_PATH}/include
+
+    	LOG_DOWNLOAD ON
+    	LOG_BUILD ON
     )
 
     add_library(${ext_name} INTERFACE IMPORTED)

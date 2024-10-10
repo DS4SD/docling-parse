@@ -7,48 +7,91 @@
 
 #include <pybind/utils/pybind11_json.h>
 
-#include <pybind/docling_parser.h>
+#include <pybind/docling_parser_v1.h>
+#include <pybind/docling_parser_v2.h>
 
 PYBIND11_MODULE(docling_parse, m) {
-  
-  pybind11::class_<docling::docling_parser>(m, "pdf_parser")
+
+  // purely for backward compatibility 
+  pybind11::class_<docling::docling_parser_v1>(m, "pdf_parser")
     .def(pybind11::init())
 
-    .def("set_loglevel", &docling::docling_parser::set_loglevel)
-
-    .def("is_loaded", &docling::docling_parser::is_loaded)
-    .def("list_loaded_keys", &docling::docling_parser::list_loaded_keys)
+    .def("set_loglevel", &docling::docling_parser_v1::set_loglevel)
+    .def("set_loglevel_with_label", &docling::docling_parser_v1::set_loglevel_with_label)
     
-    .def("load_document", &docling::docling_parser::load_document)
-    .def("load_document_from_bytesio", &docling::docling_parser::load_document_from_bytesio)
+    .def("is_loaded", &docling::docling_parser_v1::is_loaded)
+    .def("list_loaded_keys", &docling::docling_parser_v1::list_loaded_keys)
+    
+    .def("load_document", &docling::docling_parser_v1::load_document)
+    .def("load_document_from_bytesio", &docling::docling_parser_v1::load_document_from_bytesio)
 
-    .def("unload_document", &docling::docling_parser::unload_document)    
-    .def("unload_documents", &docling::docling_parser::unload_documents)
+    .def("unload_document", &docling::docling_parser_v1::unload_document)    
+    .def("unload_documents", &docling::docling_parser_v1::unload_documents)
 
-    .def("number_of_pages", &docling::docling_parser::number_of_pages)
+    .def("number_of_pages", &docling::docling_parser_v1::number_of_pages)
 
     .def("parse_pdf_from_key",
-	 pybind11::overload_cast<std::string>(&docling::docling_parser::parse_pdf_from_key),
+	 pybind11::overload_cast<std::string>(&docling::docling_parser_v1::parse_pdf_from_key),
 	 "parse pdf-document using doc-key into json")    
 
     .def("parse_pdf_from_key_on_page",
-	 &docling::docling_parser::parse_pdf_from_key_on_page,
+	 &docling::docling_parser_v1::parse_pdf_from_key_on_page,
 	 "parse specific page in pdf-document using doc-key from path into json")
-    /*
-    .def("find_cells",
-	 pybind11::overload_cast<std::string>(&docling::docling_parser::find_cells),
-	 "parse pdf-document from path into json")    
-
-    .def("find_cells_from_bytesio",
-	 &docling::docling_parser::find_cells_from_bytesio,
-	 "parse pdf-document from a BytesIO object")
-
-    .def("find_cells_on_page",
-	 &docling::docling_parser::find_cells_on_page,
-	 "parse specific page in pdf-document from path into json")
-
-    .def("find_cells_from_bytesio_on_page",
-	 &docling::docling_parser::find_cells_from_bytesio_on_page,
-	 "parse pdf-document from a BytesIO object for a specific page")*/
     ;
+
+  // exact copy of `pdf_parser`
+  /*
+  pybind11::class_<docling::docling_parser_v1>(m, "pdf_parser_v1")
+    .def(pybind11::init())
+
+    .def("set_loglevel", &docling::docling_parser_v1::set_loglevel)
+    .def("set_loglevel_with_label", &docling::docling_parser_v1::set_loglevel_with_label)
+    
+    .def("is_loaded", &docling::docling_parser_v1::is_loaded)
+    .def("list_loaded_keys", &docling::docling_parser_v1::list_loaded_keys)
+    
+    .def("load_document", &docling::docling_parser_v1::load_document)
+    .def("load_document_from_bytesio", &docling::docling_parser_v1::load_document_from_bytesio)
+
+    .def("unload_document", &docling::docling_parser_v1::unload_document)    
+    .def("unload_documents", &docling::docling_parser_v1::unload_documents)
+
+    .def("number_of_pages", &docling::docling_parser_v1::number_of_pages)
+
+    .def("parse_pdf_from_key",
+	 pybind11::overload_cast<std::string>(&docling::docling_parser_v1::parse_pdf_from_key),
+	 "parse pdf-document using doc-key into json")    
+
+    .def("parse_pdf_from_key_on_page",
+	 &docling::docling_parser_v1::parse_pdf_from_key_on_page,
+	 "parse specific page in pdf-document using doc-key from path into json")
+    ;
+  */
+  
+  // next generation parser, 10x faster with more finegrained output
+  pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
+    .def(pybind11::init())
+    .def(pybind11::init<const std::string&>())
+    
+    .def("set_loglevel", &docling::docling_parser_v2::set_loglevel)
+    .def("set_loglevel_with_label", &docling::docling_parser_v2::set_loglevel_with_label)
+
+    .def("is_loaded", &docling::docling_parser_v2::is_loaded)
+    .def("list_loaded_keys", &docling::docling_parser_v2::list_loaded_keys)
+    
+    .def("load_document", &docling::docling_parser_v2::load_document)
+    .def("load_document_from_bytesio", &docling::docling_parser_v2::load_document_from_bytesio)
+    
+    .def("unload_document", &docling::docling_parser_v2::unload_document)
+
+    .def("number_of_pages", &docling::docling_parser_v2::number_of_pages)
+    
+    .def("parse_pdf_from_key",
+	 pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
+	 "parse pdf-document using doc-key into json")
+
+    .def("parse_pdf_from_key_on_page",
+	 &docling::docling_parser_v2::parse_pdf_from_key_on_page,
+	 "parse specific page in pdf-document using doc-key from path into json")    
+    ;  
 }
