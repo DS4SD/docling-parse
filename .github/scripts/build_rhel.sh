@@ -22,11 +22,11 @@ docker build --progress=plain \
     RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm \
        && dnf clean all
 
-    # RUN dnf install -y --nodocs \
-    #         autoconf automake binutils cmake gcc gcc-c++ git glibc-devel glibc-headers glibc-static kernel-devel libtool libstdc++-devel make ninja-build pkgconfig zlib-devel \
-    #         python3.11 python3.11-pip python3.11-devel \
-    #         libjpeg-turbo-devel libpng-devel qpdf-devel json-devel utf8cpp-devel \
-    #     && dnf clean all
+    RUN dnf install -y --nodocs \
+            autoconf automake binutils cmake gcc gcc-c++ git glibc-devel glibc-headers glibc-static kernel-devel libtool libstdc++-devel make ninja-build pkgconfig zlib-devel \
+            python3.11 python3.11-pip python3.11-devel \
+            libjpeg-turbo-devel libpng-devel qpdf-devel json-devel utf8cpp-devel \
+        && dnf clean all
 
     # # RUN dnf install -y --nodocs loguru-devel
 
