@@ -126,7 +126,6 @@ list(APPEND DEPENDENCIES ${OS_DEPENDENCIES})
 # define subdirlist utility
 include(cmake/subdirlist.cmake)
 
-include_directories(${EXTERNALS_PREFIX_PATH}/include)
 include_directories(${TOPLEVEL_PREFIX_PATH}/src)
 
 subdirlist(SUBDIRS ${TOPLEVEL_PREFIX_PATH}/src)

@@ -5,7 +5,7 @@ import os
 
 from tabulate import tabulate
 
-import docling_parse
+from docling_parse.docling_parse import pdf_parser, pdf_parser_v2
 
 try:
     from PIL import Image, ImageDraw
@@ -98,7 +98,7 @@ def visualise_v1(
     log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
 ):
 
-    parser = docling_parse.pdf_parser()
+    parser = pdf_parser()
     parser.set_loglevel_with_label(log_level)
 
     doc_key = "key"
@@ -203,7 +203,7 @@ def visualise_v2(
     log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
 ):
 
-    parser = docling_parse.pdf_parser_v2(log_level)
+    parser = pdf_parser_v2(log_level)
     # parser.set_loglevel_with_label(log_level)
 
     doc_key = "key"

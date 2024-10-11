@@ -33,6 +33,7 @@ include = [
     {path = "docling_parse/*.dll", format = "wheel"},
     {path = "docling_parse/pdf_resources", format = ["sdist", "wheel"]},
     {path = "docling_parse/pdf_resources", format = ["sdist", "wheel"]},
+    {path = "docling_parse/pdf_resources_v2", format = ["sdist", "wheel"]},
     {path = "CMakeLists.txt", format = "sdist"},
     {path = "build.py", format = "sdist"},
     {path = "*.md", format = "sdist"},
