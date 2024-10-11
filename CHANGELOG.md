@@ -1,3 +1,9 @@
+## [v1.6.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.6.0) - 2024-10-11
+
+### Feature
+
+* Add an experimental v2 parser to improve performance ([#29](https://github.com/DS4SD/docling-parse/issues/29)) ([`e5856f0`](https://github.com/DS4SD/docling-parse/commit/e5856f009a141e08a2e2f45e60aab5a69bfc28d9))
+
 ## [v1.5.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.5.1) - 2024-10-10
 
 ### Fix
