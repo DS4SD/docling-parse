@@ -33,6 +33,7 @@ include = [
     {path = "docling_parse/*.dll", format = "wheel"},
     {path = "docling_parse/pdf_resources", format = ["sdist", "wheel"]},
     {path = "docling_parse/pdf_resources", format = ["sdist", "wheel"]},
+    {path = "docling_parse/pdf_resources_v2", format = ["sdist", "wheel"]},
     {path = "CMakeLists.txt", format = "sdist"},
     {path = "build.py", format = "sdist"},
     {path = "*.md", format = "sdist"},
@@ -64,6 +65,10 @@ delocate = "^0.11.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.2"
+
+
+[tool.poetry.group.visualisation.dependencies]
+pillow = "^10.4.0"
 
 [tool.poetry.scripts]
 docling-parse = "docling_parse.run:main"

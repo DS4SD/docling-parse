@@ -7,9 +7,32 @@
 [![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux%20|%20windows-blue)](https://github.com/DS4SD/docling-parse/)
 [![License MIT](https://img.shields.io/github/license/DS4SD/docling-parse)](https://opensource.org/licenses/MIT)
 
-Simple package to extract text with coordinates from programmatic PDFs.
-This package is part of the [Docling](https://github.com/DS4SD/docling) conversion.
+Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs.
+This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion.
 
+<table>
+  <tr>
+    <th>Version</th>
+    <th>Original</th>
+    <th>Word-level</th>
+    <th>Snippet-level</th>
+    <th>Performance</th>
+  </tr>
+  <tr>
+    <th>V1</th>
+    <td rowspan="2"><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.png" alt="screenshot" width="100"/></td>
+    <td>Not Supported</td>
+    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v1.png" alt="v1 snippet" width="100"/></td>
+    <td>~0.250 page/sec</td>
+  </tr>
+  <tr>
+    <th>V2</th>
+    <!-- The "Original" column image spans from the previous row -->
+    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.original.png" alt="v1 word" width="100"/></td>
+    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.sanitized.png" alt="v2 snippet" width="100"/></td>
+    <td>~0.050 page/sec <br><br>[~5-10X faster than v1]</td>
+  </tr>
+</table>
 
 ## Quick start
 
@@ -19,13 +42,13 @@ Install the package from Pypi
 pip install docling-parse
 ```
 
-Convert a PDF
+Convert a PDF (look in the [visualise.py](docling_parse/visualise.py) for a more detailed information)
 
 ```python
-from docling_parse.docling_parse import pdf_parser
+from docling_parse.docling_parse import pdf_parser_v2
 
 # Do this only once to load fonts (avoid initialising it many times)
-parser = pdf_parser()
+parser = pdf_parser_v2()
 
 # parser.set_loglevel(1) # 1=error, 2=warning, 3=success, 4=info
 
@@ -64,39 +87,7 @@ for page in range(0, num_pages):
     # parsed page is the first one!				  
     json_page = json_doc["pages"][0] 
     
-    page_dimensions = [json_page["dimensions"]["width"], json_page["dimensions"]["height"]]
-
-    # find text cells
-    cells=[]
-    for cell_id,cell in enumerate(json_page["cells"]):
-    	cells.append([page,
-	              cell_id,
-		      cell["content"]["rnormalized"], # text
-	              cell["box"]["device"][0], # x0 (lower left x)
-		      cell["box"]["device"][1], # y0 (lower left y)
-		      cell["box"]["device"][2], # x1 (upper right x)
-		      cell["box"]["device"][3], # y1 (upper right y)	
-		      ])
-
-    # find bitmap images
-    images=[]
-    for image_id,image in enumerate(json_page["images"]):
-    	images.append([page,
-	               image_id,
-	               image["box"][0], # x0 (lower left x)
-		       image["box"][1], # y0 (lower left y)
-		       image["box"][2], # x1 (upper right x)
-		       image["box"][3], # y1 (upper right y)
-		       ])
-
-    # find paths
-    paths=[]
-    for path_id,path in enumerate(json_page["paths"]):
-    	paths.append([page,
-	              path_id,
-	              path["x-values"], # array of x values
-	              path["y-values"], # array of y values
-		      ])
+	# <Insert your own code>
 
 # Unload the (QPDF) document and buffers
 parser.unload_document(doc_key)
@@ -128,10 +119,38 @@ To build the parse, simply run the following command in the root folder,
 rm -rf build; cmake -B ./build; cd build; make
 ```
 
-You can run the parser from your build folder with
+You can run the parser from your build folder. Example from parse_v1,
 
 ```sh
-./parse.exe <input-file> <optional-logging:true>
+% ./parse_v1.exe -h
+A program to process PDF files or configuration files
+Usage:
+  PDFProcessor [OPTION...]
+
+  -i, --input arg          Input PDF file
+  -c, --config arg         Config file
+      --create-config arg  Create config file
+  -o, --output arg         Output file
+  -l, --loglevel arg       loglevel [error;warning;success;info]
+  -h, --help               Print usage
+```
+
+Example from parse_v2,
+
+```sh
+% ./parse_v2.exe -h
+program to process PDF files or configuration files
+Usage:
+  PDFProcessor [OPTION...]
+
+  -i, --input arg          Input PDF file
+  -c, --config arg         Config file
+      --create-config arg  Create config file
+  -p, --page arg           Pages to process (default: -1 for all) (default:
+                           -1)
+  -o, --output arg         Output file
+  -l, --loglevel arg       loglevel [error;warning;success;info]
+  -h, --help               Print usage
 ```
 
 If you dont have an input file, then a template input file will be printed on the terminal.
@@ -148,7 +167,7 @@ poetry build
 To test the package, run,
 
 ```
-poetry run pytest ./tests/test_parse.py
+poetry run pytest ./tests -v -s
 ```
 
 
@@ -162,13 +181,15 @@ Please read [Contributing to Docling Parse](https://github.com/DS4SD/docling-par
 If you use Docling in your projects, please consider citing the following:
 
 ```bib
-@software{Docling,
-author = {Deep Search Team},
-month = {7},
-title = {{Docling}},
-url = {https://github.com/DS4SD/docling},
-version = {main},
-year = {2024}
+@techreport{Docling,
+  author = {Deep Search Team},
+  month = {8},
+  title = {Docling Technical Report},
+  url = {https://arxiv.org/abs/2408.09869},
+  eprint = {2408.09869},
+  doi = {10.48550/arXiv.2408.09869},
+  version = {1.0.0},
+  year = {2024}
 }
 ```
 
