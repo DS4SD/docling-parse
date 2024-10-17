@@ -319,8 +319,8 @@ namespace pdflib
       }
     else
       {
-        LOG_S(FATAL) << "invoking 'Q' on empty stack!";
-        throw std::logic_error(__FILE__);
+        LOG_S(ERROR) << "invoking 'Q' on empty stack!";
+        //throw std::logic_error(__FILE__);
       }    
   } 
 

@@ -52,7 +52,7 @@ namespace pdflib
 
   void qpdf_stream_decoder::decode(QPDFObjectHandle& content)
   {
-    LOG_S(WARNING) << "start decoding content-stream: " << content.getTypeName() << " -> " << content.unparse();
+    LOG_S(INFO) << "start decoding content-stream: " << content.getTypeName() << " -> " << content.unparse();
 
     stream.clear();
 
@@ -62,7 +62,7 @@ namespace pdflib
       }
     catch(std::exception& e)
       {
-        LOG_S(FATAL) << e.what();
+        LOG_S(ERROR) << "QPDF encountered error (" << e.what() << ") during decoding";
       }
 
     LOG_S(WARNING) << "finished decoding content-stream!";

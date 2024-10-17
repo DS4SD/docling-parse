@@ -365,13 +365,18 @@ namespace pdflib
       auto itr = src.begin();
       c = utf8::next(itr, src.end());
 
-      assert(itr==src.end());
+      //assert(itr==src.end());
     }
-    assert(csr_range.first<=c and c<=csr_range.second);
+    //assert(csr_range.first<=c and c<=csr_range.second);
 
+    if(not (csr_range.first<=c and c<=csr_range.second))
+      {
+	LOG_S(ERROR) << c << " is going out of bounds: " << csr_range.first << "," << csr_range.second;
+      }
+    
     if(_map.count(c)==1)
       {
-        LOG_S(FATAL) << "overwriting number c=" << c;
+        LOG_S(ERROR) << "overwriting number cmap[" << c << "]: " << _map.at(c) << " with " << tgt;
       }
 
     _map[c] = tgt;
