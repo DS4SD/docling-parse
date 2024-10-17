@@ -1,7 +1,7 @@
 
 message(STATUS "entering in extlib_cxxopts.cmake")
 
-set(ext_name_cxxopts "cxxopts")
+set(ext_name_cxxopts "ext_cxxopts")
 
 if(USE_SYSTEM_DEPS)
     message(STATUS "using system-deps in extlib_cxxopts.cmake")
