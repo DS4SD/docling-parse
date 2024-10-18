@@ -81,8 +81,21 @@ namespace pdflib
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::front()
   {
-    assert(x.size()>0);
-    return std::pair<double, double>(x.front(), y.front());
+    if(x.size()==0 or y.size()==0)
+      {
+	LOG_S(ERROR) << "could not get front from the path: it is empty!";
+	//std::pair<double, double> result(-1,-1);
+	//return result;
+	return std::make_pair(-1.0, -1.0);
+      }
+    
+    return std::make_pair(x.front(), y.front());
+    
+    //std::pair<double, double> result(x.front(), y.front());
+    //return result;
+    
+    //assert(x.size()>0);
+    //return std::pair<double, double>(x.front(), y.front());
   }
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::back()
