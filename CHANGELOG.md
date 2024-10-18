@@ -1,3 +1,9 @@
+## [v1.6.2](https://github.com/DS4SD/docling-parse/releases/tag/v1.6.2) - 2024-10-18
+
+### Fix
+
+* Cmake-cxxopts by using similar approach as glm ([#44](https://github.com/DS4SD/docling-parse/issues/44)) ([`6427726`](https://github.com/DS4SD/docling-parse/commit/64277266860407baac018fbe4397abfa2108a41b))
+
 ## [v1.6.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.6.1) - 2024-10-18
 
 ### Fix
