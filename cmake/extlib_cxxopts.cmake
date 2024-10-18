@@ -7,10 +7,14 @@ if(USE_SYSTEM_DEPS)
     message(STATUS "using system-deps in extlib_cxxopts.cmake")
 
     # this will define the cxxopts target
-    find_package(cxxopts REQUIRED)
+    # find_package(cxxopts REQUIRED)
 
-    add_library(${ext_name_cxxopts} INTERFACE IMPORTED)
-    add_dependencies(${ext_name_cxxopts} cxxopts)
+    # add_library(${ext_name_cxxopts} INTERFACE IMPORTED)
+    # add_dependencies(${ext_name_cxxopts} cxxopts)
+
+    find_package(PkgConfig)		   
+    pkg_check_modules(libcxxopts REQUIRED IMPORTED_TARGET cxxopts)
+    add_library(${ext_name_cxxopts} ALIAS PkgConfig::libcxxopts)
 
 else()
     message(STATUS "ignoring system-deps extlib_cxxopts.cmake")
