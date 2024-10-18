@@ -1,3 +1,9 @@
+## [v1.6.1](https://github.com/DS4SD/docling-parse/releases/tag/v1.6.1) - 2024-10-18
+
+### Fix
+
+* Fatal errors on pdfs ([#41](https://github.com/DS4SD/docling-parse/issues/41)) ([`54252e6`](https://github.com/DS4SD/docling-parse/commit/54252e6c2ef6a60dba6683fd32dd78d53fce5f76))
+
 ## [v1.6.0](https://github.com/DS4SD/docling-parse/releases/tag/v1.6.0) - 2024-10-11
 
 ### Feature
