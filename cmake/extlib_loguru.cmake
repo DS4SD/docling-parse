@@ -7,10 +7,13 @@ if(USE_SYSTEM_DEPS)
     message(STATUS "using system-deps in extlib_loguru.cmake")
 
     # this will define the loguru target
-    find_package(loguru REQUIRED)
+    # find_package(loguru REQUIRED)
 
-    add_library(${ext_name_loguru} INTERFACE IMPORTED)
-    add_dependencies(${ext_name_loguru} loguru)
+    # add_library(${ext_name_loguru} INTERFACE IMPORTED)
+    # add_dependencies(${ext_name_loguru} loguru)
+
+    find_package(loguru CONFIG REQUIRED)
+    add_library(${ext_name_loguru} ALIAS loguru::loguru)
 
 else()
     message(STATUS "ignoring system-deps extlib_loguru.cmake")
