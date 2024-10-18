@@ -57,8 +57,12 @@ namespace pdflib
     timings({}),
     qpdf_document(),
 
-    qpdf_root(NULL),
-    qpdf_pages(NULL),
+    //qpdf_root(NULL),
+    //qpdf_pages(NULL),
+    
+    // have compatibulity between QPDF v10 and v11
+    qpdf_root(),
+    qpdf_pages(),
     
     number_of_pages(-1),
     json_document(nlohmann::json::value_t::null)
@@ -71,8 +75,12 @@ namespace pdflib
     timings(timings_),
     qpdf_document(),
 
-    qpdf_root(NULL),
-    qpdf_pages(NULL),
+    //qpdf_root(NULL),
+    //qpdf_pages(NULL),
+
+    // have compatibulity between QPDF v10 and v11
+    qpdf_root(),
+    qpdf_pages(),
     
     number_of_pages(-1),
     json_document(nlohmann::json::value_t::null)
