@@ -25,9 +25,9 @@ void set_loglevel(std::string level)
       //loguru::set_verbosity(loguru::Verbosity_ERROR);
     }
   else
-    loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;      {
-
-  }
+    {
+      loguru::g_stderr_verbosity = loguru::Verbosity_ERROR;  
+    }
 }
 
 nlohmann::json create_config(std::filesystem::path ifile,
