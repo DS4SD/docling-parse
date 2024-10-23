@@ -1,3 +1,14 @@
+## [v2.0.0](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.0) - 2024-10-23
+
+### Feature
+
+* Upgrade to v2.0.0 ([#48](https://github.com/DS4SD/docling-parse/issues/48)) ([`6fdd748`](https://github.com/DS4SD/docling-parse/commit/6fdd74870dceff64e52279dc6fe1ff338346def3))
+* Fixed the v2 parser to only return the pages that are requested ([#47](https://github.com/DS4SD/docling-parse/issues/47)) ([`48451ad`](https://github.com/DS4SD/docling-parse/commit/48451ad0957ed5a4333642870cf9ca406bc95c2f))
+
+### Breaking
+
+* Upgrade to v2.0.0 ([#48](https://github.com/DS4SD/docling-parse/issues/48)) ([`6fdd748`](https://github.com/DS4SD/docling-parse/commit/6fdd74870dceff64e52279dc6fe1ff338346def3))
+
 ## [v1.6.2](https://github.com/DS4SD/docling-parse/releases/tag/v1.6.2) - 2024-10-18
 
 ### Fix
