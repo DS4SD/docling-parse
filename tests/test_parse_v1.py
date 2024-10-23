@@ -38,7 +38,7 @@ def verify_reference_output(true_doc, pred_doc):
 """
 def test_reference_documents_from_filenames():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
 
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -63,7 +63,7 @@ def test_reference_documents_from_filenames():
 """
 def test_reference_documents_from_filenames_page_by_page():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -90,7 +90,7 @@ def test_reference_documents_from_filenames_page_by_page():
 
 def test_reference_documents_from_filenames_with_keys():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
     #parser.set_loglevel(4)
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
@@ -129,7 +129,7 @@ def test_reference_documents_from_filenames_with_keys():
             
 def test_reference_documents_from_filenames_with_keys_page_by_page():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
     #parser.set_loglevel(0)
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
@@ -176,7 +176,7 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
 """
 def test_reference_documents_from_bytesio():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
 
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -209,7 +209,7 @@ def test_reference_documents_from_bytesio():
 """
 def test_reference_documents_from_bytesio_page_by_page():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
     #parser.set_loglevel(1)
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
@@ -244,7 +244,7 @@ def test_reference_documents_from_bytesio_page_by_page():
 
 def test_reference_documents_from_bytesio_with_keys():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
 
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
@@ -284,7 +284,7 @@ def test_reference_documents_from_bytesio_with_keys():
             assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"                        
 def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
-    parser = docling_parse.pdf_parser()
+    parser = docling_parse.pdf_parser_v1()
     #parser.set_loglevel(4)
     
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")

@@ -13,7 +13,7 @@
 PYBIND11_MODULE(docling_parse, m) {
 
   // purely for backward compatibility 
-  pybind11::class_<docling::docling_parser_v1>(m, "pdf_parser")
+  pybind11::class_<docling::docling_parser_v1>(m, "pdf_parser_v1")
     .def(pybind11::init())
 
     .def("set_loglevel", &docling::docling_parser_v1::set_loglevel)

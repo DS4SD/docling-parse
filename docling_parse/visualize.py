@@ -5,7 +5,7 @@ import os
 
 from tabulate import tabulate
 
-from docling_parse import pdf_parser, pdf_parser_v2
+from docling_parse import pdf_parser_v1, pdf_parser_v2
 
 try:
     from PIL import Image, ImageDraw
@@ -98,7 +98,7 @@ def visualise_v1(
     log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
 ):
 
-    parser = pdf_parser()
+    parser = pdf_parser_v1()
     parser.set_loglevel_with_label(log_level)
 
     doc_key = "key"
