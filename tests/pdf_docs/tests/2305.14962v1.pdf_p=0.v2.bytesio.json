@@ -16684,22 +16684,22 @@
         "lines": []
       },
       "timings": {
-        "decode_contents": 0.003576,
+        "decode_contents": 0.00338,
         "decode_dimensions": 1e-06,
-        "decode_page": 0.01596,
-        "decode_resources": 0.008973,
-        "sanitise_contents": 4.7e-05
+        "decode_page": 0.01523,
+        "decode_resources": 0.008172,
+        "sanitise_contents": 3.9e-05
       }
     }
   ],
   "timings": {
-    "decode_contents": 0.003576,
+    "decode_contents": 0.00338,
     "decode_dimensions": 1e-06,
-    "decode_document": 0.016939,
-    "decode_page": 0.01596,
-    "decode_resources": 0.008973,
-    "decoding page 0": 0.016238,
-    "process_document_from_bytesio": 0.000384,
-    "sanitise_contents": 4.7e-05
+    "decode_document": 0.016125,
+    "decode_page": 0.01523,
+    "decode_resources": 0.008172,
+    "decoding page 0": 0.015462,
+    "process_document_from_bytesio": 0.00043,
+    "sanitise_contents": 3.9e-05
   }
 }

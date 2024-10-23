@@ -5,7 +5,7 @@ import os
 
 from tabulate import tabulate
 
-from docling_parse.docling_parse import pdf_parser, pdf_parser_v2
+from docling_parse import pdf_parser, pdf_parser_v2
 
 try:
     from PIL import Image, ImageDraw

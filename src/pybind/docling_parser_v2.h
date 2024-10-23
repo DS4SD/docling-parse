@@ -43,10 +43,7 @@ namespace docling
 
     std::string pdf_resources_dir;
 
-    //std::map<std::string, std::filesystem::path> key2doc;
     std::map<std::string, decoder_ptr_type> key2doc;
-    
-    //plib::parser parser;
   };
 
   docling_parser_v2::docling_parser_v2():
@@ -82,7 +79,6 @@ namespace docling
     std::map<std::string, double> timings = {};
     pdflib::pdf_resource<pdflib::PAGE_FONT>::initialise(data, timings);
   }
-
   
   void docling_parser_v2::set_loglevel(int level)
   {
@@ -114,7 +110,7 @@ namespace docling
       {
         loguru::g_stderr_verbosity = loguru::Verbosity_INFO;
       }
-    else if(level=="warning")
+    else if(level=="warning" or level=="warn")
       {
         loguru::g_stderr_verbosity = loguru::Verbosity_WARNING;
       }

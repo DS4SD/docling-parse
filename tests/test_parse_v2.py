@@ -82,8 +82,8 @@ def verify_reference_output(true_doc, pred_doc):
     num_true_pages=len(true_doc["pages"])
     num_pred_pages=len(pred_doc["pages"])
 
-    message = f"len(pred_doc[\"pages\"])!=len(true_doc[\"pages\"]) => {num_true_pages}!={num_pred_pages}"
-    assert num_true_pages==num_pred_pages, message
+    message = f"len(pred_doc[\"pages\"])!=len(true_doc[\"pages\"]) => {num_pred_pages}!={num_true_pages}"
+    assert num_pred_pages==num_true_pages, message
                 
     for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
         # print(pred_page.keys())

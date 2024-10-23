@@ -82,19 +82,22 @@ namespace pdflib
   std::pair<double, double> pdf_resource<PAGE_LINE>::front()
   {
     assert(x.size()>0);
-    return std::pair<double, double>(x.front(), y.front());
+    //return std::pair<double, double>(x.front(), y.front());
+    return std::make_pair(x.front(), y.front());
   }
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::back()
   {
     assert(x.size()>0);
-    return std::pair<double, double>(x.back(), y.back());
+    //return std::pair<double, double>(x.back(), y.back());
+    return std::make_pair(x.back(), y.back());
   }
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::operator[](int i)
   {
     assert(x.size()>0 and i<x.size());
-    return std::pair<double, double>(x[i], y[i]);
+    //return std::pair<double, double>(x[i], y[i]);
+    return std::make_pair(x[i], y[i]);
   }
 
   void pdf_resource<PAGE_LINE>::transform(std::array<double, 9> trafo_matrix)

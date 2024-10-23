@@ -31,7 +31,7 @@ namespace pdflib
 
   private:
 
-    void update_timings(std::map<std::string, double>& timings_);
+    void update_timings(std::map<std::string, double>& timings_, bool set_timer);
 
   private:
 
@@ -181,7 +181,10 @@ namespace pdflib
     utils::timer timer;
 
     nlohmann::json& json_pages = json_document["pages"];
-
+    json_pages = nlohmann::json::array({});
+    
+    bool set_timer=true;
+    
     int page_number=0;
     for(QPDFObjectHandle page : qpdf_document.getAllPages())
       {
@@ -190,7 +193,8 @@ namespace pdflib
         pdf_decoder<PAGE> page_decoder(page);
 
         auto timings_ = page_decoder.decode_page();
-	update_timings(timings_);
+	update_timings(timings_, set_timer);
+	set_timer = false;
 
         json_pages.push_back(page_decoder.get());
 
@@ -208,10 +212,13 @@ namespace pdflib
     LOG_S(INFO) << "start decoding selected pages ...";        
     utils::timer timer;
 
+    // make sure that we only return the page from the page-numbers
     nlohmann::json& json_pages = json_document["pages"];
-
+    json_pages = nlohmann::json::array({});
+      
     std::vector<QPDFObjectHandle> pages = qpdf_document.getAllPages();
-    
+
+    bool set_timer=true; // make sure we override all timings for this page-set
     for(auto page_number:page_numbers)
       {
 	utils::timer timer;
@@ -223,7 +230,9 @@ namespace pdflib
 	    pdf_decoder<PAGE> page_decoder(pages.at(page_number));
 	    
 	    auto timings_ = page_decoder.decode_page();
-	    update_timings(timings_);
+	    
+	    update_timings(timings_, set_timer);
+	    set_timer=false;
 	    
 	    json_pages.push_back(page_decoder.get());
 
@@ -244,11 +253,11 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();
   }
 
-  void pdf_decoder<DOCUMENT>::update_timings(std::map<std::string, double>& timings_)
+  void pdf_decoder<DOCUMENT>::update_timings(std::map<std::string, double>& timings_, bool set_timer)
   {
     for(auto itr=timings_.begin(); itr!=timings_.end(); itr++)
       {
-	if(timings.count(itr->first)==0)
+	if(timings.count(itr->first)==0 or set_timer)
 	  {
 	    timings[itr->first] = itr->second;
 	  }
