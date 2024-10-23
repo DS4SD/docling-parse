@@ -253,7 +253,7 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();
   }
 
-  void pdf_decoder<DOCUMENT>::update_timings(std::map<std::string, double>& timings_, bool set_timer=false)
+  void pdf_decoder<DOCUMENT>::update_timings(std::map<std::string, double>& timings_, bool set_timer)
   {
     for(auto itr=timings_.begin(); itr!=timings_.end(); itr++)
       {
