@@ -5,7 +5,7 @@ import os
 
 from tabulate import tabulate
 
-from docling_parse.docling_parse import pdf_parser
+from docling_parse.docling_parse import pdf_parser_v1
 
 
 def main():
@@ -52,7 +52,7 @@ def main():
 
     # Print the path to the PDF file (or add your processing logic here)
 
-    parser = pdf_parser()
+    parser = pdf_parser_v1()
     parser.set_loglevel(args.log_level)
 
     overview = []

@@ -42,7 +42,7 @@ docker build --progress=plain \
     COPY ./dist/*.tar.gz /src/
 
     RUN USE_SYSTEM_DEPS=\$USE_SYSTEM_DEPS pip3.11 install /src/docling_parse*.tar.gz \
-        && python3.11 -c 'from docling_parse.docling_parse import pdf_parser, pdf_parser_v2'
+        && python3.11 -c 'from docling_parse.docling_parse import pdf_parser_v1, pdf_parser_v2'
     
     COPY ./tests /src/tests
 

@@ -164,7 +164,7 @@ To build the package, simply run (make sure [poetry](https://python-poetry.org/)
 poetry build
 ```
 
-To test the package, run,
+To test the package, run:
 
 ```
 poetry run pytest ./tests -v -s
