@@ -213,8 +213,16 @@ namespace pdflib
 	dash_array.push_back(val);
       }
 
-    assert(instructions[1].is_integer());
-    dash_phase = instructions[1].to_int();
+    if(instructions[1].is_integer())
+      {
+	dash_phase = instructions[1].to_int();
+      }
+    else
+      {
+	dash_phase = 0;
+	LOG_S(ERROR) << "failed instructions[1].is_integer(): "
+		       << instructions[1].unparse();
+      }
   }
 
   void pdf_state<GRPH>::ri(std::vector<qpdf_instruction>& instructions)
@@ -227,8 +235,16 @@ namespace pdflib
     //assert(instructions.size()==1);
     if(not verify(instructions, 1, __FUNCTION__) ) { return; }
     
-    assert(instructions[0].is_number());    
-    flatness = instructions[0].to_double();    
+    if(instructions[0].is_number())
+      {
+	flatness = instructions[0].to_double();
+      }
+    else
+      {
+	flatness = 0;
+	LOG_S(ERROR) << "failed instructions[0].is_number(): "
+		       << instructions[0].unparse();	
+      }
   }
 
   void pdf_state<GRPH>::gs(std::vector<qpdf_instruction>& instructions)

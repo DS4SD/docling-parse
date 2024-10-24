@@ -43,12 +43,15 @@ namespace pdflib
 
   private:
 
+    bool initialized;
+    
     std::set<std::string> core_14_fonts;
 
     std::map<std::string, base_font_type> name_to_basefont;
   };
 
-  base_fonts::base_fonts()
+  base_fonts::base_fonts():
+    initialized(false)
   {}
 
   base_fonts::~base_fonts()
@@ -159,6 +162,12 @@ namespace pdflib
   template<typename glyphs_type>
   void base_fonts::initialise(std::string dirname, glyphs_type& glyphs)
   {
+    if(initialized)
+      {
+	LOG_S(WARNING) << "skipping base_fonts::initialise, already initialized ...";
+	return;
+      }
+    
     std::vector<std::string> standard = utils::filesystem::list_files(dirname+"/standard");
     std::sort(standard.begin(), standard.end());
 
@@ -217,7 +226,9 @@ namespace pdflib
 	  {
 	    //LOG_S(WARNING) << "\t font-name (=" << fontname << ") already read";
 	  }
-      }    
+      }
+
+    initialized = true;
   }
 
   std::string base_fonts::read_fontname(std::string filename)
