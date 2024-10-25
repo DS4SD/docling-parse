@@ -109,6 +109,12 @@ options:
   -p PDF, --pdf PDF  Path to the PDF file
 ```
 
+## Performance Benchmarks
+
+We ran the v1 and v2 parser on [DocLayNet](https://huggingface.co/datasets/ds4sd/DocLayNet-v1.1). We found the following overall behavior
+
+![parser-performance](./docs/dln-v1.png)
+
 ## Development
 
 ### CXX
