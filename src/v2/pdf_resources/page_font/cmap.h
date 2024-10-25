@@ -504,7 +504,7 @@ namespace pdflib
 
         if(_map.count(begin+i)==1)
           {
-            LOG_S(FATAL) << "overwriting number c=" << begin+i;
+            LOG_S(ERROR) << "overwriting number c=" << begin+i;
           }
 
         _map[begin + i] = tgt.at(i);
@@ -514,18 +514,43 @@ namespace pdflib
   void cmap_parser::parse_beginbfchar(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__;
-    assert(parameters.size()==1);
+    //assert(parameters.size()==1);
 
-    char_count = parameters[0].to_int();
+    if(parameters.size()==1)
+      {
+	char_count = parameters[0].to_int();
+      }
+    else if(parameters.size()>0)
+      {
+	LOG_S(WARNING) << "parameters.size()>0 for parse_beginbfchar";
+	char_count = parameters[0].to_int();
+      }    
+    else
+      {
+	LOG_S(ERROR) << "parameters.size()!=1 for parse_beginbfchar";
+      }
   }
 
   void cmap_parser::parse_endbfchar(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__ << ": starting ...";
-    assert(parameters.size()==2*char_count);    
 
+    if(parameters.size()!=2*char_count)
+      {
+	LOG_S(WARNING) << "parameters.size()!=2*char_count -> "
+		       << "parameters: " << parameters.size() << ", "
+		       << "char_count: " << char_count;
+      }
+    //assert(parameters.size()==2*char_count);
+    
     for(size_t i=0; i<char_count; i++)
       {
+	if(2*i>=parameters.size())
+	  {
+	    LOG_S(ERROR) << "going out of bounds: skipping parse_endbfchar";
+	    continue;
+	  }
+	
         QPDFObjectHandle source_ = parameters[2*i+0].obj;
         QPDFObjectHandle target_ = parameters[2*i+1].obj;
 

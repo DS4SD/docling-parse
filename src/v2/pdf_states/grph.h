@@ -72,7 +72,7 @@ namespace pdflib
     int line_cap;
     int line_join;
 
-    int                 dash_phase;
+    double              dash_phase;
     std::vector<double> dash_array;
 
     double flatness;
@@ -217,10 +217,14 @@ namespace pdflib
       {
 	dash_phase = instructions[1].to_int();
       }
+    else if(instructions[1].is_number())
+      {
+	dash_phase = instructions[1].to_double();
+      }
     else
       {
 	dash_phase = 0;
-	LOG_S(ERROR) << "failed instructions[1].is_integer(): "
+	LOG_S(ERROR) << "failed instructions[1] with is_integer() and is_number"
 		       << instructions[1].unparse();
       }
   }
