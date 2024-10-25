@@ -518,6 +518,13 @@ namespace pdflib
 
     // first close
     auto& line = curr_lines.back();
+
+    if(line.size()==0)
+      {
+        LOG_S(WARNING) << "applying 'h' on empty line";
+        return;
+      }
+    
     std::pair<double, double> coor = line.front();
 
     line.append(coor.first, coor.second);

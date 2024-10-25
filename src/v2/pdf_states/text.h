@@ -260,7 +260,7 @@ namespace pdflib
       }
     else
       {
-        LOG_S(FATAL) << "unknown page-font: " << font_name;
+        LOG_S(ERROR) << "unknown page-font: " << font_name;
       }
   }
 
@@ -313,8 +313,9 @@ namespace pdflib
           }
         else
           {
-            LOG_S(FATAL) << "item is not a string nor a value: "
-                         << item.unparse() << " [" << item.getTypeName() << "]";
+            LOG_S(ERROR) << "item is not a string nor a value: "
+                         << item.unparse() << " [" << item.getTypeName() << "]"
+			 << " -> skipping for now ...";
           }
       }
   }

@@ -28,7 +28,7 @@ namespace pdflib
     std::string operator[](std::string key);
 
     void initialise(std::string dirname);
-
+    
   private:
 
     void read_file_hex(std::string filename);
@@ -39,13 +39,16 @@ namespace pdflib
     
   private:
 
+    bool initialized;
+    
     std::set<std::string> unknown_glyphs;
 
     std::map<std::string, std::string> name_to_code;
     std::map<std::string, std::string> name_to_utf8;
   };
 
-  font_glyphs::font_glyphs()
+  font_glyphs::font_glyphs():
+    initialized(false)
   {}
 
   font_glyphs::~font_glyphs()
@@ -103,6 +106,12 @@ namespace pdflib
 
   void font_glyphs::initialise(std::string dirname)
   {
+    if(initialized)
+      {
+	LOG_S(WARNING) << "skipping font_glyphs::initialise, already initialized ...";
+	return;
+      }
+    
     LOG_S(INFO) << "font-glyphs initialise from directory: " 
 		<< dirname;
 
@@ -116,7 +125,7 @@ namespace pdflib
       "/custom/MathematicalPi/MathematicalPi.hex.dat"
     };
 
-    for(auto path : paths_hex)
+    for(auto path:paths_hex)
       {
         std::string fpath = dirname + path; 
         read_file_hex(fpath);
@@ -126,11 +135,13 @@ namespace pdflib
       "/custom/MathematicalPi/MathematicalPi.uni.dat"
     };
 
-    for(auto path : paths_uni)
+    for(auto path:paths_uni)
       {
         std::string fpath = dirname + path; 
         read_file_uni(fpath);
       }
+
+    initialized = true;
   }
 
   void font_glyphs::read_file_hex(std::string filename)
@@ -165,7 +176,7 @@ namespace pdflib
               {
                 name_to_utf8[key] = utils::string::hex_to_utf8(val_, 4);
               }
-            else if(name_to_utf8.count(key)==1)
+            else if(name_to_utf8.count(key)==1) // already present
               {
                 LOG_S(ERROR) << "key [" << key << "] is defined twice";               
               }

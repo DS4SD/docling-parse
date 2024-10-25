@@ -688,7 +688,7 @@ namespace pdflib
     else
       {
         subtype=NULL_TYPE;
-        LOG_S(FATAL) << "could not find subtype in font: " << json_font.dump(2);
+        LOG_S(ERROR) << "could not find subtype in font: " << json_font.dump(2);
       }
   }
 
@@ -1050,15 +1050,21 @@ namespace pdflib
 
     if(values.size()!=(lchar-fchar+1))
       {
-        LOG_S(FATAL) << "values.size()!=(lchar-fchar+1) -> "
+        LOG_S(ERROR) << "values.size()!=(lchar-fchar+1) -> "
                      << values.size() << "!=" << lchar << "-" << fchar << "+1";
       }
 
     int cnt=0;
     for(int ind=fchar; ind<=lchar; ind++)
       {
+	if(cnt>=values.size())
+	  {
+	    LOG_S(ERROR) << "going out of bounds with " << cnt << " >= " << values.size();
+	    continue;
+	  }
+	
         numb_to_widths[ind] = values[cnt++];
-	LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
+	//LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
       }
   }
 
