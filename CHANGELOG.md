@@ -1,3 +1,9 @@
+## [v2.0.1](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.1) - 2024-10-25
+
+### Fix
+
+* Robustify parser v2 ([#49](https://github.com/DS4SD/docling-parse/issues/49)) ([`1815e7d`](https://github.com/DS4SD/docling-parse/commit/1815e7d9400bd2551e99efb475fd59a7bf81069a))
+
 ## [v2.0.0](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.0) - 2024-10-23
 
 ### Feature
