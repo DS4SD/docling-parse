@@ -64,7 +64,7 @@ jobs:
           python3 --version
           echo "pythonpath: ${{ steps.py.outputs.python-path }}"
           ${{ steps.py.outputs.python-path }} --version
-          pipx install poetry==1.8.3
+          pipx install poetry==1.8.4
           poetry env use ${{ steps.py.outputs.python-path }}
 
       - name: Set up custom PATH and set py version to cpXYZ [windows]
