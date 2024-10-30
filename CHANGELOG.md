@@ -1,3 +1,9 @@
+## [v2.0.2](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.2) - 2024-10-30
+
+### Fix
+
+* Improve qpdf optimization options ([#52](https://github.com/DS4SD/docling-parse/issues/52)) ([`82284d4`](https://github.com/DS4SD/docling-parse/commit/82284d42c5136490a4285cd19d4d5ff90044fbe5))
+
 ## [v2.0.1](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.1) - 2024-10-25
 
 ### Fix
