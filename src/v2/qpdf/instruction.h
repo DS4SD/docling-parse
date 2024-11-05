@@ -86,9 +86,13 @@ namespace pdflib
         return obj.getStringValue(); 
       }
     else
-      {        
-        LOG_S(FATAL) << "can not decode a string value for key: " << key 
-                     << " and value: " << val; 
+      {
+	std::stringstream ss;
+        ss << "can not decode a string value for key: " << key 
+	   << " and value: " << val;
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     return "null";    
@@ -105,9 +109,13 @@ namespace pdflib
         return obj.getUTF8Value(); 
       }
     else
-      {        
-        LOG_S(FATAL) << "can not decode a string value for key: " << key 
-                     << " and value: " << val; 
+      {
+	std::stringstream ss;
+        ss << "can not decode a string value for key: " << key 
+	   << " and value: " << val;
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     return "null";

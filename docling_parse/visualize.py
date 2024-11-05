@@ -222,11 +222,18 @@ def visualise_v2(
 
     doc = None
 
-    if page_num == -1:
-        doc = parser.parse_pdf_from_key(doc_key)
-    else:
-        doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
+    try:
+        if page_num == -1:
+            doc = parser.parse_pdf_from_key(doc_key)
+        else:
+            doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
+    except Exception as exc:
+        print(f"Could not parse pdf-document: {exc}")
+        doc = None
 
+    if doc==None:        
+        return
+        
     parser.unload_document(doc_key)
 
     for pi, page in enumerate(doc["pages"]):

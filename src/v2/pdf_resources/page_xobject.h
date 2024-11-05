@@ -196,7 +196,11 @@ namespace pdflib
       }
     catch(const std::exception& exc)
       {
-        LOG_S(FATAL) << "encountered an error: " << exc.what();
+	std::stringstream ss;
+	ss << "encountered an error: " << exc.what();
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     return stream;

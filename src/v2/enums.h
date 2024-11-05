@@ -36,7 +36,7 @@ namespace pdflib
     else if (name=="CID_FONT_TYPE_2" or name=="/CIDFontType2") { return CID_FONT_TYPE_2; }
     else
       {
-        LOG_S(FATAL) << "unknown subtype " << name;
+        LOG_S(ERROR) << "unknown subtype " << name;
         return NULL_TYPE; 
       }
   }
@@ -59,7 +59,7 @@ namespace pdflib
 
       default:
         {
-          LOG_S(FATAL) << "encountered a NULL_ENCODING";
+          LOG_S(ERROR) << "encountered a NULL_ENCODING";
           return "NULL_ENCODING";
         }
       }
@@ -90,7 +90,7 @@ namespace pdflib
     else if(name=="CMAP_RESOURCES"                          ) { return CMAP_RESOURCES; }
     else 
       {
-        LOG_S(FATAL) << __FILE__ << ":" << __LINE__ << " --> unknown encoding " << name;
+        LOG_S(ERROR) << __FILE__ << ":" << __LINE__ << " --> unknown encoding " << name;
         return NULL_ENCODING; 
       }
   }
@@ -109,7 +109,7 @@ namespace pdflib
 
       default:
         {
-          LOG_S(FATAL) << "encountered a NULL_ENCODING";
+          LOG_S(ERROR) << "encountered a NULL_ENCODING";
           return "NULL_ENCODING";
         }
       }
