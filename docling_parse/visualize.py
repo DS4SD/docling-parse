@@ -59,7 +59,7 @@ def parse_args():
         action="store_true",
         help="Enable interactive mode (default: False)",
     )
-    
+
     # Add an argument for the output directory, defaulting to "./tmp"
     parser.add_argument(
         "-o",
@@ -98,12 +98,17 @@ def parse_args():
         args.interactive,
         args.output_dir,
         int(args.page),
-        args.display_text
+        args.display_text,
     )
 
 
 def visualise_v1(
-    log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int, display_text: bool
+    log_level: str,
+    pdf_path: str,
+    interactive: str,
+    output_dir: str,
+    page_num: int,
+    display_text: bool,
 ):
 
     parser = pdf_parser_v1()
@@ -208,7 +213,12 @@ def visualise_v1(
 
 
 def visualise_v2(
-        log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int, display_text: bool
+    log_level: str,
+    pdf_path: str,
+    interactive: str,
+    output_dir: str,
+    page_num: int,
+    display_text: bool,
 ):
 
     parser = pdf_parser_v2(log_level)
@@ -231,9 +241,9 @@ def visualise_v2(
         print(f"Could not parse pdf-document: {exc}")
         doc = None
 
-    if doc==None:        
+    if doc == None:
         return
-        
+
     parser.unload_document(doc_key)
 
     for pi, page in enumerate(doc["pages"]):
@@ -312,7 +322,7 @@ def visualise_v2(
 
                     if display_text:
                         print(row[cells_header.index("text")])
-                    
+
                     if "glyph" in row[cells_header.index("text")]:
                         print(f" skip cell -> {row}")
                         continue
