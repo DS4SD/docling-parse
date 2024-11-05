@@ -53,6 +53,13 @@ def parse_args():
         help="Enable interactive mode (default: False)",
     )
 
+    # Add an optional boolean argument for interactive mode
+    parser.add_argument(
+        "--display-text",
+        action="store_true",
+        help="Enable interactive mode (default: False)",
+    )
+    
     # Add an argument for the output directory, defaulting to "./tmp"
     parser.add_argument(
         "-o",
@@ -91,11 +98,12 @@ def parse_args():
         args.interactive,
         args.output_dir,
         int(args.page),
+        args.display_text
     )
 
 
 def visualise_v1(
-    log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
+    log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int, display_text: bool
 ):
 
     parser = pdf_parser_v1()
@@ -200,7 +208,7 @@ def visualise_v1(
 
 
 def visualise_v2(
-    log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int
+        log_level: str, pdf_path: str, interactive: str, output_dir: str, page_num: int, display_text: bool
 ):
 
     parser = pdf_parser_v2(log_level)
@@ -295,6 +303,9 @@ def visualise_v2(
                         (x[3], H - y[3]),
                     ]
 
+                    if display_text:
+                        print(row[cells_header.index("text")])
+                    
                     if "glyph" in row[cells_header.index("text")]:
                         print(f" skip cell -> {row}")
                         continue
@@ -328,12 +339,12 @@ def visualise_v2(
 
 def main():
 
-    log_level, version, pdf, interactive, output_dir, page = parse_args()
+    log_level, version, pdf, interactive, output_dir, page, display_text = parse_args()
 
     if version == "v1":
-        visualise_v1(log_level, pdf, interactive, output_dir, page)
+        visualise_v1(log_level, pdf, interactive, output_dir, page, display_text)
     elif version == "v2":
-        visualise_v2(log_level, pdf, interactive, output_dir, page)
+        visualise_v2(log_level, pdf, interactive, output_dir, page, display_text)
     else:
         return -1
 
