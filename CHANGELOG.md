@@ -1,3 +1,9 @@
+## [v2.0.3](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.3) - 2024-11-05
+
+### Fix
+
+* Replace all the FATAL with ERROR messages in the v2 parser ([#53](https://github.com/DS4SD/docling-parse/issues/53)) ([`cd15d00`](https://github.com/DS4SD/docling-parse/commit/cd15d00ddb6c67fada0056ec068caffc003d5edc))
+
 ## [v2.0.2](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.2) - 2024-10-30
 
 ### Fix
