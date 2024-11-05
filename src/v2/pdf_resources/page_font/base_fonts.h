@@ -121,8 +121,6 @@ namespace pdflib
       {
         if(norm_name.find(itr->first)!=std::string::npos)
           {	    
-            //return itr->first;
-
 	    // we have to be careful that "Helvetica" is not returned for Helvetice-Bold!
 	    if(result.size()<(itr->first).size())
 	      {
@@ -136,8 +134,8 @@ namespace pdflib
 	return result;
       }
 
-    LOG_S(FATAL) << "unkown " << font_name << "[norm_name=" << norm_name << "]";
-
+    LOG_S(ERROR) << "unkown " << font_name << "[norm_name=" << norm_name << "]";
+    
     return "Unknown";
   }
 
@@ -269,7 +267,11 @@ namespace pdflib
 
     if(fontname=="unknown")
       {
-        LOG_S(FATAL) << "no FontName found in " << filename;
+	std::stringstream ss;
+	ss << "no FontName found in " << filename;
+	
+        LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     return fontname;

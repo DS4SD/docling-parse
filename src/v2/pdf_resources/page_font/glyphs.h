@@ -152,8 +152,11 @@ namespace pdflib
 
     if(file.fail())
       {
-	LOG_S(ERROR) << "filename does not exists: " << filename;	
-	LOG_S(FATAL) << "unknown data-file!";
+	std::stringstream ss;
+	ss << "filename does not exists: " << filename;	
+	
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     std::string line;
@@ -218,8 +221,11 @@ namespace pdflib
 
     if(file.fail())
       {
-	LOG_S(ERROR) << "filename does not exists: " << filename;	
-	LOG_S(FATAL) << "unknown data-file!";
+	std::stringstream ss;
+	ss << "filename does not exists: " << filename;	
+	
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
     
     std::string line;

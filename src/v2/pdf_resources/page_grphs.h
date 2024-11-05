@@ -83,9 +83,17 @@ namespace pdflib
       {
         std::stringstream ss;
         for(auto itr=page_grphs.begin(); itr!=page_grphs.end(); itr++)
-          ss << itr->first << ", ";
+	  {
+	    ss << itr->first << ", ";
+	  }
 
-        LOG_S(FATAL) << "graphics state with name '" << grph_name << "' is not known: " << ss.str();
+	{
+	  std::stringstream ss;
+	  ss << "graphics state with name '" << grph_name << "' is not known: " << ss.str();
+	  
+	  LOG_S(ERROR) << ss.str();
+	  throw std::logic_error(ss.str());
+	}
       }
 
     return (page_grphs.begin()->second);
@@ -109,7 +117,11 @@ namespace pdflib
 
         if(page_grphs.count(key)==1)
           {
-            LOG_S(FATAL) << "We are overwriting a grph!! BE CAREFUL!";
+	    std::stringstream ss;
+	    ss << "we are overwriting a grph!";
+
+	    LOG_S(ERROR) << ss.str();
+	    //throw std::logic_error(ss.str());
           }
 
         page_grphs[key] = page_grph;

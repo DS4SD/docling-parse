@@ -434,7 +434,7 @@ namespace pdflib
 
                   if(_map.count(begin+i)==1)
                     {
-                      LOG_S(FATAL) << "overwriting number c=" << begin+i;
+                      LOG_S(WARNING) << "overwriting number c=" << begin+i;
                     }
 
                   _map[begin + i] = tmp;

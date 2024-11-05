@@ -180,8 +180,9 @@ namespace pdflib
       }
     else
       {
-	LOG_S(FATAL) << "no existing pdf_resources_dir: " 
-		     << pdf_resources_dir;
+	std::string message = "no existing pdf_resources_dir: " +  pdf_resources_dir; 
+	LOG_S(ERROR) << message;
+	throw std::logic_error(message);
       }
 
     utils::timer timer;
@@ -1148,7 +1149,11 @@ namespace pdflib
           }
         else
           {
-            LOG_S(FATAL) << "unknown type in " << __FUNCTION__;
+	    std::stringstream message;
+	    message <<  "unknown type in " << __FUNCTION__;	    
+
+	    LOG_S(ERROR) << message.str();
+	    throw std::logic_error(message.str());
           }
       }
   }
@@ -1166,7 +1171,12 @@ namespace pdflib
         if(not qpdf_font.hasKey("/ToUnicode"))
           {
             auto tmp = to_json(qpdf_font);
-            LOG_S(FATAL) << "qpdf-font: " << tmp.dump();
+
+	    std::stringstream ss;
+	    ss << "qpdf-font: " << tmp.dump();
+	    
+            LOG_S(ERROR) << ss.str();
+	    throw std::logic_error(ss.str());
           }
 
         auto qpdf_obj = qpdf_font.getKey("/ToUnicode");

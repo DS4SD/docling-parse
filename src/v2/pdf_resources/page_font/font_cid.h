@@ -87,7 +87,8 @@ namespace pdflib
     if(file.fail())
       {
 	LOG_S(ERROR) << "filename does not exists: " << filename;	
-	LOG_S(FATAL) << "unknown data-file!";
+
+	
       }
 
     bool        cmap=false;
@@ -143,8 +144,11 @@ namespace pdflib
 
     if(file.fail())
       {
-	LOG_S(ERROR) << "filename does not exists: " << filename;	
-	LOG_S(FATAL) << "unknown data-file!";
+	std::stringstream ss;
+	ss << "filename does not exists: " << filename;
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     std::vector<int> col_inds = {};
@@ -246,7 +250,7 @@ namespace pdflib
           }
         else
           {
-            LOG_S(FATAL) << "we should never arrive here!";
+            LOG_S(ERROR) << "all options exhausted for " << __FUNCTION__;
           }
       }
 
