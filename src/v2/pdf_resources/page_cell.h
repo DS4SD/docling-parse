@@ -15,7 +15,8 @@ namespace pdflib
     ~pdf_resource();
 
     nlohmann::json get();
-
+    bool init_from(nlohmann::json& data);
+    
   public:
 
     static std::vector<std::string> header;
@@ -162,6 +163,37 @@ namespace pdflib
     assert(cell.size()==header.size());
 
     return cell;
+  }
+
+  bool pdf_resource<PAGE_CELL>::init_from(nlohmann::json& data)
+  {
+    if(data.is_array() and data.size()==header.size())
+      {
+	/*
+	x0 = data.at(0).value();
+	y0 = data.at(1).value();
+	x1 = data.at(2).value();
+	y1 = data.at(3).value();
+
+	r_x0 = data.at(4).value();
+	r_y0 = data.at(5).value();
+	r_x1 = data.at(6).value();
+	r_y1 = data.at(7).value();
+	r_x2 = data.at(8).value();
+	r_y2 = data.at(9).value();
+	r_x3 = data.at(10).value();
+	r_y3 = data.at(11).value();
+	*/
+	
+	return false;
+      }
+    else
+      {
+	LOG_S(ERROR) << "can not initialise pdf_resource<PAGE_CELL> from "
+		     << data.dump(2);
+      }
+    
+    return false;
   }
   
 }

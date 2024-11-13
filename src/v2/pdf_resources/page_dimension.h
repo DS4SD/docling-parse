@@ -15,6 +15,7 @@ namespace pdflib
     ~pdf_resource();
 
     nlohmann::json get();
+    bool init_from(nlohmann::json& data);
 
     double get_angle() { return angle; }
 
@@ -73,6 +74,12 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_DIMENSION>::init_from(nlohmann::json& data)
+  {
+    // FIXME
+    return false;
+  }
+  
   // Table 30, p 85
   void pdf_resource<PAGE_DIMENSION>::execute(nlohmann::json& json_resources,
 					     QPDFObjectHandle qpdf_resources)

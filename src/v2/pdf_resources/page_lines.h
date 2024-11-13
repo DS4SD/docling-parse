@@ -15,6 +15,7 @@ namespace pdflib
     ~pdf_resource();
 
     nlohmann::json get();
+    bool init_from(nlohmann::json& data);
 
     pdf_resource<PAGE_LINE>& operator[](size_t i);
 
@@ -50,6 +51,30 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_LINES>::init_from(nlohmann::json& data)
+  {
+    bool result=true;
+    
+    if(data.is_array())
+      {
+	lines.clear();
+	lines.resize(data.size());
+
+	for(int i=0; i<data.size(); i++)	  
+	  {
+	    result = (result and lines.at(i).init_from(data[i]));
+	  }
+      }
+    else
+      {
+	LOG_S(ERROR) << "can not initialise pdf_resource<PAGE_LINES> from "
+		     << data.dump(2);
+      }
+    
+    return result;
+  }
+
+  
   pdf_resource<PAGE_LINE>& pdf_resource<PAGE_LINES>::operator[](size_t i)
   {    
     return lines.at(i);

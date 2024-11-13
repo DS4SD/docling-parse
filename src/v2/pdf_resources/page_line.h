@@ -15,7 +15,8 @@ namespace pdflib
     ~pdf_resource();
 
     nlohmann::json get();
-
+    bool init_from(nlohmann::json& data);
+      
     std::vector<int>& get_i() { return i; }    
 
     std::vector<double>& get_x() { return x; }
@@ -66,6 +67,11 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_LINE>::init_from(nlohmann::json& data)
+  {
+    return false;
+  }
+  
   void pdf_resource<PAGE_LINE>::append(double x_, double y_)
   {
     x.push_back(x_);

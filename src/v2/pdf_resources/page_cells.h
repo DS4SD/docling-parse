@@ -15,7 +15,8 @@ namespace pdflib
     ~pdf_resource();
 
     nlohmann::json get();
-
+    bool init_from(nlohmann::json& data);
+    
     pdf_resource<PAGE_CELL>& operator[](size_t i);
 
     void   clear();
@@ -51,6 +52,29 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_CELLS>::init_from(nlohmann::json& data)
+  {
+    bool result=true;
+    
+    if(data.is_array())
+      {
+	cells.clear();
+	cells.resize(data.size());
+
+	for(int i=0; i<data.size(); i++)	  
+	  {
+	    result = (result and cells.at(i).init_from(data[i]));
+	  }
+      }
+    else
+      {
+	LOG_S(ERROR) << "can not initialise pdf_resource<PAGE_CELLS> from "
+		     << data.dump(2);
+      }
+    
+    return result;
+  }
+  
   pdf_resource<PAGE_CELL>& pdf_resource<PAGE_CELLS>::operator[](size_t i)
   {
     return cells.at(i);

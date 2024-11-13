@@ -37,6 +37,7 @@ PYBIND11_MODULE(docling_parse, m) {
     .def("parse_pdf_from_key_on_page",
 	 &docling::docling_parser_v1::parse_pdf_from_key_on_page,
 	 "parse specific page in pdf-document using doc-key from path into json")
+
     ;
 
   // exact copy of `pdf_parser`
@@ -92,6 +93,10 @@ PYBIND11_MODULE(docling_parse, m) {
 
     .def("parse_pdf_from_key_on_page",
 	 &docling::docling_parser_v2::parse_pdf_from_key_on_page,
-	 "parse specific page in pdf-document using doc-key from path into json")    
+	 "parse specific page in pdf-document using doc-key from path into json")
+
+    .def("sanitize_cells",
+	 &docling::docling_parser_v2::sanitize_cells,
+	 "sanitize a specific subset of original cells")
     ;  
 }

@@ -39,6 +39,10 @@ namespace docling
 
     nlohmann::json parse_pdf_from_key_on_page(std::string key, int page);
 
+    nlohmann::json sanitize_cells(nlohmann::json& original_cells,
+				  nlohmann::json& page_dim,
+				  nlohmann::json& page_lines);
+    
   private:
 
     std::string pdf_resources_dir;
@@ -271,6 +275,26 @@ namespace docling
     return decoder->get();
   }
 
+  nlohmann::json docling_parser_v2::sanitize_cells(nlohmann::json& json_cells,
+						   nlohmann::json& json_dim,
+						   nlohmann::json& json_lines)
+  {
+    pdflib::pdf_resource<pdflib::PAGE_DIMENSION> dim;
+    dim.init_from(json_dim);
+
+    pdflib::pdf_resource<pdflib::PAGE_LINES> lines;
+    lines.init_from(json_lines);
+    
+    pdflib::pdf_resource<pdflib::PAGE_CELLS> cells;
+    cells.init_from(json_cells);
+    
+    pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
+    sanitizer.sanitize(cells);
+    
+    nlohmann::json sanitized_cells = cells.get();
+    return sanitized_cells;
+  }
+  
 }
 
 #endif
