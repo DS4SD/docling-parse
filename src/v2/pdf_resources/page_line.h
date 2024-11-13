@@ -81,28 +81,52 @@ namespace pdflib
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::front()
   {
-    assert(x.size()>0);
+    //assert(x.size()>0);
+    if(x.size()==0)
+      {
+	LOG_S(ERROR) << "applying front on empty page_line ...";
+	return std::make_pair(0, 0);
+      }
+    
     //return std::pair<double, double>(x.front(), y.front());
     return std::make_pair(x.front(), y.front());
   }
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::back()
   {
-    assert(x.size()>0);
+    //assert(x.size()>0);
+    if(x.size()==0)
+      {
+	LOG_S(ERROR) << "applying front on empty page_line ...";
+	return std::make_pair(0, 0);
+      }
+    
     //return std::pair<double, double>(x.back(), y.back());
     return std::make_pair(x.back(), y.back());
   }
 
   std::pair<double, double> pdf_resource<PAGE_LINE>::operator[](int i)
   {
-    assert(x.size()>0 and i<x.size());
+    //assert(x.size()>0 and i<x.size());
+    if(0<=i and i>=x.size())
+      {
+	LOG_S(ERROR) << "out of bounds index " << i << " for page-line of size " << x.size();
+	return std::make_pair(0, 0);	
+      }
+    
     //return std::pair<double, double>(x[i], y[i]);
     return std::make_pair(x[i], y[i]);
   }
 
   void pdf_resource<PAGE_LINE>::transform(std::array<double, 9> trafo_matrix)
   {
-    assert(x.size()==y.size());
+    //assert(x.size()==y.size());
+    if(x.size()!=y.size())
+      {
+	LOG_S(ERROR) << "inconsistent sizes between x: " << x.size() << " and y: " << y.size();
+	return;
+      }
+    
     std::vector<double> x_, y_;
 
     for(size_t j=0; j<x.size(); j++)

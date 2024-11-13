@@ -69,13 +69,25 @@ namespace pdflib
 
   int qpdf_instruction::to_int()  
   { 
-    assert(obj.isInteger());
+    if(not obj.isInteger())
+      {
+	std::string message = "obj.isInteger() is false: " + obj.unparse();
+	LOG_S(ERROR) << message;
+	throw std::logic_error(message);
+      }
+    
     return obj.getIntValue(); 
   } 
 
   double qpdf_instruction::to_double() 
   {
-    assert(obj.isNumber());
+    if(not obj.isNumber())
+      {
+	std::string message = "obj.isNumber() is false" + obj.unparse();
+	LOG_S(ERROR) << message;
+	throw std::logic_error(message);
+      }
+    
     return obj.getNumericValue(); 
   } 
 
