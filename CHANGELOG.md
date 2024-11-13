@@ -1,3 +1,9 @@
+## [v2.0.4](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.4) - 2024-11-13
+
+### Fix
+
+* Removing asserts that break parse-v2 ([#55](https://github.com/DS4SD/docling-parse/issues/55)) ([`bb978c2`](https://github.com/DS4SD/docling-parse/commit/bb978c2918f3711aa838006a4b45f5701a561ef5))
+
 ## [v2.0.3](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.3) - 2024-11-05
 
 ### Fix
