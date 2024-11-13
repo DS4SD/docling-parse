@@ -202,17 +202,25 @@ namespace pdflib
  
     QPDFObjectHandle arr = instructions[0].obj;
 
-    assert(arr.isArray());
+    //assert(arr.isArray());
+    if(not arr.isArray()) { LOG_S(ERROR) << "instructions[0].obj is not an array"; return; }
+    
     for(int l=0; l<arr.getArrayNItems(); l++)
       {
 	QPDFObjectHandle item = arr.getArrayItem(l);
 
-	assert(item.isNumber());
-	double val = item.getNumericValue();
-
-	dash_array.push_back(val);
+	//assert(item.isNumber());
+	if(item.isNumber())
+	  {
+	    double val = item.getNumericValue();
+	    dash_array.push_back(val);
+	  }
+	else
+	  {
+	    LOG_S(WARNING) << "skipping items for dash_array ...";
+	  }
       }
-
+    
     if(instructions[1].is_integer())
       {
 	dash_phase = instructions[1].to_int();

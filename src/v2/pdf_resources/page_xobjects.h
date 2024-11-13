@@ -60,7 +60,14 @@ namespace pdflib
 
   pdf_resource<PAGE_XOBJECT>& pdf_resource<PAGE_XOBJECTS>::operator[](std::string xobject_name)
   {
-    assert(page_xobjects.count(xobject_name)==1);
+    //assert(page_xobjects.count(xobject_name)==1);
+    if(page_xobjects.count(xobject_name)!=1)
+      {
+	std::string message = "page_xobjects.count(xobject_name)!=1";
+	LOG_S(ERROR) << message;
+	throw std::logic_error(message);
+      }
+    
     return page_xobjects[xobject_name];
   }
 
@@ -68,8 +75,7 @@ namespace pdflib
                                         QPDFObjectHandle& qpdf_xobjects)
   {
     LOG_S(INFO) << __FUNCTION__;
-
-    LOG_S(INFO) << json_xobjects.dump(2);
+    //LOG_S(INFO) << json_xobjects.dump(2);
 
     for(auto& pair : json_xobjects.items()) 
       {

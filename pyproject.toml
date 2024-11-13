@@ -69,6 +69,7 @@ pytest = "^7.4.2"
 
 [tool.poetry.group.visualisation.dependencies]
 pillow = "^10.4.0"
+tqdm = "^4.67.0"
 
 [tool.poetry.scripts]
 docling-parse = "docling_parse.run:main"
