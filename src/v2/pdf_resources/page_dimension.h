@@ -24,7 +24,7 @@ namespace pdflib
 
     void execute(nlohmann::json& json_resources,
 		 QPDFObjectHandle qpdf_resources);
-
+    
   private:
 
     bool                  initialised;
@@ -76,11 +76,10 @@ namespace pdflib
 
   bool pdf_resource<PAGE_DIMENSION>::init_from(nlohmann::json& data)
   {
+    LOG_S(INFO) << "reading: " << data.dump(2);
+    
     if(data.count("bbox")==1 and
        data.count("angle")==1 and
-
-       data.count("width")==1 and
-       data.count("height")==1 and
 
        data.count("rectangles")==1 and
 
@@ -88,21 +87,25 @@ namespace pdflib
        data["rectangles"].count("crop-bbox")==1 and
        data["rectangles"].count("bleed-bbox")==1 and
        data["rectangles"].count("trim-bbox")==1 and
-       data["rectangles"].count("art-bbox")==1
-       )
+       data["rectangles"].count("art-bbox")==1)
       {
 	bbox = data["bbox"].get<std::array<double, 4> >();
 	angle = data["angle"].get<int>();
-
-	media_bbox = data["rectangle"]["media-bbox"].get<std::array<double, 4> >();
-	crop_bbox = data["rectangle"]["crop-bbox"].get<std::array<double, 4> >();
-	bleed_bbox = data["rectangle"]["bleed-bbox"].get<std::array<double, 4> >();
-	trim_bbox = data["rectangle"]["trim-bbox"].get<std::array<double, 4> >();
-	art_bbox = data["rectangle"]["art-bbox"].get<std::array<double, 4> >();
+	
+	media_bbox = data["rectangles"]["media-bbox"].get<std::array<double, 4> >();
+	crop_bbox = data["rectangles"]["crop-bbox"].get<std::array<double, 4> >();
+	bleed_bbox = data["rectangles"]["bleed-bbox"].get<std::array<double, 4> >();
+	trim_bbox = data["rectangles"]["trim-bbox"].get<std::array<double, 4> >();
+	art_bbox = data["rectangles"]["art-bbox"].get<std::array<double, 4> >();
 	
 	return true;
       }
-
+    else
+      {
+	LOG_S(ERROR) << "could not read: " << data.dump(2);
+	assert(false);
+      }
+    
     return false;
   }
   

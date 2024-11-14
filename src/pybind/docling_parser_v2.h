@@ -285,7 +285,7 @@ namespace docling
   {
     pdflib::pdf_resource<pdflib::PAGE_DIMENSION> dim;
     dim.init_from(json_dim);
-
+    
     pdflib::pdf_resource<pdflib::PAGE_LINES> lines;
     lines.init_from(json_lines);
     
@@ -295,8 +295,7 @@ namespace docling
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
     sanitizer.sanitize(cells);
     
-    nlohmann::json sanitized_cells = cells.get();
-    return sanitized_cells;
+    return cells.get();
   }
 
   nlohmann::json docling_parser_v2::sanitize_cells_in_bbox(nlohmann::json& page,
@@ -312,29 +311,24 @@ namespace docling
     double x1 = bbox[2];
     double y1 = bbox[3];
 
-    bool success=true;
-    
     pdflib::pdf_resource<pdflib::PAGE_DIMENSION> dim;
-    success = dim.init_from(page["original"]["dimension"]);
-
-    if(not success)
+    if(not dim.init_from(page["original"]["dimension"]))
       {
+	LOG_S(WARNING) << "could not init dim";
 	return sanitized_cells;
       }
     
     pdflib::pdf_resource<pdflib::PAGE_LINES> lines;
-    lines.init_from(page["original"]["lines"]);
-
-    if(not success)
+    if(not lines.init_from(page["original"]["lines"]))
       {
+	LOG_S(WARNING) << "could not init lines";
 	return sanitized_cells;
       }
     
     pdflib::pdf_resource<pdflib::PAGE_CELLS> cells;
-    cells.init_from(page["original"]["cells"]);
-
-    if(not success)
+    if(not cells.init_from(page["original"]["cells"]["data"]))
       {
+	LOG_S(WARNING) << "could not init cells";
 	return sanitized_cells;
       }
     
@@ -350,15 +344,13 @@ namespace docling
 
     if(selected_cells.size()==0)
       {
-	LOG_S(INFO) << "could not find any cells in the bbox";
 	return sanitized_cells;
       }
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
     sanitizer.sanitize(selected_cells);
     
-    sanitized_cells = cells.get();
-    return sanitized_cells;
+    return selected_cells.get();
   }
   
 }

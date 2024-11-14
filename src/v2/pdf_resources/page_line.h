@@ -77,7 +77,7 @@ namespace pdflib
 	y = data["y"].get<std::vector<double> >();
 	i = data["i"].get<std::vector<int> >();
 	
-	return false;
+	return true;
       }
     else
       {

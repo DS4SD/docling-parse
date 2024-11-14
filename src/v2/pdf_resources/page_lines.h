@@ -68,7 +68,7 @@ namespace pdflib
     else
       {
 	LOG_S(ERROR) << "can not initialise pdf_resource<PAGE_LINES> from "
-		     << data.dump(2);
+		     << data.dump(2);	
       }
     
     return result;

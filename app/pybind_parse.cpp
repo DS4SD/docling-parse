@@ -143,7 +143,7 @@ PYBIND11_MODULE(docling_parse, m) {
 	 )
 
     .def("sanitize_cells_in_bbox",
-	 &docling::docling_parser_v2::sanitize_cells,
+	 &docling::docling_parser_v2::sanitize_cells_in_bbox,
 	 "sanitize a specific subset of original cells of a page in a bbox [x0, y0, x1, y1]",
 	 pybind11::arg("page"),
 	 pybind11::arg("bbox"),
