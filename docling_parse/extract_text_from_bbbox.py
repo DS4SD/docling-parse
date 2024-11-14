@@ -39,7 +39,7 @@ def parse_args():
 
     # Parse the command-line arguments
     args = parser.parse_args()
-    
+
     # Check if the PDF file exists
     assert os.path.exists(args.input_pdf), f"PDF file does not exist: {args.input_pdf}"
 
@@ -56,7 +56,7 @@ def main():
 
     parser = pdf_parser_v2(log_level)
 
-    doc_key = "key"        
+    doc_key = "key"
     success = parser.load_document(doc_key, pdf_file)
 
     if success == False:
@@ -80,18 +80,18 @@ def main():
 
     i = 10
     j = 20
-    
+
     selected_cells = doc["pages"][0]["original"]["cells"]["data"][i:j]
-    
+
     x0 = doc["pages"][0]["original"]["cells"]["data"][i][0]
     y0 = doc["pages"][0]["original"]["cells"]["data"][i][1]
     x1 = doc["pages"][0]["original"]["cells"]["data"][i][2]
     y1 = doc["pages"][0]["original"]["cells"]["data"][i][3]
 
     tind = doc["pages"][0]["original"]["cells"]["header"].index("text")
-    
+
     data = []
-    for l in range(i,j):
+    for l in range(i, j):
         x0 = min(x0, doc["pages"][0]["original"]["cells"]["data"][l][0])
         y0 = min(y0, doc["pages"][0]["original"]["cells"]["data"][l][1])
         x1 = max(x1, doc["pages"][0]["original"]["cells"]["data"][l][2])
@@ -101,19 +101,20 @@ def main():
         data.append([x0, y0, x1, y1, text])
 
     print("bbox: ", [x0, y0, x1, y1])
-        
+
     print(
-        #tabulate(selected_cells, headers=doc["pages"][0]["original"]["cells"]["header"])
+        # tabulate(selected_cells, headers=doc["pages"][0]["original"]["cells"]["header"])
         tabulate(data, headers=["x0", "y0", "x1", "y1", "text"])
     )
 
     parser.set_loglevel_with_label("info")
-    
+
     sanitized_cells = parser.sanitize_cells_in_bbox(
         page=doc["pages"][0], bbox=[x0, y0, x1, y1]
     )
-    print("#-cells: ", len(sanitized_cells))    
+    print("#-cells: ", len(sanitized_cells))
     print(tabulate(sanitized_cells["data"]))
+
 
 if __name__ == "__main__":
     main()
