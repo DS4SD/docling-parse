@@ -76,7 +76,33 @@ namespace pdflib
 
   bool pdf_resource<PAGE_DIMENSION>::init_from(nlohmann::json& data)
   {
-    // FIXME
+    if(data.count("bbox")==1 and
+       data.count("angle")==1 and
+
+       data.count("width")==1 and
+       data.count("height")==1 and
+
+       data.count("rectangles")==1 and
+
+       data["rectangles"].count("media-bbox")==1 and
+       data["rectangles"].count("crop-bbox")==1 and
+       data["rectangles"].count("bleed-bbox")==1 and
+       data["rectangles"].count("trim-bbox")==1 and
+       data["rectangles"].count("art-bbox")==1
+       )
+      {
+	bbox = data["bbox"].get<std::array<double, 4> >();
+	angle = data["angle"].get<int>();
+
+	media_bbox = data["rectangle"]["media-bbox"].get<std::array<double, 4> >();
+	crop_bbox = data["rectangle"]["crop-bbox"].get<std::array<double, 4> >();
+	bleed_bbox = data["rectangle"]["bleed-bbox"].get<std::array<double, 4> >();
+	trim_bbox = data["rectangle"]["trim-bbox"].get<std::array<double, 4> >();
+	art_bbox = data["rectangle"]["art-bbox"].get<std::array<double, 4> >();
+	
+	return true;
+      }
+
     return false;
   }
   

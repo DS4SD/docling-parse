@@ -169,23 +169,36 @@ namespace pdflib
   {
     if(data.is_array() and data.size()==header.size())
       {
-	/*
-	x0 = data.at(0).value();
-	y0 = data.at(1).value();
-	x1 = data.at(2).value();
-	y1 = data.at(3).value();
+	x0 = data.at(0).get<double>();
+	y0 = data.at(1).get<double>();
+	x1 = data.at(2).get<double>();
+	y1 = data.at(3).get<double>();
 
-	r_x0 = data.at(4).value();
-	r_y0 = data.at(5).value();
-	r_x1 = data.at(6).value();
-	r_y1 = data.at(7).value();
-	r_x2 = data.at(8).value();
-	r_y2 = data.at(9).value();
-	r_x3 = data.at(10).value();
-	r_y3 = data.at(11).value();
-	*/
+	r_x0 = data.at(4).get<double>();
+	r_y0 = data.at(5).get<double>();
+	r_x1 = data.at(6).get<double>();
+	r_y1 = data.at(7).get<double>();
+	r_x2 = data.at(8).get<double>();
+	r_y2 = data.at(9).get<double>();
+	r_x3 = data.at(10).get<double>();
+	r_y3 = data.at(11).get<double>();
+
+	text = data.at(12).get<std::string>();
+	rendering_mode = data.at(13).get<int>();
+
+        space_width = data.at(14).get<double>();
 	
-	return false;
+	enc_name = data.at(15).get<std::string>();
+
+	font_enc = data.at(16).get<std::string>();
+	font_key = data.at(17).get<std::string>();
+	font_name = data.at(18).get<std::string>();
+
+	stack_size = data.at(19).get<int>();
+	block_count = data.at(20).get<int>();
+	instr_count = data.at(21).get<int>();	
+	
+	return true;
       }
     else
       {

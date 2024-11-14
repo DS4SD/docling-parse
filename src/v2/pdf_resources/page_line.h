@@ -69,6 +69,22 @@ namespace pdflib
 
   bool pdf_resource<PAGE_LINE>::init_from(nlohmann::json& data)
   {
+    if(data.count("x")==1 and
+       data.count("y")==1 and
+       data.count("i")==1)
+      {
+	x = data["x"].get<std::vector<double> >();
+	y = data["y"].get<std::vector<double> >();
+	i = data["i"].get<std::vector<int> >();
+	
+	return false;
+      }
+    else
+      {
+	LOG_S(WARNING) << "did not contain `x`, `y` or `i` in data: "
+		       << data.dump(2);	
+      }
+    
     return false;
   }
   
