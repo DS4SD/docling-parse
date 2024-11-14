@@ -42,6 +42,10 @@ namespace docling
     nlohmann::json sanitize_cells(nlohmann::json& original_cells,
 				  nlohmann::json& page_dim,
 				  nlohmann::json& page_lines);
+
+    nlohmann::json sanitize_cells_in_bbox(nlohmann::json& page,
+					  std::array<double, 4> bbox,
+					  double iou);
     
   private:
 
@@ -292,6 +296,68 @@ namespace docling
     sanitizer.sanitize(cells);
     
     nlohmann::json sanitized_cells = cells.get();
+    return sanitized_cells;
+  }
+
+  nlohmann::json docling_parser_v2::sanitize_cells_in_bbox(nlohmann::json& page,
+							   std::array<double, 4> bbox,
+							   double iou)
+  {
+    // empty array
+    nlohmann::json sanitized_cells = nlohmann::json::array({});
+    
+    double x0 = bbox[0];
+    double y0 = bbox[1];
+    
+    double x1 = bbox[2];
+    double y1 = bbox[3];
+
+    bool success=true;
+    
+    pdflib::pdf_resource<pdflib::PAGE_DIMENSION> dim;
+    success = dim.init_from(page["original"]["dimension"]);
+
+    if(not success)
+      {
+	return sanitized_cells;
+      }
+    
+    pdflib::pdf_resource<pdflib::PAGE_LINES> lines;
+    lines.init_from(page["original"]["lines"]);
+
+    if(not success)
+      {
+	return sanitized_cells;
+      }
+    
+    pdflib::pdf_resource<pdflib::PAGE_CELLS> cells;
+    cells.init_from(page["original"]["cells"]);
+
+    if(not success)
+      {
+	return sanitized_cells;
+      }
+    
+    pdflib::pdf_resource<pdflib::PAGE_CELLS> selected_cells;
+    for(int i=0; i<cells.size(); i++)
+      {
+	if(x0<=cells[i].x0 and cells[i].x1<=x1 and
+	   y0<=cells[i].y0 and cells[i].y1<=y1)
+	  {
+	    selected_cells.push_back(cells[i]);
+	  }
+      }
+
+    if(selected_cells.size()==0)
+      {
+	LOG_S(INFO) << "could not find any cells in the bbox";
+	return sanitized_cells;
+      }
+    
+    pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
+    sanitizer.sanitize(selected_cells);
+    
+    sanitized_cells = cells.get();
     return sanitized_cells;
   }
   
