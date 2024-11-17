@@ -21,6 +21,9 @@ namespace pdflib
     nlohmann::json get();
 
     int get_number_of_pages() { return number_of_pages; }
+
+    nlohmann::json get_annotations() { return json_annots; }
+    nlohmann::json get_table_of_contents() { return json_toc; }
     
     bool process_document_from_file(std::string& _filename);
     bool process_document_from_bytesio(std::string& _buffer);

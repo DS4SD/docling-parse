@@ -85,6 +85,12 @@ PYBIND11_MODULE(docling_parse, m) {
     .def("unload_document", &docling::docling_parser_v2::unload_document)
 
     .def("number_of_pages", &docling::docling_parser_v2::number_of_pages)
+
+    .def("get_annotations", &docling::docling_parser_v2::get_annotations,
+	 "Get annotations at the top-level of the document")
+    
+    .def("get_table_of_contents", &docling::docling_parser_v2::get_table_of_contents,
+	 "Get the table-of-contents (None if not available)")
     
     .def("parse_pdf_from_key",
 	 pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
