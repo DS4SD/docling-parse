@@ -14,12 +14,13 @@
 namespace pdflib
 {
   // FIXME: add a begin time to cap the max time spent in this routine
-  nlohmann::json to_json(QPDFObjectHandle obj, std::set<std::string> prev_objs={}, int level=0)
+  nlohmann::json to_json(QPDFObjectHandle obj, std::set<std::string> prev_objs={},
+			 int level=0, int max_level=32)
   {
-    const static int max_level=32;
+    //const static int max_level=32;
     //const static int max_level=128;
     
-    LOG_S(INFO) << "to_json (level=" << level << "): " << prev_objs.size();
+    //LOG_S(INFO) << "to_json (level=" << level << "): " << prev_objs.size();
     
     nlohmann::json result;
 
@@ -262,6 +263,30 @@ namespace pdflib
       }
 
   }
+
+  // FIXME: add a begin time to cap the max time spent in this routine
+  nlohmann::json extract_annots_in_json(QPDFObjectHandle obj,
+					std::set<std::string> prev_objs={},
+					int level=0, int max_level=16)
+  {
+    LOG_S(INFO);
+    
+    nlohmann::json result;
+
+    if(level==0 and obj.isDictionary() and
+       obj.hasKey("/Annot"))
+      {
+	result = to_json(obj.getKey("/Annot"), prev_objs, level, max_level);
+      }
+    else if(level==0 and obj.isDictionary() and
+       obj.hasKey("/Annots"))
+      {
+	result = to_json(obj.getKey("/Annots"), prev_objs, level, max_level);
+      }
+    
+    return result;
+  }
+  
 }
 
 #endif

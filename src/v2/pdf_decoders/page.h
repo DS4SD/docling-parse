@@ -49,6 +49,8 @@ namespace pdflib
     QPDFObjectHandle qpdf_fonts;
     QPDFObjectHandle qpdf_xobjects;
 
+    nlohmann::json json_annots;
+    
     nlohmann::json json_page;
     nlohmann::json json_resources;
     nlohmann::json json_grphs;
@@ -85,6 +87,8 @@ namespace pdflib
   {
     nlohmann::json result;
     {
+      result["annotations"] = json_annots;
+      
       nlohmann::json& timings_ = result["timings"];
       {
 	for(auto itr=timings.begin(); itr!=timings.end(); itr++)
@@ -126,6 +130,8 @@ namespace pdflib
     utils::timer timer;
 
     json_page = to_json(qpdf_page);
+
+    json_annots = extract_annots_in_json(qpdf_page);
     
     try
       {

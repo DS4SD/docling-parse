@@ -47,6 +47,7 @@ namespace pdflib
 
     int number_of_pages;    
 
+    nlohmann::json json_annots;
     nlohmann::json json_document;
   };
 
@@ -65,6 +66,8 @@ namespace pdflib
     qpdf_pages(),
     
     number_of_pages(-1),
+
+    json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
   {}
   
@@ -83,6 +86,8 @@ namespace pdflib
     qpdf_pages(),
     
     number_of_pages(-1),
+
+    json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
   {}
 
@@ -91,6 +96,10 @@ namespace pdflib
 
   nlohmann::json pdf_decoder<DOCUMENT>::get()
   {
+    {
+      json_document["annotations"] = json_annots;
+    }
+    
     {
       nlohmann::json& timings_ = json_document["timings"];
 
