@@ -129,7 +129,7 @@ namespace pdflib
         qpdf_pages = qpdf_root.getKey("/Pages");
 
 	json_toc = extract_toc_in_json(qpdf_root);
-	json_annots = extract_annots_in_json(qpdf_root);
+	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
 	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
         LOG_S(INFO) << "#-pages: " << number_of_pages;
@@ -170,7 +170,7 @@ namespace pdflib
         qpdf_pages = qpdf_root.getKey("/Pages");
 
 	json_toc = extract_toc_in_json(qpdf_root);
-	json_annots = extract_annots_in_json(qpdf_root);
+	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
 	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
         LOG_S(INFO) << "#-pages: " << number_of_pages;

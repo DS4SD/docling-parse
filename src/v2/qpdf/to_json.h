@@ -269,7 +269,7 @@ namespace pdflib
                                         std::set<std::string> prev_objs={},
                                         int level=0, int max_level=16)
   {
-    LOG_S(INFO);
+    LOG_S(INFO) << __FUNCTION__;
 
     if(obj.isDictionary())
       {
@@ -295,20 +295,84 @@ namespace pdflib
     return result;
   }
 
+  /*** Top level Annotations ***/
+
+  nlohmann::json extract_document_annotations_in_json(QPDF& pdf_obj,
+						      QPDFObjectHandle& root)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+    
+    nlohmann::json annots = nlohmann::json::object({});
+
+    if(root.hasKey("/AcroForm"))
+      {
+	try
+	  {
+	    //QPDFObjectHandle acro_form = root.getKey("/AcroForm");
+	    annots["form"] = to_json(root.getKey("/AcroForm"), {}, 0, 8);
+	  }
+	catch(const std::exception& exc)
+	  {
+	    LOG_S(ERROR) << "encountered exception: " << exc.what(); 
+	  }
+      }
+    else
+      {
+	LOG_S(INFO) << "no /AcroForm detected ...";
+      }
+
+    if(root.hasKey("/Metadata"))
+      {
+	try
+	  {
+	    //QPDFObjectHandle meta_data = root.getKey("/Metadata");
+	    annots["meta_data"] = to_json(root.getKey("/Metadata"), {}, 0, 8);
+
+	    /*
+	    if(meta_data.isStream())
+	      {
+		std::string metadata_content = meta_data.getStreamData();
+		annots["meta_data"] = metadata_content;
+	      }
+	    */
+	  }
+	catch(const std::exception& exc)
+	  {
+	    LOG_S(ERROR) << "encountered exception: " << exc.what(); 
+	  }
+      }
+    else
+      {
+	LOG_S(INFO) << "no /Metadata detected ...";
+      }
+
+    if(root.hasKey("/Lang"))
+      {
+        std::string lang = root.getKey("/Lang").getUTF8Value();
+	annots["language"] = lang;
+      }
+    
+    return annots;
+  }
+
+  /*** Table of Contents ***/
+
   nlohmann::json extract_toc_entry_in_json(QPDFObjectHandle& node, int level)
   {
+    LOG_S(INFO) << __FUNCTION__;
+    
     nlohmann::json toc_entry;
 
     // Extract title
     if (node.hasKey("/Title"))
       {
         toc_entry["title"] = node.getKey("/Title").getUTF8Value();
-	toc_entry["level"] = level;
+        toc_entry["level"] = level;
       }
     else
       {
         //toc_entry["title"] = "Untitled";
-	//toc_entry["level"] = level;
+        //toc_entry["level"] = level;
       }
 
     // Extract destination
@@ -321,33 +385,33 @@ namespace pdflib
           {
             toc_entry["destination"] = dest.getUTF8Value();
           }
-	else if (dest.isName())
-	  {
-	    toc_entry["destination"] = dest.getName();
-	  }
-	else if (dest.isArray())
-	  {
-	    auto array = dest.getArrayAsVector();
-	    std::string result;
+        else if (dest.isName())
+          {
+            toc_entry["destination"] = dest.getName();
+          }
+        else if (dest.isArray())
+          {
+            auto array = dest.getArrayAsVector();
+            std::string result;
 
-	    // Extract page reference
-	    if(!array.empty() and array[0].isIndirect())
-	      {
-		//QPDFObjectHandle page_ref = array[0];
+            // Extract page reference
+            if(!array.empty() and array[0].isIndirect())
+              {
+                //QPDFObjectHandle page_ref = array[0];
 
-		//int page_number = pdf_obj.getPageNumberForObject(page_ref);
-		//toc_entry["page_number"] = page_number;
+                //int page_number = pdf_obj.getPageNumberForObject(page_ref);
+                //toc_entry["page_number"] = page_number;
 
-		toc_entry["destination"] = dest.unparse();
-	      }
-	  }
+                toc_entry["destination"] = dest.unparse();
+              }
+          }
         else
           {
             // Placeholder for complex cases
             //toc_entry["destination"] = "Complex destination";
           }
 
-	
+
       }
     else
       {
@@ -376,8 +440,8 @@ namespace pdflib
     return toc_entry;
   }
 
-    nlohmann::json extract_toc_in_json(QPDFObjectHandle& root)
-  {    
+  nlohmann::json extract_toc_in_json(QPDFObjectHandle& root)
+  {
     int level=0;
 
     nlohmann::json toc = nlohmann::json::value_t::null;
@@ -411,7 +475,7 @@ namespace pdflib
       {
         LOG_S(INFO) << "No Table of Contents found.";
       }
-    
+
     return toc;
   }
 
