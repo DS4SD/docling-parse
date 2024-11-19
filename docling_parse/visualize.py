@@ -211,6 +211,22 @@ def visualise_v1(
 
             img.save(oname)
 
+def draw_annotations(draw, annot, H, W):
+
+    if "/Rect" in annot:
+        bbox = annot["/Rect"]
+
+        bl = (bbox[0], H-bbox[1])
+        br = (bbox[2], H-bbox[1])
+        tr = (bbox[2], H-bbox[3])
+        tl = (bbox[0], H-bbox[3])
+        
+        # Draw the rectangle as a polygon
+        draw.polygon([bl, br, tr, tl], outline="white", fill="green")
+        
+    if "/Kids" in annot:
+        for _ in annot["/Kids"]:
+            draw_annotations(draw, annot, H, W)
 
 def visualise_v2(
     log_level: str,
@@ -259,7 +275,9 @@ def visualise_v2(
             images_header = page[_]["images"]["header"]
 
             lines = page[_]["lines"]
-
+            
+            annots = page["annotations"]
+            
             if PIL_INSTALLED:
 
                 W = dimension["width"]
@@ -287,24 +305,6 @@ def visualise_v2(
                     draw.polygon([bl, br, tr, tl], outline="green", fill="yellow")
 
                 # Draw each rectangle by connecting its four points
-                for line in lines:
-
-                    i = line["i"]
-                    x = line["x"]
-                    y = line["y"]
-
-                    for l in range(0, len(i), 2):
-                        i0 = i[l + 0]
-                        i1 = i[l + 1]
-
-                        for k in range(i0, i1 - 1):
-                            draw.line(
-                                (x[k], H - y[k], x[k + 1], H - y[k + 1]),
-                                fill="black",
-                                width=3,
-                            )
-
-                # Draw each rectangle by connecting its four points
                 for row in cells:
 
                     x = []
@@ -330,6 +330,28 @@ def visualise_v2(
                     # You can change the outline and fill color
                     draw.polygon(rect, outline="red", fill="blue")
 
+                # Draw widgets                            
+                for annot in annots:
+                    draw_annotations(draw, annot, H, W)
+
+                # Draw each rectangle by connecting its four points
+                for line in lines:
+
+                    i = line["i"]
+                    x = line["x"]
+                    y = line["y"]
+
+                    for l in range(0, len(i), 2):
+                        i0 = i[l + 0]
+                        i1 = i[l + 1]
+
+                        for k in range(i0, i1 - 1):
+                            draw.line(
+                                (x[k], H - y[k], x[k + 1], H - y[k + 1]),
+                                fill="black",
+                                width=1,
+                            )
+                    
                 # Show the image
                 if interactive:
                     img.show()

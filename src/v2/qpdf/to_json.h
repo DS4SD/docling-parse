@@ -17,11 +17,6 @@ namespace pdflib
   nlohmann::json to_json(QPDFObjectHandle obj, std::set<std::string> prev_objs={},
                          int level=0, int max_level=32)
   {
-    //const static int max_level=32;
-    //const static int max_level=128;
-
-    //LOG_S(INFO) << "to_json (level=" << level << "): " << prev_objs.size();
-
     nlohmann::json result;
 
     if(obj.isDictionary() or obj.isArray())
@@ -76,7 +71,7 @@ namespace pdflib
           }
         else if(obj.isArray())
           {
-            LOG_S(INFO) << "array: " << obj.getArrayNItems();
+            //LOG_S(INFO) << "array: " << obj.getArrayNItems();
             for(int l=0; l<obj.getArrayNItems(); l++)
               {
                 QPDFObjectHandle new_obj = obj.getArrayItem(l);
@@ -87,8 +82,24 @@ namespace pdflib
           }
         else if(obj.isStream())
           {
-            std::string val = obj.unparse()+" [stream]";
-
+	    /*
+	    std::string val = "";
+	    
+	    try
+	      {
+		// Convert raw data to std::string
+		std::shared_ptr<Buffer> ptr = obj.getStreamData(qpdf_dl_all);
+		val = std::string(reinterpret_cast<const char*>(ptr->getBuffer()), ptr->getSize());
+	      }
+	    catch(const std::exception& exc)
+	      {
+		LOG_S(ERROR) << "could not stream data, " << exc.what();
+		val = obj.unparse()+" [stream]";
+	      }
+	    */
+	    
+	    std::string val = obj.unparse()+" [stream]";
+	    
             if(utf8::is_valid(val.begin(), val.end()))
               {
                 result = val;
@@ -271,6 +282,7 @@ namespace pdflib
   {
     LOG_S(INFO) << __FUNCTION__;
 
+    /*
     if(obj.isDictionary())
       {
         for(auto key : obj.getKeys())
@@ -278,7 +290,8 @@ namespace pdflib
             LOG_S(INFO) << "key: " << key;
           }
       }
-
+    */
+    
     nlohmann::json result;
 
     if(level==0 and obj.isDictionary() and
@@ -297,19 +310,18 @@ namespace pdflib
 
   /*** Top level Annotations ***/
 
-  nlohmann::json extract_document_annotations_in_json(QPDF& pdf_obj,
-						      QPDFObjectHandle& root)
+  nlohmann::json extract_acroform_in_json(QPDF& pdf_obj,
+					  QPDFObjectHandle& root)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    nlohmann::json result = nlohmann::json::value_t::null;
     
-    nlohmann::json annots = nlohmann::json::object({});
-
     if(root.hasKey("/AcroForm"))
       {
+	LOG_S(INFO) << "/AcroForm detected!";
+	
 	try
 	  {
-	    //QPDFObjectHandle acro_form = root.getKey("/AcroForm");
-	    annots["form"] = to_json(root.getKey("/AcroForm"), {}, 0, 8);
+	    result = to_json(root.getKey("/AcroForm"), {}, 0, 16);
 	  }
 	catch(const std::exception& exc)
 	  {
@@ -321,20 +333,34 @@ namespace pdflib
 	LOG_S(INFO) << "no /AcroForm detected ...";
       }
 
+    return result;
+  }
+
+  nlohmann::json extract_metadata_in_json(QPDF& pdf_obj,
+					  QPDFObjectHandle& root)
+  {
+    nlohmann::json result = nlohmann::json::value_t::null;
+
     if(root.hasKey("/Metadata"))
       {
+	LOG_S(INFO) << "/Metadata detected!";
+	
 	try
 	  {
-	    //QPDFObjectHandle meta_data = root.getKey("/Metadata");
-	    annots["meta_data"] = to_json(root.getKey("/Metadata"), {}, 0, 8);
+	    QPDFObjectHandle metadata = root.getKey("/Metadata");
 
-	    /*
-	    if(meta_data.isStream())
+	    if(metadata.isStream())
 	      {
-		std::string metadata_content = meta_data.getStreamData();
-		annots["meta_data"] = metadata_content;
+		std::shared_ptr<Buffer> ptr = metadata.getStreamData(qpdf_dl_all);
+		
+		// Convert raw data to std::string
+		std::string content(reinterpret_cast<const char*>(ptr->getBuffer()), ptr->getSize());
+		result = content;
 	      }
-	    */
+	    else
+	      {
+		LOG_S(ERROR) << "metadata is not a stream"; 
+	      }
 	  }
 	catch(const std::exception& exc)
 	  {
@@ -345,51 +371,60 @@ namespace pdflib
       {
 	LOG_S(INFO) << "no /Metadata detected ...";
       }
+    
+    return result;
+  }
+
+  nlohmann::json extract_language_in_json(QPDF& pdf_obj,
+					  QPDFObjectHandle& root)
+  {
+    nlohmann::json result = nlohmann::json::value_t::null;
 
     if(root.hasKey("/Lang"))
       {
+	LOG_S(INFO) << "/Lang detected!";	
+	
         std::string lang = root.getKey("/Lang").getUTF8Value();
-	annots["language"] = lang;
+	result = lang;
+      }
+    else
+      {
+	LOG_S(INFO) << "no /Lang detected ...";	
       }
     
-    return annots;
+    return result;
   }
 
   /*** Table of Contents ***/
 
-  nlohmann::json extract_toc_entry_in_json(QPDFObjectHandle& node, int level)
+  nlohmann::json extract_toc_entry_in_json(QPDF& pdf_obj, QPDFObjectHandle& node, int level)
   {
     LOG_S(INFO) << __FUNCTION__;
     
     nlohmann::json toc_entry;
 
     // Extract title
-    if (node.hasKey("/Title"))
+    if(node.hasKey("/Title"))
       {
         toc_entry["title"] = node.getKey("/Title").getUTF8Value();
         toc_entry["level"] = level;
       }
-    else
-      {
-        //toc_entry["title"] = "Untitled";
-        //toc_entry["level"] = level;
-      }
 
     // Extract destination
-    if (node.hasKey("/Dest"))
+    if(node.hasKey("/Dest"))
       {
         // Depending on the type of destination, extract its value
         auto dest = node.getKey("/Dest");
 
-        if (dest.isString())
+        if(dest.isString())
           {
             toc_entry["destination"] = dest.getUTF8Value();
           }
-        else if (dest.isName())
+        else if(dest.isName())
           {
             toc_entry["destination"] = dest.getName();
           }
-        else if (dest.isArray())
+        else if(dest.isArray())
           {
             auto array = dest.getArrayAsVector();
             std::string result;
@@ -410,8 +445,6 @@ namespace pdflib
             // Placeholder for complex cases
             //toc_entry["destination"] = "Complex destination";
           }
-
-
       }
     else
       {
@@ -425,8 +458,10 @@ namespace pdflib
 
         while (first.isDictionary())
           {
-            toc_entry["children"].push_back(extract_toc_entry_in_json(first, level+1));
-            if (first.hasKey("/Next"))
+	    auto child = extract_toc_entry_in_json(pdf_obj, first, level+1);
+            toc_entry["children"].push_back(child);
+	    
+            if(first.hasKey("/Next"))
               {
                 first = first.getKey("/Next");
               }
@@ -440,14 +475,16 @@ namespace pdflib
     return toc_entry;
   }
 
-  nlohmann::json extract_toc_in_json(QPDFObjectHandle& root)
+  nlohmann::json extract_toc_in_json(QPDF& pdf_obj, QPDFObjectHandle& root)
   {
-    int level=0;
-
+    LOG_S(INFO) << __FUNCTION__;
+    
     nlohmann::json toc = nlohmann::json::value_t::null;
 
     if(root.hasKey("/Outlines"))
       {
+	LOG_S(INFO) << "/Outlines (=table-of-contents) detected!";
+	
         QPDFObjectHandle outlines = root.getKey("/Outlines");
 
         if (outlines.hasKey("/First"))
@@ -458,7 +495,8 @@ namespace pdflib
 
             while (first.isDictionary())
               {
-                toc.push_back(extract_toc_entry_in_json(first, level));
+		int level=0;
+                toc.push_back(extract_toc_entry_in_json(pdf_obj, first, level));
 
                 if (first.hasKey("/Next"))
                   {
@@ -473,12 +511,31 @@ namespace pdflib
       }
     else
       {
-        LOG_S(INFO) << "No Table of Contents found.";
+        LOG_S(WARNING) << "no /Outlines (=table-of-contents) detected ...";
       }
 
     return toc;
   }
+  
+  nlohmann::json extract_document_annotations_in_json(QPDF& pdf_obj,
+						      QPDFObjectHandle& root)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+    
+    nlohmann::json annots = nlohmann::json::object({});
 
+    annots["form"] = extract_acroform_in_json(pdf_obj, root);
+    
+    annots["meta_xml"] = extract_metadata_in_json(pdf_obj, root);
+
+    annots["language"] = extract_language_in_json(pdf_obj, root);
+
+    annots["table_of_contents"] = extract_toc_in_json(pdf_obj, root);
+
+    LOG_S(INFO) << "annotations: " << annots.dump(2);
+    
+    return annots;
+  }
 
 }
 
