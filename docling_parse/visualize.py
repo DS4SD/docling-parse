@@ -211,22 +211,24 @@ def visualise_v1(
 
             img.save(oname)
 
+
 def draw_annotations(draw, annot, H, W):
 
     if "/Rect" in annot:
         bbox = annot["/Rect"]
 
-        bl = (bbox[0], H-bbox[1])
-        br = (bbox[2], H-bbox[1])
-        tr = (bbox[2], H-bbox[3])
-        tl = (bbox[0], H-bbox[3])
-        
+        bl = (bbox[0], H - bbox[1])
+        br = (bbox[2], H - bbox[1])
+        tr = (bbox[2], H - bbox[3])
+        tl = (bbox[0], H - bbox[3])
+
         # Draw the rectangle as a polygon
         draw.polygon([bl, br, tr, tl], outline="white", fill="green")
-        
+
     if "/Kids" in annot:
         for _ in annot["/Kids"]:
             draw_annotations(draw, annot, H, W)
+
 
 def visualise_v2(
     log_level: str,
@@ -275,9 +277,9 @@ def visualise_v2(
             images_header = page[_]["images"]["header"]
 
             lines = page[_]["lines"]
-            
+
             annots = page["annotations"]
-            
+
             if PIL_INSTALLED:
 
                 W = dimension["width"]
@@ -330,7 +332,7 @@ def visualise_v2(
                     # You can change the outline and fill color
                     draw.polygon(rect, outline="red", fill="blue")
 
-                # Draw widgets                            
+                # Draw widgets
                 for annot in annots:
                     draw_annotations(draw, annot, H, W)
 
@@ -351,7 +353,7 @@ def visualise_v2(
                                 fill="black",
                                 width=1,
                             )
-                    
+
                 # Show the image
                 if interactive:
                     img.show()
