@@ -394,15 +394,20 @@ namespace pdflib
     
     return result;
   }
-
+  
   /*** Table of Contents ***/
 
   nlohmann::json extract_toc_entry_in_json(QPDF& pdf_obj, QPDFObjectHandle& node, int level)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    //LOG_S(INFO) << __FUNCTION__;
     
     nlohmann::json toc_entry;
 
+    //for(auto key : node.getKeys())
+    //{
+    //LOG_S(INFO) << " -> key: " << key;
+    //}
+    
     // Extract title
     if(node.hasKey("/Title"))
       {
@@ -410,12 +415,22 @@ namespace pdflib
         toc_entry["level"] = level;
       }
 
+    // Extract title
+    if(node.hasKey("/A"))
+      {
+        toc_entry["link"] = to_json(node.getKey("/A"), {}, 0, 8);
+      }
+    
     // Extract destination
     if(node.hasKey("/Dest"))
       {
+	LOG_S(INFO) << "found a destination!";
+	
         // Depending on the type of destination, extract its value
-        auto dest = node.getKey("/Dest");
+	auto dest = node.getKey("/Dest");
+        toc_entry["destination"] = to_json(dest, {}, 0, 8);
 
+	/*
         if(dest.isString())
           {
             toc_entry["destination"] = dest.getUTF8Value();
@@ -437,7 +452,7 @@ namespace pdflib
                 //int page_number = pdf_obj.getPageNumberForObject(page_ref);
                 //toc_entry["page_number"] = page_number;
 
-                toc_entry["destination"] = dest.unparse();
+                //toc_entry["destination"] = dest.unparse();
               }
           }
         else
@@ -445,6 +460,7 @@ namespace pdflib
             // Placeholder for complex cases
             //toc_entry["destination"] = "Complex destination";
           }
+	*/
       }
     else
       {
@@ -532,7 +548,7 @@ namespace pdflib
 
     annots["table_of_contents"] = extract_toc_in_json(pdf_obj, root);
 
-    LOG_S(INFO) << "annotations: " << annots.dump(2);
+    //LOG_S(INFO) << "annotations: " << annots.dump(2);
     
     return annots;
   }
