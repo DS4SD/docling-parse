@@ -1,0 +1,2945 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DHTWRO+CMMI10": 6.805231597914878,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 1.377903758941297,
+        "/EFBUGN+CMSY10": 3.134886650350283,
+        "/KHSBIR+CMR10": 7.285601019045528,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.014873256829151,
+        "/YTDEHL+CMR7": 3.715648670932766
+      },
+      "mean-char-width": {
+        "/DHTWRO+CMMI10": 3.045874141265391,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 4.219160489000876,
+        "/EFBUGN+CMSY10": 2.582971347668405,
+        "/KHSBIR+CMR10": 5.795298067159626,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.31154962452253,
+        "/YTDEHL+CMR7": 4.529067087350645
+      },
+      "number-of-chars": {
+        "/DHTWRO+CMMI10": 13,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 13,
+        "/EFBUGN+CMSY10": 3,
+        "/KHSBIR+CMR10": 17,
+        "/LHCPKS+NimbusRomNo9L-Regu": 3972,
+        "/YTDEHL+CMR7": 5
+      }
+    },
+    "styles": [
+      "/DHTWRO+CMMI10",
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/EFBUGN+CMSY10",
+      "/KHSBIR+CMR10",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/YTDEHL+CMR7"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              700.17603,
+              113.42842,
+              709.08258
+            ],
+            "device": [
+              108,
+              698.02411,
+              374.30502,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "For all our models, we use AdamW optimizer (Diederik, 2014) with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              376.76599,
+              700.17603,
+              382.40085,
+              709.02283
+            ],
+            "device": [
+              376.76599,
+              698.24329,
+              386.37259,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b2$_{1}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              389.638,
+              700.17603,
+              397.3869,
+              709.02283
+            ],
+            "device": [
+              389.638,
+              698.24329,
+              405.13779,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "= 0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              405.13501,
+              700.17603,
+              407.90262,
+              709.02283
+            ],
+            "device": [
+              405.13501,
+              698.24329,
+              407.90262,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              407.90302,
+              700.17603,
+              412.88431,
+              709.02283
+            ],
+            "device": [
+              407.90302,
+              698.24329,
+              412.88431,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "9"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              412.884,
+              700.17603,
+              415.65161,
+              709.02283
+            ],
+            "device": [
+              412.884,
+              698.24329,
+              426.91858,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": ", \u03b2$_{2}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              430.18399,
+              700.17603,
+              437.93289,
+              709.02283
+            ],
+            "device": [
+              430.18399,
+              698.24329,
+              445.68378,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "= 0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              445.681,
+              700.17603,
+              448.44861,
+              709.02283
+            ],
+            "device": [
+              445.681,
+              698.24329,
+              448.44861,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              448.448,
+              700.17603,
+              458.41058,
+              709.02283
+            ],
+            "device": [
+              448.448,
+              698.24329,
+              458.41058,
+              707.09009
+            ]
+          },
+          "content": {
+            "rnormalized": "95"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              460.86899,
+              700.17603,
+              474.96725,
+              709.08258
+            ],
+            "device": [
+              460.86899,
+              698.02411,
+              504.00345,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "and weight"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              689.21698,
+              130.76813,
+              698.12354
+            ],
+            "device": [
+              108,
+              687.06506,
+              476.90817,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": "decay of 0.1 for training all our models. For the learning rate, we use the power scheduler with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              479.27399,
+              689.21698,
+              484.54022,
+              698.06378
+            ],
+            "device": [
+              479.27399,
+              687.28424,
+              484.54022,
+              696.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              487.30698,
+              689.21698,
+              495.05588,
+              698.06378
+            ],
+            "device": [
+              487.30698,
+              687.28424,
+              502.80676,
+              696.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "= 4"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              502.80399,
+              689.21698,
+              505.24481,
+              698.12354
+            ],
+            "device": [
+              502.80399,
+              687.06506,
+              505.24481,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              678.258,
+              112.27595,
+              687.1048
+            ],
+            "device": [
+              108,
+              676.32526,
+              112.27595,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "b"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              115.11,
+              678.258,
+              122.85891,
+              687.1048
+            ],
+            "device": [
+              115.11,
+              676.32526,
+              122.85891,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "="
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              125.694,
+              678.258,
+              133.44292,
+              687.66272
+            ],
+            "device": [
+              125.694,
+              676.32526,
+              133.44292,
+              685.72992
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              133.44299,
+              678.258,
+              138.42429,
+              687.1048
+            ],
+            "device": [
+              133.44299,
+              676.32526,
+              138.42429,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "0"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              138.424,
+              678.258,
+              141.1916,
+              687.1048
+            ],
+            "device": [
+              138.424,
+              676.32526,
+              141.1916,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              141.19099,
+              678.258,
+              151.15359,
+              687.1048
+            ],
+            "device": [
+              141.19099,
+              676.32526,
+              151.15359,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "51"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.15401,
+              678.258,
+              153.69447,
+              687.16455
+            ],
+            "device": [
+              151.15401,
+              676.10608,
+              170.90866,
+              685.01263
+            ]
+          },
+          "content": {
+            "rnormalized": ", and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              173.431,
+              678.258,
+              178.37743,
+              687.1048
+            ],
+            "device": [
+              173.431,
+              676.32526,
+              193.08017,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b7$_{max}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              196.41301,
+              678.258,
+              204.16193,
+              687.1048
+            ],
+            "device": [
+              196.41301,
+              676.32526,
+              211.98256,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "= 0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              211.97801,
+              678.258,
+              214.74562,
+              687.1048
+            ],
+            "device": [
+              211.97801,
+              676.32526,
+              214.74562,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              214.74501,
+              678.258,
+              224.70761,
+              687.1048
+            ],
+            "device": [
+              214.74501,
+              676.32526,
+              224.70761,
+              685.17206
+            ]
+          },
+          "content": {
+            "rnormalized": "02"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              224.70799,
+              678.258,
+              227.24846,
+              687.16455
+            ],
+            "device": [
+              224.70799,
+              676.10608,
+              503.99637,
+              685.01263
+            ]
+          },
+          "content": {
+            "rnormalized": ", and an initial linear warmup step of 2500 iterations. We use a batch"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              667.29901,
+              123.49184,
+              676.20557
+            ],
+            "device": [
+              108,
+              665.14709,
+              314.04654,
+              674.05365
+            ]
+          },
+          "content": {
+            "rnormalized": "size of 4M tokens during both stages of pretraining."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              642.229,
+              113.2303,
+              651.13556
+            ],
+            "device": [
+              108.249,
+              640.07709,
+              121.69851,
+              648.98364
+            ]
+          },
+          "content": {
+            "rnormalized": "4.3"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              132.15924,
+              642.229,
+              141.01599,
+              651.13556
+            ],
+            "device": [
+              132.15924,
+              640.07709,
+              227.33603,
+              648.98364
+            ]
+          },
+          "content": {
+            "rnormalized": "MODEL PARALLELISM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              621.68103,
+              117.08717,
+              630.58759
+            ],
+            "device": [
+              107.532,
+              619.52911,
+              505.6506,
+              628.43567
+            ]
+          },
+          "content": {
+            "rnormalized": "We use a combination of 3D parallelism (Tensor Parallelism (Shoeybi et al., 2020), Pipeline Paral-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              610.72198,
+              132.79701,
+              619.62854
+            ],
+            "device": [
+              108,
+              608.57007,
+              505.74603,
+              617.47662
+            ]
+          },
+          "content": {
+            "rnormalized": "lelism (Narayanan et al., 2021b) and Data Parallelism (Li et al., 2020)) for training all our models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              599.763,
+              116.7486,
+              608.66956
+            ],
+            "device": [
+              107.532,
+              597.61108,
+              504.00198,
+              606.51764
+            ]
+          },
+          "content": {
+            "rnormalized": "We use tensor parallelism to split the weight matrices and activations and pipeline parallelism to slice"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              588.80402,
+              120.41779,
+              597.71057
+            ],
+            "device": [
+              108,
+              586.6521,
+              503.99704,
+              595.55865
+            ]
+          },
+          "content": {
+            "rnormalized": "the model along the layers. We put an equal compute load on each pipeline stage except the first"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              577.84497,
+              122.67371,
+              586.75153
+            ],
+            "device": [
+              108,
+              575.69305,
+              503.99719,
+              584.59961
+            ]
+          },
+          "content": {
+            "rnormalized": "and last pipeline stages, which contain the embedding matrix and the LM head, respectively. The"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              566.88599,
+              119.85888,
+              575.79254
+            ],
+            "device": [
+              108,
+              564.73407,
+              503.99719,
+              573.64062
+            ]
+          },
+          "content": {
+            "rnormalized": "2B dense model is trained with 256 GPUs using tensor parallel sharding on 2 GPUs, and the 8B"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              555.927,
+              131.13853,
+              564.83356
+            ],
+            "device": [
+              108,
+              553.77509,
+              503.99734,
+              562.68164
+            ]
+          },
+          "content": {
+            "rnormalized": "dense model is trained on 768 GPUs using 4x tensor parallelism and 4x pipeline parallelism. We"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              544.96899,
+              121.54575,
+              553.87555
+            ],
+            "device": [
+              108,
+              542.81708,
+              503.99716,
+              551.72363
+            ]
+          },
+          "content": {
+            "rnormalized": "use the 1F1B (1-Forward 1-Backward) schedule (Narayanan et al., 2021a;b) for efficient pipeline"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              534.01001,
+              153.02644,
+              542.91656
+            ],
+            "device": [
+              108,
+              531.85809,
+              503.99768,
+              540.76465
+            ]
+          },
+          "content": {
+            "rnormalized": "parallelism to reduce the memory consumption for the in-flight microbatches. The 1F1B schedule"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              523.05103,
+              124.96689,
+              531.95758
+            ],
+            "device": [
+              108,
+              520.89911,
+              504.00226,
+              529.80566
+            ]
+          },
+          "content": {
+            "rnormalized": "makes the memory consumption proportional to the pipeline depth instead of the number of in-flight"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              512.09198,
+              164.55663,
+              520.99854
+            ],
+            "device": [
+              108,
+              509.94006,
+              503.99768,
+              518.84662
+            ]
+          },
+          "content": {
+            "rnormalized": "microbatches, which can be quite large when training such models. We shard the optimizer on the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              501.133,
+              126.80939,
+              510.03955
+            ],
+            "device": [
+              108,
+              498.98108,
+              504.17276,
+              507.88763
+            ]
+          },
+          "content": {
+            "rnormalized": "Data Parallel process group similar to ZeRO-1 (Rajbhandari et al., 2020) for reducing the optimizer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              490.17401,
+              141.86945,
+              499.08057
+            ],
+            "device": [
+              108,
+              488.02209,
+              503.99719,
+              496.92865
+            ]
+          },
+          "content": {
+            "rnormalized": "memory footprint during training. Because tensor parallelism is extremely latency sensitive and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              479.215,
+              142.34607,
+              488.12155
+            ],
+            "device": [
+              108,
+              477.06308,
+              504.00018,
+              485.96964
+            ]
+          },
+          "content": {
+            "rnormalized": "blocking in nature, we only do tensor parallelism within a server node while pipeline parallelism and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              468.25601,
+              124.49811,
+              477.16257
+            ],
+            "device": [
+              108,
+              466.1041,
+              504.00397,
+              475.01065
+            ]
+          },
+          "content": {
+            "rnormalized": "data Parallelism can span across nodes. We only use data parallelism without any model parallelism"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              457.297,
+              115.84391,
+              466.20355
+            ],
+            "device": [
+              108,
+              455.14508,
+              505.65002,
+              464.05164
+            ]
+          },
+          "content": {
+            "rnormalized": "to train the MoE models. They are trained using 128 and 256 GPUs using ZeRO-1 sharding (Rajb-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              446.33801,
+              138.47539,
+              455.24457
+            ],
+            "device": [
+              108,
+              444.1861,
+              503.99713,
+              453.09265
+            ]
+          },
+          "content": {
+            "rnormalized": "handari et al., 2020) to shard the optimizer across multiple GPUs. To accelerate training, we use"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              435.379,
+              168.23453,
+              444.28555
+            ],
+            "device": [
+              108,
+              433.22708,
+              503.99765,
+              442.13364
+            ]
+          },
+          "content": {
+            "rnormalized": "FlashAttention 2 (Dao et al., 2022; Dao, 2023), the persistent layernorm kernel, Fused RMSNorm"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              424.42099,
+              112.9813,
+              433.32755
+            ],
+            "device": [
+              108,
+              422.26907,
+              499.54019,
+              431.17563
+            ]
+          },
+          "content": {
+            "rnormalized": "kernel (depending on the model), and the Fused Adam kernel available in NVIDIA\u2019s Apex library."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              395.466,
+              114.2766,
+              406.15396
+            ],
+            "device": [
+              108.299,
+              392.88367,
+              114.2766,
+              403.57162
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              395.466,
+              133.47665,
+              406.15396
+            ],
+            "device": [
+              126.82957,
+              392.88367,
+              207.85136,
+              403.57162
+            ]
+          },
+          "content": {
+            "rnormalized": "POST-TRAINING"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              371.76599,
+              117.12479,
+              380.67255
+            ],
+            "device": [
+              107.532,
+              369.61407,
+              503.99655,
+              378.52063
+            ]
+          },
+          "content": {
+            "rnormalized": "We develop the post-training (instruct) variants of our Granite 3.0 models by further training the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              360.80701,
+              152.49263,
+              369.71356
+            ],
+            "device": [
+              108,
+              358.65509,
+              504.00162,
+              367.56165
+            ]
+          },
+          "content": {
+            "rnormalized": "pre-trained checkpoints, focusing on instruction-following capabilities and alignment with human"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.751,
+              349.84799,
+              112.80204,
+              358.75455
+            ],
+            "device": [
+              107.751,
+              347.69608,
+              505.65155,
+              356.60263
+            ]
+          },
+          "content": {
+            "rnormalized": "values. We employ a diverse set of techniques with a structured chat format, including curriculum-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              338.89001,
+              130.68484,
+              347.79657
+            ],
+            "device": [
+              108,
+              336.7381,
+              504.00336,
+              345.64465
+            ]
+          },
+          "content": {
+            "rnormalized": "based supervised finetuning, model alignment using proximal policy optimization (PPO), best-of-N"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              327.93103,
+              147.0235,
+              336.83759
+            ],
+            "device": [
+              108,
+              325.77911,
+              347.98907,
+              334.68567
+            ]
+          },
+          "content": {
+            "rnormalized": "sampling, BRAIn (Pandey et al., 2024), and model merging."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              302.86102,
+              113.2303,
+              311.76758
+            ],
+            "device": [
+              108.249,
+              300.70911,
+              121.69851,
+              309.61566
+            ]
+          },
+          "content": {
+            "rnormalized": "5.1"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              132.15924,
+              302.86102,
+              137.69844,
+              311.76758
+            ],
+            "device": [
+              132.15924,
+              300.70911,
+              264.61139,
+              309.61566
+            ]
+          },
+          "content": {
+            "rnormalized": "STRUCTURED CHAT TEMPLATE"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              282.31299,
+              132.36757,
+              291.21954
+            ],
+            "device": [
+              107.532,
+              280.16107,
+              503.9967,
+              289.06763
+            ]
+          },
+          "content": {
+            "rnormalized": "While a pre-trained model may generate reasonable responses to directives-or, instructions-a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              271.354,
+              158.60274,
+              280.26056
+            ],
+            "device": [
+              108,
+              269.20209,
+              504.00101,
+              278.10864
+            ]
+          },
+          "content": {
+            "rnormalized": "standardized chat format is commonly used in post-training. A common format not only reinforces"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              260.39499,
+              120.27169,
+              269.30154
+            ],
+            "device": [
+              108,
+              258.24307,
+              503.99792,
+              267.14963
+            ]
+          },
+          "content": {
+            "rnormalized": "the structure of query and response pairs used in the applications of instruct-styled models but also"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              249.436,
+              123.10828,
+              258.34256
+            ],
+            "device": [
+              108,
+              247.28409,
+              503.99814,
+              256.19064
+            ]
+          },
+          "content": {
+            "rnormalized": "allows for further control sequences to denote different actors within a single input provided to the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              238.47701,
+              135.9451,
+              247.38358
+            ],
+            "device": [
+              108,
+              236.32509,
+              503.99722,
+              245.23164
+            ]
+          },
+          "content": {
+            "rnormalized": "model, such as information from external systems. To support both human-AI and machine-AI"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              227.51801,
+              155.41519,
+              236.42458
+            ],
+            "device": [
+              108,
+              225.36609,
+              503.99719,
+              234.27264
+            ]
+          },
+          "content": {
+            "rnormalized": "interactions with the instruction-following variants of Granite, we develop a structured interface"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              216.55901,
+              123.07839,
+              225.46558
+            ],
+            "device": [
+              108,
+              214.40709,
+              503.99878,
+              223.31364
+            ]
+          },
+          "content": {
+            "rnormalized": "that enhances the model\u2019s ability to follow directives as including follow ups. The structure is split"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              205.60001,
+              115.90592,
+              214.50658
+            ],
+            "device": [
+              108,
+              203.44809,
+              504.16995,
+              212.35464
+            ]
+          },
+          "content": {
+            "rnormalized": "in multiple sections, or turns, where knowledge is commonly formatted and then aggregated for"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              194.64101,
+              120.41779,
+              203.54758
+            ],
+            "device": [
+              108,
+              192.48909,
+              504.16983,
+              201.39565
+            ]
+          },
+          "content": {
+            "rnormalized": "the model. For basic uses, turns include sections for just the human and the model; however, for"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              183.68201,
+              146.6933,
+              192.58858
+            ],
+            "device": [
+              108,
+              181.53009,
+              504.00027,
+              190.43665
+            ]
+          },
+          "content": {
+            "rnormalized": "enterprise uses, flexibility was added so that turns can include system information, external tools and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              172.724,
+              145.0808,
+              181.63057
+            ],
+            "device": [
+              108,
+              170.57208,
+              473.06961,
+              179.47864
+            ]
+          },
+          "content": {
+            "rnormalized": "functions available, further context, and even other agents and their responses (see Table 3)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              155.787,
+              159.01932,
+              164.69357
+            ],
+            "device": [
+              107.641,
+              153.63509,
+              504.00391,
+              162.54164
+            ]
+          },
+          "content": {
+            "rnormalized": "Additionally, we carefully study the impact of specific/control tokens used in the structure of the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              144.828,
+              136.20631,
+              153.73457
+            ],
+            "device": [
+              108,
+              142.67609,
+              504.00156,
+              151.58264
+            ]
+          },
+          "content": {
+            "rnormalized": "prompt template, as shown in Table 4. Through ablations studies of different tokenizers, we find most"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              133.869,
+              125.90598,
+              142.77557
+            ],
+            "device": [
+              108,
+              131.71709,
+              504.0014,
+              140.62364
+            ]
+          },
+          "content": {
+            "rnormalized": "BPE tokenizers fail to create guaranteed boundary lines when simple separators such as a newline are"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              122.91,
+              129.16714,
+              131.81657
+            ],
+            "device": [
+              108,
+              120.75808,
+              503.99725,
+              129.66464
+            ]
+          },
+          "content": {
+            "rnormalized": "used. This not only makes masking during supervised finetuning unreliable but also leaks prompt"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              111.951,
+              135.88536,
+              120.85756
+            ],
+            "device": [
+              108,
+              109.79907,
+              503.99567,
+              118.70564
+            ]
+          },
+          "content": {
+            "rnormalized": "control sequences into the prompt\u2019s text resulting in unwanted behavior and subpar performance. As"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              100.993,
+              129.02188,
+              109.89956
+            ],
+            "device": [
+              108,
+              98.841072,
+              504.00455,
+              107.74763
+            ]
+          },
+          "content": {
+            "rnormalized": "such, we add special tokens into the vocabulary that allow us to create a structured language in the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              90.033997,
+              136.72438,
+              98.940559
+            ],
+            "device": [
+              108,
+              87.882072,
+              505.56778,
+              96.788635
+            ]
+          },
+          "content": {
+            "rnormalized": "prompt that guarantees a separation between the formatting of the prompt and the prompt text itself."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              73.097,
+              155.09044,
+              82.003563
+            ],
+            "device": [
+              108,
+              70.945076,
+              434.14258,
+              79.851639
+            ]
+          },
+          "content": {
+            "rnormalized": "Specifically, during post-training, the model has learned multiple roles, including:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              437.228,
+              73.097,
+              455.50769,
+              82.053375
+            ],
+            "device": [
+              437.228,
+              71.014816,
+              455.50769,
+              79.971191
+            ]
+          },
+          "content": {
+            "rnormalized": "user"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              457.992,
+              73.097,
+              473.49933,
+              82.003563
+            ],
+            "device": [
+              457.992,
+              70.945076,
+              504.34442,
+              79.851639
+            ]
+          },
+          "content": {
+            "rnormalized": "role for any"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              62.138,
+              135.14531,
+              71.044563
+            ],
+            "device": [
+              108,
+              59.98608,
+              355.45914,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": "human input or, the query in the instruction-following system,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              357.94,
+              62.138,
+              394.5094,
+              71.094376
+            ],
+            "device": [
+              357.94,
+              60.055817,
+              394.5094,
+              69.012192
+            ]
+          },
+          "content": {
+            "rnormalized": "assistant"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              396.98999,
+              62.138,
+              421.36295,
+              71.044563
+            ],
+            "device": [
+              396.98999,
+              59.98608,
+              503.99554,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": "which indicates any output"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.64499,
+              32.25,
+              310.60757,
+              41.156563
+            ],
+            "device": [
+              300.64499,
+              30.098078,
+              310.60757,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "13"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

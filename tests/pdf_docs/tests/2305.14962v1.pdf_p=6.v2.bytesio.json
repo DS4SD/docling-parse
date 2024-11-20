@@ -1,10 +1,77 @@
 {
+  "annotations": {
+    "form": null,
+    "language": null,
+    "meta_xml": null,
+    "table_of_contents": [
+      {
+        "level": 0,
+        "link": {
+          "/D": "chapter.1",
+          "/S": "/GoTo"
+        },
+        "title": "ICDAR 2023 Competition on Robust Layout Segmentation in Corporate Documents"
+      }
+    ]
+  },
   "info": {
     "#-pages": 12,
     "filename": ""
   },
   "pages": [
     {
+      "annotations": [
+        {
+          "/A": {
+            "/D": "figure.1.4",
+            "/S": "/GoTo"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/C": [
+            1,
+            0,
+            0
+          ],
+          "/H": "/I",
+          "/Rect": [
+            315.957,
+            638.805,
+            322.93,
+            650.758
+          ],
+          "/Subtype": "/Link",
+          "/Type": "/Annot"
+        },
+        {
+          "/A": {
+            "/D": "cite.Jimeno-etal-2021-PubLayNetCompetition",
+            "/S": "/GoTo"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/C": [
+            0,
+            1,
+            0
+          ],
+          "/H": "/I",
+          "/Rect": [
+            358.219,
+            277.779,
+            370.172,
+            286.162
+          ],
+          "/Subtype": "/Link",
+          "/Type": "/Annot"
+        }
+      ],
       "original": {
         "cells": {
           "data": [
@@ -28,9 +95,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               221.14,
@@ -52,9 +117,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               237.897,
@@ -76,9 +139,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               259.391,
@@ -100,9 +161,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               289.082,
@@ -124,9 +183,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               301.874,
@@ -148,9 +205,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               333.791,
@@ -172,9 +227,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               343.895,
@@ -196,9 +249,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               348.506,
@@ -220,9 +271,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               364.881,
@@ -244,9 +293,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               395.348,
@@ -268,9 +315,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               422.471,
@@ -292,9 +337,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               433.224,
@@ -316,9 +359,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               453.457,
@@ -340,9 +381,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               477.032,
@@ -364,9 +403,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               488.926,
@@ -388,9 +425,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               525.106,
@@ -412,9 +447,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               134.765,
@@ -436,9 +469,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               158.284,
@@ -460,9 +491,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               180.969,
@@ -484,9 +513,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               188.204,
@@ -508,9 +535,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               209.273,
@@ -532,9 +557,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               231.449,
@@ -556,9 +579,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               249.993,
@@ -580,9 +601,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               258.06,
@@ -604,9 +623,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               286.378,
@@ -628,9 +645,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               295.506,
@@ -652,9 +667,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               329.579,
@@ -676,9 +689,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               361.798,
@@ -700,9 +711,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               373.969,
@@ -724,9 +733,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               387.9,
@@ -748,9 +755,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               398.733,
@@ -772,9 +777,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               424.091,
@@ -796,9 +799,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               429.903,
@@ -820,9 +821,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               134.765,
@@ -844,9 +843,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               169.821,
@@ -868,9 +865,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               192.437,
@@ -892,9 +887,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               212.526,
@@ -916,9 +909,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               238.463,
@@ -940,9 +931,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               249.698,
@@ -964,9 +953,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               260.942,
@@ -988,9 +975,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               281.031,
@@ -1012,9 +997,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               306.968,
@@ -1036,9 +1019,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               325.949,
@@ -1060,9 +1041,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               332.315,
@@ -1084,9 +1063,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               339.229,
@@ -1108,9 +1085,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               346.601,
@@ -1132,9 +1107,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               370.59,
@@ -1156,9 +1129,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               398.489,
@@ -1180,9 +1151,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               417.882,
@@ -1204,9 +1173,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               430.233,
@@ -1228,9 +1195,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               448.992,
@@ -1252,9 +1217,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               468.698,
@@ -1276,9 +1239,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               134.765,
@@ -1300,9 +1261,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               145.557,
@@ -1324,9 +1283,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               150.259,
@@ -1348,9 +1305,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               155.237,
@@ -1372,9 +1327,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               162.981,
@@ -1396,9 +1349,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               180.723,
@@ -1420,9 +1371,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               218.402,
@@ -1444,9 +1393,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               244.268,
@@ -1468,9 +1415,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               255.619,
@@ -1492,9 +1437,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               276.644,
@@ -1516,9 +1459,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               296.616,
@@ -1540,9 +1481,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               316.949,
@@ -1564,9 +1503,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3026
+              false
             ],
             [
               321.929,
@@ -1588,9 +1525,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3027
+              false
             ],
             [
               175.774,
@@ -1612,9 +1547,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              4,
-              488,
-              3028
+              false
             ],
             [
               191.761,
@@ -1636,9 +1569,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              5,
-              489,
-              3029
+              false
             ],
             [
               207.749,
@@ -1660,9 +1591,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              6,
-              490,
-              3030
+              false
             ],
             [
               223.736,
@@ -1684,9 +1613,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              7,
-              491,
-              3031
+              false
             ],
             [
               239.724,
@@ -1708,9 +1635,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              8,
-              492,
-              3032
+              false
             ],
             [
               255.712,
@@ -1732,9 +1657,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              9,
-              493,
-              3033
+              false
             ],
             [
               271.699,
@@ -1756,9 +1679,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              10,
-              494,
-              3034
+              false
             ],
             [
               287.687,
@@ -1780,9 +1701,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              11,
-              495,
-              3035
+              false
             ],
             [
               303.674,
@@ -1804,9 +1723,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              12,
-              496,
-              3036
+              false
             ],
             [
               318.069,
@@ -1828,9 +1745,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              13,
-              497,
-              3037
+              false
             ],
             [
               334.057,
@@ -1852,9 +1767,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              14,
-              498,
-              3038
+              false
             ],
             [
               350.045,
@@ -1876,9 +1789,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              15,
-              499,
-              3039
+              false
             ],
             [
               366.032,
@@ -1900,9 +1811,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              16,
-              500,
-              3040
+              false
             ],
             [
               382.02,
@@ -1924,9 +1833,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              17,
-              501,
-              3041
+              false
             ],
             [
               398.007,
@@ -1948,9 +1855,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              18,
-              502,
-              3042
+              false
             ],
             [
               413.995,
@@ -1972,9 +1877,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              19,
-              503,
-              3043
+              false
             ],
             [
               429.982,
@@ -1996,9 +1899,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              20,
-              504,
-              3044
+              false
             ],
             [
               445.97,
@@ -2020,9 +1921,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              21,
-              505,
-              3045
+              false
             ],
             [
               461.958,
@@ -2044,9 +1943,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              22,
-              506,
-              3046
+              false
             ],
             [
               303.876,
@@ -2068,9 +1965,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              23,
-              507,
-              3047
+              false
             ],
             [
               306.823,
@@ -2092,9 +1987,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              23,
-              507,
-              3047
+              false
             ],
             [
               145.984,
@@ -2116,9 +2009,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              24,
-              508,
-              3048
+              false
             ],
             [
               145.984,
@@ -2140,9 +2031,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              25,
-              509,
-              3049
+              false
             ],
             [
               145.984,
@@ -2164,9 +2053,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              26,
-              510,
-              3050
+              false
             ],
             [
               145.984,
@@ -2188,9 +2075,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              27,
-              511,
-              3051
+              false
             ],
             [
               145.984,
@@ -2212,9 +2097,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              28,
-              512,
-              3052
+              false
             ],
             [
               135.038,
@@ -2236,9 +2119,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              29,
-              513,
-              3053
+              false
             ],
             [
               134.765,
@@ -2260,9 +2141,7 @@
               "STANDARD",
               "/F41",
               "/RQVTRN+SFBX0900",
-              3,
-              514,
-              3054
+              false
             ],
             [
               154.394,
@@ -2284,9 +2163,7 @@
               "STANDARD",
               "/F41",
               "/RQVTRN+SFBX0900",
-              3,
-              514,
-              3054
+              false
             ],
             [
               166.4,
@@ -2308,9 +2185,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               219.235,
@@ -2332,9 +2207,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               230.406,
@@ -2356,9 +2229,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               234.762,
@@ -2380,9 +2251,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               239.364,
@@ -2404,9 +2273,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               260.548,
@@ -2428,9 +2295,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               285.152,
@@ -2452,9 +2317,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               293.603,
@@ -2476,9 +2339,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               309.981,
@@ -2500,9 +2361,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               322.954,
@@ -2524,9 +2383,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               327.812,
@@ -2548,9 +2405,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               336.432,
@@ -2572,9 +2427,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               366.339,
@@ -2596,9 +2449,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               385.793,
@@ -2620,9 +2471,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               391.162,
@@ -2644,9 +2493,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               406.255,
@@ -2668,9 +2515,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               424.855,
@@ -2692,9 +2537,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               450.428,
@@ -2716,9 +2559,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               472.404,
@@ -2740,9 +2581,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               134.765,
@@ -2764,9 +2603,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3056
+              false
             ],
             [
               175.51,
@@ -2788,9 +2625,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3056
+              false
             ],
             [
               180.637,
@@ -2812,9 +2647,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3056
+              false
             ],
             [
               198.086,
@@ -2836,9 +2669,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3056
+              false
             ],
             [
               149.709,
@@ -2860,9 +2691,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               204.839,
@@ -2884,9 +2713,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               221.761,
@@ -2908,9 +2735,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               265.574,
@@ -2932,9 +2757,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               295.83,
@@ -2956,9 +2779,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               302.744,
@@ -2980,9 +2801,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               310.259,
@@ -3004,9 +2823,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               338.007,
@@ -3028,9 +2845,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               351.055,
@@ -3052,9 +2867,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               383.249,
@@ -3076,9 +2889,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               409.079,
@@ -3100,9 +2911,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               434.292,
@@ -3124,9 +2933,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               439.27,
@@ -3148,9 +2955,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               461.677,
@@ -3172,9 +2977,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               472.567,
@@ -3196,9 +2999,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               134.765,
@@ -3220,9 +3021,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               139.466,
@@ -3244,9 +3043,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               144.445,
@@ -3268,9 +3065,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               166.384,
@@ -3292,9 +3087,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               192.021,
@@ -3316,9 +3109,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               222.776,
@@ -3340,9 +3131,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               230.854,
@@ -3364,9 +3153,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               255.524,
@@ -3388,9 +3175,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               285.2,
@@ -3412,9 +3197,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               307.665,
@@ -3436,9 +3219,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               325.416,
@@ -3460,9 +3241,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               373.666,
@@ -3484,9 +3263,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               387.275,
@@ -3508,9 +3285,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               395.897,
@@ -3532,9 +3307,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               407.904,
@@ -3556,9 +3329,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               432.572,
@@ -3580,9 +3351,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3059
+              false
             ],
             [
               442.246,
@@ -3604,9 +3373,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3059
+              false
             ],
             [
               446.319,
@@ -3628,9 +3395,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3059
+              false
             ],
             [
               455.993,
@@ -3652,9 +3417,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3059
+              false
             ],
             [
               464.544,
@@ -3676,9 +3439,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3060
+              false
             ],
             [
               134.765,
@@ -3700,9 +3461,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3061
+              false
             ],
             [
               160.195,
@@ -3724,9 +3483,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3062
+              false
             ],
             [
               167.091,
@@ -3748,9 +3505,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3062
+              false
             ],
             [
               171.165,
@@ -3772,9 +3527,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3062
+              false
             ],
             [
               175.748,
@@ -3796,9 +3549,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3062
+              false
             ],
             [
               187.962,
@@ -3820,9 +3571,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               194.574,
@@ -3844,9 +3593,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               214.224,
@@ -3868,9 +3615,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               223.603,
@@ -3892,9 +3637,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               266.192,
@@ -3916,9 +3659,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               278.892,
@@ -3940,9 +3681,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               304.094,
@@ -3964,9 +3703,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               309.072,
@@ -3988,9 +3725,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               317.354,
@@ -4012,9 +3747,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               322.609,
@@ -4036,9 +3769,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               331.721,
@@ -4060,9 +3791,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               348.847,
@@ -4084,9 +3813,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               368.739,
@@ -4108,9 +3835,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               385.875,
@@ -4132,9 +3857,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               390.576,
@@ -4156,9 +3879,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               395.555,
@@ -4180,9 +3901,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               407.738,
@@ -4204,9 +3923,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               432.085,
@@ -4228,9 +3945,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               460.369,
@@ -4252,9 +3967,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               134.765,
@@ -4276,9 +3989,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               151.975,
@@ -4300,9 +4011,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               185.842,
@@ -4324,9 +4033,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               209.351,
@@ -4348,9 +4055,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               227.067,
@@ -4372,9 +4077,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               232.038,
@@ -4396,9 +4099,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               240.948,
@@ -4420,9 +4121,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               271.494,
@@ -4444,9 +4143,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               289.562,
@@ -4468,9 +4165,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               310.033,
@@ -4492,9 +4187,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               321.656,
@@ -4516,9 +4209,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               327.8,
@@ -4540,9 +4231,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               334.166,
@@ -4564,9 +4253,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               355.245,
@@ -4588,9 +4275,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3065
+              false
             ],
             [
               378.195,
@@ -4612,9 +4297,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               407.856,
@@ -4636,9 +4319,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               420.142,
@@ -4660,9 +4341,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               428.489,
@@ -4684,9 +4363,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               438.459,
@@ -4708,9 +4385,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               449.019,
@@ -4732,9 +4407,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               458.71,
@@ -4756,9 +4429,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               476.719,
@@ -4780,9 +4451,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               134.765,
@@ -4804,9 +4473,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               146.382,
@@ -4828,9 +4495,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               163.543,
@@ -4852,9 +4517,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               207.586,
@@ -4876,9 +4539,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               235.305,
@@ -4900,9 +4561,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               253.015,
@@ -4924,9 +4583,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               149.709,
@@ -4948,9 +4605,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               169.751,
@@ -4972,9 +4627,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               206.438,
@@ -4996,9 +4649,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               225.374,
@@ -5020,9 +4671,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               244.909,
@@ -5044,9 +4693,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               268.88,
@@ -5068,9 +4715,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               307.997,
@@ -5092,9 +4737,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               314.759,
@@ -5116,9 +4759,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               320.562,
@@ -5140,9 +4781,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               371.37,
@@ -5164,9 +4803,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               400.394,
@@ -5188,9 +4825,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               409.865,
@@ -5212,9 +4847,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               457.176,
@@ -5236,9 +4869,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               466.76,
@@ -5260,9 +4891,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               134.765,
@@ -5284,9 +4913,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3069
+              false
             ],
             [
               151.999,
@@ -5308,9 +4935,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3069
+              false
             ],
             [
               164.549,
@@ -5332,9 +4957,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3069
+              false
             ],
             [
               175.429,
@@ -5356,9 +4979,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3069
+              false
             ],
             [
               191.844,
@@ -5380,9 +5001,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3070
+              false
             ],
             [
               224.018,
@@ -5404,9 +5023,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               260.017,
@@ -5428,9 +5045,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               265.364,
@@ -5452,9 +5067,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               287.31,
@@ -5476,9 +5089,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               299.851,
@@ -5500,9 +5111,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               308.161,
@@ -5524,9 +5133,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               313.131,
@@ -5548,9 +5155,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               321.441,
@@ -5572,9 +5177,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               327.95,
@@ -5596,9 +5199,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               337.078,
@@ -5620,9 +5221,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               370.922,
@@ -5644,9 +5243,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               384.025,
@@ -5668,9 +5265,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               409.154,
@@ -5692,9 +5287,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               419.758,
@@ -5716,9 +5309,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               440.046,
@@ -5740,9 +5331,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               451.508,
@@ -5764,9 +5353,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               457.32,
@@ -5788,9 +5375,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               134.765,
@@ -5812,9 +5397,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               157.404,
@@ -5836,9 +5419,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               167.317,
@@ -5860,9 +5441,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               206.434,
@@ -5884,9 +5463,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               213.525,
@@ -5908,9 +5485,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               236.11,
@@ -5932,9 +5507,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               253.742,
@@ -5956,9 +5529,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               263.416,
@@ -5980,9 +5551,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               269.228,
@@ -6004,9 +5573,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               314.001,
@@ -6028,9 +5595,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               338.3,
@@ -6052,9 +5617,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               344.8,
@@ -6076,9 +5639,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               363.344,
@@ -6100,9 +5661,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               370.425,
@@ -6124,9 +5683,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               381.218,
@@ -6148,9 +5705,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               409.168,
@@ -6172,9 +5727,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               416.249,
@@ -6196,9 +5749,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               423.727,
@@ -6220,9 +5771,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               428.706,
@@ -6244,9 +5793,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               450.239,
@@ -6268,9 +5815,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               455.209,
@@ -6292,9 +5837,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               466.755,
@@ -6316,9 +5859,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               134.765,
@@ -6340,9 +5881,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               159.085,
@@ -6364,9 +5903,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               196.381,
@@ -6388,9 +5925,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               215.665,
@@ -6412,9 +5947,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               266.6,
@@ -6436,9 +5969,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               286.991,
@@ -6460,9 +5991,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               300.269,
@@ -6484,9 +6013,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               322.956,
@@ -6508,9 +6035,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               349.597,
@@ -6532,9 +6057,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               365.285,
@@ -6556,9 +6079,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               372.753,
@@ -6580,9 +6101,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               377.741,
@@ -6604,9 +6123,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               399.294,
@@ -6628,9 +6145,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               410.832,
@@ -6652,9 +6167,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               427.898,
@@ -6676,9 +6189,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3074
+              false
             ],
             [
               434.656,
@@ -6700,9 +6211,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3074
+              false
             ],
             [
               443.82,
@@ -6724,9 +6233,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3074
+              false
             ],
             [
               464.544,
@@ -6748,9 +6255,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3075
+              false
             ],
             [
               134.765,
@@ -6772,9 +6277,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3076
+              false
             ],
             [
               168.465,
@@ -6796,9 +6299,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               215.15,
@@ -6820,9 +6321,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               220.962,
@@ -6844,9 +6343,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               243.815,
@@ -6868,9 +6365,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               252.79,
@@ -6892,9 +6387,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               310.819,
@@ -6916,9 +6409,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               341.402,
@@ -6940,9 +6431,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               345.549,
@@ -6964,9 +6453,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               387.724,
@@ -6988,9 +6475,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               411.085,
@@ -7012,9 +6497,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               441.557,
@@ -7036,9 +6519,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               134.765,
@@ -7060,9 +6541,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               170.758,
@@ -7084,9 +6563,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               182.375,
@@ -7108,9 +6585,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               199.536,
@@ -7132,9 +6607,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               207.004,
@@ -7156,9 +6629,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               217.514,
@@ -7180,9 +6651,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               243.031,
@@ -7204,9 +6673,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               262.395,
@@ -7228,9 +6695,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               287.901,
@@ -7252,9 +6717,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               305.969,
@@ -7276,9 +6739,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               326.44,
@@ -7300,9 +6761,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               338.064,
@@ -7324,9 +6783,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               149.709,
@@ -7348,9 +6805,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               156.075,
@@ -7372,9 +6827,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               162.989,
@@ -7396,9 +6849,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               170.659,
@@ -7420,9 +6871,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               178.68,
@@ -7444,9 +6893,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               219.08,
@@ -7468,9 +6915,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               246.558,
@@ -7492,9 +6937,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               275.31,
@@ -7516,9 +6959,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               292.94,
@@ -7540,9 +6981,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               298.752,
@@ -7564,9 +7003,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               305.869,
@@ -7588,9 +7025,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               334.565,
@@ -7612,9 +7047,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               350.535,
@@ -7636,9 +7069,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               368.165,
@@ -7660,9 +7091,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               395.201,
@@ -7684,9 +7113,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               402.115,
@@ -7708,9 +7135,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               409.232,
@@ -7732,9 +7157,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               428.521,
@@ -7756,9 +7179,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               468.691,
@@ -7780,9 +7201,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               134.765,
@@ -7804,9 +7223,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               142.233,
@@ -7828,9 +7245,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               149.147,
@@ -7852,9 +7267,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               153.583,
@@ -7876,9 +7289,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               160.523,
@@ -7900,9 +7311,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               190.048,
@@ -7924,9 +7333,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               201.387,
@@ -7948,9 +7355,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               218.269,
@@ -7972,9 +7377,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               272.443,
@@ -7996,9 +7399,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               301.637,
@@ -8020,9 +7421,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               319.09,
@@ -8044,9 +7443,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               342.609,
@@ -8068,9 +7465,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               373.877,
@@ -8092,9 +7487,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               389.144,
@@ -8116,9 +7509,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               434.882,
@@ -8140,9 +7531,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               457.851,
@@ -8164,9 +7553,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               134.765,
@@ -8188,9 +7575,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               154.405,
@@ -8212,9 +7597,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               164.77,
@@ -8236,9 +7619,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               171.684,
@@ -8260,9 +7641,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               189.26,
@@ -8284,9 +7663,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               198.398,
@@ -8308,9 +7685,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               216.103,
@@ -8332,9 +7707,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               230.884,
@@ -8356,9 +7729,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               247.641,
@@ -8380,9 +7751,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               288.153,
@@ -8404,9 +7773,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               303.489,
@@ -8428,9 +7795,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               345.255,
@@ -8452,9 +7817,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               362.128,
@@ -8476,9 +7839,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               382.472,
@@ -8500,9 +7861,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               398.798,
@@ -8524,9 +7883,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               415.886,
@@ -8548,9 +7905,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               429.007,
@@ -8572,9 +7927,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               447.662,
@@ -8596,9 +7949,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               458.462,
@@ -8620,9 +7971,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               465.791,
@@ -8644,9 +7993,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               134.765,
@@ -8668,9 +8015,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               158.93,
@@ -8692,9 +8037,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               185.216,
@@ -8716,9 +8059,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               217.68,
@@ -8740,9 +8081,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               232.447,
@@ -8764,9 +8103,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               254.854,
@@ -8788,9 +8125,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               275.698,
@@ -8812,9 +8147,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               323.859,
@@ -8836,9 +8169,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               330.359,
@@ -8860,9 +8191,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               359.215,
@@ -8884,9 +8213,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3083
+              false
             ],
             [
               369.176,
@@ -8908,9 +8235,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3084
+              false
             ],
             [
               378.953,
@@ -8932,9 +8257,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3084
+              false
             ],
             [
               402.628,
@@ -8956,9 +8279,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3084
+              false
             ],
             [
               421.812,
@@ -8980,9 +8301,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3084
+              false
             ],
             [
               427.625,
@@ -9004,9 +8323,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3084
+              false
             ],
             [
               436.295,
@@ -9028,9 +8345,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3084
+              false
             ],
             [
               134.765,
@@ -9052,9 +8367,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               140.577,
@@ -9076,9 +8389,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               158.61,
@@ -9100,9 +8411,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               171.111,
@@ -9124,9 +8433,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               188.59,
@@ -9148,9 +8455,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               213.844,
@@ -9172,9 +8477,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               217.992,
@@ -9196,9 +8499,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               265.905,
@@ -9220,9 +8521,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               273.373,
@@ -9244,9 +8543,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               278.361,
@@ -9268,9 +8565,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               300.322,
@@ -9292,9 +8587,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               320.016,
@@ -9316,9 +8609,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               350.803,
@@ -9340,9 +8631,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               374.479,
@@ -9364,9 +8653,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               394.673,
@@ -9388,9 +8675,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               402.193,
@@ -9412,9 +8697,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               413.863,
@@ -9436,9 +8719,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               431.343,
@@ -9460,9 +8741,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               444.21,
@@ -9484,9 +8763,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               459.563,
@@ -9508,9 +8785,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               134.765,
@@ -9532,9 +8807,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               172.584,
@@ -9556,9 +8829,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               184.94,
@@ -9580,9 +8851,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               191.864,
@@ -9604,9 +8873,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               205.27,
@@ -9628,9 +8895,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               217.636,
@@ -9652,9 +8917,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               229.937,
@@ -9676,9 +8939,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               247.227,
@@ -9700,9 +8961,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               301.673,
@@ -9724,9 +8983,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               322.329,
@@ -9748,9 +9005,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               341.833,
@@ -9772,9 +9027,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               365.238,
@@ -9796,9 +9049,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               402.548,
@@ -9820,9 +9071,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               409.472,
@@ -9844,9 +9093,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               417.345,
@@ -9868,9 +9115,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               445.021,
@@ -9892,9 +9137,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               466.756,
@@ -9916,9 +9159,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               134.765,
@@ -9940,9 +9181,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               158.284,
@@ -9964,9 +9203,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               189.453,
@@ -9988,9 +9225,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               224.007,
@@ -10012,9 +9247,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               235.81,
@@ -10036,9 +9269,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               251.306,
@@ -10060,9 +9291,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               270.356,
@@ -10084,9 +9313,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               286.595,
@@ -10108,9 +9335,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               303.377,
@@ -10132,9 +9357,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               329.051,
@@ -10156,9 +9379,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               356.346,
@@ -10180,9 +9401,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               363.26,
@@ -10204,9 +9423,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               370.645,
@@ -10228,9 +9445,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               386.375,
@@ -10252,9 +9467,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               394.315,
@@ -10276,9 +9489,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               434.484,
@@ -10300,9 +9511,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               441.306,
@@ -10324,9 +9533,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               445.244,
@@ -10348,9 +9555,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               472.568,
@@ -10372,9 +9577,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               134.765,
@@ -10396,9 +9599,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               164.191,
@@ -10420,9 +9621,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               193.294,
@@ -10444,9 +9643,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               210.076,
@@ -10468,9 +9665,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               231.839,
@@ -10492,9 +9687,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               265.766,
@@ -10516,9 +9709,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               288.69,
@@ -10540,9 +9731,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               311.005,
@@ -10564,9 +9753,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               342.793,
@@ -10588,9 +9775,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               347.763,
@@ -10612,9 +9797,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               350.54,
@@ -10636,9 +9819,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               356.256,
@@ -10660,9 +9841,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               384.713,
@@ -10684,9 +9863,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               429.448,
@@ -10708,9 +9885,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               446.23,
@@ -10732,9 +9907,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               134.765,
@@ -10756,9 +9929,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               140.019,
@@ -10780,9 +9951,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               148.096,
@@ -10804,9 +9973,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               155.886,
@@ -10828,9 +9995,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               196.055,
@@ -10852,9 +10017,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               202.748,
@@ -10876,9 +10039,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               238.786,
@@ -10900,9 +10061,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               261.026,
@@ -10924,9 +10083,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               281.497,
@@ -10948,9 +10105,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               296.563,
@@ -10972,9 +10127,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               336.178,
@@ -10996,9 +10149,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               357.248,
@@ -11020,9 +10171,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               373.9,
@@ -11044,9 +10193,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               432.625,
@@ -11068,9 +10215,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               460.943,
@@ -11092,9 +10237,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               466.486,
@@ -11116,9 +10259,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               471.187,
@@ -11140,9 +10281,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               476.165,
@@ -11164,9 +10303,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               134.765,
@@ -11188,9 +10325,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               168.733,
@@ -11212,9 +10347,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               209.425,
@@ -11236,9 +10369,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               230.076,
@@ -11260,9 +10391,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               262.205,
@@ -11284,9 +10413,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               284.516,
@@ -11308,9 +10435,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               298.359,
@@ -11332,9 +10457,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               322.758,
@@ -11356,9 +10479,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               333.514,
@@ -11380,9 +10501,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               373.683,
@@ -11404,9 +10523,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               387.981,
@@ -11428,9 +10545,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               410.598,
@@ -11452,9 +10567,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               449.325,
@@ -11476,9 +10589,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               134.765,
@@ -11500,9 +10611,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               157.771,
@@ -11524,9 +10633,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               168.832,
@@ -11548,9 +10655,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               187.909,
@@ -11572,9 +10677,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               231.057,
@@ -11596,9 +10699,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               258.439,
@@ -11620,9 +10721,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               263.982,
@@ -11644,9 +10743,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               271.208,
@@ -11668,9 +10765,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               291.17,
@@ -11692,9 +10787,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               335.479,
@@ -11716,9 +10809,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               346.246,
@@ -11740,9 +10831,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               366.209,
@@ -11764,9 +10853,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               380.372,
@@ -11788,9 +10875,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               394.801,
@@ -11812,9 +10897,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               416.369,
@@ -11836,9 +10919,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               433.5,
@@ -11860,9 +10941,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               441.52,
@@ -11884,9 +10963,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               446.509,
@@ -11908,9 +10985,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               476.717,
@@ -11932,9 +11007,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               134.765,
@@ -11956,9 +11029,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               146.368,
@@ -11980,9 +11051,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               161.316,
@@ -12004,9 +11073,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               181.773,
@@ -12028,9 +11095,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               241.082,
@@ -12052,9 +11117,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               268.474,
@@ -12076,9 +11139,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               280.685,
@@ -12100,9 +11161,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               290.14,
@@ -12124,9 +11183,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               295.952,
@@ -12148,9 +11205,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               333.561,
@@ -12172,9 +11227,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               345.174,
@@ -12196,9 +11249,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               375.591,
@@ -12220,9 +11271,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               390.865,
@@ -12244,9 +11293,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               413.59,
@@ -12268,9 +11315,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               419.402,
@@ -12292,9 +11337,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               470.081,
@@ -12316,9 +11359,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               134.765,
@@ -12340,9 +11381,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3093
+              false
             ],
             [
               154.184,
@@ -12364,9 +11403,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3093
+              false
             ],
             [
               134.765,
@@ -12388,9 +11425,7 @@
               "STANDARD",
               "/F47",
               "/CQWFHR+SFBX1000",
-              3,
-              514,
-              3094
+              false
             ],
             [
               151.684,
@@ -12412,9 +11447,7 @@
               "STANDARD",
               "/F47",
               "/CQWFHR+SFBX1000",
-              3,
-              514,
-              3094
+              false
             ],
             [
               176.298,
@@ -12436,9 +11469,7 @@
               "STANDARD",
               "/F47",
               "/CQWFHR+SFBX1000",
-              3,
-              514,
-              3094
+              false
             ],
             [
               199.883,
@@ -12460,9 +11491,7 @@
               "STANDARD",
               "/F47",
               "/CQWFHR+SFBX1000",
-              3,
-              514,
-              3094
+              false
             ],
             [
               259.229,
@@ -12484,9 +11513,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               272.961,
@@ -12508,9 +11535,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               291.407,
@@ -12532,9 +11557,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               334.3,
@@ -12556,9 +11579,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               361.78,
@@ -12580,9 +11601,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               380.216,
@@ -12604,9 +11623,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               385.47,
@@ -12628,9 +11645,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               395.34,
@@ -12652,9 +11667,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               413.776,
@@ -12676,9 +11689,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               432.766,
@@ -12700,9 +11711,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               443.287,
@@ -12724,9 +11733,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               452.316,
@@ -12748,9 +11755,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               134.765,
@@ -12772,9 +11777,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               141.679,
@@ -12796,9 +11799,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               150.18,
@@ -12820,9 +11821,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               157.094,
@@ -12844,9 +11843,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               173.913,
@@ -12868,9 +11865,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               209.582,
@@ -12892,9 +11887,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               222.501,
@@ -12916,9 +11909,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               239.356,
@@ -12940,9 +11931,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               249.591,
@@ -12964,9 +11953,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               254.569,
@@ -12988,9 +11975,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               265.827,
@@ -13012,9 +11997,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               285.948,
@@ -13036,9 +12019,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               293.969,
@@ -13060,9 +12041,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               335.753,
@@ -13084,9 +12063,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               353.181,
@@ -13108,9 +12085,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               397.141,
@@ -13132,9 +12107,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               409.24,
@@ -13156,9 +12129,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               431.674,
@@ -13180,9 +12151,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ],
             [
               439.613,
@@ -13204,9 +12173,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ]
           ],
           "header": [
@@ -13229,9 +12196,7 @@
             "font-encoding",
             "font-key",
             "font-name",
-            "stack-size",
-            "block-count",
-            "instr-count"
+            "widget"
           ]
         },
         "dimension": {
@@ -16158,9 +15123,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               525.106,
@@ -16182,9 +15145,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              0,
-              487,
-              3022
+              false
             ],
             [
               134.765,
@@ -16206,9 +15167,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3023
+              false
             ],
             [
               134.765,
@@ -16230,9 +15189,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3024
+              false
             ],
             [
               134.765,
@@ -16254,9 +15211,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              0,
-              487,
-              3025
+              false
             ],
             [
               175.774,
@@ -16278,9 +15233,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              4,
-              488,
-              3028
+              false
             ],
             [
               191.761,
@@ -16302,9 +15255,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              5,
-              489,
-              3029
+              false
             ],
             [
               207.749,
@@ -16326,9 +15277,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              6,
-              490,
-              3030
+              false
             ],
             [
               223.736,
@@ -16350,9 +15299,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              7,
-              491,
-              3031
+              false
             ],
             [
               239.724,
@@ -16374,9 +15321,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              8,
-              492,
-              3032
+              false
             ],
             [
               255.712,
@@ -16398,9 +15343,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              9,
-              493,
-              3033
+              false
             ],
             [
               271.699,
@@ -16422,9 +15365,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              10,
-              494,
-              3034
+              false
             ],
             [
               287.687,
@@ -16446,9 +15387,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              11,
-              495,
-              3035
+              false
             ],
             [
               303.674,
@@ -16470,9 +15409,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              12,
-              496,
-              3036
+              false
             ],
             [
               318.069,
@@ -16494,9 +15431,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              13,
-              497,
-              3037
+              false
             ],
             [
               334.057,
@@ -16518,9 +15453,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              14,
-              498,
-              3038
+              false
             ],
             [
               350.045,
@@ -16542,9 +15475,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              15,
-              499,
-              3039
+              false
             ],
             [
               366.032,
@@ -16566,9 +15497,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              16,
-              500,
-              3040
+              false
             ],
             [
               382.02,
@@ -16590,9 +15519,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              17,
-              501,
-              3041
+              false
             ],
             [
               398.007,
@@ -16614,9 +15541,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              18,
-              502,
-              3042
+              false
             ],
             [
               413.995,
@@ -16638,9 +15563,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              19,
-              503,
-              3043
+              false
             ],
             [
               429.982,
@@ -16662,9 +15585,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              20,
-              504,
-              3044
+              false
             ],
             [
               445.97,
@@ -16686,9 +15607,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              21,
-              505,
-              3045
+              false
             ],
             [
               461.958,
@@ -16710,9 +15629,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              22,
-              506,
-              3046
+              false
             ],
             [
               303.876,
@@ -16734,9 +15651,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              23,
-              507,
-              3047
+              false
             ],
             [
               145.984,
@@ -16758,9 +15673,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              24,
-              508,
-              3048
+              false
             ],
             [
               145.984,
@@ -16782,9 +15695,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              25,
-              509,
-              3049
+              false
             ],
             [
               145.984,
@@ -16806,9 +15717,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              26,
-              510,
-              3050
+              false
             ],
             [
               145.984,
@@ -16830,9 +15739,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              27,
-              511,
-              3051
+              false
             ],
             [
               145.984,
@@ -16854,9 +15761,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              28,
-              512,
-              3052
+              false
             ],
             [
               135.038,
@@ -16878,9 +15783,7 @@
               "STANDARD",
               "/F1",
               "/BMQQDV+DejaVuSans",
-              29,
-              513,
-              3053
+              false
             ],
             [
               134.765,
@@ -16902,9 +15805,7 @@
               "STANDARD",
               "/F41",
               "/RQVTRN+SFBX0900",
-              3,
-              514,
-              3054
+              false
             ],
             [
               166.4,
@@ -16926,9 +15827,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3055
+              false
             ],
             [
               134.765,
@@ -16950,9 +15849,7 @@
               "STANDARD",
               "/F39",
               "/TFWOKM+SFRM0900",
-              3,
-              514,
-              3056
+              false
             ],
             [
               149.709,
@@ -16974,9 +15871,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3057
+              false
             ],
             [
               134.765,
@@ -16998,9 +15893,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3058
+              false
             ],
             [
               432.572,
@@ -17022,9 +15915,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3059
+              false
             ],
             [
               464.544,
@@ -17046,9 +15937,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3060
+              false
             ],
             [
               134.765,
@@ -17070,9 +15959,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3061
+              false
             ],
             [
               160.195,
@@ -17094,9 +15981,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3062
+              false
             ],
             [
               187.962,
@@ -17118,9 +16003,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3063
+              false
             ],
             [
               134.765,
@@ -17142,9 +16025,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3064
+              false
             ],
             [
               355.245,
@@ -17166,9 +16047,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3065
+              false
             ],
             [
               378.195,
@@ -17190,9 +16069,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3066
+              false
             ],
             [
               134.765,
@@ -17214,9 +16091,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3067
+              false
             ],
             [
               149.709,
@@ -17238,9 +16113,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3068
+              false
             ],
             [
               134.765,
@@ -17262,9 +16135,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3069
+              false
             ],
             [
               191.844,
@@ -17286,9 +16157,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3070
+              false
             ],
             [
               224.018,
@@ -17310,9 +16179,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3071
+              false
             ],
             [
               134.765,
@@ -17334,9 +16201,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3072
+              false
             ],
             [
               134.765,
@@ -17358,9 +16223,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3073
+              false
             ],
             [
               427.898,
@@ -17382,9 +16245,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3074
+              false
             ],
             [
               464.544,
@@ -17406,9 +16267,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3075
+              false
             ],
             [
               134.765,
@@ -17430,9 +16289,7 @@
               "STANDARD",
               "/F46",
               "/IMULES+SFTI1000",
-              3,
-              514,
-              3076
+              false
             ],
             [
               168.465,
@@ -17454,9 +16311,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3077
+              false
             ],
             [
               134.765,
@@ -17478,9 +16333,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3078
+              false
             ],
             [
               149.709,
@@ -17502,9 +16355,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3079
+              false
             ],
             [
               134.765,
@@ -17526,9 +16377,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3080
+              false
             ],
             [
               134.765,
@@ -17550,9 +16399,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3081
+              false
             ],
             [
               134.765,
@@ -17574,9 +16421,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3082
+              false
             ],
             [
               134.765,
@@ -17598,9 +16443,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3085
+              false
             ],
             [
               134.765,
@@ -17622,9 +16465,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3086
+              false
             ],
             [
               134.765,
@@ -17646,9 +16487,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3087
+              false
             ],
             [
               134.765,
@@ -17670,9 +16509,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3088
+              false
             ],
             [
               134.765,
@@ -17694,9 +16531,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3089
+              false
             ],
             [
               134.765,
@@ -17718,9 +16553,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3090
+              false
             ],
             [
               134.765,
@@ -17742,9 +16575,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3091
+              false
             ],
             [
               134.765,
@@ -17766,9 +16597,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3092
+              false
             ],
             [
               134.765,
@@ -17790,9 +16619,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3093
+              false
             ],
             [
               134.765,
@@ -17814,9 +16641,7 @@
               "STANDARD",
               "/F47",
               "/CQWFHR+SFBX1000",
-              3,
-              514,
-              3094
+              false
             ],
             [
               259.229,
@@ -17838,9 +16663,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3095
+              false
             ],
             [
               134.765,
@@ -17862,9 +16685,7 @@
               "STANDARD",
               "/F33",
               "/BUDZTF+SFRM1000",
-              3,
-              514,
-              3096
+              false
             ]
           ],
           "header": [
@@ -17887,9 +16708,7 @@
             "font-encoding",
             "font-key",
             "font-name",
-            "stack-size",
-            "block-count",
-            "instr-count"
+            "widget"
           ]
         },
         "dimension": {
@@ -20794,28 +19613,30 @@
         ]
       },
       "timings": {
-        "decode_contents": 0.01095,
+        "decode_annots": 2e-06,
+        "decode_contents": 0.003107,
         "decode_dimensions": 0.0,
-        "decode_page": 0.018367,
-        "decode_resources": 0.005503,
-        "sanitise_contents": 4e-05
+        "decode_page": 0.006019,
+        "decode_resources": 0.002363,
+        "sanitise_contents": 3.8e-05
       }
     }
   ],
   "timings": {
-    "decode_contents": 0.01095,
+    "decode_annots": 2e-06,
+    "decode_contents": 0.003107,
     "decode_dimensions": 0.0,
-    "decode_document": 0.018985,
-    "decode_page": 0.018367,
-    "decode_resources": 0.005503,
-    "decoding page 0": 0.015462,
-    "decoding page 1": 0.025536,
-    "decoding page 2": 0.011517,
-    "decoding page 3": 0.012502,
-    "decoding page 4": 0.011325,
-    "decoding page 5": 0.016546,
-    "decoding page 6": 0.018592,
-    "process_document_from_bytesio": 0.00043,
-    "sanitise_contents": 4e-05
+    "decode_document": 0.006661,
+    "decode_page": 0.006019,
+    "decode_resources": 0.002363,
+    "decoding page 0": 0.006043,
+    "decoding page 1": 0.008136,
+    "decoding page 2": 0.004271,
+    "decoding page 3": 0.00459,
+    "decoding page 4": 0.004503,
+    "decoding page 5": 0.005518,
+    "decoding page 6": 0.006264,
+    "process_document_from_bytesio": 0.000118,
+    "sanitise_contents": 3.8e-05
   }
 }

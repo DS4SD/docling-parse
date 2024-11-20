@@ -21,6 +21,9 @@ namespace pdflib
     nlohmann::json get();
 
     int get_number_of_pages() { return number_of_pages; }
+
+    nlohmann::json get_annotations() { return json_annots; }
+    nlohmann::json get_table_of_contents() { return json_annots["table_of_contents"]; }
     
     bool process_document_from_file(std::string& _filename);
     bool process_document_from_bytesio(std::string& _buffer);
@@ -47,6 +50,8 @@ namespace pdflib
 
     int number_of_pages;    
 
+    //nlohmann::json json_toc; // table-of-contents
+    nlohmann::json json_annots;
     nlohmann::json json_document;
   };
 
@@ -56,15 +61,15 @@ namespace pdflib
     
     timings({}),
     qpdf_document(),
-
-    //qpdf_root(NULL),
-    //qpdf_pages(NULL),
     
     // have compatibulity between QPDF v10 and v11
     qpdf_root(),
     qpdf_pages(),
     
     number_of_pages(-1),
+
+    //json_toc(nlohmann::json::value_t::null),
+    json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
   {}
   
@@ -75,14 +80,14 @@ namespace pdflib
     timings(timings_),
     qpdf_document(),
 
-    //qpdf_root(NULL),
-    //qpdf_pages(NULL),
-
     // have compatibulity between QPDF v10 and v11
     qpdf_root(),
     qpdf_pages(),
     
     number_of_pages(-1),
+
+    //json_toc(nlohmann::json::value_t::null),
+    json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
   {}
 
@@ -91,6 +96,11 @@ namespace pdflib
 
   nlohmann::json pdf_decoder<DOCUMENT>::get()
   {
+    {
+      //json_document["table_of_contents"] = json_toc;      
+      json_document["annotations"] = json_annots;
+    }
+    
     {
       nlohmann::json& timings_ = json_document["timings"];
 
@@ -118,6 +128,9 @@ namespace pdflib
         qpdf_root  = qpdf_document.getRoot();
         qpdf_pages = qpdf_root.getKey("/Pages");
 
+	//json_toc = extract_toc_in_json(qpdf_root);
+	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
+	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
         LOG_S(INFO) << "#-pages: " << number_of_pages;
 
@@ -148,13 +161,17 @@ namespace pdflib
     try
       {
 	std::string description = "processing buffer";	
-        qpdf_document.processMemoryFile(description.c_str(), buffer.c_str(), buffer.size());
+        qpdf_document.processMemoryFile(description.c_str(),
+					buffer.c_str(), buffer.size());
 
         LOG_S(INFO) << "buffer processed by qpdf!";        
 
         qpdf_root  = qpdf_document.getRoot();
         qpdf_pages = qpdf_root.getKey("/Pages");
 
+	//json_toc = extract_toc_in_json(qpdf_root);
+	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
+	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
         LOG_S(INFO) << "#-pages: " << number_of_pages;
 
@@ -253,7 +270,8 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();
   }
 
-  void pdf_decoder<DOCUMENT>::update_timings(std::map<std::string, double>& timings_, bool set_timer)
+  void pdf_decoder<DOCUMENT>::update_timings(std::map<std::string, double>& timings_,
+					     bool set_timer)
   {
     for(auto itr=timings_.begin(); itr!=timings_.end(); itr++)
       {

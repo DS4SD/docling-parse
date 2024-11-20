@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-GENERATE = False
+GENERATE = True
 
 import io
 import os
@@ -131,7 +131,7 @@ def test_reference_documents_from_filenames_with_keys():
     for pdf_doc in pdf_docs:
         doc_key = f"key={pdf_doc}"
         # print("testing: ", pdf_doc)
-        
+
         #print(" => load_document ...")
         success = parser.load_document(doc_key, pdf_doc)
 

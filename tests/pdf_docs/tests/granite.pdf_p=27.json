@@ -1,0 +1,1977 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.306954984414941,
+        "/RIDQUQ+CMMI7": 2.064245745101582
+      },
+      "mean-char-width": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.632576546836635,
+        "/RIDQUQ+CMMI7": 1.36058715043179
+      },
+      "number-of-chars": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 2972,
+        "/RIDQUQ+CMMI7": 18
+      }
+    },
+    "styles": [
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/RIDQUQ+CMMI7"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              700.17603,
+              116.93066,
+              710.86395
+            ],
+            "device": [
+              108.299,
+              697.59369,
+              116.93066,
+              708.28168
+            ]
+          },
+          "content": {
+            "rnormalized": "A"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              129.48361,
+              700.17603,
+              137.45773,
+              710.86395
+            ],
+            "device": [
+              129.48361,
+              697.59369,
+              360.78305,
+              708.28168
+            ]
+          },
+          "content": {
+            "rnormalized": "CONTRIBUTIONS AND ACKNOWLEDGEMENTS"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.24899,
+              676.172,
+              117.10574,
+              685.07855
+            ],
+            "device": [
+              108.24899,
+              674.02008,
+              186.49065,
+              682.92664
+            ]
+          },
+          "content": {
+            "rnormalized": "MODEL TRAINING"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              655.42102,
+              134.56937,
+              664.32758
+            ],
+            "device": [
+              107.641,
+              653.2691,
+              505.24503,
+              662.17566
+            ]
+          },
+          "content": {
+            "rnormalized": "Aditya Prasad, Adriana Meza Soria, Anurag Roy, Ashish Agrawal, Gaoyuan Zhang, Gaurav Pandey,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              644.46198,
+              115.33685,
+              653.36853
+            ],
+            "device": [
+              108,
+              642.31006,
+              503.99722,
+              651.21661
+            ]
+          },
+          "content": {
+            "rnormalized": "Keshav Ramji, Matt Stallone, Mayank Mishra, Ramon Fernandez Astudillo, Shawn Tan, Tahira"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              633.50299,
+              142.58018,
+              642.40955
+            ],
+            "device": [
+              108,
+              631.35107,
+              196.26863,
+              640.25763
+            ]
+          },
+          "content": {
+            "rnormalized": "Naseem, Yikang Shen"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              196.26801,
+              637.11798,
+              200.34978,
+              643.31073
+            ],
+            "device": [
+              196.26801,
+              631.35107,
+              203.33865,
+              640.25763
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{\u22c6}$."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.24901,
+              607.927,
+              113.78822,
+              616.83356
+            ],
+            "device": [
+              108.24901,
+              605.77509,
+              183.62495,
+              614.68164
+            ]
+          },
+          "content": {
+            "rnormalized": "SYNTHETIC DATA"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              587.17499,
+              139.08875,
+              596.08154
+            ],
+            "device": [
+              107.641,
+              585.02307,
+              505.24359,
+              593.92963
+            ]
+          },
+          "content": {
+            "rnormalized": "Adriana Meza Soria, Asim Munawar, Atin Sood, Bridget McGinn, Chris Johnson, Christoph Tillmann,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              576.216,
+              141.27176,
+              585.12256
+            ],
+            "device": [
+              108,
+              574.06409,
+              505.24463,
+              582.97064
+            ]
+          },
+          "content": {
+            "rnormalized": "Chulaka Gunasekara, Gakuto Kurata, Geert Janssen, George Safta, Graeme Blackwood, Guy Uziel,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              565.258,
+              136.77837,
+              574.16455
+            ],
+            "device": [
+              108,
+              563.10608,
+              505.24707,
+              572.01263
+            ]
+          },
+          "content": {
+            "rnormalized": "Harsha Kokel, Hiroshi Kanayama, Ibrahim Abdelaziz, Ian Molloy, Issei Yoshida, Jian-Ming Xu,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.811,
+              554.29901,
+              124.07674,
+              563.20557
+            ],
+            "device": [
+              107.811,
+              552.14709,
+              503.99789,
+              561.05365
+            ]
+          },
+          "content": {
+            "rnormalized": "Juergen Bross, Kavita Srinivas, Kinjal Basu, Kshitij Fadnis, Luca Buratti, Masayasu Muraoka, Matan"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              543.34003,
+              118.44748,
+              552.24658
+            ],
+            "device": [
+              108,
+              541.18811,
+              413.64081,
+              550.09467
+            ]
+          },
+          "content": {
+            "rnormalized": "Levi, Maxwell Crouse, Mayank Agarwal, Osher Elhadad, Pavan Kapanipathi"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              413.64499,
+              546.95502,
+              417.72675,
+              553.14777
+            ],
+            "device": [
+              413.64499,
+              541.18811,
+              505.24115,
+              550.09467
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{\u22c6}$, Sadhana Kumaravel,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              532.38098,
+              133.96353,
+              541.28754
+            ],
+            "device": [
+              108,
+              530.22906,
+              503.99716,
+              539.13562
+            ]
+          },
+          "content": {
+            "rnormalized": "Sarath Swaminathan, Saurabh Pujar, Shirin Shorabi, Shyam Ramji, Siva Sankalp Patel, Subhajit"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              521.422,
+              152.09669,
+              530.32855
+            ],
+            "device": [
+              108,
+              519.27008,
+              503.99707,
+              528.17664
+            ]
+          },
+          "content": {
+            "rnormalized": "Chaudhury, Tim Bula, Wei Zhang, Yair Allouche, Yara Rizk, Young-suk Lee, Youngja Park, Yousef"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              510.46301,
+              140.37845,
+              519.36957
+            ],
+            "device": [
+              108,
+              508.3111,
+              140.37845,
+              517.21765
+            ]
+          },
+          "content": {
+            "rnormalized": "Elkurdi."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              484.88602,
+              115.442,
+              493.79257
+            ],
+            "device": [
+              108.249,
+              482.7341,
+              280.05978,
+              491.64066
+            ]
+          },
+          "content": {
+            "rnormalized": "DATA ENGINEERING AND MANAGEMENT"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              464.13501,
+              141.00235,
+              473.04156
+            ],
+            "device": [
+              107.641,
+              461.98309,
+              504.00247,
+              470.88965
+            ]
+          },
+          "content": {
+            "rnormalized": "Aanchal Goyal, Abdulhamid Adebeyo, Alexandru Soicescu, Alexei Karve, Alexey Roytman, Alice"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              453.17599,
+              125.77308,
+              462.08255
+            ],
+            "device": [
+              108,
+              451.02408,
+              503.99719,
+              459.93063
+            ]
+          },
+          "content": {
+            "rnormalized": "Lee, Aliza Heching, Andrew Coleman, Anna Lisa Gentile, Basel Shbita, Benjamin Ruby, Bing"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              442.21701,
+              135.80537,
+              451.12357
+            ],
+            "device": [
+              108,
+              440.06509,
+              505.24506,
+              448.97165
+            ]
+          },
+          "content": {
+            "rnormalized": "Zhang, Bishwaranjan Bhattacharjee, Boris Lublinsky, Chad DeLuca, Changchang Liu, Chirag Garg,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              431.259,
+              148.0885,
+              440.16556
+            ],
+            "device": [
+              108,
+              429.10709,
+              505.24707,
+              438.01364
+            ]
+          },
+          "content": {
+            "rnormalized": "Christoph Tillman, Codrut Stoicescu, Constantin Adam, Daniel (Chung-hao) Tan, David Wood,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              420.29999,
+              133.53081,
+              429.20654
+            ],
+            "device": [
+              108,
+              418.14807,
+              504.00223,
+              427.05463
+            ]
+          },
+          "content": {
+            "rnormalized": "Dhiraj Joshi, Eelaaf Zahid, Eric Butler, Gakuto Kurata, Guangjie Ren, Hajar Emami Gohari, Heiko"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              409.341,
+              140.81461,
+              418.24756
+            ],
+            "device": [
+              108,
+              407.18909,
+              504.00131,
+              416.09564
+            ]
+          },
+          "content": {
+            "rnormalized": "Ludwig, Hima Patel, Hiroshi Kanayama, Hiroya Matsubara, Issei Yoshida, Jay Gala, Jorge Sanz, Juan"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              398.38199,
+              134.58051,
+              407.28854
+            ],
+            "device": [
+              108,
+              396.23007,
+              505.24704,
+              405.13663
+            ]
+          },
+          "content": {
+            "rnormalized": "Cappi, Juergen Bross, Julian Rossi, Kun-Lung Wu, Luis Bathen, Manuela Fernandes, Mark Lewis,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              387.423,
+              139.92009,
+              396.32956
+            ],
+            "device": [
+              108,
+              385.27109,
+              503.99664,
+              394.17764
+            ]
+          },
+          "content": {
+            "rnormalized": "Maroun Touma, Masayasu Muraoka, Matt Stallone, Matthew White, Mohammad Nassar, Nathalie"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              376.46399,
+              150.45024,
+              385.37054
+            ],
+            "device": [
+              108,
+              374.31207,
+              498.19894,
+              383.21863
+            ]
+          },
+          "content": {
+            "rnormalized": "Baracaldo, Nicolas Mello, Nitin Ramchandani, Paramaswaran Selvam, Pengyuan Li, Petros Zerfos"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              498.19901,
+              380.07901,
+              502.28076,
+              386.27176
+            ],
+            "device": [
+              498.19901,
+              374.31207,
+              505.24573,
+              383.21863
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{\u22c6}$,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              365.505,
+              137.48943,
+              374.41156
+            ],
+            "device": [
+              108,
+              363.35309,
+              505.24683,
+              372.25964
+            ]
+          },
+          "content": {
+            "rnormalized": "Praneet Adusumilli, Radha Ratnaparkhi, Rakesh Jain, Revital Eres, Ryan Gordon, Saptha Surendran,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              354.54599,
+              133.15883,
+              363.45255
+            ],
+            "device": [
+              108,
+              352.39407,
+              503.9957,
+              361.30063
+            ]
+          },
+          "content": {
+            "rnormalized": "Shafiq Abedin, Shalisha Witherspoon, Shanmukha Guttula, Shiqiang Wang, Shivdeep Singh, Shubhi"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              343.58701,
+              143.13046,
+              352.49356
+            ],
+            "device": [
+              107.641,
+              341.43509,
+              504.24359,
+              350.34164
+            ]
+          },
+          "content": {
+            "rnormalized": "Asthana, Susanna Munoz, Syed Zawad, Taiga Nakamura, Takuma Udagawa, Tom Griffin, Vaibhav"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              332.62799,
+              122.68985,
+              341.53455
+            ],
+            "device": [
+              108,
+              330.47607,
+              503.9993,
+              339.38263
+            ]
+          },
+          "content": {
+            "rnormalized": "Saxena, Xuan-Hong Dang, Yan Koyfman, Yang Zhao, Yi Zhou, Yousaf Shah, Yousef El-Kurdi, Yuan"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              321.67001,
+              122.39596,
+              330.57657
+            ],
+            "device": [
+              108,
+              319.5181,
+              198.49028,
+              328.42465
+            ]
+          },
+          "content": {
+            "rnormalized": "Chi Chang, Yuya Ong."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              296.09302,
+              114.33615,
+              304.99957
+            ],
+            "device": [
+              108.249,
+              293.9411,
+              220.18274,
+              302.84766
+            ]
+          },
+          "content": {
+            "rnormalized": "EVALUATION AND SAFETY"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              275.34201,
+              134.89479,
+              284.24857
+            ],
+            "device": [
+              107.641,
+              273.19009,
+              505.24393,
+              282.09665
+            ]
+          },
+          "content": {
+            "rnormalized": "Aditya Prasad, Ambrish Rawat, Ashish Agrawal, Ateret Anaby-Tavor, Derek Leist, Farhan Ahmed,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              264.383,
+              127.81566,
+              273.28955
+            ],
+            "device": [
+              108,
+              262.23108,
+              505.245,
+              271.13763
+            ]
+          },
+          "content": {
+            "rnormalized": "George Kour, Hui Wu, Ibrahim Abdelaziz, Inge Vejsbjerg, Inkit Padhi, Ioana Baldini, Ja Young Lee,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.811,
+              253.424,
+              124.74064,
+              262.33057
+            ],
+            "device": [
+              107.811,
+              251.27208,
+              339.41992,
+              260.17865
+            ]
+          },
+          "content": {
+            "rnormalized": "Juergen Bross, Kate Soule, Kinjal Basu, Kush Varshney"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              339.41901,
+              257.039,
+              343.50076,
+              263.23175
+            ],
+            "device": [
+              339.41901,
+              251.27208,
+              503.99741,
+              260.17865
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{\u22c6}$, Manish Nagireddy, Matan Levi, Matt"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              242.465,
+              143.00746,
+              251.37157
+            ],
+            "device": [
+              108,
+              240.31308,
+              503.99707,
+              249.21964
+            ]
+          },
+          "content": {
+            "rnormalized": "Stallone, Mayank Agarwal, Moninder Singh, Nathalie Baracaldo Angel, Onkar Bhardwaj, Prasanna"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              231.506,
+              144.25391,
+              240.41257
+            ],
+            "device": [
+              108,
+              229.35408,
+              223.65581,
+              238.26064
+            ]
+          },
+          "content": {
+            "rnormalized": "Sattigeri, Veronique Demers."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              205.92999,
+              111.56654,
+              214.83656
+            ],
+            "device": [
+              108.249,
+              203.77808,
+              185.39786,
+              212.68463
+            ]
+          },
+          "content": {
+            "rnormalized": "INFRASTRUCTURE"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              185.17799,
+              132.86119,
+              194.08456
+            ],
+            "device": [
+              107.641,
+              183.02608,
+              431.37585,
+              191.93263
+            ]
+          },
+          "content": {
+            "rnormalized": "Andrew Figueroa, Aniruddha Narkhede, Bob Calio, Bob Krull, Brian Belgodere"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              431.37201,
+              188.79401,
+              435.45377,
+              194.98674
+            ],
+            "device": [
+              431.37201,
+              183.02608,
+              505.24448,
+              191.93263
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{\u22c6}$, Carlos Fonseca,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              174.21899,
+              130.05827,
+              183.12556
+            ],
+            "device": [
+              108,
+              172.06708,
+              504.35416,
+              180.97363
+            ]
+          },
+          "content": {
+            "rnormalized": "Colm Malone, Connor McStay, Drew Wyskida, Gary Leonardi, John Lewars, John Walter, Matthew"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              163.261,
+              145.09076,
+              172.16757
+            ],
+            "device": [
+              108,
+              161.10909,
+              326.28058,
+              170.01564
+            ]
+          },
+          "content": {
+            "rnormalized": "Connolly, Michael Spriggs, Ray Rose, Robert Walkup."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              137.68401,
+              115.442,
+              146.59058
+            ],
+            "device": [
+              108.249,
+              135.53209,
+              299.14709,
+              144.43864
+            ]
+          },
+          "content": {
+            "rnormalized": "DEVELOPER DOCUMENTATION AND RECIPES"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              116.933,
+              131.8922,
+              125.83956
+            ],
+            "device": [
+              107.641,
+              114.78107,
+              159.74536,
+              123.68764
+            ]
+          },
+          "content": {
+            "rnormalized": "Adam Pingel"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              159.74699,
+              120.548,
+              163.82877,
+              126.74073
+            ],
+            "device": [
+              159.74699,
+              114.78107,
+              504.34979,
+              123.68764
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{\u22c6}$, Adriana Meza Soria, Amogh Ranavade, Anita Govindjee, Anna Gutowska, Anthony"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              105.974,
+              156.78551,
+              114.88056
+            ],
+            "device": [
+              107.641,
+              103.82207,
+              504.00269,
+              112.72864
+            ]
+          },
+          "content": {
+            "rnormalized": "Annunziata, Anupam Chakraborty, Ash Minhas, BJ Hargrave, Connor Leech, Dave Nielsen, Dean"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              95.014999,
+              117.12479,
+              103.92156
+            ],
+            "device": [
+              107.532,
+              92.863075,
+              505.24649,
+              101.76964
+            ]
+          },
+          "content": {
+            "rnormalized": "Wampler, Fayvor Love, Gabe Goodhart, Helen Stanton, Hima Patel, Ibrahim Ibrahim, Joe Olson,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.811,
+              84.056,
+              131.41249,
+              92.962563
+            ],
+            "device": [
+              107.811,
+              81.904076,
+              505.24454,
+              90.810638
+            ]
+          },
+          "content": {
+            "rnormalized": "Justin MacNair, Kelly McGowan, Lara Neich, Lauren McHugh, Lindsay Lehane, Mandana Vaziri,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              73.097,
+              134.76566,
+              82.003563
+            ],
+            "device": [
+              108,
+              70.945076,
+              505.24677,
+              79.851639
+            ]
+          },
+          "content": {
+            "rnormalized": "Martin Hickey, Raju Pavuluri, Rangeet Pan, Saurabh Sinhas, Shivdeep Singh, Shrinidhi Deshapande,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              62.138,
+              130.1369,
+              71.044563
+            ],
+            "device": [
+              108,
+              59.98608,
+              229.77283,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": "Sujee Maniyam, Trevor Grant,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              301.01898,
+              32.25,
+              310.98157,
+              41.156563
+            ],
+            "device": [
+              301.01898,
+              30.098078,
+              310.98157,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "28"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

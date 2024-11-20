@@ -39,6 +39,8 @@ namespace pdflib
     // Contents
     void decode_contents();
 
+    void decode_annots();
+
     void sanitise_contents();
 
   private:
@@ -49,6 +51,8 @@ namespace pdflib
     QPDFObjectHandle qpdf_fonts;
     QPDFObjectHandle qpdf_xobjects;
 
+    nlohmann::json json_annots;
+    
     nlohmann::json json_page;
     nlohmann::json json_resources;
     nlohmann::json json_grphs;
@@ -85,6 +89,8 @@ namespace pdflib
   {
     nlohmann::json result;
     {
+      result["annotations"] = json_annots;
+      
       nlohmann::json& timings_ = result["timings"];
       {
 	for(auto itr=timings.begin(); itr!=timings.end(); itr++)
@@ -126,6 +132,8 @@ namespace pdflib
     utils::timer timer;
 
     json_page = to_json(qpdf_page);
+
+    json_annots = extract_annots_in_json(qpdf_page);
     
     try
       {
@@ -153,8 +161,10 @@ namespace pdflib
 
     decode_contents();
 
+    decode_annots();
+    
     sanitise_contents();
-
+    
     timings[__FUNCTION__] = timer.get_time();
 
     return timings;
@@ -264,6 +274,82 @@ namespace pdflib
           }
       }
 
+    timings[__FUNCTION__] = timer.get_time();
+  }
+
+  void pdf_decoder<PAGE>::decode_annots()
+  {
+    LOG_S(INFO) << __FUNCTION__;
+    utils::timer timer;
+    
+    //LOG_S(INFO) << "analyzing: " << json_annots.dump(2);
+    if(json_annots.is_array())
+      {
+	for(auto item:json_annots)
+	  {
+	    LOG_S(INFO) << "analyzing: " << item.dump(2);
+
+	    if(item.count("/Type")==1 and item["/Type"].get<std::string>()=="/Annot" and
+	       item.count("/Subtype")==1 and item["/Subtype"].get<std::string>()=="/Widget" and
+	       item.count("/Rect")==1 and
+	       item.count("/V")==1 and
+	       item.count("/T")==1 and true)
+	      {
+		std::array<double, 4> bbox = item["/Rect"].get<std::array<double, 4> >();
+		//LOG_S(INFO) << bbox[0] << ", "<< bbox[1] << ", "<< bbox[2] << ", "<< bbox[3];
+
+		std::string text = item["/V"].get<std::string>();
+		//LOG_S(INFO) << "text: " << text;
+		
+		pdf_resource<PAGE_CELL> cell;
+		{
+		  cell.widget = true;
+		  
+		  cell.x0 = bbox[0];
+		  cell.y0 = bbox[1];
+		  cell.x1 = bbox[2];
+		  cell.y1 = bbox[3];
+
+		  cell.r_x0 = bbox[0];
+		  cell.r_y0 = bbox[1];
+		  cell.r_x1 = bbox[2];
+		  cell.r_y1 = bbox[1];
+		  cell.r_x2 = bbox[2];
+		  cell.r_y2 = bbox[3];
+		  cell.r_x3 = bbox[0];
+		  cell.r_y3 = bbox[3];
+
+		  cell.text = text;
+		  cell.rendering_mode = 0;
+
+		  cell.space_width = 0;
+		  cell.chars  = {};//chars;
+		  cell.widths = {};//widths;
+		  
+		  cell.enc_name = "Form-font"; //font.get_encoding_name();
+		  
+		  cell.font_enc = "Form-font"; //to_string(font.get_encoding());
+		  cell.font_key = "Form-font"; //font.get_key();
+		  
+		  cell.font_name = "Form-font"; //font.get_name();
+		  cell.font_size = 0; //font_size/1000.0;
+		  
+		  cell.italic = false;
+		  cell.bold   = false;
+		  
+		  cell.ocr        = false;
+		  cell.confidence = -1.0;
+		  
+		  cell.stack_size  = -1;
+		  cell.block_count = -1;
+		  cell.instr_count = -1;
+		}
+
+		page_cells.push_back(cell);
+	      }
+	  }
+      }
+    
     timings[__FUNCTION__] = timer.get_time();    
   }
 
