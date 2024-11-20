@@ -1,0 +1,2211 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 2.035539014364704,
+        "/LHCPKS+NimbusRomNo9L-Regu": 1.810502119854459,
+        "/LTZNGC+CMVTT10": 0.809011298315721
+      },
+      "mean-char-width": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 4.638256902540169,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.254530777008748,
+        "/LTZNGC+CMVTT10": 4.452284443042211
+      },
+      "number-of-chars": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 22,
+        "/LHCPKS+NimbusRomNo9L-Regu": 3997,
+        "/LTZNGC+CMVTT10": 159
+      }
+    },
+    "styles": [
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              700.17603,
+              115.90592,
+              709.08258
+            ],
+            "device": [
+              108,
+              698.02411,
+              503.99725,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "in information-seeking tasks, and to ensure that the generated questions align with the designated"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              689.21698,
+              142.43852,
+              698.12354
+            ],
+            "device": [
+              108,
+              687.06506,
+              503.9971,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": "question types, we incorporate question-type-specific CoT prompts, to guide the language model"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              678.258,
+              115.90592,
+              687.16455
+            ],
+            "device": [
+              108,
+              676.10608,
+              383.52841,
+              685.01263
+            ]
+          },
+          "content": {
+            "rnormalized": "in reasoning through the grounding document (Lee et al., 2024b)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              389.99136,
+              678.258,
+              399.58417,
+              687.16455
+            ],
+            "device": [
+              389.99136,
+              676.10608,
+              504.16992,
+              685.01263
+            ]
+          },
+          "content": {
+            "rnormalized": "We then employ a retriever"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              667.29901,
+              141.97446,
+              676.20557
+            ],
+            "device": [
+              107.671,
+              665.14709,
+              162.46138,
+              674.05365
+            ]
+          },
+          "content": {
+            "rnormalized": "(ELSER with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              164.94501,
+              667.29901,
+              179.53224,
+              675.59784
+            ],
+            "device": [
+              164.94501,
+              665.08734,
+              349.34674,
+              673.38617
+            ]
+          },
+          "content": {
+            "rnormalized": "sentence-transformers/all-MiniLM-L6-v2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              351.82999,
+              667.29901,
+              386.68005,
+              676.20557
+            ],
+            "device": [
+              351.82999,
+              665.14709,
+              504.34833,
+              674.05365
+            ]
+          },
+          "content": {
+            "rnormalized": "sentence embeddings) to dynamically"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              656.34003,
+              130.23114,
+              665.24658
+            ],
+            "device": [
+              108,
+              654.18811,
+              504.00146,
+              663.09467
+            ]
+          },
+          "content": {
+            "rnormalized": "select the top-k relevant passages from a pre-constructed document index, extending the user questions"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              645.38098,
+              147.49911,
+              654.28754
+            ],
+            "device": [
+              108,
+              643.22906,
+              503.99719,
+              652.13562
+            ]
+          },
+          "content": {
+            "rnormalized": "generated in the first step into multi-turn, multi-document grounded conversations. The retrieved"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              634.422,
+              146.09677,
+              643.32855
+            ],
+            "device": [
+              108,
+              632.27008,
+              503.99728,
+              641.17664
+            ]
+          },
+          "content": {
+            "rnormalized": "passages, along with the query, are provided to the LLM, which is then prompted to generate a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              623.46301,
+              144.60278,
+              632.36957
+            ],
+            "device": [
+              108,
+              621.3111,
+              504.0015,
+              630.21765
+            ]
+          },
+          "content": {
+            "rnormalized": "response. For subsequent turns, we first prompt the LLM to generate a query given dialog history and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              612.50403,
+              128.60066,
+              621.41058
+            ],
+            "device": [
+              108,
+              610.35211,
+              504.00134,
+              619.25867
+            ]
+          },
+          "content": {
+            "rnormalized": "retrieved passages and then generate the answer as described above. Furthermore, an LLM-as-a-Judge"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              601.54498,
+              138.48555,
+              610.45154
+            ],
+            "device": [
+              108,
+              599.39307,
+              503.9971,
+              608.29962
+            ]
+          },
+          "content": {
+            "rnormalized": "module is used to filter out dialogues with incorrect responses by evaluating all context-response"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              590.58698,
+              127.75464,
+              599.49353
+            ],
+            "device": [
+              108,
+              588.43506,
+              503.99728,
+              597.34161
+            ]
+          },
+          "content": {
+            "rnormalized": "pairs within each dialogue. A larger language model assesses the accuracy of responses based on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              579.62799,
+              141.93378,
+              588.53455
+            ],
+            "device": [
+              108,
+              577.47607,
+              504.00241,
+              586.38263
+            ]
+          },
+          "content": {
+            "rnormalized": "dialogue history and the current query, and any dialogues containing incorrect question-answer pairs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              568.66901,
+              120.21299,
+              577.57556
+            ],
+            "device": [
+              108,
+              566.51709,
+              503.99701,
+              575.42365
+            ]
+          },
+          "content": {
+            "rnormalized": "are discarded. The multi-turn RAG data generation use two pblicly available datasets, QuAC (Choi"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              557.71002,
+              115.19299,
+              566.61658
+            ],
+            "device": [
+              108,
+              555.55811,
+              379.16211,
+              564.46466
+            ]
+          },
+          "content": {
+            "rnormalized": "et al., 2018) and MultiDoc2Dial (Feng et al., 2021) as seed datasets."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              532.41602,
+              114.77795,
+              541.37238
+            ],
+            "device": [
+              108,
+              530.33386,
+              148.09868,
+              539.29022
+            ]
+          },
+          "content": {
+            "rnormalized": "Tool Use."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              158.05701,
+              532.41602,
+              164.2659,
+              541.32257
+            ],
+            "device": [
+              158.05701,
+              530.2641,
+              503.99686,
+              539.17065
+            ]
+          },
+          "content": {
+            "rnormalized": "Tool (or function) calling is now considered one of the fundamental capabilities that"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              521.45801,
+              133.05594,
+              530.36456
+            ],
+            "device": [
+              108,
+              519.30609,
+              504.34485,
+              528.21265
+            ]
+          },
+          "content": {
+            "rnormalized": "LLMs need to possess (Abdelaziz et al., 2024). In real-world applications, tool invocation can vary"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              510.49899,
+              115.80516,
+              519.40558
+            ],
+            "device": [
+              108,
+              508.34708,
+              503.99631,
+              517.25366
+            ]
+          },
+          "content": {
+            "rnormalized": "in complexity, ranging from a single turn with a single tool (the simplest case) to more challenging"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              499.54001,
+              148.12544,
+              508.44656
+            ],
+            "device": [
+              108,
+              497.38809,
+              504.00134,
+              506.29465
+            ]
+          },
+          "content": {
+            "rnormalized": "multi-turn interactions involving multiple sequential/nested tool calls. To train LLMs to utilize tools"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              488.58099,
+              140.08954,
+              497.48755
+            ],
+            "device": [
+              108,
+              486.42908,
+              427.29141,
+              495.33563
+            ]
+          },
+          "content": {
+            "rnormalized": "requires a broad spectrum of training data covering different tool calling scopes."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              471.64401,
+              116.34864,
+              480.55057
+            ],
+            "device": [
+              108,
+              469.4921,
+              504.34494,
+              478.39865
+            ]
+          },
+          "content": {
+            "rnormalized": "In the recent past, there has been extensive research on transforming existing curated and manually"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              460.685,
+              147.43181,
+              469.59155
+            ],
+            "device": [
+              108,
+              458.53308,
+              505.65479,
+              467.43964
+            ]
+          },
+          "content": {
+            "rnormalized": "annotated datasets into a function calling format. While we leverage curated datasets such as API-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              449.72699,
+              141.86945,
+              458.63354
+            ],
+            "device": [
+              108,
+              447.57507,
+              503.99728,
+              456.48163
+            ]
+          },
+          "content": {
+            "rnormalized": "BLEND (Basu et al., 2024) and APIGen (Chen et al., 2024b), these datasets do not address the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              438.76801,
+              112.33493,
+              447.67456
+            ],
+            "device": [
+              108,
+              436.61609,
+              504.00146,
+              445.52264
+            ]
+          },
+          "content": {
+            "rnormalized": "evolving landscape of function calling benchmarks such as multi-turn tool calls, nested tool calls, and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              427.80899,
+              123.4088,
+              436.71555
+            ],
+            "device": [
+              108,
+              425.65707,
+              504.00403,
+              434.56363
+            ]
+          },
+          "content": {
+            "rnormalized": "tool relevance, etc. To address this, we extend existing SDG techniques to introduce new features of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              416.85001,
+              141.37137,
+              425.75656
+            ],
+            "device": [
+              108,
+              414.69809,
+              504.00098,
+              423.60464
+            ]
+          },
+          "content": {
+            "rnormalized": "function calling in LLMs. These pipelines also include generating data that calls APIs via different"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              405.89099,
+              162.23639,
+              414.79755
+            ],
+            "device": [
+              108,
+              403.73907,
+              280.10388,
+              412.64563
+            ]
+          },
+          "content": {
+            "rnormalized": "programming languages (Guo et al., 2024)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              380.59799,
+              169.39923,
+              389.55438
+            ],
+            "device": [
+              108,
+              378.51581,
+              171.23491,
+              387.4722
+            ]
+          },
+          "content": {
+            "rnormalized": "Cybersecurity."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              181.2,
+              380.59799,
+              187.39671,
+              389.50455
+            ],
+            "device": [
+              181.2,
+              378.44608,
+              503.99719,
+              387.35263
+            ]
+          },
+          "content": {
+            "rnormalized": "To create a comprehensive and diverse dataset capable of supporting instruction"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              369.63901,
+              133.03151,
+              378.54556
+            ],
+            "device": [
+              108,
+              367.48709,
+              503.9993,
+              376.39365
+            ]
+          },
+          "content": {
+            "rnormalized": "tuning for various security-related tasks, we adopt the process in Levi et al. (2024), which consists of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              358.67999,
+              118.16185,
+              367.58655
+            ],
+            "device": [
+              108,
+              356.52808,
+              504.34277,
+              365.43463
+            ]
+          },
+          "content": {
+            "rnormalized": "two main steps, as follows. In the first generation step, we concentrate on producing high-quality"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              347.72101,
+              154.40247,
+              356.62756
+            ],
+            "device": [
+              108,
+              345.56909,
+              503.99686,
+              354.47565
+            ]
+          },
+          "content": {
+            "rnormalized": "instructions derived from predefined schemas. These schemas are formulated through expert-driven"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              336.76199,
+              140.48468,
+              345.66855
+            ],
+            "device": [
+              108,
+              334.61008,
+              503.99649,
+              343.51663
+            ]
+          },
+          "content": {
+            "rnormalized": "analysis of a diverse set of security datasets, examining the relationships between different entities"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              325.80301,
+              133.1953,
+              334.70956
+            ],
+            "device": [
+              108,
+              323.65109,
+              504.34943,
+              332.55765
+            ]
+          },
+          "content": {
+            "rnormalized": "across datasets. This approach ensures that the instructions capture the nuances of various security"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              314.84399,
+              143.55632,
+              323.75055
+            ],
+            "device": [
+              108,
+              312.69208,
+              503.99731,
+              321.59863
+            ]
+          },
+          "content": {
+            "rnormalized": "concepts and tasks. More specifically, each predefined schema has rules that dictate how the data"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              303.88501,
+              134.1064,
+              312.79156
+            ],
+            "device": [
+              108,
+              301.73309,
+              504.34711,
+              310.63965
+            ]
+          },
+          "content": {
+            "rnormalized": "source should be processed into instructions, using parsers developed specifically for these security"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              292.92599,
+              124.92964,
+              301.83255
+            ],
+            "device": [
+              108,
+              290.77408,
+              503.99722,
+              299.68063
+            ]
+          },
+          "content": {
+            "rnormalized": "data sources. This guarantees that the generated instructions focus on the important and unique"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              281.96701,
+              166.12579,
+              290.87357
+            ],
+            "device": [
+              108,
+              279.81509,
+              503.99728,
+              288.72165
+            ]
+          },
+          "content": {
+            "rnormalized": "characteristics of the data source and are representative of real-world security scenarios. In the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              271.009,
+              135.88747,
+              279.91556
+            ],
+            "device": [
+              108,
+              268.85709,
+              504.34946,
+              277.76364
+            ]
+          },
+          "content": {
+            "rnormalized": "second generation step, the diversity and complexity of the initial generated dataset is expanded by"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              260.04999,
+              133.28009,
+              268.95654
+            ],
+            "device": [
+              108,
+              257.89807,
+              503.99753,
+              266.80463
+            ]
+          },
+          "content": {
+            "rnormalized": "employing a hybrid synthetic content-grounded data generation process. Specifically, we combine"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              249.091,
+              119.28982,
+              257.99756
+            ],
+            "device": [
+              108,
+              246.93909,
+              503.99716,
+              255.84564
+            ]
+          },
+          "content": {
+            "rnormalized": "Evol-Instruct (Xu et al., 2023) and Self-Instruct (Wang et al., 2022) alongside content-grounded"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              238.132,
+              150.26239,
+              247.03857
+            ],
+            "device": [
+              108,
+              235.98009,
+              504.00098,
+              244.88664
+            ]
+          },
+          "content": {
+            "rnormalized": "generation and evaluation pipelines. Additionally, we implement a routing mechanism between the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              227.173,
+              117.9626,
+              236.07957
+            ],
+            "device": [
+              108,
+              225.02109,
+              323.4512,
+              233.92764
+            ]
+          },
+          "content": {
+            "rnormalized": "two generation methods to help reduce hallucinations."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              210.23599,
+              125.05023,
+              219.14256
+            ],
+            "device": [
+              107.691,
+              208.08408,
+              503.99509,
+              216.99063
+            ]
+          },
+          "content": {
+            "rnormalized": "This process leverages the initial set of instructions and data from the first generation step to generate"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              199.278,
+              148.6474,
+              208.18457
+            ],
+            "device": [
+              108,
+              197.12608,
+              503.99707,
+              206.03264
+            ]
+          },
+          "content": {
+            "rnormalized": "additional instructions that follow the established schemas while increasing the model\u2019s overall"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              188.319,
+              171.21687,
+              197.22557
+            ],
+            "device": [
+              108,
+              186.16708,
+              503.99719,
+              195.07364
+            ]
+          },
+          "content": {
+            "rnormalized": "generalizability. By incorporating content-grounded synthetic data, we increase the diversity and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.751,
+              177.36,
+              112.7323,
+              186.26657
+            ],
+            "device": [
+              107.751,
+              175.20808,
+              468.45697,
+              184.11464
+            ]
+          },
+          "content": {
+            "rnormalized": "volume of the final dataset, ultimately leading to more robust and capable security models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              160.423,
+              117.04015,
+              169.32957
+            ],
+            "device": [
+              107.532,
+              158.27109,
+              505.24503,
+              167.17764
+            ]
+          },
+          "content": {
+            "rnormalized": "We leverage various publicly available security data sources, namely MITRE ATT&CK$^{11}$, CWE$^{12}$,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              149.464,
+              128.12445,
+              158.37057
+            ],
+            "device": [
+              108,
+              147.31209,
+              503.99854,
+              156.21864
+            ]
+          },
+          "content": {
+            "rnormalized": "CVE$^{13}$, CAPEC$^{14}$, Security Wikipedia, Security interview Q&A, Threat reports, BRON (Hemberg"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              138.505,
+              115.32247,
+              147.41158
+            ],
+            "device": [
+              108,
+              136.35309,
+              505.65414,
+              145.25964
+            ]
+          },
+          "content": {
+            "rnormalized": "et al., 2020), SIEM alert rules, Sigma rules$^{15}$, and Security Stack Exchange to generate both rules-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              127.547,
+              131.13853,
+              136.45357
+            ],
+            "device": [
+              108,
+              125.39507,
+              503.99716,
+              134.30164
+            ]
+          },
+          "content": {
+            "rnormalized": "based and synthetic security instructions. Our final synthetic security dataset consists of various"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              109.445,
+              123.6416,
+              114.78897
+            ],
+            "device": [
+              117.664,
+              103.64546,
+              223.04825,
+              111.11447
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{11}$https://attack.mitre.org"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              98.570999,
+              123.6416,
+              103.91497
+            ],
+            "device": [
+              117.664,
+              92.771461,
+              212.58804,
+              100.24047
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{12}$https://cwe.mitre.org"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              87.695999,
+              123.6416,
+              93.03997
+            ],
+            "device": [
+              117.664,
+              81.896461,
+              210.75801,
+              89.365471
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{13}$https://cve.mitre.org"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              76.821999,
+              123.6416,
+              82.16597
+            ],
+            "device": [
+              117.664,
+              71.022461,
+              220.30005,
+              78.49147
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{14}$https://capec.mitre.org"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              65.946999,
+              123.6416,
+              71.29097
+            ],
+            "device": [
+              117.664,
+              60.147461,
+              275.14304,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{15}$https://github.com/SigmaHQ/sigma"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.509,
+              32.25,
+              308.4903,
+              41.156563
+            ],
+            "device": [
+              303.509,
+              30.098078,
+              308.4903,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 116.311
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            116.311,
+            251.46201,
+            116.311
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            116.311,
+            116.311
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

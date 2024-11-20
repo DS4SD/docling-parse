@@ -1,0 +1,1833 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 1.983799115407467,
+        "/LTZNGC+CMVTT10": 0.6702957110352639
+      },
+      "mean-char-width": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.29495338842264,
+        "/LTZNGC+CMVTT10": 4.340715038155473
+      },
+      "number-of-chars": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 3313,
+        "/LTZNGC+CMVTT10": 156
+      }
+    },
+    "styles": [
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              700.17603,
+              114.2766,
+              710.86395
+            ],
+            "device": [
+              108.299,
+              697.59369,
+              114.2766,
+              708.28168
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              700.17603,
+              133.47665,
+              710.86395
+            ],
+            "device": [
+              126.82957,
+              697.59369,
+              326.58078,
+              708.28168
+            ]
+          },
+          "content": {
+            "rnormalized": "SOCIO-TECHNICAL HARMS AND RISKS"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              676.51398,
+              150.29277,
+              685.42053
+            ],
+            "device": [
+              108,
+              674.36206,
+              505.24356,
+              683.26862
+            ]
+          },
+          "content": {
+            "rnormalized": "Numerous potential socio-technical harms and risks of LLMs have been identified in recent years,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              665.55499,
+              146.39148,
+              674.46155
+            ],
+            "device": [
+              108,
+              663.40308,
+              505.6535,
+              672.30963
+            ]
+          },
+          "content": {
+            "rnormalized": "including misinformation, hallucination, lack of faithfulness or factuality, leakage of private in-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              654.59698,
+              150.6188,
+              663.50354
+            ],
+            "device": [
+              108,
+              652.44507,
+              504.17004,
+              661.35162
+            ]
+          },
+          "content": {
+            "rnormalized": "formation, plagiarism or inclusion of copyrighted content, hate speech, toxicity, human-computer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              643.638,
+              150.61005,
+              652.54456
+            ],
+            "device": [
+              108,
+              641.48608,
+              469.53284,
+              650.39264
+            ]
+          },
+          "content": {
+            "rnormalized": "interaction harms such as bullying and gaslighting, malicious uses, and adversarial attacks."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              626.70099,
+              116.21586,
+              635.60754
+            ],
+            "device": [
+              108,
+              624.54907,
+              503.99835,
+              633.45563
+            ]
+          },
+          "content": {
+            "rnormalized": "In line with the IBM AI Ethics Board, a cross-disciplinary body that defines the AI ethics vision and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              615.742,
+              129.4711,
+              624.64856
+            ],
+            "device": [
+              108,
+              613.59009,
+              503.99594,
+              622.49664
+            ]
+          },
+          "content": {
+            "rnormalized": "strategy for the IBM Corporation, we have followed several risk mitigation strategies while creating"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              604.78302,
+              122.67371,
+              613.68958
+            ],
+            "device": [
+              108,
+              602.6311,
+              503.99716,
+              611.53766
+            ]
+          },
+          "content": {
+            "rnormalized": "and releasing Granite 3.0 models. This includes comprehensive data governance which includes"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              593.82397,
+              148.90146,
+              602.73053
+            ],
+            "device": [
+              108,
+              591.67206,
+              503.99725,
+              600.57861
+            ]
+          },
+          "content": {
+            "rnormalized": "clearance, block-listing, filtering of documents with potential hate, abuse and profanity. Through"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              582.86603,
+              132.40837,
+              591.77258
+            ],
+            "device": [
+              108,
+              580.71411,
+              504.00146,
+              589.62067
+            ]
+          },
+          "content": {
+            "rnormalized": "model alignment with a dedicated focus on safety, we have also encouraged prosocial and less harmful"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              571.90698,
+              132.40837,
+              580.81354
+            ],
+            "device": [
+              108,
+              569.75507,
+              504.0015,
+              578.66162
+            ]
+          },
+          "content": {
+            "rnormalized": "model behavior with the aim to mitigate certain aspects of misuse and value alignment risks. We have"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              560.948,
+              123.92135,
+              569.85455
+            ],
+            "device": [
+              108,
+              558.79608,
+              503.99777,
+              567.70264
+            ]
+          },
+          "content": {
+            "rnormalized": "also endeavoured to safeguard against some of the risks by assessing safety through standardized AI"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              549.98901,
+              131.31488,
+              558.89557
+            ],
+            "device": [
+              108,
+              547.8371,
+              504.00146,
+              556.74365
+            ]
+          },
+          "content": {
+            "rnormalized": "safety benchmarks which can be seen in Section 7, including internal red teaming to better understand"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              539.03003,
+              120.02821,
+              547.93658
+            ],
+            "device": [
+              108,
+              536.87811,
+              505.24576,
+              545.78467
+            ]
+          },
+          "content": {
+            "rnormalized": "the risks associated with external use of Granite 3.0 models in critical enterprise use cases. However,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              528.07098,
+              112.51186,
+              536.97754
+            ],
+            "device": [
+              108,
+              525.91907,
+              503.99716,
+              534.82562
+            ]
+          },
+          "content": {
+            "rnormalized": "evaluating on benchmarks is only a limited approach for revealing socio-technical harms. Going"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              517.112,
+              126.4332,
+              526.01855
+            ],
+            "device": [
+              108,
+              514.96008,
+              504.00143,
+              523.86664
+            ]
+          },
+          "content": {
+            "rnormalized": "forward, as the harms from LLMs become well-defined, or as Granite model capabilities advance, we"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              506.15302,
+              123.14281,
+              515.05957
+            ],
+            "device": [
+              107.641,
+              504.0011,
+              409.76688,
+              512.90765
+            ]
+          },
+          "content": {
+            "rnormalized": "will explore extended training and staged releases to further minimize risks."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              489.21701,
+              116.45653,
+              498.12357
+            ],
+            "device": [
+              108,
+              487.06509,
+              504.35004,
+              495.97165
+            ]
+          },
+          "content": {
+            "rnormalized": "In addition, as part of IBM\u2019s commitment to responsible AI, we are also introducing a new family"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              478.258,
+              116.35693,
+              487.16455
+            ],
+            "device": [
+              108,
+              476.10608,
+              504.25287,
+              485.01263
+            ]
+          },
+          "content": {
+            "rnormalized": "of LLM-based Granite Guardian guardrail models $^{34}$, providing the most comprehensive set of risk"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              467.29901,
+              122.67371,
+              476.20557
+            ],
+            "device": [
+              108,
+              465.14709,
+              503.99719,
+              474.05365
+            ]
+          },
+          "content": {
+            "rnormalized": "and harm detection capabilities available in the community today. These models can be used to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              456.34,
+              140.18259,
+              465.24655
+            ],
+            "device": [
+              108,
+              454.18808,
+              503.99713,
+              463.09464
+            ]
+          },
+          "content": {
+            "rnormalized": "monitor and manage inputs and outputs to any LLM, whether open or proprietary. We have also"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              445.38101,
+              140.60484,
+              454.28757
+            ],
+            "device": [
+              108,
+              443.2291,
+              243.48526,
+              452.13565
+            ]
+          },
+          "content": {
+            "rnormalized": "released a Responsible Use Guide"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              245.989,
+              448.996,
+              252.9628,
+              455.23059
+            ],
+            "device": [
+              245.989,
+              447.48965,
+              252.9628,
+              453.72424
+            ]
+          },
+          "content": {
+            "rnormalized": "35"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              255.96201,
+              445.38101,
+              263.70517,
+              454.28757
+            ],
+            "device": [
+              255.96201,
+              443.2291,
+              504.00162,
+              452.13565
+            ]
+          },
+          "content": {
+            "rnormalized": "to support developers to build AI responsibly with our Granite"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              434.422,
+              120.20419,
+              443.32855
+            ],
+            "device": [
+              108,
+              432.27008,
+              120.22378,
+              441.17664
+            ]
+          },
+          "content": {
+            "rnormalized": "3.0"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              434.422,
+              120.20419,
+              443.32855
+            ],
+            "device": [
+              122.66853,
+              432.27008,
+              504.0014,
+              441.17664
+            ]
+          },
+          "content": {
+            "rnormalized": "models. This encompasses a series of assets to help developers design and implement responsible"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              423.46301,
+              118.23563,
+              432.36957
+            ],
+            "device": [
+              107.641,
+              421.3111,
+              504.00037,
+              430.21765
+            ]
+          },
+          "content": {
+            "rnormalized": "AI best practices and keep their users safe. However, every enterprise often has its own regulations"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              412.504,
+              115.78966,
+              421.41055
+            ],
+            "device": [
+              108,
+              410.35208,
+              504.17126,
+              419.25864
+            ]
+          },
+          "content": {
+            "rnormalized": "to conform to, whether they come from laws, social norms, industry standards, market demands, or"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              401.54501,
+              158.49017,
+              410.45157
+            ],
+            "device": [
+              108,
+              399.3931,
+              504.00134,
+              408.29965
+            ]
+          },
+          "content": {
+            "rnormalized": "architectural requirements; we believe that users should be empowered to personalize our released"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              390.58701,
+              137.87784,
+              399.49356
+            ],
+            "device": [
+              108,
+              388.43509,
+              431.51553,
+              397.34164
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite models according to their own values (within bounds) (Kirk et al., 2023)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              361.69501,
+              114.2766,
+              372.38297
+            ],
+            "device": [
+              108.299,
+              359.11267,
+              114.2766,
+              369.80063
+            ]
+          },
+          "content": {
+            "rnormalized": "9"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              361.69501,
+              134.80368,
+              372.38297
+            ],
+            "device": [
+              126.82957,
+              359.11267,
+              195.37741,
+              369.80063
+            ]
+          },
+          "content": {
+            "rnormalized": "CONCLUSION"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              338.034,
+              116.7486,
+              346.94055
+            ],
+            "device": [
+              107.532,
+              335.88208,
+              504.00201,
+              344.78864
+            ]
+          },
+          "content": {
+            "rnormalized": "We present Granite 3.0, an openly available family of lightweight generative language models that are"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              327.07501,
+              132.95512,
+              335.98157
+            ],
+            "device": [
+              108,
+              324.9231,
+              504.0015,
+              333.82965
+            ]
+          },
+          "content": {
+            "rnormalized": "highly versatile in their ability to accomplish a wide range of enterprise tasks. We release four sizes of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              316.116,
+              136.58047,
+              325.02255
+            ],
+            "device": [
+              108,
+              313.96408,
+              504.00128,
+              322.87064
+            ]
+          },
+          "content": {
+            "rnormalized": "models across two different architectures (dense and mixture-of-experts), and provide both base and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              305.15701,
+              137.46938,
+              314.06357
+            ],
+            "device": [
+              108,
+              303.0051,
+              503.99963,
+              311.91165
+            ]
+          },
+          "content": {
+            "rnormalized": "instruct checkpoints. Aligned with IBM\u2019s commitment to transparent and responsible AI, we present"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              294.198,
+              155.18626,
+              303.10455
+            ],
+            "device": [
+              108,
+              292.04608,
+              505.24133,
+              300.95264
+            ]
+          },
+          "content": {
+            "rnormalized": "descriptions of training data, pre-processing steps, data mixture, training details, energy consumption,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              283.23901,
+              122.09827,
+              292.14557
+            ],
+            "device": [
+              108,
+              281.0871,
+              504.00146,
+              289.99365
+            ]
+          },
+          "content": {
+            "rnormalized": "and evaluation methodologies used throughout the model development lifecycle. Granite 3.0 language"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              272.28,
+              137.35759,
+              281.18655
+            ],
+            "device": [
+              108,
+              270.12808,
+              503.9971,
+              279.03464
+            ]
+          },
+          "content": {
+            "rnormalized": "models demonstrate strong performance across a battery of academic benchmarks for language"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              261.32101,
+              165.75996,
+              270.22757
+            ],
+            "device": [
+              108,
+              259.1691,
+              504.00146,
+              268.07565
+            ]
+          },
+          "content": {
+            "rnormalized": "understanding, reasoning, coding, function calling, and safety. Our experience and results demonstrate"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              250.362,
+              122.64502,
+              259.26855
+            ],
+            "device": [
+              108,
+              248.21008,
+              504.00134,
+              257.11664
+            ]
+          },
+          "content": {
+            "rnormalized": "that Granite 3.0 language models have a proven ability to better handle different enterprise tasks such"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              239.40401,
+              116.40673,
+              248.31058
+            ],
+            "device": [
+              108,
+              237.25209,
+              504.00443,
+              246.15865
+            ]
+          },
+          "content": {
+            "rnormalized": "as RAG, cybersecurity and function calling among others. We release all our Granite 3.0 language"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              228.44501,
+              136.60925,
+              237.35158
+            ],
+            "device": [
+              108,
+              226.29309,
+              504.35065,
+              235.19965
+            ]
+          },
+          "content": {
+            "rnormalized": "models under an Apache 2.0 license for both research and commercial use. We plan to continuously"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              217.48599,
+              136.15399,
+              226.39256
+            ],
+            "device": [
+              108,
+              215.33408,
+              504.00162,
+              224.24063
+            ]
+          },
+          "content": {
+            "rnormalized": "release updates to these models to improve their performance with safety in mind, e.g., improving"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              206.52699,
+              167.23761,
+              215.43356
+            ],
+            "device": [
+              108,
+              204.37508,
+              372.71625,
+              213.28163
+            ]
+          },
+          "content": {
+            "rnormalized": "multilinguality and coding, including long-context model variants."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              76.821999,
+              123.6416,
+              82.16597
+            ],
+            "device": [
+              117.664,
+              71.022461,
+              505.72119,
+              78.49147
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{34}$https://huggingface.co/collections/ibm-granite/granite-guardian-66db06b1202a56cf7b079562"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              65.946999,
+              123.6416,
+              71.29097
+            ],
+            "device": [
+              117.664,
+              60.147461,
+              422.19208,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{35}$https://www.ibm.com/granite/docs/resources/responsible-use-guide.pdf"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              301.01901,
+              32.25,
+              310.9816,
+              41.156563
+            ],
+            "device": [
+              301.01901,
+              30.098078,
+              310.9816,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "27"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 83.688004
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            83.688004,
+            251.46201,
+            83.688004
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            83.688004,
+            83.688004
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

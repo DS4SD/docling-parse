@@ -1,0 +1,3418 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DHTWRO+CMMI10": 8.846762393471982,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 1.404922756996,
+        "/EFBUGN+CMSY10": 4.702346018033476,
+        "/KHSBIR+CMR10": 5.897846510515165,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.175266993018858,
+        "/LTZNGC+CMVTT10": 0.6299164477829156,
+        "/PJZRLC+CMR6": 5.308133332261458,
+        "/YTDEHL+CMR7": 4.128482714008366
+      },
+      "mean-char-width": {
+        "/DHTWRO+CMMI10": 2.76760587497225,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 4.918787242707603,
+        "/EFBUGN+CMSY10": 3.874452580983164,
+        "/KHSBIR+CMR10": 5.442567554005668,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.449773784234562,
+        "/LTZNGC+CMVTT10": 4.474201194446747,
+        "/PJZRLC+CMR6": 3.652914128132779,
+        "/YTDEHL+CMR7": 3.971581724642029
+      },
+      "number-of-chars": {
+        "/DHTWRO+CMMI10": 1,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 51,
+        "/EFBUGN+CMSY10": 6,
+        "/KHSBIR+CMR10": 6,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2864,
+        "/LTZNGC+CMVTT10": 83,
+        "/PJZRLC+CMR6": 2,
+        "/YTDEHL+CMR7": 3
+      }
+    },
+    "styles": [
+      "/DHTWRO+CMMI10",
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/EFBUGN+CMSY10",
+      "/KHSBIR+CMR10",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10",
+      "/PJZRLC+CMR6",
+      "/YTDEHL+CMR7"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              700.17603,
+              113.2303,
+              709.08258
+            ],
+            "device": [
+              108.249,
+              698.02411,
+              121.69851,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "5.4"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              132.15924,
+              700.17603,
+              141.01599,
+              709.08258
+            ],
+            "device": [
+              132.15924,
+              698.02411,
+              209.1378,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "MODEL MERGING"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              679.44098,
+              116.91788,
+              688.34753
+            ],
+            "device": [
+              107.532,
+              677.28906,
+              503.99612,
+              686.19562
+            ]
+          },
+          "content": {
+            "rnormalized": "We systematically train multiple models at each stage of the post-training pipeline, each specialized"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              668.48199,
+              115.90592,
+              677.38855
+            ],
+            "device": [
+              108,
+              666.33008,
+              503.99725,
+              675.23663
+            ]
+          },
+          "content": {
+            "rnormalized": "in a specific domain, such as multilingual understanding or reasoning. Before moving to the next"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              657.52301,
+              128.8826,
+              666.42957
+            ],
+            "device": [
+              108,
+              655.37109,
+              503.99722,
+              664.27765
+            ]
+          },
+          "content": {
+            "rnormalized": "stage of training and alignment, we merge the different model weights to create the best overall"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              646.56403,
+              133.40463,
+              655.47058
+            ],
+            "device": [
+              108,
+              644.41211,
+              503.99731,
+              653.31866
+            ]
+          },
+          "content": {
+            "rnormalized": "model across the tasks. The model\u2019s performance is validated on the same set of internal training"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              635.60498,
+              156.13928,
+              644.51154
+            ],
+            "device": [
+              108,
+              633.45306,
+              374.92795,
+              642.35962
+            ]
+          },
+          "content": {
+            "rnormalized": "benchmarks used in the data mixture and hyperparameter searches."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              606.185,
+              114.2766,
+              616.87292
+            ],
+            "device": [
+              108.299,
+              603.60266,
+              114.2766,
+              614.29065
+            ]
+          },
+          "content": {
+            "rnormalized": "6"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              606.185,
+              130.81065,
+              616.87292
+            ],
+            "device": [
+              126.82957,
+              603.60266,
+              483.65091,
+              614.29065
+            ]
+          },
+          "content": {
+            "rnormalized": "INFRASTRUCTURE, ENERGY CONSUMPTION AND CARBON EMISSIONS"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              582.20697,
+              165.79398,
+              591.16333
+            ],
+            "device": [
+              108,
+              580.12482,
+              172.62299,
+              589.08118
+            ]
+          },
+          "content": {
+            "rnormalized": "Infrastructure."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              182.588,
+              582.20697,
+              192.12436,
+              591.11353
+            ],
+            "device": [
+              182.588,
+              580.05505,
+              503.99567,
+              588.96161
+            ]
+          },
+          "content": {
+            "rnormalized": "We train the Granite 3.0 models using Blue Vela, one of IBM\u2019s supercomputing"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              571.24799,
+              139.04446,
+              580.15454
+            ],
+            "device": [
+              108,
+              569.09607,
+              503.99731,
+              578.00262
+            ]
+          },
+          "content": {
+            "rnormalized": "clusters building with NVIDIA H100 SuperPod and IBM Spectrum LSF. Each node in Blue Vela"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              560.289,
+              140.05638,
+              569.19556
+            ],
+            "device": [
+              108,
+              558.13708,
+              504.49902,
+              567.04364
+            ]
+          },
+          "content": {
+            "rnormalized": "consists of dual 48-core processors, 8x NVIDIA H100 SXM5 80GB and 10 NVIDIA ConnectX-7"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              549.33002,
+              128.61043,
+              558.23657
+            ],
+            "device": [
+              108,
+              547.1781,
+              504.0014,
+              556.08466
+            ]
+          },
+          "content": {
+            "rnormalized": "NDR InfiniBand Host Channel Adapters (HCA). Blue Vela employs 3.2Tbps InfiniBand interconnect"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              538.37097,
+              115.59589,
+              547.27753
+            ],
+            "device": [
+              108,
+              536.21906,
+              505.73917,
+              545.12561
+            ]
+          },
+          "content": {
+            "rnormalized": "to facilitate seamless communication between nodes, known for their high throughput and low latency."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              527.41199,
+              116.46482,
+              536.31854
+            ],
+            "device": [
+              108,
+              525.26007,
+              503.99722,
+              534.16663
+            ]
+          },
+          "content": {
+            "rnormalized": "In addition, Blue Vela employs a separate, dedicated storage subsystem which is designed around"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              516.453,
+              120.36909,
+              525.35956
+            ],
+            "device": [
+              108,
+              514.30109,
+              504.00308,
+              523.20764
+            ]
+          },
+          "content": {
+            "rnormalized": "the IBM Spectrum Scale ecosystem and the new IBM Storage Scale System 6000 (SSS) (Gershon"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              505.49399,
+              115.33685,
+              514.40057
+            ],
+            "device": [
+              108,
+              503.34207,
+              503.99728,
+              512.24866
+            ]
+          },
+          "content": {
+            "rnormalized": "et al., 2024). Utilizing InfiniBand and PCIe Gen 5 technology for optimal performance, each SSS"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              494.535,
+              145.41315,
+              503.44156
+            ],
+            "device": [
+              108,
+              492.38309,
+              505.73926,
+              501.28964
+            ]
+          },
+          "content": {
+            "rnormalized": "appliance is capable of delivering upwards of 310 GB/s throughput for reads and 155 GB/s for writes."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              483.577,
+              123.18285,
+              492.48355
+            ],
+            "device": [
+              107.691,
+              481.42508,
+              480.85019,
+              490.33163
+            ]
+          },
+          "content": {
+            "rnormalized": "The Blue Vela cluster runs on 100% renewable energy to minimize the environmental impact."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              454.07001,
+              113.71119,
+              462.97656
+            ],
+            "device": [
+              107.691,
+              451.91809,
+              503.99612,
+              460.82465
+            ]
+          },
+          "content": {
+            "rnormalized": "Table 7: Energy consumption and carbon emissions of training Granite 3.0 models in the same data center. We"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              444.10699,
+              118.95694,
+              452.12296
+            ],
+            "device": [
+              108,
+              442.17026,
+              350.79089,
+              450.18622
+            ]
+          },
+          "content": {
+            "rnormalized": "take PUE of 1.3 and 0.39kg CO$_{2}$eq/KWh as carbon intensity factor."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              198.002,
+              415.616,
+              221.41327,
+              423.63196
+            ],
+            "device": [
+              198.002,
+              413.67926,
+              221.41327,
+              421.69522
+            ]
+          },
+          "content": {
+            "rnormalized": "Model"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              235.75301,
+              420.59698,
+              253.68581,
+              428.61295
+            ],
+            "device": [
+              235.75301,
+              418.66025,
+              278.11029,
+              426.67621
+            ]
+          },
+          "content": {
+            "rnormalized": "GPU power"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              292.05099,
+              415.616,
+              332.89294,
+              423.63196
+            ],
+            "device": [
+              292.05099,
+              413.67926,
+              332.89294,
+              421.69522
+            ]
+          },
+          "content": {
+            "rnormalized": "GPU-hours"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              361.26001,
+              420.59698,
+              366.73849,
+              428.61295
+            ],
+            "device": [
+              361.26001,
+              418.66025,
+              403.89526,
+              426.67621
+            ]
+          },
+          "content": {
+            "rnormalized": "Total power"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              435.83359,
+              420.59698,
+              462.23068,
+              428.61295
+            ],
+            "device": [
+              435.83359,
+              418.66025,
+              462.23068,
+              426.67621
+            ]
+          },
+          "content": {
+            "rnormalized": "Carbon"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              233.767,
+              410.634,
+              280.09637,
+              418.64996
+            ],
+            "device": [
+              233.767,
+              408.69727,
+              280.09637,
+              416.71323
+            ]
+          },
+          "content": {
+            "rnormalized": "consumption"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              344.85172,
+              410.634,
+              379.72205,
+              418.64996
+            ],
+            "device": [
+              344.85172,
+              408.69727,
+              420.30396,
+              416.71323
+            ]
+          },
+          "content": {
+            "rnormalized": "consumption (MWh)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              432.26514,
+              410.634,
+              450.19794,
+              418.64996
+            ],
+            "device": [
+              432.26514,
+              408.69727,
+              465.79611,
+              416.71323
+            ]
+          },
+          "content": {
+            "rnormalized": "(tCO$_{2}$eq)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              168.368,
+              395.67001,
+              195.25822,
+              403.68597
+            ],
+            "device": [
+              168.368,
+              393.73328,
+              221.41322,
+              401.74924
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite 3.0 2B"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              245.974,
+              395.67001,
+              267.88788,
+              403.68597
+            ],
+            "device": [
+              245.974,
+              393.73328,
+              267.88788,
+              401.74924
+            ]
+          },
+          "content": {
+            "rnormalized": "700W"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.89841,
+              395.67001,
+              327.03922,
+              403.68597
+            ],
+            "device": [
+              297.89841,
+              393.73328,
+              327.03922,
+              401.74924
+            ]
+          },
+          "content": {
+            "rnormalized": "192,030"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              372.4899,
+              395.67001,
+              392.66431,
+              403.68597
+            ],
+            "device": [
+              372.4899,
+              393.73328,
+              392.66431,
+              401.74924
+            ]
+          },
+          "content": {
+            "rnormalized": "174.6"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              441.18149,
+              395.67001,
+              456.87268,
+              403.68597
+            ],
+            "device": [
+              441.18149,
+              393.73328,
+              456.87268,
+              401.74924
+            ]
+          },
+          "content": {
+            "rnormalized": "68.1"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              168.368,
+              385.707,
+              195.25822,
+              393.72296
+            ],
+            "device": [
+              168.368,
+              383.77026,
+              221.41322,
+              391.78622
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite 3.0 8B"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              245.974,
+              385.707,
+              267.88788,
+              393.72296
+            ],
+            "device": [
+              245.974,
+              383.77026,
+              267.88788,
+              391.78622
+            ]
+          },
+          "content": {
+            "rnormalized": "700W"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.89841,
+              385.707,
+              327.03922,
+              393.72296
+            ],
+            "device": [
+              297.89841,
+              383.77026,
+              327.03922,
+              391.78622
+            ]
+          },
+          "content": {
+            "rnormalized": "832,102"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              372.4899,
+              385.707,
+              392.66431,
+              393.72296
+            ],
+            "device": [
+              372.4899,
+              383.77026,
+              392.66431,
+              391.78622
+            ]
+          },
+          "content": {
+            "rnormalized": "757.0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              438.93991,
+              385.707,
+              459.11432,
+              393.72296
+            ],
+            "device": [
+              438.93991,
+              383.77026,
+              459.11432,
+              391.78622
+            ]
+          },
+          "content": {
+            "rnormalized": "295.2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.96201,
+              375.74399,
+              170.85223,
+              383.75995
+            ],
+            "device": [
+              143.96201,
+              373.80725,
+              221.41379,
+              381.82321
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite 3.0 1B-400M"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              245.974,
+              375.74399,
+              267.88788,
+              383.75995
+            ],
+            "device": [
+              245.974,
+              373.80725,
+              267.88788,
+              381.82321
+            ]
+          },
+          "content": {
+            "rnormalized": "700W"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.14001,
+              375.74399,
+              324.79761,
+              383.75995
+            ],
+            "device": [
+              300.14001,
+              373.80725,
+              324.79761,
+              381.82321
+            ]
+          },
+          "content": {
+            "rnormalized": "71,171"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              374.73151,
+              375.74399,
+              390.4227,
+              383.75995
+            ],
+            "device": [
+              374.73151,
+              373.80725,
+              390.4227,
+              381.82321
+            ]
+          },
+          "content": {
+            "rnormalized": "64.5"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              441.18149,
+              375.74399,
+              456.87268,
+              383.75995
+            ],
+            "device": [
+              441.18149,
+              373.80725,
+              456.87268,
+              381.82321
+            ]
+          },
+          "content": {
+            "rnormalized": "25.2"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.96201,
+              365.78198,
+              170.85223,
+              373.79794
+            ],
+            "device": [
+              143.96201,
+              363.84525,
+              221.41379,
+              371.86121
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite 3.0 3B-800M"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              245.974,
+              365.78201,
+              267.88788,
+              373.79797
+            ],
+            "device": [
+              245.974,
+              363.84528,
+              267.88788,
+              371.86124
+            ]
+          },
+          "content": {
+            "rnormalized": "700W"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              297.89841,
+              365.78201,
+              327.03922,
+              373.79797
+            ],
+            "device": [
+              297.89841,
+              363.84528,
+              327.03922,
+              371.86124
+            ]
+          },
+          "content": {
+            "rnormalized": "133,308"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              372.4899,
+              365.78201,
+              392.66431,
+              373.79797
+            ],
+            "device": [
+              372.4899,
+              363.84528,
+              392.66431,
+              371.86124
+            ]
+          },
+          "content": {
+            "rnormalized": "121.2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              441.18149,
+              365.78201,
+              456.87268,
+              373.79797
+            ],
+            "device": [
+              441.18149,
+              363.84528,
+              456.87268,
+              371.86124
+            ]
+          },
+          "content": {
+            "rnormalized": "47.2"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              339.05301,
+              129.45166,
+              348.0094
+            ],
+            "device": [
+              108,
+              336.97083,
+              305.24152,
+              345.92722
+            ]
+          },
+          "content": {
+            "rnormalized": "Energy Consumption and Carbon Emissions."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              315.20099,
+              339.05301,
+              328.18784,
+              347.95956
+            ],
+            "device": [
+              315.20099,
+              336.90109,
+              503.99789,
+              345.80765
+            ]
+          },
+          "content": {
+            "rnormalized": "All our Granite 3.0 models are trained using a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              328.09399,
+              142.99742,
+              337.00055
+            ],
+            "device": [
+              108,
+              325.94208,
+              184.25455,
+              334.84863
+            ]
+          },
+          "content": {
+            "rnormalized": "compute budget of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              186.918,
+              328.09399,
+              191.89929,
+              336.9408
+            ],
+            "device": [
+              186.918,
+              326.16125,
+              191.89929,
+              335.00803
+            ]
+          },
+          "content": {
+            "rnormalized": "8"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              191.89999,
+              328.09399,
+              194.6676,
+              336.9408
+            ],
+            "device": [
+              191.89999,
+              326.16125,
+              194.6676,
+              335.00803
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              194.66699,
+              328.09399,
+              204.62959,
+              336.9408
+            ],
+            "device": [
+              194.66699,
+              326.16125,
+              204.62959,
+              335.00803
+            ]
+          },
+          "content": {
+            "rnormalized": "35"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              206.97299,
+              328.09399,
+              214.72191,
+              337.49869
+            ],
+            "device": [
+              206.97299,
+              326.16125,
+              214.72191,
+              335.56595
+            ]
+          },
+          "content": {
+            "rnormalized": "\u00d7"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              217.06499,
+              328.09399,
+              227.02759,
+              336.9408
+            ],
+            "device": [
+              217.06499,
+              326.16125,
+              227.02759,
+              335.00803
+            ]
+          },
+          "content": {
+            "rnormalized": "10"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              227.02699,
+              331.70898,
+              234.97015,
+              337.90173
+            ],
+            "device": [
+              227.02699,
+              330.35608,
+              234.97015,
+              336.5488
+            ]
+          },
+          "content": {
+            "rnormalized": "23"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.133,
+              328.09399,
+              271.16919,
+              337.00055
+            ],
+            "device": [
+              238.133,
+              325.94208,
+              503.99762,
+              334.84863
+            ]
+          },
+          "content": {
+            "rnormalized": "FLOPS. This training has consumed energy resulting in emission"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              317.13501,
+              116.43163,
+              326.04156
+            ],
+            "device": [
+              108,
+              314.98309,
+              504.00302,
+              323.88965
+            ]
+          },
+          "content": {
+            "rnormalized": "of carbon dioxide. We show the energy consumption and carbon emission in Table 7. To calculate"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              306.17599,
+              116.93669,
+              315.08255
+            ],
+            "device": [
+              107.532,
+              304.02408,
+              377.0004,
+              312.93063
+            ]
+          },
+          "content": {
+            "rnormalized": "Watt-hour, we follow Touvron et al. (2023) which uses the formula:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              194.05701,
+              277.57599,
+              208.44299,
+              286.48254
+            ],
+            "device": [
+              194.05701,
+              275.42407,
+              208.44299,
+              284.33063
+            ]
+          },
+          "content": {
+            "rnormalized": "Wh"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              211.21001,
+              277.57599,
+              218.95892,
+              286.42279
+            ],
+            "device": [
+              211.21001,
+              275.64325,
+              218.95892,
+              284.49002
+            ]
+          },
+          "content": {
+            "rnormalized": "="
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              221.72601,
+              277.57599,
+              267.10565,
+              286.48254
+            ],
+            "device": [
+              221.72601,
+              275.42407,
+              267.10565,
+              284.33063
+            ]
+          },
+          "content": {
+            "rnormalized": "GPU-hours"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              269.319,
+              277.57599,
+              277.0679,
+              286.98068
+            ],
+            "device": [
+              269.319,
+              275.64325,
+              277.0679,
+              285.04794
+            ]
+          },
+          "content": {
+            "rnormalized": "\u00d7"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              279.28201,
+              277.57599,
+              302.52475,
+              286.48254
+            ],
+            "device": [
+              279.28201,
+              275.42407,
+              386.94785,
+              284.33063
+            ]
+          },
+          "content": {
+            "rnormalized": "(GPU power consumption)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              389.16101,
+              277.57599,
+              396.90991,
+              286.98068
+            ],
+            "device": [
+              389.16101,
+              275.64325,
+              396.90991,
+              285.04794
+            ]
+          },
+          "content": {
+            "rnormalized": "\u00d7"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.12402,
+              277.57599,
+              417.94336,
+              286.48254
+            ],
+            "device": [
+              399.12402,
+              275.42407,
+              417.94336,
+              284.33063
+            ]
+          },
+          "content": {
+            "rnormalized": "PUE"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              255.94901,
+              132.4664,
+              264.85556
+            ],
+            "device": [
+              107.641,
+              253.79709,
+              504.00409,
+              262.70364
+            ]
+          },
+          "content": {
+            "rnormalized": "where Power Usage Effectiveness (PUE) is set with 1.3. To calculate the emission we use the US"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              244.99001,
+              139.4575,
+              253.89658
+            ],
+            "device": [
+              108,
+              242.83809,
+              504.00247,
+              251.74464
+            ]
+          },
+          "content": {
+            "rnormalized": "national average carbon intensity factor of 0.39 kg CO$_{2}$eq/KWh according to U.S. Energy Information"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              234.03101,
+              169.12085,
+              242.93758
+            ],
+            "device": [
+              107.641,
+              231.87909,
+              169.12085,
+              240.78564
+            ]
+          },
+          "content": {
+            "rnormalized": "Administration"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              169.12,
+              237.647,
+              176.0938,
+              243.88158
+            ],
+            "device": [
+              169.12,
+              236.14066,
+              176.0938,
+              242.37524
+            ]
+          },
+          "content": {
+            "rnormalized": "28"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              179.088,
+              234.03101,
+              210.11217,
+              242.93758
+            ],
+            "device": [
+              179.088,
+              231.87909,
+              503.99927,
+              240.78564
+            ]
+          },
+          "content": {
+            "rnormalized": "without taking location of data centers in consideration. A number of mitigation"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              223.073,
+              129.14742,
+              231.97957
+            ],
+            "device": [
+              108,
+              220.92108,
+              504.16751,
+              229.82764
+            ]
+          },
+          "content": {
+            "rnormalized": "strategies can be used to reduce the energy and carbon footprint of training future Granite models. For"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              212.114,
+              112.48532,
+              221.02057
+            ],
+            "device": [
+              108,
+              209.96208,
+              504.34479,
+              218.86864
+            ]
+          },
+          "content": {
+            "rnormalized": "example, the amount of resources used in training may be adjusted as a function of the availability"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              201.155,
+              116.46482,
+              210.06157
+            ],
+            "device": [
+              108,
+              199.00308,
+              504.17007,
+              207.90964
+            ]
+          },
+          "content": {
+            "rnormalized": "of renewable energy, or the resources usage may be capped to not exceed certain energy usage or"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              190.196,
+              148.0885,
+              199.10257
+            ],
+            "device": [
+              108,
+              188.04408,
+              503.99719,
+              196.95064
+            ]
+          },
+          "content": {
+            "rnormalized": "emissions limits. Moreover, we hope that releasing all our Granite 3.0 models in open source will"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              179.237,
+              124.81248,
+              188.14357
+            ],
+            "device": [
+              108,
+              177.08508,
+              504.35284,
+              185.99164
+            ]
+          },
+          "content": {
+            "rnormalized": "help to reduce future carbon emission since the training is already done, and the models are relatively"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              168.278,
+              129.58896,
+              177.18457
+            ],
+            "device": [
+              108,
+              166.12608,
+              355.92926,
+              175.03264
+            ]
+          },
+          "content": {
+            "rnormalized": "small and can be run on a single GPU (maximum 8B params)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              138.858,
+              114.2766,
+              149.54594
+            ],
+            "device": [
+              108.299,
+              136.27568,
+              114.2766,
+              146.96362
+            ]
+          },
+          "content": {
+            "rnormalized": "7"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              138.858,
+              134.1342,
+              149.54594
+            ],
+            "device": [
+              126.82957,
+              136.27568,
+              193.01555,
+              146.96362
+            ]
+          },
+          "content": {
+            "rnormalized": "EVALUATION"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              114.879,
+              116.90848,
+              123.78556
+            ],
+            "device": [
+              107.532,
+              112.72707,
+              504.1651,
+              121.63364
+            ]
+          },
+          "content": {
+            "rnormalized": "We compare our Granite 3.0 models (base and instruct) against the open source models with similar"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              103.92,
+              122.67371,
+              112.82656
+            ],
+            "device": [
+              108,
+              101.76807,
+              503.99722,
+              110.67464
+            ]
+          },
+          "content": {
+            "rnormalized": "active parameters from the following releases: Llama 3.1 and 3.2 (Dubey et al., 2024), Gemma-2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              92.960999,
+              117.26379,
+              101.86756
+            ],
+            "device": [
+              107.671,
+              90.809074,
+              503.99872,
+              99.715637
+            ]
+          },
+          "content": {
+            "rnormalized": "(Team et al., 2024), Mistral (Jiang et al., 2023), SmolLM $^{29}$. All benchmark scores for baseline"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              76.821999,
+              123.6416,
+              82.16597
+            ],
+            "device": [
+              117.664,
+              71.022461,
+              345.93546,
+              78.49147
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{28}$https://www.eia.gov/tools/faqs/faq.php?id=74&t=11"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              65.946999,
+              123.6416,
+              71.29097
+            ],
+            "device": [
+              117.664,
+              60.147461,
+              272.92117,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{29}$https://huggingface.co/blog/smollm"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.64499,
+              32.25,
+              310.60757,
+              41.156563
+            ],
+            "device": [
+              300.64499,
+              30.098078,
+              310.60757,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "18"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 137.98399,
+          "x1": 471.77399,
+          "y": 430.75699
+        },
+        {
+          "x0": 137.98399,
+          "x1": 471.77399,
+          "y": 405.681
+        },
+        {
+          "x0": 137.98399,
+          "x1": 471.77399,
+          "y": 360.67899
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 83.688004
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            137.98399,
+            430.75699,
+            471.77399,
+            430.75699
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            137.98399,
+            471.77399
+          ],
+          "y-values": [
+            430.75699,
+            430.75699
+          ]
+        },
+        {
+          "bbox": [
+            227.59,
+            417.608,
+            227.59,
+            427.57101
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            227.59,
+            227.59
+          ],
+          "y-values": [
+            417.608,
+            427.57101
+          ]
+        },
+        {
+          "bbox": [
+            227.59,
+            407.64499,
+            227.59,
+            417.608
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            227.59,
+            227.59
+          ],
+          "y-values": [
+            407.64499,
+            417.608
+          ]
+        },
+        {
+          "bbox": [
+            137.98399,
+            405.681,
+            471.77399,
+            405.681
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            137.98399,
+            471.77399
+          ],
+          "y-values": [
+            405.681,
+            405.681
+          ]
+        },
+        {
+          "bbox": [
+            227.59,
+            392.681,
+            227.59,
+            402.64401
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            227.59,
+            227.59
+          ],
+          "y-values": [
+            392.681,
+            402.64401
+          ]
+        },
+        {
+          "bbox": [
+            227.59,
+            382.71799,
+            227.59,
+            392.681
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            227.59,
+            227.59
+          ],
+          "y-values": [
+            382.71799,
+            392.681
+          ]
+        },
+        {
+          "bbox": [
+            227.59,
+            372.755,
+            227.59,
+            382.71802
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            227.59,
+            227.59
+          ],
+          "y-values": [
+            372.755,
+            382.71802
+          ]
+        },
+        {
+          "bbox": [
+            227.59,
+            362.793,
+            227.59,
+            372.75601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            227.59,
+            227.59
+          ],
+          "y-values": [
+            362.793,
+            372.75601
+          ]
+        },
+        {
+          "bbox": [
+            137.98399,
+            360.67899,
+            471.77399,
+            360.67899
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            137.98399,
+            471.77399
+          ],
+          "y-values": [
+            360.67899,
+            360.67899
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            83.688004,
+            251.46201,
+            83.688004
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            83.688004,
+            83.688004
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 227.59,
+          "y0": 417.608,
+          "y1": 427.57101
+        },
+        {
+          "x": 227.59,
+          "y0": 407.64499,
+          "y1": 417.608
+        },
+        {
+          "x": 227.59,
+          "y0": 392.681,
+          "y1": 402.64401
+        },
+        {
+          "x": 227.59,
+          "y0": 382.71799,
+          "y1": 392.681
+        },
+        {
+          "x": 227.59,
+          "y0": 372.755,
+          "y1": 382.71802
+        },
+        {
+          "x": 227.59,
+          "y0": 362.793,
+          "y1": 372.75601
+        }
+      ],
+      "width": 612
+    }
+  ]
+}
