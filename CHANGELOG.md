@@ -1,3 +1,9 @@
+## [v2.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.0) - 2024-11-20
+
+### Feature
+
+* Add the export of annotations and ToC ([#58](https://github.com/DS4SD/docling-parse/issues/58)) ([`22cf280`](https://github.com/DS4SD/docling-parse/commit/22cf280b1f2d7651b9684aba6a575edce9b35c00))
+
 ## [v2.0.5](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.5) - 2024-11-20
 
 ### Fix
