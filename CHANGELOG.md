@@ -1,3 +1,9 @@
+## [v2.0.5](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.5) - 2024-11-20
+
+### Fix
+
+* Enable python3.9 wheels ([#60](https://github.com/DS4SD/docling-parse/issues/60)) ([`8e36f66`](https://github.com/DS4SD/docling-parse/commit/8e36f66b069e264875877ee3655601f8f1ff1b77))
+
 ## [v2.0.4](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.4) - 2024-11-13
 
 ### Fix
