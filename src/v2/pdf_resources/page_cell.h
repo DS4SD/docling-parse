@@ -111,9 +111,9 @@ namespace pdflib
     //"ocr",
     //"confidence",
     
-    "stack-size",
-    "block-count",
-    "instr-count",
+    //"stack-size",
+    //"block-count",
+    //"instr-count",
 
     "widget"
   };
@@ -159,9 +159,9 @@ namespace pdflib
       //cell.push_back(ocr);
       //cell.push_back(confidence);
 
-      cell.push_back(stack_size);
-      cell.push_back(block_count);
-      cell.push_back(instr_count);
+      //cell.push_back(stack_size);
+      //cell.push_back(block_count);
+      //cell.push_back(instr_count);
 
       cell.push_back(widget);
     }
