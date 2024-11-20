@@ -63,6 +63,8 @@ namespace pdflib
     int stack_size;
     int block_count;
     int instr_count;
+
+    bool widget;
   };
 
   pdf_resource<PAGE_CELL>::pdf_resource():
@@ -111,7 +113,9 @@ namespace pdflib
     
     "stack-size",
     "block-count",
-    "instr-count"
+    "instr-count",
+
+    "widget"
   };
 
   nlohmann::json pdf_resource<PAGE_CELL>::get()
@@ -158,6 +162,8 @@ namespace pdflib
       cell.push_back(stack_size);
       cell.push_back(block_count);
       cell.push_back(instr_count);
+
+      cell.push_back(widget);
     }
     assert(cell.size()==header.size());
 
