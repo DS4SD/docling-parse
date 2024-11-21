@@ -253,7 +253,11 @@ namespace pdflib
   {
     if(stack.size()==0)
       {
-        LOG_S(FATAL) << "stack-size is zero!";
+	std::stringstream message;
+	message << "stack-size is zero in " << __FILE__ << ":" << __LINE__;
+
+	LOG_S(ERROR) << message.str();
+	throw std::logic_error(message.str());
       }
 
     pdf_state<GLOBAL>& state = stack.back();

@@ -15,7 +15,7 @@ namespace pdflib
     ~cmap_parser();
 
     std::map<uint32_t, std::string> get() { return _map; }
-    
+
     void print();
 
     void parse(std::vector<qpdf_instruction>& instructions);
@@ -77,7 +77,7 @@ namespace pdflib
   {
     for(auto itr=_map.begin(); itr!=_map.end(); itr++)
       {
-	LOG_S(INFO) << itr->first << "\t" << itr->second;
+        LOG_S(INFO) << itr->first << "\t" << itr->second;
       }
   }
 
@@ -141,8 +141,8 @@ namespace pdflib
     std::string unparsed = handle.unparse();
 
     // we have a hex-string ...
-    if(unparsed.size()>0 and 
-       unparsed.front()=='<' and 
+    if(unparsed.size()>0 and
+       unparsed.front()=='<' and
        unparsed.back()=='>')
       {
         unparsed = unparsed.substr(1, unparsed.size()-2);
@@ -170,13 +170,19 @@ namespace pdflib
   {
     //logging_lib::info("pdf-parser") << __FUNCTION__ << "\n";
 
-    // FIXME this might be too short
-    std::string result(64, ' ');
-
-    assert(handle.isString());
+    //assert(handle.isString());
+    if(not handle.isString())
+      {
+        std::string message = "not handle.isString()";
+        LOG_S(ERROR) << message;
+        throw std::logic_error(message);
+      }
 
     std::string unparsed = handle.unparse();
     //logging_lib::info("pdf-parser") << "unparsed : " << unparsed << "\n";
+
+    // FIXME this might be too short
+    std::string result(64, ' ');
 
     // we have a hex-string ...
     if(unparsed.size()>0     and
@@ -252,7 +258,20 @@ namespace pdflib
   void cmap_parser::parse_begincodespacerange(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__;
-    assert(parameters.size()==1);
+
+    //assert(parameters.size()==1);
+
+    const int num_params = 1;
+    if(parameters.size()<num_params)
+      {
+        std::string message = "parameters.size() < " + std::to_string(num_params);
+        LOG_S(ERROR) << message;
+        throw std::logic_error(message);
+      }
+    else if(parameters.size()>num_params)
+      {
+        LOG_S(WARNING) << "parameters.size() > " << num_params;
+      }
 
     csr_cnt = parameters[0].to_int();
   }
@@ -260,7 +279,19 @@ namespace pdflib
   void cmap_parser::parse_endcodespacerange(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__;
-    assert(parameters.size()==2*csr_cnt);
+    //assert(parameters.size()==2*csr_cnt);
+
+    const int num_params = 2;
+    if(parameters.size()<num_params)
+      {
+        std::string message = "parameters.size() < " + std::to_string(num_params);
+        LOG_S(ERROR) << message;
+        throw std::logic_error(message);
+      }
+    else if(parameters.size()>num_params)
+      {
+        LOG_S(WARNING) << "parameters.size() > " << num_params;
+      }
 
     csr_range.first  = cmap_parser::to_uint32(parameters[0].obj);
     csr_range.second = cmap_parser::to_uint32(parameters[1].obj);
@@ -271,8 +302,20 @@ namespace pdflib
 
   void cmap_parser::parse_beginbfrange(std::vector<qpdf_instruction>& parameters)
   {
-    assert(parameters.size()==1);
     LOG_S(INFO) << __FUNCTION__;
+    //assert(parameters.size()==1);
+
+    const int num_params = 1;
+    if(parameters.size()<num_params)
+      {
+        std::string message = "parameters.size() < " + std::to_string(num_params);
+        LOG_S(ERROR) << message;
+        throw std::logic_error(message);
+      }
+    else if(parameters.size()>num_params)
+      {
+        LOG_S(WARNING) << "parameters.size() > " << num_params;
+      }
 
     bf_cnt = parameters[0].to_int();
   }
@@ -285,11 +328,10 @@ namespace pdflib
     std::string result="";
     {
       std::string tmp = my_handle.getStringValue();
-      assert(tmp.size()==1 or tmp.size()==2);
+      //assert(tmp.size()==1 or tmp.size()==2);
 
       result = to_utf8(my_handle, tmp.size());
     }
-
     //LOG_S(INFO) << __FUNCTION__ << my_handle.unparse() << "\t" << source << "\t'" << result << "'";
 
     return result;
@@ -297,7 +339,7 @@ namespace pdflib
 
   // the target is always 2 byte
   std::string cmap_parser::get_target(QPDFObjectHandle my_handle)
-  {   
+  {
     std::string target = to_utf8(my_handle, 2);
 
     //LOG_S(INFO) << __FUNCTION__ << "\t" << my_handle.getStringValue() << "\t" << target;
@@ -308,7 +350,19 @@ namespace pdflib
   void cmap_parser::parse_endbfrange(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__;
-    assert(parameters.size()==3*bf_cnt);
+    //assert(parameters.size()==3*bf_cnt);
+
+    const int num_params = 3*bf_cnt;
+    if(parameters.size()<num_params)
+      {
+        std::string message = "parameters.size() < " + std::to_string(num_params);
+        LOG_S(ERROR) << message;
+        throw std::logic_error(message);
+      }
+    else if(parameters.size()>num_params)
+      {
+        LOG_S(WARNING) << "parameters.size() > " << num_params;
+      }
 
     std::string source_start;
     std::string source_end;
@@ -331,10 +385,8 @@ namespace pdflib
 
             set_range(source_start, source_end, tmp);
           }
-        else
+        else if(target.isArray())
           {
-            assert(target.isArray());
-
             std::vector<QPDFObjectHandle> tmps = target.getArrayAsVector();
 
             std::vector<std::string> target_strs;
@@ -351,6 +403,10 @@ namespace pdflib
               }
 
             set_range(source_start, source_end, target_strs);
+          }
+        else
+          {
+            LOG_S(WARNING) << "could not interprete the target";
           }
       }
   }
@@ -371,9 +427,9 @@ namespace pdflib
 
     if(not (csr_range.first<=c and c<=csr_range.second))
       {
-	LOG_S(ERROR) << c << " is going out of bounds: " << csr_range.first << "," << csr_range.second;
+        LOG_S(ERROR) << c << " is going out of bounds: " << csr_range.first << "," << csr_range.second;
       }
-    
+
     if(_map.count(c)==1)
       {
         LOG_S(ERROR) << "overwriting number cmap[" << c << "]: " << _map.at(c) << " with " << tgt;
@@ -393,7 +449,7 @@ namespace pdflib
 
     if(itr_beg!=src_begin.end())
       {
-        LOG_S(WARNING) << "itr_beg!=src_begin.end() --> errors might occur in the cmap: " 
+        LOG_S(WARNING) << "itr_beg!=src_begin.end() --> errors might occur in the cmap: "
                        << "'" << src_begin << "' -> " << begin;
       }
 
@@ -402,7 +458,7 @@ namespace pdflib
 
     if(itr_end!=src_end.end())
       {
-        LOG_S(WARNING) << "itr_end!=src_end.end() --> errors might occur in the cmap: " 
+        LOG_S(WARNING) << "itr_end!=src_end.end() --> errors might occur in the cmap: "
                        << "'" << src_end << "' -> " << end;;
       }
 
@@ -420,66 +476,82 @@ namespace pdflib
       {
         for(uint32_t i = 0; i < end - begin + 1; i++)
           {
-            assert(csr_range.first<=begin+i and begin+i<=csr_range.second);
+            //assert(csr_range.first<=begin+i and begin+i<=csr_range.second);
 
-              try
-                {
-                  std::string tmp(128, 0);
+            if(csr_range.first<=begin+i and begin+i<=csr_range.second)
+              {
+                try
                   {
-                    auto itr = tmp.begin();
-                    itr = utf8::append(begin+i, itr);
-
-                    tmp.erase(itr, tmp.end());
-                  }
-
-                  if(_map.count(begin+i)==1)
+                    std::string tmp(128, 0);
                     {
-                      LOG_S(FATAL) << "overwriting number c=" << begin+i;
+                      auto itr = tmp.begin();
+                      itr = utf8::append(begin+i, itr);
+
+                      tmp.erase(itr, tmp.end());
                     }
 
-                  _map[begin + i] = tmp;
-                }
-              catch(...)
-                {
-                  LOG_S(ERROR) << "invalid utf8 string";
+                    if(_map.count(begin+i)==1)
+                      {
+                        LOG_S(WARNING) << "overwriting number c=" << begin+i;
+                      }
 
-                  _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
-                }
+                    _map[begin + i] = tmp;
+                  }
+                catch(...)
+                  {
+                    LOG_S(ERROR) << "invalid utf8 string";
+
+                    _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
+                  }
+              }
+            else
+              {
+                LOG_S(WARNING) << "index " << begin+i << " is out of bounds ["
+                               << csr_range.first << ", " << csr_range.second << "]";
+              }
           }
       }
     else
       {
         for(uint32_t i = 0; i < end - begin + 1; i++)
           {
-            assert(csr_range.first<=begin+i and begin+i<=csr_range.second);
+            //assert(csr_range.first<=begin+i and begin+i<=csr_range.second);
 
-              try
-                {
-                  std::string tmp(128, 0);
+            if(csr_range.first<=begin+i and begin+i<=csr_range.second)
+              {
+                try
                   {
-                    auto itr = tmp.begin();
-                    for(auto tgt_uint: tgts)
-                      {
-                        itr = utf8::append(tgt_uint, itr);
-                      }
-                    tmp.erase(itr, tmp.end());
-                  }
-
-                  if(_map.count(begin+i)==1)
+                    std::string tmp(128, 0);
                     {
-                      LOG_S(ERROR) << "overwriting number c=" << begin+i;
+                      auto itr = tmp.begin();
+                      for(auto tgt_uint: tgts)
+                        {
+                          itr = utf8::append(tgt_uint, itr);
+                        }
+                      tmp.erase(itr, tmp.end());
                     }
 
-                  _map[begin + i] = tmp;
-                }
-              catch(...)
-                {
-                  LOG_S(ERROR) << "invalid utf8 string";
+                    if(_map.count(begin+i)==1)
+                      {
+                        LOG_S(ERROR) << "overwriting number c=" << begin+i;
+                      }
 
-                  _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
-                }
+                    _map[begin + i] = tmp;
+                  }
+                catch(...)
+                  {
+                    LOG_S(ERROR) << "invalid utf8 string";
 
-              tgts.back() += 1;
+                    _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
+                  }
+              }
+            else
+              {
+		LOG_S(WARNING) << "index " << begin+i << " is out of bounds ["
+                               << csr_range.first << ", " << csr_range.second << "]";
+              }
+
+            tgts.back() += 1;
           }
       }
 
@@ -499,12 +571,11 @@ namespace pdflib
 
     for(uint32_t i = 0; i < end - begin + 1; i++)
       {
-        assert(csr_range.first<=begin+i and 
-               begin+i<=csr_range.second);
+        //assert(csr_range.first<=begin+i and begin+i<=csr_range.second);
 
         if(_map.count(begin+i)==1)
           {
-            LOG_S(FATAL) << "overwriting number c=" << begin+i;
+            LOG_S(WARNING) << "overwriting number c=" << begin+i;
           }
 
         _map[begin + i] = tgt.at(i);
@@ -514,18 +585,43 @@ namespace pdflib
   void cmap_parser::parse_beginbfchar(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__;
-    assert(parameters.size()==1);
+    //assert(parameters.size()==1);
 
-    char_count = parameters[0].to_int();
+    if(parameters.size()==1)
+      {
+        char_count = parameters[0].to_int();
+      }
+    else if(parameters.size()>0)
+      {
+        LOG_S(WARNING) << "parameters.size()>0 for parse_beginbfchar";
+        char_count = parameters[0].to_int();
+      }
+    else
+      {
+        LOG_S(ERROR) << "parameters.size()!=1 for parse_beginbfchar";
+      }
   }
 
   void cmap_parser::parse_endbfchar(std::vector<qpdf_instruction>& parameters)
   {
     LOG_S(INFO) << __FUNCTION__ << ": starting ...";
-    assert(parameters.size()==2*char_count);    
+
+    if(parameters.size()!=2*char_count)
+      {
+        LOG_S(WARNING) << "parameters.size()!=2*char_count -> "
+                       << "parameters: " << parameters.size() << ", "
+                       << "char_count: " << char_count;
+      }
+    //assert(parameters.size()==2*char_count);
 
     for(size_t i=0; i<char_count; i++)
       {
+        if(2*i>=parameters.size())
+          {
+            LOG_S(ERROR) << "going out of bounds: skipping parse_endbfchar";
+            continue;
+          }
+
         QPDFObjectHandle source_ = parameters[2*i+0].obj;
         QPDFObjectHandle target_ = parameters[2*i+1].obj;
 

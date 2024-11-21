@@ -77,15 +77,25 @@ namespace pdflib
   {
     if(page_fonts.count(font_name)==1)
       {
-        return page_fonts[font_name];
+        return page_fonts.at(font_name);
       }
     else
       {
         std::stringstream ss;
+	ss << "font_name [" << font_name << "] is not known: ";
         for(auto itr=page_fonts.begin(); itr!=page_fonts.end(); itr++)
-          ss << itr->first << ", ";
+	  {
+	    if(itr==page_fonts.begin())
+	      {
+		ss << itr->first;
+	      }
+	    else
+	      {
+		ss << ", " << itr->first; 
+	      }
+	  }
 
-        LOG_S(FATAL) << "font_name [" << font_name << "] is not known: " << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     return (page_fonts.begin()->second);
@@ -102,17 +112,24 @@ namespace pdflib
         nlohmann::json& val = pair.value();
 
         LOG_S(INFO) << "decoding font: " << key;// << "\n" << val.dump(2);
-        assert(qpdf_fonts.hasKey(key));
+        //assert(qpdf_fonts.hasKey(key));
 
-        pdf_resource<PAGE_FONT> page_font;
-        page_font.set(key, val, qpdf_fonts.getKey(key));
-
-        if(page_fonts.count(key)==1)
-          {
-            LOG_S(FATAL) << "We are overwriting a font!! BE CAREFUL!";
-          }
-
-        page_fonts[key] = page_font;
+	if(qpdf_fonts.hasKey(key))
+	  {
+	    pdf_resource<PAGE_FONT> page_font;
+	    page_font.set(key, val, qpdf_fonts.getKey(key));
+	    
+	    if(page_fonts.count(key)==1)
+	      {
+		LOG_S(ERROR) << "We are overwriting a font!";
+	      }
+	    
+	    page_fonts[key] = page_font;
+	  }
+	else
+	  {
+	    LOG_S(ERROR) << "qpdf does not have key: " << key;
+	  }
       }
   }
 

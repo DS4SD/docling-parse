@@ -83,9 +83,17 @@ namespace pdflib
       {
         std::stringstream ss;
         for(auto itr=page_grphs.begin(); itr!=page_grphs.end(); itr++)
-          ss << itr->first << ", ";
+	  {
+	    ss << itr->first << ", ";
+	  }
 
-        LOG_S(FATAL) << "graphics state with name '" << grph_name << "' is not known: " << ss.str();
+	{
+	  std::stringstream ss;
+	  ss << "graphics state with name '" << grph_name << "' is not known: " << ss.str();
+	  
+	  LOG_S(ERROR) << ss.str();
+	  throw std::logic_error(ss.str());
+	}
       }
 
     return (page_grphs.begin()->second);
@@ -102,14 +110,24 @@ namespace pdflib
         nlohmann::json& val = pair.value();
 
         LOG_S(INFO) << "decoding graphics state: " << key;
-        assert(qpdf_grphs.hasKey(key));
+        //assert(qpdf_grphs.hasKey(key));
 
+	if(not qpdf_grphs.hasKey(key))
+	  {
+	    std::string message = "not qpdf_grphs.hasKey(key)";
+	    LOG_S(ERROR) << message;
+
+	    //throw std::logic_error(message);
+	    continue;
+	  }
+	
         pdf_resource<PAGE_GRPH> page_grph;
         page_grph.set(key, val, qpdf_grphs.getKey(key));
 
         if(page_grphs.count(key)==1)
           {
-            LOG_S(FATAL) << "We are overwriting a grph!! BE CAREFUL!";
+	    std::string ss= "we are overwriting a grph!";
+	    LOG_S(WARNING) << ss;
           }
 
         page_grphs[key] = page_grph;

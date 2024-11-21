@@ -110,7 +110,7 @@ namespace pdflib
       }
     else
       {
-        LOG_S(FATAL) << "The page is missing the required '/MediaBox'";
+        LOG_S(ERROR) << "The page is missing the required '/MediaBox'";
       }
 
     if(json_resources.count("/CropBox"))
@@ -173,8 +173,12 @@ namespace pdflib
       }
     else
       {
-        LOG_S(FATAL) << "could not find the page-dimensions: " 
-                     << json_resources.dump(4);
+	std::stringstream ss;
+	ss << "could not find the page-dimensions: " 
+	   << json_resources.dump(4);
+	
+        LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
   }
 

@@ -24,8 +24,6 @@ namespace plib
     bool initialise(nlohmann::json& data);
 
   private:
-
-
     
     void execute_parse();
     

@@ -72,7 +72,7 @@ namespace pdflib
     int line_cap;
     int line_join;
 
-    int                 dash_phase;
+    double              dash_phase;
     std::vector<double> dash_array;
 
     double flatness;
@@ -202,19 +202,39 @@ namespace pdflib
  
     QPDFObjectHandle arr = instructions[0].obj;
 
-    assert(arr.isArray());
+    //assert(arr.isArray());
+    if(not arr.isArray()) { LOG_S(ERROR) << "instructions[0].obj is not an array"; return; }
+    
     for(int l=0; l<arr.getArrayNItems(); l++)
       {
 	QPDFObjectHandle item = arr.getArrayItem(l);
 
-	assert(item.isNumber());
-	double val = item.getNumericValue();
-
-	dash_array.push_back(val);
+	//assert(item.isNumber());
+	if(item.isNumber())
+	  {
+	    double val = item.getNumericValue();
+	    dash_array.push_back(val);
+	  }
+	else
+	  {
+	    LOG_S(WARNING) << "skipping items for dash_array ...";
+	  }
       }
-
-    assert(instructions[1].is_integer());
-    dash_phase = instructions[1].to_int();
+    
+    if(instructions[1].is_integer())
+      {
+	dash_phase = instructions[1].to_int();
+      }
+    else if(instructions[1].is_number())
+      {
+	dash_phase = instructions[1].to_double();
+      }
+    else
+      {
+	dash_phase = 0;
+	LOG_S(ERROR) << "failed instructions[1] with is_integer() and is_number"
+		       << instructions[1].unparse();
+      }
   }
 
   void pdf_state<GRPH>::ri(std::vector<qpdf_instruction>& instructions)
@@ -227,8 +247,16 @@ namespace pdflib
     //assert(instructions.size()==1);
     if(not verify(instructions, 1, __FUNCTION__) ) { return; }
     
-    assert(instructions[0].is_number());    
-    flatness = instructions[0].to_double();    
+    if(instructions[0].is_number())
+      {
+	flatness = instructions[0].to_double();
+      }
+    else
+      {
+	flatness = 0;
+	LOG_S(ERROR) << "failed instructions[0].is_number(): "
+		       << instructions[0].unparse();	
+      }
   }
 
   void pdf_state<GRPH>::gs(std::vector<qpdf_instruction>& instructions)

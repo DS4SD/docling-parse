@@ -86,8 +86,12 @@ namespace pdflib
 
     if(file.fail())
       {
-	LOG_S(ERROR) << "filename does not exists: " << filename;	
-	LOG_S(FATAL) << "unknown data-file!";
+	//LOG_S(ERROR) << "filename does not exists: " << filename;
+	std::stringstream ss;
+	ss << "filename does not exists: " << filename;
+	
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     bool        cmap=false;
@@ -109,28 +113,37 @@ namespace pdflib
             auto itr = std::remove(items.begin(), items.end(), "");
             items.erase(itr, items.end());
 
-            assert(items.size()==3);
-            std::string hex_beg = items[0].substr(1, items[0].size()-2);
-            std::string hex_end = items[1].substr(1, items[1].size()-2);
-            std::string val     = items[2];
+            //assert(items.size()==3);
+	    if(items.size()==3)
+	      {
+		std::string hex_beg = items[0].substr(1, items[0].size()-2);
+		std::string hex_end = items[1].substr(1, items[1].size()-2);
+		std::string val     = items[2];
 
-            uint32_t beg = stoul(hex_beg, NULL, 16);
-            uint32_t end = stoul(hex_end, NULL, 16);
-            uint32_t ind = stoul(val    , NULL, 10);
+		uint32_t beg = stoul(hex_beg, NULL, 16);
+		uint32_t end = stoul(hex_end, NULL, 16);
+		uint32_t ind = stoul(val    , NULL, 10);
 
-            //LOG_S(INFO) << "\t"
-            //<< hex_beg << " (=" << beg << ")\t"
-            //<< hex_end << " (=" << end << ")\t"
-            //<< val     << " (=" << ind << ")";
-
-            for(uint32_t i=beg; i<=end; i++)
-              {
-                cmap2cid[i] = ind;
-                ind += 1;
-              }
+		//LOG_S(INFO) << "\t"
+		//<< hex_beg << " (=" << beg << ")\t"
+		//<< hex_end << " (=" << end << ")\t"
+		//<< val     << " (=" << ind << ")";
+		
+		for(uint32_t i=beg; i<=end; i++)
+		  {
+		    cmap2cid[i] = ind;
+		    ind += 1;
+		  }
+	      }
+	    else
+	      {
+		LOG_S(ERROR) << "items does not have the right size";
+	      }
           }
         else // ignore
-          {}
+          {
+	    LOG_S(WARNING) << "ignoring";
+	  }
       }
   }
 
@@ -143,8 +156,11 @@ namespace pdflib
 
     if(file.fail())
       {
-	LOG_S(ERROR) << "filename does not exists: " << filename;	
-	LOG_S(FATAL) << "unknown data-file!";
+	std::stringstream ss;
+	ss << "filename does not exists: " << filename;
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     std::vector<int> col_inds = {};
@@ -171,7 +187,7 @@ namespace pdflib
                       }
                   }
               }
-            assert(col_inds.size()>0);
+            //assert(col_inds.size()>0);
 
             //for(auto col_ind:col_inds)
             //{
@@ -246,7 +262,7 @@ namespace pdflib
           }
         else
           {
-            LOG_S(FATAL) << "we should never arrive here!";
+            LOG_S(ERROR) << "all options exhausted for " << __FUNCTION__;
           }
       }
 

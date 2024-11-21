@@ -1,0 +1,1222 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 2.322019137812949,
+        "/LHCPKS+NimbusRomNo9L-Regu": 1.841260551904283,
+        "/LTZNGC+CMVTT10": 0.794575451116912
+      },
+      "mean-char-width": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 5.677662957033895,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.244922959183608,
+        "/LTZNGC+CMVTT10": 4.527612305751849
+      },
+      "number-of-chars": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 27,
+        "/LHCPKS+NimbusRomNo9L-Regu": 1768,
+        "/LTZNGC+CMVTT10": 47
+      }
+    },
+    "styles": [
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              700.17603,
+              119.45377,
+              709.13239
+            ],
+            "device": [
+              108,
+              698.09387,
+              161.63426,
+              707.05023
+            ]
+          },
+          "content": {
+            "rnormalized": "CrowS-Pairs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              164.142,
+              700.17603,
+              195.78229,
+              709.08258
+            ],
+            "device": [
+              164.142,
+              698.02411,
+              505.65265,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "(Nangia et al., 2020) is a challenging dataset for measuring the degree to which stereo-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              689.21698,
+              135.66055,
+              698.12354
+            ],
+            "device": [
+              108,
+              687.06506,
+              503.99722,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": "typical biases present in the language models. It consists of 1508 examples that cover stereotypes"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              678.258,
+              137.3299,
+              687.16455
+            ],
+            "device": [
+              108,
+              676.10608,
+              343.08746,
+              685.01263
+            ]
+          },
+          "content": {
+            "rnormalized": "dealing with nine types of bias, like race, religion, and age."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              661.32098,
+              135.34477,
+              670.27734
+            ],
+            "device": [
+              107.641,
+              659.23883,
+              141.59758,
+              668.19519
+            ]
+          },
+          "content": {
+            "rnormalized": "ALERT"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              144.099,
+              661.32098,
+              153.51309,
+              670.22754
+            ],
+            "device": [
+              144.099,
+              659.16907,
+              503.99875,
+              668.07562
+            ]
+          },
+          "content": {
+            "rnormalized": "(Tedeschi et al., 2024) is a large-scale benchmark to test how safe LLMs are by evaluating"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              650.362,
+              128.10452,
+              659.26855
+            ],
+            "device": [
+              108,
+              648.21008,
+              505.74802,
+              657.11664
+            ]
+          },
+          "content": {
+            "rnormalized": "them based on a novel fine-grained risk taxonomy (consisting of 6 macro and 32 micro categories)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              639.40302,
+              116.7486,
+              648.30957
+            ],
+            "device": [
+              107.532,
+              637.2511,
+              504.00201,
+              646.15765
+            ]
+          },
+          "content": {
+            "rnormalized": "We evaluate the models on 14,763 test prompts containing a mix of different categories. The responses"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              628.44501,
+              146.72462,
+              637.35156
+            ],
+            "device": [
+              108,
+              626.29309,
+              451.32965,
+              635.19965
+            ]
+          },
+          "content": {
+            "rnormalized": "generated by the LLMs are determined as \u201dsafe\u201d or \u201dunsafe\u201d using LlamaGuard-7B$^{33}$."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              611.508,
+              172.92407,
+              620.46436
+            ],
+            "device": [
+              108,
+              609.42584,
+              172.92407,
+              618.3822
+            ]
+          },
+          "content": {
+            "rnormalized": "SALAD-Bench"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              176.24699,
+              611.508,
+              185.28088,
+              620.41455
+            ],
+            "device": [
+              176.24699,
+              609.35608,
+              503.99728,
+              618.26263
+            ]
+          },
+          "content": {
+            "rnormalized": "Li et al. (2024b) is a comprehensive benchmark designed for evaluating LLMs"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              600.54901,
+              142.99742,
+              609.45557
+            ],
+            "device": [
+              108,
+              598.39709,
+              505.24716,
+              607.30365
+            ]
+          },
+          "content": {
+            "rnormalized": "focusing on both attack and defense methods. It features a hierarchical structure with three levels,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              589.59003,
+              165.57706,
+              598.49658
+            ],
+            "device": [
+              108,
+              587.43811,
+              505.745,
+              596.34467
+            ]
+          },
+          "content": {
+            "rnormalized": "encompassing 6 domains, 16 tasks and 66 categories, allowing an in-depth assessment of safety."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              578.63098,
+              117.12479,
+              587.53754
+            ],
+            "device": [
+              107.532,
+              576.47906,
+              503.99667,
+              585.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "We test our model on the base set of SALAD-Bench, which consists of 21,318 questions aimed at"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              567.672,
+              144.82123,
+              576.57855
+            ],
+            "device": [
+              108,
+              565.52008,
+              504.34756,
+              574.42664
+            ]
+          },
+          "content": {
+            "rnormalized": "assessing safety. Model-generated responses are evaluated by MD-Judge, a LLM judge proposed by"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              556.71399,
+              172.8548,
+              565.62054
+            ],
+            "device": [
+              108,
+              554.56207,
+              504.34491,
+              563.46863
+            ]
+          },
+          "content": {
+            "rnormalized": "SALAD-Bench, which classified answers as either \u201dsafe\u201d or \u201dunsafe\u201d. We then calculate the safety"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              545.755,
+              125.42459,
+              554.66156
+            ],
+            "device": [
+              108,
+              543.60309,
+              269.5535,
+              552.50964
+            ]
+          },
+          "content": {
+            "rnormalized": "rate, as the percentage of safe responses."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              299.38,
+              360.142,
+              309.3327,
+              368.15796
+            ],
+            "device": [
+              299.38,
+              358.20526,
+              309.3327,
+              366.22122
+            ]
+          },
+          "content": {
+            "rnormalized": "(a)"
+          },
+          "enumeration": {
+            "match": 1,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              208.784,
+              234.437,
+              219.23882,
+              242.45296
+            ],
+            "device": [
+              208.784,
+              232.50026,
+              219.23882,
+              240.51622
+            ]
+          },
+          "content": {
+            "rnormalized": "(b)"
+          },
+          "enumeration": {
+            "match": 1,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              381.806,
+              234.437,
+              391.7587,
+              242.45296
+            ],
+            "device": [
+              381.806,
+              232.50026,
+              391.7587,
+              240.51622
+            ]
+          },
+          "content": {
+            "rnormalized": "(c)"
+          },
+          "enumeration": {
+            "match": 1,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              210.231,
+              134.53259,
+              219.13757
+            ],
+            "device": [
+              108,
+              208.07909,
+              503.99896,
+              216.98564
+            ]
+          },
+          "content": {
+            "rnormalized": "Figure 7: Comparison of the harmlessness scores of different models across various harm types on AttaQ"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              200.26801,
+              150.07932,
+              208.28397
+            ],
+            "device": [
+              108,
+              198.33127,
+              492.34482,
+              206.34723
+            ]
+          },
+          "content": {
+            "rnormalized": "benchmark. (a) 8B parameter models, (b) 2B-3B parameter models, (c) MoE models. Best viewed in color."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              162.995,
+              137.29004,
+              171.90157
+            ],
+            "device": [
+              108,
+              160.84308,
+              504.00143,
+              169.74963
+            ]
+          },
+          "content": {
+            "rnormalized": "Figures 7(a), 7(b), 7(c) shows the radar plots of the different Granite 3.0 models for each of the AttaQ"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              152.036,
+              133.21872,
+              160.94257
+            ],
+            "device": [
+              108,
+              149.88408,
+              504.49936,
+              158.79063
+            ]
+          },
+          "content": {
+            "rnormalized": "labels. Granite-3.0 models perform best in their parameter range, outperforming other models in all 7"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              141.077,
+              136.25409,
+              149.98357
+            ],
+            "device": [
+              108,
+              138.92508,
+              505.65088,
+              147.83163
+            ]
+          },
+          "content": {
+            "rnormalized": "aspects of safety, including Llama-3.1, Llama-3.2 and Gemma-2 models. Table 17 compares Granite-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              130.118,
+              171.76837,
+              139.02457
+            ],
+            "device": [
+              108,
+              127.96607,
+              505.7438,
+              136.87263
+            ]
+          },
+          "content": {
+            "rnormalized": "3.0-8B-Instruct, Llama-3.1-8B-Instruct, and Mistral-7B-Instruct on 4 additional safety benchmarks."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              119.159,
+              137.6626,
+              128.06557
+            ],
+            "device": [
+              108,
+              117.00707,
+              505.2471,
+              125.91364
+            ]
+          },
+          "content": {
+            "rnormalized": "Results show that our models achieve very competitive scores compared to Llama-3.1-8B-Instruct,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              108.201,
+              165.006,
+              117.10756
+            ],
+            "device": [
+              108,
+              106.04907,
+              444.37726,
+              114.95564
+            ]
+          },
+          "content": {
+            "rnormalized": "demonstrating effectiveness of our safety alignment while still retaining helpfulness."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              65.946999,
+              123.6416,
+              71.29097
+            ],
+            "device": [
+              117.664,
+              60.147461,
+              337.41199,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{33}$https://huggingface.co/meta-llama/LlamaGuard-7b"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              301.01901,
+              32.25,
+              310.9816,
+              41.156563
+            ],
+            "device": [
+              301.01901,
+              30.098078,
+              310.9816,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "26"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 72.813004
+        }
+      ],
+      "ignored-cells": [],
+      "images": [
+        {
+          "box": [
+            187.19901,
+            371.10101,
+            424.79349,
+            518.11755
+          ],
+          "height": 745,
+          "width": 1204
+        },
+        {
+          "box": [
+            134.47501,
+            245.396,
+            296.83295,
+            345.85834
+          ],
+          "height": 745,
+          "width": 1204
+        },
+        {
+          "box": [
+            299.327,
+            245.396,
+            477.51654,
+            347.59094
+          ],
+          "height": 745,
+          "width": 1299
+        }
+      ],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            72.813004,
+            251.46201,
+            72.813004
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            72.813004,
+            72.813004
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

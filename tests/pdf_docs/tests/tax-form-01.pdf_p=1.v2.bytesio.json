@@ -1,0 +1,3552 @@
+{
+  "annotations": {
+    "form": {
+      "/Fields": [
+        {
+          "/FT": "/Btn",
+          "/Kids": [
+            {
+              "/AP": {
+                "/D": {
+                  "/0": "1879 0 R [stream]",
+                  "/Off": "1881 0 R [stream]"
+                },
+                "/N": {
+                  "/0": "1883 0 R [stream]",
+                  "/Off": "1885 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/Helvetica 12 Tf 0 g",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                260.997,
+                320.999,
+                272.997,
+                332.999
+              ],
+              "/StructParent": 10,
+              "/Subtype": "/Widget",
+              "/TU": "YesNo",
+              "/Type": "/Annot"
+            },
+            {
+              "/AP": {
+                "/D": {
+                  "/1": "1891 0 R [stream]",
+                  "/Off": "1889 0 R [stream]"
+                },
+                "/N": {
+                  "/1": "1895 0 R [stream]",
+                  "/Off": "1893 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/ZapfDingbatsITC 8 Tf 0.000 0.000 0.502 rg",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                329.998,
+                320.999,
+                341.998,
+                332.999
+              ],
+              "/StructParent": 11,
+              "/Subtype": "/Widget",
+              "/TU": "YesNo",
+              "/Type": "/Annot"
+            }
+          ],
+          "/T": "form1[0].Page1[0].PartA[0].ModClaim[0].YesNo[0]"
+        },
+        {
+          "/FT": "/Btn",
+          "/Kids": [
+            {
+              "/AP": {
+                "/D": {
+                  "/0": "1852 0 R [stream]",
+                  "/Off": "1854 0 R [stream]"
+                },
+                "/N": {
+                  "/0": "1856 0 R [stream]",
+                  "/Off": "1858 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/Helvetica 12 Tf 0 g",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                260.997,
+                294.002,
+                272.997,
+                306.002
+              ],
+              "/StructParent": 12,
+              "/Subtype": "/Widget",
+              "/TU": "Language",
+              "/Type": "/Annot"
+            },
+            {
+              "/AP": {
+                "/D": {
+                  "/1": "1864 0 R [stream]",
+                  "/Off": "1862 0 R [stream]"
+                },
+                "/N": {
+                  "/1": "1868 0 R [stream]",
+                  "/Off": "1866 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/ZapfDingbatsITC 8 Tf 0.000 0.000 0.502 rg",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                329.998,
+                294.002,
+                341.998,
+                306.002
+              ],
+              "/StructParent": 13,
+              "/Subtype": "/Widget",
+              "/TU": "Language",
+              "/Type": "/Annot"
+            }
+          ],
+          "/T": "form1[0].Page1[0].PartA[0].Language[0].Language[0]"
+        },
+        {
+          "/AP": {
+            "/N": "1829 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/MaxLen": 6,
+          "/Rect": [
+            260.997,
+            156.999,
+            341.997,
+            173.999
+          ],
+          "/StructParent": 17,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].PostalCode_ZIP[0]",
+          "/TU": "Adresse postale. Code postal, 6 caract\u00e8res ou code ZIP, 5 chiffres.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1825 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            129.999,
+            431.997,
+            146.999
+          ],
+          "/StructParent": 18,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].Country[0]",
+          "/TU": "Adresse postale. Pays.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1899 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 9,
+          "/Rect": [
+            261.997,
+            379,
+            394.997,
+            396
+          ],
+          "/StructParent": 9,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].NAS[0].RequestorNAS[0].NAS[0]",
+          "/TU": "Num\u00e9ro d'assurance sociale, s'il y a lieu. 9 chiffres.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1837 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            210.999,
+            584.997,
+            227.999
+          ],
+          "/StructParent": 15,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].City[0]",
+          "/TU": "Adresse postale. Ville.",
+          "/Type": "/Annot",
+          "/V": "granville"
+        },
+        {
+          "/AP": {
+            "/N": "1911 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 9,
+          "/Rect": [
+            261.997,
+            406,
+            394.997,
+            423
+          ],
+          "/StructParent": 6,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT1[0]",
+          "/TU": "9 premiers chiffres du num\u00e9ro d'entreprise, s'il y lieu.",
+          "/Type": "/Annot",
+          "/V": "123456789"
+        },
+        {
+          "/AP": {
+            "/N": "1903 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 4,
+          "/Rect": [
+            426.996,
+            406,
+            484.997,
+            423
+          ],
+          "/StructParent": 8,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT2[0]",
+          "/TU": "4 derniers chiffres du num\u00e9ro d'entreprise, s'il y a lieu.",
+          "/Type": "/Annot",
+          "/V": "ABCD"
+        }
+      ],
+      "/NeedAppearances": true
+    },
+    "language": null,
+    "meta_xml": "<?xpacket begin=\"\ufeff\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 9.1-c001 79.2a0d8d9, 2023/03/14-11:19:46        \">\n   <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n      <rdf:Description rdf:about=\"\"\n            xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\"\n            xmlns:pdf=\"http://ns.adobe.com/pdf/1.3/\"\n            xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\"\n            xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n            xmlns:desc=\"http://ns.adobe.com/xfa/promoted-desc/\">\n         <xmp:MetadataDate>2024-11-13T08:53:33-05:00</xmp:MetadataDate>\n         <xmp:CreatorTool>Designer 6.3</xmp:CreatorTool>\n         <xmp:ModifyDate>2024-11-13T08:53:33-05:00</xmp:ModifyDate>\n         <xmp:CreateDate>2024-11-05T15:51:49-05:00</xmp:CreateDate>\n         <pdf:Producer>Designer 6.3</pdf:Producer>\n         <xmpMM:DocumentID>uuid:144e49e2-10ea-4ef7-bc13-7ce868207abe</xmpMM:DocumentID>\n         <xmpMM:InstanceID>uuid:b90d14d0-2f91-42bb-a217-916c50aaff44</xmpMM:InstanceID>\n         <dc:format>application/pdf</dc:format>\n         <dc:date>\n            <rdf:Seq>\n               <rdf:li rdf:parseType=\"Resource\">\n                  <rdf:value>2013-06-05</rdf:value>\n                  <dc:element-refinement>dc:created</dc:element-refinement>\n               </rdf:li>\n               <rdf:li rdf:parseType=\"Resource\">\n                  <rdf:value>2013-07-05</rdf:value>\n                  <dc:element-refinement>dc:issued</dc:element-refinement>\n               </rdf:li>\n            </rdf:Seq>\n         </dc:date>\n         <dc:title>\n            <rdf:Alt>\n               <rdf:li xml:lang=\"x-default\">Demande de remboursement de la partie provinciale de la taxe de vente harmonis\u00e9e (TVH)</rdf:li>\n            </rdf:Alt>\n         </dc:title>\n         <desc:version rdf:parseType=\"Resource\">\n            <rdf:value>1.0</rdf:value>\n            <desc:ref>/template/subform[1]</desc:ref>\n         </desc:version>\n         <desc:CRAObjectVersion rdf:parseType=\"Resource\">\n            <rdf:value>Release 6.0.8 - May, 2019</rdf:value>\n            <desc:ref>/template/subform[1]/pageSet[1]/pageArea[1]/field[1]</desc:ref>\n         </desc:CRAObjectVersion>\n         <desc:CRAObjectName rdf:parseType=\"Resource\">\n            <rdf:value>ClearData_FR</rdf:value>\n            <desc:ref>/template/subform[1]/pageSet[1]/pageArea[1]/field[1]</desc:ref>\n         </desc:CRAObjectName>\n         <desc:embeddedHref rdf:parseType=\"Resource\">\n            <rdf:value>X:\\Object_Library\\Graphics\\Accessible\\FIP_n_Wordmark\\CRA-FIP-9pt-RGB-1200-f.png</rdf:value>\n            <desc:ref>/template/subform[1]/subform[1]/draw[1]</desc:ref>\n         </desc:embeddedHref>\n      </rdf:Description>\n   </rdf:RDF>\n</x:xmpmeta>\n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                           \n<?xpacket end=\"w\"?>",
+    "table_of_contents": null
+  },
+  "info": {
+    "#-pages": 5,
+    "filename": ""
+  },
+  "pages": [
+    {
+      "annotations": [
+        {
+          "/AP": {
+            "/N": "1817 0 R [stream]"
+          },
+          "/BS": {
+            "/S": "/B"
+          },
+          "/Border": [
+            0,
+            0,
+            1
+          ],
+          "/DA": "/Helvetica 10 Tf 0 g",
+          "/F": 4,
+          "/FT": "/Btn",
+          "/Ff": 65536,
+          "/MK": {
+            "/BC": [
+              0,
+              0,
+              0
+            ],
+            "/BG": [
+              0.0823517,
+              0.823532,
+              0.909805
+            ],
+            "/CA": "Effacer les donn\u00e9es"
+          },
+          "/OC": {
+            "/Name": "ViewOnly Layer",
+            "/Type": "/OCG",
+            "/Usage": {
+              "/CreatorInfo": {
+                "/Creator": "AcroForm",
+                "/Subtype": "Artwork"
+              },
+              "/Print": {
+                "/PrintState": "/OFF"
+              },
+              "/View": {
+                "/ViewState": "/ON"
+              }
+            }
+          },
+          "/Rect": [
+            495,
+            774.003,
+            591.001,
+            789.001
+          ],
+          "/StructParent": 19,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].#pageSet[0].Page1[1].ClearData_FR[0]",
+          "/TU": "Effacer les donn\u00e9es",
+          "/Type": "/Annot",
+          "/V": "/Off"
+        },
+        {
+          "/AP": {
+            "/N": "1811 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            685,
+            584.997,
+            702
+          ],
+          "/StructParent": 21,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartA_contd[0].PhysicalAddress[0].MailingAddress[0]",
+          "/TU": "Adresse physique, si diff\u00e9rente de l'adresse postale. Num\u00e9ro d'unit\u00e9, num\u00e9ro et rue, route rurale.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1807 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            658,
+            584.997,
+            675
+          ],
+          "/StructParent": 22,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartA_contd[0].PhysicalAddress[0].City[0]",
+          "/TU": "Adresse physique, si diff\u00e9rente de l'adresse postale. Ville.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1803 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Ch",
+          "/Ff": 67502080,
+          "/MK": null,
+          "/Opt": [
+            [
+              " ",
+              " "
+            ],
+            [
+              "AB",
+              "Alberta"
+            ],
+            [
+              "BC",
+              "Colombie-Britannique"
+            ],
+            [
+              "PE",
+              "\u00cele-du-Prince-\u00c9douard"
+            ],
+            [
+              "MB",
+              "Manitoba"
+            ],
+            [
+              "NB",
+              "Nouveau-Brunswick"
+            ],
+            [
+              "NS",
+              "Nouvelle-\u00c9cosse"
+            ],
+            [
+              "NU",
+              "Nunavut"
+            ],
+            [
+              "ON",
+              "Ontario"
+            ],
+            [
+              "QC",
+              "Qu\u00e9bec"
+            ],
+            [
+              "SK",
+              "Saskatchewan"
+            ],
+            [
+              "NL",
+              "Terre-Neuve-et-Labrador"
+            ],
+            [
+              "NT",
+              "Territoires du Nord-Ouest"
+            ],
+            [
+              "YT",
+              "Yukon"
+            ],
+            [
+              " ",
+              "--------------------"
+            ],
+            [
+              "AL",
+              "Alabama"
+            ],
+            [
+              "AK",
+              "Alaska"
+            ],
+            [
+              "AZ",
+              "Arizona"
+            ],
+            [
+              "AR",
+              "Arkansas"
+            ],
+            [
+              "CA",
+              "Californie"
+            ],
+            [
+              "NC",
+              "Caroline du Nord"
+            ],
+            [
+              "SC",
+              "Caroline du Sud"
+            ],
+            [
+              "CO",
+              "Colorado"
+            ],
+            [
+              "CT",
+              "Connecticut"
+            ],
+            [
+              "ND",
+              "Dakota du Nord"
+            ],
+            [
+              "SD",
+              "Dakota du Sud"
+            ],
+            [
+              "DE",
+              "Delaware"
+            ],
+            [
+              "DC",
+              "District de Columbia"
+            ],
+            [
+              "FL",
+              "Floride"
+            ],
+            [
+              "GA",
+              "G\u00e9orgie"
+            ],
+            [
+              "HI",
+              "Hawaii"
+            ],
+            [
+              "ID",
+              "Idaho"
+            ],
+            [
+              "IL",
+              "Illinois"
+            ],
+            [
+              "IN",
+              "Indiana"
+            ],
+            [
+              "IA",
+              "Iowa"
+            ],
+            [
+              "KS",
+              "Kansas"
+            ],
+            [
+              "KY",
+              "Kentucky"
+            ],
+            [
+              "LA",
+              "Louisiane"
+            ],
+            [
+              "ME",
+              "Maine"
+            ],
+            [
+              "MD",
+              "Maryland"
+            ],
+            [
+              "MA",
+              "Massachusetts"
+            ],
+            [
+              "MI",
+              "Michigan"
+            ],
+            [
+              "MN",
+              "Minnesota"
+            ],
+            [
+              "MS",
+              "Mississippi"
+            ],
+            [
+              "MO",
+              "Missouri"
+            ],
+            [
+              "MT",
+              "Montana"
+            ],
+            [
+              "NE",
+              "Nebraska"
+            ],
+            [
+              "NV",
+              "Nevada"
+            ],
+            [
+              "NH",
+              "New Hampshire"
+            ],
+            [
+              "NJ",
+              "New Jersey"
+            ],
+            [
+              "NY",
+              "New York"
+            ],
+            [
+              "NM",
+              "Nouveau-Mexique"
+            ],
+            [
+              "OH",
+              "Ohio"
+            ],
+            [
+              "OK",
+              "Oklahoma"
+            ],
+            [
+              "OR",
+              "Oregon"
+            ],
+            [
+              "PA",
+              "Pennsylvanie"
+            ],
+            [
+              "RI",
+              "Rhode Island"
+            ],
+            [
+              "TN",
+              "Tennessee"
+            ],
+            [
+              "TX",
+              "Texas"
+            ],
+            [
+              "UT",
+              "Utah"
+            ],
+            [
+              "VT",
+              "Vermont"
+            ],
+            [
+              "VA",
+              "Virginie"
+            ],
+            [
+              "WV",
+              "Virginie-Occidentale"
+            ],
+            [
+              "WA",
+              "Washington"
+            ],
+            [
+              "WI",
+              "Wisconsin"
+            ],
+            [
+              "WY",
+              "Wyoming"
+            ]
+          ],
+          "/Rect": [
+            261.997,
+            631,
+            431.997,
+            648
+          ],
+          "/StructParent": 23,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartA_contd[0].PhysicalAddress[0].Prov_DropDown[0]",
+          "/TU": "Adresse physique, si diff\u00e9rente de l'adresse postale. Choisissez votre province, territoire ou \u00e9tat \u00e0 partir du menu. S'il n'est pas l\u00e0 \u00e9crivez-le manuellement.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1799 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/MaxLen": 6,
+          "/Rect": [
+            260.997,
+            604,
+            341.997,
+            621
+          ],
+          "/StructParent": 24,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartA_contd[0].PhysicalAddress[0].PostalCode_ZIP[0]",
+          "/TU": "Adresse physique, si diff\u00e9rente de l'adresse postale. Code postal, 6 caract\u00e8res ou code ZIP, 5 chiffres.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1795 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            577,
+            431.997,
+            594
+          ],
+          "/StructParent": 25,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartA_contd[0].PhysicalAddress[0].Country[0]",
+          "/TU": "Adresse physique, si diff\u00e9rente de l'adresse postale. Pays.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1791 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 8,
+          "/Rect": [
+            261.997,
+            484.001,
+            379.996,
+            501.001
+          ],
+          "/StructParent": 26,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartB[0].PartB_DateArrival[0].Date[0].DateYYYYMMDD_Comb[0]",
+          "/TU": "Date d'arriv\u00e9e dans la province participante. Ann\u00e9e 4 chiffres. Mois 2 chiffres. Jour 2 chiffres.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1787 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 8,
+          "/Rect": [
+            261.997,
+            408.999,
+            379.996,
+            425.999
+          ],
+          "/StructParent": 27,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartB[0].PartB_DateDeparture[0].Date[0].DateYYYYMMDD_Comb[0]",
+          "/TU": "Date de d\u00e9part de la province participante. Ann\u00e9e 4 chiffres. Mois 2 chiffres. Jour 2 chiffres.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1783 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 8,
+          "/Rect": [
+            261.997,
+            334,
+            379.996,
+            351
+          ],
+          "/StructParent": 28,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page2[0].PartB[0].PartB_DateGoods[0].Date[0].DateYYYYMMDD_Comb[0]",
+          "/TU": "Date o\u00f9 les produits ont \u00e9t\u00e9 transf\u00e9r\u00e9s de la province participante. Ann\u00e9e 4 chiffres. Mois 2 chiffres. Jour 2 chiffres.",
+          "/Type": "/Annot"
+        }
+      ],
+      "original": {
+        "cells": {
+          "data": [
+            [
+              482.748,
+              760.422,
+              529.978,
+              770.422,
+              482.748,
+              760.422,
+              529.978,
+              760.422,
+              529.978,
+              770.422,
+              482.748,
+              770.422,
+              "Prot\u00e9g\u00e9 B",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              529.978,
+              760.652,
+              590.998,
+              769.652,
+              529.978,
+              760.652,
+              590.998,
+              760.652,
+              590.998,
+              769.652,
+              529.978,
+              769.652,
+              " une fois rempli",
+              -1,
+              2.502,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              736.478,
+              242.383,
+              748.478,
+              22.999,
+              736.478,
+              242.383,
+              736.478,
+              242.383,
+              748.478,
+              22.999,
+              748.478,
+              "Partie A \u2014 Identification du demandeur",
+              -1,
+              3.336,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              246.5,
+              736.952,
+              274.28,
+              746.952,
+              246.5,
+              736.952,
+              274.28,
+              736.952,
+              274.28,
+              746.952,
+              246.5,
+              746.952,
+              "(suite)",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              711.463,
+              132.81,
+              722.463,
+              34.998,
+              711.463,
+              132.81,
+              711.463,
+              132.81,
+              722.463,
+              34.998,
+              722.463,
+              "Adresse physique ",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              132.81,
+              711.463,
+              297.535,
+              722.463,
+              132.81,
+              711.463,
+              297.535,
+              711.463,
+              297.535,
+              722.463,
+              132.81,
+              722.463,
+              "(si diff\u00e9rente de l\u2019adresse postale)",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              688.92,
+              152.738,
+              698.92,
+              34.998,
+              688.92,
+              152.738,
+              688.92,
+              152.738,
+              698.92,
+              34.998,
+              698.92,
+              "N\u00a1 d\u2019unit\u00e9 \u2014 n\u00a1 et rue, RR :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              661.92,
+              59.448,
+              671.92,
+              34.998,
+              661.92,
+              59.448,
+              661.92,
+              59.448,
+              671.92,
+              34.998,
+              671.92,
+              "Ville :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              633.92,
+              155.048,
+              643.92,
+              34.998,
+              633.92,
+              155.048,
+              633.92,
+              155.048,
+              643.92,
+              34.998,
+              643.92,
+              "Province, territoire ou \u00e9tat :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              607.92,
+              126.158,
+              617.92,
+              34.998,
+              607.92,
+              126.158,
+              607.92,
+              126.158,
+              617.92,
+              34.998,
+              617.92,
+              "Code postal ou ZIP :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              580.92,
+              62.788,
+              590.92,
+              34.998,
+              580.92,
+              62.788,
+              580.92,
+              62.788,
+              590.92,
+              34.998,
+              590.92,
+              "Pays :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              547.478,
+              296.623,
+              559.478,
+              22.999,
+              547.478,
+              296.623,
+              547.478,
+              296.623,
+              559.478,
+              22.999,
+              559.478,
+              "Partie B \u2014 Dates d\u2019arriv\u00e9e, de d\u00e9part et de retrait",
+              -1,
+              3.336,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              523.951,
+              522.688,
+              533.951,
+              34.998,
+              523.951,
+              522.688,
+              523.951,
+              522.688,
+              533.951,
+              34.998,
+              533.951,
+              "Inscrivez les dates de votre arriv\u00e9e, de votre d\u00e9part et de votre retrait des produits d\u2019une province participante.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              486.451,
+              232.548,
+              496.451,
+              34.998,
+              486.451,
+              232.548,
+              486.451,
+              232.548,
+              496.451,
+              34.998,
+              496.451,
+              "Date d\u2019arriv\u00e9e dans la province participante :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              262.997,
+              503.422,
+              374.167,
+              513.422,
+              262.997,
+              503.422,
+              374.167,
+              503.422,
+              374.167,
+              513.422,
+              262.997,
+              513.422,
+              "     Ann\u00e9e       Mois   Jour",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              462.421,
+              549.588,
+              472.421,
+              34.998,
+              462.421,
+              549.588,
+              462.421,
+              549.588,
+              472.421,
+              34.998,
+              472.421,
+              "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date d\u2019arriv\u00e9e de votre ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              451.421,
+              77.238,
+              461.421,
+              34.998,
+              451.421,
+              77.238,
+              451.421,
+              77.238,
+              461.421,
+              34.998,
+              461.421,
+              "premi\u00e8re",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              77.238,
+              451.421,
+              105.578,
+              461.421,
+              77.238,
+              451.421,
+              105.578,
+              451.421,
+              105.578,
+              461.421,
+              77.238,
+              461.421,
+              " visite.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              414.451,
+              226.208,
+              424.451,
+              34.998,
+              414.451,
+              226.208,
+              414.451,
+              226.208,
+              424.451,
+              34.998,
+              424.451,
+              "Date de d\u00e9part de la province participante :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              262.997,
+              428.42,
+              374.167,
+              438.42,
+              262.997,
+              428.42,
+              374.167,
+              428.42,
+              374.167,
+              438.42,
+              262.997,
+              438.42,
+              "     Ann\u00e9e       Mois   Jour",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              387.422,
+              553.808,
+              397.422,
+              34.998,
+              387.422,
+              553.808,
+              387.422,
+              553.808,
+              397.422,
+              34.998,
+              397.422,
+              "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date de d\u00e9part de votre ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              376.422,
+              74.458,
+              386.422,
+              34.998,
+              376.422,
+              74.458,
+              376.422,
+              74.458,
+              386.422,
+              34.998,
+              386.422,
+              "derni\u00e8re",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              74.458,
+              376.422,
+              102.798,
+              386.422,
+              74.458,
+              376.422,
+              102.798,
+              376.422,
+              102.798,
+              386.422,
+              74.458,
+              386.422,
+              " visite.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              344.952,
+              231.768,
+              354.952,
+              34.998,
+              344.952,
+              231.768,
+              344.952,
+              231.768,
+              354.952,
+              34.998,
+              354.952,
+              "Date o\u00f9 les produits ont \u00e9t\u00e9 transf\u00e9r\u00e9s de la ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              333.952,
+              132.818,
+              343.952,
+              34.998,
+              333.952,
+              132.818,
+              333.952,
+              132.818,
+              343.952,
+              34.998,
+              343.952,
+              "province participante :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              262.997,
+              353.421,
+              374.167,
+              363.421,
+              262.997,
+              353.421,
+              374.167,
+              353.421,
+              374.167,
+              363.421,
+              262.997,
+              363.421,
+              "     Ann\u00e9e       Mois   Jour",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              312.42,
+              447.628,
+              322.42,
+              34.998,
+              312.42,
+              447.628,
+              312.42,
+              447.628,
+              322.42,
+              34.998,
+              322.42,
+              "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              447.628,
+              312.42,
+              487.088,
+              322.42,
+              447.628,
+              312.42,
+              487.088,
+              312.42,
+              487.088,
+              322.42,
+              447.628,
+              322.42,
+              "derni\u00e8re",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              487.088,
+              312.42,
+              581.278,
+              322.42,
+              487.088,
+              312.42,
+              581.278,
+              312.42,
+              581.278,
+              322.42,
+              487.088,
+              322.42,
+              " date de retrait d\u2019une ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              301.42,
+              130.038,
+              311.42,
+              34.998,
+              301.42,
+              130.038,
+              301.42,
+              130.038,
+              311.42,
+              34.998,
+              311.42,
+              "province participante.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              18.96,
+              74.351,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              26.96,
+              "GST495 F (24)",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              547.855,
+              19.336,
+              590.999,
+              27.336,
+              547.855,
+              19.336,
+              590.999,
+              19.336,
+              590.999,
+              27.336,
+              547.855,
+              27.336,
+              "Page 2 de 5",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              495.0,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              774.003,
+              591.001,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              789.001,
+              "/Off",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ]
+          ],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1",
+            "r_x0",
+            "r_y0",
+            "r_x1",
+            "r_y1",
+            "r_x2",
+            "r_y2",
+            "r_x3",
+            "r_y3",
+            "text",
+            "rendering-mode",
+            "space-width",
+            "encoding-name",
+            "font-encoding",
+            "font-key",
+            "font-name",
+            "widget"
+          ]
+        },
+        "dimension": {
+          "angle": 0,
+          "bbox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "height": 792.0,
+          "rectangles": {
+            "art-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "bleed-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "crop-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "media-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "trim-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ]
+          },
+          "width": 612.0
+        },
+        "images": {
+          "data": [],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1"
+          ]
+        },
+        "lines": [
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              20.749,
+              591.248
+            ],
+            "y": [
+              753.001,
+              753.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              685.0,
+              685.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              658.0,
+              658.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              261.747,
+              432.247
+            ],
+            "y": [
+              631.0,
+              631.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              342.247
+            ],
+            "y": [
+              604.0,
+              604.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              432.247
+            ],
+            "y": [
+              577.0,
+              577.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              20.749,
+              591.248
+            ],
+            "y": [
+              564.001,
+              564.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              381.246
+            ],
+            "y": [
+              483.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              381.246
+            ],
+            "y": [
+              407.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              381.246
+            ],
+            "y": [
+              333.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          }
+        ]
+      },
+      "sanitized": {
+        "cells": {
+          "data": [
+            [
+              482.748,
+              760.422,
+              529.978,
+              770.422,
+              482.748,
+              760.422,
+              529.978,
+              760.422,
+              529.978,
+              770.422,
+              482.748,
+              770.422,
+              "Prot\u00e9g\u00e9 B",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              529.978,
+              760.652,
+              590.998,
+              769.652,
+              529.978,
+              760.652,
+              590.998,
+              760.652,
+              590.998,
+              769.652,
+              529.978,
+              769.652,
+              " une fois rempli",
+              -1,
+              2.502,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              736.478,
+              242.383,
+              748.478,
+              22.999,
+              736.478,
+              242.383,
+              736.478,
+              242.383,
+              748.478,
+              22.999,
+              748.478,
+              "Partie A \u2014 Identification du demandeur",
+              -1,
+              3.336,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              246.5,
+              736.952,
+              274.28,
+              746.952,
+              246.5,
+              736.952,
+              274.28,
+              736.952,
+              274.28,
+              746.952,
+              246.5,
+              746.952,
+              "(suite)",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              711.463,
+              132.81,
+              722.463,
+              34.998,
+              711.463,
+              132.81,
+              711.463,
+              132.81,
+              722.463,
+              34.998,
+              722.463,
+              "Adresse physique ",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              132.81,
+              711.463,
+              297.535,
+              722.463,
+              132.81,
+              711.463,
+              297.535,
+              711.463,
+              297.535,
+              722.463,
+              132.81,
+              722.463,
+              "(si diff\u00e9rente de l\u2019adresse postale)",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              688.92,
+              152.738,
+              698.92,
+              34.998,
+              688.92,
+              152.738,
+              688.92,
+              152.738,
+              698.92,
+              34.998,
+              698.92,
+              "N\u00a1 d\u2019unit\u00e9 \u2014 n\u00a1 et rue, RR :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              661.92,
+              59.448,
+              671.92,
+              34.998,
+              661.92,
+              59.448,
+              661.92,
+              59.448,
+              671.92,
+              34.998,
+              671.92,
+              "Ville :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              633.92,
+              155.048,
+              643.92,
+              34.998,
+              633.92,
+              155.048,
+              633.92,
+              155.048,
+              643.92,
+              34.998,
+              643.92,
+              "Province, territoire ou \u00e9tat :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              607.92,
+              126.158,
+              617.92,
+              34.998,
+              607.92,
+              126.158,
+              607.92,
+              126.158,
+              617.92,
+              34.998,
+              617.92,
+              "Code postal ou ZIP :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              580.92,
+              62.788,
+              590.92,
+              34.998,
+              580.92,
+              62.788,
+              580.92,
+              62.788,
+              590.92,
+              34.998,
+              590.92,
+              "Pays :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              547.478,
+              296.623,
+              559.478,
+              22.999,
+              547.478,
+              296.623,
+              547.478,
+              296.623,
+              559.478,
+              22.999,
+              559.478,
+              "Partie B \u2014 Dates d\u2019arriv\u00e9e, de d\u00e9part et de retrait",
+              -1,
+              3.336,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              523.951,
+              522.688,
+              533.951,
+              34.998,
+              523.951,
+              522.688,
+              523.951,
+              522.688,
+              533.951,
+              34.998,
+              533.951,
+              "Inscrivez les dates de votre arriv\u00e9e, de votre d\u00e9part et de votre retrait des produits d\u2019une province participante.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              486.451,
+              232.548,
+              496.451,
+              34.998,
+              486.451,
+              232.548,
+              486.451,
+              232.548,
+              496.451,
+              34.998,
+              496.451,
+              "Date d\u2019arriv\u00e9e dans la province participante :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              262.997,
+              503.422,
+              374.167,
+              513.422,
+              262.997,
+              503.422,
+              374.167,
+              503.422,
+              374.167,
+              513.422,
+              262.997,
+              513.422,
+              "     Ann\u00e9e       Mois   Jour",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              462.421,
+              549.588,
+              472.421,
+              34.998,
+              462.421,
+              549.588,
+              462.421,
+              549.588,
+              472.421,
+              34.998,
+              472.421,
+              "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date d\u2019arriv\u00e9e de votre ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              451.421,
+              77.238,
+              461.421,
+              34.998,
+              451.421,
+              77.238,
+              451.421,
+              77.238,
+              461.421,
+              34.998,
+              461.421,
+              "premi\u00e8re",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              77.238,
+              451.421,
+              105.578,
+              461.421,
+              77.238,
+              451.421,
+              105.578,
+              451.421,
+              105.578,
+              461.421,
+              77.238,
+              461.421,
+              " visite.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              414.451,
+              226.208,
+              424.451,
+              34.998,
+              414.451,
+              226.208,
+              414.451,
+              226.208,
+              424.451,
+              34.998,
+              424.451,
+              "Date de d\u00e9part de la province participante :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              262.997,
+              428.42,
+              374.167,
+              438.42,
+              262.997,
+              428.42,
+              374.167,
+              428.42,
+              374.167,
+              438.42,
+              262.997,
+              438.42,
+              "     Ann\u00e9e       Mois   Jour",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              387.422,
+              553.808,
+              397.422,
+              34.998,
+              387.422,
+              553.808,
+              387.422,
+              553.808,
+              397.422,
+              34.998,
+              397.422,
+              "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date de d\u00e9part de votre ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              376.422,
+              74.458,
+              386.422,
+              34.998,
+              376.422,
+              74.458,
+              376.422,
+              74.458,
+              386.422,
+              34.998,
+              386.422,
+              "derni\u00e8re",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              74.458,
+              376.422,
+              102.798,
+              386.422,
+              74.458,
+              376.422,
+              102.798,
+              376.422,
+              102.798,
+              386.422,
+              74.458,
+              386.422,
+              " visite.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              344.952,
+              231.768,
+              354.952,
+              34.998,
+              344.952,
+              231.768,
+              344.952,
+              231.768,
+              354.952,
+              34.998,
+              354.952,
+              "Date o\u00f9 les produits ont \u00e9t\u00e9 transf\u00e9r\u00e9s de la ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              333.952,
+              132.818,
+              343.952,
+              34.998,
+              333.952,
+              132.818,
+              333.952,
+              132.818,
+              343.952,
+              34.998,
+              343.952,
+              "province participante :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              262.997,
+              353.421,
+              374.167,
+              363.421,
+              262.997,
+              353.421,
+              374.167,
+              353.421,
+              374.167,
+              363.421,
+              262.997,
+              363.421,
+              "     Ann\u00e9e       Mois   Jour",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              312.42,
+              447.628,
+              322.42,
+              34.998,
+              312.42,
+              447.628,
+              312.42,
+              447.628,
+              322.42,
+              34.998,
+              322.42,
+              "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              447.628,
+              312.42,
+              487.088,
+              322.42,
+              447.628,
+              312.42,
+              487.088,
+              312.42,
+              487.088,
+              322.42,
+              447.628,
+              322.42,
+              "derni\u00e8re",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              487.088,
+              312.42,
+              581.278,
+              322.42,
+              487.088,
+              312.42,
+              581.278,
+              312.42,
+              581.278,
+              322.42,
+              487.088,
+              322.42,
+              " date de retrait d\u2019une ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              301.42,
+              130.038,
+              311.42,
+              34.998,
+              301.42,
+              130.038,
+              301.42,
+              130.038,
+              311.42,
+              34.998,
+              311.42,
+              "province participante.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              18.96,
+              74.351,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              26.96,
+              "GST495 F (24)",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              547.855,
+              19.336,
+              590.999,
+              27.336,
+              547.855,
+              19.336,
+              590.999,
+              19.336,
+              590.999,
+              27.336,
+              547.855,
+              27.336,
+              "Page 2 de 5",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              495.0,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              774.003,
+              591.001,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              789.001,
+              "/Off",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ]
+          ],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1",
+            "r_x0",
+            "r_y0",
+            "r_x1",
+            "r_y1",
+            "r_x2",
+            "r_y2",
+            "r_x3",
+            "r_y3",
+            "text",
+            "rendering-mode",
+            "space-width",
+            "encoding-name",
+            "font-encoding",
+            "font-key",
+            "font-name",
+            "widget"
+          ]
+        },
+        "dimension": {
+          "angle": 0,
+          "bbox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "height": 792.0,
+          "rectangles": {
+            "art-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "bleed-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "crop-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "media-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "trim-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ]
+          },
+          "width": 612.0
+        },
+        "images": {
+          "data": [],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1"
+          ]
+        },
+        "lines": [
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              20.749,
+              591.248
+            ],
+            "y": [
+              753.001,
+              753.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              685.0,
+              685.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              658.0,
+              658.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              261.747,
+              432.247
+            ],
+            "y": [
+              631.0,
+              631.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              342.247
+            ],
+            "y": [
+              604.0,
+              604.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              432.247
+            ],
+            "y": [
+              577.0,
+              577.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              20.749,
+              591.248
+            ],
+            "y": [
+              564.001,
+              564.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              381.246
+            ],
+            "y": [
+              483.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              492.001,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              498.002,
+              483.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              381.246
+            ],
+            "y": [
+              407.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              416.999,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              423.0,
+              407.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              381.246
+            ],
+            "y": [
+              333.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              342.0,
+              333.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              348.001,
+              333.0
+            ]
+          }
+        ]
+      },
+      "timings": {
+        "decode_annots": 2.4e-05,
+        "decode_contents": 0.003618,
+        "decode_dimensions": 0.0,
+        "decode_page": 0.004694,
+        "decode_resources": 0.000317,
+        "sanitise_contents": 5e-06
+      }
+    }
+  ],
+  "timings": {
+    "decode_annots": 2.4e-05,
+    "decode_contents": 0.003618,
+    "decode_dimensions": 0.0,
+    "decode_document": 0.004904,
+    "decode_page": 0.004694,
+    "decode_resources": 0.000317,
+    "decoding page 0": 0.006813,
+    "decoding page 1": 0.004746,
+    "process_document_from_bytesio": 0.000913,
+    "sanitise_contents": 5e-06
+  }
+}

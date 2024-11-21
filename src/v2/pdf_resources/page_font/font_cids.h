@@ -33,6 +33,7 @@ namespace pdflib
 
   private:
 
+    bool initialized;
     std::string directory;
 
     std::map<std::string, int>                       ro_2_sup;
@@ -45,7 +46,8 @@ namespace pdflib
     std::map<std::string, font_cid> cids;
   };
 
-  font_cids::font_cids()
+  font_cids::font_cids():
+    initialized(false)
   {}
 
   font_cids::~font_cids()
@@ -84,7 +86,13 @@ namespace pdflib
 
   void font_cids::initialise(std::string dirname)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    if(initialized)
+      {
+	LOG_S(WARNING) << "skipping font_cids::initialise, already initialized ...";
+	return;
+      }
+    
+    LOG_S(INFO) << "initialise font_cids";
 
     directory = dirname;
     directory += (directory.back()=='/'? "" : "/");
@@ -126,6 +134,8 @@ namespace pdflib
 	    cmap_2_filename[file] = cdir+"/"+file;
 	  }
       }
+
+    initialized = true;
   }
 
   bool font_cids::decode_cmap_resource(std::string cmap_name)

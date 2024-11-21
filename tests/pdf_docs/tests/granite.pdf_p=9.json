@@ -1,0 +1,4067 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 1.983896935737944,
+        "/LTZNGC+CMVTT10": 0.6557149923870063,
+        "/VMNBGO+plxMono": 3.876746725648263
+      },
+      "mean-char-width": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.179268210013481,
+        "/LTZNGC+CMVTT10": 4.300249305664602,
+        "/VMNBGO+plxMono": 4.034956334644805
+      },
+      "number-of-chars": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 2229,
+        "/LTZNGC+CMVTT10": 81,
+        "/VMNBGO+plxMono": 160
+      }
+    },
+    "styles": [
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10",
+      "/VMNBGO+plxMono"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              151.38786,
+              683.97888,
+              166.32333,
+              693.17578
+            ],
+            "device": [
+              151.38786,
+              681.7876,
+              166.32333,
+              690.98456
+            ]
+          },
+          "content": {
+            "rnormalized": "1.5%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              173.94609,
+              681.86682,
+              188.88156,
+              691.06372
+            ],
+            "device": [
+              173.94609,
+              679.67554,
+              209.62476,
+              688.8725
+            ]
+          },
+          "content": {
+            "rnormalized": "1.5% 4.0%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              200.91225,
+              672.06097,
+              215.84772,
+              681.25787
+            ],
+            "device": [
+              200.91225,
+              669.86975,
+              215.84772,
+              679.06665
+            ]
+          },
+          "content": {
+            "rnormalized": "4.5%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              202.20869,
+              632.91284,
+              220.87802,
+              642.1098
+            ],
+            "device": [
+              202.20869,
+              630.72162,
+              220.87802,
+              639.91858
+            ]
+          },
+          "content": {
+            "rnormalized": "19.0%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              129.86678,
+              603.57068,
+              148.5361,
+              612.76758
+            ],
+            "device": [
+              129.86678,
+              601.37939,
+              148.5361,
+              610.57635
+            ]
+          },
+          "content": {
+            "rnormalized": "69.5%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              170.18466,
+              692.35156,
+              220.23444,
+              703.32141
+            ],
+            "device": [
+              170.18466,
+              689.73792,
+              220.23444,
+              700.70776
+            ]
+          },
+          "content": {
+            "rnormalized": "Stage 1 Mix"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.96558,
+              650.33716,
+              252.50844,
+              659.53406
+            ],
+            "device": [
+              244.96558,
+              648.14587,
+              278.60794,
+              657.34283
+            ]
+          },
+          "content": {
+            "rnormalized": "Technical"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.96558,
+              640.30499,
+              252.50844,
+              649.50189
+            ],
+            "device": [
+              244.96558,
+              638.11377,
+              259.97617,
+              647.31067
+            ]
+          },
+          "content": {
+            "rnormalized": "Math"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.96558,
+              630.19739,
+              252.50844,
+              639.39429
+            ],
+            "device": [
+              244.96558,
+              628.0061,
+              274.91162,
+              637.20306
+            ]
+          },
+          "content": {
+            "rnormalized": "Academic"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.96558,
+              620.08978,
+              252.50844,
+              629.28674
+            ],
+            "device": [
+              244.96558,
+              617.89856,
+              267.44391,
+              627.09546
+            ]
+          },
+          "content": {
+            "rnormalized": "Domain"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.96558,
+              610.05762,
+              252.50844,
+              619.25452
+            ],
+            "device": [
+              244.96558,
+              607.86633,
+              259.97617,
+              617.06329
+            ]
+          },
+          "content": {
+            "rnormalized": "Code"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.96558,
+              599.95001,
+              252.50844,
+              609.14691
+            ],
+            "device": [
+              244.96558,
+              597.75879,
+              256.20474,
+              606.95569
+            ]
+          },
+          "content": {
+            "rnormalized": "Web"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              188.5,
+              553.31897,
+              198.4527,
+              561.33496
+            ],
+            "device": [
+              188.5,
+              551.3822,
+              198.4527,
+              559.39819
+            ]
+          },
+          "content": {
+            "rnormalized": "(a)"
+          },
+          "enumeration": {
+            "match": 1,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              413.52606,
+              635.06396,
+              425.60184,
+              644.97858
+            ],
+            "device": [
+              413.52606,
+              632.70166,
+              425.60184,
+              642.61633
+            ]
+          },
+          "content": {
+            "rnormalized": "45%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              371.31781,
+              580.25671,
+              383.39359,
+              590.17133
+            ],
+            "device": [
+              371.31781,
+              577.89441,
+              383.39359,
+              587.80908
+            ]
+          },
+          "content": {
+            "rnormalized": "11%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              345.32196,
+              592.2915,
+              357.39774,
+              602.20612
+            ],
+            "device": [
+              345.32196,
+              589.9292,
+              357.39774,
+              599.84387
+            ]
+          },
+          "content": {
+            "rnormalized": "10%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              330.50714,
+              615.54797,
+              342.58292,
+              625.46265
+            ],
+            "device": [
+              330.50714,
+              613.18573,
+              342.58292,
+              623.1004
+            ]
+          },
+          "content": {
+            "rnormalized": "10%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              332.1843,
+              639.86157,
+              344.26007,
+              649.77625
+            ],
+            "device": [
+              332.1843,
+              637.49933,
+              344.26007,
+              647.414
+            ]
+          },
+          "content": {
+            "rnormalized": "10%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              345.6015,
+              658.23914,
+              353.65201,
+              668.15375
+            ],
+            "device": [
+              345.6015,
+              655.87683,
+              353.65201,
+              665.7915
+            ]
+          },
+          "content": {
+            "rnormalized": "5%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              357.34155,
+              666.12671,
+              365.39206,
+              676.04138
+            ],
+            "device": [
+              357.34155,
+              663.76453,
+              365.39206,
+              673.67914
+            ]
+          },
+          "content": {
+            "rnormalized": "5%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              369.36111,
+              670.02991,
+              377.41162,
+              679.94458
+            ],
+            "device": [
+              369.36111,
+              667.66772,
+              377.41162,
+              677.58234
+            ]
+          },
+          "content": {
+            "rnormalized": "4%"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              89,
+              89,
+              89,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              382.17084,
+              694.18091,
+              436.1265,
+              706.00684
+            ],
+            "device": [
+              382.17084,
+              691.36328,
+              436.1265,
+              703.18921
+            ]
+          },
+          "content": {
+            "rnormalized": "Stage 2 Mix"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              663.84985,
+              460.05496,
+              673.76453
+            ],
+            "device": [
+              451.92346,
+              661.48767,
+              464.03973,
+              671.40228
+            ]
+          },
+          "content": {
+            "rnormalized": "Web"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              652.95349,
+              460.05496,
+              662.86816
+            ],
+            "device": [
+              451.92346,
+              650.59131,
+              476.15601,
+              660.50592
+            ]
+          },
+          "content": {
+            "rnormalized": "Domain"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              642.13843,
+              460.05496,
+              652.0531
+            ],
+            "device": [
+              451.92346,
+              639.77618,
+              468.10547,
+              649.69086
+            ]
+          },
+          "content": {
+            "rnormalized": "Code"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              631.24207,
+              460.05496,
+              641.15668
+            ],
+            "device": [
+              451.92346,
+              628.87976,
+              468.10547,
+              638.79443
+            ]
+          },
+          "content": {
+            "rnormalized": "Math"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              620.3457,
+              460.05496,
+              630.26031
+            ],
+            "device": [
+              451.92346,
+              617.9834,
+              496.24179,
+              627.89807
+            ]
+          },
+          "content": {
+            "rnormalized": "Instruction"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              609.53058,
+              460.05496,
+              619.44525
+            ],
+            "device": [
+              451.92346,
+              607.16833,
+              500.30753,
+              617.08301
+            ]
+          },
+          "content": {
+            "rnormalized": "Multilingual"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              598.63416,
+              460.05496,
+              608.54883
+            ],
+            "device": [
+              451.92346,
+              596.27191,
+              484.20651,
+              606.18658
+            ]
+          },
+          "content": {
+            "rnormalized": "Academic"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.92346,
+              587.73779,
+              460.05496,
+              597.65247
+            ],
+            "device": [
+              451.92346,
+              585.37555,
+              488.19128,
+              595.29022
+            ]
+          },
+          "content": {
+            "rnormalized": "Technical"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              127,
+              127,
+              127,
+              255
+            ],
+            "name": "/VMNBGO+plxMono",
+            "size": 1
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              402.09,
+              553.31897,
+              412.54483,
+              561.33496
+            ],
+            "device": [
+              402.09,
+              551.3822,
+              412.54483,
+              559.39819
+            ]
+          },
+          "content": {
+            "rnormalized": "(b)"
+          },
+          "enumeration": {
+            "match": 1,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              529.11298,
+              133.4921,
+              538.01953
+            ],
+            "device": [
+              108,
+              526.96106,
+              504.00131,
+              535.86761
+            ]
+          },
+          "content": {
+            "rnormalized": "Figure 4: Data mixture for pretraining stages. The percentage for individual datasets has been merged"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              518.15399,
+              123.50181,
+              527.06055
+            ],
+            "device": [
+              108,
+              516.00208,
+              292.22842,
+              524.90863
+            ]
+          },
+          "content": {
+            "rnormalized": "into different categories. Best viewed in color."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              480.651,
+              151.38832,
+              489.55756
+            ],
+            "device": [
+              108,
+              478.49908,
+              504.00137,
+              487.40564
+            ]
+          },
+          "content": {
+            "rnormalized": "embedding space to identify near duplicates (Douze et al., 2024). Our sample annotation pipeline uses"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              469.69199,
+              218.38959,
+              477.99084
+            ],
+            "device": [
+              108,
+              467.48029,
+              218.38959,
+              475.77914
+            ]
+          },
+          "content": {
+            "rnormalized": "Mistral-7B-Instruct-v0.3"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              220.88,
+              473.30698,
+              227.85381,
+              479.54156
+            ],
+            "device": [
+              220.88,
+              471.80063,
+              227.85381,
+              478.03522
+            ]
+          },
+          "content": {
+            "rnormalized": "19"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              230.84201,
+              469.69199,
+              239.14085,
+              478.59854
+            ],
+            "device": [
+              230.84201,
+              467.54007,
+              494.55209,
+              476.44662
+            ]
+          },
+          "content": {
+            "rnormalized": "as the reference model (judge) and consists of the following steps:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.00001,
+              446.60599,
+              111.48692,
+              455.51254
+            ],
+            "device": [
+              108.00001,
+              444.45407,
+              118.01627,
+              453.36063
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.00001,
+              446.60599,
+              111.48692,
+              455.51254
+            ],
+            "device": [
+              120.52032,
+              444.45407,
+              505.24481,
+              453.36063
+            ]
+          },
+          "content": {
+            "rnormalized": "Instructions Annotation: We annotate the generated instructions with category (creative writing,"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              116.468,
+              435.647,
+              142.21036,
+              444.55356
+            ],
+            "device": [
+              116.468,
+              433.49509,
+              504.34909,
+              442.40164
+            ]
+          },
+          "content": {
+            "rnormalized": "advice seeking, planning, and math, etc), difficulty (\u2018very easy\u2019, \u2018easy\u2019, \u2018medium\u2019, \u2018hard\u2019, or \u2018very"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              116.468,
+              424.68799,
+              143.29729,
+              433.59454
+            ],
+            "device": [
+              116.468,
+              422.53607,
+              459.97845,
+              431.44263
+            ]
+          },
+          "content": {
+            "rnormalized": "hard\u2019), and instruction quality (\u2018very poor\u2019, \u2018poor\u2019, \u2018average\u2019, \u2018good\u2019, and \u2018excellent\u2019)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              405.41699,
+              111.48691,
+              414.32355
+            ],
+            "device": [
+              108,
+              403.26508,
+              117.58826,
+              412.17163
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              405.41699,
+              111.48691,
+              414.32355
+            ],
+            "device": [
+              119.98532,
+              403.26508,
+              504.00455,
+              412.17163
+            ]
+          },
+          "content": {
+            "rnormalized": "Responses Annotation: We asses the quality of responses conditioned on their respective instruction"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              116.468,
+              394.45801,
+              138.05696,
+              403.36456
+            ],
+            "device": [
+              116.468,
+              392.30609,
+              284.13858,
+              401.21265
+            ]
+          },
+          "content": {
+            "rnormalized": "using an LLM as judge (in a scale of 1-5)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              375.186,
+              111.48691,
+              384.09256
+            ],
+            "device": [
+              108,
+              373.03409,
+              118.02362,
+              381.94064
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              375.186,
+              111.48691,
+              384.09256
+            ],
+            "device": [
+              120.52953,
+              373.03409,
+              504.17358,
+              381.94064
+            ]
+          },
+          "content": {
+            "rnormalized": "Sample-level Annotation: Particularly important for multi-turn datasets, we prompt an LLM for"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              116.468,
+              364.22699,
+              153.5488,
+              373.13354
+            ],
+            "device": [
+              116.468,
+              362.07507,
+              494.9671,
+              370.98163
+            ]
+          },
+          "content": {
+            "rnormalized": "assessing overall quality of a conversation between a user and an assistant (including all turns)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              344.95599,
+              111.48691,
+              353.86255
+            ],
+            "device": [
+              108,
+              342.80408,
+              118.49842,
+              351.71063
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              344.95599,
+              111.48691,
+              353.86255
+            ],
+            "device": [
+              121.12302,
+              342.80408,
+              504.00043,
+              351.71063
+            ]
+          },
+          "content": {
+            "rnormalized": "Duplicates Annotation: We measure the similarity using minimum neighbor distance in the"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              116.468,
+              333.99701,
+              159.85632,
+              342.90356
+            ],
+            "device": [
+              116.468,
+              331.84509,
+              504.00464,
+              340.75165
+            ]
+          },
+          "content": {
+            "rnormalized": "embedding space (Xu et al., 2024). For multi-turn data, however, we concatenate the inputs from all"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              116.468,
+              323.03799,
+              135.99469,
+              331.94455
+            ],
+            "device": [
+              116.468,
+              320.88608,
+              505.74237,
+              329.79263
+            ]
+          },
+          "content": {
+            "rnormalized": "turns and compute minimum neighbor distance in the embedding space using the full conversations."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              289.27802,
+              114.2766,
+              299.96597
+            ],
+            "device": [
+              108.299,
+              286.69568,
+              114.2766,
+              297.38364
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              289.27802,
+              133.47665,
+              299.96597
+            ],
+            "device": [
+              126.82957,
+              286.69568,
+              202.39938,
+              297.38364
+            ]
+          },
+          "content": {
+            "rnormalized": "PRE-TRAINING"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              262.69501,
+              138.38576,
+              271.60156
+            ],
+            "device": [
+              108,
+              260.54309,
+              503.99765,
+              269.44965
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite 3.0 language models are trained on 10T to 12T tokens of language and code data, sourced"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              251.737,
+              127.75464,
+              260.64355
+            ],
+            "device": [
+              108,
+              249.58508,
+              505.24704,
+              258.49164
+            ]
+          },
+          "content": {
+            "rnormalized": "from different domains. Data is tokenized via byte pair encoding (BPE, (Sennrich et al., 2015)),"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              240.778,
+              132.98122,
+              249.68457
+            ],
+            "device": [
+              108,
+              238.62608,
+              504.00208,
+              247.53264
+            ]
+          },
+          "content": {
+            "rnormalized": "employing the same tokenizer as StarCoder (Li et al., 2023d). In this section, we provide details on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              229.819,
+              121.28014,
+              238.72557
+            ],
+            "device": [
+              108,
+              227.66708,
+              460.43698,
+              236.57364
+            ]
+          },
+          "content": {
+            "rnormalized": "our two stage training, data mixture and power scheduler used in pretraining the models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              199.944,
+              113.2303,
+              208.85057
+            ],
+            "device": [
+              108.249,
+              197.79208,
+              121.69851,
+              206.69864
+            ]
+          },
+          "content": {
+            "rnormalized": "4.1"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              132.15924,
+              199.944,
+              139.35223,
+              208.85057
+            ],
+            "device": [
+              132.15924,
+              197.79208,
+              199.24712,
+              206.69864
+            ]
+          },
+          "content": {
+            "rnormalized": "DATA MIXTURE"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              177.474,
+              118.88029,
+              186.38057
+            ],
+            "device": [
+              108,
+              175.32208,
+              503.9993,
+              184.22864
+            ]
+          },
+          "content": {
+            "rnormalized": "Beyond training data quality, the data mixture is another important aspect of model performance. We"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              166.515,
+              126.61651,
+              175.42157
+            ],
+            "device": [
+              108,
+              164.36308,
+              503.9971,
+              173.26964
+            ]
+          },
+          "content": {
+            "rnormalized": "craft the pretraining data mixture with two goals: 1) maximize the model\u2019s performance across a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              155.556,
+              115.71215,
+              164.46257
+            ],
+            "device": [
+              108,
+              153.40408,
+              503.996,
+              162.31064
+            ]
+          },
+          "content": {
+            "rnormalized": "diverse set of domains and tasks without bias toward a specific type of data or task; 2) leverage both"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              144.597,
+              155.733,
+              153.50357
+            ],
+            "device": [
+              108,
+              142.44508,
+              504.00131,
+              151.35164
+            ]
+          },
+          "content": {
+            "rnormalized": "high-quality and medium-quality data for optimal performance. To achieve these two goals, we adopt"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              133.638,
+              119.93081,
+              142.54457
+            ],
+            "device": [
+              108,
+              131.48608,
+              505.73917,
+              140.39264
+            ]
+          },
+          "content": {
+            "rnormalized": "the 2-stage data mixture strategy used in MiniCPM (Hu et al., 2024) and JetMoE (Shen et al., 2024b)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              122.679,
+              116.23245,
+              131.58557
+            ],
+            "device": [
+              108,
+              120.52708,
+              503.99777,
+              129.43364
+            ]
+          },
+          "content": {
+            "rnormalized": "In stage 1, we pre-train the model on a large quantity of medium-quality data to learn and memorize"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              111.72,
+              120.00386,
+              120.62656
+            ],
+            "device": [
+              108,
+              109.56808,
+              503.99969,
+              118.47464
+            ]
+          },
+          "content": {
+            "rnormalized": "the knowledge from diverse domains. In stage 2, we continue pre-training the model on a smaller set"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              100.761,
+              116.28225,
+              109.66756
+            ],
+            "device": [
+              108,
+              98.609077,
+              504.16589,
+              107.51564
+            ]
+          },
+          "content": {
+            "rnormalized": "of high-quality data mixed with medium-quality data to encourage the model to mimic the behavior"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              89.802002,
+              116.29884,
+              98.708565
+            ],
+            "device": [
+              108,
+              87.650078,
+              428.69608,
+              96.556641
+            ]
+          },
+          "content": {
+            "rnormalized": "of high-quality data and improve the model\u2019s performance on downstream tasks."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              65.946999,
+              123.6416,
+              71.29097
+            ],
+            "device": [
+              117.664,
+              60.147461,
+              363.03799,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{19}$https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.64499,
+              32.25,
+              310.60757,
+              41.156563
+            ],
+            "device": [
+              300.64499,
+              30.098078,
+              310.60757,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "10"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 108,
+          "x1": 282.24286,
+          "y": 702.91174
+        },
+        {
+          "x0": 108,
+          "x1": 282.24286,
+          "y": 564.34717
+        },
+        {
+          "x0": 108.33942,
+          "x1": 282.05432,
+          "y": 702.57861
+        },
+        {
+          "x0": 108.33942,
+          "x1": 282.05432,
+          "y": 564.31573
+        },
+        {
+          "x0": 166.83525,
+          "x1": 168.42543,
+          "y": 684.06061
+        },
+        {
+          "x0": 192.63919,
+          "x1": 194.14084,
+          "y": 681.72223
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 654.03949
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 650.41882
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 643.93188
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 640.31122
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 633.89972
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 630.20367
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 623.79211
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 620.17151
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 613.68451
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 610.0639
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 603.6524
+        },
+        {
+          "x0": 239.625,
+          "x1": 243.24564,
+          "y": 599.95636
+        },
+        {
+          "x0": 313.922,
+          "x1": 503.95834,
+          "y": 705.15863
+        },
+        {
+          "x0": 313.922,
+          "x1": 503.95834,
+          "y": 564.31866
+        },
+        {
+          "x0": 314.2608,
+          "x1": 503.97186,
+          "y": 705.13831
+        },
+        {
+          "x0": 314.2608,
+          "x1": 503.97186,
+          "y": 564.29834
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 667.85474
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 663.87024
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 656.95837
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 653.05518
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 646.06195
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 642.15875
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 635.16553
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 631.26233
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 624.35046
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 620.44727
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 613.45404
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 609.5509
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 602.55768
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 598.65454
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 591.74261
+        },
+        {
+          "x0": 446.19659,
+          "x1": 450.09979,
+          "y": 587.83942
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 72.813004
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            564.34717,
+            282.24286,
+            702.91174
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            282.24286,
+            282.24286,
+            108,
+            108
+          ],
+          "y-values": [
+            702.91174,
+            702.91174,
+            564.34717,
+            564.34717,
+            702.91174
+          ]
+        },
+        {
+          "bbox": [
+            108.33942,
+            564.31573,
+            282.05432,
+            702.57861
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            108.33942,
+            282.05432,
+            282.05432,
+            108.33942,
+            108.33942
+          ],
+          "y-values": [
+            702.57861,
+            702.57861,
+            564.31573,
+            564.31573,
+            702.57861
+          ]
+        },
+        {
+          "bbox": [
+            172.69112,
+            627.01239,
+            177.49908,
+            678.10205
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            172.69112,
+            173.37904,
+            174.06677,
+            174.7542,
+            175.44122,
+            176.12778,
+            176.81377,
+            177.49908,
+            172.69112,
+            172.69112
+          ],
+          "y-values": [
+            678.10205,
+            678.09741,
+            678.08356,
+            678.06036,
+            678.02795,
+            677.98633,
+            677.93542,
+            677.87531,
+            627.01239,
+            678.10205
+          ]
+        },
+        {
+          "bbox": [
+            172.69112,
+            627.01239,
+            182.26436,
+            677.87531
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            177.49905,
+            178.1835,
+            178.86685,
+            179.54907,
+            180.23001,
+            180.90959,
+            181.58774,
+            182.26436,
+            172.69112,
+            177.49905
+          ],
+          "y-values": [
+            677.87531,
+            677.80597,
+            677.72742,
+            677.63971,
+            677.54279,
+            677.43671,
+            677.32147,
+            677.19714,
+            627.01239,
+            677.87531
+          ]
+        },
+        {
+          "bbox": [
+            172.69112,
+            627.01239,
+            194.44406,
+            677.19714
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            182.2644,
+            184.06113,
+            185.84172,
+            187.60452,
+            189.34784,
+            191.07001,
+            192.76932,
+            194.44406,
+            172.69112,
+            182.2644
+          ],
+          "y-values": [
+            677.19714,
+            676.8208,
+            676.38062,
+            675.87695,
+            675.31055,
+            674.68182,
+            673.99133,
+            673.23975,
+            627.01239,
+            677.19714
+          ]
+        },
+        {
+          "bbox": [
+            172.69112,
+            627.01239,
+            206.47728,
+            673.23969
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            194.44402,
+            196.29483,
+            198.10526,
+            199.87314,
+            201.59641,
+            203.27292,
+            204.90057,
+            206.47728,
+            172.69112,
+            194.44402
+          ],
+          "y-values": [
+            673.23969,
+            672.32263,
+            671.33252,
+            670.27081,
+            669.13885,
+            667.93799,
+            666.66968,
+            665.33533,
+            627.01239,
+            673.23969
+          ]
+        },
+        {
+          "bbox": [
+            172.69112,
+            609.70642,
+            223.78296,
+            665.33533
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            206.47736,
+            212.59067,
+            217.42519,
+            220.93359,
+            223.06863,
+            223.78296,
+            223.02931,
+            220.76041,
+            172.69112,
+            206.47736
+          ],
+          "y-values": [
+            665.33533,
+            658.92493,
+            651.69531,
+            643.83075,
+            635.51538,
+            626.93341,
+            618.26904,
+            609.70642,
+            627.01239,
+            665.33533
+          ]
+        },
+        {
+          "bbox": [
+            121.89695,
+            576.2182,
+            220.76044,
+            678.10205
+          ],
+          "sub-paths": [
+            0,
+            24
+          ],
+          "type": "unknown",
+          "x-values": [
+            220.76044,
+            215.52278,
+            208.26387,
+            199.37613,
+            189.25197,
+            178.2838,
+            166.86406,
+            155.38513,
+            144.82036,
+            136.0045,
+            129.12221,
+            124.35814,
+            121.89695,
+            121.92332,
+            124.62188,
+            128.45183,
+            133.57448,
+            139.82164,
+            147.02509,
+            155.01663,
+            163.62805,
+            172.69115,
+            172.69112,
+            220.76044
+          ],
+          "y-values": [
+            609.70636,
+            599.1416,
+            590.32574,
+            583.44342,
+            578.67938,
+            576.2182,
+            576.24457,
+            578.94312,
+            584.18079,
+            591.4397,
+            600.32739,
+            610.4516,
+            621.41974,
+            632.83948,
+            644.31842,
+            652.57208,
+            659.88037,
+            666.12494,
+            671.18756,
+            674.95013,
+            677.29437,
+            678.10205,
+            627.01239,
+            609.70636
+          ]
+        },
+        {
+          "bbox": [
+            166.83525,
+            678.02625,
+            175.13254,
+            684.06061
+          ],
+          "sub-paths": [
+            0,
+            3
+          ],
+          "type": "unknown",
+          "x-values": [
+            175.13254,
+            168.42543,
+            166.83525
+          ],
+          "y-values": [
+            678.02625,
+            684.06061,
+            684.06061
+          ]
+        },
+        {
+          "bbox": [
+            179.88458,
+            677.57361,
+            179.88458,
+            680.28906
+          ],
+          "sub-paths": [
+            0,
+            3
+          ],
+          "type": "unknown",
+          "x-values": [
+            179.88458,
+            179.88458,
+            179.88458
+          ],
+          "y-values": [
+            677.57361,
+            678.70398,
+            680.28906
+          ]
+        },
+        {
+          "bbox": [
+            188.48361,
+            675.61243,
+            194.14084,
+            681.72223
+          ],
+          "sub-paths": [
+            0,
+            3
+          ],
+          "type": "unknown",
+          "x-values": [
+            188.48361,
+            192.63919,
+            194.14084
+          ],
+          "y-values": [
+            675.61243,
+            681.72223,
+            681.72223
+          ]
+        },
+        {
+          "bbox": [
+            239.625,
+            650.41882,
+            243.24564,
+            654.03949
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            239.625,
+            243.24564,
+            243.24564,
+            239.625,
+            239.625
+          ],
+          "y-values": [
+            654.03949,
+            654.03949,
+            650.41882,
+            650.41882,
+            654.03949
+          ]
+        },
+        {
+          "bbox": [
+            239.625,
+            640.31122,
+            243.24564,
+            643.93188
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            239.625,
+            243.24564,
+            243.24564,
+            239.625,
+            239.625
+          ],
+          "y-values": [
+            643.93188,
+            643.93188,
+            640.31122,
+            640.31122,
+            643.93188
+          ]
+        },
+        {
+          "bbox": [
+            239.625,
+            630.20367,
+            243.24564,
+            633.89972
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            239.625,
+            243.24564,
+            243.24564,
+            239.625,
+            239.625
+          ],
+          "y-values": [
+            633.89972,
+            633.89972,
+            630.20367,
+            630.20367,
+            633.89972
+          ]
+        },
+        {
+          "bbox": [
+            239.625,
+            620.17151,
+            243.24564,
+            623.79211
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            239.625,
+            243.24564,
+            243.24564,
+            239.625,
+            239.625
+          ],
+          "y-values": [
+            623.79211,
+            623.79211,
+            620.17151,
+            620.17151,
+            623.79211
+          ]
+        },
+        {
+          "bbox": [
+            239.625,
+            610.0639,
+            243.24564,
+            613.68451
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            239.625,
+            243.24564,
+            243.24564,
+            239.625,
+            239.625
+          ],
+          "y-values": [
+            613.68451,
+            613.68451,
+            610.0639,
+            610.0639,
+            613.68451
+          ]
+        },
+        {
+          "bbox": [
+            239.625,
+            599.95636,
+            243.24564,
+            603.6524
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            239.625,
+            243.24564,
+            243.24564,
+            239.625,
+            239.625
+          ],
+          "y-values": [
+            603.6524,
+            603.6524,
+            599.95636,
+            599.95636,
+            603.6524
+          ]
+        },
+        {
+          "bbox": [
+            313.922,
+            564.31866,
+            503.95834,
+            705.15863
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            313.922,
+            503.95834,
+            503.95834,
+            313.922,
+            313.922
+          ],
+          "y-values": [
+            705.15863,
+            705.15863,
+            564.31866,
+            564.31866,
+            705.15863
+          ]
+        },
+        {
+          "bbox": [
+            314.2608,
+            564.29834,
+            503.97186,
+            705.13831
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            314.2608,
+            503.97186,
+            503.97186,
+            314.2608,
+            314.2608
+          ],
+          "y-values": [
+            705.13831,
+            705.13831,
+            564.29834,
+            564.29834,
+            705.13831
+          ]
+        },
+        {
+          "bbox": [
+            378.83514,
+            578.83911,
+            430.32458,
+            679.29791
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            378.83514,
+            390.6412,
+            401.47891,
+            411.03918,
+            419.01294,
+            425.09116,
+            428.96472,
+            430.32458,
+            429.4671,
+            426.98221,
+            423.00134,
+            417.65591,
+            411.07733,
+            403.39697,
+            394.74628,
+            378.83514,
+            378.83514
+          ],
+          "y-values": [
+            679.29791,
+            677.93805,
+            674.06445,
+            667.98627,
+            660.01251,
+            650.45221,
+            639.6145,
+            627.80847,
+            618.43396,
+            609.55096,
+            601.34033,
+            593.98297,
+            587.65973,
+            582.55151,
+            578.83911,
+            627.80847,
+            679.29791
+          ]
+        },
+        {
+          "bbox": [
+            359.88065,
+            576.32709,
+            394.74631,
+            627.80847
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            394.74631,
+            389.81155,
+            384.79953,
+            379.74738,
+            374.69226,
+            369.67133,
+            364.72174,
+            359.88065,
+            378.83514,
+            394.74631
+          ],
+          "y-values": [
+            578.83911,
+            577.5025,
+            576.66553,
+            576.32709,
+            576.48596,
+            577.14099,
+            578.29095,
+            579.93481,
+            627.80847,
+            578.83911
+          ]
+        },
+        {
+          "bbox": [
+            335.36111,
+            579.93475,
+            378.83514,
+            627.80847
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            359.88055,
+            355.64481,
+            351.61749,
+            347.82019,
+            344.27435,
+            341.00156,
+            338.02332,
+            335.36111,
+            378.83514,
+            359.88055
+          ],
+          "y-values": [
+            579.93475,
+            581.83691,
+            584.10065,
+            586.70807,
+            589.64142,
+            592.88293,
+            596.41467,
+            600.21899,
+            627.80847,
+            579.93475
+          ]
+        },
+        {
+          "bbox": [
+            327.36493,
+            600.21906,
+            378.83514,
+            631.0415
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            335.36115,
+            333.0524,
+            331.12482,
+            329.58536,
+            328.44089,
+            327.69846,
+            327.36493,
+            327.44727,
+            378.83514,
+            335.36115
+          ],
+          "y-values": [
+            600.21906,
+            604.24768,
+            608.44623,
+            612.78772,
+            617.245,
+            621.79114,
+            626.39899,
+            631.0415,
+            627.80847,
+            600.21906
+          ]
+        },
+        {
+          "bbox": [
+            327.4473,
+            627.80847,
+            378.83514,
+            660.62909
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            327.4473,
+            327.94745,
+            328.85587,
+            330.16223,
+            331.85629,
+            333.9278,
+            336.36639,
+            339.16183,
+            378.83514,
+            327.4473
+          ],
+          "y-values": [
+            631.0415,
+            635.65778,
+            640.1875,
+            644.60474,
+            648.88342,
+            652.99774,
+            656.92163,
+            660.62909,
+            627.80847,
+            631.0415
+          ]
+        },
+        {
+          "bbox": [
+            339.1618,
+            627.80847,
+            378.83514,
+            671.28241
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            339.1618,
+            340.67621,
+            342.26559,
+            343.92734,
+            345.65884,
+            347.45749,
+            349.32062,
+            351.2457,
+            378.83514,
+            339.1618
+          ],
+          "y-values": [
+            660.62903,
+            662.37811,
+            664.0553,
+            665.65826,
+            667.18481,
+            668.63257,
+            669.99921,
+            671.28241,
+            627.80847,
+            660.62903
+          ]
+        },
+        {
+          "bbox": [
+            351.24573,
+            627.80847,
+            378.83514,
+            677.6803
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            351.24573,
+            353.22647,
+            355.25635,
+            357.33212,
+            359.45059,
+            361.60858,
+            363.80286,
+            366.03024,
+            378.83514,
+            351.24573
+          ],
+          "y-values": [
+            671.28247,
+            672.47797,
+            673.58191,
+            674.5929,
+            675.50964,
+            676.33075,
+            677.05475,
+            677.6803,
+            627.80847,
+            671.28247
+          ]
+        },
+        {
+          "bbox": [
+            366.03024,
+            627.80847,
+            378.83517,
+            679.29791
+          ],
+          "sub-paths": [
+            0,
+            10
+          ],
+          "type": "unknown",
+          "x-values": [
+            366.03024,
+            367.83014,
+            369.64282,
+            371.46643,
+            373.29926,
+            375.13953,
+            376.98541,
+            378.83517,
+            378.83514,
+            366.03024
+          ],
+          "y-values": [
+            677.68024,
+            678.10809,
+            678.4707,
+            678.76788,
+            678.99945,
+            679.1651,
+            679.26465,
+            679.29791,
+            627.80847,
+            677.68024
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            663.87024,
+            450.09979,
+            667.85474
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            667.85474,
+            667.85474,
+            663.87024,
+            663.87024,
+            667.85474
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            653.05518,
+            450.09979,
+            656.95837
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            656.95837,
+            656.95837,
+            653.05518,
+            653.05518,
+            656.95837
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            642.15875,
+            450.09979,
+            646.06195
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            646.06195,
+            646.06195,
+            642.15875,
+            642.15875,
+            646.06195
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            631.26233,
+            450.09979,
+            635.16553
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            635.16553,
+            635.16553,
+            631.26233,
+            631.26233,
+            635.16553
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            620.44727,
+            450.09979,
+            624.35046
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            624.35046,
+            624.35046,
+            620.44727,
+            620.44727,
+            624.35046
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            609.5509,
+            450.09979,
+            613.45404
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            613.45404,
+            613.45404,
+            609.5509,
+            609.5509,
+            613.45404
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            598.65454,
+            450.09979,
+            602.55768
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            602.55768,
+            602.55768,
+            598.65454,
+            598.65454,
+            602.55768
+          ]
+        },
+        {
+          "bbox": [
+            446.19659,
+            587.83942,
+            450.09979,
+            591.74261
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            446.19659,
+            450.09979,
+            450.09979,
+            446.19659,
+            446.19659
+          ],
+          "y-values": [
+            591.74261,
+            591.74261,
+            587.83942,
+            587.83942,
+            591.74261
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            72.813004,
+            251.46201,
+            72.813004
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            72.813004,
+            72.813004
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 282.24286,
+          "y0": 564.34717,
+          "y1": 702.91174
+        },
+        {
+          "x": 108,
+          "y0": 564.34717,
+          "y1": 702.91174
+        },
+        {
+          "x": 282.05432,
+          "y0": 564.31573,
+          "y1": 702.57861
+        },
+        {
+          "x": 108.33942,
+          "y0": 564.31573,
+          "y1": 702.57861
+        },
+        {
+          "x": 172.69112,
+          "y0": 627.01239,
+          "y1": 678.10205
+        },
+        {
+          "x": 172.69115,
+          "y0": 627.01239,
+          "y1": 678.10205
+        },
+        {
+          "x": 179.88458,
+          "y0": 677.57361,
+          "y1": 678.70398
+        },
+        {
+          "x": 179.88458,
+          "y0": 678.70398,
+          "y1": 680.28906
+        },
+        {
+          "x": 243.24564,
+          "y0": 650.41882,
+          "y1": 654.03949
+        },
+        {
+          "x": 239.625,
+          "y0": 650.41882,
+          "y1": 654.03949
+        },
+        {
+          "x": 243.24564,
+          "y0": 640.31122,
+          "y1": 643.93188
+        },
+        {
+          "x": 239.625,
+          "y0": 640.31122,
+          "y1": 643.93188
+        },
+        {
+          "x": 243.24564,
+          "y0": 630.20367,
+          "y1": 633.89972
+        },
+        {
+          "x": 239.625,
+          "y0": 630.20367,
+          "y1": 633.89972
+        },
+        {
+          "x": 243.24564,
+          "y0": 620.17151,
+          "y1": 623.79211
+        },
+        {
+          "x": 239.625,
+          "y0": 620.17151,
+          "y1": 623.79211
+        },
+        {
+          "x": 243.24564,
+          "y0": 610.0639,
+          "y1": 613.68451
+        },
+        {
+          "x": 239.625,
+          "y0": 610.0639,
+          "y1": 613.68451
+        },
+        {
+          "x": 243.24564,
+          "y0": 599.95636,
+          "y1": 603.6524
+        },
+        {
+          "x": 239.625,
+          "y0": 599.95636,
+          "y1": 603.6524
+        },
+        {
+          "x": 503.95834,
+          "y0": 564.31866,
+          "y1": 705.15863
+        },
+        {
+          "x": 313.922,
+          "y0": 564.31866,
+          "y1": 705.15863
+        },
+        {
+          "x": 503.97186,
+          "y0": 564.29834,
+          "y1": 705.13831
+        },
+        {
+          "x": 314.2608,
+          "y0": 564.29834,
+          "y1": 705.13831
+        },
+        {
+          "x": 378.83514,
+          "y0": 627.80847,
+          "y1": 679.29791
+        },
+        {
+          "x": 378.83517,
+          "y0": 627.80847,
+          "y1": 679.29791
+        },
+        {
+          "x": 450.09979,
+          "y0": 663.87024,
+          "y1": 667.85474
+        },
+        {
+          "x": 446.19659,
+          "y0": 663.87024,
+          "y1": 667.85474
+        },
+        {
+          "x": 450.09979,
+          "y0": 653.05518,
+          "y1": 656.95837
+        },
+        {
+          "x": 446.19659,
+          "y0": 653.05518,
+          "y1": 656.95837
+        },
+        {
+          "x": 450.09979,
+          "y0": 642.15875,
+          "y1": 646.06195
+        },
+        {
+          "x": 446.19659,
+          "y0": 642.15875,
+          "y1": 646.06195
+        },
+        {
+          "x": 450.09979,
+          "y0": 631.26233,
+          "y1": 635.16553
+        },
+        {
+          "x": 446.19659,
+          "y0": 631.26233,
+          "y1": 635.16553
+        },
+        {
+          "x": 450.09979,
+          "y0": 620.44727,
+          "y1": 624.35046
+        },
+        {
+          "x": 446.19659,
+          "y0": 620.44727,
+          "y1": 624.35046
+        },
+        {
+          "x": 450.09979,
+          "y0": 609.5509,
+          "y1": 613.45404
+        },
+        {
+          "x": 446.19659,
+          "y0": 609.5509,
+          "y1": 613.45404
+        },
+        {
+          "x": 450.09979,
+          "y0": 598.65454,
+          "y1": 602.55768
+        },
+        {
+          "x": 446.19659,
+          "y0": 598.65454,
+          "y1": 602.55768
+        },
+        {
+          "x": 450.09979,
+          "y0": 587.83942,
+          "y1": 591.74261
+        },
+        {
+          "x": 446.19659,
+          "y0": 587.83942,
+          "y1": 591.74261
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

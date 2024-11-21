@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-GENERATE = False
+GENERATE = True
 
 import io
 import os
@@ -82,8 +82,8 @@ def verify_reference_output(true_doc, pred_doc):
     num_true_pages=len(true_doc["pages"])
     num_pred_pages=len(pred_doc["pages"])
 
-    message = f"len(pred_doc[\"pages\"])!=len(true_doc[\"pages\"]) => {num_true_pages}!={num_pred_pages}"
-    assert num_true_pages==num_pred_pages, message
+    message = f"len(pred_doc[\"pages\"])!=len(true_doc[\"pages\"]) => {num_pred_pages}!={num_true_pages}"
+    assert num_pred_pages==num_true_pages, message
                 
     for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
         # print(pred_page.keys())
@@ -131,7 +131,7 @@ def test_reference_documents_from_filenames_with_keys():
     for pdf_doc in pdf_docs:
         doc_key = f"key={pdf_doc}"
         # print("testing: ", pdf_doc)
-        
+
         #print(" => load_document ...")
         success = parser.load_document(doc_key, pdf_doc)
 

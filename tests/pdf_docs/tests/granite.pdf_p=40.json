@@ -1,0 +1,2967 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/AESXQO+NimbusRomNo9L-ReguItal": 1.561446093752491,
+        "/LHCPKS+NimbusRomNo9L-Regu": 1.942008845169172,
+        "/LTZNGC+CMVTT10": 0.8181961809169928
+      },
+      "mean-char-width": {
+        "/AESXQO+NimbusRomNo9L-ReguItal": 4.459602381487024,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.483842490134751,
+        "/LTZNGC+CMVTT10": 4.75535015327227
+      },
+      "number-of-chars": {
+        "/AESXQO+NimbusRomNo9L-ReguItal": 423,
+        "/LHCPKS+NimbusRomNo9L-Regu": 3004,
+        "/LTZNGC+CMVTT10": 213
+      }
+    },
+    "styles": [
+      "/AESXQO+NimbusRomNo9L-ReguItal",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              700.17603,
+              151.43399,
+              709.08258
+            ],
+            "device": [
+              117.963,
+              698.02411,
+              504.00208,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "Dzmitry Bahdanau, Yacine Jernite, Carlos Mu\u02dcnoz Ferrandis, Sean Hughes, Thomas Wolf, Arjun"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              689.21698,
+              142.03264,
+              698.12354
+            ],
+            "device": [
+              117.963,
+              687.06506,
+              497.69754,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": "Guha, Leandro von Werra, and Harm de Vries. Starcoder: may the source be with you!, 2023d."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              670.48499,
+              127.86543,
+              679.39154
+            ],
+            "device": [
+              108,
+              668.33307,
+              503.99738,
+              677.23962
+            ]
+          },
+          "content": {
+            "rnormalized": "Shen Li, Yanli Zhao, Rohan Varma, Omkar Salpekar, Pieter Noordhuis, Teng Li, Adam Paszke, Jeff"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              659.526,
+              144.21165,
+              668.43256
+            ],
+            "device": [
+              117.963,
+              657.37408,
+              503.99719,
+              666.28064
+            ]
+          },
+          "content": {
+            "rnormalized": "Smith, Brian Vaughan, Pritam Damania, and Soumith Chintala. Pytorch distributed: Experiences"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              648.56702,
+              127.9256,
+              657.47357
+            ],
+            "device": [
+              117.963,
+              646.4151,
+              314.3956,
+              655.32166
+            ]
+          },
+          "content": {
+            "rnormalized": "on accelerating data parallel training, 2020. URL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              316.88501,
+              648.56702,
+              322.6962,
+              656.86584
+            ],
+            "device": [
+              316.88501,
+              646.35535,
+              469.84579,
+              654.65417
+            ]
+          },
+          "content": {
+            "rnormalized": "https://arxiv.org/abs/2006.15704"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              469.84302,
+              648.56702,
+              472.33368,
+              657.47357
+            ],
+            "device": [
+              469.84302,
+              646.4151,
+              472.33368,
+              655.32166
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              629.83502,
+              132.59209,
+              638.74158
+            ],
+            "device": [
+              108,
+              627.68311,
+              503.99881,
+              636.58966
+            ]
+          },
+          "content": {
+            "rnormalized": "Xiang Lisa Li, Ari Holtzman, Daniel Fried, Percy Liang, Jason Eisner, Tatsunori Hashimoto, Luke"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              618.87598,
+              153.65015,
+              627.78253
+            ],
+            "device": [
+              117.963,
+              616.72406,
+              505.73822,
+              625.63062
+            ]
+          },
+          "content": {
+            "rnormalized": "Zettlemoyer, and Mike Lewis. Contrastive decoding: Open-ended text generation as optimization."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              607.91699,
+              126.17056,
+              616.82355
+            ],
+            "device": [
+              117.963,
+              605.76508,
+              378.15146,
+              614.67163
+            ]
+          },
+          "content": {
+            "rnormalized": "In Anna Rogers, Jordan Boyd-Graber, and Naoaki Okazaki (eds.),"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              380.642,
+              607.91699,
+              390.495,
+              616.49481
+            ],
+            "device": [
+              380.642,
+              605.9942,
+              504.00168,
+              614.57202
+            ]
+          },
+          "content": {
+            "rnormalized": "Proceedings of the 61st Annual"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.544,
+              596.95801,
+              150.77908,
+              605.53583
+            ],
+            "device": [
+              117.544,
+              595.03522,
+              454.8746,
+              603.61304
+            ]
+          },
+          "content": {
+            "rnormalized": "Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              454.87601,
+              596.95801,
+              457.4115,
+              605.86456
+            ],
+            "device": [
+              454.87601,
+              594.80609,
+              505.49435,
+              603.71265
+            ]
+          },
+          "content": {
+            "rnormalized": ", pp. 12286-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.215,
+              585.99902,
+              144.88612,
+              594.90558
+            ],
+            "device": [
+              117.215,
+              583.84711,
+              504.56042,
+              592.75366
+            ]
+          },
+          "content": {
+            "rnormalized": "12312, Toronto, Canada, July 2023e. Association for Computational Linguistics. doi: 10.18653/"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.714,
+              575.03998,
+              167.79599,
+              583.94653
+            ],
+            "device": [
+              117.714,
+              572.88806,
+              229.44455,
+              581.79462
+            ]
+          },
+          "content": {
+            "rnormalized": "v1/2023.acl-long.687. URL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              231.935,
+              575.03998,
+              237.74619,
+              583.33881
+            ],
+            "device": [
+              231.935,
+              572.82831,
+              426.15891,
+              581.12714
+            ]
+          },
+          "content": {
+            "rnormalized": "https://aclanthology.org/2023.acl-long.687"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              426.159,
+              575.03998,
+              428.64966,
+              583.94653
+            ],
+            "device": [
+              426.159,
+              572.88806,
+              428.64966,
+              581.79462
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              556.30798,
+              115.32967,
+              565.21454
+            ],
+            "device": [
+              108,
+              554.15607,
+              503.99573,
+              563.06262
+            ]
+          },
+          "content": {
+            "rnormalized": "Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser, R\u00b4emi Leblond, Tom"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              545.349,
+              147.02589,
+              554.25555
+            ],
+            "device": [
+              117.963,
+              543.19708,
+              504.00159,
+              552.10364
+            ]
+          },
+          "content": {
+            "rnormalized": "Eccles, James Keeling, Felix Gimeno, Agustin Dal Lago, Thomas Hubert, Peter Choy, Cyprien"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              534.39001,
+              127.1796,
+              543.29657
+            ],
+            "device": [
+              117.963,
+              532.2381,
+              505.24573,
+              541.14465
+            ]
+          },
+          "content": {
+            "rnormalized": "de Masson d\u2019Autume, Igor Babuschkin, Xinyun Chen, Po-Sen Huang, Johannes Welbl, Sven Gowal,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.604,
+              523.43103,
+              131.73105,
+              532.33759
+            ],
+            "device": [
+              117.604,
+              521.27911,
+              505.24664,
+              530.18567
+            ]
+          },
+          "content": {
+            "rnormalized": "Alexey Cherepanov, James Molloy, Daniel Mankowitz, Esme Sutherland Robson, Pushmeet Kohli,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              512.47302,
+              143.99208,
+              521.37958
+            ],
+            "device": [
+              117.963,
+              510.32111,
+              503.996,
+              519.22766
+            ]
+          },
+          "content": {
+            "rnormalized": "Nando de Freitas, Koray Kavukcuoglu, and Oriol Vinyals. Competition-level code generation with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              501.51401,
+              160.84203,
+              510.42056
+            ],
+            "device": [
+              117.963,
+              499.36209,
+              160.84203,
+              508.26865
+            ]
+          },
+          "content": {
+            "rnormalized": "alphacode."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              164.42799,
+              501.51401,
+              186.5649,
+              510.0918
+            ],
+            "device": [
+              164.42799,
+              499.59122,
+              296.61176,
+              508.16904
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint arXiv:2203.07814"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              296.61099,
+              501.51401,
+              299.10165,
+              510.42056
+            ],
+            "device": [
+              296.61099,
+              499.36209,
+              324.00818,
+              508.26865
+            ]
+          },
+          "content": {
+            "rnormalized": ", 2022."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              482.78201,
+              136.21947,
+              491.68857
+            ],
+            "device": [
+              108,
+              480.6301,
+              503.99716,
+              489.53665
+            ]
+          },
+          "content": {
+            "rnormalized": "Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy Lee, Jan"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              471.823,
+              136.58968,
+              480.72955
+            ],
+            "device": [
+              117.963,
+              469.67108,
+              504.48935,
+              478.57764
+            ]
+          },
+          "content": {
+            "rnormalized": "Leike, John Schulman, Ilya Sutskever, and Karl Cobbe. Let\u2019s verify step by step, 2023. URL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              460.86401,
+              123.77419,
+              469.16287
+            ],
+            "device": [
+              117.963,
+              458.65231,
+              270.92377,
+              466.95117
+            ]
+          },
+          "content": {
+            "rnormalized": "https://arxiv.org/abs/2305.20050"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              270.92099,
+              460.86401,
+              273.41165,
+              469.77057
+            ],
+            "device": [
+              270.92099,
+              458.7121,
+              273.41165,
+              467.61865
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              442.13199,
+              137.91769,
+              451.03854
+            ],
+            "device": [
+              108,
+              439.98007,
+              422.58447,
+              448.88663
+            ]
+          },
+          "content": {
+            "rnormalized": "Chin-Yew Lin. ROUGE: A package for automatic evaluation of summaries. In"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              425.065,
+              442.13199,
+              430.60974,
+              450.70978
+            ],
+            "device": [
+              425.065,
+              440.2092,
+              503.9978,
+              448.78702
+            ]
+          },
+          "content": {
+            "rnormalized": "Text Summarization"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.654,
+              431.173,
+              127.46716,
+              439.75079
+            ],
+            "device": [
+              117.654,
+              429.25021,
+              171.61658,
+              437.82803
+            ]
+          },
+          "content": {
+            "rnormalized": "Branches Out"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              171.61301,
+              431.173,
+              174.0663,
+              440.07956
+            ],
+            "device": [
+              171.61301,
+              429.02109,
+              505.74139,
+              437.92764
+            ]
+          },
+          "content": {
+            "rnormalized": ", pp. 74-81, Barcelona, Spain, July 2004. Association for Computational Linguistics."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              420.21399,
+              137.8882,
+              429.12054
+            ],
+            "device": [
+              117.963,
+              418.06207,
+              137.8882,
+              426.96863
+            ]
+          },
+          "content": {
+            "rnormalized": "URL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              140.37799,
+              420.21399,
+              146.18918,
+              428.51285
+            ],
+            "device": [
+              140.37799,
+              418.00229,
+              302.20151,
+              426.30115
+            ]
+          },
+          "content": {
+            "rnormalized": "https://aclanthology.org/W04-1013"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              302.203,
+              420.21399,
+              304.69366,
+              429.12054
+            ],
+            "device": [
+              302.203,
+              418.06207,
+              304.69366,
+              426.96863
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              401.48199,
+              147.2925,
+              410.38855
+            ],
+            "device": [
+              108,
+              399.33008,
+              504.00342,
+              408.23663
+            ]
+          },
+          "content": {
+            "rnormalized": "Stephanie Lin, Jacob Hilton, and Owain Evans. TruthfulQA: Measuring how models mimic human"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              390.52301,
+              121.34689,
+              399.42957
+            ],
+            "device": [
+              117.963,
+              388.37109,
+              451.00754,
+              397.27765
+            ]
+          },
+          "content": {
+            "rnormalized": "falsehoods. In Smaranda Muresan, Preslav Nakov, and Aline Villavicencio (eds.),"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              453.64899,
+              390.52301,
+              463.81085,
+              399.1008
+            ],
+            "device": [
+              453.64899,
+              388.60022,
+              504.00098,
+              397.17804
+            ]
+          },
+          "content": {
+            "rnormalized": "Proceedings"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              379.564,
+              125.86892,
+              388.14178
+            ],
+            "device": [
+              117.963,
+              377.6412,
+              504.00146,
+              386.21902
+            ]
+          },
+          "content": {
+            "rnormalized": "of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.654,
+              368.60501,
+              123.80811,
+              377.1828
+            ],
+            "device": [
+              117.654,
+              366.68222,
+              148.64613,
+              375.26004
+            ]
+          },
+          "content": {
+            "rnormalized": "Papers)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              148.646,
+              368.60501,
+              151.16405,
+              377.51157
+            ],
+            "device": [
+              148.646,
+              366.45309,
+              505.7453,
+              375.35965
+            ]
+          },
+          "content": {
+            "rnormalized": ", pp. 3214-3252, Dublin, Ireland, May 2022. Association for Computational Linguistics."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              357.646,
+              133.4648,
+              366.55255
+            ],
+            "device": [
+              117.963,
+              355.49408,
+              288.41312,
+              364.40063
+            ]
+          },
+          "content": {
+            "rnormalized": "doi: 10.18653/v1/2022.acl-long.229. URL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              290.90302,
+              357.646,
+              296.7142,
+              365.94485
+            ],
+            "device": [
+              290.90302,
+              355.4343,
+              485.12692,
+              363.73315
+            ]
+          },
+          "content": {
+            "rnormalized": "https://aclanthology.org/2022.acl-long.229"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              485.12701,
+              357.646,
+              487.61768,
+              366.55255
+            ],
+            "device": [
+              485.12701,
+              355.49408,
+              487.61768,
+              364.40063
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              338.914,
+              130.58133,
+              347.82056
+            ],
+            "device": [
+              108,
+              336.76208,
+              503.99594,
+              345.66864
+            ]
+          },
+          "content": {
+            "rnormalized": "Aixin Liu, Bei Feng, Bin Wang, Bingxuan Wang, Bo Liu, Chenggang Zhao, Chengqi Dengr, Chong"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              327.95499,
+              141.39061,
+              336.86154
+            ],
+            "device": [
+              117.963,
+              325.80307,
+              505.65466,
+              334.70963
+            ]
+          },
+          "content": {
+            "rnormalized": "Ruan, Damai Dai, Daya Guo, et al. Deepseek-v2: A strong, economical, and efficient mixture-of-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              316.996,
+              122.38639,
+              325.90256
+            ],
+            "device": [
+              117.963,
+              314.84409,
+              214.92897,
+              323.75064
+            ]
+          },
+          "content": {
+            "rnormalized": "experts language model."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              218.515,
+              316.996,
+              240.6519,
+              325.57379
+            ],
+            "device": [
+              218.515,
+              315.07321,
+              350.69879,
+              323.65103
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint arXiv:2405.04434"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              350.698,
+              316.996,
+              353.18866,
+              325.90256
+            ],
+            "device": [
+              350.698,
+              314.84409,
+              382.51855,
+              323.75064
+            ]
+          },
+          "content": {
+            "rnormalized": ", 2024a."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              298.26401,
+              132.15765,
+              307.17056
+            ],
+            "device": [
+              108,
+              296.11209,
+              503.99759,
+              305.01865
+            ]
+          },
+          "content": {
+            "rnormalized": "Zuxin Liu, Thai Hoang, Jianguo Zhang, Ming Zhu, Tian Lan, Shirley Kokane, Juntao Tan, Weiran"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.385,
+              287.30499,
+              124.72186,
+              296.21155
+            ],
+            "device": [
+              117.385,
+              285.15308,
+              504.00278,
+              294.05963
+            ]
+          },
+          "content": {
+            "rnormalized": "Yao, Zhiwei Liu, Yihao Feng, et al. Apigen: Automated pipeline for generating verifiable and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              276.34601,
+              125.7139,
+              285.25256
+            ],
+            "device": [
+              117.963,
+              274.19409,
+              248.99109,
+              283.10065
+            ]
+          },
+          "content": {
+            "rnormalized": "diverse function-calling datasets."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              252.576,
+              276.34601,
+              274.71289,
+              284.9238
+            ],
+            "device": [
+              252.576,
+              274.42322,
+              384.7598,
+              283.00104
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint arXiv:2406.18518"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              384.759,
+              276.34601,
+              387.24966,
+              285.25256
+            ],
+            "device": [
+              384.759,
+              274.19409,
+              417.13748,
+              283.10065
+            ]
+          },
+          "content": {
+            "rnormalized": ", 2024b."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              257.61401,
+              114.20889,
+              266.52057
+            ],
+            "device": [
+              108,
+              255.4621,
+              503.99716,
+              264.36865
+            ]
+          },
+          "content": {
+            "rnormalized": "Todor Mihaylov, Peter Clark, Tushar Khot, and Ashish Sabharwal. Can a suit of armor conduct"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              246.65601,
+              163.11211,
+              255.56258
+            ],
+            "device": [
+              117.963,
+              244.50409,
+              364.15421,
+              253.41064
+            ]
+          },
+          "content": {
+            "rnormalized": "electricity? a new dataset for open book question answering."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              367.88199,
+              246.65601,
+              390.46161,
+              255.23381
+            ],
+            "device": [
+              367.88199,
+              244.73323,
+              502.70944,
+              253.31102
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint arXiv:1809.02789"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              502.70499,
+              246.65601,
+              505.24545,
+              255.56258
+            ],
+            "device": [
+              502.70499,
+              244.50409,
+              505.24545,
+              253.41064
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              235.69701,
+              140.37885,
+              244.60358
+            ],
+            "device": [
+              117.963,
+              233.54509,
+              140.37885,
+              242.45164
+            ]
+          },
+          "content": {
+            "rnormalized": "2018."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              216.965,
+              128.8826,
+              225.87157
+            ],
+            "device": [
+              108,
+              214.81308,
+              503.99719,
+              223.71964
+            ]
+          },
+          "content": {
+            "rnormalized": "Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and Mehrdad"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              206.006,
+              123.61298,
+              214.91257
+            ],
+            "device": [
+              117.963,
+              203.85408,
+              504.00165,
+              212.76064
+            ]
+          },
+          "content": {
+            "rnormalized": "Farajtabar. Gsm-symbolic: Understanding the limitations of mathematical reasoning in large"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              195.047,
+              153.92798,
+              203.95357
+            ],
+            "device": [
+              117.963,
+              192.89508,
+              236.10945,
+              201.80164
+            ]
+          },
+          "content": {
+            "rnormalized": "language models, 2024. URL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.599,
+              195.047,
+              244.41019,
+              203.34584
+            ],
+            "device": [
+              238.599,
+              192.8353,
+              391.55978,
+              201.13414
+            ]
+          },
+          "content": {
+            "rnormalized": "https://arxiv.org/abs/2410.05229"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              391.55798,
+              195.047,
+              394.04865,
+              203.95357
+            ],
+            "device": [
+              391.55798,
+              192.89508,
+              394.04865,
+              201.80164
+            ]
+          },
+          "content": {
+            "rnormalized": "."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              176.315,
+              141.30038,
+              185.22157
+            ],
+            "device": [
+              108,
+              174.16309,
+              505.65344,
+              183.06964
+            ]
+          },
+          "content": {
+            "rnormalized": "Mayank Mishra, Matt Stallone, Gaoyuan Zhang, Yikang Shen, Aditya Prasad, Adriana Meza So-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              165.356,
+              131.22421,
+              174.26257
+            ],
+            "device": [
+              117.963,
+              163.20409,
+              475.19269,
+              172.11064
+            ]
+          },
+          "content": {
+            "rnormalized": "ria, Michele Merler, Parameswaran Selvam, Saptha Surendran, Shivdeep Singh, et al."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              481.96048,
+              165.356,
+              505.65793,
+              174.26257
+            ],
+            "device": [
+              481.96048,
+              163.20409,
+              505.65793,
+              172.11064
+            ]
+          },
+          "content": {
+            "rnormalized": "Gran-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              154.397,
+              128.12485,
+              163.30357
+            ],
+            "device": [
+              117.963,
+              152.24509,
+              437.59384,
+              161.15164
+            ]
+          },
+          "content": {
+            "rnormalized": "ite code models: A family of open foundation models for code intelligence."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              444.84299,
+              154.397,
+              467.42261,
+              162.97481
+            ],
+            "device": [
+              444.84299,
+              152.47423,
+              503.99512,
+              161.05202
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              143.438,
+              190.73979,
+              152.01581
+            ],
+            "device": [
+              117.963,
+              141.51523,
+              190.73979,
+              150.09302
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv:2405.04324"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              190.739,
+              143.438,
+              193.22964,
+              152.34457
+            ],
+            "device": [
+              190.739,
+              141.28609,
+              218.13614,
+              150.19264
+            ]
+          },
+          "content": {
+            "rnormalized": ", 2024."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              124.706,
+              133.4921,
+              133.61256
+            ],
+            "device": [
+              108,
+              122.55408,
+              504.00137,
+              131.46065
+            ]
+          },
+          "content": {
+            "rnormalized": "Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, Binyuan Hui, Terry Yue Zhuo, Swayam"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              113.747,
+              144.22122,
+              122.65356
+            ],
+            "device": [
+              117.963,
+              111.59508,
+              504.00162,
+              120.50165
+            ]
+          },
+          "content": {
+            "rnormalized": "Singh, Xiangru Tang, Leandro Von Werra, and Shayne Longpre. Octopack: Instruction tuning"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              102.788,
+              136.77238,
+              111.69456
+            ],
+            "device": [
+              117.963,
+              100.63608,
+              231.21782,
+              109.54265
+            ]
+          },
+          "content": {
+            "rnormalized": "code large language models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              234.804,
+              102.788,
+              256.94089,
+              111.3658
+            ],
+            "device": [
+              234.804,
+              100.86522,
+              366.98779,
+              109.44302
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint arXiv:2308.07124"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              366.987,
+              102.788,
+              369.47766,
+              111.69456
+            ],
+            "device": [
+              366.987,
+              100.63608,
+              398.80756,
+              109.54265
+            ]
+          },
+          "content": {
+            "rnormalized": ", 2023a."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              84.056,
+              133.4921,
+              92.962563
+            ],
+            "device": [
+              108,
+              81.904076,
+              504.00137,
+              90.810638
+            ]
+          },
+          "content": {
+            "rnormalized": "Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, Binyuan Hui, Terry Yue Zhuo, Swayam"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              73.097,
+              143.1915,
+              82.003563
+            ],
+            "device": [
+              117.963,
+              70.945076,
+              503.996,
+              79.851639
+            ]
+          },
+          "content": {
+            "rnormalized": "Singh, Xiangru Tang, Leandro von Werra, and Shayne Longpre. Octopack: Instruction tuning code"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.963,
+              62.138,
+              128.47354,
+              71.044563
+            ],
+            "device": [
+              117.963,
+              59.98608,
+              209.91779,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": "large language models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              213.504,
+              62.138,
+              235.6409,
+              70.715797
+            ],
+            "device": [
+              213.504,
+              60.215218,
+              345.68777,
+              68.793015
+            ]
+          },
+          "content": {
+            "rnormalized": "arXiv preprint arXiv:2308.07124"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/AESXQO+NimbusRomNo9L-ReguItal",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              345.68701,
+              62.138,
+              348.17767,
+              71.044563
+            ],
+            "device": [
+              345.68701,
+              59.98608,
+              378.06549,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": ", 2023b."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.84402,
+              32.25,
+              310.80661,
+              41.156563
+            ],
+            "device": [
+              300.84402,
+              30.098078,
+              310.80661,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "41"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

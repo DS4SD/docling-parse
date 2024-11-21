@@ -157,9 +157,15 @@ namespace pdflib
 	return bbox[3];
       }
 
-    LOG_S(FATAL) << "properties does not have key 'Ascender': " 
-                 << properties.dump(2);
-
+    {
+      std::stringstream ss;
+      ss << "properties does not have key 'Ascender': " 
+	 << properties.dump(2);
+      
+      LOG_S(ERROR) << ss.str();
+      throw std::logic_error(ss.str());
+    }
+    
     return -1.;
   }
 
@@ -179,9 +185,15 @@ namespace pdflib
 	return bbox[1];
       }
 
-    LOG_S(FATAL) << "properties does not have key 'Descender': " 
-                 << properties.dump(2);
+    {
+      std::stringstream ss;
+      ss << "properties does not have key 'Descender': " 
+	 << properties.dump(2);
 
+      LOG_S(ERROR) << ss.str();
+      throw std::logic_error(ss.str());
+    }
+    
     return -1.;
   }
 
@@ -194,9 +206,15 @@ namespace pdflib
         return properties["FontBBox"].get<std::array<double, 4> >();
       }
 
-    LOG_S(FATAL) << "properties does not have key 'FontBBox': " 
-                 << properties.dump(2);
-
+    {
+      std::stringstream ss;
+      ss << "properties does not have key 'FontBBox': " 
+	 << properties.dump(2);
+      
+      LOG_S(ERROR) << ss.str();
+      throw std::logic_error(ss.str());
+    }
+    
     return {0.0, 0.0, 0.0, 0.0};
   }
 

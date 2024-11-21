@@ -196,7 +196,11 @@ namespace pdflib
       }
     catch(const std::exception& exc)
       {
-        LOG_S(FATAL) << "encountered an error: " << exc.what();
+	std::stringstream ss;
+	ss << "encountered an error: " << exc.what();
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
 
     return stream;
@@ -210,8 +214,15 @@ namespace pdflib
     if(utils::json::has(keys, json_xobject_dict))
       {        
         nlohmann::json json_matrix = utils::json::get(keys, json_xobject_dict);
-        assert(matrix.size()==json_matrix.size());
 
+        //assert(matrix.size()==json_matrix.size());
+	if(matrix.size()!=json_matrix.size())
+	  {
+	    std::string message = "matrix.size()!=json_matrix.size()";
+	    LOG_S(ERROR) << message;
+	    throw std::logic_error(message);
+	  }
+	
         for(int l=0; l<matrix.size(); l++)
           {
             matrix[l] = json_matrix[l].get<double>();
@@ -231,8 +242,15 @@ namespace pdflib
     if(utils::json::has(keys, json_xobject_dict))
       {        
         nlohmann::json json_bbox = utils::json::get(keys, json_xobject_dict);
-        assert(bbox.size()==json_bbox.size());
 
+        //assert(bbox.size()==json_bbox.size());
+	if(bbox.size()!=json_bbox.size())
+	  {
+	    std::string message = "matrix.size()!=json_matrix.size()";
+	    LOG_S(ERROR) << message;
+	    throw std::logic_error(message);
+	  }
+	
         for(int l=0; l<bbox.size(); l++)
           {
             bbox[l] = json_bbox[l].get<double>();

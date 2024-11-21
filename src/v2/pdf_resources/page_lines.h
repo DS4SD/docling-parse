@@ -67,7 +67,13 @@ namespace pdflib
 
   pdf_resource<PAGE_LINE>& pdf_resource<PAGE_LINES>::back()
   {
-    assert(lines.size()>0);
+    if(lines.size()==0)
+      {
+	std::string message = "can not retrieve a line, no lines are known";
+	LOG_S(ERROR) << message;
+	throw std::logic_error(message);
+      }
+    
     return lines.back();
   }
 

@@ -1,0 +1,5969 @@
+{
+  "annotations": {
+    "form": {
+      "/Fields": [
+        {
+          "/FT": "/Btn",
+          "/Kids": [
+            {
+              "/AP": {
+                "/D": {
+                  "/0": "1879 0 R [stream]",
+                  "/Off": "1881 0 R [stream]"
+                },
+                "/N": {
+                  "/0": "1883 0 R [stream]",
+                  "/Off": "1885 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/Helvetica 12 Tf 0 g",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                260.997,
+                320.999,
+                272.997,
+                332.999
+              ],
+              "/StructParent": 10,
+              "/Subtype": "/Widget",
+              "/TU": "YesNo",
+              "/Type": "/Annot"
+            },
+            {
+              "/AP": {
+                "/D": {
+                  "/1": "1891 0 R [stream]",
+                  "/Off": "1889 0 R [stream]"
+                },
+                "/N": {
+                  "/1": "1895 0 R [stream]",
+                  "/Off": "1893 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/ZapfDingbatsITC 8 Tf 0.000 0.000 0.502 rg",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                329.998,
+                320.999,
+                341.998,
+                332.999
+              ],
+              "/StructParent": 11,
+              "/Subtype": "/Widget",
+              "/TU": "YesNo",
+              "/Type": "/Annot"
+            }
+          ],
+          "/T": "form1[0].Page1[0].PartA[0].ModClaim[0].YesNo[0]"
+        },
+        {
+          "/FT": "/Btn",
+          "/Kids": [
+            {
+              "/AP": {
+                "/D": {
+                  "/0": "1852 0 R [stream]",
+                  "/Off": "1854 0 R [stream]"
+                },
+                "/N": {
+                  "/0": "1856 0 R [stream]",
+                  "/Off": "1858 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/Helvetica 12 Tf 0 g",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                260.997,
+                294.002,
+                272.997,
+                306.002
+              ],
+              "/StructParent": 12,
+              "/Subtype": "/Widget",
+              "/TU": "Language",
+              "/Type": "/Annot"
+            },
+            {
+              "/AP": {
+                "/D": {
+                  "/1": "1864 0 R [stream]",
+                  "/Off": "1862 0 R [stream]"
+                },
+                "/N": {
+                  "/1": "1868 0 R [stream]",
+                  "/Off": "1866 0 R [stream]"
+                }
+              },
+              "/AS": "/Off",
+              "/Border": [
+                0,
+                0,
+                0
+              ],
+              "/DA": "/ZapfDingbatsITC 8 Tf 0.000 0.000 0.502 rg",
+              "/F": 4,
+              "/Ff": 49152,
+              "/H": "/P",
+              "/MK": {
+                "/CA": "4"
+              },
+              "/Parent": "[skipping /Parent]",
+              "/Rect": [
+                329.998,
+                294.002,
+                341.998,
+                306.002
+              ],
+              "/StructParent": 13,
+              "/Subtype": "/Widget",
+              "/TU": "Language",
+              "/Type": "/Annot"
+            }
+          ],
+          "/T": "form1[0].Page1[0].PartA[0].Language[0].Language[0]"
+        },
+        {
+          "/AP": {
+            "/N": "1829 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/MaxLen": 6,
+          "/Rect": [
+            260.997,
+            156.999,
+            341.997,
+            173.999
+          ],
+          "/StructParent": 17,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].PostalCode_ZIP[0]",
+          "/TU": "Adresse postale. Code postal, 6 caract\u00e8res ou code ZIP, 5 chiffres.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1825 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            129.999,
+            431.997,
+            146.999
+          ],
+          "/StructParent": 18,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].Country[0]",
+          "/TU": "Adresse postale. Pays.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1899 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 9,
+          "/Rect": [
+            261.997,
+            379,
+            394.997,
+            396
+          ],
+          "/StructParent": 9,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].NAS[0].RequestorNAS[0].NAS[0]",
+          "/TU": "Num\u00e9ro d'assurance sociale, s'il y a lieu. 9 chiffres.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1837 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            210.999,
+            584.997,
+            227.999
+          ],
+          "/StructParent": 15,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].City[0]",
+          "/TU": "Adresse postale. Ville.",
+          "/Type": "/Annot",
+          "/V": "granville"
+        },
+        {
+          "/AP": {
+            "/N": "1911 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 9,
+          "/Rect": [
+            261.997,
+            406,
+            394.997,
+            423
+          ],
+          "/StructParent": 6,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT1[0]",
+          "/TU": "9 premiers chiffres du num\u00e9ro d'entreprise, s'il y lieu.",
+          "/Type": "/Annot",
+          "/V": "123456789"
+        },
+        {
+          "/AP": {
+            "/N": "1903 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 4,
+          "/Rect": [
+            426.996,
+            406,
+            484.997,
+            423
+          ],
+          "/StructParent": 8,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT2[0]",
+          "/TU": "4 derniers chiffres du num\u00e9ro d'entreprise, s'il y a lieu.",
+          "/Type": "/Annot",
+          "/V": "ABCD"
+        }
+      ],
+      "/NeedAppearances": true
+    },
+    "language": null,
+    "meta_xml": "<?xpacket begin=\"\ufeff\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 9.1-c001 79.2a0d8d9, 2023/03/14-11:19:46        \">\n   <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n      <rdf:Description rdf:about=\"\"\n            xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\"\n            xmlns:pdf=\"http://ns.adobe.com/pdf/1.3/\"\n            xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\"\n            xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n            xmlns:desc=\"http://ns.adobe.com/xfa/promoted-desc/\">\n         <xmp:MetadataDate>2024-11-13T08:53:33-05:00</xmp:MetadataDate>\n         <xmp:CreatorTool>Designer 6.3</xmp:CreatorTool>\n         <xmp:ModifyDate>2024-11-13T08:53:33-05:00</xmp:ModifyDate>\n         <xmp:CreateDate>2024-11-05T15:51:49-05:00</xmp:CreateDate>\n         <pdf:Producer>Designer 6.3</pdf:Producer>\n         <xmpMM:DocumentID>uuid:144e49e2-10ea-4ef7-bc13-7ce868207abe</xmpMM:DocumentID>\n         <xmpMM:InstanceID>uuid:b90d14d0-2f91-42bb-a217-916c50aaff44</xmpMM:InstanceID>\n         <dc:format>application/pdf</dc:format>\n         <dc:date>\n            <rdf:Seq>\n               <rdf:li rdf:parseType=\"Resource\">\n                  <rdf:value>2013-06-05</rdf:value>\n                  <dc:element-refinement>dc:created</dc:element-refinement>\n               </rdf:li>\n               <rdf:li rdf:parseType=\"Resource\">\n                  <rdf:value>2013-07-05</rdf:value>\n                  <dc:element-refinement>dc:issued</dc:element-refinement>\n               </rdf:li>\n            </rdf:Seq>\n         </dc:date>\n         <dc:title>\n            <rdf:Alt>\n               <rdf:li xml:lang=\"x-default\">Demande de remboursement de la partie provinciale de la taxe de vente harmonis\u00e9e (TVH)</rdf:li>\n            </rdf:Alt>\n         </dc:title>\n         <desc:version rdf:parseType=\"Resource\">\n            <rdf:value>1.0</rdf:value>\n            <desc:ref>/template/subform[1]</desc:ref>\n         </desc:version>\n         <desc:CRAObjectVersion rdf:parseType=\"Resource\">\n            <rdf:value>Release 6.0.8 - May, 2019</rdf:value>\n            <desc:ref>/template/subform[1]/pageSet[1]/pageArea[1]/field[1]</desc:ref>\n         </desc:CRAObjectVersion>\n         <desc:CRAObjectName rdf:parseType=\"Resource\">\n            <rdf:value>ClearData_FR</rdf:value>\n            <desc:ref>/template/subform[1]/pageSet[1]/pageArea[1]/field[1]</desc:ref>\n         </desc:CRAObjectName>\n         <desc:embeddedHref rdf:parseType=\"Resource\">\n            <rdf:value>X:\\Object_Library\\Graphics\\Accessible\\FIP_n_Wordmark\\CRA-FIP-9pt-RGB-1200-f.png</rdf:value>\n            <desc:ref>/template/subform[1]/subform[1]/draw[1]</desc:ref>\n         </desc:embeddedHref>\n      </rdf:Description>\n   </rdf:RDF>\n</x:xmpmeta>\n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                                                                                                    \n                           \n<?xpacket end=\"w\"?>",
+    "table_of_contents": null
+  },
+  "info": {
+    "#-pages": 5,
+    "filename": ""
+  },
+  "pages": [
+    {
+      "annotations": [
+        {
+          "/AP": {
+            "/N": "1935 0 R [stream]"
+          },
+          "/BS": {
+            "/S": "/B"
+          },
+          "/Border": [
+            0,
+            0,
+            1
+          ],
+          "/DA": "/Helvetica 10 Tf 0 g",
+          "/F": 4,
+          "/FT": "/Btn",
+          "/Ff": 65536,
+          "/MK": {
+            "/BC": [
+              0,
+              0,
+              0
+            ],
+            "/BG": [
+              0.0823517,
+              0.823532,
+              0.909805
+            ],
+            "/CA": "Effacer les donn\u00e9es"
+          },
+          "/OC": {
+            "/Name": "ViewOnly Layer",
+            "/Type": "/OCG",
+            "/Usage": {
+              "/CreatorInfo": {
+                "/Creator": "AcroForm",
+                "/Subtype": "Artwork"
+              },
+              "/Print": {
+                "/PrintState": "/OFF"
+              },
+              "/View": {
+                "/ViewState": "/ON"
+              }
+            }
+          },
+          "/Rect": [
+            495,
+            774.003,
+            591.001,
+            789.001
+          ],
+          "/StructParent": 0,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].#pageSet[0].Page1[0].ClearData_FR[0]",
+          "/TU": "Effacer les donn\u00e9es",
+          "/Type": "/Annot",
+          "/V": "/Off"
+        },
+        {
+          "/A": {
+            "/S": "/URI",
+            "/URI": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/gst189.html"
+          },
+          "/AP": {
+            "/N": "1929 0 R [stream]"
+          },
+          "/BS": {
+            "/W": 0
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica 12 Tf 0 g",
+          "/F": 4,
+          "/Rect": [
+            365.469,
+            589.47,
+            557.219,
+            601.03
+          ],
+          "/StructParent": 2,
+          "/Subtype": "/Link",
+          "/Type": "/Annot"
+        },
+        {
+          "/A": {
+            "/S": "/URI",
+            "/URI": "https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/gst189.html"
+          },
+          "/AP": {
+            "/N": "1924 0 R [stream]"
+          },
+          "/BS": {
+            "/W": 0
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica 12 Tf 0 g",
+          "/F": 4,
+          "/Rect": [
+            26.999,
+            578.47,
+            166.489,
+            590.03
+          ],
+          "/StructParent": 3,
+          "/Subtype": "/Link",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1919 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            466.001,
+            584.997,
+            483.001
+          ],
+          "/StructParent": 4,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].LastName[0].LastName[0]",
+          "/TU": "Nom de famille du demandeur, particuliers seulement, de l'entreprise ou de l'organisation. Inscrivez le nom commercial, s'il y a lieu.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1915 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            433,
+            584.997,
+            450
+          ],
+          "/StructParent": 5,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].FirstName[0].FirstName[0]",
+          "/TU": "Pr\u00e9nom et initiales du demandeur, particuliers seulement.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1911 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 9,
+          "/Rect": [
+            261.997,
+            406,
+            394.997,
+            423
+          ],
+          "/StructParent": 6,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT1[0]",
+          "/TU": "9 premiers chiffres du num\u00e9ro d'entreprise, s'il y lieu.",
+          "/Type": "/Annot",
+          "/V": "123456789"
+        },
+        {
+          "/AP": {
+            "/N": "1907 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 10 Tf 0 g",
+          "/DV": "RT",
+          "/F": 68,
+          "/FT": "/Tx",
+          "/Ff": 25165825,
+          "/MK": null,
+          "/MaxLen": 2,
+          "/Q": 1,
+          "/Rect": [
+            396.997,
+            406,
+            424.996,
+            423
+          ],
+          "/StructParent": 7,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT[0]",
+          "/TU": "BusinessNumber_RT",
+          "/Type": "/Annot",
+          "/V": "RT"
+        },
+        {
+          "/AP": {
+            "/N": "1903 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 4,
+          "/Rect": [
+            426.996,
+            406,
+            484.997,
+            423
+          ],
+          "/StructParent": 8,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].BusinessNumber[0].BusinessNumber[0].BusinessNumber_RT2[0]",
+          "/TU": "4 derniers chiffres du num\u00e9ro d'entreprise, s'il y a lieu.",
+          "/Type": "/Annot",
+          "/V": "ABCD"
+        },
+        {
+          "/AP": {
+            "/N": "1899 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 25165824,
+          "/MK": null,
+          "/MaxLen": 9,
+          "/Rect": [
+            261.997,
+            379,
+            394.997,
+            396
+          ],
+          "/StructParent": 9,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].NAS[0].RequestorNAS[0].NAS[0]",
+          "/TU": "Num\u00e9ro d'assurance sociale, s'il y a lieu. 9 chiffres.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/D": {
+              "/0": "1879 0 R [stream]",
+              "/Off": "1881 0 R [stream]"
+            },
+            "/N": {
+              "/0": "1883 0 R [stream]",
+              "/Off": "1885 0 R [stream]"
+            }
+          },
+          "/AS": "/Off",
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica 12 Tf 0 g",
+          "/F": 4,
+          "/Ff": 49152,
+          "/H": "/P",
+          "/MK": {
+            "/CA": "4"
+          },
+          "/Parent": "[skipping /Parent]",
+          "/Rect": [
+            260.997,
+            320.999,
+            272.997,
+            332.999
+          ],
+          "/StructParent": 10,
+          "/Subtype": "/Widget",
+          "/TU": "YesNo",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/D": {
+              "/1": "1891 0 R [stream]",
+              "/Off": "1889 0 R [stream]"
+            },
+            "/N": {
+              "/1": "1895 0 R [stream]",
+              "/Off": "1893 0 R [stream]"
+            }
+          },
+          "/AS": "/Off",
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/ZapfDingbatsITC 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/Ff": 49152,
+          "/H": "/P",
+          "/MK": {
+            "/CA": "4"
+          },
+          "/Parent": "[skipping /Parent]",
+          "/Rect": [
+            329.998,
+            320.999,
+            341.998,
+            332.999
+          ],
+          "/StructParent": 11,
+          "/Subtype": "/Widget",
+          "/TU": "YesNo",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/D": {
+              "/0": "1852 0 R [stream]",
+              "/Off": "1854 0 R [stream]"
+            },
+            "/N": {
+              "/0": "1856 0 R [stream]",
+              "/Off": "1858 0 R [stream]"
+            }
+          },
+          "/AS": "/Off",
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica 12 Tf 0 g",
+          "/F": 4,
+          "/Ff": 49152,
+          "/H": "/P",
+          "/MK": {
+            "/CA": "4"
+          },
+          "/Parent": "[skipping /Parent]",
+          "/Rect": [
+            260.997,
+            294.002,
+            272.997,
+            306.002
+          ],
+          "/StructParent": 12,
+          "/Subtype": "/Widget",
+          "/TU": "Language",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/D": {
+              "/1": "1864 0 R [stream]",
+              "/Off": "1862 0 R [stream]"
+            },
+            "/N": {
+              "/1": "1868 0 R [stream]",
+              "/Off": "1866 0 R [stream]"
+            }
+          },
+          "/AS": "/Off",
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/ZapfDingbatsITC 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/Ff": 49152,
+          "/H": "/P",
+          "/MK": {
+            "/CA": "4"
+          },
+          "/Parent": "[skipping /Parent]",
+          "/Rect": [
+            329.998,
+            294.002,
+            341.998,
+            306.002
+          ],
+          "/StructParent": 13,
+          "/Subtype": "/Widget",
+          "/TU": "Language",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1841 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            237.999,
+            584.997,
+            254.999
+          ],
+          "/StructParent": 14,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].MailingAddress[0]",
+          "/TU": "Adresse postale. Num\u00e9ro d'unit\u00e9, num\u00e9ro et rue, case postale, route rurale.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1837 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            210.999,
+            584.997,
+            227.999
+          ],
+          "/StructParent": 15,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].City[0]",
+          "/TU": "Adresse postale. Ville.",
+          "/Type": "/Annot",
+          "/V": "granville"
+        },
+        {
+          "/AP": {
+            "/N": "1833 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Ch",
+          "/Ff": 67502080,
+          "/MK": null,
+          "/Opt": [
+            [
+              " ",
+              " "
+            ],
+            [
+              "AB",
+              "Alberta"
+            ],
+            [
+              "BC",
+              "Colombie-Britannique"
+            ],
+            [
+              "PE",
+              "\u00cele-du-Prince-\u00c9douard"
+            ],
+            [
+              "MB",
+              "Manitoba"
+            ],
+            [
+              "NB",
+              "Nouveau-Brunswick"
+            ],
+            [
+              "NS",
+              "Nouvelle-\u00c9cosse"
+            ],
+            [
+              "NU",
+              "Nunavut"
+            ],
+            [
+              "ON",
+              "Ontario"
+            ],
+            [
+              "QC",
+              "Qu\u00e9bec"
+            ],
+            [
+              "SK",
+              "Saskatchewan"
+            ],
+            [
+              "NL",
+              "Terre-Neuve-et-Labrador"
+            ],
+            [
+              "NT",
+              "Territoires du Nord-Ouest"
+            ],
+            [
+              "YT",
+              "Yukon"
+            ],
+            [
+              " ",
+              "--------------------"
+            ],
+            [
+              "AL",
+              "Alabama"
+            ],
+            [
+              "AK",
+              "Alaska"
+            ],
+            [
+              "AZ",
+              "Arizona"
+            ],
+            [
+              "AR",
+              "Arkansas"
+            ],
+            [
+              "CA",
+              "Californie"
+            ],
+            [
+              "NC",
+              "Caroline du Nord"
+            ],
+            [
+              "SC",
+              "Caroline du Sud"
+            ],
+            [
+              "CO",
+              "Colorado"
+            ],
+            [
+              "CT",
+              "Connecticut"
+            ],
+            [
+              "ND",
+              "Dakota du Nord"
+            ],
+            [
+              "SD",
+              "Dakota du Sud"
+            ],
+            [
+              "DE",
+              "Delaware"
+            ],
+            [
+              "DC",
+              "District de Columbia"
+            ],
+            [
+              "FL",
+              "Floride"
+            ],
+            [
+              "GA",
+              "G\u00e9orgie"
+            ],
+            [
+              "HI",
+              "Hawaii"
+            ],
+            [
+              "ID",
+              "Idaho"
+            ],
+            [
+              "IL",
+              "Illinois"
+            ],
+            [
+              "IN",
+              "Indiana"
+            ],
+            [
+              "IA",
+              "Iowa"
+            ],
+            [
+              "KS",
+              "Kansas"
+            ],
+            [
+              "KY",
+              "Kentucky"
+            ],
+            [
+              "LA",
+              "Louisiane"
+            ],
+            [
+              "ME",
+              "Maine"
+            ],
+            [
+              "MD",
+              "Maryland"
+            ],
+            [
+              "MA",
+              "Massachusetts"
+            ],
+            [
+              "MI",
+              "Michigan"
+            ],
+            [
+              "MN",
+              "Minnesota"
+            ],
+            [
+              "MS",
+              "Mississippi"
+            ],
+            [
+              "MO",
+              "Missouri"
+            ],
+            [
+              "MT",
+              "Montana"
+            ],
+            [
+              "NE",
+              "Nebraska"
+            ],
+            [
+              "NV",
+              "Nevada"
+            ],
+            [
+              "NH",
+              "New Hampshire"
+            ],
+            [
+              "NJ",
+              "New Jersey"
+            ],
+            [
+              "NY",
+              "New York"
+            ],
+            [
+              "NM",
+              "Nouveau-Mexique"
+            ],
+            [
+              "OH",
+              "Ohio"
+            ],
+            [
+              "OK",
+              "Oklahoma"
+            ],
+            [
+              "OR",
+              "Oregon"
+            ],
+            [
+              "PA",
+              "Pennsylvanie"
+            ],
+            [
+              "RI",
+              "Rhode Island"
+            ],
+            [
+              "TN",
+              "Tennessee"
+            ],
+            [
+              "TX",
+              "Texas"
+            ],
+            [
+              "UT",
+              "Utah"
+            ],
+            [
+              "VT",
+              "Vermont"
+            ],
+            [
+              "VA",
+              "Virginie"
+            ],
+            [
+              "WV",
+              "Virginie-Occidentale"
+            ],
+            [
+              "WA",
+              "Washington"
+            ],
+            [
+              "WI",
+              "Wisconsin"
+            ],
+            [
+              "WY",
+              "Wyoming"
+            ]
+          ],
+          "/Rect": [
+            261.997,
+            183.999,
+            431.997,
+            200.999
+          ],
+          "/StructParent": 16,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].Prov_DropDown[0]",
+          "/TU": "Adresse postale. Choisissez votre province, territoire ou \u00e9tat \u00e0 partir du menu. S'il n'est pas l\u00e0 \u00e9crivez-le manuellement.",
+          "/Type": "/Annot"
+        },
+        {
+          "/AP": {
+            "/N": "1829 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/MaxLen": 6,
+          "/Rect": [
+            260.997,
+            156.999,
+            341.997,
+            173.999
+          ],
+          "/StructParent": 17,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].PostalCode_ZIP[0]",
+          "/TU": "Adresse postale. Code postal, 6 caract\u00e8res ou code ZIP, 5 chiffres.",
+          "/Type": "/Annot",
+          "/V": ""
+        },
+        {
+          "/AP": {
+            "/N": "1825 0 R [stream]"
+          },
+          "/Border": [
+            0,
+            0,
+            0
+          ],
+          "/DA": "/Helvetica-Bold 8 Tf 0.000 0.000 0.502 rg",
+          "/F": 4,
+          "/FT": "/Tx",
+          "/Ff": 8388608,
+          "/MK": null,
+          "/Rect": [
+            260.997,
+            129.999,
+            431.997,
+            146.999
+          ],
+          "/StructParent": 18,
+          "/Subtype": "/Widget",
+          "/T": "form1[0].Page1[0].PartA[0].MailingAddress[0].Country[0]",
+          "/TU": "Adresse postale. Pays.",
+          "/Type": "/Annot",
+          "/V": ""
+        }
+      ],
+      "original": {
+        "cells": {
+          "data": [
+            [
+              482.748,
+              757.42,
+              529.978,
+              767.42,
+              482.748,
+              757.42,
+              529.978,
+              757.42,
+              529.978,
+              767.42,
+              482.748,
+              767.42,
+              "Prot\u00e9g\u00e9 B",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              529.978,
+              757.65,
+              590.998,
+              766.65,
+              529.978,
+              757.65,
+              590.998,
+              757.65,
+              590.998,
+              766.65,
+              529.978,
+              766.65,
+              " une fois rempli",
+              -1,
+              2.502,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              131.721,
+              717.972,
+              484.171,
+              731.972,
+              131.721,
+              717.972,
+              484.171,
+              717.972,
+              484.171,
+              731.972,
+              131.721,
+              731.972,
+              "Demande de remboursement de la partie provinciale ",
+              -1,
+              3.892,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              181.897,
+              702.978,
+              430.089,
+              716.978,
+              181.897,
+              702.978,
+              430.089,
+              702.978,
+              430.089,
+              716.978,
+              181.897,
+              716.978,
+              "de la taxe de vente harmonis\u00e9e (TVH)",
+              -1,
+              3.892,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              502.013,
+              679.837,
+              570.213,
+              687.837,
+              502.013,
+              679.837,
+              570.213,
+              679.837,
+              570.213,
+              687.837,
+              502.013,
+              687.837,
+              "N\u2019inscrivez rien ici. ",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              673.95,
+              444.479,
+              683.95,
+              20.999,
+              673.95,
+              444.479,
+              673.95,
+              444.479,
+              683.95,
+              20.999,
+              683.95,
+              "Remplissez ce formulaire pour demander un remboursement si vous avez pay\u00e9 la TVH sur des ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              662.95,
+              372.259,
+              672.95,
+              20.999,
+              662.95,
+              372.259,
+              662.95,
+              372.259,
+              672.95,
+              20.999,
+              672.95,
+              "produits (les biens meubles corporels) achet\u00e9s dans une province participante  ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              651.95,
+              384.379,
+              661.95,
+              20.999,
+              651.95,
+              384.379,
+              651.95,
+              384.379,
+              661.95,
+              20.999,
+              661.95,
+              "(l\u2019\u00bale-du-Prince-\u00c9douard, le Nouveau-Brunswick, la Nouvelle-\u00c9cosse, l\u2019Ontario ou  ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              640.95,
+              427.849,
+              650.95,
+              20.999,
+              640.95,
+              427.849,
+              640.95,
+              427.849,
+              650.95,
+              20.999,
+              650.95,
+              "Terre-Neuve-et-Labrador), et transf\u00e9r\u00e9s dans une province non participante ou autre r\u00e9gion ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              629.95,
+              414.539,
+              639.95,
+              20.999,
+              629.95,
+              414.539,
+              629.95,
+              414.539,
+              639.95,
+              20.999,
+              639.95,
+              "du Canada ou dans une autre province participante dont le taux de TVH est moins \u00e9lev\u00e9.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              26.999,
+              611.42,
+              78.679,
+              621.42,
+              26.999,
+              611.42,
+              78.679,
+              611.42,
+              78.679,
+              621.42,
+              26.999,
+              621.42,
+              "Remarque ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              26.999,
+              600.42,
+              90.509,
+              610.42,
+              26.999,
+              600.42,
+              90.509,
+              600.42,
+              90.509,
+              610.42,
+              26.999,
+              610.42,
+              "N\u2019utilisez pas",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              90.509,
+              600.42,
+              579.609,
+              610.42,
+              90.509,
+              600.42,
+              579.609,
+              600.42,
+              579.609,
+              610.42,
+              90.509,
+              610.42,
+              " ce formulaire pour demander un remboursement de TVH que vous avez pay\u00e9e sur des services ou des biens ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              26.999,
+              589.42,
+              365.469,
+              599.42,
+              26.999,
+              589.42,
+              365.469,
+              589.42,
+              365.469,
+              599.42,
+              26.999,
+              599.42,
+              "meubles incorporels acquis dans une province participante. Utilisez plut\u00f4t le ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              365.469,
+              589.42,
+              557.219,
+              599.42,
+              365.469,
+              589.42,
+              557.219,
+              589.42,
+              557.219,
+              599.42,
+              365.469,
+              599.42,
+              "formulaire GST189, Demande g\u00e9n\u00e9rale de ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              26.999,
+              578.42,
+              166.489,
+              588.42,
+              26.999,
+              578.42,
+              166.489,
+              578.42,
+              166.489,
+              588.42,
+              26.999,
+              588.42,
+              "remboursement de la TPS/TVH",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              166.489,
+              578.42,
+              252.639,
+              588.42,
+              166.489,
+              578.42,
+              252.639,
+              578.42,
+              252.639,
+              588.42,
+              166.489,
+              588.42,
+              " (code de motif 13).",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              559.95,
+              329.409,
+              569.95,
+              20.999,
+              559.95,
+              329.409,
+              559.95,
+              329.409,
+              569.95,
+              20.999,
+              569.95,
+              "Cette demande de remboursement peut faire l\u2019objet d\u2019une v\u00e9rification.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              541.95,
+              178.849,
+              551.95,
+              20.999,
+              541.95,
+              178.849,
+              541.95,
+              178.849,
+              551.95,
+              20.999,
+              551.95,
+              "Pour en savoir plus, lisez la page 5.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              511.478,
+              242.383,
+              523.478,
+              22.999,
+              511.478,
+              242.383,
+              511.478,
+              242.383,
+              523.478,
+              22.999,
+              523.478,
+              "Partie A \u2014 Identification du demandeur",
+              -1,
+              3.336,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              488.451,
+              226.168,
+              498.451,
+              34.998,
+              488.451,
+              226.168,
+              488.451,
+              226.168,
+              498.451,
+              34.998,
+              498.451,
+              "Nom de famille du demandeur (particuliers ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              477.451,
+              244.468,
+              487.451,
+              34.998,
+              477.451,
+              244.468,
+              477.451,
+              244.468,
+              487.451,
+              34.998,
+              487.451,
+              "seulement), de l\u2019entreprise ou de l\u2019organisation ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              466.451,
+              224.158,
+              476.451,
+              34.998,
+              466.451,
+              224.158,
+              466.451,
+              224.158,
+              476.451,
+              34.998,
+              476.451,
+              "(inscrivez le nom commercial, s\u2019il y a lieu) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              443.951,
+              241.738,
+              453.951,
+              34.998,
+              443.951,
+              241.738,
+              443.951,
+              241.738,
+              453.951,
+              34.998,
+              453.951,
+              "Pr\u00e9nom et initiales du demandeur (particuliers ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              432.951,
+              90.018,
+              442.951,
+              34.998,
+              432.951,
+              90.018,
+              432.951,
+              90.018,
+              442.951,
+              34.998,
+              442.951,
+              "seulement) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              408.45,
+              186.078,
+              418.45,
+              34.998,
+              408.45,
+              186.078,
+              408.45,
+              186.078,
+              418.45,
+              34.998,
+              418.45,
+              "Num\u00e9ro d\u2019entreprise (s\u2019il y a lieu) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              381.45,
+              246.088,
+              391.45,
+              34.998,
+              381.45,
+              246.088,
+              381.45,
+              246.088,
+              391.45,
+              34.998,
+              391.45,
+              "Num\u00e9ro d\u2019assurance social (NAS) (s\u2019il y a lieu) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              350.979,
+              213.495,
+              361.979,
+              34.998,
+              350.979,
+              213.495,
+              350.979,
+              213.495,
+              361.979,
+              34.998,
+              361.979,
+              "Renseignements suppl\u00e9mentaires",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              329.95,
+              230.088,
+              339.95,
+              34.998,
+              329.95,
+              230.088,
+              329.95,
+              230.088,
+              339.95,
+              34.998,
+              339.95,
+              "Cette demande modifie-t-elle une demande ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              318.95,
+              90.588,
+              328.95,
+              34.998,
+              318.95,
+              90.588,
+              318.95,
+              90.588,
+              328.95,
+              34.998,
+              328.95,
+              "pr\u00e9c\u00e9dente?",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              278.997,
+              321.919,
+              294.557,
+              331.919,
+              278.997,
+              321.919,
+              294.557,
+              321.919,
+              294.557,
+              331.919,
+              278.997,
+              331.919,
+              "Oui",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              347.998,
+              321.919,
+              366.338,
+              331.919,
+              347.998,
+              321.919,
+              366.338,
+              321.919,
+              366.338,
+              331.919,
+              347.998,
+              331.919,
+              "Non",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              294.449,
+              162.298,
+              304.449,
+              34.998,
+              294.449,
+              162.298,
+              294.449,
+              162.298,
+              304.449,
+              34.998,
+              304.449,
+              "Langue de correspondance :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              278.997,
+              294.922,
+              317.337,
+              304.922,
+              278.997,
+              294.922,
+              317.337,
+              294.922,
+              317.337,
+              304.922,
+              278.997,
+              304.922,
+              "Fran\u00e7ais",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              347.998,
+              294.922,
+              380.788,
+              304.922,
+              347.998,
+              294.922,
+              380.788,
+              294.922,
+              380.788,
+              304.922,
+              347.998,
+              304.922,
+              "Anglais",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              263.978,
+              119.973,
+              274.978,
+              34.998,
+              263.978,
+              119.973,
+              263.978,
+              119.973,
+              274.978,
+              34.998,
+              274.978,
+              "Adresse postale",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              241.919,
+              172.188,
+              251.919,
+              34.998,
+              241.919,
+              172.188,
+              241.919,
+              172.188,
+              251.919,
+              34.998,
+              251.919,
+              "N\u00a1 d\u2019unit\u00e9 \u2014 n\u00a1 et rue, CP, RR :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              214.919,
+              59.448,
+              224.919,
+              34.998,
+              214.919,
+              59.448,
+              214.919,
+              59.448,
+              224.919,
+              34.998,
+              224.919,
+              "Ville :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              186.919,
+              155.048,
+              196.919,
+              34.998,
+              186.919,
+              155.048,
+              186.919,
+              155.048,
+              196.919,
+              34.998,
+              196.919,
+              "Province, territoire ou \u00e9tat :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              160.919,
+              126.158,
+              170.919,
+              34.998,
+              160.919,
+              126.158,
+              160.919,
+              126.158,
+              170.919,
+              34.998,
+              170.919,
+              "Code postal ou ZIP :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              133.919,
+              62.788,
+              143.919,
+              34.998,
+              133.919,
+              62.788,
+              133.919,
+              62.788,
+              143.919,
+              34.998,
+              143.919,
+              "Pays :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              93.92,
+              115.229,
+              103.92,
+              22.999,
+              93.92,
+              115.229,
+              93.92,
+              115.229,
+              103.92,
+              22.999,
+              103.92,
+              "\u00b8 USAGE INTERNE",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              22.999,
+              76.95,
+              32.999,
+              86.95,
+              22.999,
+              76.95,
+              32.999,
+              76.95,
+              32.999,
+              86.95,
+              22.999,
+              86.95,
+              "IC",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              199.78,
+              76.95,
+              214.22,
+              86.95,
+              199.78,
+              76.95,
+              214.22,
+              76.95,
+              214.22,
+              86.95,
+              199.78,
+              86.95,
+              "NC",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              18.96,
+              74.351,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              26.96,
+              "GST495 F (24)",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              246.207,
+              18.96,
+              365.791,
+              26.96,
+              246.207,
+              18.96,
+              365.791,
+              18.96,
+              365.791,
+              26.96,
+              246.207,
+              26.96,
+              "(This form is available in English.)",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              406.855,
+              19.336,
+              449.999,
+              27.336,
+              406.855,
+              19.336,
+              449.999,
+              19.336,
+              449.999,
+              27.336,
+              406.855,
+              27.336,
+              "Page 1 de 5",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              495.0,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              774.003,
+              591.001,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              789.001,
+              "/Off",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              261.997,
+              406.0,
+              394.997,
+              423.0,
+              261.997,
+              406.0,
+              394.997,
+              406.0,
+              394.997,
+              423.0,
+              261.997,
+              423.0,
+              "123456789",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              396.997,
+              406.0,
+              424.996,
+              423.0,
+              396.997,
+              406.0,
+              424.996,
+              406.0,
+              424.996,
+              423.0,
+              396.997,
+              423.0,
+              "RT",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              426.996,
+              406.0,
+              484.997,
+              423.0,
+              426.996,
+              406.0,
+              484.997,
+              406.0,
+              484.997,
+              423.0,
+              426.996,
+              423.0,
+              "ABCD",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              261.997,
+              379.0,
+              394.997,
+              396.0,
+              261.997,
+              379.0,
+              394.997,
+              379.0,
+              394.997,
+              396.0,
+              261.997,
+              396.0,
+              "",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              260.997,
+              210.999,
+              584.997,
+              227.999,
+              260.997,
+              210.999,
+              584.997,
+              210.999,
+              584.997,
+              227.999,
+              260.997,
+              227.999,
+              "granville",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              260.997,
+              156.999,
+              341.997,
+              173.999,
+              260.997,
+              156.999,
+              341.997,
+              156.999,
+              341.997,
+              173.999,
+              260.997,
+              173.999,
+              "",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              260.997,
+              129.999,
+              431.997,
+              146.999,
+              260.997,
+              129.999,
+              431.997,
+              129.999,
+              431.997,
+              146.999,
+              260.997,
+              146.999,
+              "",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ]
+          ],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1",
+            "r_x0",
+            "r_y0",
+            "r_x1",
+            "r_y1",
+            "r_x2",
+            "r_y2",
+            "r_x3",
+            "r_y3",
+            "text",
+            "rendering-mode",
+            "space-width",
+            "encoding-name",
+            "font-encoding",
+            "font-key",
+            "font-name",
+            "widget"
+          ]
+        },
+        "dimension": {
+          "angle": 0,
+          "bbox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "height": 792.0,
+          "rectangles": {
+            "art-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "bleed-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "crop-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "media-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "trim-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ]
+          },
+          "width": 612.0
+        },
+        "images": {
+          "data": [
+            [
+              20.998989999999992,
+              749.2868,
+              221.21989,
+              768.00128
+            ],
+            [
+              486.0,
+              19.990370000000013,
+              586.7103,
+              45.00299000000001
+            ]
+          ],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1"
+          ]
+        },
+        "lines": [
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              477.0,
+              591.001,
+              591.001,
+              477.0,
+              477.0
+            ],
+            "y": [
+              624.002,
+              624.002,
+              690.001,
+              690.001,
+              624.002
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.469,
+              554.439
+            ],
+            "y": [
+              590.796,
+              590.796
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              26.999,
+              166.489
+            ],
+            "y": [
+              579.796,
+              579.796
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              20.749,
+              591.248
+            ],
+            "y": [
+              528.001,
+              528.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              466.001,
+              466.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              433.0,
+              433.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              396.247
+            ],
+            "y": [
+              405.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              395.997,
+              395.997
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              395.747,
+              426.246
+            ],
+            "y": [
+              405.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              410.998,
+              410.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              425.746,
+              486.247
+            ],
+            "y": [
+              405.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              425.996,
+              425.996
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              440.997,
+              440.997
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              455.998,
+              455.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              470.996,
+              470.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              485.997,
+              485.997
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              396.247
+            ],
+            "y": [
+              378.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.999,
+              290.999
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.999,
+              335.999
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.999,
+              380.999
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              395.997,
+              395.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              32.748,
+              585.247
+            ],
+            "y": [
+              366.001,
+              366.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              260.997,
+              272.997,
+              272.997,
+              260.997,
+              260.997
+            ],
+            "y": [
+              320.999,
+              320.999,
+              332.999,
+              332.999,
+              320.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              329.998,
+              341.998,
+              341.998,
+              329.998,
+              329.998
+            ],
+            "y": [
+              320.999,
+              320.999,
+              332.999,
+              332.999,
+              320.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              260.997,
+              272.997,
+              272.997,
+              260.997,
+              260.997
+            ],
+            "y": [
+              294.002,
+              294.002,
+              306.002,
+              306.002,
+              294.002
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              329.998,
+              341.998,
+              341.998,
+              329.998,
+              329.998
+            ],
+            "y": [
+              294.002,
+              294.002,
+              306.002,
+              306.002,
+              294.002
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              32.748,
+              585.247
+            ],
+            "y": [
+              279.0,
+              279.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              237.999,
+              237.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              210.999,
+              210.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              261.747,
+              432.247
+            ],
+            "y": [
+              183.999,
+              183.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              342.247
+            ],
+            "y": [
+              156.999,
+              156.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              432.247
+            ],
+            "y": [
+              129.999,
+              129.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              20.999,
+              590.998,
+              590.998,
+              20.999,
+              20.999
+            ],
+            "y": [
+              72.0,
+              72.0,
+              108.0,
+              108.0,
+              72.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              36.0,
+              65.999,
+              65.999,
+              36.0,
+              36.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              36.0,
+              65.999,
+              65.999,
+              36.0,
+              36.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              68.998,
+              98.997,
+              98.997,
+              68.998,
+              68.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              68.998,
+              98.997,
+              98.997,
+              68.998,
+              68.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              101.999,
+              131.998,
+              131.998,
+              101.999,
+              101.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              101.999,
+              131.998,
+              131.998,
+              101.999,
+              101.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              135.0,
+              164.999,
+              164.999,
+              135.0,
+              135.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              135.0,
+              164.999,
+              164.999,
+              135.0,
+              135.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              167.998,
+              197.997,
+              197.997,
+              167.998,
+              167.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              167.998,
+              197.997,
+              197.997,
+              167.998,
+              167.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              216.0,
+              288.0,
+              288.0,
+              216.0,
+              216.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              216.0,
+              288.0,
+              288.0,
+              216.0,
+              216.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              290.999,
+              362.999,
+              362.999,
+              290.999,
+              290.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              290.999,
+              362.999,
+              362.999,
+              290.999,
+              290.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              365.998,
+              437.998,
+              437.998,
+              365.998,
+              365.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              365.998,
+              437.998,
+              437.998,
+              365.998,
+              365.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              441.0,
+              513.0,
+              513.0,
+              441.0,
+              441.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              441.0,
+              513.0,
+              513.0,
+              441.0,
+              441.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              515.999,
+              587.999,
+              587.999,
+              515.999,
+              515.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              515.999,
+              587.999,
+              587.999,
+              515.999,
+              515.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          }
+        ]
+      },
+      "sanitized": {
+        "cells": {
+          "data": [
+            [
+              482.748,
+              757.42,
+              529.978,
+              767.42,
+              482.748,
+              757.42,
+              529.978,
+              757.42,
+              529.978,
+              767.42,
+              482.748,
+              767.42,
+              "Prot\u00e9g\u00e9 B",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              529.978,
+              757.65,
+              590.998,
+              766.65,
+              529.978,
+              757.65,
+              590.998,
+              757.65,
+              590.998,
+              766.65,
+              529.978,
+              766.65,
+              " une fois rempli",
+              -1,
+              2.502,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              131.721,
+              717.972,
+              484.171,
+              731.972,
+              131.721,
+              717.972,
+              484.171,
+              717.972,
+              484.171,
+              731.972,
+              131.721,
+              731.972,
+              "Demande de remboursement de la partie provinciale ",
+              -1,
+              3.892,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              181.897,
+              702.978,
+              430.089,
+              716.978,
+              181.897,
+              702.978,
+              430.089,
+              702.978,
+              430.089,
+              716.978,
+              181.897,
+              716.978,
+              "de la taxe de vente harmonis\u00e9e (TVH)",
+              -1,
+              3.892,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              502.013,
+              679.837,
+              570.213,
+              687.837,
+              502.013,
+              679.837,
+              570.213,
+              679.837,
+              570.213,
+              687.837,
+              502.013,
+              687.837,
+              "N\u2019inscrivez rien ici. ",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              673.95,
+              444.479,
+              683.95,
+              20.999,
+              673.95,
+              444.479,
+              673.95,
+              444.479,
+              683.95,
+              20.999,
+              683.95,
+              "Remplissez ce formulaire pour demander un remboursement si vous avez pay\u00e9 la TVH sur des ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              662.95,
+              372.259,
+              672.95,
+              20.999,
+              662.95,
+              372.259,
+              662.95,
+              372.259,
+              672.95,
+              20.999,
+              672.95,
+              "produits (les biens meubles corporels) achet\u00e9s dans une province participante  ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              651.95,
+              384.379,
+              661.95,
+              20.999,
+              651.95,
+              384.379,
+              651.95,
+              384.379,
+              661.95,
+              20.999,
+              661.95,
+              "(l\u2019\u00bale-du-Prince-\u00c9douard, le Nouveau-Brunswick, la Nouvelle-\u00c9cosse, l\u2019Ontario ou  ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              640.95,
+              427.849,
+              650.95,
+              20.999,
+              640.95,
+              427.849,
+              640.95,
+              427.849,
+              650.95,
+              20.999,
+              650.95,
+              "Terre-Neuve-et-Labrador), et transf\u00e9r\u00e9s dans une province non participante ou autre r\u00e9gion ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              629.95,
+              414.539,
+              639.95,
+              20.999,
+              629.95,
+              414.539,
+              629.95,
+              414.539,
+              639.95,
+              20.999,
+              639.95,
+              "du Canada ou dans une autre province participante dont le taux de TVH est moins \u00e9lev\u00e9.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              26.999,
+              611.42,
+              78.679,
+              621.42,
+              26.999,
+              611.42,
+              78.679,
+              611.42,
+              78.679,
+              621.42,
+              26.999,
+              621.42,
+              "Remarque ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              26.999,
+              600.42,
+              90.509,
+              610.42,
+              26.999,
+              600.42,
+              90.509,
+              600.42,
+              90.509,
+              610.42,
+              26.999,
+              610.42,
+              "N\u2019utilisez pas",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              90.509,
+              600.42,
+              579.609,
+              610.42,
+              90.509,
+              600.42,
+              579.609,
+              600.42,
+              579.609,
+              610.42,
+              90.509,
+              610.42,
+              " ce formulaire pour demander un remboursement de TVH que vous avez pay\u00e9e sur des services ou des biens ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              26.999,
+              589.42,
+              557.219,
+              599.42,
+              26.999,
+              589.42,
+              557.219,
+              589.42,
+              557.219,
+              599.42,
+              26.999,
+              599.42,
+              "meubles incorporels acquis dans une province participante. Utilisez plut\u00f4t le formulaire GST189, Demande g\u00e9n\u00e9rale de ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              26.999,
+              578.42,
+              252.639,
+              588.42,
+              26.999,
+              578.42,
+              252.639,
+              578.42,
+              252.639,
+              588.42,
+              26.999,
+              588.42,
+              "remboursement de la TPS/TVH (code de motif 13).",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              559.95,
+              329.409,
+              569.95,
+              20.999,
+              559.95,
+              329.409,
+              559.95,
+              329.409,
+              569.95,
+              20.999,
+              569.95,
+              "Cette demande de remboursement peut faire l\u2019objet d\u2019une v\u00e9rification.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              541.95,
+              178.849,
+              551.95,
+              20.999,
+              541.95,
+              178.849,
+              541.95,
+              178.849,
+              551.95,
+              20.999,
+              551.95,
+              "Pour en savoir plus, lisez la page 5.",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              511.478,
+              242.383,
+              523.478,
+              22.999,
+              511.478,
+              242.383,
+              511.478,
+              242.383,
+              523.478,
+              22.999,
+              523.478,
+              "Partie A \u2014 Identification du demandeur",
+              -1,
+              3.336,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              488.451,
+              226.168,
+              498.451,
+              34.998,
+              488.451,
+              226.168,
+              488.451,
+              226.168,
+              498.451,
+              34.998,
+              498.451,
+              "Nom de famille du demandeur (particuliers ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              477.451,
+              244.468,
+              487.451,
+              34.998,
+              477.451,
+              244.468,
+              477.451,
+              244.468,
+              487.451,
+              34.998,
+              487.451,
+              "seulement), de l\u2019entreprise ou de l\u2019organisation ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              466.451,
+              224.158,
+              476.451,
+              34.998,
+              466.451,
+              224.158,
+              466.451,
+              224.158,
+              476.451,
+              34.998,
+              476.451,
+              "(inscrivez le nom commercial, s\u2019il y a lieu) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              443.951,
+              241.738,
+              453.951,
+              34.998,
+              443.951,
+              241.738,
+              443.951,
+              241.738,
+              453.951,
+              34.998,
+              453.951,
+              "Pr\u00e9nom et initiales du demandeur (particuliers ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              432.951,
+              90.018,
+              442.951,
+              34.998,
+              432.951,
+              90.018,
+              432.951,
+              90.018,
+              442.951,
+              34.998,
+              442.951,
+              "seulement) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              408.45,
+              186.078,
+              418.45,
+              34.998,
+              408.45,
+              186.078,
+              408.45,
+              186.078,
+              418.45,
+              34.998,
+              418.45,
+              "Num\u00e9ro d\u2019entreprise (s\u2019il y a lieu) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              381.45,
+              246.088,
+              391.45,
+              34.998,
+              381.45,
+              246.088,
+              381.45,
+              246.088,
+              391.45,
+              34.998,
+              391.45,
+              "Num\u00e9ro d\u2019assurance social (NAS) (s\u2019il y a lieu) :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              350.979,
+              213.495,
+              361.979,
+              34.998,
+              350.979,
+              213.495,
+              350.979,
+              213.495,
+              361.979,
+              34.998,
+              361.979,
+              "Renseignements suppl\u00e9mentaires",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              329.95,
+              230.088,
+              339.95,
+              34.998,
+              329.95,
+              230.088,
+              329.95,
+              230.088,
+              339.95,
+              34.998,
+              339.95,
+              "Cette demande modifie-t-elle une demande ",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              318.95,
+              90.588,
+              328.95,
+              34.998,
+              318.95,
+              90.588,
+              318.95,
+              90.588,
+              328.95,
+              34.998,
+              328.95,
+              "pr\u00e9c\u00e9dente?",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              278.997,
+              321.919,
+              294.557,
+              331.919,
+              278.997,
+              321.919,
+              294.557,
+              321.919,
+              294.557,
+              331.919,
+              278.997,
+              331.919,
+              "Oui",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              347.998,
+              321.919,
+              366.338,
+              331.919,
+              347.998,
+              321.919,
+              366.338,
+              321.919,
+              366.338,
+              331.919,
+              347.998,
+              331.919,
+              "Non",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              294.449,
+              162.298,
+              304.449,
+              34.998,
+              294.449,
+              162.298,
+              294.449,
+              162.298,
+              304.449,
+              34.998,
+              304.449,
+              "Langue de correspondance :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              278.997,
+              294.922,
+              317.337,
+              304.922,
+              278.997,
+              294.922,
+              317.337,
+              294.922,
+              317.337,
+              304.922,
+              278.997,
+              304.922,
+              "Fran\u00e7ais",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              347.998,
+              294.922,
+              380.788,
+              304.922,
+              347.998,
+              294.922,
+              380.788,
+              294.922,
+              380.788,
+              304.922,
+              347.998,
+              304.922,
+              "Anglais",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              263.978,
+              119.973,
+              274.978,
+              34.998,
+              263.978,
+              119.973,
+              263.978,
+              119.973,
+              274.978,
+              34.998,
+              274.978,
+              "Adresse postale",
+              -1,
+              3.058,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              34.998,
+              241.919,
+              172.188,
+              251.919,
+              34.998,
+              241.919,
+              172.188,
+              241.919,
+              172.188,
+              251.919,
+              34.998,
+              251.919,
+              "N\u00a1 d\u2019unit\u00e9 \u2014 n\u00a1 et rue, CP, RR :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              214.919,
+              59.448,
+              224.919,
+              34.998,
+              214.919,
+              59.448,
+              214.919,
+              59.448,
+              224.919,
+              34.998,
+              224.919,
+              "Ville :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              186.919,
+              155.048,
+              196.919,
+              34.998,
+              186.919,
+              155.048,
+              186.919,
+              155.048,
+              196.919,
+              34.998,
+              196.919,
+              "Province, territoire ou \u00e9tat :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              160.919,
+              126.158,
+              170.919,
+              34.998,
+              160.919,
+              126.158,
+              160.919,
+              126.158,
+              170.919,
+              34.998,
+              170.919,
+              "Code postal ou ZIP :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              34.998,
+              133.919,
+              62.788,
+              143.919,
+              34.998,
+              133.919,
+              62.788,
+              133.919,
+              62.788,
+              143.919,
+              34.998,
+              143.919,
+              "Pays :",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              22.999,
+              93.92,
+              115.229,
+              103.92,
+              22.999,
+              93.92,
+              115.229,
+              93.92,
+              115.229,
+              103.92,
+              22.999,
+              103.92,
+              "\u00b8 USAGE INTERNE",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT1",
+              "/AAAAAB+Helvetica-Bold",
+              false
+            ],
+            [
+              22.999,
+              76.95,
+              32.999,
+              86.95,
+              22.999,
+              76.95,
+              32.999,
+              76.95,
+              32.999,
+              86.95,
+              22.999,
+              86.95,
+              "IC",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              199.78,
+              76.95,
+              214.22,
+              86.95,
+              199.78,
+              76.95,
+              214.22,
+              76.95,
+              214.22,
+              86.95,
+              199.78,
+              86.95,
+              "NC",
+              -1,
+              2.78,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              20.999,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              18.96,
+              74.351,
+              18.96,
+              74.351,
+              26.96,
+              20.999,
+              26.96,
+              "GST495 F (24)",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              246.207,
+              18.96,
+              365.791,
+              26.96,
+              246.207,
+              18.96,
+              365.791,
+              18.96,
+              365.791,
+              26.96,
+              246.207,
+              26.96,
+              "(This form is available in English.)",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              406.855,
+              19.336,
+              449.999,
+              27.336,
+              406.855,
+              19.336,
+              449.999,
+              19.336,
+              449.999,
+              27.336,
+              406.855,
+              27.336,
+              "Page 1 de 5",
+              -1,
+              2.224,
+              "/MacRomanEncoding",
+              "MACROMAN",
+              "/TT2",
+              "/AAAAAC+Helvetica",
+              false
+            ],
+            [
+              495.0,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              774.003,
+              591.001,
+              774.003,
+              591.001,
+              789.001,
+              495.0,
+              789.001,
+              "/Off",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              261.997,
+              406.0,
+              394.997,
+              423.0,
+              261.997,
+              406.0,
+              394.997,
+              406.0,
+              394.997,
+              423.0,
+              261.997,
+              423.0,
+              "123456789",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              396.997,
+              406.0,
+              424.996,
+              423.0,
+              396.997,
+              406.0,
+              424.996,
+              406.0,
+              424.996,
+              423.0,
+              396.997,
+              423.0,
+              "RT",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              426.996,
+              406.0,
+              484.997,
+              423.0,
+              426.996,
+              406.0,
+              484.997,
+              406.0,
+              484.997,
+              423.0,
+              426.996,
+              423.0,
+              "ABCD",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              261.997,
+              379.0,
+              394.997,
+              396.0,
+              261.997,
+              379.0,
+              394.997,
+              379.0,
+              394.997,
+              396.0,
+              261.997,
+              396.0,
+              "",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              260.997,
+              210.999,
+              584.997,
+              227.999,
+              260.997,
+              210.999,
+              584.997,
+              210.999,
+              584.997,
+              227.999,
+              260.997,
+              227.999,
+              "granville",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              260.997,
+              156.999,
+              341.997,
+              173.999,
+              260.997,
+              156.999,
+              341.997,
+              156.999,
+              341.997,
+              173.999,
+              260.997,
+              173.999,
+              "",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ],
+            [
+              260.997,
+              129.999,
+              431.997,
+              146.999,
+              260.997,
+              129.999,
+              431.997,
+              129.999,
+              431.997,
+              146.999,
+              260.997,
+              146.999,
+              "",
+              0,
+              0.0,
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              "Form-font",
+              true
+            ]
+          ],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1",
+            "r_x0",
+            "r_y0",
+            "r_x1",
+            "r_y1",
+            "r_x2",
+            "r_y2",
+            "r_x3",
+            "r_y3",
+            "text",
+            "rendering-mode",
+            "space-width",
+            "encoding-name",
+            "font-encoding",
+            "font-key",
+            "font-name",
+            "widget"
+          ]
+        },
+        "dimension": {
+          "angle": 0,
+          "bbox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "height": 792.0,
+          "rectangles": {
+            "art-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "bleed-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "crop-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "media-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "trim-bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ]
+          },
+          "width": 612.0
+        },
+        "images": {
+          "data": [
+            [
+              20.998989999999992,
+              749.2868,
+              221.21989,
+              768.00128
+            ],
+            [
+              486.0,
+              19.990370000000013,
+              586.7103,
+              45.00299000000001
+            ]
+          ],
+          "header": [
+            "x0",
+            "y0",
+            "x1",
+            "y1"
+          ]
+        },
+        "lines": [
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              477.0,
+              591.001,
+              591.001,
+              477.0,
+              477.0
+            ],
+            "y": [
+              624.002,
+              624.002,
+              690.001,
+              690.001,
+              624.002
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.469,
+              554.439
+            ],
+            "y": [
+              590.796,
+              590.796
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              26.999,
+              166.489
+            ],
+            "y": [
+              579.796,
+              579.796
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              20.749,
+              591.248
+            ],
+            "y": [
+              528.001,
+              528.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              466.001,
+              466.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              433.0,
+              433.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              396.247
+            ],
+            "y": [
+              405.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.996,
+              290.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.996,
+              335.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.996,
+              380.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              395.997,
+              395.997
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              395.747,
+              426.246
+            ],
+            "y": [
+              405.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              410.998,
+              410.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              425.746,
+              486.247
+            ],
+            "y": [
+              405.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              425.996,
+              425.996
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              440.997,
+              440.997
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              455.998,
+              455.998
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              470.996,
+              470.996
+            ],
+            "y": [
+              414.0,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              485.997,
+              485.997
+            ],
+            "y": [
+              420.001,
+              405.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              396.247
+            ],
+            "y": [
+              378.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.997,
+              260.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              275.998,
+              275.998
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              290.999,
+              290.999
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              305.997,
+              305.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              320.998,
+              320.998
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              335.999,
+              335.999
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              350.997,
+              350.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              365.998,
+              365.998
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              380.999,
+              380.999
+            ],
+            "y": [
+              387.0,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              395.997,
+              395.997
+            ],
+            "y": [
+              393.001,
+              378.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              32.748,
+              585.247
+            ],
+            "y": [
+              366.001,
+              366.001
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              260.997,
+              272.997,
+              272.997,
+              260.997,
+              260.997
+            ],
+            "y": [
+              320.999,
+              320.999,
+              332.999,
+              332.999,
+              320.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              329.998,
+              341.998,
+              341.998,
+              329.998,
+              329.998
+            ],
+            "y": [
+              320.999,
+              320.999,
+              332.999,
+              332.999,
+              320.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              260.997,
+              272.997,
+              272.997,
+              260.997,
+              260.997
+            ],
+            "y": [
+              294.002,
+              294.002,
+              306.002,
+              306.002,
+              294.002
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              329.998,
+              341.998,
+              341.998,
+              329.998,
+              329.998
+            ],
+            "y": [
+              294.002,
+              294.002,
+              306.002,
+              306.002,
+              294.002
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              32.748,
+              585.247
+            ],
+            "y": [
+              279.0,
+              279.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              237.999,
+              237.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              585.247
+            ],
+            "y": [
+              210.999,
+              210.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              261.747,
+              432.247
+            ],
+            "y": [
+              183.999,
+              183.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              342.247
+            ],
+            "y": [
+              156.999,
+              156.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              2
+            ],
+            "x": [
+              260.747,
+              432.247
+            ],
+            "y": [
+              129.999,
+              129.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              20.999,
+              590.998,
+              590.998,
+              20.999,
+              20.999
+            ],
+            "y": [
+              72.0,
+              72.0,
+              108.0,
+              108.0,
+              72.0
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              36.0,
+              65.999,
+              65.999,
+              36.0,
+              36.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              36.0,
+              65.999,
+              65.999,
+              36.0,
+              36.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              68.998,
+              98.997,
+              98.997,
+              68.998,
+              68.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              68.998,
+              98.997,
+              98.997,
+              68.998,
+              68.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              101.999,
+              131.998,
+              131.998,
+              101.999,
+              101.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              101.999,
+              131.998,
+              131.998,
+              101.999,
+              101.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              135.0,
+              164.999,
+              164.999,
+              135.0,
+              135.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              135.0,
+              164.999,
+              164.999,
+              135.0,
+              135.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              167.998,
+              197.997,
+              197.997,
+              167.998,
+              167.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              167.998,
+              197.997,
+              197.997,
+              167.998,
+              167.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              216.0,
+              288.0,
+              288.0,
+              216.0,
+              216.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              216.0,
+              288.0,
+              288.0,
+              216.0,
+              216.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              290.999,
+              362.999,
+              362.999,
+              290.999,
+              290.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              290.999,
+              362.999,
+              362.999,
+              290.999,
+              290.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              365.998,
+              437.998,
+              437.998,
+              365.998,
+              365.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              365.998,
+              437.998,
+              437.998,
+              365.998,
+              365.998
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              441.0,
+              513.0,
+              513.0,
+              441.0,
+              441.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              441.0,
+              513.0,
+              513.0,
+              441.0,
+              441.0
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              515.999,
+              587.999,
+              587.999,
+              515.999,
+              515.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          },
+          {
+            "i": [
+              0,
+              5
+            ],
+            "x": [
+              515.999,
+              587.999,
+              587.999,
+              515.999,
+              515.999
+            ],
+            "y": [
+              74.999,
+              74.999,
+              90.0,
+              90.0,
+              74.999
+            ]
+          }
+        ]
+      },
+      "timings": {
+        "decode_annots": 4.3e-05,
+        "decode_contents": 0.0053,
+        "decode_dimensions": 0.0,
+        "decode_page": 0.006726,
+        "decode_resources": 0.000331,
+        "sanitise_contents": 1.1e-05
+      }
+    }
+  ],
+  "timings": {
+    "decode_annots": 4.3e-05,
+    "decode_contents": 0.0053,
+    "decode_dimensions": 0.0,
+    "decode_document": 0.006898,
+    "decode_page": 0.006726,
+    "decode_resources": 0.000331,
+    "decoding page 0": 0.006813,
+    "process_document_from_bytesio": 0.000913,
+    "sanitise_contents": 1.1e-05
+  }
+}

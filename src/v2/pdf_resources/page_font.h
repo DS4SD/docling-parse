@@ -180,8 +180,9 @@ namespace pdflib
       }
     else
       {
-	LOG_S(FATAL) << "no existing pdf_resources_dir: " 
-		     << pdf_resources_dir;
+	std::string message = "no existing pdf_resources_dir: " +  pdf_resources_dir; 
+	LOG_S(ERROR) << message;
+	throw std::logic_error(message);
       }
 
     utils::timer timer;
@@ -670,11 +671,19 @@ namespace pdflib
         if(subtype==TYPE_0 and utils::json::has(keys_0, json_font))
           {
             auto desc_fonts = utils::json::get(keys_0, json_font);
-            assert(desc_fonts.size()==1);
+            //assert(desc_fonts.size()==1);
 
-            desc_font = desc_fonts[0];
-
-            LOG_S(INFO) << "found the descendant font";// << desc_font.dump(2);
+	    if(desc_fonts.size()==1)
+	      {
+		LOG_S(INFO) << "found the descendant font";// << desc_font.dump(2);
+		desc_font = desc_fonts[0];		
+	      }
+	    else
+	      {
+		std::string message = "no descendant font!";
+		LOG_S(ERROR) << message;
+		throw std::logic_error(message);
+	      }
           }
         else if(subtype==TYPE_0)
           {
@@ -688,7 +697,7 @@ namespace pdflib
     else
       {
         subtype=NULL_TYPE;
-        LOG_S(FATAL) << "could not find subtype in font: " << json_font.dump(2);
+        LOG_S(ERROR) << "could not find subtype in font: " << json_font.dump(2);
       }
   }
 
@@ -776,7 +785,7 @@ namespace pdflib
       }
     else if(utils::json::has(keys_1, json_font))
       {
-        assert(subtype==TYPE_3);
+        //assert(subtype==TYPE_3);
 
         auto result = utils::json::get(keys_1, json_font);
 
@@ -787,7 +796,7 @@ namespace pdflib
       }
     else if(utils::json::has(keys_1, desc_font))
       {
-        assert(subtype==TYPE_3);
+        //assert(subtype==TYPE_3);
 
         auto result = utils::json::get(keys_1, desc_font);
 
@@ -1050,15 +1059,21 @@ namespace pdflib
 
     if(values.size()!=(lchar-fchar+1))
       {
-        LOG_S(FATAL) << "values.size()!=(lchar-fchar+1) -> "
+        LOG_S(ERROR) << "values.size()!=(lchar-fchar+1) -> "
                      << values.size() << "!=" << lchar << "-" << fchar << "+1";
       }
 
     int cnt=0;
     for(int ind=fchar; ind<=lchar; ind++)
       {
+	if(cnt>=values.size())
+	  {
+	    LOG_S(ERROR) << "going out of bounds with " << cnt << " >= " << values.size();
+	    continue;
+	  }
+	
         numb_to_widths[ind] = values[cnt++];
-	LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
+	//LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
       }
   }
 
@@ -1095,8 +1110,8 @@ namespace pdflib
       {
         //LOG_S(INFO) << l << "\t" << ws[l].is_number() << "\t beg: " << ws[l].dump();
 
-        assert(l<ws.size());
-
+        //assert(l<ws.size());
+	
         beg = ws[l].get<int>();
         l += 1;
 
@@ -1109,13 +1124,26 @@ namespace pdflib
           {
             //LOG_S(INFO) << l << "\t" << ws[l].is_number() << "\t end: " << ws[l].dump();
 
-            assert(l<ws.size());
+            //assert(l<ws.size());
+
+	    if(l>=ws.size())
+	      {
+		LOG_S(WARNING) << "index " << l << " is out of bounds " << ws.size();
+		continue;
+	      }
+	    
             end = ws[l].get<int>();
             l += 1;
 
             //LOG_S(INFO) << l << "\t" << ws[l].is_number() << "\t w: " << ws[l].dump();
 
-            assert(l<ws.size());
+            //assert(l<ws.size());
+	    if(l>=ws.size())
+	      {
+		LOG_S(WARNING) << "index " << l << " is out of bounds " << ws.size();
+		continue;
+	      }
+	    
             double w = ws[l].get<double>();
             l += 1;
 
@@ -1129,7 +1157,13 @@ namespace pdflib
           {
             //LOG_S(INFO) << l << "\t" << ws[l].is_number() << "\t widths: " << ws[l].dump();
 
-            assert(l<ws.size());
+            //assert(l<ws.size());
+	    if(l>=ws.size())
+	      {
+		LOG_S(WARNING) << "index " << l << " is out of bounds " << ws.size();
+		continue;
+	      }
+	    
             std::vector<double> w = ws[l].get<std::vector<double> >();
             l += 1;
 
@@ -1142,7 +1176,11 @@ namespace pdflib
           }
         else
           {
-            LOG_S(FATAL) << "unknown type in " << __FUNCTION__;
+	    std::stringstream message;
+	    message <<  "unknown type in " << __FUNCTION__;	    
+
+	    LOG_S(ERROR) << message.str();
+	    throw std::logic_error(message.str());
           }
       }
   }
@@ -1160,12 +1198,24 @@ namespace pdflib
         if(not qpdf_font.hasKey("/ToUnicode"))
           {
             auto tmp = to_json(qpdf_font);
-            LOG_S(FATAL) << "qpdf-font: " << tmp.dump();
+
+	    std::stringstream ss;
+	    ss << "qpdf-font: " << tmp.dump();
+	    
+            LOG_S(ERROR) << ss.str();
+	    throw std::logic_error(ss.str());
           }
 
         auto qpdf_obj = qpdf_font.getKey("/ToUnicode");
-        assert(qpdf_obj.isStream());
+        //assert(qpdf_obj.isStream());
 
+	if(not qpdf_obj.isStream())
+	  {
+	    std::string message = "not qpdf_obj.isStream()";
+	    LOG_S(ERROR) << message;
+	    throw std::logic_error(message);
+	  }
+	
         std::vector<qpdf_instruction> stream;
 
         // decode the stream
@@ -1380,7 +1430,7 @@ namespace pdflib
                     else if(name_to_descr.count(name)==1 and 
                             cmap_numb_to_char.count(numb)==0)
                       {
-                        assert(subtype==TYPE_3);
+		        //assert(subtype==TYPE_3);
 
                         LOG_S(WARNING) << "could not resolve the character (name="<<name
                                        <<", numb="<<numb<<") for TYPE_3 font:" << font_name;
@@ -1446,7 +1496,7 @@ namespace pdflib
 
     if(utils::json::has(keys, json_font))
       {
-        assert(subtype==TYPE_3);
+        //assert(subtype==TYPE_3);
 
         QPDFObjectHandle qpdf_char_procs = qpdf_font.getKey(keys.front());
         LOG_S(WARNING) << "found CharProcs: " << qpdf_char_procs.getTypeName();        
@@ -1462,8 +1512,14 @@ namespace pdflib
                 QPDFObjectHandle qpdf_char_proc = qpdf_char_procs.getKey(key);
                 //LOG_S(INFO) << "decoding: " << key << " -> " << qpdf_char_proc.getTypeName();
 
-                assert(qpdf_char_proc.isStream());
-
+                //assert(qpdf_char_proc.isStream());
+		if(not qpdf_char_proc.isStream())
+		  {
+		    std::string message = "not qpdf_obj.isStream()";
+		    LOG_S(ERROR) << message;
+		    throw std::logic_error(message);
+		  }
+		
                 std::vector<qpdf_instruction> stream={};
 
                 // decode the stream
