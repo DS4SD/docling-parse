@@ -6,7 +6,7 @@ set -x  # display command on output
 # Build the Python package with Poetry
 poetry build -f sdist
 
-sudo podman build --progress=plain \
+sudo -E XDG_RUNTIME_DIR= podman build --progress=plain \
              --build-arg USE_SYSTEM_DEPS="$USE_SYSTEM_DEPS" \
              -f - . <<EOF
     # syntax=docker/dockerfile:1
