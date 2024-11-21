@@ -1,3 +1,9 @@
+## [v2.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.1) - 2024-11-21
+
+### Fix
+
+* Compatibility with qpdf v10 ([#62](https://github.com/DS4SD/docling-parse/issues/62)) ([`7f87b26`](https://github.com/DS4SD/docling-parse/commit/7f87b2630e6957eb1339e3b222d51969573e4bdc))
+
 ## [v2.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.0) - 2024-11-20
 
 ### Feature
