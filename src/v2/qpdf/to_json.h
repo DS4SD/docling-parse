@@ -351,7 +351,7 @@ namespace pdflib
 
 	    if(metadata.isStream())
 	      {
-		std::shared_ptr<Buffer> ptr = metadata.getStreamData(qpdf_dl_all);
+		auto ptr = metadata.getStreamData(qpdf_dl_all);
 		
 		// Convert raw data to std::string
 		std::string content(reinterpret_cast<const char*>(ptr->getBuffer()), ptr->getSize());
