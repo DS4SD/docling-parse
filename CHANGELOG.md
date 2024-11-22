@@ -1,3 +1,9 @@
+## [v2.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.2) - 2024-11-22
+
+### Fix
+
+* Added the PDF documentation ([#64](https://github.com/DS4SD/docling-parse/issues/64)) ([`2033f95`](https://github.com/DS4SD/docling-parse/commit/2033f95f3d8ad0df4a506d7543af0808c439124d))
+
 ## [v2.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.1) - 2024-11-21
 
 ### Fix
