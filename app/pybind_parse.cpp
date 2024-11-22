@@ -36,9 +36,7 @@ PYBIND11_MODULE(docling_parse, m) {
 
     .def("parse_pdf_from_key_on_page",
 	 &docling::docling_parser_v1::parse_pdf_from_key_on_page,
-	 "parse specific page in pdf-document using doc-key from path into json")
-
-    ;
+	 "parse specific page in pdf-document using doc-key from path into json");
 
   // next generation parser, 10x faster with more finegrained output
   pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
@@ -90,17 +88,17 @@ PYBIND11_MODULE(docling_parse, m) {
     .def("number_of_pages",
 	 &docling::docling_parser_v2::number_of_pages,
 	 "get the number of pages in the pdf",
-	 pybind11::arg("key"),
+	 pybind11::arg("key")
 	 )
 
     .def("get_annotations", &docling::docling_parser_v2::get_annotations,
 	 "Get annotations at the top-level of the document",
-	 pybind11::arg("key"),
+	 pybind11::arg("key")
 	 )
     
     .def("get_table_of_contents", &docling::docling_parser_v2::get_table_of_contents,
 	 "Get the table-of-contents (None if not available)",
-	 pybind11::arg("key"),
+	 pybind11::arg("key")
 	 )
     
     .def("parse_pdf_from_key",
@@ -130,6 +128,5 @@ PYBIND11_MODULE(docling_parse, m) {
 	 pybind11::arg("page"),
 	 pybind11::arg("bbox"),
 	 pybind11::arg("iou")=0.99
-	 )
-    ;  
+	 );  
 }
