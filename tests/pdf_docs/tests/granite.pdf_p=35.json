@@ -1,0 +1,3377 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.106340696765464,
+        "/LTZNGC+CMVTT10": 0.9797571249882773
+      },
+      "mean-char-width": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.320524146125734,
+        "/LTZNGC+CMVTT10": 4.569442087319434
+      },
+      "number-of-chars": {
+        "/LHCPKS+NimbusRomNo9L-Regu": 2036,
+        "/LTZNGC+CMVTT10": 814
+      }
+    },
+    "styles": [
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              700.17603,
+              114.89406,
+              709.08258
+            ],
+            "device": [
+              108.249,
+              698.02411,
+              131.83047,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "B.2.6"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              142.2912,
+              700.17603,
+              147.8304,
+              709.08258
+            ],
+            "device": [
+              142.2912,
+              698.02411,
+              175.96931,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "SAFETY"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              683.23901,
+              138.88391,
+              692.14557
+            ],
+            "device": [
+              135.397,
+              681.0871,
+              144.72482,
+              689.99365
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              683.23901,
+              138.88391,
+              692.14557
+            ],
+            "device": [
+              147.05678,
+              681.0871,
+              505.24496,
+              689.99365
+            ]
+          },
+          "content": {
+            "rnormalized": "Safety Prompts: We use input prompts from the following datasets: SimpleSafetyTests$^{94}$,"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              672.28003,
+              192.14871,
+              681.18658
+            ],
+            "device": [
+              143.86501,
+              670.12811,
+              405.53943,
+              679.03467
+            ]
+          },
+          "content": {
+            "rnormalized": "HarmBench Behaviors$^{95}$, Reject$^{96}$, AdvBench$^{97}$, Do-Not-Answer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              405.54199,
+              675.896,
+              412.51578,
+              682.13055
+            ],
+            "device": [
+              405.54199,
+              674.38965,
+              412.51578,
+              680.62421
+            ]
+          },
+          "content": {
+            "rnormalized": "98"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              415.504,
+              672.28003,
+              429.93314,
+              681.18658
+            ],
+            "device": [
+              415.504,
+              670.12811,
+              486.2608,
+              679.03467
+            ]
+          },
+          "content": {
+            "rnormalized": "and MistralGuard"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              486.263,
+              675.896,
+              493.23679,
+              682.13055
+            ],
+            "device": [
+              486.263,
+              674.38965,
+              493.23679,
+              680.62421
+            ]
+          },
+          "content": {
+            "rnormalized": "99"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              496.22601,
+              672.28003,
+              504.00018,
+              681.18658
+            ],
+            "device": [
+              496.22601,
+              670.12811,
+              504.00018,
+              679.03467
+            ]
+          },
+          "content": {
+            "rnormalized": "to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              661.32098,
+              177.60834,
+              670.22754
+            ],
+            "device": [
+              143.86501,
+              659.16907,
+              373.42325,
+              668.07562
+            ]
+          },
+          "content": {
+            "rnormalized": "generate synthetic data aligned with our safety taxonomy."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              646.89001,
+              138.88391,
+              655.79657
+            ],
+            "device": [
+              135.397,
+              644.7381,
+              144.55379,
+              653.64465
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              646.89001,
+              138.88391,
+              655.79657
+            ],
+            "device": [
+              146.84299,
+              644.7381,
+              504.00333,
+              653.64465
+            ]
+          },
+          "content": {
+            "rnormalized": "Anthropic-HH-RLHF $^{100}$: Human preference data about helpfulness and harmlessness that"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.507,
+              635.93103,
+              155.1234,
+              644.83759
+            ],
+            "device": [
+              143.507,
+              633.77911,
+              258.34589,
+              642.68567
+            ]
+          },
+          "content": {
+            "rnormalized": "we used in model alignment."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              621.49902,
+              138.88391,
+              630.40558
+            ],
+            "device": [
+              135.397,
+              619.34711,
+              144.89085,
+              628.25366
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              621.49902,
+              138.88391,
+              630.40558
+            ],
+            "device": [
+              147.26433,
+              619.34711,
+              229.25325,
+              628.25366
+            ]
+          },
+          "content": {
+            "rnormalized": "Internal Safety Data ["
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              229.256,
+              621.49902,
+              269.93628,
+              629.79785
+            ],
+            "device": [
+              229.256,
+              619.28735,
+              295.79919,
+              627.58618
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM-Synthetic"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              295.797,
+              621.49902,
+              301.83545,
+              630.40558
+            ],
+            "device": [
+              295.797,
+              619.34711,
+              504.00006,
+              628.25366
+            ]
+          },
+          "content": {
+            "rnormalized": "]: A synthetic dataset created for safety alignment of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              610.53998,
+              173.74284,
+              619.44653
+            ],
+            "device": [
+              143.86501,
+              608.38806,
+              309.0549,
+              617.29462
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite models as described in Section 3."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.24901,
+              585.995,
+              114.89406,
+              594.90155
+            ],
+            "device": [
+              108.24901,
+              583.84308,
+              123.36227,
+              592.74963
+            ]
+          },
+          "content": {
+            "rnormalized": "B.3"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              133.823,
+              585.995,
+              140.46805,
+              594.90155
+            ],
+            "device": [
+              133.823,
+              583.84308,
+              291.01401,
+              592.74963
+            ]
+          },
+          "content": {
+            "rnormalized": "REWARD MODEL(S) TRAINING DATA"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.24901,
+              565.47198,
+              114.89406,
+              574.37854
+            ],
+            "device": [
+              108.24901,
+              563.32007,
+              131.83047,
+              572.22662
+            ]
+          },
+          "content": {
+            "rnormalized": "B.3.1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              142.2912,
+              565.47198,
+              151.14795,
+              574.37854
+            ],
+            "device": [
+              142.2912,
+              563.32007,
+              282.38174,
+              572.22662
+            ]
+          },
+          "content": {
+            "rnormalized": "MULTI-ASPECT REWARD MODEL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              546.29401,
+              117.12479,
+              555.20056
+            ],
+            "device": [
+              107.532,
+              544.14209,
+              354.49548,
+              553.04865
+            ]
+          },
+          "content": {
+            "rnormalized": "We trained our multi-aspect reward model on HelpSteer2 ("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              354.49899,
+              546.29401,
+              360.31018,
+              554.59283
+            ],
+            "device": [
+              354.49899,
+              544.08234,
+              505.04883,
+              552.38116
+            ]
+          },
+          "content": {
+            "rnormalized": "https://huggingface.co/datasets/"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              535.33502,
+              113.81119,
+              543.63385
+            ],
+            "device": [
+              108,
+              533.12335,
+              190.37975,
+              541.42218
+            ]
+          },
+          "content": {
+            "rnormalized": "nvidia/HelpSteer2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              190.37799,
+              535.33502,
+              193.69554,
+              544.24158
+            ],
+            "device": [
+              190.37799,
+              533.18311,
+              257.78494,
+              542.08966
+            ]
+          },
+          "content": {
+            "rnormalized": ") for two epochs."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.24899,
+              512.13501,
+              114.89404,
+              521.04156
+            ],
+            "device": [
+              108.24899,
+              509.98309,
+              131.83046,
+              518.88965
+            ]
+          },
+          "content": {
+            "rnormalized": "B.3.2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              142.29118,
+              512.13501,
+              148.93623,
+              521.04156
+            ],
+            "device": [
+              142.29118,
+              509.98309,
+              291.39874,
+              518.88965
+            ]
+          },
+          "content": {
+            "rnormalized": "BRADLEY TERRY REWARD MODEL"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              492.957,
+              116.7486,
+              501.86356
+            ],
+            "device": [
+              107.532,
+              490.80508,
+              504.00211,
+              499.71164
+            ]
+          },
+          "content": {
+            "rnormalized": "We trained a Mistral-7B-Instruct-v0.2 reward model, with Bradley Terry preference objective, using a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              481.99799,
+              123.81184,
+              490.90454
+            ],
+            "device": [
+              108,
+              479.84607,
+              503.99734,
+              488.75262
+            ]
+          },
+          "content": {
+            "rnormalized": "mix of gold and synthetic datasets. During training, the proportion of gold data was 20% and the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              471.039,
+              148.92352,
+              479.94556
+            ],
+            "device": [
+              108,
+              468.88708,
+              504.00443,
+              477.79364
+            ]
+          },
+          "content": {
+            "rnormalized": "remaining 80% was sampled from synthetically generated preference data. The model was trained"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              460.07999,
+              119.61639,
+              468.98654
+            ],
+            "device": [
+              108,
+              457.92807,
+              366.6889,
+              466.83463
+            ]
+          },
+          "content": {
+            "rnormalized": "for 120k steps with a batch size of 16 and a learning rate of 1e-7."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              443.14398,
+              123.18285,
+              452.05054
+            ],
+            "device": [
+              107.691,
+              440.99207,
+              352.0238,
+              449.89862
+            ]
+          },
+          "content": {
+            "rnormalized": "The following gold preference datasets were used in training:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              422.50699,
+              138.88391,
+              431.41354
+            ],
+            "device": [
+              135.397,
+              420.35507,
+              145.17369,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              422.50699,
+              138.88391,
+              431.41354
+            ],
+            "device": [
+              147.61787,
+              420.35507,
+              216.3187,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "HelpSteer2 DPO:"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              222.87309,
+              422.50699,
+              227.38495,
+              431.41354
+            ],
+            "device": [
+              222.87309,
+              420.35507,
+              227.38495,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "a"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              233.94951,
+              422.50699,
+              259.91302,
+              431.41354
+            ],
+            "device": [
+              233.94951,
+              420.35507,
+              259.91302,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "binary"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              266.46741,
+              422.50699,
+              309.34027,
+              431.41354
+            ],
+            "device": [
+              266.46741,
+              420.35507,
+              309.34027,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "preference"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              315.89465,
+              422.50699,
+              320.97559,
+              431.41354
+            ],
+            "device": [
+              315.89465,
+              420.35507,
+              345.66888,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "version"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              352.22327,
+              422.50699,
+              360.68808,
+              431.41354
+            ],
+            "device": [
+              352.22327,
+              420.35507,
+              360.68808,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              367.24246,
+              422.50699,
+              403.92676,
+              431.41354
+            ],
+            "device": [
+              367.24246,
+              420.35507,
+              403.92676,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "helpsteer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              410.4913,
+              422.50699,
+              423.1936,
+              431.41354
+            ],
+            "device": [
+              410.4913,
+              420.35507,
+              423.1936,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "2.0"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              429.74799,
+              422.50699,
+              460.5079,
+              431.41354
+            ],
+            "device": [
+              429.74799,
+              420.35507,
+              460.5079,
+              429.26163
+            ]
+          },
+          "content": {
+            "rnormalized": "dataset,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              468.08499,
+              422.50699,
+              473.89618,
+              430.80585
+            ],
+            "device": [
+              468.08499,
+              420.29529,
+              505.04724,
+              428.59415
+            ]
+          },
+          "content": {
+            "rnormalized": "https://"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86499,
+              411.54797,
+              149.67618,
+              419.84683
+            ],
+            "device": [
+              143.86499,
+              409.33627,
+              405.17581,
+              417.63513
+            ]
+          },
+          "content": {
+            "rnormalized": "huggingface.co/datasets/gx-ai-architect/HelpSteer2 DPO"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              411.10501,
+              411.548,
+              454.00836,
+              420.45456
+            ],
+            "device": [
+              411.10501,
+              409.39609,
+              504.24854,
+              418.30264
+            ]
+          },
+          "content": {
+            "rnormalized": "containing around 7k"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              400.58899,
+              178.45515,
+              409.49554
+            ],
+            "device": [
+              143.86501,
+              398.43707,
+              178.45515,
+              407.34363
+            ]
+          },
+          "content": {
+            "rnormalized": "samples."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              386.15799,
+              138.88391,
+              395.06454
+            ],
+            "device": [
+              135.397,
+              384.00607,
+              145.68217,
+              392.91263
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              386.15799,
+              138.88391,
+              395.06454
+            ],
+            "device": [
+              148.25348,
+              384.00607,
+              464.45065,
+              392.91263
+            ]
+          },
+          "content": {
+            "rnormalized": "safetyQA DPO: a safety preference dataset, containing roughly 50k samples,"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              468.08499,
+              386.15799,
+              473.89618,
+              394.45685
+            ],
+            "device": [
+              468.08499,
+              383.94629,
+              505.04724,
+              392.24515
+            ]
+          },
+          "content": {
+            "rnormalized": "https://"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86499,
+              375.19897,
+              149.67618,
+              383.49783
+            ],
+            "device": [
+              143.86499,
+              372.98727,
+              386.8038,
+              381.28613
+            ]
+          },
+          "content": {
+            "rnormalized": "huggingface.co/datasets/AmberYifan/safetyQA DPO"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.39699,
+              360.767,
+              138.8839,
+              369.67355
+            ],
+            "device": [
+              135.39699,
+              358.61508,
+              145.71468,
+              367.52164
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.39699,
+              360.767,
+              138.8839,
+              369.67355
+            ],
+            "device": [
+              148.29408,
+              358.61508,
+              505.65741,
+              367.52164
+            ]
+          },
+          "content": {
+            "rnormalized": "truthy-dpo-v0.1: A small dataset (1k samples), aiming at improving truthfulness, espe-"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              349.80801,
+              166.44464,
+              358.71457
+            ],
+            "device": [
+              143.86501,
+              347.6561,
+              350.35382,
+              356.56265
+            ]
+          },
+          "content": {
+            "rnormalized": "cially in the context of human-like self-awareness."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              354.49899,
+              349.80801,
+              360.31018,
+              358.10687
+            ],
+            "device": [
+              354.49899,
+              347.59631,
+              505.04883,
+              355.89517
+            ]
+          },
+          "content": {
+            "rnormalized": "https://huggingface.co/datasets/"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86499,
+              338.85001,
+              217.37701,
+              347.14886
+            ],
+            "device": [
+              143.86499,
+              336.63831,
+              266.60919,
+              344.93716
+            ]
+          },
+          "content": {
+            "rnormalized": "jondurbin/truthy-dpo-v0.1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.39699,
+              324.418,
+              138.8839,
+              333.32455
+            ],
+            "device": [
+              135.39699,
+              322.26608,
+              145.33177,
+              331.17264
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.39699,
+              324.418,
+              138.8839,
+              333.32455
+            ],
+            "device": [
+              147.81546,
+              322.26608,
+              503.99738,
+              331.17264
+            ]
+          },
+          "content": {
+            "rnormalized": "anthropic hh: A dataset of over 161k samples, containing preference pairs geared towards"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              313.45901,
+              171.52457,
+              322.36557
+            ],
+            "device": [
+              143.86501,
+              311.3071,
+              267.28351,
+              320.21365
+            ]
+          },
+          "content": {
+            "rnormalized": "helpful and harmless responses."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              270.27301,
+              313.45901,
+              276.0842,
+              321.75787
+            ],
+            "device": [
+              270.27301,
+              311.24731,
+              503.26239,
+              319.54617
+            ]
+          },
+          "content": {
+            "rnormalized": "https://huggingface.co/datasets/Anthropic/hh-rlhf"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              299.02802,
+              138.88391,
+              307.93457
+            ],
+            "device": [
+              135.397,
+              296.8761,
+              145.12668,
+              305.78265
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              299.02802,
+              138.88391,
+              307.93457
+            ],
+            "device": [
+              147.5591,
+              296.8761,
+              503.99609,
+              305.78265
+            ]
+          },
+          "content": {
+            "rnormalized": "Agentic-DPO-V0.1: A small 5k samples dataset designed to improve AI models for agentic"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              288.069,
+              188.9657,
+              296.97556
+            ],
+            "device": [
+              143.86501,
+              285.91708,
+              188.9657,
+              294.82364
+            ]
+          },
+          "content": {
+            "rnormalized": "processing."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              192.054,
+              288.069,
+              197.86519,
+              296.36786
+            ],
+            "device": [
+              192.054,
+              285.8573,
+              457.93484,
+              294.15616
+            ]
+          },
+          "content": {
+            "rnormalized": "https://huggingface.co/datasets/Capx/Agentic-DPO-V0.1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              267.43201,
+              116.80502,
+              276.33856
+            ],
+            "device": [
+              107.532,
+              265.28009,
+              505.24084,
+              274.18665
+            ]
+          },
+          "content": {
+            "rnormalized": "We also generated preference data synthetically using the model-gap technique Naseem et al. (2024),"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              256.47299,
+              122.38599,
+              265.37955
+            ],
+            "device": [
+              108,
+              254.32108,
+              350.34021,
+              263.22763
+            ]
+          },
+          "content": {
+            "rnormalized": "and by perturbing gold datasets to create synthetic negatives:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              235.836,
+              138.88391,
+              244.74257
+            ],
+            "device": [
+              135.397,
+              233.68408,
+              145.3989,
+              242.59064
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              235.836,
+              138.88391,
+              244.74257
+            ],
+            "device": [
+              147.89937,
+              233.68408,
+              505.65686,
+              242.59064
+            ]
+          },
+          "content": {
+            "rnormalized": "We generated 96k samples, where the chosen response is generated from Mixtral-8x22B-"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              224.877,
+              195.05284,
+              233.78357
+            ],
+            "device": [
+              143.86501,
+              222.72508,
+              383.19656,
+              231.63164
+            ]
+          },
+          "content": {
+            "rnormalized": "Instruct-v0.1 and the rejected from Mistral-7B-Instruct-v0.1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              210.446,
+              138.88391,
+              219.35257
+            ],
+            "device": [
+              135.397,
+              208.29408,
+              144.98878,
+              217.20064
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              210.446,
+              138.88391,
+              219.35257
+            ],
+            "device": [
+              147.38672,
+              208.29408,
+              505.64917,
+              217.20064
+            ]
+          },
+          "content": {
+            "rnormalized": "Another 770k samples were generated, where the chosen response is generated from Mixtral-"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              199.487,
+              219.95935,
+              208.39357
+            ],
+            "device": [
+              143.86501,
+              197.33508,
+              408.10306,
+              206.24164
+            ]
+          },
+          "content": {
+            "rnormalized": "8x7B-Instruct-v0.1 and the rejected from Mistral-7B-Instruct-v0.1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              185.05499,
+              138.88391,
+              193.96156
+            ],
+            "device": [
+              135.397,
+              182.90308,
+              145.05699,
+              191.80963
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2022"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.397,
+              185.05499,
+              138.88391,
+              193.96156
+            ],
+            "device": [
+              147.47198,
+              182.90308,
+              504.00278,
+              191.80963
+            ]
+          },
+          "content": {
+            "rnormalized": "We also created around 80k preference pairs by perturbing the gold samples in MathInstruct"
+          },
+          "enumeration": {
+            "match": 110,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.86501,
+              174.09599,
+              171.17148,
+              183.00256
+            ],
+            "device": [
+              143.86501,
+              171.94408,
+              504.00177,
+              180.85063
+            ]
+          },
+          "content": {
+            "rnormalized": "dataset to create synthetic negatives. In particular, we switched one or more numeric values"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.507,
+              163.13699,
+              161.2205,
+              172.04356
+            ],
+            "device": [
+              143.507,
+              160.98508,
+              268.97595,
+              169.89163
+            ]
+          },
+          "content": {
+            "rnormalized": "with a different but close value."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              151.119,
+              123.6416,
+              156.46298
+            ],
+            "device": [
+              117.664,
+              145.31946,
+              390.36664,
+              152.78847
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{94}$https://huggingface.co/datasets/Bertievidgen/SimpleSafetyTests"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              140.245,
+              123.6416,
+              145.58897
+            ],
+            "device": [
+              117.664,
+              134.44545,
+              479.08572,
+              141.91446
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{95}$https://github.com/centerforaisafety/HarmBench/blob/main/data/behavior datasets/"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              126.47301,
+              129.31314,
+              133.94202
+            ],
+            "device": [
+              108,
+              124.48247,
+              243.93263,
+              131.95148
+            ]
+          },
+          "content": {
+            "rnormalized": "harmbench behaviors text all.csv"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              119.408,
+              123.6416,
+              124.75197
+            ],
+            "device": [
+              117.664,
+              113.60846,
+              460.17783,
+              121.07747
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{96}$https://github.com/alexandrasouly/strongreject/blob/main/strongreject dataset/"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              105.636,
+              156.43291,
+              113.10501
+            ],
+            "device": [
+              108,
+              103.64546,
+              204.90866,
+              111.11447
+            ]
+          },
+          "content": {
+            "rnormalized": "strongreject dataset.csv"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LTZNGC+CMVTT10",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              98.570999,
+              123.6416,
+              103.91497
+            ],
+            "device": [
+              117.664,
+              92.771461,
+              339.3927,
+              100.24047
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{97}$https://huggingface.co/datasets/walledai/AdvBench"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              87.695999,
+              123.6416,
+              93.03997
+            ],
+            "device": [
+              117.664,
+              81.896461,
+              350.25281,
+              89.365471
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{98}$https://huggingface.co/datasets/LibrAI/do-not-answer"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              76.821999,
+              123.6416,
+              82.16597
+            ],
+            "device": [
+              117.664,
+              71.022461,
+              373.96533,
+              78.49147
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{99}$https://huggingface.co/datasets/natolambert/xstest-v2-copy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              114.675,
+              65.946999,
+              123.6414,
+              71.29097
+            ],
+            "device": [
+              114.675,
+              60.147461,
+              333.87567,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{100}$https://huggingface.co/datasets/Anthropic/hh-rlhf"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              301.01901,
+              32.25,
+              310.9816,
+              41.156563
+            ],
+            "device": [
+              301.01901,
+              30.098078,
+              310.9816,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "36"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 190.181,
+          "x1": 193.17,
+          "y": 422.70599
+        },
+        {
+          "x0": 379.082,
+          "x1": 382.22,
+          "y": 411.74799
+        },
+        {
+          "x0": 183.403,
+          "x1": 186.392,
+          "y": 386.35699
+        },
+        {
+          "x0": 360.70901,
+          "x1": 363.84702,
+          "y": 375.39801
+        },
+        {
+          "x0": 182.317,
+          "x1": 185.306,
+          "y": 324.617
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 157.985
+        },
+        {
+          "x0": 438.237,
+          "x1": 441.061,
+          "y": 136.63499
+        },
+        {
+          "x0": 153.67599,
+          "x1": 156.5,
+          "y": 126.672
+        },
+        {
+          "x0": 195.953,
+          "x1": 198.77701,
+          "y": 126.672
+        },
+        {
+          "x0": 215.81799,
+          "x1": 218.642,
+          "y": 126.672
+        },
+        {
+          "x0": 423.043,
+          "x1": 425.867,
+          "y": 115.798
+        },
+        {
+          "x0": 156.998,
+          "x1": 159.82201,
+          "y": 105.835
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            190.181,
+            422.70599,
+            193.17,
+            422.70599
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            190.181,
+            193.17
+          ],
+          "y-values": [
+            422.70599,
+            422.70599
+          ]
+        },
+        {
+          "bbox": [
+            379.082,
+            411.74799,
+            382.22,
+            411.74799
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            379.082,
+            382.22
+          ],
+          "y-values": [
+            411.74799,
+            411.74799
+          ]
+        },
+        {
+          "bbox": [
+            183.403,
+            386.35699,
+            186.392,
+            386.35699
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            183.403,
+            186.392
+          ],
+          "y-values": [
+            386.35699,
+            386.35699
+          ]
+        },
+        {
+          "bbox": [
+            360.70901,
+            375.39801,
+            363.84702,
+            375.39801
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            360.70901,
+            363.84702
+          ],
+          "y-values": [
+            375.39801,
+            375.39801
+          ]
+        },
+        {
+          "bbox": [
+            182.317,
+            324.617,
+            185.306,
+            324.617
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            182.317,
+            185.306
+          ],
+          "y-values": [
+            324.617,
+            324.617
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            157.985,
+            251.46201,
+            157.985
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            157.985,
+            157.985
+          ]
+        },
+        {
+          "bbox": [
+            438.237,
+            136.63499,
+            441.061,
+            136.63499
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            438.237,
+            441.061
+          ],
+          "y-values": [
+            136.63499,
+            136.63499
+          ]
+        },
+        {
+          "bbox": [
+            153.67599,
+            126.672,
+            156.5,
+            126.672
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            153.67599,
+            156.5
+          ],
+          "y-values": [
+            126.672,
+            126.672
+          ]
+        },
+        {
+          "bbox": [
+            195.953,
+            126.672,
+            198.77701,
+            126.672
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            195.953,
+            198.77701
+          ],
+          "y-values": [
+            126.672,
+            126.672
+          ]
+        },
+        {
+          "bbox": [
+            215.81799,
+            126.672,
+            218.642,
+            126.672
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            215.81799,
+            218.642
+          ],
+          "y-values": [
+            126.672,
+            126.672
+          ]
+        },
+        {
+          "bbox": [
+            423.043,
+            115.798,
+            425.867,
+            115.798
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            423.043,
+            425.867
+          ],
+          "y-values": [
+            115.798,
+            115.798
+          ]
+        },
+        {
+          "bbox": [
+            156.998,
+            105.835,
+            159.82201,
+            105.835
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            156.998,
+            159.82201
+          ],
+          "y-values": [
+            105.835,
+            105.835
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

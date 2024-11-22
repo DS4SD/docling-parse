@@ -1,3 +1,33 @@
+## [v2.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.2) - 2024-11-22
+
+### Fix
+
+* Added the PDF documentation ([#64](https://github.com/DS4SD/docling-parse/issues/64)) ([`2033f95`](https://github.com/DS4SD/docling-parse/commit/2033f95f3d8ad0df4a506d7543af0808c439124d))
+
+## [v2.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.1) - 2024-11-21
+
+### Fix
+
+* Compatibility with qpdf v10 ([#62](https://github.com/DS4SD/docling-parse/issues/62)) ([`7f87b26`](https://github.com/DS4SD/docling-parse/commit/7f87b2630e6957eb1339e3b222d51969573e4bdc))
+
+## [v2.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.0) - 2024-11-20
+
+### Feature
+
+* Add the export of annotations and ToC ([#58](https://github.com/DS4SD/docling-parse/issues/58)) ([`22cf280`](https://github.com/DS4SD/docling-parse/commit/22cf280b1f2d7651b9684aba6a575edce9b35c00))
+
+## [v2.0.5](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.5) - 2024-11-20
+
+### Fix
+
+* Enable python3.9 wheels ([#60](https://github.com/DS4SD/docling-parse/issues/60)) ([`8e36f66`](https://github.com/DS4SD/docling-parse/commit/8e36f66b069e264875877ee3655601f8f1ff1b77))
+
+## [v2.0.4](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.4) - 2024-11-13
+
+### Fix
+
+* Removing asserts that break parse-v2 ([#55](https://github.com/DS4SD/docling-parse/issues/55)) ([`bb978c2`](https://github.com/DS4SD/docling-parse/commit/bb978c2918f3711aa838006a4b45f5701a561ef5))
+
 ## [v2.0.3](https://github.com/DS4SD/docling-parse/releases/tag/v2.0.3) - 2024-11-05
 
 ### Fix

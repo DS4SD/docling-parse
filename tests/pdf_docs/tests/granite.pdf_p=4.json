@@ -1,0 +1,2873 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DHTWRO+CMMI10": 8.846799546112614,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 1.235363621699476,
+        "/EFBUGN+CMSY10": 9.40465368128382,
+        "/HLTLFU+CMEX10": 2.125345747810653,
+        "/KHSBIR+CMR10": 4.423400436566206,
+        "/LHCPKS+NimbusRomNo9L-Regu": 1.989075992752718,
+        "/LTZNGC+CMVTT10": 0.9705492385083289,
+        "/RIDQUQ+CMMI7": 6.192748138759194,
+        "/YTDEHL+CMR7": 3.715648670932766
+      },
+      "mean-char-width": {
+        "/DHTWRO+CMMI10": 6.62512804342502,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 4.471561672316839,
+        "/EFBUGN+CMSY10": 6.871193690329748,
+        "/HLTLFU+CMEX10": 3.536169915308268,
+        "/KHSBIR+CMR10": 4.843018619702045,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.24492877937423,
+        "/LTZNGC+CMVTT10": 4.232014389697637,
+        "/RIDQUQ+CMMI7": 4.052472216834326,
+        "/YTDEHL+CMR7": 4.829363047799266
+      },
+      "number-of-chars": {
+        "/DHTWRO+CMMI10": 4,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 29,
+        "/EFBUGN+CMSY10": 1,
+        "/HLTLFU+CMEX10": 18,
+        "/KHSBIR+CMR10": 10,
+        "/LHCPKS+NimbusRomNo9L-Regu": 3228,
+        "/LTZNGC+CMVTT10": 177,
+        "/RIDQUQ+CMMI7": 7,
+        "/YTDEHL+CMR7": 5
+      }
+    },
+    "styles": [
+      "/DHTWRO+CMMI10",
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/EFBUGN+CMSY10",
+      "/HLTLFU+CMEX10",
+      "/KHSBIR+CMR10",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10",
+      "/RIDQUQ+CMMI7",
+      "/YTDEHL+CMR7"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              700.17603,
+              112.51186,
+              709.08258
+            ],
+            "device": [
+              108,
+              698.02411,
+              503.99713,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "experts, thus \u2018balancing\u2019 the load. To improve the training stability, we also use the router z-loss"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              689.21698,
+              150.61005,
+              698.12354
+            ],
+            "device": [
+              108,
+              687.06506,
+              238.05177,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": "introduced in Zoph et al. (2022):"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              236.875,
+              653.78497,
+              243.7462,
+              663.1897
+            ],
+            "device": [
+              236.875,
+              651.85223,
+              247.5533,
+              661.2569
+            ]
+          },
+          "content": {
+            "rnormalized": "L$_{z}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              251.105,
+              653.78497,
+              258.85391,
+              662.63177
+            ],
+            "device": [
+              251.105,
+              651.85223,
+              258.85391,
+              660.69904
+            ]
+          },
+          "content": {
+            "rnormalized": "="
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              264.354,
+              660.52496,
+              269.3353,
+              669.37177
+            ],
+            "device": [
+              264.354,
+              658.59222,
+              269.3353,
+              667.43903
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              262.81601,
+              646.95099,
+              270.37265,
+              655.79779
+            ],
+            "device": [
+              262.81601,
+              645.01825,
+              270.37265,
+              653.86505
+            ]
+          },
+          "content": {
+            "rnormalized": "B"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              277.74402,
+              666.23798,
+              283.76379,
+              672.43073
+            ],
+            "device": [
+              277.74402,
+              664.88507,
+              283.76379,
+              671.07782
+            ]
+          },
+          "content": {
+            "rnormalized": "B"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              273.729,
+              663.25,
+              288.11996,
+              669.62604
+            ],
+            "device": [
+              273.729,
+              657.27246,
+              288.11996,
+              663.6485
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              274.47101,
+              642.03101,
+              277.28983,
+              648.22375
+            ],
+            "device": [
+              274.47101,
+              640.6781,
+              277.28983,
+              646.87085
+            ]
+          },
+          "content": {
+            "rnormalized": "i"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              277.29001,
+              642.03101,
+              287.37762,
+              648.22375
+            ],
+            "device": [
+              277.29001,
+              640.6781,
+              287.37762,
+              646.87085
+            ]
+          },
+          "content": {
+            "rnormalized": "=1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              289.78,
+              673.81,
+              298.49728,
+              680.18604
+            ],
+            "device": [
+              289.78,
+              667.83246,
+              298.49728,
+              674.2085
+            ]
+          },
+          "content": {
+            "rnormalized": "\uf8eb"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              289.78,
+              655.87701,
+              298.49728,
+              662.25305
+            ],
+            "device": [
+              289.78,
+              651.85229,
+              311.22723,
+              660.6991
+            ]
+          },
+          "content": {
+            "rnormalized": "$_{\uf8ed}$log"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              316.69202,
+              666.23804,
+              323.00259,
+              672.43079
+            ],
+            "device": [
+              316.69202,
+              664.88513,
+              323.00259,
+              671.07788
+            ]
+          },
+          "content": {
+            "rnormalized": "N"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              313.02603,
+              663.25006,
+              327.41699,
+              669.6261
+            ],
+            "device": [
+              313.02603,
+              657.27252,
+              327.41699,
+              663.64856
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              313.32803,
+              642.03009,
+              316.62454,
+              648.22284
+            ],
+            "device": [
+              313.32803,
+              640.67719,
+              316.62454,
+              646.86993
+            ]
+          },
+          "content": {
+            "rnormalized": "j"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              317.02704,
+              642.03009,
+              327.11465,
+              648.22284
+            ],
+            "device": [
+              317.02704,
+              640.67719,
+              327.11465,
+              646.86993
+            ]
+          },
+          "content": {
+            "rnormalized": "=1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              329.07703,
+              653.7851,
+              348.17233,
+              662.6319
+            ],
+            "device": [
+              329.07703,
+              651.85236,
+              348.17233,
+              660.69916
+            ]
+          },
+          "content": {
+            "rnormalized": "exp("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              348.17203,
+              653.7851,
+              353.86566,
+              662.6319
+            ],
+            "device": [
+              348.17203,
+              651.85236,
+              353.86566,
+              660.69916
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              353.86603,
+              657.89911,
+              356.68484,
+              664.09186
+            ],
+            "device": [
+              353.86603,
+              656.5462,
+              356.68484,
+              662.73895
+            ]
+          },
+          "content": {
+            "rnormalized": "i"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              353.86603,
+              651.32208,
+              357.16254,
+              657.51483
+            ],
+            "device": [
+              353.86603,
+              651.85236,
+              370.6553,
+              660.69916
+            ]
+          },
+          "content": {
+            "rnormalized": "$_{j}$)$^{\uf8f6}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              361.93802,
+              655.87714,
+              370.6553,
+              662.25317
+            ],
+            "device": [
+              361.93802,
+              649.8996,
+              370.6553,
+              656.27563
+            ]
+          },
+          "content": {
+            "rnormalized": "\uf8f8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              370.65503,
+              671.74615,
+              374.62662,
+              677.9389
+            ],
+            "device": [
+              370.65503,
+              670.39325,
+              374.62662,
+              676.586
+            ]
+          },
+          "content": {
+            "rnormalized": "2"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              493.05103,
+              653.78516,
+              504.66742,
+              662.69171
+            ],
+            "device": [
+              493.05103,
+              651.63324,
+              504.66742,
+              660.53979
+            ]
+          },
+          "content": {
+            "rnormalized": "(5)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              620.71503,
+              132.4664,
+              629.62158
+            ],
+            "device": [
+              107.641,
+              618.56311,
+              132.4664,
+              627.46967
+            ]
+          },
+          "content": {
+            "rnormalized": "where"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.29601,
+              620.71503,
+              142.85263,
+              629.56183
+            ],
+            "device": [
+              135.29601,
+              618.78229,
+              142.85263,
+              627.62909
+            ]
+          },
+          "content": {
+            "rnormalized": "B"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              146.18201,
+              620.71503,
+              152.95996,
+              629.62158
+            ],
+            "device": [
+              146.18201,
+              618.56311,
+              245.17879,
+              627.46967
+            ]
+          },
+          "content": {
+            "rnormalized": "is the number of tokens,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              248.09,
+              620.71503,
+              253.78362,
+              629.56183
+            ],
+            "device": [
+              248.09,
+              618.78229,
+              253.78362,
+              627.62909
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              256.61301,
+              620.71503,
+              263.39096,
+              629.62158
+            ],
+            "device": [
+              256.61301,
+              618.56311,
+              504.00314,
+              627.46967
+            ]
+          },
+          "content": {
+            "rnormalized": "is the logits given by router. This loss penalises logits of the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              609.75598,
+              131.31488,
+              618.66254
+            ],
+            "device": [
+              108,
+              607.60406,
+              504.16748,
+              616.51062
+            ]
+          },
+          "content": {
+            "rnormalized": "router when it has extreme values, allowing the router to adapt better during training in order to better"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              598.797,
+              132.90649,
+              607.70355
+            ],
+            "device": [
+              108,
+              596.64508,
+              500.73572,
+              605.55164
+            ]
+          },
+          "content": {
+            "rnormalized": "assign experts. The final loss is the weighted sum of language model loss and two auxiliary losses."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.299,
+              566.70001,
+              114.2766,
+              577.38794
+            ],
+            "device": [
+              108.299,
+              564.11768,
+              114.2766,
+              574.80566
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              126.82957,
+              566.70001,
+              134.1342,
+              577.38794
+            ],
+            "device": [
+              126.82957,
+              564.11768,
+              209.9075,
+              574.80566
+            ]
+          },
+          "content": {
+            "rnormalized": "TRAINING DATA"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 11.9552001953125
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              541.11499,
+              137.36992,
+              550.02155
+            ],
+            "device": [
+              108,
+              538.96307,
+              503.9993,
+              547.86963
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite 3.0 language models are trained using data from various sources such as unstructured natural"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              530.15601,
+              143.24568,
+              539.06256
+            ],
+            "device": [
+              108,
+              528.00409,
+              504.00153,
+              536.91064
+            ]
+          },
+          "content": {
+            "rnormalized": "language text and code data from the Web curated by IBM, a collection of synthetic datasets generated"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              519.19702,
+              118.01241,
+              528.10358
+            ],
+            "device": [
+              108,
+              517.0451,
+              504.00101,
+              525.95166
+            ]
+          },
+          "content": {
+            "rnormalized": "by IBM, and publicly available high-quality datasets with permissible licenses. For governance, all"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              508.23801,
+              121.54575,
+              517.14459
+            ],
+            "device": [
+              108,
+              506.08609,
+              505.74496,
+              514.99268
+            ]
+          },
+          "content": {
+            "rnormalized": "our data undergoes a data clearance process subject to technical, business, and governance review."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              497.27899,
+              125.22737,
+              506.18555
+            ],
+            "device": [
+              107.691,
+              495.12708,
+              503.99521,
+              504.03363
+            ]
+          },
+          "content": {
+            "rnormalized": "This comprehensive process captures critical information about the data, including but not limited to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              486.32001,
+              126.44406,
+              495.22656
+            ],
+            "device": [
+              108,
+              484.16809,
+              503.99896,
+              493.07465
+            ]
+          },
+          "content": {
+            "rnormalized": "their content description, ownership, intended use, data classification, licensing information, usage"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              475.36099,
+              155.69974,
+              484.26755
+            ],
+            "device": [
+              108,
+              473.20908,
+              505.24701,
+              482.11563
+            ]
+          },
+          "content": {
+            "rnormalized": "restrictions, how the data will be acquired, as well as an assessment of sensitive information (i.e,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              464.40201,
+              141.3145,
+              473.30856
+            ],
+            "device": [
+              108,
+              462.25009,
+              503.99799,
+              471.15665
+            ]
+          },
+          "content": {
+            "rnormalized": "personal information). For code, we annotate each code file with license information associated with"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              453.444,
+              120.41779,
+              462.35056
+            ],
+            "device": [
+              108,
+              451.29208,
+              504.16989,
+              460.19864
+            ]
+          },
+          "content": {
+            "rnormalized": "the respective repository, found via Github APIs and only keep files with permissive licenses for"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              442.48499,
+              133.40463,
+              451.39154
+            ],
+            "device": [
+              108,
+              440.33307,
+              503.9971,
+              449.23962
+            ]
+          },
+          "content": {
+            "rnormalized": "model training. In addition, we also filter out all data obtained from sources that match URLs in"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              431.526,
+              130.15903,
+              440.43256
+            ],
+            "device": [
+              108,
+              429.37408,
+              504.00037,
+              438.28064
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM\u2019s URLs blocking-list. Below, we provide a brief overview about our data processing steps and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              420.56699,
+              126.55503,
+              429.47354
+            ],
+            "device": [
+              108,
+              418.41507,
+              505.65982,
+              427.32162
+            ]
+          },
+          "content": {
+            "rnormalized": "refer to the Appendix B.1 for details on individual datasets used in different stages of model training."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              392.35501,
+              113.2303,
+              401.26157
+            ],
+            "device": [
+              108.249,
+              390.20309,
+              121.69851,
+              399.10965
+            ]
+          },
+          "content": {
+            "rnormalized": "3.1"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              132.15924,
+              392.35501,
+              138.80429,
+              401.26157
+            ],
+            "device": [
+              132.15924,
+              390.20309,
+              222.80101,
+              399.10965
+            ]
+          },
+          "content": {
+            "rnormalized": "CURATED WEB DATA"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.532,
+              370.54901,
+              116.7486,
+              379.45557
+            ],
+            "device": [
+              107.532,
+              368.39709,
+              504.00214,
+              377.30365
+            ]
+          },
+          "content": {
+            "rnormalized": "We curate a massive collection of unstructured data from the Web, obtained from academic, enterprise"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              359.59,
+              128.26907,
+              368.49655
+            ],
+            "device": [
+              107.671,
+              357.43808,
+              504.00351,
+              366.34464
+            ]
+          },
+          "content": {
+            "rnormalized": "(e.g., financial, legal, biomedical), code, and other publicly available sources, e.g., open-source"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              348.63101,
+              139.3208,
+              357.53757
+            ],
+            "device": [
+              108,
+              346.4791,
+              504.00137,
+              355.38565
+            ]
+          },
+          "content": {
+            "rnormalized": "datasets like FineWeb (Penedo et al., 2023), DCLM (Li et al., 2024a) for language and Github Code"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              337.673,
+              131.7076,
+              346.57956
+            ],
+            "device": [
+              108,
+              335.52109,
+              199.21375,
+              344.42764
+            ]
+          },
+          "content": {
+            "rnormalized": "Clean$^{2}$, StarCoderdata"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              199.214,
+              341.28799,
+              202.7009,
+              347.52258
+            ],
+            "device": [
+              199.214,
+              339.78165,
+              202.7009,
+              346.01624
+            ]
+          },
+          "content": {
+            "rnormalized": "3"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              205.97301,
+              337.673,
+              217.82173,
+              346.57956
+            ],
+            "device": [
+              205.97301,
+              335.52109,
+              503.99997,
+              344.42764
+            ]
+          },
+          "content": {
+            "rnormalized": "for code domain. To ensure the quality of our curated web data, we have"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              326.71399,
+              117.40469,
+              335.62054
+            ],
+            "device": [
+              108,
+              324.56207,
+              385.00018,
+              333.46863
+            ]
+          },
+          "content": {
+            "rnormalized": "developed a comprehensive data preprocessing procedure, as follows."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              299.84601,
+              114.77795,
+              308.8024
+            ],
+            "device": [
+              108,
+              297.76382,
+              178.49277,
+              306.72021
+            ]
+          },
+          "content": {
+            "rnormalized": "Text Extraction."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              188.45399,
+              299.84601,
+              194.66289,
+              308.75256
+            ],
+            "device": [
+              188.45399,
+              297.69409,
+              503.99966,
+              306.60065
+            ]
+          },
+          "content": {
+            "rnormalized": "Text extraction is the first step in the processing of unstructured data crawled"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              288.88699,
+              127.46413,
+              297.79355
+            ],
+            "device": [
+              108,
+              286.73508,
+              504.1712,
+              295.64163
+            ]
+          },
+          "content": {
+            "rnormalized": "from web, and is used to extract text from various documents into a standardized format for further"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              277.92899,
+              153.19089,
+              286.83554
+            ],
+            "device": [
+              108,
+              275.77707,
+              309.70694,
+              284.68362
+            ]
+          },
+          "content": {
+            "rnormalized": "processing. After text extraction, we adopt fasText"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              312.194,
+              281.54401,
+              315.68091,
+              287.77859
+            ],
+            "device": [
+              312.194,
+              280.03766,
+              315.68091,
+              286.27225
+            ]
+          },
+          "content": {
+            "rnormalized": "4"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              318.67099,
+              277.92899,
+              330.31061,
+              286.83554
+            ],
+            "device": [
+              318.67099,
+              275.77707,
+              503.99664,
+              284.68362
+            ]
+          },
+          "content": {
+            "rnormalized": "for language identification at a document level"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              266.97,
+              115.90592,
+              275.87656
+            ],
+            "device": [
+              108,
+              264.81808,
+              503.99725,
+              273.72464
+            ]
+          },
+          "content": {
+            "rnormalized": "to detect the dominant language. With language identification, we specifically select documents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              256.01099,
+              145.9599,
+              264.91754
+            ],
+            "device": [
+              108,
+              253.85907,
+              505.24139,
+              262.76562
+            ]
+          },
+          "content": {
+            "rnormalized": "annotated with 12 languages namely English, German, Spanish, French, Japanese, Portuguese, Arabic,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              245.052,
+              134.86682,
+              253.95857
+            ],
+            "device": [
+              108,
+              242.90009,
+              503.995,
+              251.80664
+            ]
+          },
+          "content": {
+            "rnormalized": "Czech, Italian, Korean, Dutch, or Chinese as the dominant language. While our training data consists"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              234.093,
+              116.43993,
+              242.99957
+            ],
+            "device": [
+              108,
+              231.94109,
+              503.99768,
+              240.84764
+            ]
+          },
+          "content": {
+            "rnormalized": "of primarily-English data, we utilize high-quality documents from these other eleven languages to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              223.134,
+              131.80066,
+              232.04057
+            ],
+            "device": [
+              108,
+              220.98209,
+              294.49988,
+              229.88864
+            ]
+          },
+          "content": {
+            "rnormalized": "improve multilinguality of Granite 3.0 models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              196.267,
+              169.09296,
+              205.22337
+            ],
+            "device": [
+              108,
+              194.18481,
+              169.09296,
+              203.14119
+            ]
+          },
+          "content": {
+            "rnormalized": "Deduplication."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              179.05499,
+              196.267,
+              234.43057,
+              205.17357
+            ],
+            "device": [
+              179.05499,
+              194.11508,
+              503.99805,
+              203.02164
+            ]
+          },
+          "content": {
+            "rnormalized": "Deduplication aims to identify and remove duplicate documents to improve overall"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              185.308,
+              136.11893,
+              194.21457
+            ],
+            "device": [
+              108,
+              183.15608,
+              504.34732,
+              192.06264
+            ]
+          },
+          "content": {
+            "rnormalized": "quality of a dataset. We adopt an aggressive deduplication strategy including both exact and fuzzy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              174.349,
+              161.58556,
+              183.25557
+            ],
+            "device": [
+              108,
+              172.19708,
+              503.99573,
+              181.10364
+            ]
+          },
+          "content": {
+            "rnormalized": "deduplication to remove documents having (near) identical content. For exact deduplication, we first"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              163.39,
+              142.27689,
+              172.29657
+            ],
+            "device": [
+              108,
+              161.23808,
+              505.24963,
+              170.14464
+            ]
+          },
+          "content": {
+            "rnormalized": "compute SHA256 hash on the document content and remove records having identical hashes. Then,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              152.431,
+              119.37355,
+              161.33757
+            ],
+            "device": [
+              107.641,
+              150.27908,
+              504.00214,
+              159.18564
+            ]
+          },
+          "content": {
+            "rnormalized": "we follow a two-step fuzzy deduplication strategy: (1) computing MinHashes of all the documents"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              141.472,
+              122.12704,
+              150.37857
+            ],
+            "device": [
+              108,
+              139.32008,
+              505.23993,
+              148.22664
+            ]
+          },
+          "content": {
+            "rnormalized": "and then utilize Locally Sensitive Hashing (LSH) to group them based on their MinHash fingerprints,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              130.513,
+              122.24213,
+              139.41957
+            ],
+            "device": [
+              108,
+              128.36108,
+              503.99829,
+              137.26764
+            ]
+          },
+          "content": {
+            "rnormalized": "and (2) measuring Jaccard similarity between each pair of documents in the same bucket to annotate"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              119.555,
+              150.3046,
+              128.46156
+            ],
+            "device": [
+              108,
+              117.40308,
+              504.00137,
+              126.30965
+            ]
+          },
+          "content": {
+            "rnormalized": "documents except one as duplicates based on a similarity threshold. We apply this near-deduplication"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              108.596,
+              137.87784,
+              117.50256
+            ],
+            "device": [
+              108,
+              106.44408,
+              504.64108,
+              115.35065
+            ]
+          },
+          "content": {
+            "rnormalized": "process to both language and code data to enhance the richness and diversity of the training dataset."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              120.653,
+              87.695999,
+              123.6418,
+              93.03997
+            ],
+            "device": [
+              120.653,
+              81.896461,
+              381.44958,
+              89.365471
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{2}$https://huggingface.co/datasets/codeparrot/github-code-clean"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              120.653,
+              76.821999,
+              123.6418,
+              82.16597
+            ],
+            "device": [
+              120.653,
+              71.022461,
+              351.34583,
+              78.49147
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{3}$https://huggingface.co/datasets/bigcode/starcoderdata"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              120.653,
+              65.946999,
+              123.6418,
+              71.29097
+            ],
+            "device": [
+              120.653,
+              60.147461,
+              390.15866,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{4}$https://huggingface.co/facebook/fasttext-language-identification"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.509,
+              32.25,
+              308.4903,
+              41.156563
+            ],
+            "device": [
+              303.509,
+              30.098078,
+              308.4903,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "5"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 262.81601,
+          "x1": 270.87302,
+          "y": 656.276
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 94.561996
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            262.81601,
+            656.276,
+            270.87302,
+            656.276
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            262.81601,
+            270.87302
+          ],
+          "y-values": [
+            656.276,
+            656.276
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            94.561996,
+            251.46201,
+            94.561996
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            94.561996,
+            94.561996
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

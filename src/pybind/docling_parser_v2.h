@@ -35,6 +35,9 @@ namespace docling
 
     int number_of_pages(std::string key);
 
+    nlohmann::json get_annotations(std::string key);
+    nlohmann::json get_table_of_contents(std::string key);
+    
     nlohmann::json parse_pdf_from_key(std::string key);
 
     nlohmann::json parse_pdf_from_key_on_page(std::string key, int page);
@@ -238,10 +241,40 @@ namespace docling
 
     return -1;
   }
+
+  nlohmann::json docling_parser_v2::get_annotations(std::string key)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+
+    auto itr = key2doc.find(key);
+
+    if(itr==key2doc.end())
+      {
+	LOG_S(ERROR) << "key not found: " << key;
+	return nlohmann::json::value_t::null;	
+      }
+
+    return (itr->second)->get_annotations();
+  }
+  
+  nlohmann::json docling_parser_v2::get_table_of_contents(std::string key)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+
+    auto itr = key2doc.find(key);
+
+    if(itr==key2doc.end())
+      {
+	LOG_S(ERROR) << "key not found: " << key;
+	return nlohmann::json::value_t::null;	
+      }
+
+    return (itr->second)->get_table_of_contents();
+  }
   
   nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key)
   {
-    LOG_S(WARNING) << __FUNCTION__;
+    LOG_S(INFO) << __FUNCTION__;
     
     auto itr = key2doc.find(key);
 

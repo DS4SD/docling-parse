@@ -1,0 +1,6563 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DHTWRO+CMMI10": 5.564914982776699,
+        "/EFBUGN+CMSY10": 6.41228247886287,
+        "/HLTLFU+CMEX10": 2.975493268329912,
+        "/JLKDRF+CMSY7": 3.448369906476433,
+        "/KHSBIR+CMR10": 6.244788253108472,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.23258869984639,
+        "/MGDWIB+CMMI5": 4.423399994226251,
+        "/RIDQUQ+CMMI7": 4.954186506394361,
+        "/YTDEHL+CMR7": 2.580306791810372
+      },
+      "mean-char-width": {
+        "/DHTWRO+CMMI10": 3.536517178499975,
+        "/EFBUGN+CMSY10": 2.339851273037655,
+        "/HLTLFU+CMEX10": 4.741530705392987,
+        "/JLKDRF+CMSY7": 1.954259870202655,
+        "/KHSBIR+CMR10": 4.639501742477601,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.355705515864529,
+        "/MGDWIB+CMMI5": 2.658019487927352,
+        "/RIDQUQ+CMMI7": 3.443001088851731,
+        "/YTDEHL+CMR7": 4.042770048844684
+      },
+      "number-of-chars": {
+        "/DHTWRO+CMMI10": 62,
+        "/EFBUGN+CMSY10": 22,
+        "/HLTLFU+CMEX10": 30,
+        "/JLKDRF+CMSY7": 21,
+        "/KHSBIR+CMR10": 51,
+        "/LHCPKS+NimbusRomNo9L-Regu": 3069,
+        "/MGDWIB+CMMI5": 5,
+        "/RIDQUQ+CMMI7": 40,
+        "/YTDEHL+CMR7": 12
+      }
+    },
+    "styles": [
+      "/DHTWRO+CMMI10",
+      "/EFBUGN+CMSY10",
+      "/HLTLFU+CMEX10",
+      "/JLKDRF+CMSY7",
+      "/KHSBIR+CMR10",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/MGDWIB+CMMI5",
+      "/RIDQUQ+CMMI7",
+      "/YTDEHL+CMR7"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              700.17603,
+              113.2303,
+              709.08258
+            ],
+            "device": [
+              108.249,
+              698.02411,
+              130.16672,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "4.1.1"
+          },
+          "enumeration": {
+            "match": 12,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              140.62744,
+              700.17603,
+              146.16664,
+              709.08258
+            ],
+            "device": [
+              140.62744,
+              698.02411,
+              246.37012,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "STAGE 1 DATA MIXTURE"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              680.99799,
+              123.49268,
+              689.90454
+            ],
+            "device": [
+              107.691,
+              678.84607,
+              504.00323,
+              687.75262
+            ]
+          },
+          "content": {
+            "rnormalized": "The stage 1 data mixture search focuses on achieving robust language model performance across"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              670.039,
+              119.28982,
+              678.94556
+            ],
+            "device": [
+              108,
+              667.88708,
+              180.0069,
+              676.79364
+            ]
+          },
+          "content": {
+            "rnormalized": "different domains"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              182.85201,
+              670.039,
+              191.10004,
+              678.8858
+            ],
+            "device": [
+              182.85201,
+              668.10626,
+              193.91982,
+              676.95306
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              194.41701,
+              670.039,
+              196.95747,
+              678.94556
+            ],
+            "device": [
+              194.41701,
+              667.88708,
+              503.99774,
+              676.79364
+            ]
+          },
+          "content": {
+            "rnormalized": ". Inspired by distributionally robust language model (Oren et al., 2019) and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              659.08002,
+              143.25266,
+              667.98657
+            ],
+            "device": [
+              108,
+              656.9281,
+              505.24704,
+              665.83466
+            ]
+          },
+          "content": {
+            "rnormalized": "DoReMi (Xie et al., 2024), our target was to minimize the weighted sum of relative domain losses,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              648.12097,
+              125.3545,
+              657.02753
+            ],
+            "device": [
+              107.641,
+              645.96906,
+              211.12251,
+              654.87561
+            ]
+          },
+          "content": {
+            "rnormalized": "with respect to a baseline:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              179.545,
+              621.51599,
+              196.14966,
+              630.36279
+            ],
+            "device": [
+              179.545,
+              619.58325,
+              196.14966,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "min"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              185.843,
+              615.01196,
+              189.63745,
+              621.20471
+            ],
+            "device": [
+              185.843,
+              613.65906,
+              189.63745,
+              619.85181
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              197.81,
+              621.51599,
+              204.59055,
+              630.36279
+            ],
+            "device": [
+              197.81,
+              619.58325,
+              204.59055,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "L"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              204.59,
+              621.51599,
+              208.46445,
+              630.36279
+            ],
+            "device": [
+              204.59,
+              619.58325,
+              208.46445,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              208.465,
+              621.51599,
+              213.14143,
+              630.36279
+            ],
+            "device": [
+              208.465,
+              619.58325,
+              224.21486,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8, \u03b1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              224.256,
+              621.51599,
+              228.13045,
+              630.36279
+            ],
+            "device": [
+              224.256,
+              619.58325,
+              241.41658,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": ") :="
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              245.646,
+              634.82697,
+              248.01221,
+              641.41022
+            ],
+            "device": [
+              245.646,
+              633.47406,
+              248.01221,
+              640.05731
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              248.01199,
+              634.82697,
+              254.52621,
+              641.01971
+            ],
+            "device": [
+              248.01199,
+              633.47406,
+              254.52621,
+              639.66681
+            ]
+          },
+          "content": {
+            "rnormalized": "D"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              254.741,
+              634.82697,
+              257.10721,
+              641.41022
+            ],
+            "device": [
+              254.741,
+              633.47406,
+              257.10721,
+              640.05731
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.181,
+              630.97998,
+              258.57196,
+              637.35602
+            ],
+            "device": [
+              244.181,
+              625.00244,
+              258.57196,
+              631.37848
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.924,
+              609.76099,
+              247.74281,
+              615.95374
+            ],
+            "device": [
+              244.924,
+              608.40808,
+              247.74281,
+              614.60083
+            ]
+          },
+          "content": {
+            "rnormalized": "i"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              247.74199,
+              609.76099,
+              257.82959,
+              615.95374
+            ],
+            "device": [
+              247.74199,
+              608.40808,
+              257.82959,
+              614.60083
+            ]
+          },
+          "content": {
+            "rnormalized": "=1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              260.23199,
+              621.51599,
+              266.60507,
+              630.36279
+            ],
+            "device": [
+              260.23199,
+              619.58325,
+              269.4238,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b1$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              272.13599,
+              621.51599,
+              274.90359,
+              630.92072
+            ],
+            "device": [
+              272.13599,
+              619.58325,
+              282.92816,
+              628.98792
+            ]
+          },
+          "content": {
+            "rnormalized": "\u00b7$^{[}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.36398,
+              628.255,
+              308.34528,
+              637.10181
+            ],
+            "device": [
+              303.36398,
+              626.32227,
+              308.34528,
+              635.16907
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              284.12399,
+              622.15399,
+              294.6405,
+              628.53003
+            ],
+            "device": [
+              284.12399,
+              616.17645,
+              294.6405,
+              622.55249
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              294.64099,
+              611.69299,
+              299.15863,
+              617.88574
+            ],
+            "device": [
+              294.64099,
+              610.34009,
+              299.15863,
+              616.53284
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              299.15799,
+              611.69299,
+              304.52643,
+              618.27625
+            ],
+            "device": [
+              299.15799,
+              610.34009,
+              304.52643,
+              616.92334
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2208"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              304.52698,
+              611.69299,
+              311.0412,
+              617.88574
+            ],
+            "device": [
+              304.52698,
+              610.34009,
+              313.69901,
+              616.53284
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              316.35599,
+              614.68201,
+              319.1236,
+              624.08673
+            ],
+            "device": [
+              316.35599,
+              612.74927,
+              319.1236,
+              622.15393
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              319.12299,
+              614.68201,
+              324.81662,
+              623.52881
+            ],
+            "device": [
+              319.12299,
+              612.74927,
+              324.81662,
+              621.59607
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              324.81699,
+              614.68201,
+              327.58459,
+              624.08673
+            ],
+            "device": [
+              324.81699,
+              612.74927,
+              327.58459,
+              622.15393
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              333.02298,
+              630.97998,
+              347.41394,
+              637.35602
+            ],
+            "device": [
+              333.02298,
+              625.00244,
+              347.41394,
+              631.37848
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              330.43997,
+              609.60999,
+              334.95761,
+              615.80273
+            ],
+            "device": [
+              330.43997,
+              608.25708,
+              334.95761,
+              614.44983
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              334.95798,
+              609.60999,
+              340.32642,
+              616.19324
+            ],
+            "device": [
+              334.95798,
+              608.25708,
+              340.32642,
+              614.84033
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2208"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              340.32697,
+              609.60999,
+              346.84119,
+              615.80273
+            ],
+            "device": [
+              340.32697,
+              608.25708,
+              349.49899,
+              614.44983
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              351.65698,
+              621.51599,
+              355.53143,
+              630.36279
+            ],
+            "device": [
+              351.65698,
+              619.58325,
+              355.53143,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              355.53198,
+              621.51599,
+              359.68341,
+              630.36279
+            ],
+            "device": [
+              355.53198,
+              619.58325,
+              363.47742,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2113$_{\u03b8}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              364.18997,
+              621.51599,
+              368.06442,
+              630.36279
+            ],
+            "device": [
+              364.18997,
+              619.58325,
+              368.06442,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              368.06497,
+              621.51599,
+              373.75861,
+              630.36279
+            ],
+            "device": [
+              368.06497,
+              619.58325,
+              373.75861,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              373.75897,
+              621.51599,
+              377.63342,
+              630.36279
+            ],
+            "device": [
+              373.75897,
+              619.58325,
+              377.63342,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              379.84698,
+              621.51599,
+              387.59589,
+              630.92072
+            ],
+            "device": [
+              379.84698,
+              619.58325,
+              387.59589,
+              628.98792
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              389.80899,
+              621.51599,
+              393.96042,
+              630.36279
+            ],
+            "device": [
+              389.80899,
+              619.58325,
+              408.82803,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2113$_{ref}$$_{,i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              409.32602,
+              621.51599,
+              413.20047,
+              630.36279
+            ],
+            "device": [
+              409.32602,
+              619.58325,
+              413.20047,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              413.20001,
+              621.51599,
+              418.89365,
+              630.36279
+            ],
+            "device": [
+              413.20001,
+              619.58325,
+              418.89365,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              418.89401,
+              621.51599,
+              426.64291,
+              630.36279
+            ],
+            "device": [
+              418.89401,
+              619.58325,
+              432.45419,
+              628.43005
+            ]
+          },
+          "content": {
+            "rnormalized": "))$^{]}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              493.05099,
+              621.51599,
+              504.66739,
+              630.42255
+            ],
+            "device": [
+              493.05099,
+              619.36407,
+              504.66739,
+              628.27063
+            ]
+          },
+          "content": {
+            "rnormalized": "(6)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              595.23499,
+              132.4664,
+              604.14154
+            ],
+            "device": [
+              107.641,
+              593.08307,
+              132.4664,
+              601.98962
+            ]
+          },
+          "content": {
+            "rnormalized": "where"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.026,
+              595.23499,
+              139.70244,
+              604.08179
+            ],
+            "device": [
+              135.026,
+              593.30225,
+              139.70244,
+              602.14905
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              142.53799,
+              595.23499,
+              149.31595,
+              604.14154
+            ],
+            "device": [
+              142.53799,
+              593.08307,
+              328.62183,
+              601.98962
+            ]
+          },
+          "content": {
+            "rnormalized": "is the mixture percentage of pre-training data,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              331.19601,
+              595.23499,
+              335.34744,
+              604.08179
+            ],
+            "device": [
+              331.19601,
+              593.30225,
+              339.14145,
+              602.14905
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2113$_{\u03b8}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              339.85501,
+              595.23499,
+              343.72946,
+              604.08179
+            ],
+            "device": [
+              339.85501,
+              593.30225,
+              343.72946,
+              602.14905
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.729,
+              595.23499,
+              349.42264,
+              604.08179
+            ],
+            "device": [
+              343.729,
+              593.30225,
+              349.42264,
+              602.14905
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              349.423,
+              595.23499,
+              353.29745,
+              604.08179
+            ],
+            "device": [
+              349.423,
+              593.30225,
+              353.29745,
+              602.14905
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              355.85599,
+              595.23499,
+              362.63394,
+              604.14154
+            ],
+            "device": [
+              355.85599,
+              593.08307,
+              503.99548,
+              601.98962
+            ]
+          },
+          "content": {
+            "rnormalized": "is the negative log-likelihoods of the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              584.276,
+              130.77789,
+              593.18256
+            ],
+            "device": [
+              108,
+              582.12408,
+              251.51147,
+              591.03064
+            ]
+          },
+          "content": {
+            "rnormalized": "proxy model for data mixture search,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              253.763,
+              584.276,
+              257.91443,
+              593.1228
+            ],
+            "device": [
+              253.763,
+              582.34326,
+              272.78204,
+              591.19006
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2113$_{ref}$$_{,i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              273.28003,
+              584.276,
+              277.15448,
+              593.1228
+            ],
+            "device": [
+              273.28003,
+              582.34326,
+              277.15448,
+              591.19006
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              277.15402,
+              584.276,
+              282.84766,
+              593.1228
+            ],
+            "device": [
+              277.15402,
+              582.34326,
+              282.84766,
+              591.19006
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              282.84802,
+              584.276,
+              286.72247,
+              593.1228
+            ],
+            "device": [
+              282.84802,
+              582.34326,
+              286.72247,
+              591.19006
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              288.90799,
+              584.276,
+              295.42014,
+              593.18256
+            ],
+            "device": [
+              288.90799,
+              582.12408,
+              419.67819,
+              591.03064
+            ]
+          },
+          "content": {
+            "rnormalized": "is the reference model for domain"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              421.85999,
+              584.276,
+              430.10803,
+              593.1228
+            ],
+            "device": [
+              421.85999,
+              582.34326,
+              432.92679,
+              591.19006
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              433.42499,
+              584.276,
+              435.86581,
+              593.18256
+            ],
+            "device": [
+              433.42499,
+              582.12408,
+              435.86581,
+              591.03064
+            ]
+          },
+          "content": {
+            "rnormalized": ","
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              438.11301,
+              584.276,
+              440.88062,
+              593.68073
+            ],
+            "device": [
+              438.11301,
+              582.34326,
+              440.88062,
+              591.74792
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              440.88,
+              584.276,
+              446.57364,
+              593.1228
+            ],
+            "device": [
+              440.88,
+              582.34326,
+              446.57364,
+              591.19006
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              446.57401,
+              584.276,
+              449.34161,
+              593.68073
+            ],
+            "device": [
+              446.57401,
+              582.34326,
+              449.34161,
+              591.74792
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              451.52701,
+              584.276,
+              458.03915,
+              593.18256
+            ],
+            "device": [
+              451.52701,
+              582.12408,
+              504.17096,
+              591.03064
+            ]
+          },
+          "content": {
+            "rnormalized": "is the number"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              573.31702,
+              116.40673,
+              582.22357
+            ],
+            "device": [
+              108,
+              571.1651,
+              204.05675,
+              580.07166
+            ]
+          },
+          "content": {
+            "rnormalized": "of tokens in an example"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              206.554,
+              573.31702,
+              212.24762,
+              582.16382
+            ],
+            "device": [
+              206.554,
+              571.38428,
+              212.24762,
+              580.23108
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              212.248,
+              573.31702,
+              214.77103,
+              582.22357
+            ],
+            "device": [
+              212.248,
+              571.1651,
+              231.83679,
+              580.07166
+            ]
+          },
+          "content": {
+            "rnormalized": ", and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              234.33501,
+              573.31702,
+              240.70808,
+              582.16382
+            ],
+            "device": [
+              234.33501,
+              571.38428,
+              240.70808,
+              580.23108
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              243.24001,
+              573.31702,
+              249.97145,
+              582.22357
+            ],
+            "device": [
+              243.24001,
+              571.1651,
+              504.00003,
+              580.07166
+            ]
+          },
+          "content": {
+            "rnormalized": "is the weights for different domains. Reference models are small"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              562.35797,
+              144.07288,
+              571.26453
+            ],
+            "device": [
+              108,
+              560.20605,
+              310.48776,
+              569.11261
+            ]
+          },
+          "content": {
+            "rnormalized": "language models trained with in-domain data from"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              312.96399,
+              562.35797,
+              321.21204,
+              571.20477
+            ],
+            "device": [
+              312.96399,
+              560.42523,
+              324.0318,
+              569.27203
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              324.53,
+              562.35797,
+              327.02811,
+              571.26453
+            ],
+            "device": [
+              324.53,
+              560.20605,
+              503.99515,
+              569.11261
+            ]
+          },
+          "content": {
+            "rnormalized": ". Our assumption here is that the loss reflects"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              551.39899,
+              120.16212,
+              560.30554
+            ],
+            "device": [
+              108,
+              549.24707,
+              504.34381,
+              558.15363
+            ]
+          },
+          "content": {
+            "rnormalized": "the difficulty of the target domain. By subtracting the reference model loss, we normalize the proxy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              540.44098,
+              133.40463,
+              549.34753
+            ],
+            "device": [
+              108,
+              538.28906,
+              503.99716,
+              547.19562
+            ]
+          },
+          "content": {
+            "rnormalized": "model loss by removing the difficulty factor. This way, we can avoid forcing the model to learn"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              529.48199,
+              119.06845,
+              538.38855
+            ],
+            "device": [
+              108,
+              527.33008,
+              478.94754,
+              536.23663
+            ]
+          },
+          "content": {
+            "rnormalized": "difficult domains even if the model cannot improve further in this domain (Oren et al., 2019)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              512.54498,
+              116.42332,
+              521.45154
+            ],
+            "device": [
+              108,
+              510.39307,
+              503.99753,
+              519.29962
+            ]
+          },
+          "content": {
+            "rnormalized": "In the data mixture search, we train thousands of small proxy models with randomly sampled data"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              501.586,
+              143.53162,
+              510.49255
+            ],
+            "device": [
+              108,
+              499.43408,
+              503.99478,
+              508.34064
+            ]
+          },
+          "content": {
+            "rnormalized": "mixtures to find the optimal data mixture. Each proxy model is a small language model with 10M"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              490.62701,
+              151.39998,
+              499.53357
+            ],
+            "device": [
+              108,
+              488.4751,
+              504.34769,
+              497.38165
+            ]
+          },
+          "content": {
+            "rnormalized": "parameters trained on 15B tokens. The ratio of the number of tokens to parameters is approximately"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              479.668,
+              120.14995,
+              488.57455
+            ],
+            "device": [
+              108,
+              477.51608,
+              503.99673,
+              486.42264
+            ]
+          },
+          "content": {
+            "rnormalized": "the same as our 8B dense model. Oren et al. (2019) and Xie et al. (2024) suggest that the maximum"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              468.70999,
+              128.06367,
+              477.61655
+            ],
+            "device": [
+              108,
+              466.55807,
+              505.24142,
+              475.46463
+            ]
+          },
+          "content": {
+            "rnormalized": "relative domain loss should be minimized to achieve a distributional robust language model. However,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              457.75101,
+              115.90592,
+              466.65756
+            ],
+            "device": [
+              108,
+              455.59909,
+              503.99728,
+              464.50565
+            ]
+          },
+          "content": {
+            "rnormalized": "in practice, we notice that some domains are more difficult to learn in this multi-domain learning"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              446.79199,
+              135.10165,
+              455.69855
+            ],
+            "device": [
+              108,
+              444.64008,
+              503.99722,
+              453.54663
+            ]
+          },
+          "content": {
+            "rnormalized": "setting due to conflicts between domains or format mismatches. In other words, if we focus on"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              435.83301,
+              142.37111,
+              444.73956
+            ],
+            "device": [
+              108,
+              433.68109,
+              503.99966,
+              442.58765
+            ]
+          },
+          "content": {
+            "rnormalized": "reducing the maximum relative domain loss, the performance of other domains will be sacrificed. To"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              424.87399,
+              138.98369,
+              433.78055
+            ],
+            "device": [
+              108,
+              422.72208,
+              360.14343,
+              431.62863
+            ]
+          },
+          "content": {
+            "rnormalized": "account for that, we minimize the average relative domain loss:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              183.306,
+              398.26898,
+              199.91066,
+              407.11578
+            ],
+            "device": [
+              183.306,
+              396.33624,
+              199.91066,
+              405.18301
+            ]
+          },
+          "content": {
+            "rnormalized": "min"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              189.604,
+              391.76498,
+              193.39845,
+              397.95773
+            ],
+            "device": [
+              189.604,
+              390.41208,
+              193.39845,
+              396.6048
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              201.571,
+              398.26898,
+              208.35155,
+              407.11578
+            ],
+            "device": [
+              201.571,
+              396.33624,
+              208.35155,
+              405.18301
+            ]
+          },
+          "content": {
+            "rnormalized": "L"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              208.351,
+              398.26898,
+              212.22545,
+              407.11578
+            ],
+            "device": [
+              208.351,
+              396.33624,
+              212.22545,
+              405.18301
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              212.22499,
+              398.26898,
+              216.90143,
+              407.11578
+            ],
+            "device": [
+              212.22499,
+              396.33624,
+              216.90143,
+              405.18301
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              217.17899,
+              398.26898,
+              221.05344,
+              407.11578
+            ],
+            "device": [
+              217.17899,
+              396.33624,
+              234.33957,
+              405.18301
+            ]
+          },
+          "content": {
+            "rnormalized": ") :="
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              238.56898,
+              411.57999,
+              240.9352,
+              418.16327
+            ],
+            "device": [
+              238.56898,
+              410.22708,
+              240.9352,
+              416.81033
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              240.93498,
+              411.57999,
+              247.4492,
+              417.77274
+            ],
+            "device": [
+              240.93498,
+              410.22708,
+              247.4492,
+              416.4198
+            ]
+          },
+          "content": {
+            "rnormalized": "D"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              247.66399,
+              411.57999,
+              250.0302,
+              418.16327
+            ],
+            "device": [
+              247.66399,
+              410.22708,
+              250.0302,
+              416.81033
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              237.10399,
+              407.733,
+              251.49496,
+              414.10907
+            ],
+            "device": [
+              237.10399,
+              401.75543,
+              251.49496,
+              408.1315
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              237.84599,
+              386.51401,
+              240.66481,
+              392.70676
+            ],
+            "device": [
+              237.84599,
+              385.1611,
+              240.66481,
+              391.35382
+            ]
+          },
+          "content": {
+            "rnormalized": "i"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              240.66499,
+              386.51401,
+              250.75259,
+              392.70676
+            ],
+            "device": [
+              240.66499,
+              385.1611,
+              250.75259,
+              391.35382
+            ]
+          },
+          "content": {
+            "rnormalized": "=1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              258.88998,
+              405.008,
+              263.87128,
+              413.8548
+            ],
+            "device": [
+              258.88998,
+              403.07526,
+              263.87128,
+              411.92203
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              254.351,
+              391.435,
+              257.11862,
+              400.83969
+            ],
+            "device": [
+              254.351,
+              389.50226,
+              257.11862,
+              398.90695
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              257.11801,
+              391.435,
+              265.36606,
+              400.2818
+            ],
+            "device": [
+              257.11801,
+              389.50226,
+              265.36606,
+              398.34903
+            ]
+          },
+          "content": {
+            "rnormalized": "D"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              265.64301,
+              391.435,
+              268.41061,
+              400.83969
+            ],
+            "device": [
+              265.64301,
+              389.50226,
+              268.41061,
+              398.90695
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              271.82001,
+              398.26901,
+              274.58762,
+              407.67371
+            ],
+            "device": [
+              271.82001,
+              396.33627,
+              282.61218,
+              405.74097
+            ]
+          },
+          "content": {
+            "rnormalized": "\u00b7$^{[}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              303.048,
+              405.00803,
+              308.0293,
+              413.85483
+            ],
+            "device": [
+              303.048,
+              403.07529,
+              308.0293,
+              411.92206
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              283.80801,
+              398.90701,
+              294.32452,
+              405.28308
+            ],
+            "device": [
+              283.80801,
+              392.92944,
+              294.32452,
+              399.30551
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              294.32401,
+              388.44601,
+              298.84164,
+              394.63876
+            ],
+            "device": [
+              294.32401,
+              387.09311,
+              298.84164,
+              393.28583
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              298.84201,
+              388.44601,
+              304.21045,
+              395.0293
+            ],
+            "device": [
+              298.84201,
+              387.09311,
+              304.21045,
+              393.67636
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2208"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              304.211,
+              388.44601,
+              310.72522,
+              394.63876
+            ],
+            "device": [
+              304.211,
+              387.09311,
+              313.38303,
+              393.28583
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              316.039,
+              391.435,
+              318.80661,
+              400.83969
+            ],
+            "device": [
+              316.039,
+              389.50226,
+              318.80661,
+              398.90695
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              318.80701,
+              391.435,
+              324.50064,
+              400.2818
+            ],
+            "device": [
+              318.80701,
+              389.50226,
+              324.50064,
+              398.34903
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              324.50101,
+              391.435,
+              327.26862,
+              400.83969
+            ],
+            "device": [
+              324.50101,
+              389.50226,
+              327.26862,
+              398.90695
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              332.707,
+              407.733,
+              347.09796,
+              414.10907
+            ],
+            "device": [
+              332.707,
+              401.75543,
+              347.09796,
+              408.1315
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              330.12399,
+              386.36301,
+              334.64163,
+              392.55576
+            ],
+            "device": [
+              330.12399,
+              385.0101,
+              334.64163,
+              391.20282
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              334.642,
+              386.36301,
+              340.01044,
+              392.94629
+            ],
+            "device": [
+              334.642,
+              385.0101,
+              340.01044,
+              391.59335
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2208"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              340.01099,
+              386.36301,
+              346.52521,
+              392.55576
+            ],
+            "device": [
+              340.01099,
+              385.0101,
+              349.18301,
+              391.20282
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              351.341,
+              398.26901,
+              355.21545,
+              407.11581
+            ],
+            "device": [
+              351.341,
+              396.33627,
+              355.21545,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              355.216,
+              398.26901,
+              359.36743,
+              407.11581
+            ],
+            "device": [
+              355.216,
+              396.33627,
+              363.16144,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2113$_{\u03b8}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              363.87399,
+              398.26901,
+              367.74844,
+              407.11581
+            ],
+            "device": [
+              363.87399,
+              396.33627,
+              367.74844,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              367.74799,
+              398.26901,
+              373.44162,
+              407.11581
+            ],
+            "device": [
+              367.74799,
+              396.33627,
+              373.44162,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              373.44199,
+              398.26901,
+              377.31644,
+              407.11581
+            ],
+            "device": [
+              373.44199,
+              396.33627,
+              377.31644,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              379.53098,
+              398.26901,
+              387.27988,
+              407.67371
+            ],
+            "device": [
+              379.53098,
+              396.33627,
+              387.27988,
+              405.74097
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              389.49298,
+              398.26901,
+              393.64441,
+              407.11581
+            ],
+            "device": [
+              389.49298,
+              396.33627,
+              405.06708,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2113$_{ref,i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              405.56497,
+              398.26901,
+              409.43942,
+              407.11581
+            ],
+            "device": [
+              405.56497,
+              396.33627,
+              409.43942,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              409.43997,
+              398.26901,
+              415.13361,
+              407.11581
+            ],
+            "device": [
+              409.43997,
+              396.33627,
+              415.13361,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              415.13397,
+              398.26901,
+              422.88287,
+              407.11581
+            ],
+            "device": [
+              415.13397,
+              396.33627,
+              428.69315,
+              405.18304
+            ]
+          },
+          "content": {
+            "rnormalized": "))$^{]}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              493.05096,
+              398.26901,
+              504.66736,
+              407.17557
+            ],
+            "device": [
+              493.05096,
+              396.1171,
+              504.66736,
+              405.02365
+            ]
+          },
+          "content": {
+            "rnormalized": "(7)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              371.98801,
+              129.0825,
+              380.89456
+            ],
+            "device": [
+              107.641,
+              369.83609,
+              416.29715,
+              378.74265
+            ]
+          },
+          "content": {
+            "rnormalized": "After running many experiments, we select the proxy model with minimum"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              418.98901,
+              371.98801,
+              425.76956,
+              380.83481
+            ],
+            "device": [
+              418.98901,
+              370.05527,
+              425.76956,
+              378.90204
+            ]
+          },
+          "content": {
+            "rnormalized": "L"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              425.76901,
+              371.98801,
+              429.64346,
+              380.83481
+            ],
+            "device": [
+              425.76901,
+              370.05527,
+              429.64346,
+              378.90204
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              429.64401,
+              371.98801,
+              434.32047,
+              380.83481
+            ],
+            "device": [
+              429.64401,
+              370.05527,
+              434.32047,
+              378.90204
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              434.59702,
+              371.98801,
+              438.47147,
+              380.83481
+            ],
+            "device": [
+              434.59702,
+              370.05527,
+              438.47147,
+              378.90204
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              441.16599,
+              371.98801,
+              455.83969,
+              380.89456
+            ],
+            "device": [
+              441.16599,
+              369.83609,
+              503.99673,
+              378.74265
+            ]
+          },
+          "content": {
+            "rnormalized": "and use its data"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              361.02899,
+              138.99365,
+              369.93555
+            ],
+            "device": [
+              108,
+              358.87708,
+              436.78583,
+              367.78363
+            ]
+          },
+          "content": {
+            "rnormalized": "mixture as our stage 1 data mixture. Figure 4(a) shows the data mixture of stage 1."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              337.91901,
+              113.2303,
+              346.82556
+            ],
+            "device": [
+              108.249,
+              335.76709,
+              130.16672,
+              344.67365
+            ]
+          },
+          "content": {
+            "rnormalized": "4.1.2"
+          },
+          "enumeration": {
+            "match": 12,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              140.62744,
+              337.91901,
+              146.16664,
+              346.82556
+            ],
+            "device": [
+              140.62744,
+              335.76709,
+              246.37012,
+              344.67365
+            ]
+          },
+          "content": {
+            "rnormalized": "STAGE 2 DATA MIXTURE"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              318.741,
+              123.49268,
+              327.64755
+            ],
+            "device": [
+              107.691,
+              316.58908,
+              504.00333,
+              325.49564
+            ]
+          },
+          "content": {
+            "rnormalized": "The stage 2 data mixture search focuses on improving model performance on a diverse set of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              307.78201,
+              118.16185,
+              316.68857
+            ],
+            "device": [
+              108,
+              305.6301,
+              388.35532,
+              314.53665
+            ]
+          },
+          "content": {
+            "rnormalized": "downstream tasks from natural language, code, and math domains."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              394.89954,
+              307.78201,
+              424.8262,
+              316.68857
+            ],
+            "device": [
+              394.89954,
+              305.6301,
+              503.99719,
+              314.53665
+            ]
+          },
+          "content": {
+            "rnormalized": "Similar to the stage 1, we"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              296.823,
+              147.2925,
+              305.72955
+            ],
+            "device": [
+              108,
+              294.67108,
+              372.23804,
+              303.57764
+            ]
+          },
+          "content": {
+            "rnormalized": "maximize the weighted sum of performance on the three domains:"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              213.735,
+              270.21701,
+              232.2764,
+              279.06381
+            ],
+            "device": [
+              213.735,
+              268.28427,
+              232.2764,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "max"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              221.00101,
+              263.71402,
+              224.79546,
+              269.90677
+            ],
+            "device": [
+              221.00101,
+              262.36111,
+              224.79546,
+              268.55383
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              233.93701,
+              270.21701,
+              240.71756,
+              279.06381
+            ],
+            "device": [
+              233.93701,
+              268.28427,
+              240.71756,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "L"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              240.71701,
+              270.21701,
+              244.59146,
+              279.06381
+            ],
+            "device": [
+              240.71701,
+              268.28427,
+              244.59146,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              244.591,
+              270.21701,
+              249.26744,
+              279.06381
+            ],
+            "device": [
+              244.591,
+              268.28427,
+              260.35083,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8, \u03b1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              260.383,
+              270.21701,
+              264.25745,
+              279.06381
+            ],
+            "device": [
+              260.383,
+              268.28427,
+              277.54355,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": ") :="
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              281.77301,
+              283.52902,
+              284.13922,
+              290.1123
+            ],
+            "device": [
+              281.77301,
+              282.17612,
+              284.13922,
+              288.75937
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              284.13901,
+              283.52902,
+              290.65323,
+              289.72177
+            ],
+            "device": [
+              284.13901,
+              282.17612,
+              290.65323,
+              288.36884
+            ]
+          },
+          "content": {
+            "rnormalized": "D"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              290.86801,
+              283.52902,
+              293.23422,
+              290.1123
+            ],
+            "device": [
+              290.86801,
+              282.17612,
+              293.23422,
+              288.75937
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              280.30801,
+              279.68204,
+              294.69897,
+              286.05811
+            ],
+            "device": [
+              280.30801,
+              273.70447,
+              294.69897,
+              280.08054
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              281.05002,
+              258.46304,
+              283.86884,
+              264.65579
+            ],
+            "device": [
+              281.05002,
+              257.11014,
+              283.86884,
+              263.30286
+            ]
+          },
+          "content": {
+            "rnormalized": "i"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              283.86902,
+              258.46304,
+              293.95663,
+              264.65579
+            ],
+            "device": [
+              283.86902,
+              257.11014,
+              293.95663,
+              263.30286
+            ]
+          },
+          "content": {
+            "rnormalized": "=1"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              296.35901,
+              270.21704,
+              302.73209,
+              279.06384
+            ],
+            "device": [
+              296.35901,
+              268.2843,
+              305.55081,
+              277.13107
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b1$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              308.263,
+              270.21704,
+              311.03061,
+              279.62173
+            ],
+            "device": [
+              308.263,
+              268.2843,
+              319.05518,
+              277.689
+            ]
+          },
+          "content": {
+            "rnormalized": "\u00b7$^{[}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              326.31,
+              276.95703,
+              331.29129,
+              285.80383
+            ],
+            "device": [
+              326.31,
+              275.02429,
+              331.29129,
+              283.87106
+            ]
+          },
+          "content": {
+            "rnormalized": "1"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              320.25101,
+              263.384,
+              323.01862,
+              272.7887
+            ],
+            "device": [
+              320.25101,
+              261.45126,
+              323.01862,
+              270.85596
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              323.01901,
+              263.384,
+              331.26706,
+              272.2308
+            ],
+            "device": [
+              323.01901,
+              261.45126,
+              334.08582,
+              270.29803
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              334.58398,
+              263.384,
+              337.35159,
+              272.7887
+            ],
+            "device": [
+              334.58398,
+              261.45126,
+              337.35159,
+              270.85596
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              342.03598,
+              279.68201,
+              356.42694,
+              286.05807
+            ],
+            "device": [
+              342.03598,
+              273.70444,
+              356.42694,
+              280.08051
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2211"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              340.20697,
+              258.31201,
+              343.21686,
+              264.50476
+            ],
+            "device": [
+              340.20697,
+              256.95911,
+              343.21686,
+              263.15182
+            ]
+          },
+          "content": {
+            "rnormalized": "t"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.21698,
+              258.31201,
+              348.58542,
+              264.89526
+            ],
+            "device": [
+              343.21698,
+              256.95911,
+              348.58542,
+              263.54236
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2208"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              348.58499,
+              258.31201,
+              355.09921,
+              264.50476
+            ],
+            "device": [
+              348.58499,
+              256.95911,
+              357.75702,
+              263.15182
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{i}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              359.91599,
+              270.21701,
+              376.24271,
+              279.06381
+            ],
+            "device": [
+              359.91599,
+              268.28427,
+              383.62543,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "Acc$_{t}$("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              383.62598,
+              270.21701,
+              388.30243,
+              279.06381
+            ],
+            "device": [
+              383.62598,
+              268.28427,
+              388.30243,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              388.57898,
+              270.21701,
+              392.45343,
+              279.06381
+            ],
+            "device": [
+              388.57898,
+              268.28427,
+              398.26517,
+              277.13104
+            ]
+          },
+          "content": {
+            "rnormalized": ")$^{]}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              493.05096,
+              270.21701,
+              504.66736,
+              279.12357
+            ],
+            "device": [
+              493.05096,
+              268.06509,
+              504.66736,
+              276.97165
+            ]
+          },
+          "content": {
+            "rnormalized": "(8)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              244.601,
+              131.49286,
+              253.50757
+            ],
+            "device": [
+              107.641,
+              242.44908,
+              131.49286,
+              251.35564
+            ]
+          },
+          "content": {
+            "rnormalized": "where"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              133.98801,
+              244.601,
+              150.31471,
+              253.44778
+            ],
+            "device": [
+              133.98801,
+              242.66826,
+              153.3259,
+              251.51505
+            ]
+          },
+          "content": {
+            "rnormalized": "Acc$_{t}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              156.31799,
+              244.601,
+              162.83014,
+              253.50757
+            ],
+            "device": [
+              156.31799,
+              242.44908,
+              311.74072,
+              251.35564
+            ]
+          },
+          "content": {
+            "rnormalized": "is proxy model performance on the task"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              314.237,
+              244.601,
+              317.8345,
+              253.44778
+            ],
+            "device": [
+              314.237,
+              242.66826,
+              317.8345,
+              251.51505
+            ]
+          },
+          "content": {
+            "rnormalized": "t"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              317.83401,
+              244.601,
+              320.27484,
+              253.50757
+            ],
+            "device": [
+              317.83401,
+              242.44908,
+              504.00159,
+              251.35564
+            ]
+          },
+          "content": {
+            "rnormalized": ". We use the average across multiple tasks from"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              233.642,
+              126.25148,
+              242.54857
+            ],
+            "device": [
+              108,
+              231.49008,
+              401.04993,
+              240.39664
+            ]
+          },
+          "content": {
+            "rnormalized": "each domain as the targeted metric to avoid over-fitting on a specific task."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              216.70599,
+              120.41779,
+              225.61256
+            ],
+            "device": [
+              108,
+              214.55408,
+              503.99728,
+              223.46063
+            ]
+          },
+          "content": {
+            "rnormalized": "However, in stage 2, we cannot use the small proxy models for the mixture search, because most"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              205.74699,
+              117.79324,
+              214.65356
+            ],
+            "device": [
+              108,
+              203.59508,
+              503.99936,
+              212.50163
+            ]
+          },
+          "content": {
+            "rnormalized": "downstream tasks require a model that is large enough to achieve meaningful performance. Thus, we"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              194.78799,
+              139.10001,
+              203.69456
+            ],
+            "device": [
+              108,
+              192.63608,
+              503.99957,
+              201.54263
+            ]
+          },
+          "content": {
+            "rnormalized": "conduct the mixture search with our 2B dense model. Even with the 2B dense model, we still cannot"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              183.82899,
+              121.20046,
+              192.73557
+            ],
+            "device": [
+              108,
+              181.67708,
+              504.004,
+              190.58363
+            ]
+          },
+          "content": {
+            "rnormalized": "run thousands of experiments to find the optimal search. Instead, we run a few hundred experiments"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              172.87,
+              125.70877,
+              181.77657
+            ],
+            "device": [
+              107.641,
+              170.71808,
+              504.00406,
+              179.62463
+            ]
+          },
+          "content": {
+            "rnormalized": "with 30B tokens from a randomly sampled mixture and use linear regression to fit the correlation"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              161.911,
+              140.53148,
+              170.81757
+            ],
+            "device": [
+              108,
+              159.75908,
+              504.0014,
+              168.66563
+            ]
+          },
+          "content": {
+            "rnormalized": "between the data mixture and task performance. Figure 5 shows the correlation between the predicted"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              150.952,
+              122.64494,
+              159.85857
+            ],
+            "device": [
+              108,
+              148.80008,
+              504.00168,
+              157.70663
+            ]
+          },
+          "content": {
+            "rnormalized": "and ground-truth accuracy for different domains. We can see a strong correlation between the two"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              139.993,
+              123.24277,
+              148.89957
+            ],
+            "device": [
+              108,
+              137.84108,
+              503.99725,
+              146.74763
+            ]
+          },
+          "content": {
+            "rnormalized": "sets of values. Based on the linear regression results, we craft the final stage 2 mixture to achieve"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              129.035,
+              121.28014,
+              137.94157
+            ],
+            "device": [
+              108,
+              126.88308,
+              474.50421,
+              135.78964
+            ]
+          },
+          "content": {
+            "rnormalized": "robust performance across different domains. Figure 4(b) shows the data mixture of stage 2."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              104.579,
+              113.2303,
+              113.48557
+            ],
+            "device": [
+              108.249,
+              102.42708,
+              121.69851,
+              111.33365
+            ]
+          },
+          "content": {
+            "rnormalized": "4.2"
+          },
+          "enumeration": {
+            "match": 10,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              132.15924,
+              104.579,
+              138.24638,
+              113.48557
+            ],
+            "device": [
+              132.15924,
+              102.42708,
+              264.74561,
+              111.33365
+            ]
+          },
+          "content": {
+            "rnormalized": "TRAINING HYPERPARAMETERS"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              84.056,
+              116.40673,
+              92.962563
+            ],
+            "device": [
+              108,
+              81.904076,
+              504.00433,
+              90.810638
+            ]
+          },
+          "content": {
+            "rnormalized": "In Shen et al. (2024c), we proposed a systematic way of doing a hyperparameter search on a small"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              73.097,
+              127.51694,
+              82.003563
+            ],
+            "device": [
+              108,
+              70.945076,
+              504.00143,
+              79.851639
+            ]
+          },
+          "content": {
+            "rnormalized": "scale and 0-shot transfer the hyperparameter to a large scale. The core part of this method is maximum"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              62.138,
+              134.56029,
+              71.044563
+            ],
+            "device": [
+              108,
+              59.98608,
+              297.53848,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": "update parameterization and a power scheduler."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.64502,
+              32.25,
+              310.6076,
+              41.156563
+            ],
+            "device": [
+              300.64502,
+              30.098078,
+              310.6076,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "11"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 284.12399,
+          "x1": 327.58398,
+          "y": 624.00598
+        },
+        {
+          "x0": 254.351,
+          "x1": 268.41101,
+          "y": 400.759
+        },
+        {
+          "x0": 283.80801,
+          "x1": 327.26801,
+          "y": 400.759
+        },
+        {
+          "x0": 320.25101,
+          "x1": 337.35101,
+          "y": 272.70801
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            284.12399,
+            624.00598,
+            327.58398,
+            624.00598
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            284.12399,
+            327.58398
+          ],
+          "y-values": [
+            624.00598,
+            624.00598
+          ]
+        },
+        {
+          "bbox": [
+            254.351,
+            400.759,
+            268.41101,
+            400.759
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            254.351,
+            268.41101
+          ],
+          "y-values": [
+            400.759,
+            400.759
+          ]
+        },
+        {
+          "bbox": [
+            283.80801,
+            400.759,
+            327.26801,
+            400.759
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            283.80801,
+            327.26801
+          ],
+          "y-values": [
+            400.759,
+            400.759
+          ]
+        },
+        {
+          "bbox": [
+            320.25101,
+            272.70801,
+            337.35101,
+            272.70801
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            320.25101,
+            337.35101
+          ],
+          "y-values": [
+            272.70801,
+            272.70801
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

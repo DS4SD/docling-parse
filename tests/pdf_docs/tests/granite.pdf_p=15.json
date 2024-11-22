@@ -1,0 +1,6054 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DHTWRO+CMMI10": 5.73844605478862,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 1.592244430762624,
+        "/EFBUGN+CMSY10": 5.224829199194326,
+        "/HLTLFU+CMEX10": 6.376066521217744,
+        "/JLKDRF+CMSY7": 2.194416951972175,
+        "/KHSBIR+CMR10": 6.635078015483405,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.197712474848702,
+        "/MGDWIB+CMMI5": 2.211699886528153,
+        "/RAZVEJ+MSBM10": 6.784539113898386,
+        "/RIDQUQ+CMMI7": 4.128478774546318,
+        "/YTDEHL+CMR7": 6.19271540950167
+      },
+      "mean-char-width": {
+        "/DHTWRO+CMMI10": 3.628274355591403,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 4.649261201750359,
+        "/EFBUGN+CMSY10": 2.644514001955041,
+        "/HLTLFU+CMEX10": 6.295866345955289,
+        "/JLKDRF+CMSY7": 1.718113930770074,
+        "/KHSBIR+CMR10": 4.168473936858074,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.302065660110507,
+        "/MGDWIB+CMMI5": 1.878196246759532,
+        "/RAZVEJ+MSBM10": 6.642052684119191,
+        "/RIDQUQ+CMMI7": 3.439865768911537,
+        "/YTDEHL+CMR7": 3.113096587982956
+      },
+      "number-of-chars": {
+        "/DHTWRO+CMMI10": 37,
+        "/DKKVOJ+NimbusRomNo9L-Medi": 45,
+        "/EFBUGN+CMSY10": 9,
+        "/HLTLFU+CMEX10": 4,
+        "/JLKDRF+CMSY7": 6,
+        "/KHSBIR+CMR10": 16,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2654,
+        "/MGDWIB+CMMI5": 4,
+        "/RAZVEJ+MSBM10": 1,
+        "/RIDQUQ+CMMI7": 18,
+        "/YTDEHL+CMR7": 2
+      }
+    },
+    "styles": [
+      "/DHTWRO+CMMI10",
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/EFBUGN+CMSY10",
+      "/HLTLFU+CMEX10",
+      "/JLKDRF+CMSY7",
+      "/KHSBIR+CMR10",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/MGDWIB+CMMI5",
+      "/RAZVEJ+MSBM10",
+      "/RIDQUQ+CMMI7",
+      "/YTDEHL+CMR7"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              131.86699,
+              640.65503,
+              150.79506,
+              648.67102
+            ],
+            "device": [
+              131.86699,
+              638.71826,
+              150.79506,
+              646.73425
+            ]
+          },
+          "content": {
+            "rnormalized": "LLM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              118.668,
+              623.85309,
+              163.99315,
+              631.86908
+            ],
+            "device": [
+              118.668,
+              621.91632,
+              163.99315,
+              629.93231
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite-SFT"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              111.321,
+              612.8941,
+              135.23439,
+              620.9101
+            ],
+            "device": [
+              111.321,
+              610.95734,
+              171.34207,
+              618.97333
+            ]
+          },
+          "content": {
+            "rnormalized": "(initial proposal)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              188.78099,
+              641.56299,
+              199.23581,
+              649.57898
+            ],
+            "device": [
+              188.78099,
+              639.62622,
+              199.23581,
+              647.64221
+            ]
+          },
+          "content": {
+            "rnormalized": "(1)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              188.78099,
+              641.56299,
+              199.23581,
+              649.57898
+            ],
+            "device": [
+              201.47742,
+              639.62622,
+              228.3766,
+              647.64221
+            ]
+          },
+          "content": {
+            "rnormalized": "Sample"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              259.27002,
+              641.388,
+              269.72485,
+              649.40399
+            ],
+            "device": [
+              259.27002,
+              639.45123,
+              269.72485,
+              647.46722
+            ]
+          },
+          "content": {
+            "rnormalized": "(2)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              259.27002,
+              641.388,
+              269.72485,
+              649.40399
+            ],
+            "device": [
+              271.96646,
+              639.45123,
+              292.38297,
+              647.46722
+            ]
+          },
+          "content": {
+            "rnormalized": "Score"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              273.832,
+              685.487,
+              287.78372,
+              693.50299
+            ],
+            "device": [
+              273.832,
+              683.55023,
+              287.78372,
+              691.56622
+            ]
+          },
+          "content": {
+            "rnormalized": "RM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              294.823,
+              685.487,
+              304.78467,
+              693.50299
+            ],
+            "device": [
+              294.823,
+              683.55023,
+              385.65271,
+              691.56622
+            ]
+          },
+          "content": {
+            "rnormalized": "Reward Model Ensemble"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              179.81499,
+              699.70599,
+              218.17325,
+              707.72198
+            ],
+            "device": [
+              179.81499,
+              697.76923,
+              237.3434,
+              705.78522
+            ]
+          },
+          "content": {
+            "rnormalized": "Alignment Data"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              152.064,
+              676.92999,
+              187.67801,
+              684.94598
+            ],
+            "device": [
+              152.064,
+              674.99323,
+              187.67801,
+              683.00922
+            ]
+          },
+          "content": {
+            "rnormalized": "Reference"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              152.064,
+              665.97101,
+              170.49892,
+              673.987
+            ],
+            "device": [
+              152.064,
+              664.03424,
+              174.84763,
+              672.05023
+            ]
+          },
+          "content": {
+            "rnormalized": "Policy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              304.22302,
+              659.85602,
+              329.12271,
+              667.87201
+            ],
+            "device": [
+              304.22302,
+              657.91925,
+              361.75143,
+              665.93524
+            ]
+          },
+          "content": {
+            "rnormalized": "Scored Samples"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              386.90201,
+              652.63007,
+              397.35684,
+              660.64606
+            ],
+            "device": [
+              386.90201,
+              650.6933,
+              397.19916,
+              658.70929
+            ]
+          },
+          "content": {
+            "rnormalized": "(3)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              386.90201,
+              652.63007,
+              397.35684,
+              660.64606
+            ],
+            "device": [
+              399.40695,
+              650.6933,
+              433.74252,
+              658.70929
+            ]
+          },
+          "content": {
+            "rnormalized": "Weighted"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              383.259,
+              641.67108,
+              432.50415,
+              650.57764
+            ],
+            "device": [
+              383.259,
+              639.51917,
+              437.3858,
+              648.42572
+            ]
+          },
+          "content": {
+            "rnormalized": "cross-entropy"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              397.04199,
+              630.7121,
+              423.60229,
+              639.61865
+            ],
+            "device": [
+              397.04199,
+              628.56018,
+              423.60229,
+              637.46674
+            ]
+          },
+          "content": {
+            "rnormalized": "update"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              266.362,
+              605.78601,
+              285.29007,
+              613.802
+            ],
+            "device": [
+              266.362,
+              603.84924,
+              285.29007,
+              611.86523
+            ]
+          },
+          "content": {
+            "rnormalized": "LLM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              226.89699,
+              588.98401,
+              285.66278,
+              597
+            ],
+            "device": [
+              226.89699,
+              587.04724,
+              324.75629,
+              595.06323
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite-Aligned (proposal)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              468.10602,
+              640.65503,
+              487.03409,
+              648.67102
+            ],
+            "device": [
+              468.10602,
+              638.71826,
+              487.03409,
+              646.73425
+            ]
+          },
+          "content": {
+            "rnormalized": "LLM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              448.936,
+              623.85303,
+              506.20441,
+              631.86902
+            ],
+            "device": [
+              448.936,
+              621.91626,
+              506.20441,
+              629.93225
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite-Instruct"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              561.25702,
+              133.4921,
+              570.16357
+            ],
+            "device": [
+              108,
+              559.1051,
+              505.24124,
+              568.01166
+            ]
+          },
+          "content": {
+            "rnormalized": "Figure 6: Granite 3.0 model alignment framework includes multiple iterations involving (1) Sampling,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              550.29797,
+              119.51971,
+              559.20453
+            ],
+            "device": [
+              107.671,
+              548.14606,
+              119.4876,
+              557.05261
+            ]
+          },
+          "content": {
+            "rnormalized": "(2)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              550.29797,
+              119.51971,
+              559.20453
+            ],
+            "device": [
+              122.02117,
+              548.14606,
+              504.00354,
+              557.05261
+            ]
+          },
+          "content": {
+            "rnormalized": "Sample scoring optionally involving a proposal distribution, a reference distribution (SFT), an"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              539.33899,
+              141.30038,
+              548.24554
+            ],
+            "device": [
+              108,
+              537.18707,
+              505.74512,
+              546.09363
+            ]
+          },
+          "content": {
+            "rnormalized": "esemble of Reward Models and a Value Function. (3) SFT using a weighted cross-entropy loss."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              528.38,
+              139.04446,
+              537.28656
+            ],
+            "device": [
+              108,
+              526.22809,
+              409.53256,
+              535.13464
+            ]
+          },
+          "content": {
+            "rnormalized": "Process is repeated using updated model as new proposal (dashed line)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              416.18857,
+              528.38,
+              431.99023,
+              537.28656
+            ],
+            "device": [
+              416.18857,
+              526.22809,
+              503.9971,
+              535.13464
+            ]
+          },
+          "content": {
+            "rnormalized": "The methods used in"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              517.42102,
+              146.18665,
+              526.32758
+            ],
+            "device": [
+              108,
+              515.2691,
+              385.81708,
+              524.17566
+            ]
+          },
+          "content": {
+            "rnormalized": "sucession are BRAIn, PPO and a last iteration of Best-of-N sampling."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              479.13101,
+              113.2303,
+              488.03757
+            ],
+            "device": [
+              108.249,
+              476.9791,
+              130.16672,
+              485.88565
+            ]
+          },
+          "content": {
+            "rnormalized": "5.3.2"
+          },
+          "enumeration": {
+            "match": 12,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              140.62744,
+              479.13101,
+              147.82043,
+              488.03757
+            ],
+            "device": [
+              140.62744,
+              476.9791,
+              251.95909,
+              485.88565
+            ]
+          },
+          "content": {
+            "rnormalized": "ALIGNMENT TECHNIQUES"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              459.892,
+              113.42842,
+              468.79855
+            ],
+            "device": [
+              108,
+              457.74008,
+              504.66525,
+              466.64664
+            ]
+          },
+          "content": {
+            "rnormalized": "Following supervised finetuning, we employ model alignment techniques that rely on reward model(s)"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              448.93399,
+              119.84872,
+              457.84055
+            ],
+            "device": [
+              108,
+              446.78207,
+              503.99722,
+              455.68863
+            ]
+          },
+          "content": {
+            "rnormalized": "for supervision. The training objective aims at maximizing the expected reward, often augmented"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              437.97501,
+              125.3545,
+              446.88156
+            ],
+            "device": [
+              107.641,
+              435.82309,
+              504.13266,
+              444.72964
+            ]
+          },
+          "content": {
+            "rnormalized": "with a penalty term controlling the KL divergence of the learned policy from the initial SFT policy,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              222.12601,
+              405.396,
+              228.76807,
+              412.18054
+            ],
+            "device": [
+              222.12601,
+              403.2341,
+              228.76807,
+              410.01865
+            ]
+          },
+          "content": {
+            "rnormalized": "E"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RAZVEJ+MSBM10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              228.76801,
+              403.59698,
+              231.8811,
+              409.78973
+            ],
+            "device": [
+              228.76801,
+              402.24408,
+              231.8811,
+              408.4368
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              231.88101,
+              403.59698,
+              242.80547,
+              409.78973
+            ],
+            "device": [
+              231.88101,
+              402.24408,
+              242.80547,
+              408.4368
+            ]
+          },
+          "content": {
+            "rnormalized": "x,y"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              243.05602,
+              403.59698,
+              246.16911,
+              409.78973
+            ],
+            "device": [
+              243.05602,
+              402.24408,
+              246.16911,
+              408.4368
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/YTDEHL+CMR7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              246.16902,
+              403.59698,
+              252.39594,
+              410.18024
+            ],
+            "device": [
+              246.16902,
+              402.24408,
+              252.39594,
+              408.82733
+            ]
+          },
+          "content": {
+            "rnormalized": "\u223c"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              252.39603,
+              403.59698,
+              258.91025,
+              409.78973
+            ],
+            "device": [
+              252.39603,
+              402.24408,
+              266.42288,
+              408.4368
+            ]
+          },
+          "content": {
+            "rnormalized": "D$_{\u03c0}$$_{\u03b8}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              269.75104,
+              419.44299,
+              275.00931,
+              425.81906
+            ],
+            "device": [
+              269.75104,
+              413.46542,
+              275.00931,
+              419.84149
+            ]
+          },
+          "content": {
+            "rnormalized": "["
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              275.00903,
+              405.396,
+              279.50415,
+              414.2428
+            ],
+            "device": [
+              275.00903,
+              403.46326,
+              279.50415,
+              412.31003
+            ]
+          },
+          "content": {
+            "rnormalized": "r"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              279.78003,
+              405.396,
+              283.65448,
+              414.2428
+            ],
+            "device": [
+              279.78003,
+              403.46326,
+              283.65448,
+              412.31003
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              283.65503,
+              405.396,
+              292.11627,
+              414.2428
+            ],
+            "device": [
+              283.65503,
+              403.46326,
+              298.6647,
+              412.31003
+            ]
+          },
+          "content": {
+            "rnormalized": "x, y"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              299.01804,
+              405.396,
+              302.89249,
+              414.2428
+            ],
+            "device": [
+              299.01804,
+              403.46326,
+              302.89249,
+              412.31003
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              305.10605,
+              405.396,
+              312.85495,
+              414.80069
+            ],
+            "device": [
+              305.10605,
+              403.46326,
+              312.85495,
+              412.86795
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2212"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              315.06906,
+              405.396,
+              320.70392,
+              414.2428
+            ],
+            "device": [
+              315.06906,
+              403.46326,
+              320.70392,
+              412.31003
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              322.89008,
+              405.396,
+              335.6203,
+              414.2428
+            ],
+            "device": [
+              322.89008,
+              403.46326,
+              335.6203,
+              412.31003
+            ]
+          },
+          "content": {
+            "rnormalized": "log"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              345.19809,
+              412.13501,
+              350.87677,
+              420.98181
+            ],
+            "device": [
+              345.19809,
+              410.20227,
+              354.67151,
+              419.04904
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0$_{\u03b8}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              355.38507,
+              412.13501,
+              359.25952,
+              420.98181
+            ],
+            "device": [
+              355.38507,
+              410.20227,
+              359.25952,
+              419.04904
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              359.25906,
+              412.13501,
+              364.14374,
+              420.98181
+            ],
+            "device": [
+              359.25906,
+              410.20227,
+              364.14374,
+              419.04904
+            ]
+          },
+          "content": {
+            "rnormalized": "y"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              364.50107,
+              412.13501,
+              367.26868,
+              421.5397
+            ],
+            "device": [
+              364.50107,
+              410.20227,
+              367.26868,
+              419.60696
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              367.26807,
+              412.13501,
+              372.9617,
+              420.98181
+            ],
+            "device": [
+              367.26807,
+              410.20227,
+              372.9617,
+              419.04904
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              372.96207,
+              412.13501,
+              376.83652,
+              420.98181
+            ],
+            "device": [
+              372.96207,
+              410.20227,
+              376.83652,
+              419.04904
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              338.61499,
+              398.56201,
+              344.29367,
+              407.40881
+            ],
+            "device": [
+              338.61499,
+              396.62927,
+              360.39508,
+              405.47604
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0$_{SF T}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              361.96799,
+              398.56201,
+              365.84244,
+              407.40881
+            ],
+            "device": [
+              361.96799,
+              396.62927,
+              365.84244,
+              405.47604
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              365.84299,
+              398.56201,
+              370.72766,
+              407.40881
+            ],
+            "device": [
+              365.84299,
+              396.62927,
+              370.72766,
+              405.47604
+            ]
+          },
+          "content": {
+            "rnormalized": "y"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              371.08398,
+              398.56201,
+              373.85159,
+              407.96671
+            ],
+            "device": [
+              371.08398,
+              396.62927,
+              373.85159,
+              406.03397
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              373.85199,
+              398.56201,
+              379.54562,
+              407.40881
+            ],
+            "device": [
+              373.85199,
+              396.62927,
+              379.54562,
+              405.47604
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              379.54599,
+              398.56201,
+              383.42044,
+              407.40881
+            ],
+            "device": [
+              379.54599,
+              396.62927,
+              389.87427,
+              405.47604
+            ]
+          },
+          "content": {
+            "rnormalized": ")$^{]}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.641,
+              377.97699,
+              132.4664,
+              386.88354
+            ],
+            "device": [
+              107.641,
+              375.82507,
+              132.4664,
+              384.73163
+            ]
+          },
+          "content": {
+            "rnormalized": "where"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              135.519,
+              377.97699,
+              140.01413,
+              386.82379
+            ],
+            "device": [
+              135.519,
+              376.04425,
+              140.01413,
+              384.89102
+            ]
+          },
+          "content": {
+            "rnormalized": "r"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              143.343,
+              377.97699,
+              174.38745,
+              386.88354
+            ],
+            "device": [
+              143.343,
+              375.82507,
+              247.80681,
+              384.73163
+            ]
+          },
+          "content": {
+            "rnormalized": "denotes the reward score,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              250.99699,
+              377.97699,
+              256.67569,
+              386.82379
+            ],
+            "device": [
+              250.99699,
+              376.04425,
+              260.47043,
+              384.89102
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0$_{\u03b8}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              264.23499,
+              377.97699,
+              305.43112,
+              386.88354
+            ],
+            "device": [
+              264.23499,
+              375.82507,
+              425.52386,
+              384.73163
+            ]
+          },
+          "content": {
+            "rnormalized": "represents the policy being learned and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              428.577,
+              377.97699,
+              434.25568,
+              386.82379
+            ],
+            "device": [
+              428.577,
+              376.04425,
+              450.35709,
+              384.89102
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0$_{SF T}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              454.983,
+              377.97699,
+              461.76096,
+              386.88354
+            ],
+            "device": [
+              454.983,
+              375.82507,
+              504.00378,
+              384.73163
+            ]
+          },
+          "content": {
+            "rnormalized": "is the initial"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              367.01801,
+              143.46344,
+              375.92456
+            ],
+            "device": [
+              107.671,
+              364.86609,
+              283.2746,
+              373.77264
+            ]
+          },
+          "content": {
+            "rnormalized": "(instruct) model, serving as a baseline policy."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              286.29401,
+              367.01801,
+              291.92886,
+              375.86481
+            ],
+            "device": [
+              286.29401,
+              365.08527,
+              291.92886,
+              373.93204
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              294.733,
+              367.01801,
+              334.86035,
+              375.92456
+            ],
+            "device": [
+              294.733,
+              364.86609,
+              504.00067,
+              373.77264
+            ]
+          },
+          "content": {
+            "rnormalized": "moderates the Kullback-Leibler divergence to prevent"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              356.06,
+              112.51186,
+              364.96655
+            ],
+            "device": [
+              108,
+              353.90808,
+              199.27377,
+              362.81464
+            ]
+          },
+          "content": {
+            "rnormalized": "excessive deviation of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              202.701,
+              356.06,
+              208.37968,
+              364.9068
+            ],
+            "device": [
+              202.701,
+              354.12726,
+              208.37968,
+              362.97403
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              208.737,
+              359.67499,
+              212.53145,
+              365.86774
+            ],
+            "device": [
+              208.737,
+              358.32208,
+              212.53145,
+              364.5148
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              216.668,
+              356.06,
+              236.42264,
+              364.96655
+            ],
+            "device": [
+              216.668,
+              353.90808,
+              236.42264,
+              362.81464
+            ]
+          },
+          "content": {
+            "rnormalized": "from"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              239.84599,
+              356.06,
+              245.52467,
+              364.9068
+            ],
+            "device": [
+              239.84599,
+              354.12726,
+              245.52467,
+              362.97403
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              246.05699,
+              359.67499,
+              249.15897,
+              364.66269
+            ],
+            "device": [
+              246.05699,
+              353.90808,
+              503.99551,
+              362.81464
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{SFT}$. The optimal policy under this objective can be written as"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.579100131988525
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              345.10101,
+              125.37453,
+              354.00757
+            ],
+            "device": [
+              107.671,
+              342.9491,
+              279.45605,
+              351.85565
+            ]
+          },
+          "content": {
+            "rnormalized": "(Rafailov et al., 2024; Korbak et al., 2022):"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              242.48599,
+              312.522,
+              248.16467,
+              321.3688
+            ],
+            "device": [
+              242.48599,
+              310.58926,
+              248.16467,
+              319.43604
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              248.52199,
+              316.63501,
+              252.60376,
+              323.21826
+            ],
+            "device": [
+              248.52199,
+              315.2821,
+              252.60376,
+              321.86536
+            ]
+          },
+          "content": {
+            "rnormalized": "\u2217"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/JLKDRF+CMSY7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              248.16499,
+              310.05902,
+              251.95944,
+              316.25177
+            ],
+            "device": [
+              248.16499,
+              308.70612,
+              251.95944,
+              314.89883
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b8"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/RIDQUQ+CMMI7",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              255.86899,
+              312.52203,
+              263.61789,
+              321.92673
+            ],
+            "device": [
+              255.86899,
+              310.58929,
+              263.61789,
+              319.99399
+            ]
+          },
+          "content": {
+            "rnormalized": "\u221d"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              266.38599,
+              312.52203,
+              272.06467,
+              321.36884
+            ],
+            "device": [
+              266.38599,
+              310.58929,
+              284.08084,
+              319.43607
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03c0$_{SFT}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              284.57898,
+              312.52203,
+              288.45343,
+              321.36884
+            ],
+            "device": [
+              284.57898,
+              310.58929,
+              288.45343,
+              319.43607
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              288.45297,
+              312.52203,
+              293.33765,
+              321.36884
+            ],
+            "device": [
+              288.45297,
+              310.58929,
+              293.33765,
+              319.43607
+            ]
+          },
+          "content": {
+            "rnormalized": "y"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              293.69498,
+              312.52203,
+              296.46259,
+              321.92673
+            ],
+            "device": [
+              293.69498,
+              310.58929,
+              296.46259,
+              319.99399
+            ]
+          },
+          "content": {
+            "rnormalized": "|"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/EFBUGN+CMSY10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              296.46198,
+              312.52203,
+              302.15561,
+              321.36884
+            ],
+            "device": [
+              296.46198,
+              310.58929,
+              302.15561,
+              319.43607
+            ]
+          },
+          "content": {
+            "rnormalized": "x"
+          },
+          "enumeration": {
+            "match": 5,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              302.15598,
+              312.52203,
+              306.03043,
+              321.36884
+            ],
+            "device": [
+              302.15598,
+              310.58929,
+              331.90543,
+              319.43607
+            ]
+          },
+          "content": {
+            "rnormalized": ") exp$^{(}$"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              333.10095,
+              319.26102,
+              337.59607,
+              328.10782
+            ],
+            "device": [
+              333.10095,
+              317.32828,
+              337.59607,
+              326.17505
+            ]
+          },
+          "content": {
+            "rnormalized": "r"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              337.87296,
+              319.26102,
+              341.74741,
+              328.10782
+            ],
+            "device": [
+              337.87296,
+              317.32828,
+              341.74741,
+              326.17505
+            ]
+          },
+          "content": {
+            "rnormalized": "("
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              341.74695,
+              319.26102,
+              350.20819,
+              328.10782
+            ],
+            "device": [
+              341.74695,
+              317.32828,
+              356.75662,
+              326.17505
+            ]
+          },
+          "content": {
+            "rnormalized": "x, y"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              357.11096,
+              319.26102,
+              360.98541,
+              328.10782
+            ],
+            "device": [
+              357.11096,
+              317.32828,
+              360.98541,
+              326.17505
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              343.96301,
+              305.68799,
+              349.59787,
+              314.53479
+            ],
+            "device": [
+              343.96301,
+              303.75525,
+              349.59787,
+              312.60202
+            ]
+          },
+          "content": {
+            "rnormalized": "\u03b2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DHTWRO+CMMI10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              362.181,
+              326.569,
+              369.51447,
+              332.94507
+            ],
+            "device": [
+              362.181,
+              320.59143,
+              369.51447,
+              326.9675
+            ]
+          },
+          "content": {
+            "rnormalized": ")"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/HLTLFU+CMEX10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              488.07001,
+              312.522,
+              504.66769,
+              321.42856
+            ],
+            "device": [
+              488.07001,
+              310.37009,
+              504.66769,
+              319.27664
+            ]
+          },
+          "content": {
+            "rnormalized": "(10)"
+          },
+          "enumeration": {
+            "match": 16,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              285.103,
+              144.02139,
+              294.00955
+            ],
+            "device": [
+              108,
+              282.95108,
+              503.99963,
+              291.85764
+            ]
+          },
+          "content": {
+            "rnormalized": "Proximal Policy Optimization (PPO) learns a policy that minimizes the reverse KL-divergence to the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              274.14499,
+              122.31406,
+              283.05154
+            ],
+            "device": [
+              108,
+              271.99307,
+              503.99612,
+              280.89963
+            ]
+          },
+          "content": {
+            "rnormalized": "above optimal policy. BRAIn, on the other hand, optimizes forward KL between optimal policy and"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              263.186,
+              135.93195,
+              272.09256
+            ],
+            "device": [
+              108,
+              261.03409,
+              505.74414,
+              269.94064
+            ]
+          },
+          "content": {
+            "rnormalized": "current policy (Pandey et al., 2024) and results in very effective LLM alignment (Shen et al., 2024a)."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              252.22701,
+              113.56136,
+              261.13358
+            ],
+            "device": [
+              108,
+              250.07509,
+              503.99692,
+              258.98166
+            ]
+          },
+          "content": {
+            "rnormalized": "For aligning Granite 3.0 models, we combine the optimization of forward KL (BRAIn) and reverse"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              241.26801,
+              121.38638,
+              250.17458
+            ],
+            "device": [
+              108,
+              239.11609,
+              503.99792,
+              248.02264
+            ]
+          },
+          "content": {
+            "rnormalized": "KL (PPO) in a sequential manner - starting with a single iteration of Best-of-N (BoN) training, we"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              230.30901,
+              123.19177,
+              239.21558
+            ],
+            "device": [
+              108,
+              228.15709,
+              504.16751,
+              237.06364
+            ]
+          },
+          "content": {
+            "rnormalized": "first apply PPO followed by a short run of BRAIn training. We find this recipe to be quite effective for"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              219.35001,
+              132.508,
+              228.25658
+            ],
+            "device": [
+              108,
+              217.19809,
+              505.74527,
+              226.10464
+            ]
+          },
+          "content": {
+            "rnormalized": "model alignment, achieving higher performance compared to any of the individual methods involved."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              208.39101,
+              122.38599,
+              217.29758
+            ],
+            "device": [
+              108,
+              206.23909,
+              344.50214,
+              215.14565
+            ]
+          },
+          "content": {
+            "rnormalized": "See figure 6 for an illustration of our alignment framework."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              184.58,
+              149.19614,
+              193.53638
+            ],
+            "device": [
+              108,
+              182.49782,
+              195.37158,
+              191.45419
+            ]
+          },
+          "content": {
+            "rnormalized": "Best-of-N Sampling."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              205.33701,
+              184.58,
+              214.92979,
+              193.48657
+            ],
+            "device": [
+              205.33701,
+              182.42809,
+              504.004,
+              191.33464
+            ]
+          },
+          "content": {
+            "rnormalized": "We use a single iteration of Best-of-N (BoN) sampling, as the first step in"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              173.621,
+              121.54575,
+              182.52757
+            ],
+            "device": [
+              108,
+              171.46909,
+              503.9971,
+              180.37564
+            ]
+          },
+          "content": {
+            "rnormalized": "our model alignment pipeline. Training on BoN samples is by far the simplest yet very effective"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              162.662,
+              148.52786,
+              171.56857
+            ],
+            "device": [
+              108,
+              160.51009,
+              503.99765,
+              169.41664
+            ]
+          },
+          "content": {
+            "rnormalized": "alignment technique (Stiennon et al., 2020; Sessa et al., 2024). We generate 64 responses for each"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              151.703,
+              135.99826,
+              160.60957
+            ],
+            "device": [
+              108,
+              149.55109,
+              503.99786,
+              158.45764
+            ]
+          },
+          "content": {
+            "rnormalized": "sample and then rank them using an ensemble of the first two reward models from section 5.3.3. We"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              140.744,
+              112.33493,
+              149.65057
+            ],
+            "device": [
+              108,
+              138.59209,
+              504.00134,
+              147.49864
+            ]
+          },
+          "content": {
+            "rnormalized": "experiment with both arithmetic mean and geometric mean to ensemble reward scores. Both methods"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              129.785,
+              140.08954,
+              138.69157
+            ],
+            "device": [
+              108,
+              127.63308,
+              464.41208,
+              136.53964
+            ]
+          },
+          "content": {
+            "rnormalized": "perform similarly, with arithmetic mean giving more consistent gains across experiments."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              105.974,
+              118.51054,
+              114.93037
+            ],
+            "device": [
+              108,
+              103.89182,
+              236.83632,
+              112.84819
+            ]
+          },
+          "content": {
+            "rnormalized": "Proximal Policy Optimization."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              246.795,
+              105.974,
+              265.06641,
+              114.88056
+            ],
+            "device": [
+              246.795,
+              103.82207,
+              503.99939,
+              112.72864
+            ]
+          },
+          "content": {
+            "rnormalized": "PPO is a policy gradient method that employs a surrogate loss to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              95.014999,
+              115.84931,
+              103.92156
+            ],
+            "device": [
+              108,
+              92.863075,
+              504.34479,
+              101.76964
+            ]
+          },
+          "content": {
+            "rnormalized": "efficiently minimize the reverse KL divergence to the optimal policy in 10. We use the trlX library"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.671,
+              84.056,
+              122.51534,
+              92.962563
+            ],
+            "device": [
+              107.671,
+              81.904076,
+              504.00174,
+              90.810638
+            ]
+          },
+          "content": {
+            "rnormalized": "(Havrilla et al., 2023) for PPO training; we modified the trlX to allow for LoRA training, with alpha"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              73.097,
+              122.2709,
+              82.003563
+            ],
+            "device": [
+              108,
+              70.945076,
+              503.99774,
+              79.851639
+            ]
+          },
+          "content": {
+            "rnormalized": "and rank both set to 8. Each PPO run performs 1000 updates with a batch size of 8 and learning rate"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              62.138,
+              116.46482,
+              71.044563
+            ],
+            "device": [
+              108,
+              59.98608,
+              503.99725,
+              68.892639
+            ]
+          },
+          "content": {
+            "rnormalized": "of 5e-7. The KL penalty coefficient is initialized at 0.05 and goes to a target value of 2 during the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.64499,
+              32.25,
+              310.60757,
+              41.156563
+            ],
+            "device": [
+              300.64499,
+              30.098078,
+              310.60757,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "16"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 128.54752,
+          "x1": 154.11674,
+          "y": 633.68701
+        },
+        {
+          "x0": 128.54752,
+          "x1": 154.11674,
+          "y": 653.61255
+        },
+        {
+          "x0": 208.58083,
+          "x1": 225.55313,
+          "y": 650.99841
+        },
+        {
+          "x0": 191.60851,
+          "x1": 225.55313,
+          "y": 636.30109
+        },
+        {
+          "x0": 191.60851,
+          "x1": 208.58083,
+          "y": 650.99841
+        },
+        {
+          "x0": 154.31601,
+          "x1": 183.60231,
+          "y": 643.64978
+        },
+        {
+          "x0": 154.31601,
+          "x1": 183.60231,
+          "y": 643.64978
+        },
+        {
+          "x0": 275.82953,
+          "x1": 289.65576,
+          "y": 650.82361
+        },
+        {
+          "x0": 262.0033,
+          "x1": 289.65576,
+          "y": 636.47595
+        },
+        {
+          "x0": 262.0033,
+          "x1": 275.82953,
+          "y": 650.82361
+        },
+        {
+          "x0": 270.5145,
+          "x1": 291.1073,
+          "y": 678.51947
+        },
+        {
+          "x0": 270.5145,
+          "x1": 291.1073,
+          "y": 698.44501
+        },
+        {
+          "x0": 268.0238,
+          "x1": 288.61661,
+          "y": 676.02881
+        },
+        {
+          "x0": 268.0238,
+          "x1": 288.61661,
+          "y": 695.95435
+        },
+        {
+          "x0": 208.58083,
+          "x1": 219.91954,
+          "y": 689.87885
+        },
+        {
+          "x0": 208.58083,
+          "x1": 219.91954,
+          "y": 689.87885
+        },
+        {
+          "x0": 265.53311,
+          "x1": 286.12592,
+          "y": 673.53809
+        },
+        {
+          "x0": 265.53311,
+          "x1": 286.12592,
+          "y": 693.46362
+        },
+        {
+          "x0": 233.10092,
+          "x1": 254.17192,
+          "y": 643.65045
+        },
+        {
+          "x0": 332.99133,
+          "x1": 344.33002,
+          "y": 650.02777
+        },
+        {
+          "x0": 332.99133,
+          "x1": 344.33002,
+          "y": 650.02777
+        },
+        {
+          "x0": 297.02872,
+          "x1": 320.79581,
+          "y": 643.65045
+        },
+        {
+          "x0": 410.3269,
+          "x1": 430.16263,
+          "y": 662.06531
+        },
+        {
+          "x0": 390.49118,
+          "x1": 430.16263,
+          "y": 625.23425
+        },
+        {
+          "x0": 390.49118,
+          "x1": 410.3269,
+          "y": 662.06531
+        },
+        {
+          "x0": 344.72852,
+          "x1": 371.41809,
+          "y": 643.64978
+        },
+        {
+          "x0": 263.04492,
+          "x1": 288.61414,
+          "y": 598.81732
+        },
+        {
+          "x0": 263.04492,
+          "x1": 288.61414,
+          "y": 618.74286
+        },
+        {
+          "x0": 464.79095,
+          "x1": 490.36017,
+          "y": 633.68701
+        },
+        {
+          "x0": 464.79095,
+          "x1": 490.36017,
+          "y": 653.61255
+        },
+        {
+          "x0": 213.10295,
+          "x1": 213.39154,
+          "y": 635.09253
+        },
+        {
+          "x0": 448.77716,
+          "x1": 464.13345,
+          "y": 643.65063
+        },
+        {
+          "x0": 338.61499,
+          "x1": 383.41998,
+          "y": 407.88599
+        },
+        {
+          "x0": 333.10101,
+          "x1": 360.98502,
+          "y": 315.01199
+        }
+      ],
+      "ignored-cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              271.341,
+              682.99603,
+              285.29272,
+              691.01202
+            ],
+            "device": [
+              271.341,
+              681.05927,
+              285.29272,
+              689.07526
+            ]
+          },
+          "content": {
+            "rnormalized": "RM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              268.85001,
+              680.50598,
+              282.80173,
+              688.52197
+            ],
+            "device": [
+              268.85001,
+              678.56921,
+              282.80173,
+              686.58521
+            ]
+          },
+          "content": {
+            "rnormalized": "RM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 8.966400146484375
+          }
+        }
+      ],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            128.54752,
+            633.68701,
+            154.11674,
+            653.61255
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            128.54752,
+            154.11674,
+            154.11674,
+            128.54752,
+            128.54752
+          ],
+          "y-values": [
+            633.68701,
+            633.68701,
+            653.61255,
+            653.61255,
+            633.68701
+          ]
+        },
+        {
+          "bbox": [
+            184.25984,
+            636.30109,
+            232.90179,
+            650.99841
+          ],
+          "sub-paths": [
+            0,
+            32
+          ],
+          "type": "unknown",
+          "x-values": [
+            208.58083,
+            225.55313,
+            227.23813,
+            228.7849,
+            230.14937,
+            231.28738,
+            232.15488,
+            232.7077,
+            232.90179,
+            232.70772,
+            232.15488,
+            231.28738,
+            230.14937,
+            228.7849,
+            227.23811,
+            225.55313,
+            191.60851,
+            189.92351,
+            188.37674,
+            187.01227,
+            185.87425,
+            185.00676,
+            184.45392,
+            184.25984,
+            184.45392,
+            185.00676,
+            185.87425,
+            187.01227,
+            188.37672,
+            189.92351,
+            191.60851,
+            208.58083
+          ],
+          "y-values": [
+            650.99841,
+            650.99841,
+            650.80438,
+            650.25153,
+            649.38403,
+            648.24603,
+            646.88153,
+            645.33478,
+            643.64978,
+            641.96478,
+            640.41797,
+            639.05353,
+            637.91553,
+            637.04803,
+            636.49518,
+            636.30109,
+            636.30109,
+            636.49518,
+            637.04803,
+            637.91553,
+            639.05353,
+            640.41797,
+            641.96478,
+            643.64978,
+            645.33478,
+            646.88153,
+            648.24603,
+            649.38403,
+            650.25153,
+            650.80438,
+            650.99841,
+            650.99841
+          ]
+        },
+        {
+          "bbox": [
+            154.31601,
+            643.64978,
+            183.60231,
+            643.64978
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            154.31601,
+            183.60231
+          ],
+          "y-values": [
+            643.64978,
+            643.64978
+          ]
+        },
+        {
+          "bbox": [
+            182.4068,
+            642.05579,
+            183.90117,
+            645.24377
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            182.4068,
+            182.50526,
+            182.69435,
+            182.94269,
+            183.21892,
+            183.49164,
+            183.72952,
+            183.90117,
+            183.72952,
+            183.49164,
+            183.21892,
+            182.94269,
+            182.69435,
+            182.50526,
+            182.4068
+          ],
+          "y-values": [
+            645.24377,
+            644.97253,
+            644.68378,
+            644.39685,
+            644.13074,
+            643.90479,
+            643.7381,
+            643.64978,
+            643.56146,
+            643.39478,
+            643.16882,
+            642.90271,
+            642.61578,
+            642.32703,
+            642.05579
+          ]
+        },
+        {
+          "bbox": [
+            154.31601,
+            643.64978,
+            183.60231,
+            643.64978
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            154.31601,
+            183.60231
+          ],
+          "y-values": [
+            643.64978,
+            643.64978
+          ]
+        },
+        {
+          "bbox": [
+            182.4068,
+            642.05579,
+            183.90117,
+            645.24377
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            182.4068,
+            182.50526,
+            182.69435,
+            182.94269,
+            183.21892,
+            183.49164,
+            183.72952,
+            183.90117,
+            183.72952,
+            183.49164,
+            183.21892,
+            182.94269,
+            182.69435,
+            182.50526,
+            182.4068
+          ],
+          "y-values": [
+            645.24377,
+            644.97253,
+            644.68378,
+            644.39685,
+            644.13074,
+            643.90479,
+            643.7381,
+            643.64978,
+            643.56146,
+            643.39478,
+            643.16882,
+            642.90271,
+            642.61578,
+            642.32703,
+            642.05579
+          ]
+        },
+        {
+          "bbox": [
+            254.82945,
+            636.47595,
+            296.82956,
+            650.82361
+          ],
+          "sub-paths": [
+            0,
+            32
+          ],
+          "type": "unknown",
+          "x-values": [
+            275.82953,
+            289.65576,
+            291.30066,
+            292.81064,
+            294.14261,
+            295.25357,
+            296.1004,
+            296.64008,
+            296.82956,
+            296.64011,
+            296.1004,
+            295.25357,
+            294.14261,
+            292.81064,
+            291.30066,
+            289.65576,
+            262.0033,
+            260.3584,
+            258.84842,
+            257.51642,
+            256.40546,
+            255.55861,
+            255.01891,
+            254.82945,
+            255.01891,
+            255.55861,
+            256.40546,
+            257.51642,
+            258.84842,
+            260.3584,
+            262.0033,
+            275.82953
+          ],
+          "y-values": [
+            650.82361,
+            650.82361,
+            650.63416,
+            650.09442,
+            649.24762,
+            648.13666,
+            646.80463,
+            645.29468,
+            643.64978,
+            642.00488,
+            640.49487,
+            639.1629,
+            638.05194,
+            637.20508,
+            636.66541,
+            636.47595,
+            636.47595,
+            636.66541,
+            637.20508,
+            638.05194,
+            639.1629,
+            640.49487,
+            642.00488,
+            643.64978,
+            645.29468,
+            646.80469,
+            648.13666,
+            649.24762,
+            650.09442,
+            650.63416,
+            650.82361,
+            650.82361
+          ]
+        },
+        {
+          "bbox": [
+            154.31601,
+            651.14319,
+            262.6626,
+            666.69342
+          ],
+          "sub-paths": [
+            0,
+            8
+          ],
+          "type": "unknown",
+          "x-values": [
+            154.31601,
+            169.97493,
+            185.50159,
+            200.93918,
+            216.33087,
+            231.71988,
+            247.14938,
+            262.6626
+          ],
+          "y-values": [
+            651.14319,
+            658.92725,
+            664.10785,
+            666.69342,
+            666.69232,
+            664.11292,
+            658.9635,
+            651.25244
+          ]
+        },
+        {
+          "bbox": [
+            260.83026,
+            650.46979,
+            262.92142,
+            653.23065
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            262.42429,
+            262.3739,
+            262.39331,
+            262.46487,
+            262.57108,
+            262.69427,
+            262.81689,
+            262.92142,
+            262.72861,
+            262.43924,
+            262.09009,
+            261.71783,
+            261.35928,
+            261.05118,
+            260.83026
+          ],
+          "y-values": [
+            653.23065,
+            652.94647,
+            652.60187,
+            652.22919,
+            651.86066,
+            651.52863,
+            651.26532,
+            651.10303,
+            651.11237,
+            651.08691,
+            651.02759,
+            650.9353,
+            650.81097,
+            650.65546,
+            650.46979
+          ]
+        },
+        {
+          "bbox": [
+            270.5145,
+            678.51947,
+            291.1073,
+            698.44501
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            270.5145,
+            291.1073,
+            291.1073,
+            270.5145,
+            270.5145
+          ],
+          "y-values": [
+            678.51947,
+            678.51947,
+            698.44501,
+            698.44501,
+            678.51947
+          ]
+        },
+        {
+          "bbox": [
+            268.0238,
+            676.02881,
+            288.61661,
+            695.95435
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            268.0238,
+            288.61661,
+            288.61661,
+            268.0238,
+            268.0238
+          ],
+          "y-values": [
+            676.02881,
+            676.02881,
+            695.95435,
+            695.95435,
+            676.02881
+          ]
+        },
+        {
+          "bbox": [
+            197.2421,
+            685.91022,
+            219.91954,
+            693.84747
+          ],
+          "sub-paths": [
+            0,
+            1,
+            31,
+            32
+          ],
+          "type": "unknown",
+          "x-values": [
+            208.58083,
+            219.91954,
+            219.62009,
+            218.76707,
+            217.42857,
+            215.67264,
+            213.56734,
+            211.18071,
+            208.58083,
+            205.98094,
+            203.5943,
+            201.489,
+            199.73306,
+            198.39456,
+            197.54155,
+            197.2421,
+            197.54155,
+            198.39456,
+            199.73306,
+            201.489,
+            203.5943,
+            205.98093,
+            208.58083,
+            211.18071,
+            213.56734,
+            215.67264,
+            217.42857,
+            218.76707,
+            219.62007,
+            219.91954,
+            219.91954,
+            208.58083
+          ],
+          "y-values": [
+            689.87885,
+            689.87885,
+            690.78882,
+            691.62415,
+            692.36102,
+            692.97559,
+            693.44409,
+            693.74268,
+            693.84747,
+            693.74268,
+            693.44409,
+            692.97559,
+            692.36102,
+            691.62415,
+            690.78882,
+            689.87885,
+            688.96887,
+            688.13354,
+            687.39667,
+            686.7821,
+            686.3136,
+            686.01501,
+            685.91022,
+            686.01501,
+            686.3136,
+            686.7821,
+            687.39667,
+            688.13354,
+            688.96887,
+            689.87885,
+            689.87885,
+            689.87885
+          ]
+        },
+        {
+          "bbox": [
+            197.2421,
+            673.15424,
+            219.91954,
+            689.87885
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            197.2421,
+            197.2421,
+            197.54155,
+            198.39456,
+            199.73306,
+            201.489,
+            203.5943,
+            205.98093,
+            208.58083,
+            211.18071,
+            213.56734,
+            215.67264,
+            217.42857,
+            218.76707,
+            219.62007,
+            219.91954,
+            219.91954
+          ],
+          "y-values": [
+            689.87885,
+            677.1228,
+            676.21289,
+            675.3775,
+            674.64069,
+            674.02606,
+            673.55762,
+            673.25903,
+            673.15424,
+            673.25903,
+            673.55762,
+            674.02606,
+            674.64069,
+            675.3775,
+            676.21283,
+            677.1228,
+            689.87885
+          ]
+        },
+        {
+          "bbox": [
+            265.53311,
+            673.53809,
+            286.12592,
+            693.46362
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            265.53311,
+            286.12592,
+            286.12592,
+            265.53311,
+            265.53311
+          ],
+          "y-values": [
+            673.53809,
+            673.53809,
+            693.46362,
+            693.46362,
+            673.53809
+          ]
+        },
+        {
+          "bbox": [
+            275.83029,
+            651.4826,
+            275.832,
+            673.33881
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            275.83029,
+            275.832
+          ],
+          "y-values": [
+            673.33881,
+            651.4826
+          ]
+        },
+        {
+          "bbox": [
+            274.23792,
+            651.18378,
+            277.42587,
+            652.67822
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            277.42587,
+            277.1546,
+            276.86594,
+            276.57898,
+            276.31296,
+            276.08701,
+            275.92029,
+            275.83203,
+            275.74371,
+            275.577,
+            275.35098,
+            275.08493,
+            274.79794,
+            274.50922,
+            274.23792
+          ],
+          "y-values": [
+            652.67822,
+            652.57971,
+            652.39062,
+            652.14227,
+            651.86603,
+            651.59326,
+            651.35541,
+            651.18378,
+            651.35541,
+            651.59326,
+            651.86597,
+            652.14215,
+            652.39044,
+            652.57953,
+            652.67798
+          ]
+        },
+        {
+          "bbox": [
+            233.10092,
+            643.64978,
+            254.17192,
+            643.65045
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            233.10092,
+            254.17192
+          ],
+          "y-values": [
+            643.65045,
+            643.64978
+          ]
+        },
+        {
+          "bbox": [
+            252.97641,
+            642.05579,
+            254.47078,
+            645.24377
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            252.97641,
+            253.07487,
+            253.26396,
+            253.5123,
+            253.78853,
+            254.06125,
+            254.29913,
+            254.47078,
+            254.29913,
+            254.06125,
+            253.78853,
+            253.5123,
+            253.26396,
+            253.07487,
+            252.97641
+          ],
+          "y-values": [
+            645.24377,
+            644.97253,
+            644.68378,
+            644.39685,
+            644.13074,
+            643.90479,
+            643.7381,
+            643.64978,
+            643.56146,
+            643.39478,
+            643.16882,
+            642.90271,
+            642.61578,
+            642.32703,
+            642.05579
+          ]
+        },
+        {
+          "bbox": [
+            208.58212,
+            651.65808,
+            208.58498,
+            672.75574
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            208.58212,
+            208.58498
+          ],
+          "y-values": [
+            672.75574,
+            651.65808
+          ]
+        },
+        {
+          "bbox": [
+            206.99083,
+            651.35925,
+            210.17879,
+            652.85376
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            210.17879,
+            209.90752,
+            209.61884,
+            209.33191,
+            209.0659,
+            208.83997,
+            208.67328,
+            208.58502,
+            208.4967,
+            208.32996,
+            208.10394,
+            207.83786,
+            207.55086,
+            207.26212,
+            206.99083
+          ],
+          "y-values": [
+            652.85376,
+            652.75531,
+            652.56616,
+            652.31781,
+            652.04156,
+            651.7688,
+            651.53088,
+            651.35925,
+            651.53088,
+            651.76874,
+            652.04138,
+            652.31757,
+            652.56586,
+            652.75494,
+            652.85333
+          ]
+        },
+        {
+          "bbox": [
+            321.65262,
+            646.05914,
+            344.33002,
+            653.9964
+          ],
+          "sub-paths": [
+            0,
+            1,
+            31,
+            32
+          ],
+          "type": "unknown",
+          "x-values": [
+            332.99133,
+            344.33002,
+            344.03055,
+            343.17755,
+            341.83905,
+            340.08313,
+            337.97784,
+            335.59122,
+            332.99133,
+            330.39145,
+            328.00482,
+            325.89951,
+            324.14359,
+            322.80508,
+            321.95206,
+            321.65262,
+            321.95209,
+            322.80508,
+            324.14359,
+            325.89951,
+            328.00479,
+            330.39142,
+            332.99133,
+            335.59122,
+            337.97784,
+            340.08313,
+            341.83905,
+            343.17755,
+            344.03055,
+            344.33002,
+            344.33002,
+            332.99133
+          ],
+          "y-values": [
+            650.02777,
+            650.02777,
+            650.93774,
+            651.77307,
+            652.50995,
+            653.12451,
+            653.59302,
+            653.89154,
+            653.9964,
+            653.89154,
+            653.59302,
+            653.12451,
+            652.50995,
+            651.77307,
+            650.93774,
+            650.02777,
+            649.1178,
+            648.28247,
+            647.54559,
+            646.93103,
+            646.46252,
+            646.164,
+            646.05914,
+            646.164,
+            646.46252,
+            646.93103,
+            647.54559,
+            648.28247,
+            649.1178,
+            650.02777,
+            650.02777,
+            650.02777
+          ]
+        },
+        {
+          "bbox": [
+            321.65262,
+            633.30316,
+            344.33002,
+            650.02777
+          ],
+          "sub-paths": [
+            0,
+            17
+          ],
+          "type": "unknown",
+          "x-values": [
+            321.65262,
+            321.65262,
+            321.95209,
+            322.80508,
+            324.14359,
+            325.89951,
+            328.00479,
+            330.39142,
+            332.99133,
+            335.59122,
+            337.97784,
+            340.08313,
+            341.83905,
+            343.17755,
+            344.03055,
+            344.33002,
+            344.33002
+          ],
+          "y-values": [
+            650.02777,
+            637.27179,
+            636.36176,
+            635.52643,
+            634.78961,
+            634.17499,
+            633.70654,
+            633.40796,
+            633.30316,
+            633.40796,
+            633.70654,
+            634.17499,
+            634.78961,
+            635.52643,
+            636.36176,
+            637.27179,
+            650.02777
+          ]
+        },
+        {
+          "bbox": [
+            297.02872,
+            643.64978,
+            320.79581,
+            643.65045
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            297.02872,
+            320.79581
+          ],
+          "y-values": [
+            643.65045,
+            643.64978
+          ]
+        },
+        {
+          "bbox": [
+            319.60031,
+            642.05579,
+            321.09467,
+            645.24377
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            319.60031,
+            319.69876,
+            319.88785,
+            320.1362,
+            320.41241,
+            320.68515,
+            320.923,
+            321.09467,
+            320.923,
+            320.68515,
+            320.41241,
+            320.1362,
+            319.88785,
+            319.69876,
+            319.60031
+          ],
+          "y-values": [
+            645.24377,
+            644.97253,
+            644.68378,
+            644.39685,
+            644.13074,
+            643.90479,
+            643.7381,
+            643.64978,
+            643.56146,
+            643.39478,
+            643.16882,
+            642.90271,
+            642.61578,
+            642.32703,
+            642.05579
+          ]
+        },
+        {
+          "bbox": [
+            372.07562,
+            625.23425,
+            448.57819,
+            662.06531
+          ],
+          "sub-paths": [
+            0,
+            32
+          ],
+          "type": "unknown",
+          "x-values": [
+            410.3269,
+            430.16263,
+            434.38519,
+            438.26138,
+            441.68066,
+            444.53253,
+            446.70642,
+            448.0918,
+            448.57819,
+            448.09183,
+            446.70642,
+            444.53253,
+            441.68066,
+            438.26138,
+            434.38519,
+            430.16263,
+            390.49118,
+            386.26862,
+            382.39243,
+            378.97311,
+            376.12128,
+            373.94739,
+            372.56198,
+            372.07562,
+            372.56198,
+            373.94739,
+            376.12128,
+            378.97311,
+            382.39243,
+            386.26862,
+            390.49118,
+            410.3269
+          ],
+          "y-values": [
+            662.06531,
+            662.06531,
+            661.57898,
+            660.19354,
+            658.01965,
+            655.16779,
+            651.74854,
+            647.87231,
+            643.64978,
+            639.42725,
+            635.55103,
+            632.13177,
+            629.27991,
+            627.10602,
+            625.72058,
+            625.23425,
+            625.23425,
+            625.72058,
+            627.10602,
+            629.27991,
+            632.13177,
+            635.55103,
+            639.42725,
+            643.64978,
+            647.87231,
+            651.74854,
+            655.16779,
+            658.01965,
+            660.19354,
+            661.57898,
+            662.06531,
+            662.06531
+          ]
+        },
+        {
+          "bbox": [
+            344.72852,
+            643.64978,
+            371.41809,
+            643.64978
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            344.72852,
+            371.41809
+          ],
+          "y-values": [
+            643.64978,
+            643.64978
+          ]
+        },
+        {
+          "bbox": [
+            370.2226,
+            642.05579,
+            371.71695,
+            645.24377
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            370.2226,
+            370.32104,
+            370.51013,
+            370.75848,
+            371.0347,
+            371.30743,
+            371.54529,
+            371.71695,
+            371.54529,
+            371.30743,
+            371.0347,
+            370.75848,
+            370.51013,
+            370.32104,
+            370.2226
+          ],
+          "y-values": [
+            645.24377,
+            644.97253,
+            644.68378,
+            644.39685,
+            644.13074,
+            643.90479,
+            643.7381,
+            643.64978,
+            643.56146,
+            643.39478,
+            643.16882,
+            642.90271,
+            642.61578,
+            642.32703,
+            642.05579
+          ]
+        },
+        {
+          "bbox": [
+            263.04492,
+            598.81732,
+            288.61414,
+            618.74286
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            263.04492,
+            288.61414,
+            288.61414,
+            263.04492,
+            263.04492
+          ],
+          "y-values": [
+            598.81732,
+            598.81732,
+            618.74286,
+            618.74286,
+            598.81732
+          ]
+        },
+        {
+          "bbox": [
+            464.79095,
+            633.68701,
+            490.36017,
+            653.61255
+          ],
+          "sub-paths": [
+            0,
+            5
+          ],
+          "type": "unknown",
+          "x-values": [
+            464.79095,
+            490.36017,
+            490.36017,
+            464.79095,
+            464.79095
+          ],
+          "y-values": [
+            633.68701,
+            633.68701,
+            653.61255,
+            653.61255,
+            633.68701
+          ]
+        },
+        {
+          "bbox": [
+            211.48483,
+            608.78009,
+            262.84564,
+            635.6712
+          ],
+          "sub-paths": [
+            0,
+            8
+          ],
+          "type": "unknown",
+          "x-values": [
+            262.84564,
+            253.23851,
+            244.04932,
+            235.48122,
+            227.73749,
+            221.02136,
+            215.53606,
+            211.48483
+          ],
+          "y-values": [
+            608.78009,
+            609.17059,
+            610.44769,
+            612.76965,
+            616.29468,
+            621.18109,
+            627.58716,
+            635.6712
+          ]
+        },
+        {
+          "bbox": [
+            210.39574,
+            634.00262,
+            213.39154,
+            635.95197
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            210.39574,
+            210.61699,
+            210.82364,
+            211.00838,
+            211.16396,
+            211.28304,
+            211.35837,
+            211.38264,
+            211.52431,
+            211.76231,
+            212.06792,
+            212.4124,
+            212.76698,
+            213.10295,
+            213.39154
+          ],
+          "y-values": [
+            634.00262,
+            634.18793,
+            634.46436,
+            634.79584,
+            635.14636,
+            635.47992,
+            635.7605,
+            635.95197,
+            635.82086,
+            635.65436,
+            635.47534,
+            635.30676,
+            635.17151,
+            635.09253,
+            635.09277
+          ]
+        },
+        {
+          "bbox": [
+            288.81339,
+            599.26379,
+            406.9649,
+            624.58405
+          ],
+          "sub-paths": [
+            0,
+            8
+          ],
+          "type": "unknown",
+          "x-values": [
+            288.81339,
+            309.6272,
+            331.23703,
+            352.37827,
+            371.78629,
+            388.19647,
+            400.34421,
+            406.9649
+          ],
+          "y-values": [
+            608.78009,
+            607.26801,
+            603.9549,
+            600.67529,
+            599.26379,
+            601.55505,
+            609.38361,
+            624.58405
+          ]
+        },
+        {
+          "bbox": [
+            405.18765,
+            623.13013,
+            408.32727,
+            624.87836
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            405.18765,
+            405.47192,
+            405.78906,
+            406.11475,
+            406.42468,
+            406.69455,
+            406.90002,
+            407.01675,
+            407.07394,
+            407.19684,
+            407.37207,
+            407.58615,
+            407.82568,
+            408.07721,
+            408.32727
+          ],
+          "y-values": [
+            623.68329,
+            623.73315,
+            623.86926,
+            624.06409,
+            624.28992,
+            624.51929,
+            624.72467,
+            624.87836,
+            624.69403,
+            624.43079,
+            624.12299,
+            623.80481,
+            623.51044,
+            623.27417,
+            623.13013
+          ]
+        },
+        {
+          "bbox": [
+            289.25604,
+            608.82806,
+            397.29303,
+            625.03461
+          ],
+          "sub-paths": [
+            0,
+            8
+          ],
+          "type": "unknown",
+          "x-values": [
+            397.29303,
+            385.74622,
+            372.3064,
+            357.332,
+            341.18137,
+            324.21292,
+            306.785,
+            289.25604
+          ],
+          "y-values": [
+            625.03461,
+            613.90973,
+            609.16187,
+            608.82806,
+            610.94556,
+            613.55139,
+            614.68274,
+            612.37671
+          ]
+        },
+        {
+          "bbox": [
+            288.96738,
+            611.14648,
+            290.82339,
+            614.22583
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            290.82339,
+            290.65805,
+            290.4007,
+            290.08655,
+            289.75089,
+            289.42896,
+            289.15604,
+            288.96738,
+            289.11032,
+            289.29694,
+            289.50186,
+            289.6998,
+            289.86539,
+            289.9733,
+            289.99817
+          ],
+          "y-values": [
+            611.14648,
+            611.38306,
+            611.61298,
+            611.82587,
+            612.01135,
+            612.15906,
+            612.25848,
+            612.29938,
+            612.42908,
+            612.65167,
+            612.94055,
+            613.26904,
+            613.61047,
+            613.93829,
+            614.22583
+          ]
+        },
+        {
+          "bbox": [
+            275.83044,
+            618.94214,
+            275.832,
+            635.81763
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            275.83044,
+            275.832
+          ],
+          "y-values": [
+            618.94214,
+            635.81763
+          ]
+        },
+        {
+          "bbox": [
+            274.23792,
+            634.62201,
+            277.42587,
+            636.11646
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            274.23792,
+            274.50922,
+            274.79794,
+            275.08493,
+            275.35098,
+            275.577,
+            275.74371,
+            275.83203,
+            275.92029,
+            276.08701,
+            276.31296,
+            276.57898,
+            276.86594,
+            277.1546,
+            277.42587
+          ],
+          "y-values": [
+            634.62225,
+            634.7207,
+            634.90979,
+            635.15808,
+            635.43427,
+            635.70697,
+            635.94482,
+            636.11646,
+            635.94482,
+            635.70697,
+            635.4342,
+            635.15796,
+            634.90961,
+            634.72052,
+            634.62201
+          ]
+        },
+        {
+          "bbox": [
+            448.77716,
+            643.64978,
+            464.13345,
+            643.65063
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            448.77716,
+            464.13345
+          ],
+          "y-values": [
+            643.65063,
+            643.64978
+          ]
+        },
+        {
+          "bbox": [
+            462.93796,
+            642.05579,
+            464.43231,
+            645.24377
+          ],
+          "sub-paths": [
+            0,
+            15
+          ],
+          "type": "unknown",
+          "x-values": [
+            462.93796,
+            463.03641,
+            463.22549,
+            463.47385,
+            463.75006,
+            464.0228,
+            464.26065,
+            464.43231,
+            464.26065,
+            464.0228,
+            463.75006,
+            463.47385,
+            463.22549,
+            463.03641,
+            462.93796
+          ],
+          "y-values": [
+            645.24377,
+            644.97253,
+            644.68378,
+            644.39685,
+            644.13074,
+            643.90479,
+            643.7381,
+            643.64978,
+            643.56146,
+            643.39478,
+            643.16882,
+            642.90271,
+            642.61578,
+            642.32703,
+            642.05579
+          ]
+        },
+        {
+          "bbox": [
+            338.61499,
+            407.88599,
+            383.41998,
+            407.88599
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            338.61499,
+            383.41998
+          ],
+          "y-values": [
+            407.88599,
+            407.88599
+          ]
+        },
+        {
+          "bbox": [
+            333.10101,
+            315.01199,
+            360.98502,
+            315.01199
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            333.10101,
+            360.98502
+          ],
+          "y-values": [
+            315.01199,
+            315.01199
+          ]
+        }
+      ],
+      "vertical-lines": [
+        {
+          "x": 154.11674,
+          "y0": 633.68701,
+          "y1": 653.61255
+        },
+        {
+          "x": 128.54752,
+          "y0": 633.68701,
+          "y1": 653.61255
+        },
+        {
+          "x": 291.1073,
+          "y0": 678.51947,
+          "y1": 698.44501
+        },
+        {
+          "x": 270.5145,
+          "y0": 678.51947,
+          "y1": 698.44501
+        },
+        {
+          "x": 288.61661,
+          "y0": 676.02881,
+          "y1": 695.95435
+        },
+        {
+          "x": 268.0238,
+          "y0": 676.02881,
+          "y1": 695.95435
+        },
+        {
+          "x": 197.2421,
+          "y0": 677.1228,
+          "y1": 689.87885
+        },
+        {
+          "x": 219.91954,
+          "y0": 677.1228,
+          "y1": 689.87885
+        },
+        {
+          "x": 286.12592,
+          "y0": 673.53809,
+          "y1": 693.46362
+        },
+        {
+          "x": 265.53311,
+          "y0": 673.53809,
+          "y1": 693.46362
+        },
+        {
+          "x": 321.65262,
+          "y0": 637.27179,
+          "y1": 650.02777
+        },
+        {
+          "x": 344.33002,
+          "y0": 637.27179,
+          "y1": 650.02777
+        },
+        {
+          "x": 288.61414,
+          "y0": 598.81732,
+          "y1": 618.74286
+        },
+        {
+          "x": 263.04492,
+          "y0": 598.81732,
+          "y1": 618.74286
+        },
+        {
+          "x": 490.36017,
+          "y0": 633.68701,
+          "y1": 653.61255
+        },
+        {
+          "x": 464.79095,
+          "y0": 633.68701,
+          "y1": 653.61255
+        }
+      ],
+      "width": 612
+    }
+  ]
+}

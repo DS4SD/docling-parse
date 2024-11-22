@@ -1,0 +1,2249 @@
+{
+  "info": {
+    "histograms": {
+      "mean-char-height": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 1.507510330835294,
+        "/KHSBIR+CMR10": 2.948933427781929,
+        "/LHCPKS+NimbusRomNo9L-Regu": 2.159074809368324,
+        "/LTZNGC+CMVTT10": 0.7726561381061432
+      },
+      "mean-char-width": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 5.068614342993299,
+        "/KHSBIR+CMR10": 4.981299523787319,
+        "/LHCPKS+NimbusRomNo9L-Regu": 4.317048160341206,
+        "/LTZNGC+CMVTT10": 4.223986227519179
+      },
+      "number-of-chars": {
+        "/DKKVOJ+NimbusRomNo9L-Medi": 101,
+        "/KHSBIR+CMR10": 6,
+        "/LHCPKS+NimbusRomNo9L-Regu": 3579,
+        "/LTZNGC+CMVTT10": 116
+      }
+    },
+    "styles": [
+      "/DKKVOJ+NimbusRomNo9L-Medi",
+      "/KHSBIR+CMR10",
+      "/LHCPKS+NimbusRomNo9L-Regu",
+      "/LTZNGC+CMVTT10"
+    ]
+  },
+  "pages": [
+    {
+      "cells": [
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              756.63098,
+              126.81935,
+              765.53754
+            ],
+            "device": [
+              108,
+              754.47906,
+              126.81935,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "IBM"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              399.97394,
+              756.63098,
+              429.85178,
+              765.53754
+            ],
+            "device": [
+              399.97394,
+              754.47906,
+              504.00342,
+              763.38562
+            ]
+          },
+          "content": {
+            "rnormalized": "Granite Language Models"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              700.17603,
+              134.52243,
+              709.08258
+            ],
+            "device": [
+              108,
+              698.02411,
+              503.99707,
+              706.93066
+            ]
+          },
+          "content": {
+            "rnormalized": "course of training. The number of rollouts is set to 64, with the reward as an arithmetic mean of"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              689.21698,
+              152.82173,
+              698.12354
+            ],
+            "device": [
+              108,
+              687.06506,
+              431.10709,
+              695.97162
+            ]
+          },
+          "content": {
+            "rnormalized": "normalized scores from three different reward models, described in section 5.3.3."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              661.81702,
+              140.63992,
+              670.77338
+            ],
+            "device": [
+              108,
+              659.73486,
+              140.63992,
+              668.69122
+            ]
+          },
+          "content": {
+            "rnormalized": "BRAIn."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              150.60201,
+              661.81702,
+              174.73146,
+              670.72357
+            ],
+            "device": [
+              150.60201,
+              659.6651,
+              505.24774,
+              668.57166
+            ]
+          },
+          "content": {
+            "rnormalized": "While PPO optimizes the reverse KL-divergence between the model and the target policy,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              650.85797,
+              136.6956,
+              659.76453
+            ],
+            "device": [
+              108,
+              648.70605,
+              503.9975,
+              657.61261
+            ]
+          },
+          "content": {
+            "rnormalized": "BRAIn and its variants (Pandey et al., 2024; Wang et al., 2024b) optimize a self-normalized version"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              639.89899,
+              116.14947,
+              648.80554
+            ],
+            "device": [
+              108,
+              637.74707,
+              503.99753,
+              646.65363
+            ]
+          },
+          "content": {
+            "rnormalized": "of the forward-KL divergence and has been shown to achieve improved performance on several tasks"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              628.94098,
+              126.60841,
+              637.84753
+            ],
+            "device": [
+              108,
+              626.78906,
+              503.99481,
+              635.69562
+            ]
+          },
+          "content": {
+            "rnormalized": "such as abstractive summarization, helpfulness and chat benchmarks. The proposal distribution in"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              617.98199,
+              136.20631,
+              626.88855
+            ],
+            "device": [
+              108,
+              615.83008,
+              222.66074,
+              624.73663
+            ]
+          },
+          "content": {
+            "rnormalized": "BRAIn is updated after every"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              225.129,
+              617.98199,
+              240.07289,
+              626.8288
+            ],
+            "device": [
+              225.129,
+              616.04926,
+              240.07289,
+              624.89606
+            ]
+          },
+          "content": {
+            "rnormalized": "100"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              242.539,
+              617.98199,
+              262.0657,
+              626.88855
+            ],
+            "device": [
+              242.539,
+              615.83008,
+              504.00146,
+              624.73663
+            ]
+          },
+          "content": {
+            "rnormalized": "steps of training and the samples from the proposal distribution are"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              607.02301,
+              136.22533,
+              615.92957
+            ],
+            "device": [
+              108,
+              604.87109,
+              486.82336,
+              613.77765
+            ]
+          },
+          "content": {
+            "rnormalized": "labeled using an arithmetic mean of the reward models. These samples are then used for the next"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              489.30499,
+              607.02301,
+              504.2489,
+              615.86981
+            ],
+            "device": [
+              489.30499,
+              605.09027,
+              504.2489,
+              613.93707
+            ]
+          },
+          "content": {
+            "rnormalized": "100"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/KHSBIR+CMR10",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              596.06403,
+              127.9252,
+              604.97058
+            ],
+            "device": [
+              108,
+              593.91211,
+              406.12085,
+              602.81866
+            ]
+          },
+          "content": {
+            "rnormalized": "steps of training. The cycle repeats until all the data available is exhausted."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108.249,
+              568.664,
+              113.2303,
+              577.57056
+            ],
+            "device": [
+              108.249,
+              566.51208,
+              130.16672,
+              575.41864
+            ]
+          },
+          "content": {
+            "rnormalized": "5.3.3"
+          },
+          "enumeration": {
+            "match": 12,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              140.62744,
+              568.664,
+              147.27249,
+              577.57056
+            ],
+            "device": [
+              140.62744,
+              566.51208,
+              217.9713,
+              575.41864
+            ]
+          },
+          "content": {
+            "rnormalized": "REWARD MODELS"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              547.99103,
+              130.85367,
+              556.89758
+            ],
+            "device": [
+              108,
+              545.83911,
+              503.99652,
+              554.74567
+            ]
+          },
+          "content": {
+            "rnormalized": "Unlike most alignment approaches, in this work, we do not collect any human annotations over the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              537.03198,
+              133.40463,
+              545.93854
+            ],
+            "device": [
+              108,
+              534.88007,
+              503.99731,
+              543.78662
+            ]
+          },
+          "content": {
+            "rnormalized": "model responses - to make up for the lack of direct human annotations, we instead resort to an"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              526.073,
+              145.77925,
+              534.97955
+            ],
+            "device": [
+              108,
+              523.92108,
+              503.99698,
+              532.82764
+            ]
+          },
+          "content": {
+            "rnormalized": "ensemble of three vastly different rewarding mechanisms - 1) an aspect-level reward model akin to"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              515.11401,
+              120.29604,
+              524.02057
+            ],
+            "device": [
+              108,
+              512.9621,
+              503.99896,
+              521.86865
+            ]
+          },
+          "content": {
+            "rnormalized": "the SteerLM (Wang et al., 2024b), 2) a standard Bradley Terry reward model trained on preference"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              504.155,
+              127.07678,
+              513.06158
+            ],
+            "device": [
+              108,
+              502.00308,
+              504.00034,
+              510.90964
+            ]
+          },
+          "content": {
+            "rnormalized": "pairs and 3) ratios of log-probabilities from two related models, as a contrastive reward signal. In the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              493.19699,
+              126.51824,
+              502.10355
+            ],
+            "device": [
+              108,
+              491.04507,
+              505.74518,
+              499.95163
+            ]
+          },
+          "content": {
+            "rnormalized": "following, we discuss each of these in some detail followed by a discussion on ensembling strategies."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              465.797,
+              165.008,
+              474.75339
+            ],
+            "device": [
+              108,
+              463.71481,
+              237.25876,
+              472.6712
+            ]
+          },
+          "content": {
+            "rnormalized": "Multi-Aspect Reward Model."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              247.22,
+              465.797,
+              256.81281,
+              474.70355
+            ],
+            "device": [
+              247.22,
+              463.64508,
+              503.99988,
+              472.55164
+            ]
+          },
+          "content": {
+            "rnormalized": "We train a multi-aspect regression-based reward model using"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              454.83801,
+              196.48755,
+              463.74457
+            ],
+            "device": [
+              108,
+              452.6861,
+              196.48755,
+              461.59265
+            ]
+          },
+          "content": {
+            "rnormalized": "Mistral-Nemo-Instruct"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              198.98199,
+              458.45401,
+              205.9558,
+              464.6886
+            ],
+            "device": [
+              198.98199,
+              456.94766,
+              205.9558,
+              463.18225
+            ]
+          },
+          "content": {
+            "rnormalized": "26"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              208.95,
+              454.83801,
+              227.41177,
+              463.74457
+            ],
+            "device": [
+              208.95,
+              452.6861,
+              503.9964,
+              461.59265
+            ]
+          },
+          "content": {
+            "rnormalized": "following the SteerLM recipe from HelpSteer2 (Wang et al., 2024b), where"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              443.879,
+              126.61651,
+              452.78555
+            ],
+            "device": [
+              108,
+              441.72708,
+              503.99731,
+              450.63364
+            ]
+          },
+          "content": {
+            "rnormalized": "each model predicts the scalar value of the response\u2019s rating (a float ranging from 0 to 4) for each"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              432.92001,
+              156.57254,
+              441.82657
+            ],
+            "device": [
+              108,
+              430.7681,
+              503.99884,
+              439.67465
+            ]
+          },
+          "content": {
+            "rnormalized": "fine-grained aspect: Helpfulness, Correctness, Coherence, Complexity, and Verbosity. When using"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              421.961,
+              122.20881,
+              430.86755
+            ],
+            "device": [
+              108,
+              419.80908,
+              503.99789,
+              428.71564
+            ]
+          },
+          "content": {
+            "rnormalized": "this reward model for alignment, the individual scores are collapsed into one score using the weights"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              411.00299,
+              149.49423,
+              419.90955
+            ],
+            "device": [
+              108,
+              408.85107,
+              476.68604,
+              417.75763
+            ]
+          },
+          "content": {
+            "rnormalized": "prescribed in (Wang et al., 2024b). These collapsed weight give a RewardBench score of 87."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              383.603,
+              150.85133,
+              392.55939
+            ],
+            "device": [
+              108,
+              381.52081,
+              234.0058,
+              390.4772
+            ]
+          },
+          "content": {
+            "rnormalized": "Bradley-Terry Reward Model."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              243.97301,
+              383.603,
+              253.18961,
+              392.50955
+            ],
+            "device": [
+              243.97301,
+              381.45108,
+              505.65018,
+              390.35764
+            ]
+          },
+          "content": {
+            "rnormalized": "We train an autoregressive reward model with the standard Bradley-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              107.691,
+              372.64401,
+              113.65641,
+              381.55057
+            ],
+            "device": [
+              107.691,
+              370.4921,
+              503.99515,
+              379.39865
+            ]
+          },
+          "content": {
+            "rnormalized": "Terry objective (Bradley & Terry, 1952; Rafailov et al., 2024) on pairs of preference data. The training"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              361.685,
+              124.26574,
+              370.59155
+            ],
+            "device": [
+              108,
+              359.53308,
+              504.0014,
+              368.43964
+            ]
+          },
+          "content": {
+            "rnormalized": "data comprises one million preference pairs, including open-source gold preference data from various"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              350.72601,
+              141.52692,
+              359.63257
+            ],
+            "device": [
+              108,
+              348.5741,
+              504.00131,
+              357.48065
+            ]
+          },
+          "content": {
+            "rnormalized": "domains as well as synthetically generated preference pairs. For synthetic data generation, we adopt"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              339.76801,
+              119.93081,
+              348.67456
+            ],
+            "device": [
+              108,
+              337.61609,
+              504.00134,
+              346.52264
+            ]
+          },
+          "content": {
+            "rnormalized": "the model-gap strategy from (Naseem et al., 2024), where the accepted response comes from a strong"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              328.80899,
+              132.65744,
+              337.71555
+            ],
+            "device": [
+              108,
+              326.65707,
+              494.39185,
+              335.56363
+            ]
+          },
+          "content": {
+            "rnormalized": "model and the rejected response comes from a weaker model. We train a Mistral-7B-Instruct-v0.2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              496.87701,
+              332.42401,
+              503.8508,
+              338.6586
+            ],
+            "device": [
+              496.87701,
+              330.91766,
+              503.8508,
+              337.15225
+            ]
+          },
+          "content": {
+            "rnormalized": "27"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 6.973800182342529
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              317.85001,
+              118.16185,
+              326.75656
+            ],
+            "device": [
+              108,
+              315.69809,
+              503.99725,
+              324.60464
+            ]
+          },
+          "content": {
+            "rnormalized": "on the whole preference data. The training hyper-parameters and the data mixture for training are"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              306.89099,
+              146.18665,
+              315.79755
+            ],
+            "device": [
+              108,
+              304.73907,
+              488.50165,
+              313.64563
+            ]
+          },
+          "content": {
+            "rnormalized": "discussed in Appendix B.3.2. Our trained reward model gives a score of 84.5 on RewardBench."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              279.491,
+              149.2063,
+              288.44739
+            ],
+            "device": [
+              108,
+              277.40881,
+              229.21054,
+              286.3652
+            ]
+          },
+          "content": {
+            "rnormalized": "Contrastive Reward Model."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              239.175,
+              279.491,
+              245.3839,
+              288.39755
+            ],
+            "device": [
+              239.175,
+              277.33908,
+              504.00296,
+              286.24564
+            ]
+          },
+          "content": {
+            "rnormalized": "Two independent lines of prior work have shown contrastive log"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              268.53201,
+              158.70963,
+              277.43857
+            ],
+            "device": [
+              108,
+              266.3801,
+              504.00162,
+              275.28665
+            ]
+          },
+          "content": {
+            "rnormalized": "probabilities as an informative signal: First, in decoding research, a number of papers have shown"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              257.57401,
+              123.24277,
+              266.48056
+            ],
+            "device": [
+              108,
+              255.42209,
+              503.99725,
+              264.32864
+            ]
+          },
+          "content": {
+            "rnormalized": "that the difference between probabilities of a strong model and a related weak model can pick the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              246.61501,
+              117.51755,
+              255.52158
+            ],
+            "device": [
+              108,
+              244.46309,
+              505.24683,
+              253.36964
+            ]
+          },
+          "content": {
+            "rnormalized": "next token more accurately than any of the two models being contrasted (Li et al., 2023e). Second,"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              235.65601,
+              126.53706,
+              244.56258
+            ],
+            "device": [
+              108,
+              233.50409,
+              504.00034,
+              242.41064
+            ]
+          },
+          "content": {
+            "rnormalized": "following the Direct Preference Optimization work (Rafailov et al., 2024), it has been shown that the"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              224.69701,
+              136.56273,
+              233.60358
+            ],
+            "device": [
+              108,
+              222.54509,
+              503.99655,
+              231.45164
+            ]
+          },
+          "content": {
+            "rnormalized": "sample level density ratio of the DPO instruct model with its corresponding base model gives high"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              213.73801,
+              158.54237,
+              222.64458
+            ],
+            "device": [
+              108,
+              211.58609,
+              505.6575,
+              220.49265
+            ]
+          },
+          "content": {
+            "rnormalized": "performance on RewardBench (Lambert et al., 2024). In this work, we contrast the Granite-3.0-8B-"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              202.77901,
+              138.7401,
+              211.68558
+            ],
+            "device": [
+              108,
+              200.62709,
+              503.99884,
+              209.53365
+            ]
+          },
+          "content": {
+            "rnormalized": "Instruct (SFT only) model with the Granite-3.0-2B-Instruct (SFT only) model and aggregate token"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              191.82001,
+              115.19299,
+              200.72658
+            ],
+            "device": [
+              108,
+              189.66809,
+              452.37723,
+              198.57465
+            ]
+          },
+          "content": {
+            "rnormalized": "level reward to get a sample level reward that is then used in the alignment algorithms."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              164.42101,
+              150.34444,
+              173.37738
+            ],
+            "device": [
+              108,
+              162.33882,
+              236.2832,
+              171.2952
+            ]
+          },
+          "content": {
+            "rnormalized": "Ensemble of Reward Models."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/DKKVOJ+NimbusRomNo9L-Medi",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              246.245,
+              164.42101,
+              270.51151,
+              173.32758
+            ],
+            "device": [
+              246.245,
+              162.26909,
+              504.00031,
+              171.17564
+            ]
+          },
+          "content": {
+            "rnormalized": "When ensembling the reward models, we experiment with two"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              153.46201,
+              135.10165,
+              162.36858
+            ],
+            "device": [
+              108,
+              151.31009,
+              503.99725,
+              160.21664
+            ]
+          },
+          "content": {
+            "rnormalized": "simple approaches. 1) we compute the arithmetic mean of normalized reward scores, where each"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              142.50301,
+              115.74868,
+              151.40958
+            ],
+            "device": [
+              108,
+              140.35109,
+              504.00034,
+              149.25764
+            ]
+          },
+          "content": {
+            "rnormalized": "reward model\u2019s score is individually normalized using its mean and standard deviation over a range"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              131.54401,
+              116.46482,
+              140.45058
+            ],
+            "device": [
+              108,
+              129.39209,
+              503.99713,
+              138.29865
+            ]
+          },
+          "content": {
+            "rnormalized": "of samples. This approach can be used with all three alignment techniques. 2) we rank multiple"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              120.585,
+              146.3085,
+              129.49156
+            ],
+            "device": [
+              108,
+              118.43307,
+              504.00232,
+              127.33965
+            ]
+          },
+          "content": {
+            "rnormalized": "responses for the same input separately using each reward signal, we then compute the score of each"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              109.626,
+              135.77246,
+              118.53256
+            ],
+            "device": [
+              108,
+              107.47408,
+              504.00021,
+              116.38065
+            ]
+          },
+          "content": {
+            "rnormalized": "sample as the geometric mean of its ranks across reward models, the lower is better in this case. This"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              108,
+              98.667,
+              144.51292,
+              107.57356
+            ],
+            "device": [
+              108,
+              96.515076,
+              324.37772,
+              105.42165
+            ]
+          },
+          "content": {
+            "rnormalized": "approach is suited for best-of-N sampling and BRAIn."
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              76.821999,
+              123.6416,
+              82.16597
+            ],
+            "device": [
+              117.664,
+              71.022461,
+              377.15918,
+              78.49147
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{26}$https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              117.664,
+              65.946999,
+              123.6416,
+              71.29097
+            ],
+            "device": [
+              117.664,
+              60.147461,
+              363.03799,
+              67.61647
+            ]
+          },
+          "content": {
+            "rnormalized": "$^{27}$https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2"
+          },
+          "enumeration": {
+            "match": -1,
+            "type": -1
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 5.97760009765625
+          }
+        },
+        {
+          "angle": 0,
+          "box": {
+            "baseline": [
+              300.64499,
+              32.25,
+              310.60757,
+              41.156563
+            ],
+            "device": [
+              300.64499,
+              30.098078,
+              310.60757,
+              39.004642
+            ]
+          },
+          "content": {
+            "rnormalized": "17"
+          },
+          "enumeration": {
+            "match": 8,
+            "type": 0
+          },
+          "font": {
+            "color": [
+              0,
+              0,
+              0,
+              255
+            ],
+            "name": "/LHCPKS+NimbusRomNo9L-Regu",
+            "size": 9.962599754333496
+          }
+        }
+      ],
+      "dimensions": {
+        "bbox": [
+          0,
+          0,
+          612,
+          792
+        ],
+        "height": 792,
+        "width": 612
+      },
+      "height": 792,
+      "horizontal-lines": [
+        {
+          "x0": 108,
+          "x1": 504,
+          "y": 752.84601
+        },
+        {
+          "x0": 108,
+          "x1": 251.46201,
+          "y": 83.688004
+        }
+      ],
+      "ignored-cells": [],
+      "images": [],
+      "paths": [
+        {
+          "bbox": [
+            108,
+            752.84601,
+            504,
+            752.84601
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            504
+          ],
+          "y-values": [
+            752.84601,
+            752.84601
+          ]
+        },
+        {
+          "bbox": [
+            108,
+            83.688004,
+            251.46201,
+            83.688004
+          ],
+          "sub-paths": [
+            0,
+            2
+          ],
+          "type": "unknown",
+          "x-values": [
+            108,
+            251.46201
+          ],
+          "y-values": [
+            83.688004,
+            83.688004
+          ]
+        }
+      ],
+      "vertical-lines": [],
+      "width": 612
+    }
+  ]
+}

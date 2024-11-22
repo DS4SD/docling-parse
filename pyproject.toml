@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "docling-parse"
-version = "2.0.3"
+version = "2.1.2"
 description = "Simple package to extract text with coordinates from programmatic PDFs"
 authors = ["Peter Staar <taa@zurich.ibm.com>"]
 maintainers = [

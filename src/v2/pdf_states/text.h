@@ -457,6 +457,8 @@ namespace pdflib
     {
       pdf_resource<PAGE_CELL> cell;
 
+      cell.widget = false;
+      
       std::array<double, 8> rect = compute_rect(font_descent, font_ascent, width);
       {
         cell.r_x0 = rect[0];
