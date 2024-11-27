@@ -339,8 +339,7 @@ jobs:
 
   publish-to-pypi-test:
     name: >-
-      Publish Python 🐍 distribution 📦 to PyPI
-    if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
+      Publish Python 🐍 distribution 📦 to TEST PyPI
     needs:
       - build_sdist
       - build_wheels
