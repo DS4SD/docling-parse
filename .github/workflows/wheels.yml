@@ -3,8 +3,31 @@ on:
 
 env:
   CMAKE_BUILD_TYPE: Release
+  POETRY_VERSION: "1.8.4"
 
 jobs:
+  build_sdist:
+    name: Build sdist artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+      - name: Install poetry
+        run: |
+          pipx install poetry==$POETRY_VERSION
+      - name: Build sdit
+        run: |
+          poetry build -f sdist
+          ls ./dist
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+
   build_wheels:
     name: Build wheel for py${{ matrix.python-version }} ${{ matrix.os.platform_id }} ${{ matrix.os.macos_version }}
     runs-on: ${{ matrix.os.name }}
@@ -64,7 +87,7 @@ jobs:
           python3 --version
           echo "pythonpath: ${{ steps.py.outputs.python-path }}"
           ${{ steps.py.outputs.python-path }} --version
-          pipx install poetry==1.8.4
+          pipx install poetry==$POETRY_VERSION
           poetry env use ${{ steps.py.outputs.python-path }}
 
       - name: Set up custom PATH and set py version to cpXYZ [windows]
@@ -79,11 +102,11 @@ jobs:
           $cp_version = "cp$($version -replace '\.', '')"
           Add-Content -Path $env:GITHUB_ENV -Value "python_cp_version=$cp_version"
 
-      - name: Setup pypi for poetry [for releases only]
-        if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: |
-          poetry config keyring.enabled false
-          poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+      # - name: Setup pypi for poetry [for releases only]
+      #   if: ${{ startsWith(github.ref, 'refs/tags/') }}
+      #   run: |
+      #     poetry config keyring.enabled false
+      #     poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
 
       - name: Convert python version to cpXYZ
         if: ${{matrix.os.platform_id != 'win_amd64'}}
@@ -296,11 +319,46 @@ jobs:
           }
           Copy-Item -Path .\wheelhouse\*.whl -Destination .\dist\
 
-      - name: publish wheels (dry run)
-        run: |
-          poetry publish --skip-existing --dry-run --no-interaction -vvv
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
 
-      - name: publish wheels (on publishing) [for releases only]
-        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+
+  publish-to-pypi:
+    name: >-
+      Publish Python 🐍 distribution 📦 to PyPI
+    if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
+    needs:
+      - build_sdist
+      - build_wheels
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/docling
+    # permissions:
+    #   id-token: write  # IMPORTANT: mandatory for trusted publishing
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+      - name: List dist/
         run: |
-          poetry publish --skip-existing --no-interaction -vvv
+          ls ./dist
+      - name: Publish distribution 📦 to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_TOKEN }}
+
+        # - name: publish wheels (dry run)
+        #   run: |
+        #     poetry publish --skip-existing --dry-run --no-interaction -vvv
+
+        # - name: publish wheels (on publishing) [for releases only]
+        #   if: ${{ startsWith(github.ref, 'refs/tags/') }}
+        #   run: |
+        #     poetry publish --skip-existing --no-interaction -vvv
