@@ -331,9 +331,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           merge-multiple: true
+          path: dist/
       - name: List dist/
         run: |
-          ls ./dist
+          ls -l
+          ls -l ./dist
         
   publish-to-pypi:
     name: >-
