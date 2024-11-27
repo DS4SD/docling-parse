@@ -318,7 +318,7 @@ jobs:
           path: dist/
 
 
-  publish-to-pypi-test:
+  list-artifacts:
     name: >-
       TEMP test created wheels
     needs:
@@ -336,7 +336,36 @@ jobs:
         run: |
           ls -l
           ls -l ./dist
-        
+
+  publish-to-pypi-test:
+    name: >-
+      Publish Python 🐍 distribution 📦 to PyPI
+    if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
+    needs:
+      - build_sdist
+      - build_wheels
+    runs-on: ubuntu-latest
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/docling-parse
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: dist/
+      - name: List dist/
+        run: |
+          ls ./dist
+      - name: Publish distribution 📦 to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+  
+
   publish-to-pypi:
     name: >-
       Publish Python 🐍 distribution 📦 to PyPI
@@ -347,7 +376,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/docling
+      url: https://pypi.org/p/docling-parse
     # permissions:
     #   id-token: write  # IMPORTANT: mandatory for trusted publishing
 
@@ -356,6 +385,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           merge-multiple: true
+          path: dist/
       - name: List dist/
         run: |
           ls ./dist
