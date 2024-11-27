@@ -3,7 +3,6 @@ on:
 
 env:
   CMAKE_BUILD_TYPE: Release
-  POETRY_VERSION: "1.8.4"
 
 jobs:
   build_sdist:
@@ -17,7 +16,7 @@ jobs:
         uses: actions/setup-python@v5
       - name: Install poetry
         run: |
-          pipx install poetry==$POETRY_VERSION
+          pipx install poetry
       - name: Build sdit
         run: |
           poetry build -f sdist
@@ -25,7 +24,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: python-package-distributions
+          name: python-package-distributions-sdist
           path: dist/
 
   build_wheels:
@@ -87,7 +86,7 @@ jobs:
           python3 --version
           echo "pythonpath: ${{ steps.py.outputs.python-path }}"
           ${{ steps.py.outputs.python-path }} --version
-          pipx install poetry==$POETRY_VERSION
+          pipx install poetry==1.8.4
           poetry env use ${{ steps.py.outputs.python-path }}
 
       - name: Set up custom PATH and set py version to cpXYZ [windows]
@@ -218,13 +217,6 @@ jobs:
         uses: docker/setup-qemu-action@v3
         with:
             platforms: all
-
-      - name: Build sdist
-        # build only on Linux to avoid too many duplicates of the sdist
-        if: matrix.os.name == 'ubuntu-latest' 
-        run: |
-          echo "Building wheel ${CIBW_BUILD}"
-          poetry build -f sdist
         
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
@@ -322,10 +314,27 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: python-package-distributions
+          name: python-package-distributions-py${{ matrix.python-version }}-${{ matrix.os.name }}-${{ matrix.os.platform_id }}
           path: dist/
 
 
+  publish-to-pypi-test:
+    name: >-
+      TEMP test created wheels
+    needs:
+      - build_sdist
+      - build_wheels
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - name: List dist/
+        run: |
+          ls ./dist
+        
   publish-to-pypi:
     name: >-
       Publish Python 🐍 distribution 📦 to PyPI
@@ -344,8 +353,7 @@ jobs:
       - name: Download all the dists
         uses: actions/download-artifact@v4
         with:
-          name: python-package-distributions
-          path: dist/
+          merge-multiple: true
       - name: List dist/
         run: |
           ls ./dist
