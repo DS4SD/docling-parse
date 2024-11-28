@@ -11,3 +11,6 @@ jobs:
   build-and-publish:
     uses: ./.github/workflows/wheels.yml
     secrets: inherit
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+      contents: write  # IMPORTANT: mandatory for adding artifacts to GitHub Releases
