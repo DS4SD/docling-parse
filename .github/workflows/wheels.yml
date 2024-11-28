@@ -1,12 +1,39 @@
 on:
   workflow_call:
+    inputs:
+      publish:
+        type: boolean
+        description: "If true, the packages will be published."
+        default: false
 
 env:
   CMAKE_BUILD_TYPE: Release
 
 jobs:
+  build_sdist:
+    name: Build sdist artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+      - name: Install poetry
+        run: |
+          pipx install poetry
+      - name: Build sdit
+        run: |
+          poetry build -f sdist
+          ls ./dist
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-distributions-sdist
+          path: dist/
+
   build_wheels:
-    name: Build wheel for py${{ matrix.python-version }} ${{ matrix.os.platform_id }} ${{ matrix.os.macos_version }}
+    name: Build wheel for py${{ matrix.python-version }} ${{ matrix.os.platform_id }}
     runs-on: ${{ matrix.os.name }}
 
     strategy:
@@ -23,22 +50,12 @@ jobs:
 
           - name: "macos-13"
             platform: "macos"
-            macos_version: "13"
-            platform_id: "macosx_x86_64"
-
-          - name: "macos-13"
-            platform: "macos"
-            macos_version: "13"
-            platform_id: "macosx_arm64"
-
-          - name: "macos-14"
-            platform: "macos"
-            macos_version: "14"
+            min_macos_version: "13"
             platform_id: "macosx_x86_64"
 
           - name: "macos-14"
             platform: "macos"
-            macos_version: "14"
+            min_macos_version: "14"
             platform_id: "macosx_arm64"
 
           - name: "windows-latest"
@@ -79,12 +96,6 @@ jobs:
           $cp_version = "cp$($version -replace '\.', '')"
           Add-Content -Path $env:GITHUB_ENV -Value "python_cp_version=$cp_version"
 
-      - name: Setup pypi for poetry [for releases only]
-        if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: |
-          poetry config keyring.enabled false
-          poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
-
       - name: Convert python version to cpXYZ
         if: ${{matrix.os.platform_id != 'win_amd64'}}
         run: |
@@ -104,7 +115,7 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: x86_64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
-          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
+          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.min_macos_version }}.0"
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
@@ -121,7 +132,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.macos_version }}_0_x86_64 ./wheelhouse/*.whl
+          poetry run wheel tags --remove --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_x86_64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*arm64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -154,7 +165,7 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: arm64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
-          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
+          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.min_macos_version }}.0"
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
@@ -172,7 +183,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.macos_version }}_0_arm64 ./wheelhouse/*.whl
+          poetry run wheel tags --remove --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_arm64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*x86_64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -195,13 +206,6 @@ jobs:
         uses: docker/setup-qemu-action@v3
         with:
             platforms: all
-
-      - name: Build sdist
-        # build only on Linux to avoid too many duplicates of the sdist
-        if: matrix.os.name == 'ubuntu-latest' 
-        run: |
-          echo "Building wheel ${CIBW_BUILD}"
-          poetry build -f sdist
         
       - name: Build wheels [linux]
         if: matrix.os.name == 'ubuntu-latest'
@@ -296,11 +300,61 @@ jobs:
           }
           Copy-Item -Path .\wheelhouse\*.whl -Destination .\dist\
 
-      - name: publish wheels (dry run)
-        run: |
-          poetry publish --skip-existing --dry-run --no-interaction -vvv
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-distributions-py${{ matrix.python-version }}-${{ matrix.os.platform_id }}
+          path: dist/
 
-      - name: publish wheels (on publishing) [for releases only]
-        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+  publish-packages:
+    name: >-
+      Publish Python 🐍 distribution 📦 to PyPI
+    if: inputs.publish && startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
+    needs:
+      - build_sdist
+      - build_wheels
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/docling-parse
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+      contents: write  # IMPORTANT: mandatory for adding artifacts to GitHub Releases
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: dist/
+      - name: List dist/
         run: |
-          poetry publish --skip-existing --no-interaction -vvv
+          ls ./dist
+      - name: Sign the dists with Sigstore
+        uses: sigstore/gh-action-sigstore-python@v3.0.0
+        with:
+          release-signing-artifacts: false
+          inputs: >-
+            ./dist/*.tar.gz
+            ./dist/*.whl
+      - name: List dist/
+        run: |
+          ls ./dist
+      - name: Upload artifact signatures to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        # Upload to GitHub Release using the `gh` CLI.
+        # `dist/` contains the built packages, and the
+        # sigstore-produced signatures and certificates.
+        run: >-
+          gh release upload
+          '${{ github.ref_name }}' dist/**
+          --repo '${{ github.repository }}'
+      # PyPI does not accept .sigstore artifacts and
+      # gh-action-pypi-publish has no option to ignore them.
+      - name: Remove sigstore signatures before uploading to PyPI
+        run: rm ./dist/*.sigstore.json
+      - name: Publish distribution 📦 to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # currently not working with reusable workflows
+          attestations: false
