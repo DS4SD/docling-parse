@@ -28,7 +28,7 @@ jobs:
           path: dist/
 
   build_wheels:
-    name: Build wheel for py${{ matrix.python-version }} ${{ matrix.os.platform_id }} ${{ matrix.os.macos_version }}
+    name: Build wheel for py${{ matrix.python-version }} ${{ matrix.os.platform_id }}
     runs-on: ${{ matrix.os.name }}
 
     strategy:
@@ -45,22 +45,12 @@ jobs:
 
           - name: "macos-13"
             platform: "macos"
-            macos_version: "13"
-            platform_id: "macosx_x86_64"
-
-          - name: "macos-13"
-            platform: "macos"
-            macos_version: "13"
-            platform_id: "macosx_arm64"
-
-          - name: "macos-14"
-            platform: "macos"
-            macos_version: "14"
+            min_macos_version: "13"
             platform_id: "macosx_x86_64"
 
           - name: "macos-14"
             platform: "macos"
-            macos_version: "14"
+            min_macos_version: "14"
             platform_id: "macosx_arm64"
 
           - name: "windows-latest"
@@ -120,7 +110,7 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: x86_64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
-          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
+          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.min_macos_version }}.0"
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
@@ -137,7 +127,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.macos_version }}_0_x86_64 ./wheelhouse/*.whl
+          poetry run wheel tags --remove --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_x86_64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*arm64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -170,7 +160,7 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: arm64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
-          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
+          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.min_macos_version }}.0"
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
@@ -188,7 +178,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.macos_version }}_0_arm64 ./wheelhouse/*.whl
+          poetry run wheel tags --remove --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_arm64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*x86_64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -308,7 +298,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: python-package-distributions-py${{ matrix.python-version }}-${{ matrix.os.name }}-${{ matrix.os.platform_id }}
+          name: python-package-distributions-py${{ matrix.python-version }}-${{ matrix.os.platform_id }}
           path: dist/
 
   publish-packages:
