@@ -399,9 +399,15 @@ namespace pdflib
 
   nlohmann::json extract_toc_entry_in_json(QPDF& pdf_obj, QPDFObjectHandle& node, int level)
   {
-    //LOG_S(INFO) << __FUNCTION__;
+    LOG_S(INFO) << __FUNCTION__;
     
-    nlohmann::json toc_entry;
+    nlohmann::json toc_entry = nlohmann::json::object({});
+
+    // securing we dont crash ...
+    if(level>=16)
+      {
+	return toc_entry;
+      }
 
     //for(auto key : node.getKeys())
     //{
@@ -411,56 +417,47 @@ namespace pdflib
     // Extract title
     if(node.hasKey("/Title"))
       {
-        toc_entry["title"] = node.getKey("/Title").getUTF8Value();
+	auto title = node.getKey("/Title");
+	
+	if(title.isString())
+	  {
+	    std::string val = title.getUTF8Value();
+
+            if(utf8::is_valid(val.begin(), val.end()))
+              {
+                toc_entry["title"] = val;
+		LOG_S(INFO) << "level: " << level << "\t" << val;
+              }
+            else
+              {
+                utf8::replace_invalid(val.begin(), val.end(),
+                                      std::back_inserter(val));
+                toc_entry["title"] = val;
+              }	    
+	  }
+	else
+	  {
+	    LOG_S(WARNING) << "title is not a string!";
+	    toc_entry["title"] = "<unknown>";
+	  }
+	
         toc_entry["level"] = level;
       }
-
+    
     // Extract title
     if(node.hasKey("/A"))
       {
-        toc_entry["link"] = to_json(node.getKey("/A"), {}, 0, 8);
+        //toc_entry["link"] = to_json(node.getKey("/A"), {}, 0, 8);
       }
     
     // Extract destination
     if(node.hasKey("/Dest"))
       {
-	LOG_S(INFO) << "found a destination!";
+	//LOG_S(INFO) << "found a destination!";
 	
         // Depending on the type of destination, extract its value
-	auto dest = node.getKey("/Dest");
-        toc_entry["destination"] = to_json(dest, {}, 0, 8);
-
-	/*
-        if(dest.isString())
-          {
-            toc_entry["destination"] = dest.getUTF8Value();
-          }
-        else if(dest.isName())
-          {
-            toc_entry["destination"] = dest.getName();
-          }
-        else if(dest.isArray())
-          {
-            auto array = dest.getArrayAsVector();
-            std::string result;
-
-            // Extract page reference
-            if(!array.empty() and array[0].isIndirect())
-              {
-                //QPDFObjectHandle page_ref = array[0];
-
-                //int page_number = pdf_obj.getPageNumberForObject(page_ref);
-                //toc_entry["page_number"] = page_number;
-
-                //toc_entry["destination"] = dest.unparse();
-              }
-          }
-        else
-          {
-            // Placeholder for complex cases
-            //toc_entry["destination"] = "Complex destination";
-          }
-	*/
+	//auto dest = node.getKey("/Dest");
+        //toc_entry["destination"] = to_json(dest, {}, 0, 8);
       }
     else
       {
@@ -472,7 +469,15 @@ namespace pdflib
       {
         QPDFObjectHandle first = node.getKey("/First");
 
-        while (first.isDictionary())
+	//LOG_S(INFO) << "same: "<< first.unparse() << " == " << node.unparse(); 	
+	//for(auto key : first.getKeys())
+	//{
+	//LOG_S(INFO) << "\t" << level << " -> key: " << key;
+	//}
+
+	bool first_is_not_equal_to_node = (first.unparse()==node.unparse());
+	
+        while(first.isDictionary() and first_is_not_equal_to_node)
           {
 	    auto child = extract_toc_entry_in_json(pdf_obj, first, level+1);
             toc_entry["children"].push_back(child);
@@ -503,18 +508,18 @@ namespace pdflib
 	
         QPDFObjectHandle outlines = root.getKey("/Outlines");
 
-        if (outlines.hasKey("/First"))
+        if(outlines.hasKey("/First"))
           {
             QPDFObjectHandle first = outlines.getKey("/First");
 
             toc = nlohmann::json::array({});
 
-            while (first.isDictionary())
+            while(first.isDictionary())
               {
 		int level=0;
                 toc.push_back(extract_toc_entry_in_json(pdf_obj, first, level));
 
-                if (first.hasKey("/Next"))
+                if(first.hasKey("/Next"))
                   {
                     first = first.getKey("/Next");
                   }

@@ -46,6 +46,7 @@ namespace pdflib
   private:
 
     QPDFObjectHandle qpdf_page;
+    QPDFObjectHandle qpdf_parent_resources;
     QPDFObjectHandle qpdf_resources;
     QPDFObjectHandle qpdf_grphs;
     QPDFObjectHandle qpdf_fonts;
@@ -54,6 +55,7 @@ namespace pdflib
     nlohmann::json json_annots;
     
     nlohmann::json json_page;
+    nlohmann::json json_parent_resources;
     nlohmann::json json_resources;
     nlohmann::json json_grphs;
     nlohmann::json json_fonts;
@@ -147,19 +149,59 @@ namespace pdflib
 
     decode_dimensions();
 
-    if(json_page.count("/Resources"))
+    if(json_page.count("/Resources") and
+       json_page.count("/Parent"))
+      {
+	auto parent = qpdf_page.getKey("/Parent");
+	if(parent.hasKey("/Resources"))
+	  {
+	    qpdf_parent_resources = parent.getKey("/Resources");
+	    json_parent_resources = to_json(qpdf_parent_resources); //json_page["/Resources"];
+
+	    LOG_S(INFO) << "parent of page has resources!: " << json_parent_resources.dump(2);
+
+	    // both are used in the decode_resources
+	    qpdf_resources = qpdf_parent_resources; 
+	    json_resources = json_parent_resources;
+	      
+	    decode_resources();
+	  }
+	
+	// This might overwrite resources from the parent ...
+        qpdf_resources = qpdf_page.getKey("/Resources");
+        json_resources = json_page["/Resources"];
+	
+        decode_resources();
+      }    
+    else if(json_page.count("/Resources"))
       {        
         qpdf_resources = qpdf_page.getKey("/Resources");
         json_resources = json_page["/Resources"];
-
-        LOG_S(INFO) << "page has resources!: " << json_resources.dump(2);
 	
         decode_resources();
       }
     else if(json_page.count("/Parent"))
       {
 	auto parent = qpdf_page.getKey("/Parent");
+	if(parent.hasKey("/Resources"))
+	  {
+	    qpdf_parent_resources = parent.getKey("/Resources");
+	    json_parent_resources = to_json(qpdf_parent_resources); //json_page["/Resources"];
 
+	    LOG_S(INFO) << "parent of page has resources!: " << json_parent_resources.dump(2);
+
+	    // both are used in the decode_resources
+	    qpdf_resources = qpdf_parent_resources; 
+	    json_resources = json_parent_resources;
+	      
+	    decode_resources();
+	  }
+	else
+	  {
+	    LOG_S(ERROR) << "page has no /Resources nor a /Parent with /Resources.";
+	  }
+	
+	/*
 	LOG_S(INFO) << "parent keys: ";            
 	for(auto key : parent.getKeys())
 	  {
@@ -172,6 +214,7 @@ namespace pdflib
         LOG_S(INFO) << "page has resources!: " << json_resources.dump(2);
 	
         decode_resources();
+	*/
       }
     else
       {
@@ -311,13 +354,18 @@ namespace pdflib
 	    if(item.count("/Type")==1 and item["/Type"].get<std::string>()=="/Annot" and
 	       item.count("/Subtype")==1 and item["/Subtype"].get<std::string>()=="/Widget" and
 	       item.count("/Rect")==1 and
-	       item.count("/V")==1 and
-	       item.count("/T")==1 and true)
+	       item.count("/V")==1 and //item["/V"].is_string() and
+	       item.count("/T")==1 and
+	       true)
 	      {
 		std::array<double, 4> bbox = item["/Rect"].get<std::array<double, 4> >();
 		//LOG_S(INFO) << bbox[0] << ", "<< bbox[1] << ", "<< bbox[2] << ", "<< bbox[3];
 
-		std::string text = item["/V"].get<std::string>();
+		std::string text = "<unknown>";
+		if(item["/V"].is_string())
+		  {
+		    text = item["/V"].get<std::string>();
+		  }
 		//LOG_S(INFO) << "text: " << text;
 		
 		pdf_resource<PAGE_CELL> cell;

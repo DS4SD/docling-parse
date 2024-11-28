@@ -1,3 +1,4 @@
+import glob
 import argparse
 import hashlib
 import json
@@ -7,6 +8,8 @@ import queue
 import threading
 from typing import Dict, List
 from dataclasses import dataclass, field
+
+from pathlib import Path
 
 from io import BytesIO
 
@@ -49,82 +52,75 @@ def parse_arguments():
         "--threads",
         required=False,
         help="processing threads",
-        default=4,
+        default=1,
     )
 
     args = parser.parse_args()
 
     return args.directory, args.recursive, int(args.threads)
 
-
 def fetch_files_from_disk(directory, recursive, task_queue):
     """Recursively fetch files from disk and add them to the queue."""
     logging.info(f"Fetching file keys from disk: {directory}")
     
-    for filename in glob.glob(os.path.join(directory, "*.pdf")):
+    for filename in sorted(glob.glob(os.path.join(directory, "*.pdf"))):
 
+        file_name = str(Path(filename).resolve())
+        
+        hash_object = hashlib.sha256(filename.encode())
+        file_hash = hash_object.hexdigest()
+        
         # Create a FileTask object
-        task = FileTask(folder_name=directory, file_name=Path(filename).resolve(), file_hash="")
+        task = FileTask(folder_name=directory, file_name=file_name, file_hash=file_hash)
         task_queue.put(task)
 
     task_queue.put(None)
     logging.info("Done with queue")
 
-def print_toc(toc):
-
-    if isinstance(toc, List):
-        for _ in toc:
-            print_toc(_)
-
-    elif isinstance(toc, Dict):
-        if "title" in toc and "level" in toc:
-            print(" " * (4 * toc["level"]), toc["title"])
-
-        if "children" in toc:
-            for _ in toc["children"]:
-                print_toc(_)
-
-
 def process_files_from_queue(file_queue):
     """Process files from the queue."""
     
-    parser = pdf_parser_v2("fatal")
-
     while True:
         task = file_queue.get()
 
         if task is None:  # End of queue signal
             break
 
-        task = retrieve_file(s3_client, task)
         logging.info(f"Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}")
-        
+
         try:
-            success = parser.load_document_from_bytesio(task.file_hash, task.data)
+            parser = pdf_parser_v2("error")
             
+            success = parser.load_document(task.file_hash, str(task.file_name))
+            
+            num_pages = parser.number_of_pages(task.file_hash)
+            logging.info(f" => #-pages of {task.file_name}: {num_pages}")
+            
+            json_doc = parser.parse_pdf_from_key(task.file_hash)
+        
+            #with open(os.path.join(task.folder_name, f"{task.file_name}.json"), "w") as fw:
+            with open(f"{task.file_name}.json", "w") as fw:
+                fw.write(json.dumps(json_doc, indent=2))
+        except:
+            continue
+        
+        """
+        try:
             if success:
 
                 # Get number of pages
                 num_pages = parser.number_of_pages(task.file_hash)
                 logging.info(f" => #-pages of {task.file_name}: {num_pages}")
-
-                """
-                out = parser.get_annotations(item[1])
-                logging.info(f"{item[1]} [{num_pages}]: {out.keys()}")
-                for key, val in out.items():
-                    if val is not None and key == "table_of_contents":
-                        print_toc(val)
-
-                    elif val is not None:
-                        logging.info(f" => {key}: 1")
-                """
                 
                 # Parse page by page to minimize memory footprint
                 for page in range(0, num_pages):
                     try:
                         json_doc = parser.parse_pdf_from_key_on_page(task.file_hash, page)
+
+                        with open(os.path.join(directory, f"{task.file_hash}-page-{page:03}.json"), "w") as fw:
+                            fw.write(json.dumps(json_doc, indent=2))
+                        
                     except:
-                        save_file(scratch_dir, task)
                         logging.error(f"problem with parsing {task.file_name} on page {page}")
             else:
                 logging.error(f"problem with loading {task.file_name}")
@@ -134,13 +130,21 @@ def process_files_from_queue(file_queue):
 
         except:
             logging.error(f"Error on file: {task}")
-
+        """
+        
 def main():
 
     directory, recursive, threads = parse_arguments()
     
-    file_queue = queue.Queue()
+    task_queue = queue.Queue()
 
+    if threads==1:
+        
+        fetch_files_from_disk(directory, recursive, task_queue)
+
+        process_files_from_queue(task_queue)
+        
+    """
     # Create threads
     fetch_thread = threading.Thread(
         target=fetch_files_from_s3,
@@ -167,7 +171,8 @@ def main():
     fetch_thread.join()
     for _ in process_threads:
         _.join()
-
+    """
+    
     logging.info("All files processed successfully.")
 
 

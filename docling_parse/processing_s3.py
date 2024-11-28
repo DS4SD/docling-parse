@@ -20,6 +20,8 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+queue_lock = threading.Lock()
+
 @dataclass
 class S3Config:
 
@@ -157,7 +159,9 @@ def fetch_files_from_s3(s3_client, task_queue, local_dir, bucket_name, top_level
 
                 # Create a FileTask object
                 task = FileTask(bucket_name=bucket_name, file_key=obj["Key"], file_name=filename, file_hash="", data=None)
-                task_queue.put(task)
+
+                with queue_lock:
+                    task_queue.put(task)
 
                 #logging.info(task)
                 
@@ -194,10 +198,14 @@ def print_toc(toc):
             for _ in toc["children"]:
                 print_toc(_)
 
+def get_logfile(scratch_dir, thread_id):
+
+    logfile = os.path.join(scratch_dir, f"_cache_thread_{thread_id}.csv")
+    return logfile
 
 def retrieve_file(s3_client, task):                
 
-    logging.info(task)
+    #logging.info(task)
     
     # Download and process file (placeholder for actual processing logic)
     response = s3_client.get_object(Bucket=task.bucket_name, Key=task.file_key)
@@ -213,44 +221,53 @@ def save_file(local_dir, task):
     local_file = os.path.join(local_dir, f"{task.file_hash}.pdf")
 
     # Save the data
-    logging.info(f"processing file: {task.file_name} -> {local_file}")
+    logging.info(f"saving file: {task.file_name} -> {local_file}")
     with open(local_file, "wb") as fw:
         fw.write(task.data.getvalue())
 
-def process_files_from_queue(s3_client, file_queue, bucket_name:str, scratch_dir:str):
+def process_files_from_queue(thread_id, s3_client, file_queue, bucket_name:str, scratch_dir:str, cache):
     """Process files from the queue."""
-    
-    parser = pdf_parser_v2("fatal")
 
+    logfile = get_logfile(scratch_dir, thread_id)
+    
+    fw = None    
+    if os.path.exists(logfile):
+        fw = open(logfile, "a")
+    else:
+        fw = open(logfile, "w")
+        
     while True:
-        task = file_queue.get()
+
+        if file_queue.empty():
+            continue
+
+        task = None
+        with queue_lock:
+            task = file_queue.get()
 
         if task is None:  # End of queue signal
             break
 
-        task = retrieve_file(s3_client, task)
-        logging.info(f"Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}")
+        if task.file_name in cache:
+            logging.info(f" => skipping due to cache: {task.file_name}")
+            continue
         
         try:
-            success = parser.load_document_from_bytesio(task.file_hash, task.data)
+            task = retrieve_file(s3_client, task)
+            logging.info(f"Thread: {thread_id}, Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}")
             
+            ##save_file(scratch_dir, task)
+            
+            parser = pdf_parser_v2("fatal")
+            
+            success = parser.load_document_from_bytesio(task.file_hash, task.data)
+
             if success:
 
                 # Get number of pages
                 num_pages = parser.number_of_pages(task.file_hash)
                 logging.info(f" => #-pages of {task.file_name}: {num_pages}")
 
-                """
-                out = parser.get_annotations(item[1])
-                logging.info(f"{item[1]} [{num_pages}]: {out.keys()}")
-                for key, val in out.items():
-                    if val is not None and key == "table_of_contents":
-                        print_toc(val)
-
-                    elif val is not None:
-                        logging.info(f" => {key}: 1")
-                """
-                
                 # Parse page by page to minimize memory footprint
                 for page in range(0, num_pages):
                     try:
@@ -258,14 +275,18 @@ def process_files_from_queue(s3_client, file_queue, bucket_name:str, scratch_dir
                     except:
                         save_file(scratch_dir, task)
                         logging.error(f"problem with parsing {task.file_name} on page {page}")
-            else:
-                logging.error(f"problem with loading {task.file_name}")
 
+                fw.write(f"{task.file_name},{num_pages},{task.file_hash}\n")
+                fw.flush()
+            else:
+                save_file(scratch_dir, task)
+                logging.error(f"problem with loading {task.file_name}")
+            
             # Unload the (QPDF) document and buffers
             parser.unload_document(task.file_hash)
-
+            
         except:
-            logging.error(f"Error on file: {task}")
+            logging.error(f"Error on file: {task.file_name}")
 
 def main():
 
@@ -273,6 +294,20 @@ def main():
 
     os.makedirs(s3_config.scratch_dir, exist_ok=True)
 
+    cache = set()
+    for tid in range(0, 1024):
+        logfile = get_logfile(s3_config.scratch_dir, tid)
+        if os.path.exists(logfile):
+            fr = open(logfile)
+            for line in fr:
+                parts = line.strip().split(",")
+                cache.add(parts[0])
+            fr.close()
+        else:
+            break
+
+    logging.info(f"#-cached files: {len(cache)}")
+    
     session = boto3.session.Session()
 
     config = botocore.config.Config(connect_timeout=60, signature_version="s3v4")
@@ -288,7 +323,7 @@ def main():
         config=config,
     )
 
-    list_buckets(s3_client)
+    #list_buckets(s3_client)
     
     file_queue = queue.Queue()
 
@@ -304,21 +339,20 @@ def main():
             s3_config.prefix,
         ),
     )
-    process_threads = []
-
-    for i in range(0, threads):
-        process_threads.append(threading.Thread(
-            target=process_files_from_queue, args=(s3_client, file_queue, s3_config.bucket_name, s3_config.scratch_dir,)
-        ))
-
     # Start threads
     fetch_thread.start()
+    fetch_thread.join()
+    
+    process_threads = []
+    for tid in range(0, threads):
+        process_threads.append(threading.Thread(
+            target=process_files_from_queue, args=(tid, s3_client, file_queue, s3_config.bucket_name, s3_config.scratch_dir, cache)
+        ))
 
     for _ in process_threads:
         _.start()
 
     # Wait for threads to complete
-    fetch_thread.join()
     for _ in process_threads:
         _.join()
 
