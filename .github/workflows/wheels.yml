@@ -133,7 +133,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_x86_64 ./wheelhouse/*.whl
+          poetry run wheel tags --remove --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_x86_64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*arm64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -184,7 +184,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_arm64 ./wheelhouse/*.whl
+          poetry run wheel tags --remove --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_arm64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*x86_64.whl
           echo "step 2"
           ls -l wheelhouse
