@@ -39,33 +39,23 @@ jobs:
         python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
 
         os:
-          - name: "ubuntu-latest"
-            platform: "linux"
-            platform_id: "manylinux_x86_64"
+          # - name: "ubuntu-latest"
+          #   platform: "linux"
+          #   platform_id: "manylinux_x86_64"
 
           - name: "macos-13"
             platform: "macos"
-            macos_version: "13"
-            platform_id: "macosx_x86_64"
-
-          - name: "macos-13"
-            platform: "macos"
-            macos_version: "13"
-            platform_id: "macosx_arm64"
-
-          - name: "macos-14"
-            platform: "macos"
-            macos_version: "14"
+            min_macos_version: "13"
             platform_id: "macosx_x86_64"
 
           - name: "macos-14"
             platform: "macos"
-            macos_version: "14"
+            min_macos_version: "13"
             platform_id: "macosx_arm64"
 
-          - name: "windows-latest"
-            platform: "windows"
-            platform_id: "win_amd64"      
+          # - name: "windows-latest"
+          #   platform: "windows"
+          #   platform_id: "win_amd64"      
 
     steps:
       - name: Checkout
@@ -126,7 +116,7 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: x86_64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
-          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
+          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.min_macos_version }}.0"
           ARCHFLAGS: -arch x86_64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
@@ -143,7 +133,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.macos_version }}_0_x86_64 ./wheelhouse/*.whl
+          poetry run wheel tags --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_x86_64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*arm64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -176,7 +166,7 @@ jobs:
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: arm64
           CIBW_REPAIR_WHEEL_COMMAND_MACOS: ""  # do not run delocate-wheel before the re-tag
-          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.macos_version }}.0"
+          CIBW_ENVIRONMENT: "MACOSX_DEPLOYMENT_TARGET=${{ matrix.os.min_macos_version }}.0"
           ARCHFLAGS: -arch arm64
           BUILD_THREADS: "4"
           PYTORCH_MPS_HIGH_WATERMARK_RATIO: "0.0"
@@ -194,7 +184,7 @@ jobs:
           poetry run python -m cibuildwheel --output-dir wheelhouse
           echo "step 1"
           ls -l wheelhouse
-          poetry run wheel tags --platform-tag macosx_${{ matrix.os.macos_version }}_0_arm64 ./wheelhouse/*.whl
+          poetry run wheel tags --platform-tag macosx_${{ matrix.os.min_macos_version }}_0_arm64 ./wheelhouse/*.whl
           rm -f ./wheelhouse/*x86_64.whl
           echo "step 2"
           ls -l wheelhouse
@@ -336,93 +326,3 @@ jobs:
         run: |
           ls -l
           ls -l ./dist
-
-  publish-to-pypi-test:
-    name: >-
-      Publish Python 🐍 distribution 📦 to TEST PyPI
-    needs:
-      - build_sdist
-      - build_wheels
-    runs-on: ubuntu-latest
-    environment:
-      name: testpypi
-      url: https://test.pypi.org/p/docling-parse
-    permissions:
-      id-token: write  # IMPORTANT: mandatory for trusted publishing
-
-    steps:
-      - name: Download all the dists
-        uses: actions/download-artifact@v4
-        with:
-          merge-multiple: true
-          path: dist/
-      - name: List dist/
-        run: |
-          ls ./dist
-      - name: Sign the dists with Sigstore
-        uses: sigstore/gh-action-sigstore-python@v3.0.0
-        with:
-          release-signing-artifacts: false
-          inputs: >-
-            ./dist/*.tar.gz
-            ./dist/*.whl
-      - name: List dist/
-        run: |
-          ls ./dist
-      # - name: Upload artifact signatures to GitHub Release
-      #   env:
-      #     GITHUB_TOKEN: ${{ github.token }}
-      #   # Upload to GitHub Release using the `gh` CLI.
-      #   # `dist/` contains the built packages, and the
-      #   # sigstore-produced signatures and certificates.
-      #   run: >-
-      #     gh release upload
-      #     '${{ github.ref_name }}' dist/**
-      #     --repo '${{ github.repository }}'
-
-      # PyPI does not accept .sigstore artifacts and
-      # gh-action-pypi-publish has no option to ignore them.
-      - name: Remove sigstore signatures before uploading to PyPI
-        run: rm ./dist/*.sigstore.json
-
-      - name: Publish distribution 📦 to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          repository-url: https://test.pypi.org/legacy/
-
-  publish-to-pypi:
-    name: >-
-      Publish Python 🐍 distribution 📦 to PyPI
-    if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
-    needs:
-      - build_sdist
-      - build_wheels
-    runs-on: ubuntu-latest
-    environment:
-      name: pypi
-      url: https://pypi.org/p/docling-parse
-    # permissions:
-    #   id-token: write  # IMPORTANT: mandatory for trusted publishing
-
-    steps:
-      - name: Download all the dists
-        uses: actions/download-artifact@v4
-        with:
-          merge-multiple: true
-          path: dist/
-      - name: List dist/
-        run: |
-          ls ./dist
-      - name: Publish distribution 📦 to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: ${{ secrets.PYPI_TOKEN }}
-
-        # - name: publish wheels (dry run)
-        #   run: |
-        #     poetry publish --skip-existing --dry-run --no-interaction -vvv
-
-        # - name: publish wheels (on publishing) [for releases only]
-        #   if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        #   run: |
-        #     poetry publish --skip-existing --no-interaction -vvv
