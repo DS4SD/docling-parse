@@ -152,6 +152,25 @@ namespace pdflib
         qpdf_resources = qpdf_page.getKey("/Resources");
         json_resources = json_page["/Resources"];
 
+        LOG_S(INFO) << "page has resources!: " << json_resources.dump(2);
+	
+        decode_resources();
+      }
+    else if(json_page.count("/Parent"))
+      {
+	auto parent = qpdf_page.getKey("/Parent");
+
+	LOG_S(INFO) << "parent keys: ";            
+	for(auto key : parent.getKeys())
+	  {
+	    LOG_S(INFO) << " -> parent-key: " << key;
+	  }
+	
+	qpdf_resources = parent.getKey("/Resources");
+        json_resources = to_json(qpdf_resources); //json_page["/Resources"];
+
+        LOG_S(INFO) << "page has resources!: " << json_resources.dump(2);
+	
         decode_resources();
       }
     else

@@ -333,8 +333,9 @@ def visualise_v2(
                     draw.polygon(rect, outline="red", fill="blue")
 
                 # Draw widgets
-                for annot in annots:
-                    draw_annotations(draw, annot, H, W)
+                if annots is not None:
+                    for annot in annots:
+                        draw_annotations(draw, annot, H, W)
 
                 # Draw each rectangle by connecting its four points
                 for line in lines:

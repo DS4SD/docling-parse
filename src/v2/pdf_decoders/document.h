@@ -197,6 +197,12 @@ namespace pdflib
     LOG_S(INFO) << "start decoding all pages ...";        
     utils::timer timer;
 
+    LOG_S(INFO) << "document keys: ";            
+    for(auto key : qpdf_root.getKeys())
+      {
+	LOG_S(INFO) << " -> document-key: " << key;
+      }
+    
     nlohmann::json& json_pages = json_document["pages"];
     json_pages = nlohmann::json::array({});
     

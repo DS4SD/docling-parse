@@ -6,6 +6,9 @@ import os
 import queue
 import threading
 from typing import Dict, List
+from dataclasses import dataclass, field
+
+from io import BytesIO
 
 import boto3
 import botocore
@@ -16,6 +19,32 @@ from docling_parse import pdf_parser_v2
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
+
+@dataclass
+class S3Config:
+
+    url: str
+    region: str
+
+    verify: bool
+    
+    bucket_name: str
+    prefix: str
+
+    access_key: str
+    secret_key: str
+
+    scratch_dir: str
+    
+@dataclass
+class FileTask:
+    bucket_name: str
+    
+    file_key: str
+    file_name: str  # Local path where the file will be processed or saved
+    file_hash: str    
+
+    data: BytesIO = field(default_factory=BytesIO)
 
 
 def parse_arguments():
@@ -53,13 +82,31 @@ def parse_arguments():
     )
     parser.add_argument(
         "-l",
-        "--local-scratch",
+        "--local-scratch-dir",
         required=False,
         help="local scratch directory",
         default="./scratch",
     )
+    parser.add_argument(
+        "-t",
+        "--threads",
+        required=False,
+        help="processing threads",
+        default=4,
+    )
 
-    return parser.parse_args()
+    args = parser.parse_args()
+
+    s3config = S3Config(url=args.endpoint_url,
+                        region=args.region,
+                        verify=True,
+                        bucket_name=args.bucket_name,
+                        prefix=args.bucket_prefix,
+                        access_key=args.access_key,
+                        secret_key=args.secret_key,
+                        scratch_dir=args.local_scratch_dir)
+
+    return s3config, int(args.threads)
 
 
 def list_buckets(s3_client):
@@ -72,22 +119,23 @@ def list_buckets(s3_client):
     for bucket in response.get("Buckets", []):
         logging.info(f"- {bucket['Name']}")
 
-
-def fetch_files_from_s3(
-    local_dir, s3_client, bucket_name, top_level_prefix, prefix, file_queue
-):
+    
+def fetch_files_from_s3(s3_client, task_queue, local_dir, bucket_name, top_level_prefix, prefix):
     """Recursively fetch file keys from the S3 bucket and add them to the queue."""
     logging.info(f"Fetching file keys from S3 bucket with prefix: {prefix}")
     # local_files = glob.glob(os.path.join(args.local_scratch, "*.pdf"))
-
+    
     paginator = s3_client.get_paginator("list_objects_v2")
     for page in paginator.paginate(Bucket=bucket_name, Prefix=prefix, Delimiter="/"):
         # Handle files in the current prefix
         for obj in page.get("Contents", []):
 
             filename = os.path.basename(obj["Key"])
+            #logging.info(filename)
+            
             if filename.endswith(".pdf"):
 
+                """
                 # Download and process file (placeholder for actual processing logic)
                 response = s3_client.get_object(Bucket=bucket_name, Key=obj["Key"])
                 data = response["Body"].read()
@@ -105,24 +153,32 @@ def fetch_files_from_s3(
 
                 # file_queue.put(obj["Key"])
                 file_queue.put((filename, file_hash, local_file))
+                """
 
+                # Create a FileTask object
+                task = FileTask(bucket_name=bucket_name, file_key=obj["Key"], file_name=filename, file_hash="", data=None)
+                task_queue.put(task)
+
+                #logging.info(task)
+                
+                
         # Recursively handle sub-prefixes (folders)
         for common_prefix in page.get("CommonPrefixes", []):
             sub_prefix = common_prefix["Prefix"]
             logging.info(f"Entering sub-prefix: {sub_prefix}")
             fetch_files_from_s3(
-                local_dir,
                 s3_client,
+                task_queue,                
+                local_dir,
                 bucket_name,
                 top_level_prefix,
                 sub_prefix,
-                file_queue,
             )
 
     # Signal the end of fetching (only add `None` at the top level)
     if top_level_prefix == prefix:  # Only at the top-level call
-        file_queue.put(None)
-
+        task_queue.put(None)
+        logging.info("Done with queue")
 
 def print_toc(toc):
 
@@ -139,26 +195,52 @@ def print_toc(toc):
                 print_toc(_)
 
 
-def process_files_from_queue(s3_client, bucket_name, file_queue):
+def retrieve_file(s3_client, task):                
 
-    parser = pdf_parser_v2("error")
+    logging.info(task)
+    
+    # Download and process file (placeholder for actual processing logic)
+    response = s3_client.get_object(Bucket=task.bucket_name, Key=task.file_key)
+    task.data = BytesIO(response["Body"].read()) # response["Body"].read()
+    
+    # Generate a hash (e.g., SHA-256)
+    hash_object = hashlib.sha256(task.data.read())
+    task.file_hash = str(hash_object.hexdigest())
+    
+    return task
+    
+def save_file(local_dir, task):    
+    local_file = os.path.join(local_dir, f"{task.file_hash}.pdf")
 
+    # Save the data
+    logging.info(f"processing file: {task.file_name} -> {local_file}")
+    with open(local_file, "wb") as fw:
+        fw.write(task.data.getvalue())
+
+def process_files_from_queue(s3_client, file_queue, bucket_name:str, scratch_dir:str):
     """Process files from the queue."""
+    
+    parser = pdf_parser_v2("fatal")
+
     while True:
-        item = file_queue.get()
-        if item is None:  # End of queue signal
+        task = file_queue.get()
+
+        if task is None:  # End of queue signal
             break
 
+        task = retrieve_file(s3_client, task)
+        logging.info(f"Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}")
+        
         try:
-            logging.info(f"Processing file: {item}")
-            success = parser.load_document(item[1], item[2])
-
+            success = parser.load_document_from_bytesio(task.file_hash, task.data)
+            
             if success:
 
                 # Get number of pages
-                num_pages = parser.number_of_pages(item[1])
-                # logging.info(f" => #-pages: {num_pages}")
+                num_pages = parser.number_of_pages(task.file_hash)
+                logging.info(f" => #-pages of {task.file_name}: {num_pages}")
 
+                """
                 out = parser.get_annotations(item[1])
                 logging.info(f"{item[1]} [{num_pages}]: {out.keys()}")
                 for key, val in out.items():
@@ -167,32 +249,29 @@ def process_files_from_queue(s3_client, bucket_name, file_queue):
 
                     elif val is not None:
                         logging.info(f" => {key}: 1")
-
                 """
+                
                 # Parse page by page to minimize memory footprint
                 for page in range(0, num_pages):
-                    json_doc = parser.parse_pdf_from_key_on_page(item[1], page)
-                """
-
-                logging.info(f"Processed {item[1]}")
+                    try:
+                        json_doc = parser.parse_pdf_from_key_on_page(task.file_hash, page)
+                    except:
+                        save_file(scratch_dir, task)
+                        logging.error(f"problem with parsing {task.file_name} on page {page}")
             else:
-                logging.error(f"problem with {item[1]}")
+                logging.error(f"problem with loading {task.file_name}")
 
             # Unload the (QPDF) document and buffers
-            parser.unload_document(item[1])
-
-            os.remove(item[2])
-            logging.info(f"deleted file: {item[2]}")
+            parser.unload_document(task.file_hash)
 
         except:
-            logging.error(f"Error on file: {item}")
-
+            logging.error(f"Error on file: {task}")
 
 def main():
 
-    args = parse_arguments()
+    s3_config, threads = parse_arguments()
 
-    os.makedirs(args.local_scratch, exist_ok=True)
+    os.makedirs(s3_config.scratch_dir, exist_ok=True)
 
     session = boto3.session.Session()
 
@@ -201,39 +280,47 @@ def main():
     # Initialize the S3 client
     s3_client = session.client(
         "s3",
-        endpoint_url=args.endpoint_url,
+        endpoint_url=s3_config.url,
         verify=True,
-        aws_access_key_id=args.access_key,
-        aws_secret_access_key=args.secret_key,
-        region_name=args.region,
+        aws_access_key_id=s3_config.access_key,
+        aws_secret_access_key=s3_config.secret_key,
+        region_name=s3_config.region,
         config=config,
     )
 
+    list_buckets(s3_client)
+    
     file_queue = queue.Queue()
 
     # Create threads
     fetch_thread = threading.Thread(
         target=fetch_files_from_s3,
         args=(
-            args.local_scratch,
             s3_client,
-            args.bucket_name,
-            args.bucket_prefix,
-            args.bucket_prefix,
             file_queue,
+            s3_config.scratch_dir,
+            s3_config.bucket_name,
+            s3_config.prefix,
+            s3_config.prefix,
         ),
     )
-    process_thread = threading.Thread(
-        target=process_files_from_queue, args=(s3_client, args.bucket_name, file_queue)
-    )
+    process_threads = []
+
+    for i in range(0, threads):
+        process_threads.append(threading.Thread(
+            target=process_files_from_queue, args=(s3_client, file_queue, s3_config.bucket_name, s3_config.scratch_dir,)
+        ))
 
     # Start threads
     fetch_thread.start()
-    process_thread.start()
+
+    for _ in process_threads:
+        _.start()
 
     # Wait for threads to complete
     fetch_thread.join()
-    process_thread.join()
+    for _ in process_threads:
+        _.join()
 
     logging.info("All files processed successfully.")
 
