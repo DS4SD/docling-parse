@@ -1,17 +1,15 @@
-import glob
 import argparse
+import glob
 import hashlib
 import json
 import logging
 import os
 import queue
 import threading
-from typing import Dict, List
 from dataclasses import dataclass, field
-
-from pathlib import Path
-
 from io import BytesIO
+from pathlib import Path
+from typing import Dict, List
 
 import boto3
 import botocore
@@ -23,29 +21,28 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+
 @dataclass
 class FileTask:
     folder_name: str
-    
+
     file_name: str  # Local path where the file will be processed or saved
-    file_hash: str    
+    file_hash: str
+
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
         description="Process S3 files using multithreading."
     )
     parser.add_argument(
-        "-d",
-        "--directory",
-        help="input directory with pdf files",
-        required=True
+        "-d", "--directory", help="input directory with pdf files", required=True
     )
     parser.add_argument(
         "-r",
         "--recursive",
         help="recursively finding pdf-files",
         required=False,
-        default=False
+        default=False,
     )
     parser.add_argument(
         "-t",
@@ -65,22 +62,23 @@ def parse_arguments():
         default="fatal",
         help="Log level [info, warning, error, fatal]",
     )
-    
+
     args = parser.parse_args()
 
     return args.directory, args.recursive, int(args.threads), args.loglevel
 
+
 def fetch_files_from_disk(directory, recursive, task_queue):
     """Recursively fetch files from disk and add them to the queue."""
     logging.info(f"Fetching file keys from disk: {directory}")
-    
+
     for filename in sorted(glob.glob(os.path.join(directory, "*.pdf"))):
 
         file_name = str(Path(filename).resolve())
-        
+
         hash_object = hashlib.sha256(filename.encode())
         file_hash = hash_object.hexdigest()
-        
+
         # Create a FileTask object
         task = FileTask(folder_name=directory, file_name=file_name, file_hash=file_hash)
         task_queue.put(task)
@@ -88,33 +86,36 @@ def fetch_files_from_disk(directory, recursive, task_queue):
     task_queue.put(None)
     logging.info("Done with queue")
 
+
 def process_files_from_queue(file_queue, loglevel):
     """Process files from the queue."""
-    
+
     while True:
         task = file_queue.get()
 
         if task is None:  # End of queue signal
             break
 
-        logging.info(f"Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}")
+        logging.info(
+            f"Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}"
+        )
 
         try:
             parser = pdf_parser_v2(loglevel)
-            
+
             success = parser.load_document(task.file_hash, str(task.file_name))
-            
+
             num_pages = parser.number_of_pages(task.file_hash)
             logging.info(f" => #-pages of {task.file_name}: {num_pages}")
-            
+
             json_doc = parser.parse_pdf_from_key(task.file_hash)
-        
-            #with open(os.path.join(task.folder_name, f"{task.file_name}.json"), "w") as fw:
+
+            # with open(os.path.join(task.folder_name, f"{task.file_name}.json"), "w") as fw:
             with open(f"{task.file_name}.json", "w") as fw:
                 fw.write(json.dumps(json_doc, indent=2))
         except:
             continue
-        
+
         """
         try:
             if success:
@@ -142,19 +143,20 @@ def process_files_from_queue(file_queue, loglevel):
         except:
             logging.error(f"Error on file: {task}")
         """
-        
+
+
 def main():
 
     directory, recursive, threads, loglevel = parse_arguments()
-    
+
     task_queue = queue.Queue()
 
-    if threads==1:
-        
+    if threads == 1:
+
         fetch_files_from_disk(directory, recursive, task_queue)
 
         process_files_from_queue(task_queue, loglevel)
-        
+
     """
     # Create threads
     fetch_thread = threading.Thread(
@@ -183,7 +185,7 @@ def main():
     for _ in process_threads:
         _.join()
     """
-    
+
     logging.info("All files processed successfully.")
 
 

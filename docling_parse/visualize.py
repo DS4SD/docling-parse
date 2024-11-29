@@ -1,13 +1,12 @@
 import argparse
 import io
 import json
+import logging
 import os
 
 from tabulate import tabulate
 
 from docling_parse import pdf_parser_v1, pdf_parser_v2
-
-import logging
 
 # Configure logging
 logging.basicConfig(
