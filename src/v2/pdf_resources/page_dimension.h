@@ -76,7 +76,8 @@ namespace pdflib
 
   bool pdf_resource<PAGE_DIMENSION>::init_from(nlohmann::json& data)
   {
-    LOG_S(INFO) << "reading: " << data.dump(2);
+    //LOG_S(INFO) << "reading: " << data.dump(2);
+    LOG_S(INFO) << __FUNCTION__;
     
     if(data.count("bbox")==1 and
        data.count("angle")==1 and
@@ -102,8 +103,11 @@ namespace pdflib
       }
     else
       {
-	LOG_S(ERROR) << "could not read: " << data.dump(2);
-	assert(false);
+	std::stringstream ss;
+	ss << "could not read: " << data.dump(2);
+	
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
     
     return false;

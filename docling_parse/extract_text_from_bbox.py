@@ -78,6 +78,8 @@ def main():
 
     parser.unload_document(doc_key)
 
+    print("#-cells: ", len(doc["pages"][0]["original"]["cells"]["data"]))
+
     i = 10
     j = 20
 
@@ -100,17 +102,21 @@ def main():
         text = doc["pages"][0]["original"]["cells"]["data"][l][tind]
         data.append([x0, y0, x1, y1, text])
 
-    print("bbox: ", [x0, y0, x1, y1])
-
     print(
         # tabulate(selected_cells, headers=doc["pages"][0]["original"]["cells"]["header"])
         tabulate(data, headers=["x0", "y0", "x1", "y1", "text"])
     )
 
+    print(" => bbox: ", [x0, y0, x1, y1])
+
     parser.set_loglevel_with_label("info")
 
     sanitized_cells = parser.sanitize_cells_in_bbox(
-        page=doc["pages"][0], bbox=[x0, y0, x1, y1]
+        page=doc["pages"][0],
+        bbox=[x0, y0, x1, y1],
+        iou_cutoff=0.9,
+        delta_y0=1.0,
+        enforce_same_font=False,
     )
     print("#-cells: ", len(sanitized_cells))
     print(tabulate(sanitized_cells["data"]))

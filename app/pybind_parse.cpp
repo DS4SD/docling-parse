@@ -119,7 +119,9 @@ PYBIND11_MODULE(docling_parse, m) {
 	 "sanitize a specific subset of original cells",
 	 pybind11::arg("original_cells"),
 	 pybind11::arg("page_dimension"),
-	 pybind11::arg("page_lines")
+	 pybind11::arg("page_lines"),
+	 pybind11::arg("delta_y0")=1.0,
+	 pybind11::arg("enforce_same_font")=true
 	 )
 
     .def("sanitize_cells_in_bbox",
@@ -127,6 +129,8 @@ PYBIND11_MODULE(docling_parse, m) {
 	 "sanitize a specific subset of original cells of a page in a bbox [x0, y0, x1, y1]",
 	 pybind11::arg("page"),
 	 pybind11::arg("bbox"),
-	 pybind11::arg("iou")=0.99
+	 pybind11::arg("iou_cutoff")=0.99,
+	 pybind11::arg("delta_y0")=1.0,
+	 pybind11::arg("enforce_same_font")=true
 	 );  
 }

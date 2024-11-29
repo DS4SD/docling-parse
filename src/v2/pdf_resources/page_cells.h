@@ -54,6 +54,8 @@ namespace pdflib
 
   bool pdf_resource<PAGE_CELLS>::init_from(nlohmann::json& data)
   {
+    LOG_S(INFO) << __FUNCTION__;
+    
     bool result=true;
     
     if(data.is_array())
@@ -63,13 +65,18 @@ namespace pdflib
 
 	for(int i=0; i<data.size(); i++)	  
 	  {
+	    //LOG_S(INFO) << "reading data i: " << data[i].dump();	    
 	    result = (result and cells.at(i).init_from(data[i]));
 	  }
       }
     else
       {
-	LOG_S(ERROR) << "can not initialise pdf_resource<PAGE_CELLS> from "
-		     << data.dump(2);
+	std::stringstream ss;
+	ss << "can not initialise pdf_resource<PAGE_CELLS> from "
+	   << data.dump(2);
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
       }
     
     return result;

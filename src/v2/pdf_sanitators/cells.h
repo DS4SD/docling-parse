@@ -15,16 +15,22 @@ namespace pdflib
                   pdf_resource<PAGE_LINES>& page_lines_);
     ~pdf_sanitator();
 
-    void sanitize(pdf_resource<PAGE_CELLS>& cells);
+    void sanitize(pdf_resource<PAGE_CELLS>& cells,
+		  double delta_y0=1.0,
+		  bool enforce_same_font=true);
 
   private:
 
-    void filter_by_cropbox();
+    //void filter_by_cropbox();
 
-    void contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells);
+    void contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells,
+				   double delta_y0=1.0,
+				   bool enforce_same_font=true);
 
     bool case_0(pdf_resource<PAGE_CELL>& cell_i,
-		pdf_resource<PAGE_CELL>& cell_j);
+		pdf_resource<PAGE_CELL>& cell_j,
+		double delta_y0=1.0,
+		bool enforce_same_font=true);
 
     void sanitise_text();
 
@@ -43,13 +49,16 @@ namespace pdflib
   pdf_sanitator<PAGE_CELLS>::~pdf_sanitator()
   {}
 
-  void pdf_sanitator<PAGE_CELLS>::sanitize(pdf_resource<PAGE_CELLS>& cells)
+  void pdf_sanitator<PAGE_CELLS>::sanitize(pdf_resource<PAGE_CELLS>& cells,
+					   double delta_y0,
+					   bool enforce_same_font)
   {
-    contract_cells_into_lines(cells);
+    contract_cells_into_lines(cells, delta_y0, enforce_same_font);
   }
 
-  void pdf_sanitator<PAGE_CELLS>::contract_cells_into_lines(//pdf_resource<PAGE_CELLS>& page_cells)
-							    pdf_resource<PAGE_CELLS>& cells)
+  void pdf_sanitator<PAGE_CELLS>::contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells,
+							    double delta_y0,
+							    bool enforce_same_font)
   {
     //std::vector<pdf_resource<PAGE_CELL> >& cells = page_cells.cells;
 
@@ -68,7 +77,7 @@ namespace pdflib
 	      {
 		if(cells[j].active)
 		  {
-		    if(case_0(cells[i], cells[j]))
+		    if(case_0(cells[i], cells[j], delta_y0, enforce_same_font))
 		      {
 			cells[j].active = false;
 			erased_cell     = true;
@@ -113,12 +122,15 @@ namespace pdflib
   }
 
   bool pdf_sanitator<PAGE_CELLS>::case_0(pdf_resource<PAGE_CELL>& cell_i,
-					 pdf_resource<PAGE_CELL>& cell_j)
+					 pdf_resource<PAGE_CELL>& cell_j,
+					 double delta_y0, bool enforce_same_font)
   {
+    //const double DELTA_Y0 = 1.0;
+    
     std::string font_i = cell_i.font_name;
     std::string font_j = cell_j.font_name;
 
-    if(font_i!=font_j)
+    if(enforce_same_font and (font_i!=font_j))
       {
 	return false;
       }
@@ -132,7 +144,8 @@ namespace pdflib
       if(std::abs(bbox_i[1]-bbox_j[1])<1.e-3 and 
        (bbox_i[0]<bbox_j[0] and std::abs(bbox_i[2]-bbox_j[0])<=10))
     */
-    if(std::abs(bbox_i[1]-bbox_j[1])<1.e-3 and 
+    //if(std::abs(bbox_i[1]-bbox_j[1])<1.e-3 and
+    if(std::abs(bbox_i[1]-bbox_j[1])<delta_y0 and 
        (bbox_i[0]<bbox_j[0]) and 
        (bbox_j[0]-bbox_i[2]) <= 3*space_width)
       {

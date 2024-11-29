@@ -44,11 +44,15 @@ namespace docling
 
     nlohmann::json sanitize_cells(nlohmann::json& original_cells,
 				  nlohmann::json& page_dim,
-				  nlohmann::json& page_lines);
+				  nlohmann::json& page_lines,
+				  double delta_y0,
+				  bool enforce_same_font);
 
     nlohmann::json sanitize_cells_in_bbox(nlohmann::json& page,
 					  std::array<double, 4> bbox,
-					  double iou);
+					  double iou_cutoff,
+					  double delta_y0,
+					  bool enforce_same_font);
     
   private:
 
@@ -324,7 +328,9 @@ namespace docling
 
   nlohmann::json docling_parser_v2::sanitize_cells(nlohmann::json& json_cells,
 						   nlohmann::json& json_dim,
-						   nlohmann::json& json_lines)
+						   nlohmann::json& json_lines,
+						   double delta_y0,
+						   bool enforce_same_font)
   {
     pdflib::pdf_resource<pdflib::PAGE_DIMENSION> dim;
     dim.init_from(json_dim);
@@ -336,15 +342,22 @@ namespace docling
     cells.init_from(json_cells);
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
-    sanitizer.sanitize(cells);
+    sanitizer.sanitize(cells, delta_y0, enforce_same_font);
     
     return cells.get();
   }
 
   nlohmann::json docling_parser_v2::sanitize_cells_in_bbox(nlohmann::json& page,
 							   std::array<double, 4> bbox,
-							   double iou)
+							   double iou_cutoff,
+							   double delta_y0,
+							   bool enforce_same_font)
   {
+    LOG_S(INFO) << __FUNCTION__
+		<< ", iou_cutoff: " << iou_cutoff
+		<< ", delta_y0: " << delta_y0
+		<< ", enforce_same_font: " << enforce_same_font;
+    
     // empty array
     nlohmann::json sanitized_cells = nlohmann::json::array({});
     
@@ -374,12 +387,21 @@ namespace docling
 	LOG_S(WARNING) << "could not init cells";
 	return sanitized_cells;
       }
+
+    LOG_S(INFO) << "init done ... --> #-cells: " << cells.size();
     
-    pdflib::pdf_resource<pdflib::PAGE_CELLS> selected_cells;
+    // get all cells with an iou overlap over iou_cutoff
+    pdflib::pdf_resource<pdflib::PAGE_CELLS> selected_cells;    
     for(int i=0; i<cells.size(); i++)
       {
-	if(x0<=cells[i].x0 and cells[i].x1<=x1 and
-	   y0<=cells[i].y0 and cells[i].y1<=y1)
+	double iou = utils::values::compute_overlap(cells[i].x0, cells[i].y0, cells[i].x1, cells[i].y1,
+						    x0, y0, x1, y1);
+
+	//LOG_S(INFO) << "cell " << i << " => iou: " << iou;
+	
+	//if(x0<=cells[i].x0 and cells[i].x1<=x1 and
+	//y0<=cells[i].y0 and cells[i].y1<=y1)
+	if(iou>iou_cutoff-1.e-3)
 	  {
 	    selected_cells.push_back(cells[i]);
 	  }
@@ -391,10 +413,12 @@ namespace docling
       }
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
-    sanitizer.sanitize(selected_cells);
+    sanitizer.sanitize(selected_cells, delta_y0, enforce_same_font);
     
     return selected_cells.get();
   }
+
+  
   
 }
 

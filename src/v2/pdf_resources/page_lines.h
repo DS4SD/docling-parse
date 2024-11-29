@@ -53,6 +53,8 @@ namespace pdflib
 
   bool pdf_resource<PAGE_LINES>::init_from(nlohmann::json& data)
   {
+    LOG_S(INFO) << __FUNCTION__;
+    
     bool result=true;
     
     if(data.is_array())
@@ -67,8 +69,12 @@ namespace pdflib
       }
     else
       {
-	LOG_S(ERROR) << "can not initialise pdf_resource<PAGE_LINES> from "
-		     << data.dump(2);	
+	std::stringstream ss;
+	ss << "can not initialise pdf_resource<PAGE_LINES> from "
+	   << data.dump(2);
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());	
       }
     
     return result;

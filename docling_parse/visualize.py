@@ -329,7 +329,10 @@ def visualise_v2(
                     ]
 
                     if display_text:
-                        logging.info(row[cells_header.index("text")])
+                        text = row[cells_header.index("text")]
+                        logging.info(
+                            f"{rect[0][0]:.2f}, {rect[0][1]:.2f}, {rect[2][0]:.2f}, {rect[2][1]:.2f}: {text}"
+                        )
 
                     if "glyph" in row[cells_header.index("text")]:
                         logging.info(f" skip cell -> {row}")
