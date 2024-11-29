@@ -95,7 +95,7 @@ namespace pdflib
 
   nlohmann::json pdf_decoder<DOCUMENT>::get()
   {
-    LOG_S(INFO) << "get() [in pdf_decoder<DOCUMENT>]"
+    LOG_S(INFO) << "get() [in pdf_decoder<DOCUMENT>]";
     
     {
       json_document["annotations"] = json_annots;

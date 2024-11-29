@@ -55,9 +55,20 @@ def parse_arguments():
         default=1,
     )
 
+    # Restrict log-level to specific values
+    parser.add_argument(
+        "-l",
+        "--log-level",
+        type=str,
+        choices=["info", "warning", "error", "fatal"],
+        required=False,
+        default="fatal",
+        help="Log level [info, warning, error, fatal]",
+    )
+    
     args = parser.parse_args()
 
-    return args.directory, args.recursive, int(args.threads)
+    return args.directory, args.recursive, int(args.threads), args.loglevel
 
 def fetch_files_from_disk(directory, recursive, task_queue):
     """Recursively fetch files from disk and add them to the queue."""
@@ -77,7 +88,7 @@ def fetch_files_from_disk(directory, recursive, task_queue):
     task_queue.put(None)
     logging.info("Done with queue")
 
-def process_files_from_queue(file_queue):
+def process_files_from_queue(file_queue, loglevel):
     """Process files from the queue."""
     
     while True:
@@ -89,7 +100,7 @@ def process_files_from_queue(file_queue):
         logging.info(f"Queue-size [{file_queue.qsize()}], Processing task: {task.file_name}")
 
         try:
-            parser = pdf_parser_v2("error")
+            parser = pdf_parser_v2(loglevel)
             
             success = parser.load_document(task.file_hash, str(task.file_name))
             
@@ -134,7 +145,7 @@ def process_files_from_queue(file_queue):
         
 def main():
 
-    directory, recursive, threads = parse_arguments()
+    directory, recursive, threads, loglevel = parse_arguments()
     
     task_queue = queue.Queue()
 
@@ -142,7 +153,7 @@ def main():
         
         fetch_files_from_disk(directory, recursive, task_queue)
 
-        process_files_from_queue(task_queue)
+        process_files_from_queue(task_queue, loglevel)
         
     """
     # Create threads

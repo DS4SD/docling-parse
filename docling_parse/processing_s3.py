@@ -83,7 +83,7 @@ def parse_arguments():
         default="source_docs/Extra/",
     )
     parser.add_argument(
-        "-l",
+        "-d",
         "--local-scratch-dir",
         required=False,
         help="local scratch directory",
@@ -95,6 +95,16 @@ def parse_arguments():
         required=False,
         help="processing threads",
         default=4,
+    )
+    # Restrict log-level to specific values
+    parser.add_argument(
+        "-l",
+        "--log-level",
+        type=str,
+        choices=["info", "warning", "error", "fatal"],
+        required=False,
+        default="error",
+        help="Log level [info, warning, error, fatal]",
     )
 
     args = parser.parse_args()
@@ -108,7 +118,7 @@ def parse_arguments():
                         secret_key=args.secret_key,
                         scratch_dir=args.local_scratch_dir)
 
-    return s3config, int(args.threads)
+    return s3config, int(args.threads), args.log_level
 
 
 def list_buckets(s3_client):
@@ -225,7 +235,7 @@ def save_file(local_dir, task):
     with open(local_file, "wb") as fw:
         fw.write(task.data.getvalue())
 
-def process_files_from_queue(thread_id, s3_client, file_queue, bucket_name:str, scratch_dir:str, cache):
+def process_files_from_queue(thread_id:int, s3_client, file_queue, bucket_name:str, scratch_dir:str, cache:set, loglevel:str):
     """Process files from the queue."""
 
     logfile = get_logfile(scratch_dir, thread_id)
@@ -258,7 +268,7 @@ def process_files_from_queue(thread_id, s3_client, file_queue, bucket_name:str, 
             
             ##save_file(scratch_dir, task)
             
-            parser = pdf_parser_v2("fatal")
+            parser = pdf_parser_v2(loglevel)
             
             success = parser.load_document_from_bytesio(task.file_hash, task.data)
 
@@ -290,7 +300,7 @@ def process_files_from_queue(thread_id, s3_client, file_queue, bucket_name:str, 
 
 def main():
 
-    s3_config, threads = parse_arguments()
+    s3_config, threads, loglevel = parse_arguments()
 
     os.makedirs(s3_config.scratch_dir, exist_ok=True)
 
@@ -346,13 +356,22 @@ def main():
     process_threads = []
     for tid in range(0, threads):
         process_threads.append(threading.Thread(
-            target=process_files_from_queue, args=(tid, s3_client, file_queue, s3_config.bucket_name, s3_config.scratch_dir, cache)
+            target=process_files_from_queue,
+            args=(tid,
+                  s3_client,
+                  file_queue,
+                  s3_config.bucket_name,
+                  s3_config.scratch_dir,
+                  cache,
+                  loglevel)
         ))
 
     for _ in process_threads:
         _.start()
 
     # Wait for threads to complete
+
+
     for _ in process_threads:
         _.join()
 
