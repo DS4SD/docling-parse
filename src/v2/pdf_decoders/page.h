@@ -29,6 +29,7 @@ namespace pdflib
 
     // Resources
     void decode_resources();
+    void decode_resources_low_level();
 
     void decode_grphs();
 
@@ -149,77 +150,7 @@ namespace pdflib
 
     decode_dimensions();
 
-    if(json_page.count("/Resources") and
-       json_page.count("/Parent"))
-      {
-	auto parent = qpdf_page.getKey("/Parent");
-	if(parent.hasKey("/Resources"))
-	  {
-	    qpdf_parent_resources = parent.getKey("/Resources");
-	    json_parent_resources = to_json(qpdf_parent_resources); //json_page["/Resources"];
-
-	    LOG_S(INFO) << "parent of page has resources!: " << json_parent_resources.dump(2);
-
-	    // both are used in the decode_resources
-	    qpdf_resources = qpdf_parent_resources; 
-	    json_resources = json_parent_resources;
-	      
-	    decode_resources();
-	  }
-	
-	// This might overwrite resources from the parent ...
-        qpdf_resources = qpdf_page.getKey("/Resources");
-        json_resources = json_page["/Resources"];
-	
-        decode_resources();
-      }    
-    else if(json_page.count("/Resources"))
-      {        
-        qpdf_resources = qpdf_page.getKey("/Resources");
-        json_resources = json_page["/Resources"];
-	
-        decode_resources();
-      }
-    else if(json_page.count("/Parent"))
-      {
-	auto parent = qpdf_page.getKey("/Parent");
-	if(parent.hasKey("/Resources"))
-	  {
-	    qpdf_parent_resources = parent.getKey("/Resources");
-	    json_parent_resources = to_json(qpdf_parent_resources); //json_page["/Resources"];
-
-	    LOG_S(INFO) << "parent of page has resources!: " << json_parent_resources.dump(2);
-
-	    // both are used in the decode_resources
-	    qpdf_resources = qpdf_parent_resources; 
-	    json_resources = json_parent_resources;
-	      
-	    decode_resources();
-	  }
-	else
-	  {
-	    LOG_S(ERROR) << "page has no /Resources nor a /Parent with /Resources.";
-	  }
-	
-	/*
-	LOG_S(INFO) << "parent keys: ";            
-	for(auto key : parent.getKeys())
-	  {
-	    LOG_S(INFO) << " -> parent-key: " << key;
-	  }
-	
-	qpdf_resources = parent.getKey("/Resources");
-        json_resources = to_json(qpdf_resources); //json_page["/Resources"];
-
-        LOG_S(INFO) << "page has resources!: " << json_resources.dump(2);
-	
-        decode_resources();
-	*/
-      }
-    else
-      {
-        LOG_S(WARNING) << "page does not have any resources!: " << json_page.dump(2);
-      }
+    decode_resources();
 
     decode_contents();
 
@@ -246,6 +177,84 @@ namespace pdflib
   {
     LOG_S(INFO) << __FUNCTION__;
     utils::timer timer;
+
+    if(json_page.count("/Resources") and
+       json_page.count("/Parent"))
+      {
+	auto parent = qpdf_page.getKey("/Parent");
+	if(parent.hasKey("/Resources"))
+	  {
+	    LOG_S(INFO) << "parent of page has resources!: " << json_parent_resources.dump(2);
+	    
+	    qpdf_parent_resources = parent.getKey("/Resources");
+	    json_parent_resources = to_json(qpdf_parent_resources); //json_page["/Resources"];
+
+	    // both are used in the decode_resources
+	    qpdf_resources = qpdf_parent_resources; 
+	    json_resources = json_parent_resources;
+	      
+	    decode_resources_low_level();
+	  }
+	else
+	  {
+	    LOG_S(INFO) << "parent of page has no resources!";
+	  }
+	
+	// This might overwrite resources from the parent ...
+        qpdf_resources = qpdf_page.getKey("/Resources");
+        json_resources = json_page["/Resources"];
+	
+        decode_resources_low_level();
+      }    
+    else if(json_page.count("/Resources"))
+      {        
+        qpdf_resources = qpdf_page.getKey("/Resources");
+        json_resources = json_page["/Resources"];
+	
+        decode_resources_low_level();
+      }
+    else if(json_page.count("/Parent"))
+      {
+	auto parent = qpdf_page.getKey("/Parent");
+	if(parent.hasKey("/Resources"))
+	  {
+	    qpdf_parent_resources = parent.getKey("/Resources");
+	    json_parent_resources = to_json(qpdf_parent_resources); //json_page["/Resources"];
+
+	    LOG_S(INFO) << "parent of page has resources!: " << json_parent_resources.dump(2);
+
+	    // both are used in the decode_resources
+	    qpdf_resources = qpdf_parent_resources; 
+	    json_resources = json_parent_resources;
+	      
+	    decode_resources_low_level();
+	  }
+	else
+	  {
+	    LOG_S(ERROR) << "page has no /Resources nor a /Parent with /Resources.";
+	  }
+      }
+    else
+      {
+        LOG_S(WARNING) << "page does not have any resources!: " << json_page.dump(2);
+      }
+
+    {
+      auto font_keys = page_fonts.keys();
+
+      LOG_S(INFO) << "fonts: " << font_keys.size();
+      for(auto key:font_keys)
+	{
+	  LOG_S(INFO) << " -> font-key: '" << key << "'";
+	}
+    }
+    
+    timings[__FUNCTION__] = timer.get_time();    
+  }
+  
+  void pdf_decoder<PAGE>::decode_resources_low_level()
+  {
+    LOG_S(INFO) << __FUNCTION__;
 
     if(json_resources.count("/ExtGState"))
       {
@@ -282,8 +291,6 @@ namespace pdflib
       {
         LOG_S(WARNING) << "page does not have any xobjects! ";// << json_resources.dump(2);
       }
-
-    timings[__FUNCTION__] = timer.get_time();    
   }
 
   void pdf_decoder<PAGE>::decode_grphs()
@@ -319,11 +326,13 @@ namespace pdflib
                                        page_lines, page_images, 
                                        page_fonts, page_grphs,
 				       page_xobjects);
+
+    int cnt = 0;
     
     std::vector<qpdf_instruction> parameters;
     for(auto content:contents)
       {
-        LOG_S(INFO) << "--------------- Start decoding content stream ... ---------------";        
+        LOG_S(INFO) << "--------------- start decoding content stream (" << (cnt++) << ")... ---------------";        
         
         stream_decoder.decode(content);
         //stream_decoder.print();

@@ -1209,32 +1209,52 @@ namespace pdflib
         auto qpdf_obj = qpdf_font.getKey("/ToUnicode");
         //assert(qpdf_obj.isStream());
 
-	if(not qpdf_obj.isStream())
+	if(qpdf_obj.isStream())
 	  {
-	    std::string message = "not qpdf_obj.isStream()";
+	    std::vector<qpdf_instruction> stream;
+	    
+	    // decode the stream
+	    {
+	      qpdf_stream_decoder decoder(stream);
+	      decoder.decode(qpdf_obj);
+	      
+	      //decoder.print();
+	    }
+	    
+	    // interprete the stream
+	    {
+	      cmap_parser parser;
+	      parser.parse(stream);
+	      
+	      //parser.print();
+	      
+	      cmap_numb_to_char = parser.get();
+	    }
+	  }
+	else if(qpdf_obj.isString())
+	  {
+	    auto _ = to_json(qpdf_obj);	    
+	    std::string message = "qpdf_obj.isString(): " + _.dump(2);
+
 	    LOG_S(ERROR) << message;
 	    throw std::logic_error(message);
 	  }
-	
-        std::vector<qpdf_instruction> stream;
+	else if(qpdf_obj.isName())
+	  {
+	    auto _ = to_json(qpdf_obj);	    
+	    std::string message = "qpdf_obj.isName(): " + _.dump(2);
 
-        // decode the stream
-        {
-          qpdf_stream_decoder decoder(stream);
-          decoder.decode(qpdf_obj);
+	    LOG_S(ERROR) << message;
+	    //throw std::logic_error(message);	    
+	  }    
+	else
+	  {
+	    auto _ = to_json(qpdf_obj);	    
+	    std::string message = "qpdf_obj is unknown: " + _.dump(2);
 
-          //decoder.print();
-        }
-
-        // interprete the stream
-        {
-          cmap_parser parser;
-          parser.parse(stream);
-
-          //parser.print();
-
-          cmap_numb_to_char = parser.get();
-        }
+	    LOG_S(ERROR) << message;
+	    throw std::logic_error(message);
+	  }
 
         /*
         {

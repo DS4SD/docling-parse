@@ -260,7 +260,14 @@ namespace pdflib
       }
     else
       {
-        LOG_S(ERROR) << "unknown page-font: " << font_name;
+        LOG_S(ERROR) << "unknown page-font: '" << font_name << "'";
+
+	auto font_keys = page_fonts.keys();
+	LOG_S(WARNING) << "known fonts: " << font_keys.size();
+	for(auto key:font_keys)
+	  {
+	    LOG_S(WARNING) << " -> font-key: '" << key << "'";
+	  }
       }
   }
 
