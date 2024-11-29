@@ -420,10 +420,7 @@ namespace pdflib
     {
       auto itr = src.begin();
       c = utf8::next(itr, src.end());
-
-      //assert(itr==src.end());
     }
-    //assert(csr_range.first<=c and c<=csr_range.second);
 
     if(not (csr_range.first<=c and c<=csr_range.second))
       {
@@ -443,12 +440,6 @@ namespace pdflib
                               const std::string tgt)
   {
     LOG_S(INFO) << __FUNCTION__;
-    /*
-		<< "\t"
-		<< "beg: `" << src_begin << "`, "
-		<< "end: `" << src_end << "`, "
-      		<< "tgt: `" << tgt << "`";
-    */
     
     auto itr_beg = src_begin.begin();
     uint32_t begin = utf8::next(itr_beg, src_begin.end());
@@ -468,13 +459,13 @@ namespace pdflib
                        << "'" << src_end << "' -> " << end;;
       }
 
-    LOG_S(INFO) << __FUNCTION__ << "\t"
-      		<< "beg: " << begin << ", "
-		<< "end: " << end;
+    //LOG_S(INFO) << __FUNCTION__ << "\t"
+    //<< "beg: " << begin << ", "
+    //<< "end: " << end;
     
     std::string mapping(tgt);
     std::vector<uint32_t> tgts;
-
+    
     auto itr_tgt = tgt.begin();
     while(itr_tgt!=tgt.end())
       {
@@ -508,17 +499,16 @@ namespace pdflib
 		    if(utf8::is_valid(tmp.begin(), tmp.end()))
 		      {
 			_map[begin + i] = tmp;
-			LOG_S(INFO) << (begin + i) << ": " << tmp;
 		      }
 		    else
 		      {
-			LOG_S(ERROR) << "invalid utf8 string -> iteration: " << (begin+i);
+			LOG_S(WARNING) << "invalid utf8 string -> iteration: " << (begin+i);
 			_map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
 		      }
                   }
                 catch(const std::exception& exc)
                   {
-                    LOG_S(ERROR) << "invalid utf8 string: " << exc.what() << " -> iteration: " << (begin+i);
+                    LOG_S(WARNING) << "invalid utf8 string: " << exc.what() << " -> iteration: " << (begin+i);
 
                     _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
                   }
@@ -552,22 +542,31 @@ namespace pdflib
 
                     if(_map.count(begin+i)==1)
                       {
-                        LOG_S(ERROR) << "overwriting number c=" << begin+i;
+                        LOG_S(WARNING) << "overwriting number c=" << begin+i;
                       }
 
-                    _map[begin + i] = tmp;
+                    //_map[begin + i] = tmp;
+		    if(utf8::is_valid(tmp.begin(), tmp.end()))
+		      {
+			_map[begin + i] = tmp;
+		      }
+		    else
+		      {
+			LOG_S(WARNING) << "invalid utf8 string -> iteration: " << (begin+i);
+			_map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
+		      }		    
                   }
                 catch(const std::exception& exc)
                   {
-                    LOG_S(ERROR) << "invalid utf8 string: " << exc.what();
+                    LOG_S(WARNING) << "invalid utf8 string: " << exc.what();
 
                     _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
                   }
               }
             else
               {
-		LOG_S(WARNING) << "index " << begin+i << " is out of bounds ["
-                               << csr_range.first << ", " << csr_range.second << "]";
+		LOG_S(ERROR) << "index " << begin+i << " is out of bounds ["
+			     << csr_range.first << ", " << csr_range.second << "]";
               }
 
             tgts.back() += 1;

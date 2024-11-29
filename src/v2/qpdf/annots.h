@@ -92,7 +92,16 @@ namespace pdflib
 		
 		// Convert raw data to std::string
 		std::string content(reinterpret_cast<const char*>(ptr->getBuffer()), ptr->getSize());
-
+		LOG_S(INFO) << "content (1): " << content;
+		
+		// Remove \r and \n characters
+		content = std::regex_replace(content, std::regex("(\\r|\\n)+"), "");
+		LOG_S(INFO) << "content (2): " << content;
+		
+		// Replace multiple spaces with a single space
+		content = std::regex_replace(content, std::regex("\\s{2,}"), " ");
+		LOG_S(INFO) << "content (3): " << content;
+		
 		if(utils::string::is_valid_utf8(content))
 		  {
 		    //LOG_S(INFO) << content;
