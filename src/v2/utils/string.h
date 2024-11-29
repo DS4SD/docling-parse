@@ -7,6 +7,26 @@ namespace utils
 {
   namespace string
   {
+    bool is_valid_utf8(const std::string& val)
+    {
+      return utf8::is_valid(val.begin(), val.end());
+    }
+
+    std::string fix_into_valid_utf8(const std::string& val)
+    {
+      std::string res;
+      if (!is_valid_utf8(val))
+	{
+	  utf8::replace_invalid(val.begin(), val.end(), std::back_inserter(res));
+	}
+      else
+	{
+	  res = val; // Copy the original string if it's already valid
+	}
+      
+    return res;
+    }
+    
     bool is_integer(const std::string & s)
     {
       return std::regex_match(s, std::regex("(-)?[0-9]+"));

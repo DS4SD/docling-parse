@@ -86,7 +86,6 @@ namespace pdflib
     
     number_of_pages(-1),
 
-    //json_toc(nlohmann::json::value_t::null),
     json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
   {}
@@ -96,8 +95,9 @@ namespace pdflib
 
   nlohmann::json pdf_decoder<DOCUMENT>::get()
   {
+    LOG_S(INFO) << "get() [in pdf_decoder<DOCUMENT>]"
+    
     {
-      //json_document["table_of_contents"] = json_toc;      
       json_document["annotations"] = json_annots;
     }
     
@@ -128,7 +128,6 @@ namespace pdflib
         qpdf_root  = qpdf_document.getRoot();
         qpdf_pages = qpdf_root.getKey("/Pages");
 
-	//json_toc = extract_toc_in_json(qpdf_root);
 	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
 	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
@@ -140,9 +139,9 @@ namespace pdflib
 	  info["#-pages"] = number_of_pages;
 	}
       }
-    catch (std::exception & e)
+    catch(const std::exception& exc)
       {
-        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf";        
+        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf: " << exc.what();        
         return false;
       }
 
@@ -169,7 +168,6 @@ namespace pdflib
         qpdf_root  = qpdf_document.getRoot();
         qpdf_pages = qpdf_root.getKey("/Pages");
 
-	//json_toc = extract_toc_in_json(qpdf_root);
 	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
 	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
@@ -181,9 +179,9 @@ namespace pdflib
 	  info["#-pages"] = number_of_pages;
 	}
       }
-    catch (std::exception & e)
+    catch(const std::exception & exc)
       {
-        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf";        
+        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf: " << exc.what();        
         return false;
       }
 
@@ -196,12 +194,12 @@ namespace pdflib
   {
     LOG_S(INFO) << "start decoding all pages ...";        
     utils::timer timer;
-
-    LOG_S(INFO) << "document keys: ";            
-    for(auto key : qpdf_root.getKeys())
-      {
-	LOG_S(INFO) << " -> document-key: " << key;
-      }
+    
+    //LOG_S(INFO) << "document keys: ";            
+    //for(auto key : qpdf_root.getKeys())
+    //{
+    //LOG_S(INFO) << " -> document-key: " << key;
+    //}
     
     nlohmann::json& json_pages = json_document["pages"];
     json_pages = nlohmann::json::array({});

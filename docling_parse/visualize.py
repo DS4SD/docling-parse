@@ -7,13 +7,20 @@ from tabulate import tabulate
 
 from docling_parse import pdf_parser_v1, pdf_parser_v2
 
+import logging
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 try:
     from PIL import Image, ImageDraw
 
     PIL_INSTALLED = True
 except ImportError:
     PIL_INSTALLED = False
-    print("Pillow is not installed. Skipping image processing.")
+    logging.info("Pillow is not installed. Skipping image processing.")
 
 
 def parse_args():
@@ -89,7 +96,7 @@ def parse_args():
     # Check if the output directory exists, create it if not
     if (args.output_dir is not None) and (not os.path.exists(args.output_dir)):
         os.makedirs(args.output_dir)
-        print(f"Output directory '{args.output_dir}' created.")
+        logging.info(f"Output directory '{args.output_dir}' created.")
 
     return (
         args.log_level,
@@ -199,7 +206,7 @@ def visualise_v1(
             oname = os.path.join(
                 output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v1.png"
             )
-            print(f"output: {oname}")
+            logging.info(f"output: {oname}")
 
             img.save(oname)
 
@@ -207,7 +214,7 @@ def visualise_v1(
             oname = os.path.join(
                 output_dir, f"{os.path.basename(pdf_path)}_page={page_num}.v1.png"
             )
-            print(f"output: {oname}")
+            logging.info(f"output: {oname}")
 
             img.save(oname)
 
@@ -256,7 +263,7 @@ def visualise_v2(
         else:
             doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
     except Exception as exc:
-        print(f"Could not parse pdf-document: {exc}")
+        logging.info(f"Could not parse pdf-document: {exc}")
         doc = None
 
     if doc == None:
@@ -323,10 +330,10 @@ def visualise_v2(
                     ]
 
                     if display_text:
-                        print(row[cells_header.index("text")])
+                        logging.info(row[cells_header.index("text")])
 
                     if "glyph" in row[cells_header.index("text")]:
-                        print(f" skip cell -> {row}")
+                        logging.info(f" skip cell -> {row}")
                         continue
 
                     # You can change the outline and fill color
@@ -363,7 +370,7 @@ def visualise_v2(
                     oname = os.path.join(
                         output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
                     )
-                    print(f"output: {oname}")
+                    logging.info(f"output: {oname}")
 
                     img.save(oname)
 
@@ -372,7 +379,7 @@ def visualise_v2(
                         output_dir,
                         f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
                     )
-                    print(f"output: {oname}")
+                    logging.info(f"output: {oname}")
 
                     img.save(oname)
 

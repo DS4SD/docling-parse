@@ -442,8 +442,14 @@ namespace pdflib
                               const std::string src_end,
                               const std::string tgt)
   {
-    //LOG_S(INFO) << __FUNCTION__;
-
+    LOG_S(INFO) << __FUNCTION__;
+    /*
+		<< "\t"
+		<< "beg: `" << src_begin << "`, "
+		<< "end: `" << src_end << "`, "
+      		<< "tgt: `" << tgt << "`";
+    */
+    
     auto itr_beg = src_begin.begin();
     uint32_t begin = utf8::next(itr_beg, src_begin.end());
 
@@ -462,6 +468,10 @@ namespace pdflib
                        << "'" << src_end << "' -> " << end;;
       }
 
+    LOG_S(INFO) << __FUNCTION__ << "\t"
+      		<< "beg: " << begin << ", "
+		<< "end: " << end;
+    
     std::string mapping(tgt);
     std::vector<uint32_t> tgts;
 
@@ -495,11 +505,20 @@ namespace pdflib
                         LOG_S(WARNING) << "overwriting number c=" << begin+i;
                       }
 
-                    _map[begin + i] = tmp;
+		    if(utf8::is_valid(tmp.begin(), tmp.end()))
+		      {
+			_map[begin + i] = tmp;
+			LOG_S(INFO) << (begin + i) << ": " << tmp;
+		      }
+		    else
+		      {
+			LOG_S(ERROR) << "invalid utf8 string -> iteration: " << (begin+i);
+			_map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
+		      }
                   }
-                catch(...)
+                catch(const std::exception& exc)
                   {
-                    LOG_S(ERROR) << "invalid utf8 string";
+                    LOG_S(ERROR) << "invalid utf8 string: " << exc.what() << " -> iteration: " << (begin+i);
 
                     _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
                   }
@@ -538,9 +557,9 @@ namespace pdflib
 
                     _map[begin + i] = tmp;
                   }
-                catch(...)
+                catch(const std::exception& exc)
                   {
-                    LOG_S(ERROR) << "invalid utf8 string";
+                    LOG_S(ERROR) << "invalid utf8 string: " << exc.what();
 
                     _map[begin + i] = "UNICODE<"+std::to_string(begin+i)+">";
                   }

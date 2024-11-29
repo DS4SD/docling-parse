@@ -277,7 +277,6 @@ namespace docling
     LOG_S(INFO) << __FUNCTION__;
     
     auto itr = key2doc.find(key);
-
     if(itr==key2doc.end())
       {
 	LOG_S(ERROR) << "key not found: " << key;
@@ -285,18 +284,23 @@ namespace docling
       }
     
     auto& decoder = itr->second;
-    
     decoder->decode_document();
-    LOG_S(WARNING) << "decoding done ...";
-      
+
+    LOG_S(INFO) << "decoding done for key: " << key;
+
+    //{
+    //auto result = decoder->get();
+    //LOG_S(ERROR) << result.dump(2);
+    //}
+    
     return decoder->get();
   }
 
   nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key, int page)
   {
-    LOG_S(WARNING) << __FUNCTION__;
+    LOG_S(INFO) << __FUNCTION__;
+    
     auto itr = key2doc.find(key);
-
     if(itr==key2doc.end())
       {
 	LOG_S(ERROR) << "key not found: " << key << " " << key2doc.count(key);
@@ -307,7 +311,13 @@ namespace docling
     
     std::vector<int> pages = {page};
     decoder->decode_document(pages);
-    LOG_S(WARNING) << "decoding done ...";
+
+    LOG_S(INFO) << "decoding done for for key: " << key << " and page: " << page;
+
+    //{
+    //auto result = decoder->get();
+    //LOG_S(ERROR) << "`" << result.dump(2) << "`";
+    //}
     
     return decoder->get();
   }
