@@ -6,468 +6,46 @@
     "table_of_contents": [
       {
         "level": 0,
-        "link": {
-          "/D": "section.1",
-          "/S": "/GoTo"
-        },
         "title": "Introduction"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.2.1",
-              "/S": "/GoTo"
-            },
-            "title": "Dense Models"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.2.2",
-              "/S": "/GoTo"
-            },
-            "title": "Mixture-of-Expert models"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.2",
-          "/S": "/GoTo"
-        },
         "title": "Model Architecture"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.3.1",
-              "/S": "/GoTo"
-            },
-            "title": "Curated Web Data"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.3.2",
-              "/S": "/GoTo"
-            },
-            "title": "Synthetic Data"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.3",
-          "/S": "/GoTo"
-        },
         "title": "Training Data"
       },
       {
-        "children": [
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.4.1.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Stage 1 Data Mixture"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.4.1.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Stage 2 Data Mixture"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.4.1",
-              "/S": "/GoTo"
-            },
-            "title": "Data Mixture"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.4.2",
-              "/S": "/GoTo"
-            },
-            "title": "Training Hyperparameters"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.4.3",
-              "/S": "/GoTo"
-            },
-            "title": "Model Parallelism"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.4",
-          "/S": "/GoTo"
-        },
         "title": "Pre-training"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.1",
-              "/S": "/GoTo"
-            },
-            "title": "Structured Chat Template"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.2.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Data Mixture"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.2.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Hyperparameter Search"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.2",
-              "/S": "/GoTo"
-            },
-            "title": "Supervised Finetuning"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.3.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Alignment Data"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.3.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Alignment Techniques"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.3.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Reward Models"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.3",
-              "/S": "/GoTo"
-            },
-            "title": "Model Alignment"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.4",
-              "/S": "/GoTo"
-            },
-            "title": "Model Merging"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.5",
-          "/S": "/GoTo"
-        },
         "title": "Post-training"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "section.6",
-          "/S": "/GoTo"
-        },
         "title": "Infrastructure, Energy Consumption and Carbon Emissions"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.7.1",
-              "/S": "/GoTo"
-            },
-            "title": "Pre-trained Language Model"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.1",
-                  "/S": "/GoTo"
-                },
-                "title": "General Knowledge and Instruction Following"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Function (Tool) Calling"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Cybersecurity"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.4",
-                  "/S": "/GoTo"
-                },
-                "title": "Retrieval Augmented Generation"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.5",
-                  "/S": "/GoTo"
-                },
-                "title": "Safety"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.7.2",
-              "/S": "/GoTo"
-            },
-            "title": "Post-trained Language Model"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.7",
-          "/S": "/GoTo"
-        },
         "title": "Evaluation"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "section.8",
-          "/S": "/GoTo"
-        },
         "title": "Socio-Technical Harms and Risks"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "section.9",
-          "/S": "/GoTo"
-        },
         "title": "Conclusion"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "appendix.A",
-          "/S": "/GoTo"
-        },
         "title": "Contributions and Acknowledgements"
       },
       {
-        "children": [
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Web"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Code"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Domain"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.4",
-                  "/S": "/GoTo"
-                },
-                "title": "Multilingual"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.5",
-                  "/S": "/GoTo"
-                },
-                "title": "Instructions"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.6",
-                  "/S": "/GoTo"
-                },
-                "title": "Academic"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.7",
-                  "/S": "/GoTo"
-                },
-                "title": "Technical"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.8",
-                  "/S": "/GoTo"
-                },
-                "title": "Math"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.B.1",
-              "/S": "/GoTo"
-            },
-            "title": "Pre-training Data"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.1",
-                  "/S": "/GoTo"
-                },
-                "title": "General English"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Multilingual"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Code"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.4",
-                  "/S": "/GoTo"
-                },
-                "title": "Math"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.5",
-                  "/S": "/GoTo"
-                },
-                "title": "Tools"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.6",
-                  "/S": "/GoTo"
-                },
-                "title": "Safety"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.B.2",
-              "/S": "/GoTo"
-            },
-            "title": "Post-training Data"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.3.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Multi-aspect Reward Model"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.3.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Bradley Terry Reward Model"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.B.3",
-              "/S": "/GoTo"
-            },
-            "title": "Reward Model(s) Training Data"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "appendix.B",
-          "/S": "/GoTo"
-        },
         "title": "Data"
       }
     ]
@@ -16825,173 +16403,19 @@
             [
               132.159,
               640.011,
-              137.698,
+              277.441,
               648.918,
               132.159,
               640.011,
-              137.698,
-              640.011,
-              137.698,
-              648.918,
+              277.441,
+              640.441,
+              277.441,
+              647.567,
               132.159,
               648.918,
-              "P",
+              "PRE-TRAINED LANGUAGE MODEL",
               -1,
               2.491,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              138.197,
-              640.441,
-              148.877,
-              647.567,
-              138.197,
-              640.441,
-              148.877,
-              640.441,
-              148.877,
-              647.567,
-              138.197,
-              647.567,
-              "RE",
-              -1,
-              1.993,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              149.365,
-              640.011,
-              152.683,
-              648.918,
-              149.365,
-              640.011,
-              152.683,
-              640.011,
-              152.683,
-              648.918,
-              149.365,
-              648.918,
-              "-",
-              -1,
-              2.491,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              153.18,
-              640.441,
-              191.102,
-              647.567,
-              153.18,
-              640.441,
-              191.102,
-              640.441,
-              191.102,
-              647.567,
-              153.18,
-              647.567,
-              "TRAINED",
-              -1,
-              1.993,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              194.086,
-              640.011,
-              200.173,
-              648.918,
-              194.086,
-              640.011,
-              200.173,
-              640.011,
-              200.173,
-              648.918,
-              194.086,
-              648.918,
-              "L",
-              -1,
-              2.491,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              200.671,
-              640.441,
-              242.387,
-              647.567,
-              200.671,
-              640.441,
-              242.387,
-              640.441,
-              242.387,
-              647.567,
-              200.671,
-              647.567,
-              "ANGUAGE",
-              -1,
-              1.993,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              245.363,
-              640.011,
-              254.22,
-              648.918,
-              245.363,
-              640.011,
-              254.22,
-              640.011,
-              254.22,
-              648.918,
-              245.363,
-              648.918,
-              "M",
-              -1,
-              2.491,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              254.718,
-              640.441,
-              277.441,
-              647.567,
-              254.718,
-              640.441,
-              277.441,
-              640.441,
-              277.441,
-              647.567,
-              254.718,
-              647.567,
-              "ODEL",
-              -1,
-              1.993,
               "",
               "STANDARD",
               "/F81",
@@ -21203,41 +20627,19 @@
             [
               107.691,
               244.286,
-              139.702,
+              504.676,
               253.193,
               107.691,
               244.286,
-              139.702,
-              244.286,
-              139.702,
-              253.193,
+              504.676,
+              244.501,
+              504.676,
+              252.517,
               107.691,
               253.193,
-              "Table 8:",
+              "Table 8: Base version performance for Granite-3.0 dense and baseline models. The Open LLM Leaderboard 1",
               -1,
               2.481,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              142.793,
-              244.501,
-              504.676,
-              252.517,
-              142.793,
-              244.501,
-              504.676,
-              244.501,
-              504.676,
-              252.517,
-              142.793,
-              252.517,
-              "Base version performance for Granite-3.0 dense and baseline models. The Open LLM Leaderboard 1",
-              -1,
-              2.233,
               "",
               "STANDARD",
               "/F81",
@@ -23476,42 +22878,42 @@
         ]
       },
       "timings": {
-        "decode_annots": 4.3e-05,
-        "decode_contents": 0.002118,
+        "decode_annots": 4.4e-05,
+        "decode_contents": 0.002182,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004768,
-        "decode_resources": 0.001201,
-        "sanitise_contents": 8.8e-05
+        "decode_page": 0.005004,
+        "decode_resources": 0.001273,
+        "sanitise_contents": 9.7e-05
       }
     }
   ],
   "timings": {
-    "decode_annots": 4.3e-05,
-    "decode_contents": 0.002118,
+    "decode_annots": 4.4e-05,
+    "decode_contents": 0.002182,
     "decode_dimensions": 0.0,
-    "decode_document": 0.005564,
-    "decode_page": 0.004768,
-    "decode_resources": 0.001201,
-    "decoding page 0": 0.006448,
-    "decoding page 1": 0.008139,
-    "decoding page 10": 0.005371,
-    "decoding page 11": 0.027868,
-    "decoding page 12": 0.004511,
-    "decoding page 13": 0.005446,
-    "decoding page 14": 0.004722,
-    "decoding page 15": 0.006083,
-    "decoding page 16": 0.003611,
-    "decoding page 17": 0.004554,
-    "decoding page 18": 0.005126,
-    "decoding page 2": 0.004564,
-    "decoding page 3": 0.005599,
-    "decoding page 4": 0.004836,
-    "decoding page 5": 0.003679,
-    "decoding page 6": 0.004071,
-    "decoding page 7": 0.003404,
-    "decoding page 8": 0.003159,
-    "decoding page 9": 0.008566,
-    "process_document_from_bytesio": 0.001298,
-    "sanitise_contents": 8.8e-05
+    "decode_document": 0.005776,
+    "decode_page": 0.005004,
+    "decode_resources": 0.001273,
+    "decoding page 0": 0.006932,
+    "decoding page 1": 0.007934,
+    "decoding page 10": 0.005172,
+    "decoding page 11": 0.028432,
+    "decoding page 12": 0.004454,
+    "decoding page 13": 0.005281,
+    "decoding page 14": 0.00449,
+    "decoding page 15": 0.005972,
+    "decoding page 16": 0.003565,
+    "decoding page 17": 0.00441,
+    "decoding page 18": 0.005349,
+    "decoding page 2": 0.003965,
+    "decoding page 3": 0.005438,
+    "decoding page 4": 0.004585,
+    "decoding page 5": 0.003802,
+    "decoding page 6": 0.004033,
+    "decoding page 7": 0.003303,
+    "decoding page 8": 0.003121,
+    "decoding page 9": 0.008689,
+    "process_document_from_bytesio": 0.000693,
+    "sanitise_contents": 9.7e-05
   }
 }

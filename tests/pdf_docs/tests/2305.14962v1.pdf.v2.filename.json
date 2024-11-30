@@ -6,10 +6,6 @@
     "table_of_contents": [
       {
         "level": 0,
-        "link": {
-          "/D": "chapter.1",
-          "/S": "/GoTo"
-        },
         "title": "ICDAR 2023 Competition on Robust Layout Segmentation in Corporate Documents"
       }
     ]
@@ -15471,12 +15467,12 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 1.1e-05,
-        "decode_contents": 0.001183,
+        "decode_annots": 7e-06,
+        "decode_contents": 0.001123,
         "decode_dimensions": 1e-06,
-        "decode_page": 0.009075,
-        "decode_resources": 0.006711,
-        "sanitise_contents": 3.9e-05
+        "decode_page": 0.008499,
+        "decode_resources": 0.006252,
+        "sanitise_contents": 4e-05
       }
     },
     {
@@ -27859,12 +27855,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 1e-05,
-        "decode_contents": 0.004658,
+        "decode_annots": 9e-06,
+        "decode_contents": 0.004521,
         "decode_dimensions": 0.0,
-        "decode_page": 0.009051,
-        "decode_resources": 0.003442,
-        "sanitise_contents": 4.3e-05
+        "decode_page": 0.008514,
+        "decode_resources": 0.003211,
+        "sanitise_contents": 3.5e-05
       }
     },
     {
@@ -38011,12 +38007,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 3e-06,
-        "decode_contents": 0.00076,
-        "decode_dimensions": 1e-06,
-        "decode_page": 0.004764,
-        "decode_resources": 0.003198,
-        "sanitise_contents": 2.8e-05
+        "decode_annots": 2e-06,
+        "decode_contents": 0.000846,
+        "decode_dimensions": 0.0,
+        "decode_page": 0.004339,
+        "decode_resources": 0.002827,
+        "sanitise_contents": 2.5e-05
       }
     },
     {
@@ -51038,11 +51034,11 @@
       },
       "timings": {
         "decode_annots": 2e-06,
-        "decode_contents": 0.00151,
+        "decode_contents": 0.001573,
         "decode_dimensions": 0.0,
-        "decode_page": 0.00478,
-        "decode_resources": 0.002641,
-        "sanitise_contents": 3e-05
+        "decode_page": 0.004656,
+        "decode_resources": 0.002516,
+        "sanitise_contents": 2.8e-05
       }
     },
     {
@@ -66840,12 +66836,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 9e-06,
-        "decode_contents": 0.000924,
+        "decode_annots": 1.2e-05,
+        "decode_contents": 0.000909,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004961,
-        "decode_resources": 0.003136,
-        "sanitise_contents": 6.3e-05
+        "decode_page": 0.004905,
+        "decode_resources": 0.00321,
+        "sanitise_contents": 5.2e-05
       }
     },
     {
@@ -82743,12 +82739,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 2e-06,
-        "decode_contents": 0.001549,
-        "decode_dimensions": 0.0,
-        "decode_page": 0.006486,
-        "decode_resources": 0.003934,
-        "sanitise_contents": 4.2e-05
+        "decode_annots": 1e-06,
+        "decode_contents": 0.001436,
+        "decode_dimensions": 1e-06,
+        "decode_page": 0.006046,
+        "decode_resources": 0.003421,
+        "sanitise_contents": 3.5e-05
       }
     },
     {
@@ -102345,12 +102341,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 4e-06,
-        "decode_contents": 0.004107,
+        "decode_annots": 3e-06,
+        "decode_contents": 0.006768,
         "decode_dimensions": 0.0,
-        "decode_page": 0.007543,
-        "decode_resources": 0.002643,
-        "sanitise_contents": 5.9e-05
+        "decode_page": 0.009707,
+        "decode_resources": 0.002361,
+        "sanitise_contents": 3.9e-05
       }
     },
     {
@@ -117606,12 +117602,12 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 1.4e-05,
-        "decode_contents": 0.000979,
-        "decode_dimensions": 6e-06,
-        "decode_page": 0.003835,
-        "decode_resources": 0.002031,
-        "sanitise_contents": 6.9e-05
+        "decode_annots": 1.3e-05,
+        "decode_contents": 0.000726,
+        "decode_dimensions": 0.0,
+        "decode_page": 0.003076,
+        "decode_resources": 0.001662,
+        "sanitise_contents": 4.8e-05
       }
     },
     {
@@ -130743,12 +130739,12 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 9e-06,
-        "decode_contents": 0.000727,
+        "decode_annots": 8e-06,
+        "decode_contents": 0.000685,
         "decode_dimensions": 0.0,
-        "decode_page": 0.003597,
-        "decode_resources": 0.002161,
-        "sanitise_contents": 3.7e-05
+        "decode_page": 0.003355,
+        "decode_resources": 0.002018,
+        "sanitise_contents": 3.2e-05
       }
     },
     {
@@ -146237,12 +146233,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 7e-06,
-        "decode_contents": 0.000942,
+        "decode_annots": 6e-06,
+        "decode_contents": 0.000827,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004828,
-        "decode_resources": 0.003082,
-        "sanitise_contents": 5.4e-05
+        "decode_page": 0.004412,
+        "decode_resources": 0.002841,
+        "sanitise_contents": 4.3e-05
       }
     },
     {
@@ -164843,12 +164839,12 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 2.3e-05,
-        "decode_contents": 0.001112,
+        "decode_annots": 2.1e-05,
+        "decode_contents": 0.001139,
         "decode_dimensions": 0.0,
-        "decode_page": 0.003278,
-        "decode_resources": 0.001336,
-        "sanitise_contents": 5.8e-05
+        "decode_page": 0.003233,
+        "decode_resources": 0.001282,
+        "sanitise_contents": 4.7e-05
       }
     },
     {
@@ -174051,35 +174047,35 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 1e-05,
-        "decode_contents": 0.00051,
+        "decode_annots": 9e-06,
+        "decode_contents": 0.000491,
         "decode_dimensions": 0.0,
-        "decode_page": 0.002045,
-        "decode_resources": 0.001072,
-        "sanitise_contents": 2.8e-05
+        "decode_page": 0.001856,
+        "decode_resources": 0.000935,
+        "sanitise_contents": 2.4e-05
       }
     }
   ],
   "timings": {
-    "decode_annots": 0.00010400000000000001,
-    "decode_contents": 0.018960999999999995,
-    "decode_dimensions": 8e-06,
-    "decode_document": 0.071357,
-    "decode_page": 0.06424300000000001,
-    "decode_resources": 0.03538699999999999,
-    "decoding page 0": 0.009379,
-    "decoding page 1": 0.009266,
-    "decoding page 10": 0.00365,
-    "decoding page 11": 0.00227,
-    "decoding page 2": 0.004958,
-    "decoding page 3": 0.004987,
-    "decoding page 4": 0.005253,
-    "decoding page 5": 0.006785,
-    "decoding page 6": 0.008031,
-    "decoding page 7": 0.004133,
-    "decoding page 8": 0.003843,
-    "decoding page 9": 0.005142,
-    "process_document_from_file": 0.001231,
-    "sanitise_contents": 0.00055
+    "decode_annots": 9.3e-05,
+    "decode_contents": 0.021044,
+    "decode_dimensions": 2e-06,
+    "decode_document": 0.067919,
+    "decode_page": 0.062598,
+    "decode_resources": 0.032535999999999995,
+    "decoding page 0": 0.008809,
+    "decoding page 1": 0.008718,
+    "decoding page 10": 0.003592,
+    "decoding page 11": 0.002031,
+    "decoding page 2": 0.004516,
+    "decoding page 3": 0.004845,
+    "decoding page 4": 0.005354,
+    "decoding page 5": 0.006327,
+    "decoding page 6": 0.009999,
+    "decoding page 7": 0.00335,
+    "decoding page 8": 0.003605,
+    "decoding page 9": 0.004733,
+    "process_document_from_file": 0.001088,
+    "sanitise_contents": 0.000448
   }
 }

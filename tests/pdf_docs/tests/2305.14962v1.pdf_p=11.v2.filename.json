@@ -6,10 +6,6 @@
     "table_of_contents": [
       {
         "level": 0,
-        "link": {
-          "/D": "chapter.1",
-          "/S": "/GoTo"
-        },
         "title": "ICDAR 2023 Competition on Robust Layout Segmentation in Corporate Documents"
       }
     ]
@@ -9219,35 +9215,35 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 1e-05,
-        "decode_contents": 0.000443,
+        "decode_annots": 9e-06,
+        "decode_contents": 0.000451,
         "decode_dimensions": 0.0,
-        "decode_page": 0.001722,
-        "decode_resources": 0.000863,
-        "sanitise_contents": 2.5e-05
+        "decode_page": 0.001841,
+        "decode_resources": 0.00096,
+        "sanitise_contents": 2.6e-05
       }
     }
   ],
   "timings": {
-    "decode_annots": 1e-05,
-    "decode_contents": 0.000443,
+    "decode_annots": 9e-06,
+    "decode_contents": 0.000451,
     "decode_dimensions": 0.0,
-    "decode_document": 0.002234,
-    "decode_page": 0.001722,
-    "decode_resources": 0.000863,
-    "decoding page 0": 0.005907,
-    "decoding page 1": 0.00802,
-    "decoding page 10": 0.003243,
-    "decoding page 11": 0.001875,
-    "decoding page 2": 0.004418,
-    "decoding page 3": 0.004592,
-    "decoding page 4": 0.004499,
-    "decoding page 5": 0.005498,
-    "decoding page 6": 0.006014,
-    "decoding page 7": 0.003322,
-    "decoding page 8": 0.003529,
-    "decoding page 9": 0.00443,
-    "process_document_from_file": 0.001035,
-    "sanitise_contents": 2.5e-05
+    "decode_document": 0.002333,
+    "decode_page": 0.001841,
+    "decode_resources": 0.00096,
+    "decoding page 0": 0.006063,
+    "decoding page 1": 0.008506,
+    "decoding page 10": 0.003439,
+    "decoding page 11": 0.001984,
+    "decoding page 2": 0.004577,
+    "decoding page 3": 0.00477,
+    "decoding page 4": 0.004486,
+    "decoding page 5": 0.005837,
+    "decoding page 6": 0.009601,
+    "decoding page 7": 0.003269,
+    "decoding page 8": 0.003503,
+    "decoding page 9": 0.004513,
+    "process_document_from_file": 0.001045,
+    "sanitise_contents": 2.6e-05
   }
 }

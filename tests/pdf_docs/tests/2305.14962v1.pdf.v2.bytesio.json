@@ -6,10 +6,6 @@
     "table_of_contents": [
       {
         "level": 0,
-        "link": {
-          "/D": "chapter.1",
-          "/S": "/GoTo"
-        },
         "title": "ICDAR 2023 Competition on Robust Layout Segmentation in Corporate Documents"
       }
     ]
@@ -15471,11 +15467,11 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 6e-06,
-        "decode_contents": 0.001078,
+        "decode_annots": 7e-06,
+        "decode_contents": 0.00112,
         "decode_dimensions": 0.0,
-        "decode_page": 0.005463,
-        "decode_resources": 0.003494,
+        "decode_page": 0.005778,
+        "decode_resources": 0.003748,
         "sanitise_contents": 3.9e-05
       }
     },
@@ -27859,12 +27855,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 8e-06,
-        "decode_contents": 0.00401,
+        "decode_annots": 9e-06,
+        "decode_contents": 0.004635,
         "decode_dimensions": 0.0,
-        "decode_page": 0.007601,
-        "decode_resources": 0.002909,
-        "sanitise_contents": 2.9e-05
+        "decode_page": 0.008363,
+        "decode_resources": 0.003021,
+        "sanitise_contents": 3.1e-05
       }
     },
     {
@@ -38011,12 +38007,12 @@
         ]
       },
       "timings": {
-        "decode_annots": 2e-06,
-        "decode_contents": 0.000678,
+        "decode_annots": 3e-06,
+        "decode_contents": 0.000921,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004103,
-        "decode_resources": 0.002783,
-        "sanitise_contents": 2.9e-05
+        "decode_page": 0.004817,
+        "decode_resources": 0.003217,
+        "sanitise_contents": 2.7e-05
       }
     },
     {
@@ -51038,11 +51034,11 @@
       },
       "timings": {
         "decode_annots": 2e-06,
-        "decode_contents": 0.001363,
+        "decode_contents": 0.001591,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004359,
-        "decode_resources": 0.002441,
-        "sanitise_contents": 2.7e-05
+        "decode_page": 0.004688,
+        "decode_resources": 0.002524,
+        "sanitise_contents": 2.9e-05
       }
     },
     {
@@ -66841,11 +66837,11 @@
       },
       "timings": {
         "decode_annots": 7e-06,
-        "decode_contents": 0.000778,
+        "decode_contents": 0.000763,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004186,
-        "decode_resources": 0.002697,
-        "sanitise_contents": 4.9e-05
+        "decode_page": 0.004235,
+        "decode_resources": 0.002747,
+        "sanitise_contents": 4.1e-05
       }
     },
     {
@@ -82744,11 +82740,11 @@
       },
       "timings": {
         "decode_annots": 1e-06,
-        "decode_contents": 0.001143,
+        "decode_contents": 0.001252,
         "decode_dimensions": 0.0,
-        "decode_page": 0.005226,
-        "decode_resources": 0.003254,
-        "sanitise_contents": 3.6e-05
+        "decode_page": 0.005425,
+        "decode_resources": 0.003324,
+        "sanitise_contents": 3.5e-05
       }
     },
     {
@@ -102346,11 +102342,11 @@
       },
       "timings": {
         "decode_annots": 2e-06,
-        "decode_contents": 0.002926,
+        "decode_contents": 0.006725,
         "decode_dimensions": 0.0,
-        "decode_page": 0.005705,
-        "decode_resources": 0.002254,
-        "sanitise_contents": 3.7e-05
+        "decode_page": 0.009563,
+        "decode_resources": 0.002288,
+        "sanitise_contents": 3.9e-05
       }
     },
     {
@@ -117606,12 +117602,12 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 1.3e-05,
-        "decode_contents": 0.000747,
+        "decode_annots": 1.2e-05,
+        "decode_contents": 0.000719,
         "decode_dimensions": 0.0,
-        "decode_page": 0.00297,
-        "decode_resources": 0.001618,
-        "sanitise_contents": 4.2e-05
+        "decode_page": 0.002972,
+        "decode_resources": 0.001632,
+        "sanitise_contents": 3.7e-05
       }
     },
     {
@@ -130744,11 +130740,11 @@
       },
       "timings": {
         "decode_annots": 9e-06,
-        "decode_contents": 0.000636,
+        "decode_contents": 0.000666,
         "decode_dimensions": 0.0,
-        "decode_page": 0.003188,
-        "decode_resources": 0.001972,
-        "sanitise_contents": 3.1e-05
+        "decode_page": 0.003298,
+        "decode_resources": 0.002032,
+        "sanitise_contents": 3.2e-05
       }
     },
     {
@@ -146238,11 +146234,11 @@
       },
       "timings": {
         "decode_annots": 6e-06,
-        "decode_contents": 0.00079,
+        "decode_contents": 0.0008,
         "decode_dimensions": 0.0,
-        "decode_page": 0.004191,
-        "decode_resources": 0.00272,
-        "sanitise_contents": 4.4e-05
+        "decode_page": 0.004321,
+        "decode_resources": 0.002835,
+        "sanitise_contents": 3.9e-05
       }
     },
     {
@@ -164843,12 +164839,12 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 2.2e-05,
-        "decode_contents": 0.001012,
+        "decode_annots": 2.1e-05,
+        "decode_contents": 0.001062,
         "decode_dimensions": 0.0,
-        "decode_page": 0.002936,
-        "decode_resources": 0.001236,
-        "sanitise_contents": 4.6e-05
+        "decode_page": 0.003068,
+        "decode_resources": 0.001294,
+        "sanitise_contents": 4.7e-05
       }
     },
     {
@@ -174051,35 +174047,35 @@
         "lines": []
       },
       "timings": {
-        "decode_annots": 1e-05,
-        "decode_contents": 0.000477,
+        "decode_annots": 9e-06,
+        "decode_contents": 0.000492,
         "decode_dimensions": 0.0,
-        "decode_page": 0.001714,
-        "decode_resources": 0.000856,
-        "sanitise_contents": 2.6e-05
+        "decode_page": 0.001743,
+        "decode_resources": 0.000861,
+        "sanitise_contents": 2.1e-05
       }
     }
   ],
   "timings": {
     "decode_annots": 8.8e-05,
-    "decode_contents": 0.015638,
+    "decode_contents": 0.020746,
     "decode_dimensions": 0.0,
-    "decode_document": 0.056454,
-    "decode_page": 0.05164199999999999,
-    "decode_resources": 0.028234,
-    "decoding page 0": 0.005721,
-    "decoding page 1": 0.007791,
-    "decoding page 10": 0.003272,
-    "decoding page 11": 0.001881,
-    "decoding page 2": 0.004272,
-    "decoding page 3": 0.004542,
-    "decoding page 4": 0.004465,
-    "decoding page 5": 0.005499,
-    "decoding page 6": 0.005995,
-    "decoding page 7": 0.003237,
-    "decoding page 8": 0.00342,
-    "decoding page 9": 0.004468,
-    "process_document_from_bytesio": 0.000111,
-    "sanitise_contents": 0.00043499999999999995
+    "decode_document": 0.063084,
+    "decode_page": 0.05827100000000001,
+    "decode_resources": 0.029523,
+    "decoding page 0": 0.006055,
+    "decoding page 1": 0.008552,
+    "decoding page 10": 0.003423,
+    "decoding page 11": 0.001923,
+    "decoding page 2": 0.004984,
+    "decoding page 3": 0.00486,
+    "decoding page 4": 0.004497,
+    "decoding page 5": 0.00569,
+    "decoding page 6": 0.009829,
+    "decoding page 7": 0.003267,
+    "decoding page 8": 0.003554,
+    "decoding page 9": 0.004616,
+    "process_document_from_bytesio": 0.000121,
+    "sanitise_contents": 0.00041700000000000005
   }
 }

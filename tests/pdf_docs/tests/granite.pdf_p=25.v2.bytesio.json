@@ -6,468 +6,46 @@
     "table_of_contents": [
       {
         "level": 0,
-        "link": {
-          "/D": "section.1",
-          "/S": "/GoTo"
-        },
         "title": "Introduction"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.2.1",
-              "/S": "/GoTo"
-            },
-            "title": "Dense Models"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.2.2",
-              "/S": "/GoTo"
-            },
-            "title": "Mixture-of-Expert models"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.2",
-          "/S": "/GoTo"
-        },
         "title": "Model Architecture"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.3.1",
-              "/S": "/GoTo"
-            },
-            "title": "Curated Web Data"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.3.2",
-              "/S": "/GoTo"
-            },
-            "title": "Synthetic Data"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.3",
-          "/S": "/GoTo"
-        },
         "title": "Training Data"
       },
       {
-        "children": [
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.4.1.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Stage 1 Data Mixture"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.4.1.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Stage 2 Data Mixture"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.4.1",
-              "/S": "/GoTo"
-            },
-            "title": "Data Mixture"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.4.2",
-              "/S": "/GoTo"
-            },
-            "title": "Training Hyperparameters"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.4.3",
-              "/S": "/GoTo"
-            },
-            "title": "Model Parallelism"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.4",
-          "/S": "/GoTo"
-        },
         "title": "Pre-training"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.1",
-              "/S": "/GoTo"
-            },
-            "title": "Structured Chat Template"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.2.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Data Mixture"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.2.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Hyperparameter Search"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.2",
-              "/S": "/GoTo"
-            },
-            "title": "Supervised Finetuning"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.3.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Alignment Data"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.3.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Alignment Techniques"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.5.3.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Reward Models"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.3",
-              "/S": "/GoTo"
-            },
-            "title": "Model Alignment"
-          },
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.5.4",
-              "/S": "/GoTo"
-            },
-            "title": "Model Merging"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.5",
-          "/S": "/GoTo"
-        },
         "title": "Post-training"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "section.6",
-          "/S": "/GoTo"
-        },
         "title": "Infrastructure, Energy Consumption and Carbon Emissions"
       },
       {
-        "children": [
-          {
-            "level": 1,
-            "link": {
-              "/D": "subsection.7.1",
-              "/S": "/GoTo"
-            },
-            "title": "Pre-trained Language Model"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.1",
-                  "/S": "/GoTo"
-                },
-                "title": "General Knowledge and Instruction Following"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Function (Tool) Calling"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Cybersecurity"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.4",
-                  "/S": "/GoTo"
-                },
-                "title": "Retrieval Augmented Generation"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.7.2.5",
-                  "/S": "/GoTo"
-                },
-                "title": "Safety"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.7.2",
-              "/S": "/GoTo"
-            },
-            "title": "Post-trained Language Model"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "section.7",
-          "/S": "/GoTo"
-        },
         "title": "Evaluation"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "section.8",
-          "/S": "/GoTo"
-        },
         "title": "Socio-Technical Harms and Risks"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "section.9",
-          "/S": "/GoTo"
-        },
         "title": "Conclusion"
       },
       {
         "level": 0,
-        "link": {
-          "/D": "appendix.A",
-          "/S": "/GoTo"
-        },
         "title": "Contributions and Acknowledgements"
       },
       {
-        "children": [
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Web"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Code"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Domain"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.4",
-                  "/S": "/GoTo"
-                },
-                "title": "Multilingual"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.5",
-                  "/S": "/GoTo"
-                },
-                "title": "Instructions"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.6",
-                  "/S": "/GoTo"
-                },
-                "title": "Academic"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.7",
-                  "/S": "/GoTo"
-                },
-                "title": "Technical"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.1.8",
-                  "/S": "/GoTo"
-                },
-                "title": "Math"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.B.1",
-              "/S": "/GoTo"
-            },
-            "title": "Pre-training Data"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.1",
-                  "/S": "/GoTo"
-                },
-                "title": "General English"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Multilingual"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.3",
-                  "/S": "/GoTo"
-                },
-                "title": "Code"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.4",
-                  "/S": "/GoTo"
-                },
-                "title": "Math"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.5",
-                  "/S": "/GoTo"
-                },
-                "title": "Tools"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.2.6",
-                  "/S": "/GoTo"
-                },
-                "title": "Safety"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.B.2",
-              "/S": "/GoTo"
-            },
-            "title": "Post-training Data"
-          },
-          {
-            "children": [
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.3.1",
-                  "/S": "/GoTo"
-                },
-                "title": "Multi-aspect Reward Model"
-              },
-              {
-                "level": 2,
-                "link": {
-                  "/D": "subsubsection.B.3.2",
-                  "/S": "/GoTo"
-                },
-                "title": "Bradley Terry Reward Model"
-              }
-            ],
-            "level": 1,
-            "link": {
-              "/D": "subsection.B.3",
-              "/S": "/GoTo"
-            },
-            "title": "Reward Model(s) Training Data"
-          }
-        ],
         "level": 0,
-        "link": {
-          "/D": "appendix.B",
-          "/S": "/GoTo"
-        },
         "title": "Data"
       }
     ]
@@ -9848,41 +9426,19 @@
             [
               108.0,
               208.079,
-              145.457,
+              503.999,
               216.986,
               108.0,
               208.079,
-              145.457,
-              208.079,
-              145.457,
-              216.986,
+              503.999,
+              208.294,
+              503.999,
+              216.31,
               108.0,
               216.986,
-              "Figure 7:",
+              "Figure 7: Comparison of the harmlessness scores of different models across various harm types on AttaQ",
               -1,
               2.54,
-              "",
-              "STANDARD",
-              "/F81",
-              "/LHCPKS+NimbusRomNo9L-Regu",
-              false
-            ],
-            [
-              149.602,
-              208.294,
-              503.999,
-              216.31,
-              149.602,
-              208.294,
-              503.999,
-              208.294,
-              503.999,
-              216.31,
-              149.602,
-              216.31,
-              "Comparison of the harmlessness scores of different models across various harm types on AttaQ",
-              -1,
-              2.286,
               "",
               "STANDARD",
               "/F81",
@@ -10237,48 +9793,48 @@
       },
       "timings": {
         "decode_annots": 1.2e-05,
-        "decode_contents": 0.000604,
+        "decode_contents": 0.000584,
         "decode_dimensions": 0.0,
-        "decode_page": 0.002155,
-        "decode_resources": 0.00107,
-        "sanitise_contents": 5.1e-05
+        "decode_page": 0.002121,
+        "decode_resources": 0.001072,
+        "sanitise_contents": 4.6e-05
       }
     }
   ],
   "timings": {
     "decode_annots": 1.2e-05,
-    "decode_contents": 0.000604,
+    "decode_contents": 0.000584,
     "decode_dimensions": 0.0,
-    "decode_document": 0.002835,
-    "decode_page": 0.002155,
-    "decode_resources": 0.00107,
-    "decoding page 0": 0.006448,
-    "decoding page 1": 0.008139,
-    "decoding page 10": 0.005371,
-    "decoding page 11": 0.027868,
-    "decoding page 12": 0.004511,
-    "decoding page 13": 0.005446,
-    "decoding page 14": 0.004722,
-    "decoding page 15": 0.006083,
-    "decoding page 16": 0.003611,
-    "decoding page 17": 0.004554,
-    "decoding page 18": 0.005126,
-    "decoding page 19": 0.00413,
-    "decoding page 2": 0.004564,
-    "decoding page 20": 0.005679,
-    "decoding page 21": 0.004486,
-    "decoding page 22": 0.004793,
-    "decoding page 23": 0.00448,
-    "decoding page 24": 0.005299,
-    "decoding page 25": 0.00233,
-    "decoding page 3": 0.005599,
-    "decoding page 4": 0.004836,
-    "decoding page 5": 0.003679,
-    "decoding page 6": 0.004071,
-    "decoding page 7": 0.003404,
-    "decoding page 8": 0.003159,
-    "decoding page 9": 0.008566,
-    "process_document_from_bytesio": 0.001298,
-    "sanitise_contents": 5.1e-05
+    "decode_document": 0.002775,
+    "decode_page": 0.002121,
+    "decode_resources": 0.001072,
+    "decoding page 0": 0.006932,
+    "decoding page 1": 0.007934,
+    "decoding page 10": 0.005172,
+    "decoding page 11": 0.028432,
+    "decoding page 12": 0.004454,
+    "decoding page 13": 0.005281,
+    "decoding page 14": 0.00449,
+    "decoding page 15": 0.005972,
+    "decoding page 16": 0.003565,
+    "decoding page 17": 0.00441,
+    "decoding page 18": 0.005349,
+    "decoding page 19": 0.004172,
+    "decoding page 2": 0.003965,
+    "decoding page 20": 0.004909,
+    "decoding page 21": 0.004252,
+    "decoding page 22": 0.004656,
+    "decoding page 23": 0.004339,
+    "decoding page 24": 0.005118,
+    "decoding page 25": 0.002281,
+    "decoding page 3": 0.005438,
+    "decoding page 4": 0.004585,
+    "decoding page 5": 0.003802,
+    "decoding page 6": 0.004033,
+    "decoding page 7": 0.003303,
+    "decoding page 8": 0.003121,
+    "decoding page 9": 0.008689,
+    "process_document_from_bytesio": 0.000693,
+    "sanitise_contents": 4.6e-05
   }
 }

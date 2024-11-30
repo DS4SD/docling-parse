@@ -6,10 +6,6 @@
     "table_of_contents": [
       {
         "level": 0,
-        "link": {
-          "/D": "chapter.1",
-          "/S": "/GoTo"
-        },
         "title": "ICDAR 2023 Competition on Robust Layout Segmentation in Corporate Documents"
       }
     ]
@@ -15273,30 +15269,30 @@
       },
       "timings": {
         "decode_annots": 1.3e-05,
-        "decode_contents": 0.000746,
+        "decode_contents": 0.000724,
         "decode_dimensions": 0.0,
-        "decode_page": 0.003104,
-        "decode_resources": 0.001729,
-        "sanitise_contents": 3.8e-05
+        "decode_page": 0.003032,
+        "decode_resources": 0.001685,
+        "sanitise_contents": 4.8e-05
       }
     }
   ],
   "timings": {
     "decode_annots": 1.3e-05,
-    "decode_contents": 0.000746,
+    "decode_contents": 0.000724,
     "decode_dimensions": 0.0,
-    "decode_document": 0.00376,
-    "decode_page": 0.003104,
-    "decode_resources": 0.001729,
-    "decoding page 0": 0.006043,
-    "decoding page 1": 0.008136,
-    "decoding page 2": 0.004271,
-    "decoding page 3": 0.00459,
-    "decoding page 4": 0.004503,
-    "decoding page 5": 0.005518,
-    "decoding page 6": 0.006264,
-    "decoding page 7": 0.003361,
-    "process_document_from_bytesio": 0.000118,
-    "sanitise_contents": 3.8e-05
+    "decode_document": 0.003723,
+    "decode_page": 0.003032,
+    "decode_resources": 0.001685,
+    "decoding page 0": 0.005733,
+    "decoding page 1": 0.008463,
+    "decoding page 2": 0.005192,
+    "decoding page 3": 0.004967,
+    "decoding page 4": 0.004502,
+    "decoding page 5": 0.00561,
+    "decoding page 6": 0.009682,
+    "decoding page 7": 0.003275,
+    "process_document_from_bytesio": 0.000115,
+    "sanitise_contents": 4.8e-05
   }
 }

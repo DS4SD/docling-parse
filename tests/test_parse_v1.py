@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-GENERATE = True
+GENERATE = False
 
 import io
 import os
