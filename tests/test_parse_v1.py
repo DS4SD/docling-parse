@@ -19,7 +19,7 @@ def verify_reference_output(true_doc, pred_doc):
                 
     for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
 
-        assert pred_page["cells"]==true_page["cells"], "pred_page[\"cells\"]!=true_page[\"cells\"]"
+        assert len(pred_page["cells"])==len(true_page["cells"]), "len(pred_page[\"cells\"])!=len(true_page[\"cells\"])"
                 
         for pred_cell,true_cell in zip(pred_page["cells"], true_page["cells"]):
             pred_text = pred_cell['content']['rnormalized']

@@ -192,6 +192,7 @@ namespace pdflib
   void pdf_sanitator<PAGE_DIMENSION>::transform(std::array<double, 2>& v,
 						std::array<double, 2>& r)
   {
+    /*
     std::array<double, 4>& b = media_bbox;
     std::array<double, 4>& B = crop_bbox;
 
@@ -203,6 +204,10 @@ namespace pdflib
 
     v[0] = (B[2]-B[0])*(v[0]+0.5);// + D[0];
     v[1] = (B[3]-B[1])*(v[1]+0.5);// + D[1];
+    */
+    
+    // FIXME    
+    //v = r;
   }
 
 }

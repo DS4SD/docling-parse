@@ -13,6 +13,7 @@ from typing import Dict, List
 
 import boto3
 import botocore
+from tabulate import tabulate
 
 from docling_parse import pdf_parser_v2
 
@@ -31,6 +32,8 @@ class FileTask:
 
 
 def parse_arguments():
+    """Parse arguments for directory parsing."""
+
     parser = argparse.ArgumentParser(
         description="Process S3 files using multithreading."
     )
@@ -45,11 +48,11 @@ def parse_arguments():
         default=False,
     )
     parser.add_argument(
-        "-t",
-        "--threads",
+        "-p",
+        "--page-level-parsing",
+        help="parse pdf-files page-by-page",
         required=False,
-        help="processing threads",
-        default=1,
+        default=True,
     )
 
     # Restrict log-level to specific values
@@ -65,7 +68,7 @@ def parse_arguments():
 
     args = parser.parse_args()
 
-    return args.directory, args.recursive, int(args.threads), args.loglevel
+    return args.directory, args.recursive, args.log_level, args.page_level_parsing
 
 
 def fetch_files_from_disk(directory, recursive, task_queue):
@@ -87,12 +90,14 @@ def fetch_files_from_disk(directory, recursive, task_queue):
     logging.info("Done with queue")
 
 
-def process_files_from_queue(file_queue, loglevel):
+def process_files_from_queue(file_queue: queue, page_level: bool, loglevel: str):
     """Process files from the queue."""
 
-    while True:
-        task = file_queue.get()
+    overview = []
 
+    while not file_queue.empty():
+
+        task = file_queue.get()
         if task is None:  # End of queue signal
             break
 
@@ -108,83 +113,62 @@ def process_files_from_queue(file_queue, loglevel):
             num_pages = parser.number_of_pages(task.file_hash)
             logging.info(f" => #-pages of {task.file_name}: {num_pages}")
 
-            json_doc = parser.parse_pdf_from_key(task.file_hash)
+            overview.append([str(task.file_name), num_pages, -1, True])
 
-            # with open(os.path.join(task.folder_name, f"{task.file_name}.json"), "w") as fw:
-            with open(f"{task.file_name}.json", "w") as fw:
-                fw.write(json.dumps(json_doc, indent=2))
-        except:
-            continue
-
-        """
-        try:
-            if success:
-
-                # Get number of pages
-                num_pages = parser.number_of_pages(task.file_hash)
-                logging.info(f" => #-pages of {task.file_name}: {num_pages}")
-                
+            if page_level:
                 # Parse page by page to minimize memory footprint
                 for page in range(0, num_pages):
-                    try:
-                        json_doc = parser.parse_pdf_from_key_on_page(task.file_hash, page)
+                    fname = f"{task.file_name}-page-{page:03}.json"
 
-                        with open(os.path.join(directory, f"{task.file_hash}-page-{page:03}.json"), "w") as fw:
+                    try:
+                        json_doc = parser.parse_pdf_from_key_on_page(
+                            task.file_hash, page
+                        )
+
+                        """
+                        with open(os.path.join(directory, fname), "w") as fw:
                             fw.write(json.dumps(json_doc, indent=2))
-                        
+                        """
+
+                        overview.append([fname, num_pages, page, True])
                     except:
-                        logging.error(f"problem with parsing {task.file_name} on page {page}")
+                        overview.append([fname, num_pages, page, False])
+                        logging.error(
+                            f"problem with parsing {task.file_name} on page {page}"
+                        )
             else:
-                logging.error(f"problem with loading {task.file_name}")
+
+                json_doc = parser.parse_pdf_from_key(task.file_hash)
+
+                """
+                # with open(os.path.join(task.folder_name, f"{task.file_name}.json"), "w") as fw:
+                with open(f"{task.file_name}.json", "w") as fw:
+                    fw.write(json.dumps(json_doc, indent=2))
+                """
+
+                overview.append([str(task.file_name), num_pages, -1, True])
 
             # Unload the (QPDF) document and buffers
             parser.unload_document(task.file_hash)
 
-        except:
-            logging.error(f"Error on file: {task}")
-        """
+        except exc:
+            logging.error(exc)
+            overview.append([str(task.file_name), -1, -1, False])
+
+    return overview
 
 
 def main():
 
-    directory, recursive, threads, loglevel = parse_arguments()
+    directory, recursive, loglevel, page_level_parsing = parse_arguments()
 
     task_queue = queue.Queue()
 
-    if threads == 1:
+    fetch_files_from_disk(directory, recursive, task_queue)
 
-        fetch_files_from_disk(directory, recursive, task_queue)
+    overview = process_files_from_queue(task_queue, page_level_parsing, loglevel)
 
-        process_files_from_queue(task_queue, loglevel)
-
-    """
-    # Create threads
-    fetch_thread = threading.Thread(
-        target=fetch_files_from_s3,
-        args=(
-            directory,
-            recursive
-            file_queue,
-        ),
-    )
-    process_threads = []
-
-    for i in range(0, threads):
-        process_threads.append(threading.Thread(
-            target=process_files_from_queue, args=(file_queue)
-        ))
-
-    # Start threads
-    fetch_thread.start()
-
-    for _ in process_threads:
-        _.start()
-
-    # Wait for threads to complete
-    fetch_thread.join()
-    for _ in process_threads:
-        _.join()
-    """
+    print(tabulate(overview, headers=["filename", "success", "page-number", "#-pages"]))
 
     logging.info("All files processed successfully.")
 
