@@ -243,7 +243,7 @@ def visualise_v2(
     output_dir: str,
     page_num: int,
     display_text: bool,
-    skip_out_of_bounds: bool = True        
+    skip_out_of_bounds: bool = True,
 ):
 
     parser = pdf_parser_v2(log_level)
@@ -279,7 +279,7 @@ def visualise_v2(
             logging.info(f"dimensions: {json.dumps(dimension, indent=2)}")
 
             page_bbox = dimension["bbox"]
-            
+
             cells = page[_]["cells"]["data"]
             cells_header = page[_]["cells"]["header"]
 
@@ -292,15 +292,17 @@ def visualise_v2(
 
             if PIL_INSTALLED:
 
-                #W = dimension["width"]
-                #H = dimension["height"]
+                # W = dimension["width"]
+                # H = dimension["height"]
 
                 W = page_bbox[2]
                 H = page_bbox[3]
-                
+
                 # Create a blank white image
-                #img = Image.new("RGB", (round(W), round(H)), "white")
-                img = Image.new("RGB", (round(page_bbox[2]), round(page_bbox[3])), "white")
+                # img = Image.new("RGB", (round(W), round(H)), "white")
+                img = Image.new(
+                    "RGB", (round(page_bbox[2]), round(page_bbox[3])), "white"
+                )
                 draw = ImageDraw.Draw(img)
 
                 # Draw each rectangle by connecting its four points
@@ -384,8 +386,8 @@ def visualise_v2(
                                 fill="black",
                                 width=1,
                             )
-                
-                if True: # Crop-box
+
+                if True:  # Crop-box
                     x0 = page_bbox[0]
                     y0 = page_bbox[1]
                     x1 = page_bbox[2]
@@ -398,11 +400,11 @@ def visualise_v2(
                     tl = (x0, H - y1)
 
                     logging.info(page_bbox)
-                    
+
                     # Draw the rectangle as a polygon
                     draw.polygon([bl, br, tr, tl], outline="red", width=5)
-                    #draw.rectangle([tl, br], outline="red", width=5)
-                            
+                    # draw.rectangle([tl, br], outline="red", width=5)
+
                 # Show the image
                 if interactive:
                     img.show()
