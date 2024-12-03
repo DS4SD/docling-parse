@@ -13,7 +13,9 @@ namespace pdflib
 
     pdf_resource();
     ~pdf_resource();
-
+    
+    void set_page_boundaries(std::string page_boundary);
+    
     nlohmann::json get();
     bool init_from(nlohmann::json& data);
 
@@ -29,6 +31,8 @@ namespace pdflib
 
     bool                  initialised;
 
+    std::string page_boundary;
+    
     int                   angle;
     std::array<double, 4> bbox;
 
@@ -41,6 +45,8 @@ namespace pdflib
 
   pdf_resource<PAGE_DIMENSION>::pdf_resource():
     initialised(false),
+    page_boundary(""),
+    
     angle(0),
     bbox({0,0,0,0}),
 
@@ -54,10 +60,33 @@ namespace pdflib
   pdf_resource<PAGE_DIMENSION>::~pdf_resource()
   {}
 
+  void pdf_resource<PAGE_DIMENSION>::set_page_boundaries(std::string page_boundary_)
+  {
+    page_boundary = page_boundary_;
+    
+    if(page_boundary=="media_box")
+      {
+	bbox = {0.0, 0.0, media_bbox[2]-media_bbox[0], media_bbox[3]-media_bbox[1]};
+      }
+    else if(page_boundary=="crop_box")
+      {
+	bbox = {0.0, 0.0, crop_bbox[2]-crop_bbox[0], crop_bbox[3]-crop_bbox[1]};
+      }
+    else
+      {
+	LOG_S(ERROR) << "unsupported page-boundary: " << page_boundary;
+
+	page_boundary = "crop_box";	
+	bbox = {0.0, 0.0, crop_bbox[2]-crop_bbox[0], crop_bbox[3]-crop_bbox[1]};
+      }
+  }
+  
   nlohmann::json pdf_resource<PAGE_DIMENSION>::get()
   {
     nlohmann::json result;
     {
+      result["page_boundary"] = page_boundary;
+      
       result["bbox"] = bbox;
       result["angle"] = angle;
       

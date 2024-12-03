@@ -9,6 +9,8 @@ namespace pdflib
   template<>
   class pdf_resource<PAGE_LINES>
   {
+    typedef typename std::vector<pdf_resource<PAGE_LINE> >::iterator itr_type;
+    
   public:
 
     pdf_resource();
@@ -24,6 +26,11 @@ namespace pdflib
 
     pdf_resource<PAGE_LINE>& back();
     void push_back(pdf_resource<PAGE_LINE>& line);
+
+    itr_type begin() { return lines.begin(); }
+    itr_type end() { return lines.end(); }
+    
+    itr_type erase(itr_type itr) { return lines.erase(itr); }
     
   private:
 

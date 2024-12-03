@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import io
 import json
 import logging
@@ -45,6 +46,17 @@ def parse_args():
         required=False,
         default="v2",
         help="Version [v1, v2]",
+    )
+
+    # Restrict page-boundary
+    parser.add_argument(
+        "-b",
+        "--page-boundary",
+        type=str,
+        choices=["crop_box", "media_box"],
+        required=True,
+        default="crop_box",
+        help="page-boundary [crop_box, media_box]",
     )
 
     # Add an argument for the path to the PDF file
@@ -105,6 +117,7 @@ def parse_args():
         args.output_dir,
         int(args.page),
         args.display_text,
+        args.page_boundary,
     )
 
 
@@ -137,8 +150,8 @@ def visualise_v1(
 
     for pi, page in enumerate(doc["pages"]):
 
-        H = page["height"]
         W = page["width"]
+        H = page["height"]
 
         # Create a blank white image
         img = Image.new("RGB", (round(W), round(H)), "white")
@@ -243,25 +256,33 @@ def visualise_v2(
     output_dir: str,
     page_num: int,
     display_text: bool,
-    skip_out_of_bounds: bool = True,
+    page_boundary: str = "crop_box",  # media_box
 ):
 
     parser = pdf_parser_v2(log_level)
     # parser.set_loglevel_with_label(log_level)
 
-    doc_key = "key"
+    hash_obj = hashlib.sha256(str(pdf_path).encode())
+    doc_key = str(hash_obj.hexdigest())
+
+    # doc_key = "key"
+    logging.info(f"{doc_key}: {pdf_path}")
+
     success = parser.load_document(doc_key, pdf_path)
 
     if success == False:
         return
 
+    logging.info(f"page_boundary: {page_boundary}")
+
     doc = None
 
     try:
         if page_num == -1:
-            doc = parser.parse_pdf_from_key(doc_key)
+            doc = parser.parse_pdf_from_key(doc_key, page_boundary)
         else:
-            doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
+            doc = parser.parse_pdf_from_key_on_page(doc_key, page_num, page_boundary)
+
     except Exception as exc:
         logging.info(f"Could not parse pdf-document: {exc}")
         doc = None
@@ -278,8 +299,6 @@ def visualise_v2(
             dimension = page[_]["dimension"]
             logging.info(f"dimensions: {json.dumps(dimension, indent=2)}")
 
-            page_bbox = dimension["bbox"]
-
             cells = page[_]["cells"]["data"]
             cells_header = page[_]["cells"]["header"]
 
@@ -292,17 +311,13 @@ def visualise_v2(
 
             if PIL_INSTALLED:
 
-                # W = dimension["width"]
-                # H = dimension["height"]
+                W = dimension["width"]
+                H = dimension["height"]
 
-                W = page_bbox[2]
-                H = page_bbox[3]
+                logging.info(f"width: {W}, height: {H}")
 
                 # Create a blank white image
-                # img = Image.new("RGB", (round(W), round(H)), "white")
-                img = Image.new(
-                    "RGB", (round(page_bbox[2]), round(page_bbox[3])), "white"
-                )
+                img = Image.new("RGB", (round(W), round(H)), "white")
                 draw = ImageDraw.Draw(img)
 
                 # Draw each rectangle by connecting its four points
@@ -387,7 +402,11 @@ def visualise_v2(
                                 width=1,
                             )
 
-                if True:  # Crop-box
+                # draw the crop-box
+                if page_boundary == "media_box":  # Crop-box
+
+                    page_bbox = dimension["rectangles"]["crop-bbox"]
+
                     x0 = page_bbox[0]
                     y0 = page_bbox[1]
                     x1 = page_bbox[2]
@@ -431,12 +450,31 @@ def visualise_v2(
 
 def main():
 
-    log_level, version, pdf, interactive, output_dir, page, display_text = parse_args()
+    (
+        log_level,
+        version,
+        pdf_path,
+        interactive,
+        output_dir,
+        page_num,
+        display_text,
+        page_boundary,
+    ) = parse_args()
+
+    logging.info(f"page_boundary: {page_boundary}")
 
     if version == "v1":
-        visualise_v1(log_level, pdf, interactive, output_dir, page, display_text)
+        visualise_v1(log_level, pdf_path, interactive, output_dir, page, display_text)
     elif version == "v2":
-        visualise_v2(log_level, pdf, interactive, output_dir, page, display_text)
+        visualise_v2(
+            log_level=log_level,
+            pdf_path=pdf_path,
+            interactive=interactive,
+            output_dir=output_dir,
+            page_num=page_num,
+            display_text=display_text,
+            page_boundary=page_boundary,
+        )
     else:
         return -1
 

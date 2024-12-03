@@ -28,9 +28,9 @@ namespace pdflib
     bool process_document_from_file(std::string& _filename);
     bool process_document_from_bytesio(std::string& _buffer);
 
-    void decode_document();
+    void decode_document(std::string page_boundary);
 
-    void decode_document(std::vector<int>& page_numbers);
+    void decode_document(std::vector<int>& page_numbers, std::string page_boundary);
 
   private:
 
@@ -190,16 +190,10 @@ namespace pdflib
     return true;
   }
   
-  void pdf_decoder<DOCUMENT>::decode_document()
+  void pdf_decoder<DOCUMENT>::decode_document(std::string page_boundary)
   {
     LOG_S(INFO) << "start decoding all pages ...";        
     utils::timer timer;
-    
-    //LOG_S(INFO) << "document keys: ";            
-    //for(auto key : qpdf_root.getKeys())
-    //{
-    //LOG_S(INFO) << " -> document-key: " << key;
-    //}
     
     nlohmann::json& json_pages = json_document["pages"];
     json_pages = nlohmann::json::array({});
@@ -213,7 +207,7 @@ namespace pdflib
 	
         pdf_decoder<PAGE> page_decoder(page);
 
-        auto timings_ = page_decoder.decode_page();
+        auto timings_ = page_decoder.decode_page(page_boundary);
 	update_timings(timings_, set_timer);
 	set_timer = false;
 
@@ -228,7 +222,7 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();
   }
 
-  void pdf_decoder<DOCUMENT>::decode_document(std::vector<int>& page_numbers)
+  void pdf_decoder<DOCUMENT>::decode_document(std::vector<int>& page_numbers, std::string page_boundary)
   {
     LOG_S(INFO) << "start decoding selected pages ...";        
     utils::timer timer;
@@ -250,7 +244,7 @@ namespace pdflib
 	    
 	    pdf_decoder<PAGE> page_decoder(pages.at(page_number));
 	    
-	    auto timings_ = page_decoder.decode_page();
+	    auto timings_ = page_decoder.decode_page(page_boundary);
 	    
 	    update_timings(timings_, set_timer);
 	    set_timer=false;

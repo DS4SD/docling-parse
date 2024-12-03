@@ -38,21 +38,29 @@ namespace docling
     nlohmann::json get_annotations(std::string key);
     nlohmann::json get_table_of_contents(std::string key);
     
-    nlohmann::json parse_pdf_from_key(std::string key);
+    nlohmann::json parse_pdf_from_key(std::string key, std::string page_boundary);
 
-    nlohmann::json parse_pdf_from_key_on_page(std::string key, int page);
+    nlohmann::json parse_pdf_from_key_on_page(std::string key, int page, std::string page_boundary);
 
     nlohmann::json sanitize_cells(nlohmann::json& original_cells,
 				  nlohmann::json& page_dim,
 				  nlohmann::json& page_lines,
 				  double delta_y0,
-				  bool enforce_same_font);
-
+				  bool enforce_same_font,
+				  double space_width_factor_for_merge, //=1.5,
+				  double space_width_factor_for_merge_with_space); //=0.33);
+    
     nlohmann::json sanitize_cells_in_bbox(nlohmann::json& page,
 					  std::array<double, 4> bbox,
 					  double iou_cutoff,
 					  double delta_y0,
-					  bool enforce_same_font);
+					  bool enforce_same_font,
+					  double space_width_factor_for_merge, //=1.5,
+					  double space_width_factor_for_merge_with_space); //=0.33);
+
+  private:
+
+    bool verify_page_boundary(std::string page_boundary);
     
   private:
 
@@ -275,8 +283,8 @@ namespace docling
 
     return (itr->second)->get_table_of_contents();
   }
-  
-  nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key)
+
+  nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key, std::string page_boundary)
   {
     LOG_S(INFO) << __FUNCTION__;
     
@@ -288,7 +296,7 @@ namespace docling
       }
     
     auto& decoder = itr->second;
-    decoder->decode_document();
+    decoder->decode_document(page_boundary);
 
     LOG_S(INFO) << "decoding done for key: " << key;
 
@@ -300,7 +308,8 @@ namespace docling
     return decoder->get();
   }
 
-  nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key, int page)
+  nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key, int page,
+							       std::string page_boundary)
   {
     LOG_S(INFO) << __FUNCTION__;
     
@@ -314,7 +323,7 @@ namespace docling
     auto& decoder = itr->second;
     
     std::vector<int> pages = {page};
-    decoder->decode_document(pages);
+    decoder->decode_document(pages, page_boundary);
 
     LOG_S(INFO) << "decoding done for for key: " << key << " and page: " << page;
 
@@ -330,7 +339,9 @@ namespace docling
 						   nlohmann::json& json_dim,
 						   nlohmann::json& json_lines,
 						   double delta_y0,
-						   bool enforce_same_font)
+						   bool enforce_same_font,
+						   double space_width_factor_for_merge, //=1.5,
+						   double space_width_factor_for_merge_with_space) //=0.33);
   {
     pdflib::pdf_resource<pdflib::PAGE_DIMENSION> dim;
     dim.init_from(json_dim);
@@ -342,7 +353,9 @@ namespace docling
     cells.init_from(json_cells);
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
-    sanitizer.sanitize(cells, delta_y0, enforce_same_font);
+    sanitizer.sanitize(cells, delta_y0, enforce_same_font,
+		       space_width_factor_for_merge,
+		       space_width_factor_for_merge_with_space);
     
     return cells.get();
   }
@@ -351,7 +364,9 @@ namespace docling
 							   std::array<double, 4> bbox,
 							   double iou_cutoff,
 							   double delta_y0,
-							   bool enforce_same_font)
+							   bool enforce_same_font,
+							   double space_width_factor_for_merge, //=1.5,
+							   double space_width_factor_for_merge_with_space) //=0.33);
   {
     LOG_S(INFO) << __FUNCTION__
 		<< ", iou_cutoff: " << iou_cutoff
@@ -413,7 +428,9 @@ namespace docling
       }
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
-    sanitizer.sanitize(selected_cells, delta_y0, enforce_same_font);
+    sanitizer.sanitize(selected_cells, delta_y0, enforce_same_font,
+		       space_width_factor_for_merge,
+		       space_width_factor_for_merge_with_space);
     
     return selected_cells.get();
   }

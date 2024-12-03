@@ -102,16 +102,19 @@ PYBIND11_MODULE(docling_parse, m) {
 	 )
     
     .def("parse_pdf_from_key",
-	 pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
+	 //pybind11::overload_cast<std::string>(&docling::docling_parser_v2::parse_pdf_from_key),
+	 &docling::docling_parser_v2::parse_pdf_from_key,
 	 "parse pdf-document using doc-key into json",
-	 pybind11::arg("key")
+	 pybind11::arg("key"),
+	 pybind11::arg("page_boundary") = "crop_box" // media_box
 	 )
 
     .def("parse_pdf_from_key_on_page",
 	 &docling::docling_parser_v2::parse_pdf_from_key_on_page,
 	 "parse specific page in pdf-document using doc-key from path into json",
 	 pybind11::arg("key"),
-	 pybind11::arg("page")
+	 pybind11::arg("page"),
+	 pybind11::arg("page_boundary") = "crop_box" // media_box
 	 )
 
     .def("sanitize_cells",
@@ -121,7 +124,9 @@ PYBIND11_MODULE(docling_parse, m) {
 	 pybind11::arg("page_dimension"),
 	 pybind11::arg("page_lines"),
 	 pybind11::arg("delta_y0")=1.0,
-	 pybind11::arg("enforce_same_font")=true
+	 pybind11::arg("enforce_same_font")=true,
+	 pybind11::arg("space_width_factor_for_merge")=1.5,
+	 pybind11::arg("space_width_factor_for_merge_with_space")=0.33
 	 )
 
     .def("sanitize_cells_in_bbox",
@@ -131,6 +136,8 @@ PYBIND11_MODULE(docling_parse, m) {
 	 pybind11::arg("bbox"),
 	 pybind11::arg("iou_cutoff")=0.99,
 	 pybind11::arg("delta_y0")=1.0,
-	 pybind11::arg("enforce_same_font")=true
+	 pybind11::arg("enforce_same_font")=true,
+	 pybind11::arg("space_width_factor_for_merge")=1.5,
+	 pybind11::arg("space_width_factor_for_merge_with_space")=0.33
 	 );  
 }

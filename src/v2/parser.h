@@ -32,6 +32,7 @@ namespace plib
     bool parse_file(std::string inp_filename,
                     std::string out_filename,
                     nlohmann::json& task,
+		    std::string page_boundary,
                     bool pretty_print=true);
 
   private:
@@ -136,7 +137,7 @@ namespace plib
         std::ifstream ifs(inp_filename);
         if(ifs)
           {
-            parse_file(inp_filename, out_filename, val);
+            parse_file(inp_filename, out_filename, val, "crop_box");
           }
         else
           {
@@ -182,7 +183,8 @@ namespace plib
   bool parser::parse_file(std::string inp_filename,
                           std::string out_filename,
                           nlohmann::json& task,
-                          bool pretty_print)
+			  std::string page_boundary,
+			  bool pretty_print)
   {
     pdflib::pdf_decoder<pdflib::DOCUMENT> document_decoder(timings);
 
@@ -200,12 +202,12 @@ namespace plib
 
     if(task.count("page-numbers")==0)
       {
-        document_decoder.decode_document();
+        document_decoder.decode_document(page_boundary);
       }
     else
       {
         std::vector<int> page_numbers = task["page-numbers"];
-        document_decoder.decode_document(page_numbers);
+        document_decoder.decode_document(page_numbers, page_boundary);
       }
 
     nlohmann::json json_document = document_decoder.get();

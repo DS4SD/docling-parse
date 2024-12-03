@@ -16,22 +16,26 @@ namespace pdflib
     ~pdf_sanitator();
 
     void sanitize(pdf_resource<PAGE_CELLS>& cells,
-		  double delta_y0=1.0,
-		  bool enforce_same_font=true);
+		  double delta_y0, //=1.0,
+		  bool enforce_same_font, //=true,
+		  double space_width_factor_for_merge, //=1.5,
+		  double space_width_factor_for_merge_with_space); //=0.33);
 
   private:
 
-    //void filter_by_cropbox();
-
     void contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells,
 				   double delta_y0=1.0,
-				   bool enforce_same_font=true);
+				   bool enforce_same_font=true,
+				   double space_width_factor_for_merge=1.5,
+				   double space_width_factor_for_merge_with_space=0.33);
 
     bool case_0(pdf_resource<PAGE_CELL>& cell_i,
 		pdf_resource<PAGE_CELL>& cell_j,
 		double delta_y0=1.0,
-		bool enforce_same_font=true);
-
+		bool enforce_same_font=true,
+		double space_width_factor_for_merge=1.5,
+		double space_width_factor_for_merge_with_space=0.33);
+    
     void sanitise_text();
 
   private:
@@ -51,14 +55,20 @@ namespace pdflib
 
   void pdf_sanitator<PAGE_CELLS>::sanitize(pdf_resource<PAGE_CELLS>& cells,
 					   double delta_y0,
-					   bool enforce_same_font)
+					   bool enforce_same_font,
+					   double space_width_factor_for_merge,
+					   double space_width_factor_for_merge_with_space)
   {
-    contract_cells_into_lines(cells, delta_y0, enforce_same_font);
+    contract_cells_into_lines(cells, delta_y0, enforce_same_font,
+			      space_width_factor_for_merge,
+			      space_width_factor_for_merge_with_space);
   }
 
   void pdf_sanitator<PAGE_CELLS>::contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells,
 							    double delta_y0,
-							    bool enforce_same_font)
+							    bool enforce_same_font,
+							    double space_width_factor_for_merge,
+							    double space_width_factor_for_merge_with_space)
   {
     //std::vector<pdf_resource<PAGE_CELL> >& cells = page_cells.cells;
 
@@ -77,7 +87,7 @@ namespace pdflib
 	      {
 		if(cells[j].active)
 		  {
-		    if(case_0(cells[i], cells[j], delta_y0, enforce_same_font))
+		    if(case_0(cells[i], cells[j], delta_y0, enforce_same_font, space_width_factor_for_merge))
 		      {
 			cells[j].active = false;
 			erased_cell     = true;
@@ -123,7 +133,10 @@ namespace pdflib
 
   bool pdf_sanitator<PAGE_CELLS>::case_0(pdf_resource<PAGE_CELL>& cell_i,
 					 pdf_resource<PAGE_CELL>& cell_j,
-					 double delta_y0, bool enforce_same_font)
+					 double delta_y0,
+					 bool enforce_same_font,
+					 double space_width_factor_for_merge,
+					 double space_width_factor_for_merge_with_space)
   {
     //const double DELTA_Y0 = 1.0;
     
@@ -135,19 +148,37 @@ namespace pdflib
 	return false;
       }
 
+    std::string text_i = cell_i.text;
+    std::string text_j = cell_j.text;
+
+    int num_chars_i = utils::string::count_unicode_characters(text_i);
+    int num_chars_j = utils::string::count_unicode_characters(text_j);
+    
+    double len_i = std::sqrt(std::pow(cell_i.r_x1-cell_i.r_x0, 2) + std::pow(cell_i.r_y1-cell_i.r_y0, 2));
+    double len_j = std::sqrt(std::pow(cell_j.r_x1-cell_j.r_x0, 2) + std::pow(cell_j.r_y1-cell_j.r_y0, 2));
+
+    double space_width_i = num_chars_i>0? len_i/num_chars_i : 0.0;
+    double space_width_j = num_chars_j>0? len_j/num_chars_j : 0.0;
+
     double space_width = cell_i.space_width;
 
     std::array<double, 4> bbox_i = {cell_i.x0, cell_i.y0, cell_i.x1, cell_i.y1};
     std::array<double, 4> bbox_j = {cell_j.x0, cell_j.y0, cell_j.x1, cell_j.y1};
 
-    /*
-      if(std::abs(bbox_i[1]-bbox_j[1])<1.e-3 and 
-       (bbox_i[0]<bbox_j[0] and std::abs(bbox_i[2]-bbox_j[0])<=10))
-    */
-    //if(std::abs(bbox_i[1]-bbox_j[1])<1.e-3 and
+    LOG_S(INFO) << "l-cell: " << std::setw(10) << std::setprecision(3) << std::setfill('0')
+		<< "font-sw: " << cell_i.space_width << ", computed sw: " << space_width_i << ", "
+		<< "bbox: " << bbox_i[0] << ", " << bbox_i[1] << ", " << bbox_i[2] << ", " << bbox_i[3] << ": "
+		<< cell_i.text << ", " << font_i;
+    LOG_S(INFO) << "r-cell: " << std::setw(10) << std::setprecision(3) << std::setfill('0')
+      		<< "font-sw: " << cell_j.space_width << ", computed sw: " << space_width_j << ", "
+		<< "bbox: " << bbox_j[0] << ", " << bbox_j[1] << ", " << bbox_j[2] << ", " << bbox_j[3] << ": "
+		<< cell_j.text << ", " << font_j;
+
+    space_width = space_width_i;
+    
     if(std::abs(bbox_i[1]-bbox_j[1])<delta_y0 and 
        (bbox_i[0]<bbox_j[0]) and 
-       (bbox_j[0]-bbox_i[2]) <= 3*space_width)
+       (bbox_j[0]-bbox_i[2]) <= space_width_factor_for_merge*space_width)
       {
 	cell_i.x1 = cell_j.x1;
 	cell_i.y1 = std::max(cell_i.y1, cell_j.y1);
@@ -158,17 +189,21 @@ namespace pdflib
 	cell_i.r_x2 = cell_j.r_x2;
 	cell_i.r_y2 = cell_j.r_y2;
       
-	if( (bbox_j[0]-bbox_i[2]) <= space_width/2.0)
+	if( (bbox_j[0]-bbox_i[2]) <= space_width*space_width_factor_for_merge_with_space)
 	  {
+	    LOG_S(INFO) << " => merged without space!";
 	    cell_i.text += cell_j.text;
 	  }
 	else
 	  {
+	    LOG_S(INFO) << " => merged with space!";
 	    cell_i.text += " " + cell_j.text;
 	  }
 
 	return true;
       }
+
+    LOG_S(INFO) << " => not merged";
 
     return false;
   }

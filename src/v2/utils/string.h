@@ -26,6 +26,39 @@ namespace utils
       
     return res;
     }
+
+    int count_unicode_characters(const std::string& utf8_string)
+    {
+      int count = 0;
+
+      std::size_t i = 0;
+      while (i < utf8_string.size())
+	{
+	  unsigned char c = static_cast<unsigned char>(utf8_string[i]);
+
+	  // Check the number of leading 1 bits in the byte
+	  if ((c & 0x80) == 0) { 
+	    // 1-byte character (ASCII)
+            i += 1;
+	  } else if ((c & 0xE0) == 0xC0) { 
+            // 2-byte character
+            i += 2;
+	  } else if ((c & 0xF0) == 0xE0) { 
+            // 3-byte character
+            i += 3;
+	  } else if ((c & 0xF8) == 0xF0) { 
+            // 4-byte character
+            i += 4;
+	  } else {
+            // Invalid UTF-8 byte
+	    return -1;
+	  }
+	  
+	  ++count; // Increment character count
+	}
+
+      return count;
+    }
     
     bool is_integer(const std::string & s)
     {

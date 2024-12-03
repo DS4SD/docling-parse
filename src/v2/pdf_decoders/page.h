@@ -21,7 +21,7 @@ namespace pdflib
 
     nlohmann::json get();
 
-    std::map<std::string, double> decode_page();
+    std::map<std::string, double> decode_page(std::string page_boundary);
 
   private:
 
@@ -42,7 +42,7 @@ namespace pdflib
 
     void decode_annots();
 
-    void sanitise_contents();
+    void sanitise_contents(std::string page_boundary);
 
   private:
 
@@ -130,7 +130,7 @@ namespace pdflib
     return result;
   }
 
-  std::map<std::string, double> pdf_decoder<PAGE>::decode_page()
+  std::map<std::string, double> pdf_decoder<PAGE>::decode_page(std::string page_boundary)
   {
     utils::timer timer;
 
@@ -156,7 +156,7 @@ namespace pdflib
 
     decode_annots();
     
-    sanitise_contents();
+    sanitise_contents(page_boundary);
     
     timings[__FUNCTION__] = timer.get_time();
 
@@ -429,7 +429,7 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();    
   }
 
-  void pdf_decoder<PAGE>::sanitise_contents()
+  void pdf_decoder<PAGE>::sanitise_contents(std::string page_boundary)
   {
     LOG_S(INFO) << __FUNCTION__;    
     utils::timer timer;
@@ -438,9 +438,10 @@ namespace pdflib
     {
       pdf_sanitator<PAGE_DIMENSION> sanitator(page_dimension);      
 
-      sanitator.sanitize(page_cells);            
-      sanitator.sanitize(page_lines);            
-      sanitator.sanitize(page_images);            
+      sanitator.sanitize(page_boundary); // update the top-level bbox            
+      sanitator.sanitize(page_cells, page_boundary);            
+      sanitator.sanitize(page_lines, page_boundary);            
+      sanitator.sanitize(page_images, page_boundary);            
     }
 
     {
@@ -465,17 +466,25 @@ namespace pdflib
 
     // sanitise the cells
     {
-      cells = page_cells;
-      
       pdf_sanitator<PAGE_CELLS> sanitator(page_dimension,
                                           page_lines);
-      sanitator.sanitize(cells);      
+
+      cells = page_cells;
+      
+      double delta_y0=1.0;
+      bool enforce_same_font=true;
+      double space_width_factor_for_merge=1.5;
+      double space_width_factor_for_merge_with_space=0.33;
+      
+      sanitator.sanitize(cells,
+			 delta_y0,
+			 enforce_same_font,
+			 space_width_factor_for_merge,
+			 space_width_factor_for_merge_with_space);
 
       LOG_S(INFO) << "#-page-cells: " << page_cells.size();
       LOG_S(INFO) << "#-sani-cells: " << cells.size();
     }
-
-
 
     timings[__FUNCTION__] = timer.get_time();    
   }
