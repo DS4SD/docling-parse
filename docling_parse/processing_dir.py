@@ -1,21 +1,15 @@
 import argparse
 import glob
 import hashlib
-import json
 import logging
 import os
-import queue
-import threading
-from dataclasses import dataclass, field
-from io import BytesIO
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List
+from queue import Queue
 
-import boto3
-import botocore
 from tabulate import tabulate
 
-from docling_parse import pdf_parser_v2
+from docling_parse import pdf_parser_v2  # type: ignore[attr-defined]
 
 # Configure logging
 logging.basicConfig(
@@ -90,7 +84,7 @@ def fetch_files_from_disk(directory, recursive, task_queue):
     logging.info("Done with queue")
 
 
-def process_files_from_queue(file_queue: queue, page_level: bool, loglevel: str):
+def process_files_from_queue(file_queue: Queue, page_level: bool, loglevel: str):
     """Process files from the queue."""
 
     overview = []
@@ -108,7 +102,7 @@ def process_files_from_queue(file_queue: queue, page_level: bool, loglevel: str)
         try:
             parser = pdf_parser_v2(loglevel)
 
-            success = parser.load_document(task.file_hash, str(task.file_name))
+            parser.load_document(task.file_hash, str(task.file_name))
 
             num_pages = parser.number_of_pages(task.file_hash)
             logging.info(f" => #-pages of {task.file_name}: {num_pages}")
@@ -131,14 +125,14 @@ def process_files_from_queue(file_queue: queue, page_level: bool, loglevel: str)
                         """
 
                         overview.append([fname, num_pages, page, True])
-                    except:
+                    except Exception as exc:
                         overview.append([fname, num_pages, page, False])
                         logging.error(
-                            f"problem with parsing {task.file_name} on page {page}"
+                            f"problem with parsing {task.file_name} on page {page}: {exc}"
                         )
             else:
 
-                json_doc = parser.parse_pdf_from_key(task.file_hash)
+                parser.parse_pdf_from_key(task.file_hash)
 
                 """
                 # with open(os.path.join(task.folder_name, f"{task.file_name}.json"), "w") as fw:
@@ -151,7 +145,7 @@ def process_files_from_queue(file_queue: queue, page_level: bool, loglevel: str)
             # Unload the (QPDF) document and buffers
             parser.unload_document(task.file_hash)
 
-        except exc:
+        except Exception as exc:
             logging.error(exc)
             overview.append([str(task.file_name), -1, -1, False])
 
@@ -162,7 +156,7 @@ def main():
 
     directory, recursive, loglevel, page_level_parsing = parse_arguments()
 
-    task_queue = queue.Queue()
+    task_queue = Queue()
 
     fetch_files_from_disk(directory, recursive, task_queue)
 

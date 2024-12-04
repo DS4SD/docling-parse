@@ -1,11 +1,9 @@
 import argparse
-import io
-import json
 import os
 
 from tabulate import tabulate
 
-from docling_parse import pdf_parser_v2
+from docling_parse import pdf_parser_v2  # type: ignore[attr-defined]
 
 
 def parse_args():

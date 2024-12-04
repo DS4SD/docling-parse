@@ -1,27 +1,18 @@
 import argparse
 import hashlib
-import io
 import json
 import logging
 import os
+from typing import Dict, List, Optional
 
-from tabulate import tabulate
+from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
 
-from docling_parse import pdf_parser_v1, pdf_parser_v2
+from docling_parse.pdf_parsers import pdf_parser_v1, pdf_parser_v2  # type: ignore[attr-defined]
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
-
-try:
-    from PIL import Image, ImageDraw
-
-    PIL_INSTALLED = True
-except ImportError:
-    PIL_INSTALLED = False
-    logging.info("Pillow is not installed. Skipping image processing.")
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process a PDF file.")
@@ -57,6 +48,17 @@ def parse_args():
         required=True,
         default="crop_box",
         help="page-boundary [crop_box, media_box]",
+    )
+
+    # Restrict page-boundary
+    parser.add_argument(
+        "-c",
+        "--category",
+        type=str,
+        choices=["both", "original", "sanitized"],
+        required=True,
+        default="both",
+        help="category [`both`, `original`, `sanitized`]",
     )
 
     # Add an argument for the path to the PDF file
@@ -118,6 +120,7 @@ def parse_args():
         int(args.page),
         args.display_text,
         args.page_boundary,
+        args.category
     )
 
 
@@ -230,7 +233,7 @@ def visualise_v1(
 
             img.save(oname)
 
-
+"""
 def draw_annotations(draw, annot, H, W):
 
     if "/Rect" in annot:
@@ -247,7 +250,7 @@ def draw_annotations(draw, annot, H, W):
     if "/Kids" in annot:
         for _ in annot["/Kids"]:
             draw_annotations(draw, annot, H, W)
-
+"""
 
 def visualise_v2(
     log_level: str,
@@ -257,8 +260,14 @@ def visualise_v2(
     page_num: int,
     display_text: bool,
     page_boundary: str = "crop_box",  # media_box
+    category: str = "both",  # "both", "sanitized", "original"
 ):
-
+    categories = []
+    if category == "both":
+        categories = ["sanitized", "original"]
+    else:
+        categories = [category]
+    
     parser = pdf_parser_v2(log_level)
     # parser.set_loglevel_with_label(log_level)
 
@@ -275,7 +284,7 @@ def visualise_v2(
 
     logging.info(f"page_boundary: {page_boundary}")
 
-    doc = None
+    doc: Optional[Dict] = None
 
     try:
         if page_num == -1:
@@ -287,13 +296,38 @@ def visualise_v2(
         logging.info(f"Could not parse pdf-document: {exc}")
         doc = None
 
-    if doc == None:
+    if doc is None:
         return
 
     parser.unload_document(doc_key)
 
-    for pi, page in enumerate(doc["pages"]):
+    for pi, page in enumerate(doc.get("pages", [])):
 
+        for category in categories:
+        
+            img_orig = create_pil_image_of_page_v2(page, category = category)
+            
+            if interactive:
+                img_orig.show()
+
+            if output_dir is not None and page_num == -1:
+                oname = os.path.join(
+                    output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
+                )
+                logging.info(f"output: {oname}")
+                
+                img.save(oname)
+                
+            elif output_dir is not None and page_num != -1:
+                oname = os.path.join(
+                    output_dir,
+                    f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
+                )
+                logging.info(f"output: {oname}")
+                
+                img.save(oname)
+        
+        """
         for _ in ["original", "sanitized"]:
 
             dimension = page[_]["dimension"]
@@ -387,17 +421,22 @@ def visualise_v2(
                 # Draw each rectangle by connecting its four points
                 for line in lines:
 
-                    i = line["i"]
-                    x = line["x"]
-                    y = line["y"]
+                    inds: List[int] = line["i"]
+                    x_vals: List[float] = line["x"]
+                    y_vals: List[float] = line["y"]
 
-                    for l in range(0, len(i), 2):
-                        i0 = i[l + 0]
-                        i1 = i[l + 1]
+                    for l in range(0, len(inds), 2):
+                        i0: int = inds[l + 0]
+                        i1: int = inds[l + 1]
 
                         for k in range(i0, i1 - 1):
                             draw.line(
-                                (x[k], H - y[k], x[k + 1], H - y[k + 1]),
+                                (
+                                    x_vals[k],
+                                    H - y_vals[k],
+                                    x_vals[k + 1],
+                                    H - y_vals[k + 1],
+                                ),
                                 fill="black",
                                 width=1,
                             )
@@ -428,23 +467,9 @@ def visualise_v2(
                 if interactive:
                     img.show()
 
-                if output_dir is not None and page_num == -1:
-                    oname = os.path.join(
-                        output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
-                    )
-                    logging.info(f"output: {oname}")
 
-                    img.save(oname)
-
-                elif output_dir is not None and page_num != -1:
-                    oname = os.path.join(
-                        output_dir,
-                        f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
-                    )
-                    logging.info(f"output: {oname}")
-
-                    img.save(oname)
-
+        """
+        
     return 0
 
 
@@ -459,6 +484,7 @@ def main():
         page_num,
         display_text,
         page_boundary,
+        category
     ) = parse_args()
 
     logging.info(f"page_boundary: {page_boundary}")
@@ -474,6 +500,7 @@ def main():
             page_num=page_num,
             display_text=display_text,
             page_boundary=page_boundary,
+            category=category
         )
     else:
         return -1

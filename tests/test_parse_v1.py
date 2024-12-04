@@ -2,38 +2,47 @@
 
 GENERATE = False
 
-import io
-import os
-
 import glob
+import io
 import json
+import os
 
 from docling_parse import docling_parse
 
+
 def verify_reference_output(true_doc, pred_doc):
 
-    num_true_pages=len(true_doc["pages"])
-    num_pred_pages=len(pred_doc["pages"])
-            
-    assert num_true_pages==num_pred_pages, f"len(pred_doc[\"pages\"])!=len(true_doc[\"pages\"]) => {num_true_pages}!={num_pred_pages}"
-                
-    for pred_page,true_page in zip(pred_doc["pages"], true_doc["pages"]):
+    num_true_pages = len(true_doc["pages"])
+    num_pred_pages = len(pred_doc["pages"])
 
-        assert len(pred_page["cells"])==len(true_page["cells"]), "len(pred_page[\"cells\"])!=len(true_page[\"cells\"])"
-                
-        for pred_cell,true_cell in zip(pred_page["cells"], true_page["cells"]):
-            pred_text = pred_cell['content']['rnormalized']
-            true_text = true_cell['content']['rnormalized']
-                    
-            assert pred_text==true_text, f"pred_text!=true_text => {pred_text}!={true_text}"
-                    
-            pred_bbox = pred_cell['box']['device']
-            true_bbox = true_cell['box']['device']
-                    
-            for i in range(0,4):
-                assert round(pred_bbox[i])==round(true_bbox[i]), "round(pred_bbox[i])!=round(true_bbox[i])"
-    
-    return True    
+    assert (
+        num_true_pages == num_pred_pages
+    ), f'len(pred_doc["pages"])!=len(true_doc["pages"]) => {num_true_pages}!={num_pred_pages}'
+
+    for pred_page, true_page in zip(pred_doc["pages"], true_doc["pages"]):
+
+        assert len(pred_page["cells"]) == len(
+            true_page["cells"]
+        ), 'len(pred_page["cells"])!=len(true_page["cells"])'
+
+        for pred_cell, true_cell in zip(pred_page["cells"], true_page["cells"]):
+            pred_text = pred_cell["content"]["rnormalized"]
+            true_text = true_cell["content"]["rnormalized"]
+
+            assert (
+                pred_text == true_text
+            ), f"pred_text!=true_text => {pred_text}!={true_text}"
+
+            pred_bbox = pred_cell["box"]["device"]
+            true_bbox = true_cell["box"]["device"]
+
+            for i in range(0, 4):
+                assert round(pred_bbox[i]) == round(
+                    true_bbox[i]
+                ), "round(pred_bbox[i])!=round(true_bbox[i])"
+
+    return True
+
 
 """
 def test_reference_documents_from_filenames():
@@ -88,71 +97,75 @@ def test_reference_documents_from_filenames_page_by_page():
                 assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"            
 """
 
+
 def test_reference_documents_from_filenames_with_keys():
 
     parser = docling_parse.pdf_parser_v1()
-    #parser.set_loglevel(4)
-    
+    # parser.set_loglevel(4)
+
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
-    assert len(pdf_docs)>0, "len(pdf_docs)==0 -> nothing to test"
-    
+    assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
+
     for pdf_doc in pdf_docs:
         doc_key = f"key={pdf_doc}"
-        #print("testing: ", pdf_doc)
-        
-        #print(" => load_document ...")
+        # print("testing: ", pdf_doc)
+
+        # print(" => load_document ...")
         success = parser.load_document(doc_key, pdf_doc)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==1, "len(keys)==1"
-        
-        #print(" => find_cells_from_key ...")
+        assert len(keys) == 1, "len(keys)==1"
+
+        # print(" => find_cells_from_key ...")
         pred_doc = parser.parse_pdf_from_key(doc_key)
-        
-        #print(" => unload_document ...")
+
+        # print(" => unload_document ...")
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==0, "len(keys)==0"
-        
+        assert len(keys) == 0, "len(keys)==0"
+
         if GENERATE:
-            with open(pdf_doc+".json", "w") as fw:
+            with open(pdf_doc + ".json", "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))
 
             assert True
         else:
-            with open(pdf_doc+".json", "r") as fr:
+            with open(pdf_doc + ".json", "r") as fr:
                 true_doc = json.load(fr)
 
-            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
-            
+            assert verify_reference_output(
+                true_doc, pred_doc
+            ), "verify_reference_output(true_doc, pred_doc)"
+
+
 def test_reference_documents_from_filenames_with_keys_page_by_page():
 
     parser = docling_parse.pdf_parser_v1()
-    #parser.set_loglevel(0)
-    
+    # parser.set_loglevel(0)
+
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
-    assert len(pdf_docs)>0, "len(pdf_docs)==0 -> nothing to test"
-    
+    assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
+
     for pdf_doc in pdf_docs:
-        #print(f"testing {pdf_doc}")
+        # print(f"testing {pdf_doc}")
 
         doc_key = f"key={pdf_doc}"
-        #print("testing: ", pdf_doc)
-        
-        #print(" => load_document ...")
+        # print("testing: ", pdf_doc)
+
+        # print(" => load_document ...")
         success = parser.load_document(doc_key, pdf_doc)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==1, "len(keys)==1"
+        assert len(keys) == 1, "len(keys)==1"
 
         num_pages = parser.number_of_pages(doc_key)
-        
+
         for page in range(0, num_pages):
             fname = f"{pdf_doc}_p={page}.json"
-            #print(f"testing {fname}")
+            # print(f"testing {fname}")
 
             pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
@@ -165,13 +178,16 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
                 with open(fname, "r") as fr:
                     true_doc = json.load(fr)
 
-                assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
-                    
-        #print(" => unload_document ...")
+                assert verify_reference_output(
+                    true_doc, pred_doc
+                ), "verify_reference_output(true_doc, pred_doc)"
+
+        # print(" => unload_document ...")
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==0, "len(keys)==0"
+        assert len(keys) == 0, "len(keys)==0"
+
 
 """
 def test_reference_documents_from_bytesio():
@@ -242,14 +258,15 @@ def test_reference_documents_from_bytesio_page_by_page():
                 assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
 """
 
+
 def test_reference_documents_from_bytesio_with_keys():
 
     parser = docling_parse.pdf_parser_v1()
 
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
-    assert len(pdf_docs)>0, "len(pdf_docs)==0 -> nothing to test"
-    
+    assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
+
     for pdf_doc in pdf_docs:
 
         # Open the file in binary mode and read its contents
@@ -263,34 +280,38 @@ def test_reference_documents_from_bytesio_with_keys():
         success = parser.load_document_from_bytesio(doc_key, bytes_io)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==1, "len(keys)==1"
-        
+        assert len(keys) == 1, "len(keys)==1"
+
         pred_doc = parser.parse_pdf_from_key(doc_key)
 
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==0, "len(keys)==0"
-        
+        assert len(keys) == 0, "len(keys)==0"
+
         if GENERATE:
-            with open(pdf_doc+".json", "w") as fw:
+            with open(pdf_doc + ".json", "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))
 
             assert True
         else:
-            with open(pdf_doc+".json", "r") as fr:
+            with open(pdf_doc + ".json", "r") as fr:
                 true_doc = json.load(fr)
 
-            assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"                        
+            assert verify_reference_output(
+                true_doc, pred_doc
+            ), "verify_reference_output(true_doc, pred_doc)"
+
+
 def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
     parser = docling_parse.pdf_parser_v1()
-    #parser.set_loglevel(4)
-    
+    # parser.set_loglevel(4)
+
     pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
 
-    assert len(pdf_docs)>0, "len(pdf_docs)==0 -> nothing to test"
-    
+    assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
+
     for pdf_doc in pdf_docs:
 
         # Open the file in binary mode and read its contents
@@ -304,10 +325,10 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
         success = parser.load_document_from_bytesio(doc_key, bytes_io)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==1, "len(keys)==1"
+        assert len(keys) == 1, "len(keys)==1"
 
         num_pages = parser.number_of_pages(doc_key)
-        
+
         for page in range(0, num_pages):
             fname = f"{pdf_doc}_p={page}.json"
 
@@ -322,11 +343,11 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
                 with open(fname, "r") as fr:
                     true_doc = json.load(fr)
 
-                assert verify_reference_output(true_doc, pred_doc), "verify_reference_output(true_doc, pred_doc)"
-                    
+                assert verify_reference_output(
+                    true_doc, pred_doc
+                ), "verify_reference_output(true_doc, pred_doc)"
+
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
-        assert len(keys)==0, "len(keys)==0"
-        
-                            
+        assert len(keys) == 0, "len(keys)==0"

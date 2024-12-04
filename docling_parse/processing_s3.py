@@ -1,6 +1,5 @@
 import argparse
 import hashlib
-import json
 import logging
 import os
 import queue
@@ -9,10 +8,24 @@ from dataclasses import dataclass, field
 from io import BytesIO
 from typing import Dict, List
 
-import boto3
-import botocore
+try:
+    import botocore
+except ImportError as e:
+    raise ImportError(
+        "botocore is required but not installed. Install it with `pip install botocore`."
+    ) from e
 
-from docling_parse import pdf_parser_v2
+try:
+    import boto3
+except ImportError as e:
+    raise ImportError(
+        "boto3 is required but not installed. Install it with `pip install boto3`."
+    ) from e
+
+# import boto3
+# import botocore
+
+from docling_parse import pdf_parser_v2  # type: ignore[attr-defined]
 
 # Configure logging
 logging.basicConfig(
