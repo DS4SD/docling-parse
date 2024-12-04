@@ -466,9 +466,11 @@ namespace pdflib
 
     // sanitise the cells
     {
+      /*
       pdf_sanitator<PAGE_CELLS> sanitator(page_dimension,
                                           page_lines);
-
+      */
+      pdf_sanitator<PAGE_CELLS> sanitator;
       cells = page_cells;
       
       double delta_y0=1.0;
@@ -476,12 +478,14 @@ namespace pdflib
       double space_width_factor_for_merge=1.5;
       double space_width_factor_for_merge_with_space=0.33;
       
-      sanitator.sanitize(cells,
-			 delta_y0,
-			 enforce_same_font,
-			 space_width_factor_for_merge,
-			 space_width_factor_for_merge_with_space);
-
+      sanitator.sanitize_bbox(cells,
+			      delta_y0,
+			      enforce_same_font,
+			      space_width_factor_for_merge,
+			      space_width_factor_for_merge_with_space);
+      
+      sanitator.sanitize_text(cells);
+      
       LOG_S(INFO) << "#-page-cells: " << page_cells.size();
       LOG_S(INFO) << "#-sani-cells: " << cells.size();
     }

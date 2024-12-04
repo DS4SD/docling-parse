@@ -352,10 +352,12 @@ namespace docling
     pdflib::pdf_resource<pdflib::PAGE_CELLS> cells;
     cells.init_from(json_cells);
     
-    pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
-    sanitizer.sanitize(cells, delta_y0, enforce_same_font,
-		       space_width_factor_for_merge,
-		       space_width_factor_for_merge_with_space);
+    pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer;//(dim, lines);
+    sanitizer.sanitize_bbox(cells, delta_y0, enforce_same_font,
+			    space_width_factor_for_merge,
+			    space_width_factor_for_merge_with_space);
+
+    sanitizer.sanitize_text(cells);
     
     return cells.get();
   }
@@ -412,10 +414,6 @@ namespace docling
 	double iou = utils::values::compute_overlap(cells[i].x0, cells[i].y0, cells[i].x1, cells[i].y1,
 						    x0, y0, x1, y1);
 
-	//LOG_S(INFO) << "cell " << i << " => iou: " << iou;
-	
-	//if(x0<=cells[i].x0 and cells[i].x1<=x1 and
-	//y0<=cells[i].y0 and cells[i].y1<=y1)
 	if(iou>iou_cutoff-1.e-3)
 	  {
 	    selected_cells.push_back(cells[i]);
@@ -427,10 +425,12 @@ namespace docling
 	return sanitized_cells;
       }
     
-    pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer(dim, lines);
-    sanitizer.sanitize(selected_cells, delta_y0, enforce_same_font,
-		       space_width_factor_for_merge,
-		       space_width_factor_for_merge_with_space);
+    pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer;
+    sanitizer.sanitize_bbox(selected_cells, delta_y0, enforce_same_font,
+			    space_width_factor_for_merge,
+			    space_width_factor_for_merge_with_space);
+
+    sanitizer.sanitize_text(selected_cells);
     
     return selected_cells.get();
   }

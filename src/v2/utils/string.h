@@ -169,7 +169,31 @@ namespace utils
       return vec_to_utf8(vec);
     }
 
+    std::string replace(std::string& text, const std::string& word_0, const std::string& word_1)
+    {
+      if(word_0==word_1)
+	{
+	  return text;
+	}
+
+      std::size_t pos=0;
+      while(pos<text.size())
+	{			          
+	  pos = text.find(word_0, pos);
+	  if(pos==std::string::npos)
+	    {
+	      break;
+	    }
+
+	  text.replace(pos, word_0.size(), word_1);
+	  pos += word_1.size();
+	}
+      
+      return text;
+    }
+    
   }
+
 }
 
 #endif
