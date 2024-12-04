@@ -6,11 +6,11 @@ from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 
 def draw_text_in_bounding_box(
-    draw: ImageDraw.Draw, 
-    box: Tuple[float, float, float, float], 
-    text: str, 
-    font: Optional[ImageFont.ImageFont] = None, 
-    fill: str = "black"
+    draw: ImageDraw.Draw,
+    box: Tuple[float, float, float, float],
+    text: str,
+    font: Optional[ImageFont.ImageFont] = None,
+    fill: str = "black",
 ):
     """
     Draws text inside a bounding box by creating a temporary image,
@@ -26,11 +26,11 @@ def draw_text_in_bounding_box(
 
     x0, y0, x1, y1 = box
     width, height = x1 - x0, y1 - y0
-    
+
     # Use the default font if no font is provided
     if font is None:
         font = ImageFont.load_default()
-    
+
     # Create a temporary image for the text
     tmp_img = Image.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
     tmp_draw = ImageDraw.Draw(tmp_img)
@@ -58,8 +58,6 @@ def draw_text_in_bounding_box(
     # Paste the resized text image onto the original image
     draw.bitmap((paste_x, paste_y), resized_img, fill=None)
 
-
-                                                                                            
 
 def create_pil_image_of_page_v1(
     page: Dict,
@@ -196,10 +194,14 @@ def create_pil_image_of_page_v2(
 ) -> Image.Image:
 
     if category not in ["original", "sanitized"]:
-        raise ValueError(f"category {category} needs to be of `original` or `sanitized`.")
+        raise ValueError(
+            f"category {category} needs to be of `original` or `sanitized`."
+        )
 
     if page_boundary not in ["crop_box", "media_box"]:
-        raise ValueError(f"page_boundary {page_boundary} needs to be of `crop_box` or `media_box`.")
+        raise ValueError(
+            f"page_boundary {page_boundary} needs to be of `crop_box` or `media_box`."
+        )
 
     for _ in [
         cell_alpha,
@@ -389,8 +391,10 @@ def create_pil_image_of_page_v2(
 
                 # Define the bounding box for the dot
                 dot_bbox = [
-                    dot_point[0] - dot_radius, bottom_left[1] - dot_radius),
-                    dot_point[0] + dot_radius, bottom_left[1] + dot_radius),
+                    dot_point[0] - dot_radius,
+                    bottom_left[1] - dot_radius,
+                    dot_point[0] + dot_radius,
+                    bottom_left[1] + dot_radius,
                 ]
 
                 # Convert cell color to RGBA with alpha
@@ -411,8 +415,10 @@ def create_pil_image_of_page_v2(
 
                 # Define the bounding box for the dot
                 dot_bbox = [
-                    dot_point[0] - dot_radius, bottom_left[1] - dot_radius),
-                    dot_point[0] + dot_radius, bottom_left[1] + dot_radius),
+                    dot_point[0] - dot_radius,
+                    bottom_left[1] - dot_radius,
+                    dot_point[0] + dot_radius,
+                    bottom_left[1] + dot_radius,
                 ]
 
                 # Convert cell color to RGBA with alpha
@@ -424,7 +430,7 @@ def create_pil_image_of_page_v2(
                 )
 
                 # Draw the red dot
-                draw.ellipse(dot_bbox, fill=fill_color, outline=outl_color)                
+                draw.ellipse(dot_bbox, fill=fill_color, outline=outl_color)
 
     if draw_annotations:
         # Draw widgets
