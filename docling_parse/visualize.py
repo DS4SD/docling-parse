@@ -1,18 +1,20 @@
 import argparse
 import hashlib
-import json
 import logging
 import os
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 
+from docling_parse.pdf_parsers import (  # type: ignore[attr-defined]
+    pdf_parser_v1,
+    pdf_parser_v2,
+)
 from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
-
-from docling_parse.pdf_parsers import pdf_parser_v1, pdf_parser_v2  # type: ignore[attr-defined]
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process a PDF file.")
@@ -120,7 +122,7 @@ def parse_args():
         int(args.page),
         args.display_text,
         args.page_boundary,
-        args.category
+        args.category,
     )
 
 
@@ -154,7 +156,7 @@ def visualise_v1(
     for pi, page in enumerate(doc["pages"]):
 
         img = create_pil_image_of_page_v1(page)
-        
+
         if interactive:
             img.show()
 
@@ -174,7 +176,6 @@ def visualise_v1(
 
             img.save(oname)
 
-        
         """
         W = page["width"]
         H = page["height"]
@@ -258,6 +259,7 @@ def visualise_v1(
 
         """
 
+
 """
 def draw_annotations(draw, annot, H, W):
 
@@ -277,6 +279,7 @@ def draw_annotations(draw, annot, H, W):
             draw_annotations(draw, annot, H, W)
 """
 
+
 def visualise_v2(
     log_level: str,
     pdf_path: str,
@@ -292,7 +295,7 @@ def visualise_v2(
         categories = ["sanitized", "original"]
     else:
         categories = [category]
-    
+
     parser = pdf_parser_v2(log_level)
     # parser.set_loglevel_with_label(log_level)
 
@@ -329,9 +332,9 @@ def visualise_v2(
     for pi, page in enumerate(doc.get("pages", [])):
 
         for category in categories:
-        
-            img_orig = create_pil_image_of_page_v2(page, category = category)
-            
+
+            img_orig = create_pil_image_of_page_v2(page, category=category)
+
             if interactive:
                 img_orig.show()
 
@@ -340,18 +343,18 @@ def visualise_v2(
                     output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
                 )
                 logging.info(f"output: {oname}")
-                
+
                 img.save(oname)
-                
+
             elif output_dir is not None and page_num != -1:
                 oname = os.path.join(
                     output_dir,
                     f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
                 )
                 logging.info(f"output: {oname}")
-                
+
                 img.save(oname)
-        
+
         """
         for _ in ["original", "sanitized"]:
 
@@ -494,7 +497,7 @@ def visualise_v2(
 
 
         """
-        
+
     return 0
 
 
@@ -509,18 +512,20 @@ def main():
         page_num,
         display_text,
         page_boundary,
-        category
+        category,
     ) = parse_args()
 
     logging.info(f"page_boundary: {page_boundary}")
 
     if version == "v1":
-        visualise_v1(log_level=log_level,
-                     pdf_path=pdf_path,
-                     interactive=interactive,
-                     output_dir=output_dir,
-                     page_num=page_num,
-                     display_text=display_text)
+        visualise_v1(
+            log_level=log_level,
+            pdf_path=pdf_path,
+            interactive=interactive,
+            output_dir=output_dir,
+            page_num=page_num,
+            display_text=display_text,
+        )
     elif version == "v2":
         visualise_v2(
             log_level=log_level,
@@ -530,7 +535,7 @@ def main():
             page_num=page_num,
             display_text=display_text,
             page_boundary=page_boundary,
-            category=category
+            category=category,
         )
     else:
         return -1

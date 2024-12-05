@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-GENERATE = True
+GENERATE = False
 
 GROUNDTRUTH_FOLDER = "tests/data/groundtruth/"
 REGRESSION_FOLDER = "tests/data/regression/*.pdf"
@@ -12,7 +12,8 @@ import io
 import json
 import os
 
-from docling_parse.pdf_parsers import pdf_parser_v1
+from docling_parse.pdf_parsers import pdf_parser_v1  # type: ignore[attr-defined]
+
 
 def verify_reference_output(true_doc, pred_doc):
 
@@ -49,10 +50,10 @@ def verify_reference_output(true_doc, pred_doc):
 
 
 def test_reference_documents_from_filenames_with_keys():
-    
+
     parser = pdf_parser_v1(level="error")
-    
-    #parser = docling_parse.pdf_parser_v1()
+
+    # parser = docling_parse.pdf_parser_v1()
     # parser.set_loglevel(4)
 
     pdf_docs = glob.glob(REGRESSION_FOLDER)
@@ -73,10 +74,10 @@ def test_reference_documents_from_filenames_with_keys():
         pred_doc = parser.parse_pdf_from_key(doc_key)
 
         num_pages = parser.number_of_pages(doc_key)
-        if num_pages>10: # skip large files
+        if num_pages > 10:  # skip large files
             parser.unload_document(doc_key)
             continue
-        
+
         # print(" => unload_document ...")
         parser.unload_document(doc_key)
 
@@ -85,7 +86,7 @@ def test_reference_documents_from_filenames_with_keys():
 
         rname = os.path.basename(pdf_doc)
         fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v1.json")
-        
+
         if GENERATE:
             with open(fname, "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))
@@ -175,10 +176,10 @@ def test_reference_documents_from_bytesio_with_keys():
         pred_doc = parser.parse_pdf_from_key(doc_key)
 
         num_pages = parser.number_of_pages(doc_key)
-        if num_pages>10: # skip large files
+        if num_pages > 10:  # skip large files
             parser.unload_document(doc_key)
             continue
-        
+
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
@@ -186,7 +187,7 @@ def test_reference_documents_from_bytesio_with_keys():
 
         rname = os.path.basename(pdf_doc)
         fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v1.json")
-        
+
         if GENERATE:
             with open(fname, "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))

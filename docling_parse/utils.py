@@ -1,17 +1,17 @@
 import json
 import logging
-from typing import Dict, List, Tuple, Optional, Any
+from typing import Dict, List, Optional, Tuple
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 
 def _draw_text_in_bounding_bbox(
     img,
-    draw: ImageDraw.Draw, 
-    bbox: Tuple[float, float, float, float], 
-    text: str, 
-    font: Optional[ImageFont.ImageFont] = None, 
-    fill: str = "black"
+    draw: ImageDraw.Draw,
+    bbox: Tuple[float, float, float, float],
+    text: str,
+    font: Optional[ImageFont.ImageFont] = None,
+    fill: str = "black",
 ):
     """
     Draws text inside a bounding box by creating a temporary image,
@@ -29,61 +29,64 @@ def _draw_text_in_bounding_bbox(
     width, height = abs(x1 - x0), abs(y1 - y0)
 
     logging.info(f"cell-width: {width}, cell-height: {height}")
-    
+
     # Use the default font if no font is provided
     if font is None:
         font = ImageFont.load_default()
-    
+
     # Create a temporary image for the text
     tmp_img = Image.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
     tmp_draw = ImageDraw.Draw(tmp_img)
-    #text_width = draw.textlength(text, font=font)
+    # text_width = draw.textlength(text, font=font)
     _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
-    #text_width, text_height = tmp_draw.text((0,0), text, font=font)
-    #tmp_draw.show()
+    # text_width, text_height = tmp_draw.text((0,0), text, font=font)
+    # tmp_draw.show()
 
     logging.info(f" -> text_width: {text_width}, text_height: {text_height}")
-    
+
     # Create a properly sized temporary image
     tmp_img = Image.new("RGBA", (text_width, text_height), (255, 255, 255, 0))
-    #tmp_img = Image.new("RGBA", (text_width, text_height), (0,0,0, 255))
+    # tmp_img = Image.new("RGBA", (text_width, text_height), (0,0,0, 255))
     tmp_draw = ImageDraw.Draw(tmp_img)
-    tmp_draw.text((0, 0), text, font=font, fill=(0,0,0,255))
-    #tmp_img.show()
-    
+    tmp_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
+    # tmp_img.show()
+
     # Resize the text image to fit within the polygon's bounding box
     scale_x = float(width) / float(text_width)
     scale_y = float(height) / float(text_height)
     scale = min(scale_x, scale_y)  # Maintain aspect ratio
     new_width = int(text_width * scale)
-    new_height = int(text_height * scale)    
-    logging.info(f" -> scale: {scale}, new_width: {new_width}, new_height: {new_height}")
+    new_height = int(text_height * scale)
+    logging.info(
+        f" -> scale: {scale}, new_width: {new_width}, new_height: {new_height}"
+    )
 
-    if new_width<3 or new_height<3:
+    if new_width < 3 or new_height < 3:
         return draw
-    
+
     resized_img = tmp_img.resize((new_width, new_height), Image.Resampling.LANCZOS)
     resized_img.show()
-    
+
     # Calculate position to center the resized image in the bounding box
     paste_x = int(x0 + (width - new_width) / 2)
     paste_y = int(y0 + (height - new_height) / 2)
 
     logging.info(f" -> paste_x: {paste_x}, paste_y: {paste_y}, text: {text}")
-    
-    # Paste the resized text image onto the original image
-    #draw.bitmap((paste_x, paste_y), resized_img)#, fill=None)
-    img.paste((paste_x, paste_y), "black", resized_img)#, fill=None)
 
-    #draw.text((50, 50), text, font=font, fill=(0,0,0,255))
+    # Paste the resized text image onto the original image
+    # draw.bitmap((paste_x, paste_y), resized_img)#, fill=None)
+    img.paste((paste_x, paste_y), "black", resized_img)  # , fill=None)
+
+    # draw.text((50, 50), text, font=font, fill=(0,0,0,255))
 
     # Composite the overlay with the base image
-    #img = Image.alpha_composite(img, overlay)
-    
+    # img = Image.alpha_composite(img, overlay)
+
     img.show()
     exit(-1)
-    
+
     return draw
+
 
 def create_pil_image_of_page_v1(
     page: Dict,
@@ -221,10 +224,14 @@ def create_pil_image_of_page_v2(
 ) -> Image.Image:
 
     if category not in ["original", "sanitized"]:
-        raise ValueError(f"category {category} needs to be of `original` or `sanitized`.")
+        raise ValueError(
+            f"category {category} needs to be of `original` or `sanitized`."
+        )
 
     if page_boundary not in ["crop_box", "media_box"]:
-        raise ValueError(f"page_boundary {page_boundary} needs to be of `crop_box` or `media_box`.")
+        raise ValueError(
+            f"page_boundary {page_boundary} needs to be of `crop_box` or `media_box`."
+        )
 
     for _ in [
         cell_alpha,
@@ -410,9 +417,14 @@ def create_pil_image_of_page_v2(
 
             # Fixme: the _draw_text_in_bounding_bbox is not yet working
             text = row[cells_header.index(f"text")]
-            if False and draw_cells_text and len(text)>0:                
-                draw = _draw_text_in_bounding_bbox(overlay, draw, bbox=[rect[0][0], rect[0][1], rect[2][0], rect[2][1]], text=text)
-            
+            if False and draw_cells_text and len(text) > 0:
+                draw = _draw_text_in_bounding_bbox(
+                    overlay,
+                    draw,
+                    bbox=[rect[0][0], rect[0][1], rect[2][0], rect[2][1]],
+                    text=text,
+                )
+
             if cell_bl_radius > 0.0:
                 # Draw a red dot on the bottom-left corner
                 dot_radius = cell_bl_radius  # Adjust the radius as needed
@@ -421,7 +433,7 @@ def create_pil_image_of_page_v2(
                 # Define the bounding box for the dot
                 dot_bbox = [
                     (dot_point[0] - dot_radius, dot_point[1] - dot_radius),
-                    (dot_point[0] + dot_radius, dot_point[1] + dot_radius)
+                    (dot_point[0] + dot_radius, dot_point[1] + dot_radius),
                 ]
 
                 # Convert cell color to RGBA with alpha
@@ -443,7 +455,7 @@ def create_pil_image_of_page_v2(
                 # Define the bounding box for the dot
                 dot_bbox = [
                     (dot_point[0] - dot_radius, dot_point[1] - dot_radius),
-                    (dot_point[0] + dot_radius, dot_point[1] + dot_radius)
+                    (dot_point[0] + dot_radius, dot_point[1] + dot_radius),
                 ]
 
                 # Convert cell color to RGBA with alpha
@@ -455,7 +467,7 @@ def create_pil_image_of_page_v2(
                 )
 
                 # Draw the red dot
-                draw.ellipse(dot_bbox, fill=fill_color, outline=outl_color)                
+                draw.ellipse(dot_bbox, fill=fill_color, outline=outl_color)
 
     if draw_annotations:
         # Draw widgets
@@ -518,7 +530,7 @@ def create_pil_image_of_page_v2(
 
         # Draw the rectangle as a polygon
         draw.polygon([bl, br, tr, tl], outline=outl_color, width=cropbox_width)
-        
+
     # Composite the overlay with the base image
     img = Image.alpha_composite(img, overlay)
 
