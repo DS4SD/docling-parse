@@ -45,7 +45,7 @@ namespace docling
     nlohmann::json sanitize_cells(nlohmann::json& original_cells,
 				  nlohmann::json& page_dim,
 				  nlohmann::json& page_lines,
-				  double delta_y0,
+				  double horizontal_cell_tolerance,
 				  bool enforce_same_font,
 				  double space_width_factor_for_merge, //=1.5,
 				  double space_width_factor_for_merge_with_space); //=0.33);
@@ -53,7 +53,7 @@ namespace docling
     nlohmann::json sanitize_cells_in_bbox(nlohmann::json& page,
 					  std::array<double, 4> bbox,
 					  double iou_cutoff,
-					  double delta_y0,
+					  double horizontal_cell_tolerance,
 					  bool enforce_same_font,
 					  double space_width_factor_for_merge, //=1.5,
 					  double space_width_factor_for_merge_with_space); //=0.33);
@@ -338,7 +338,7 @@ namespace docling
   nlohmann::json docling_parser_v2::sanitize_cells(nlohmann::json& json_cells,
 						   nlohmann::json& json_dim,
 						   nlohmann::json& json_lines,
-						   double delta_y0,
+						   double horizontal_cell_tolerance,
 						   bool enforce_same_font,
 						   double space_width_factor_for_merge, //=1.5,
 						   double space_width_factor_for_merge_with_space) //=0.33);
@@ -353,7 +353,7 @@ namespace docling
     cells.init_from(json_cells);
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer;//(dim, lines);
-    sanitizer.sanitize_bbox(cells, delta_y0, enforce_same_font,
+    sanitizer.sanitize_bbox(cells, horizontal_cell_tolerance, enforce_same_font,
 			    space_width_factor_for_merge,
 			    space_width_factor_for_merge_with_space);
 
@@ -365,14 +365,14 @@ namespace docling
   nlohmann::json docling_parser_v2::sanitize_cells_in_bbox(nlohmann::json& page,
 							   std::array<double, 4> bbox,
 							   double iou_cutoff,
-							   double delta_y0,
+							   double horizontal_cell_tolerance,
 							   bool enforce_same_font,
 							   double space_width_factor_for_merge, //=1.5,
 							   double space_width_factor_for_merge_with_space) //=0.33);
   {
     LOG_S(INFO) << __FUNCTION__
 		<< ", iou_cutoff: " << iou_cutoff
-		<< ", delta_y0: " << delta_y0
+		<< ", horizontal_cell_tolerance: " << horizontal_cell_tolerance
 		<< ", enforce_same_font: " << enforce_same_font;
     
     // empty array
@@ -426,7 +426,9 @@ namespace docling
       }
     
     pdflib::pdf_sanitator<pdflib::PAGE_CELLS> sanitizer;
-    sanitizer.sanitize_bbox(selected_cells, delta_y0, enforce_same_font,
+    sanitizer.sanitize_bbox(selected_cells,
+			    horizontal_cell_tolerance,
+			    enforce_same_font,
 			    space_width_factor_for_merge,
 			    space_width_factor_for_merge_with_space);
 

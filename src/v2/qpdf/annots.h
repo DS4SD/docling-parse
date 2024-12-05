@@ -232,13 +232,13 @@ namespace pdflib
       {
         QPDFObjectHandle first = node.getKey("/First");
 
-	//LOG_S(INFO) << "same: "<< first.unparse() << " == " << node.unparse(); 	
-	//for(auto key : first.getKeys())
-	//{
-	//LOG_S(INFO) << "\t" << level << " -> key: " << key;
-	//}
-
-	bool first_is_not_equal_to_node = (first.unparse()==node.unparse());
+	LOG_S(INFO) << "same: "<< first.unparse() << " == " << node.unparse(); 	
+	for(auto key : first.getKeys())
+	  {
+	    LOG_S(INFO) << "\t" << level << " -> key: " << key;
+	  }
+	
+	bool first_is_not_equal_to_node = (first.unparse()!=node.unparse());
 	
         while(first.isDictionary() and first_is_not_equal_to_node)
           {

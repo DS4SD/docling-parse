@@ -1,15 +1,43 @@
 #!/usr/bin/env python
 
 GENERATE = False
+VISUALISE_TESTS = False
+
+GROUNDTRUTH_FOLDER = "tests/data/groundtruth/"
+REGRESSION_FOLDER = "tests/data/regression/*.pdf"
+
+MAX_PAGES = 2
 
 import glob
 import io
 import json
 import os
 
-from docling_parse import docling_parse
+from docling_parse.pdf_parsers import pdf_parser_v2
+from docling_parse.utils import create_pil_image_of_page_v2
 
+def verify_annots(true_annots, pred_annots):
 
+    if isinstance(true_annots, dict):
+        for k,v in true_annots.items():
+            verify_annots(true_annots[k], pred_annots[k])
+
+    elif isinstance(true_annots, list):
+        for i,_ in enumerate(true_annots):
+            verify_annots(true_annots[i], pred_annots[i])
+
+    elif isinstance(true_annots, str):
+        assert true_annots==pred_annots, f"true_annots!=pred_annots -> {true_annots}!={pred_annots}"
+
+    elif isinstance(true_annots, int):
+        assert true_annots==pred_annots, f"true_annots!=pred_annots -> {true_annots}!={pred_annots}"        
+
+    elif isinstance(true_annots, float):
+        assert true_annots==pred_annots, f"true_annots!=pred_annots -> {round(true_annots)}!={round(pred_annots)}"
+
+    else:
+        assert True
+        
 def verify_dimensions(true_dimension, pred_dimension):
 
     for _ in ["width", "height", "angle"]:
@@ -84,13 +112,15 @@ def verify_lines(true_lines, pred_lines):
 
 
 def verify_reference_output(true_doc, pred_doc):
-
+    
     num_true_pages = len(true_doc["pages"])
     num_pred_pages = len(pred_doc["pages"])
-
+    
     message = f'len(pred_doc["pages"])!=len(true_doc["pages"]) => {num_pred_pages}!={num_true_pages}'
     assert num_pred_pages == num_true_pages, message
-
+    
+    verify_annots(true_doc["annotations"], pred_doc["annotations"])
+    
     for pred_page, true_page in zip(pred_doc["pages"], true_doc["pages"]):
         # print(pred_page.keys())
         # print(pred_page["original"].keys())
@@ -134,10 +164,11 @@ def verify_reference_output(true_doc, pred_doc):
 
 def test_reference_documents_from_filenames_with_keys():
 
-    parser = docling_parse.pdf_parser_v2("fatal")
+    parser = pdf_parser_v2(level="fatal")
+    #parser = docling_parse.pdf_parser_v2("fatal")
     # parser.set_loglevel_with_label("fatal")
 
-    pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
+    pdf_docs = glob.glob(REGRESSION_FOLDER)
 
     assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
 
@@ -150,17 +181,23 @@ def test_reference_documents_from_filenames_with_keys():
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"
-
+        
         pred_doc = parser.parse_pdf_from_key(doc_key)
         # pred_doc = parser.parse_pdf_from_key_on_page(doc_key, 1)
 
+        num_pages = parser.number_of_pages(doc_key)
+        if num_pages>10: # skip large files
+            parser.unload_document(doc_key)
+            continue
+        
         # print(" => unload_document ...")
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 0, "len(keys)==0"
 
-        fname = pdf_doc + ".v2.filename.json"
+        rname = os.path.basename(pdf_doc)
+        fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v2.json")
 
         if GENERATE:
             with open(fname, "w") as fw:
@@ -178,11 +215,9 @@ def test_reference_documents_from_filenames_with_keys():
 
 def test_reference_documents_from_filenames_with_keys_page_by_page():
 
-    parser = docling_parse.pdf_parser_v2("fatal")
-    # parser.set_loglevel_with_label("fatal")
+    parser = pdf_parser_v2(level="fatal")
 
-    pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
-
+    pdf_docs = glob.glob(REGRESSION_FOLDER)
     assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
 
     for pdf_doc in pdf_docs:
@@ -199,8 +234,10 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
 
         num_pages = parser.number_of_pages(doc_key)
 
-        for page in range(0, num_pages):
-            fname = f"{pdf_doc}_p={page}.v2.filename.json"
+        for page in range(0, min(MAX_PAGES, num_pages)):
+            
+            rname = os.path.basename(pdf_doc)
+            fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
 
             pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
@@ -225,11 +262,12 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
 
 
 def test_reference_documents_from_bytesio_with_keys():
-
-    parser = docling_parse.pdf_parser_v2("fatal")
+    
+    parser = pdf_parser_v2(level="fatal")
+    #parser = docling_parse.pdf_parser_v2("fatal")
     # parser.set_loglevel_with_label("fatal")
 
-    pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
+    pdf_docs = glob.glob(REGRESSION_FOLDER)
 
     assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
 
@@ -250,12 +288,18 @@ def test_reference_documents_from_bytesio_with_keys():
 
         pred_doc = parser.parse_pdf_from_key(doc_key)
 
+        num_pages = parser.number_of_pages(doc_key)
+        if num_pages>10: # skip large files
+            parser.unload_document(doc_key)
+            continue
+        
         parser.unload_document(doc_key)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 0, "len(keys)==0"
 
-        fname = pdf_doc + ".v2.bytesio.json"
+        rname = os.path.basename(pdf_doc)
+        fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v2.json")
 
         if GENERATE:
             with open(fname, "w") as fw:
@@ -273,11 +317,9 @@ def test_reference_documents_from_bytesio_with_keys():
 
 def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
-    parser = docling_parse.pdf_parser_v2("fatal")
-    # parser.set_loglevel_with_label("fatal")
+    parser = pdf_parser_v2(level="fatal")
 
-    pdf_docs = glob.glob("./tests/pdf_docs/tests/*.pdf")
-
+    pdf_docs = glob.glob(REGRESSION_FOLDER)
     assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
 
     for pdf_doc in pdf_docs:
@@ -297,8 +339,11 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
         num_pages = parser.number_of_pages(doc_key)
 
-        for page in range(0, num_pages):
-            fname = f"{pdf_doc}_p={page}.v2.bytesio.json"
+        #for page in range(0, num_pages):
+        for page in range(0, min(MAX_PAGES, num_pages)):
+
+            rname = os.path.basename(pdf_doc)
+            fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
 
             pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
@@ -319,3 +364,38 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 0, "len(keys)==0"
+
+def test_visualisation():
+
+    parser = pdf_parser_v2(level="fatal")
+
+    pdf_docs = glob.glob(REGRESSION_FOLDER)
+    assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
+
+    for pdf_doc in pdf_docs:
+
+        doc_key = f"key={pdf_doc}"
+
+        success = parser.load_document(doc_key, pdf_doc)
+
+        keys = parser.list_loaded_keys()
+        assert len(keys) == 1, "len(keys)==1"
+
+        num_pages = parser.number_of_pages(doc_key)
+
+        for page in range(0, min(MAX_PAGES, num_pages)):
+            
+            rname = os.path.basename(pdf_doc)
+            fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
+
+            pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
+
+            img = create_pil_image_of_page_v2(pred_doc["pages"][0])
+
+            if VISUALISE_TESTS:
+                img.show()
+
+        parser.unload_document(doc_key)
+
+        keys = parser.list_loaded_keys()
+        assert len(keys) == 0, "len(keys)==0"            

@@ -16,6 +16,15 @@ PYBIND11_MODULE(pdf_parsers, m) {
   // purely for backward compatibility 
   pybind11::class_<docling::docling_parser_v1>(m, "pdf_parser_v1")
     .def(pybind11::init())
+    .def(pybind11::init<const std::string&>(),
+	 pybind11::arg("level"),
+	 R"(
+    Construct pdf_parser_v2 with logging level.
+
+    Parameters:
+        level (str): Logging level as a string.
+                     One of ['fatal', 'error', 'warning', 'info'])"
+	 )
 
     .def("set_loglevel", &docling::docling_parser_v1::set_loglevel)
     .def("set_loglevel_with_label", &docling::docling_parser_v1::set_loglevel_with_label)
@@ -42,7 +51,15 @@ PYBIND11_MODULE(pdf_parsers, m) {
   // next generation parser, 10x faster with more finegrained output
   pybind11::class_<docling::docling_parser_v2>(m, "pdf_parser_v2")
     .def(pybind11::init())
-    .def(pybind11::init<const std::string&>())
+    .def(pybind11::init<const std::string&>(),
+	 pybind11::arg("level"),
+	 R"(
+    Construct pdf_parser_v2 with logging level.
+
+    Parameters:
+        level (str): Logging level as a string.
+                     One of ['fatal', 'error', 'warning', 'info'])"
+	 )
     
     .def("set_loglevel",
 	 // &docling::docling_parser_v2::set_loglevel,
@@ -256,14 +273,14 @@ PYBIND11_MODULE(pdf_parsers, m) {
 	    nlohmann::json &original_cells,
 	    nlohmann::json &page_dim,
 	    nlohmann::json &page_lines,
-	    double delta_y0,
+	    double horizontal_cell_tolerance,
 	    bool enforce_same_font,
 	    double space_width_factor_for_merge,
 	    double space_width_factor_for_merge_with_space) -> nlohmann::json {
 	   return self.sanitize_cells(original_cells,
 				      page_dim,
 				      page_lines,
-				      delta_y0,
+				      horizontal_cell_tolerance,
 				      enforce_same_font,
 				      space_width_factor_for_merge,
 				      space_width_factor_for_merge_with_space
@@ -272,7 +289,7 @@ PYBIND11_MODULE(pdf_parsers, m) {
 	 pybind11::arg("original_cells"),
 	 pybind11::arg("page_dimension"),
 	 pybind11::arg("page_lines"),
-	 pybind11::arg("delta_y0")=1.0,
+	 pybind11::arg("horizontal_cell_tolerance")=1.0,
 	 pybind11::arg("enforce_same_font")=true,
 	 pybind11::arg("space_width_factor_for_merge")=1.5,
 	 pybind11::arg("space_width_factor_for_merge_with_space")=0.33,
@@ -284,7 +301,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
         original_cells (dict): The original table cells as a JSON object.
         page_dim (dict): Page dimensions as a JSON object.
         page_lines (dict): Page lines as a JSON object.
-        delta_y0 (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<delta_y0), default = 1.0.
+        horizontal_cell_tolerance (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<horizontal_cell_tolerance), default = 1.0.
         enforce_same_font (bool): Whether to enforce the same font across cells. Default = True.
         space_width_factor_for_merge (float): Factor for merging cells based on space width. Default = 1.5.
         space_width_factor_for_merge_with_space (float): Factor for merging cells with space width. Default = 0.33.
@@ -299,14 +316,14 @@ Sanitize table cells with specified parameters and return the processed JSON.
 	    nlohmann::json &page,
 	    const std::array<double, 4> &bbox,
 	    double iou_cutoff,
-	    double delta_y0,
+	    double horizontal_cell_tolerance,
 	    bool enforce_same_font,
 	    double space_width_factor_for_merge = 1.5,
 	    double space_width_factor_for_merge_with_space = 0.33) -> nlohmann::json {
 	   return self.sanitize_cells_in_bbox(page,
 					      bbox,
 					      iou_cutoff,
-					      delta_y0,
+					      horizontal_cell_tolerance,
 					      enforce_same_font,
 					      space_width_factor_for_merge,
 					      space_width_factor_for_merge_with_space
@@ -315,7 +332,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
 	 pybind11::arg("page"),
 	 pybind11::arg("bbox"),
 	 pybind11::arg("iou_cutoff")=0.99,
-	 pybind11::arg("delta_y0")=1.0,
+	 pybind11::arg("horizontal_cell_tolerance")=1.0,
 	 pybind11::arg("enforce_same_font")=true,
 	 pybind11::arg("space_width_factor_for_merge")=1.5,
 	 pybind11::arg("space_width_factor_for_merge_with_space")=0.33,
@@ -327,7 +344,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
         page (dict): The JSON object representing the page.
         bbox (Tuple[float, float, float, float]): Bounding box specified as [x_min, y_min, x_max, y_max].
         iou_cutoff (float): Intersection-over-Union cutoff for filtering cells.
-        delta_y0 (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<delta_y0), default = 1.0.
+        horizontal_cell_tolerance (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<horizontal_cell_tolerance), default = 1.0.
         enforce_same_font (bool): Whether to enforce the same font across cells. Default is True
         space_width_factor_for_merge (float): Factor for merging cells based on space width. Default is 1.5.
         space_width_factor_for_merge_with_space (float): Factor for merging cells with space width. Default is 0.33.

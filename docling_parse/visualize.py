@@ -153,6 +153,29 @@ def visualise_v1(
 
     for pi, page in enumerate(doc["pages"]):
 
+        img = create_pil_image_of_page_v1(page)
+        
+        if interactive:
+            img.show()
+
+        if output_dir is not None and page_num == -1:
+            oname = os.path.join(
+                output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v1.png"
+            )
+            logging.info(f"output: {oname}")
+
+            img.save(oname)
+
+        elif output_dir is not None and page_num != -1:
+            oname = os.path.join(
+                output_dir, f"{os.path.basename(pdf_path)}_page={page_num}.v1.png"
+            )
+            logging.info(f"output: {oname}")
+
+            img.save(oname)
+
+        
+        """
         W = page["width"]
         H = page["height"]
 
@@ -232,6 +255,8 @@ def visualise_v1(
             logging.info(f"output: {oname}")
 
             img.save(oname)
+
+        """
 
 """
 def draw_annotations(draw, annot, H, W):
@@ -490,7 +515,12 @@ def main():
     logging.info(f"page_boundary: {page_boundary}")
 
     if version == "v1":
-        visualise_v1(log_level, pdf_path, interactive, output_dir, page, display_text)
+        visualise_v1(log_level=log_level,
+                     pdf_path=pdf_path,
+                     interactive=interactive,
+                     output_dir=output_dir,
+                     page_num=page_num,
+                     display_text=display_text)
     elif version == "v2":
         visualise_v2(
             log_level=log_level,

@@ -10,11 +10,6 @@ namespace pdflib
   class pdf_sanitator<PAGE_CELLS>
   {
   public:
-
-    /*
-    pdf_sanitator(pdf_resource<PAGE_DIMENSION>& page_dims_,
-                  pdf_resource<PAGE_LINES>& page_lines_);
-    */
     
     pdf_sanitator();
     ~pdf_sanitator();
@@ -22,7 +17,7 @@ namespace pdflib
     void sanitize_text(pdf_resource<PAGE_CELLS>& cells);
     
     void sanitize_bbox(pdf_resource<PAGE_CELLS>& cells,
-		       double delta_y0, //=1.0,
+		       double horizontal_cell_tolerance, //=1.0,
 		       bool enforce_same_font, //=true,
 		       double space_width_factor_for_merge, //=1.5,
 		       double space_width_factor_for_merge_with_space); //=0.33);
@@ -30,14 +25,14 @@ namespace pdflib
   private:
 
     void contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells,
-				   double delta_y0=1.0,
+				   double horizontal_cell_tolerance=1.0,
 				   bool enforce_same_font=true,
 				   double space_width_factor_for_merge=1.5,
 				   double space_width_factor_for_merge_with_space=0.33);
 
     bool case_0(pdf_resource<PAGE_CELL>& cell_i,
 		pdf_resource<PAGE_CELL>& cell_j,
-		double delta_y0=1.0,
+		double horizontal_cell_tolerance=1.0,
 		bool enforce_same_font=true,
 		double space_width_factor_for_merge=1.5,
 		double space_width_factor_for_merge_with_space=0.33);
@@ -46,43 +41,93 @@ namespace pdflib
 
   private:
 
-    //pdf_resource<PAGE_DIMENSION>& page_dims;
-    //pdf_resource<PAGE_LINES>&     page_lines;
+    // FIXME: we might at some point move this into a file into the resources ...
+    const static inline std::vector<std::pair<std::string, std::string> > replacements = {
+      {R"(\f_f_i)", "ffi"},
+      {R"(\f_f_l)", "ffl"},
+      {R"(\f_i)", "fi"},
+      {R"(\f_l)", "fl"},
+      {R"(\f_f)", "ff"},
+
+      {R"(f_f_i)", "ffi"},
+      {R"(f_f_l)", "ffl"},
+      {R"(f_i)", "fi"},
+      {R"(f_l)", "fl"},
+      {R"(f_f)", "ff"},
+
+      {"\uFB00", "ff"},
+      {"\uFB01", "fi"},
+      {"\uFB02", "fl"},
+      {"\uFB03", "ffi"},
+      {"\uFB04", "ffl"},
+      
+      {"\u2000", " "},
+      {"\u2001", " "},
+      {"\u2002", " "},
+      {"\u2003", " "},
+      {"\u2004", " "},
+      {"\u2005", " "},
+      {"\u2006", " "},
+      {"\u2007", " "},
+      {"\u2008", " "},
+      {"\u2009", " "},      
+      {"\u200A", " "},
+
+      {"\u200B", ""},
+      {"\u200C", ""},
+      {"\u200D", ""},
+      {"\u200E", ""},
+      {"\u200F", ""},      
+      
+      {"\u2010", "-"},
+      {"\u2011", "-"},
+      {"\u2012", "-"},
+      {"\u2013", "-"},
+      {"\u2014", "-"},
+      {"\u2015", "-"},
+
+      {"\u2018", "'"},
+      {"\u2019", "'"},
+      {"\u201A", ","},
+      {"\u201B", "'"},
+      {"\u201C", "'"},
+      {"\u201D", "'"},
+      {"\u201E", "'"},
+      {"\u201F", "'"},
+      
+      {"\u2212", "-"},
+    };
+    
   };
 
-  /*
-  pdf_sanitator<PAGE_CELLS>::pdf_sanitator(pdf_resource<PAGE_DIMENSION>& page_dims_,
-                                           pdf_resource<PAGE_LINES>& page_lines_):
-    page_dims(page_dims_),
-    page_lines(page_lines_)
-  {}
-  */
-  
   pdf_sanitator<PAGE_CELLS>::pdf_sanitator()
-  {}
+  {
+    //for(auto pair:replacements)
+    //{
+    //LOG_S(INFO) << "`" << pair.first << "` => `" << pair.second << "`";
+    //}
+  }
   
   pdf_sanitator<PAGE_CELLS>::~pdf_sanitator()
   {}
 
   void pdf_sanitator<PAGE_CELLS>::sanitize_bbox(pdf_resource<PAGE_CELLS>& cells,
-						double delta_y0,
+						double horizontal_cell_tolerance,
 						bool enforce_same_font,
 						double space_width_factor_for_merge,
 						double space_width_factor_for_merge_with_space)
   {
-    contract_cells_into_lines(cells, delta_y0, enforce_same_font,
+    contract_cells_into_lines(cells, horizontal_cell_tolerance, enforce_same_font,
 			      space_width_factor_for_merge,
 			      space_width_factor_for_merge_with_space);
   }
 
   void pdf_sanitator<PAGE_CELLS>::contract_cells_into_lines(pdf_resource<PAGE_CELLS>& cells,
-							    double delta_y0,
+							    double horizontal_cell_tolerance,
 							    bool enforce_same_font,
 							    double space_width_factor_for_merge,
 							    double space_width_factor_for_merge_with_space)
   {
-    //std::vector<pdf_resource<PAGE_CELL> >& cells = page_cells.cells;
-
     while(true)
       {
         bool erased_cell=false;
@@ -98,7 +143,7 @@ namespace pdflib
 	      {
 		if(cells[j].active)
 		  {
-		    if(case_0(cells[i], cells[j], delta_y0, enforce_same_font, space_width_factor_for_merge))
+		    if(case_0(cells[i], cells[j], horizontal_cell_tolerance, enforce_same_font, space_width_factor_for_merge))
 		      {
 			cells[j].active = false;
 			erased_cell     = true;
@@ -144,7 +189,7 @@ namespace pdflib
 
   bool pdf_sanitator<PAGE_CELLS>::case_0(pdf_resource<PAGE_CELL>& cell_i,
 					 pdf_resource<PAGE_CELL>& cell_j,
-					 double delta_y0,
+					 double horizontal_cell_tolerance,
 					 bool enforce_same_font,
 					 double space_width_factor_for_merge,
 					 double space_width_factor_for_merge_with_space)
@@ -187,7 +232,7 @@ namespace pdflib
     
     space_width = space_width_i;
     
-    if(std::abs(bbox_i[1]-bbox_j[1])<delta_y0 and 
+    if(std::abs(bbox_i[1]-bbox_j[1])<horizontal_cell_tolerance and 
        (bbox_i[0]<bbox_j[0]) and 
        (bbox_j[0]-bbox_i[2]) <= space_width_factor_for_merge*space_width)
       {
@@ -250,67 +295,6 @@ namespace pdflib
 
   void pdf_sanitator<PAGE_CELLS>::sanitize_text(pdf_resource<PAGE_CELLS>& cells)
   {
-    std::vector<std::pair<std::string, std::string> > replacements = {
-      {R"(\f_f_i)", "ffi"},
-      {R"(\f_f_l)", "ffl"},
-      {R"(\f_i)", "fi"},
-      {R"(\f_l)", "fl"},
-      {R"(\f_f)", "ff"},
-
-      {R"(f_f_i)", "ffi"},
-      {R"(f_f_l)", "ffl"},
-      {R"(f_i)", "fi"},
-      {R"(f_l)", "fl"},
-      {R"(f_f)", "ff"},
-
-      {"\uFB00", "ff"},
-      {"\uFB01", "fi"},
-      {"\uFB02", "fl"},
-      {"\uFB03", "ffi"},
-      {"\uFB04", "ffl"},
-      
-      {"\u2000", " "},
-      {"\u2001", " "},
-      {"\u2002", " "},
-      {"\u2003", " "},
-      {"\u2004", " "},
-      {"\u2005", " "},
-      {"\u2006", " "},
-      {"\u2007", " "},
-      {"\u2008", " "},
-      {"\u2009", " "},      
-      {"\u200A", " "},
-
-      {"\u200B", ""},
-      {"\u200C", ""},
-      {"\u200D", ""},
-      {"\u200E", ""},
-      {"\u200F", ""},      
-      
-      {"\u2010", "-"},
-      {"\u2011", "-"},
-      {"\u2012", "-"},
-      {"\u2013", "-"},
-      {"\u2014", "-"},
-      {"\u2015", "-"},
-
-      {"\u2018", "'"},
-      {"\u2019", "'"},
-      {"\u201A", ","},
-      {"\u201B", "'"},
-      {"\u201C", "'"},
-      {"\u201D", "'"},
-      {"\u201E", "'"},
-      {"\u201F", "'"},
-      
-      {"\u2212", "-"},
-    };
-
-    for(auto pair:replacements)
-      {
-	LOG_S(INFO) << "`" << pair.first << "` => `" << pair.second << "`";
-      }
-  
     for(int i=0; i<cells.size(); i++)
       {
 	std::string& text = cells.at(i).text;

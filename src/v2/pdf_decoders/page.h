@@ -473,13 +473,13 @@ namespace pdflib
       pdf_sanitator<PAGE_CELLS> sanitator;
       cells = page_cells;
       
-      double delta_y0=1.0;
+      double horizontal_cell_tolerance=1.0;
       bool enforce_same_font=true;
       double space_width_factor_for_merge=1.5;
       double space_width_factor_for_merge_with_space=0.33;
       
       sanitator.sanitize_bbox(cells,
-			      delta_y0,
+			      horizontal_cell_tolerance,
 			      enforce_same_font,
 			      space_width_factor_for_merge,
 			      space_width_factor_for_merge_with_space);

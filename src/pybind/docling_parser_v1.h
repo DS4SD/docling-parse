@@ -16,7 +16,8 @@ namespace docling
   public:
 
     docling_parser_v1();
-
+    docling_parser_v1(std::string level);
+    
     void set_loglevel(int level=0);
     void set_loglevel_with_label(std::string level="error");
     
@@ -49,6 +50,18 @@ namespace docling
     docling_resources(),
     interface()
   {
+    // std::string font_data_dir = resource_utils::get_resources_dir(true);
+    std::string font_data_dir = resource_utils::get_resources_dir(true).string();
+
+    pdf_lib::core::object<pdf_lib::core::FONT>::initialize(font_data_dir);
+  }
+
+  docling_parser_v1::docling_parser_v1(std::string level):
+    docling_resources(),
+    interface()
+  {
+    set_loglevel_with_label(level);
+    
     // std::string font_data_dir = resource_utils::get_resources_dir(true);
     std::string font_data_dir = resource_utils::get_resources_dir(true).string();
 

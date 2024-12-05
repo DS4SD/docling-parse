@@ -1,31 +1,34 @@
 import json
 import logging
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional, Any
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 
-def draw_text_in_bounding_box(
+def _draw_text_in_bounding_bbox(
+    img,
     draw: ImageDraw.Draw, 
-    box: Tuple[float, float, float, float], 
+    bbox: Tuple[float, float, float, float], 
     text: str, 
     font: Optional[ImageFont.ImageFont] = None, 
     fill: str = "black"
 ):
     """
     Draws text inside a bounding box by creating a temporary image,
-    resizing it, and pasting it into the original image.
+    resizing it, and pasting it into the original image at bbox.
 
     Parameters:
     - draw: The ImageDraw.Draw object.
-    - box: Tuple (x0, y0, x1, y1) representing the bounding box (all floats).
+    - bbox: Tuple (x0, y0, x1, y1) representing the bounding box (all floats).
     - text: The text to draw.
     - font: An optional ImageFont.ImageFont object. Defaults to Pillow's built-in font.
     - fill: Fill color for the text.
     """
 
-    x0, y0, x1, y1 = box
-    width, height = x1 - x0, y1 - y0
+    x0, y0, x1, y1 = bbox
+    width, height = abs(x1 - x0), abs(y1 - y0)
+
+    logging.info(f"cell-width: {width}, cell-height: {height}")
     
     # Use the default font if no font is provided
     if font is None:
@@ -34,42 +37,64 @@ def draw_text_in_bounding_box(
     # Create a temporary image for the text
     tmp_img = Image.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
     tmp_draw = ImageDraw.Draw(tmp_img)
-    text_width, text_height = tmp_draw.textsize(text, font=font)
+    #text_width = draw.textlength(text, font=font)
+    _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
+    #text_width, text_height = tmp_draw.text((0,0), text, font=font)
+    #tmp_draw.show()
 
+    logging.info(f" -> text_width: {text_width}, text_height: {text_height}")
+    
     # Create a properly sized temporary image
     tmp_img = Image.new("RGBA", (text_width, text_height), (255, 255, 255, 0))
+    #tmp_img = Image.new("RGBA", (text_width, text_height), (0,0,0, 255))
     tmp_draw = ImageDraw.Draw(tmp_img)
-    tmp_draw.text((0, 0), text, font=font, fill=fill)
-
-    # Calculate scaling factors to fit the text into the bounding box
-    scale_x = width / text_width
-    scale_y = height / text_height
+    tmp_draw.text((0, 0), text, font=font, fill=(0,0,0,255))
+    #tmp_img.show()
+    
+    # Resize the text image to fit within the polygon's bounding box
+    scale_x = float(width) / float(text_width)
+    scale_y = float(height) / float(text_height)
     scale = min(scale_x, scale_y)  # Maintain aspect ratio
-
-    # Resize the temporary image
     new_width = int(text_width * scale)
-    new_height = int(text_height * scale)
-    resized_img = tmp_img.resize((new_width, new_height), Image.ANTIALIAS)
+    new_height = int(text_height * scale)    
+    logging.info(f" -> scale: {scale}, new_width: {new_width}, new_height: {new_height}")
 
+    if new_width<3 or new_height<3:
+        return draw
+    
+    resized_img = tmp_img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+    resized_img.show()
+    
     # Calculate position to center the resized image in the bounding box
     paste_x = int(x0 + (width - new_width) / 2)
     paste_y = int(y0 + (height - new_height) / 2)
 
+    logging.info(f" -> paste_x: {paste_x}, paste_y: {paste_y}, text: {text}")
+    
     # Paste the resized text image onto the original image
-    draw.bitmap((paste_x, paste_y), resized_img, fill=None)
+    #draw.bitmap((paste_x, paste_y), resized_img)#, fill=None)
+    img.paste((paste_x, paste_y), "black", resized_img)#, fill=None)
 
+    #draw.text((50, 50), text, font=font, fill=(0,0,0,255))
 
-                                                                                            
+    # Composite the overlay with the base image
+    #img = Image.alpha_composite(img, overlay)
+    
+    img.show()
+    exit(-1)
+    
+    return draw
 
 def create_pil_image_of_page_v1(
     page: Dict,
-    draw_cells: bool = True,
+    draw_cells_bbox: bool = True,
+    draw_cells_text: bool = False,
     cell_outline="black",
     cell_color="blue",
     cell_alpha=1.0,
     draw_images: bool = True,
     image_outline="black",
-    image_color="yello",
+    image_color="yellow",
     image_alpha=1.0,
     draw_lines: bool = True,
     line_color="black",
@@ -110,7 +135,7 @@ def create_pil_image_of_page_v1(
             # Draw the rectangle as a polygon
             draw.polygon([bl, br, tr, tl], outline=outl_color, fill=fill_color)
 
-    if draw_cells:
+    if draw_cells_bbox:
         for cell in page["cells"]:
             bbox = cell["box"]["device"]
 
@@ -164,8 +189,8 @@ def create_pil_image_of_page_v2(
     page: Dict,
     category: str = "sanitized",  # original
     page_boundary: str = "crop_box",  # media_box
-    draw_cells: bool = True,
-    draw_cell_text: bool = False,
+    draw_cells_bbox: bool = True,
+    draw_cells_text: bool = False,
     cell_outline: str = "black",
     cell_color: str = "blue",
     cell_alpha: float = 1.0,
@@ -175,8 +200,8 @@ def create_pil_image_of_page_v2(
     cell_bl_radius: float = 3.0,
     cell_tr_color: str = "green",
     cell_tr_outline: str = "green",
-    cell_tr_alpha: float = 0.0,
-    cell_tr_radius: float = 0.0,
+    cell_tr_alpha: float = 1.0,
+    cell_tr_radius: float = 3.0,
     draw_images: bool = True,
     image_outline: str = "black",
     image_fill: str = "yellow",
@@ -348,7 +373,7 @@ def create_pil_image_of_page_v2(
                 alpha=image_alpha,
             )
 
-    if draw_cells:
+    if draw_cells_bbox or draw_cells_text:
 
         # Draw each rectangle by connecting its four points
         for row in cells:
@@ -366,15 +391,16 @@ def create_pil_image_of_page_v2(
                 (x[3], H - y[3]),
             ]
 
-            _draw_polygon(
-                draw,
-                poly=rect,
-                H=H,
-                W=W,
-                ocolor=cell_outline,
-                fcolor=cell_color,
-                alpha=cell_alpha,
-            )
+            if draw_cells_bbox:
+                _draw_polygon(
+                    draw,
+                    poly=rect,
+                    H=H,
+                    W=W,
+                    ocolor=cell_outline,
+                    fcolor=cell_color,
+                    alpha=cell_alpha,
+                )
 
             """
             if "glyph" in row[cells_header.index("text")]:
@@ -382,6 +408,11 @@ def create_pil_image_of_page_v2(
                 continue
             """
 
+            # Fixme: the _draw_text_in_bounding_bbox is not yet working
+            text = row[cells_header.index(f"text")]
+            if False and draw_cells_text and len(text)>0:                
+                draw = _draw_text_in_bounding_bbox(overlay, draw, bbox=[rect[0][0], rect[0][1], rect[2][0], rect[2][1]], text=text)
+            
             if cell_bl_radius > 0.0:
                 # Draw a red dot on the bottom-left corner
                 dot_radius = cell_bl_radius  # Adjust the radius as needed
@@ -389,8 +420,8 @@ def create_pil_image_of_page_v2(
 
                 # Define the bounding box for the dot
                 dot_bbox = [
-                    dot_point[0] - dot_radius, bottom_left[1] - dot_radius),
-                    dot_point[0] + dot_radius, bottom_left[1] + dot_radius),
+                    (dot_point[0] - dot_radius, dot_point[1] - dot_radius),
+                    (dot_point[0] + dot_radius, dot_point[1] + dot_radius)
                 ]
 
                 # Convert cell color to RGBA with alpha
@@ -411,8 +442,8 @@ def create_pil_image_of_page_v2(
 
                 # Define the bounding box for the dot
                 dot_bbox = [
-                    dot_point[0] - dot_radius, bottom_left[1] - dot_radius),
-                    dot_point[0] + dot_radius, bottom_left[1] + dot_radius),
+                    (dot_point[0] - dot_radius, dot_point[1] - dot_radius),
+                    (dot_point[0] + dot_radius, dot_point[1] + dot_radius)
                 ]
 
                 # Convert cell color to RGBA with alpha
@@ -487,7 +518,7 @@ def create_pil_image_of_page_v2(
 
         # Draw the rectangle as a polygon
         draw.polygon([bl, br, tr, tl], outline=outl_color, width=cropbox_width)
-
+        
     # Composite the overlay with the base image
     img = Image.alpha_composite(img, overlay)
 
