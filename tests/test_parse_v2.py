@@ -408,3 +408,61 @@ def test_visualisation():
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 0, "len(keys)==0"
+
+
+def test_sanitize_cells_in_bbox():
+
+    parser = pdf_parser_v2(level="fatal")
+
+    pdf_docs = glob.glob(REGRESSION_FOLDER)
+    assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
+
+    for pdf_doc in pdf_docs:
+
+        doc_key = f"key={pdf_doc}"
+
+        success = parser.load_document(doc_key, pdf_doc)
+
+        keys = parser.list_loaded_keys()
+        assert len(keys) == 1, "len(keys)==1"
+
+        num_pages = parser.number_of_pages(doc_key)
+
+        for page in range(0, min(MAX_PAGES, num_pages)):
+
+            rname = os.path.basename(pdf_doc)
+            fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
+
+            doc = parser.parse_pdf_from_key_on_page(doc_key, page)
+
+            sanitized_cells = doc["pages"][0]["sanitized"]["cells"]
+
+            for sanitized_cell in sanitized_cells["data"]:
+                # print("=============================")
+                # print(sanitized_cell)
+
+                bbox = [
+                    sanitized_cell[sanitized_cells["header"].index("x0")],
+                    sanitized_cell[sanitized_cells["header"].index("y0")],
+                    sanitized_cell[sanitized_cells["header"].index("x1")],
+                    sanitized_cell[sanitized_cells["header"].index("y1")],
+                ]
+
+                out = parser.sanitize_cells_in_bbox(
+                    page=doc["pages"][0],
+                    bbox=bbox,
+                    cell_overlap=0.9,
+                    horizontal_cell_tolerance=1.0,
+                    enforce_same_font=False,
+                    space_width_factor_for_merge=1.5,
+                    space_width_factor_for_merge_with_space=0.33,
+                )
+                # print(out)
+
+            if VISUALISE_TESTS:
+                img.show()
+
+        parser.unload_document(doc_key)
+
+        keys = parser.list_loaded_keys()
+        assert len(keys) == 0, "len(keys)==0"

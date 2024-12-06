@@ -86,9 +86,11 @@ def main():
     sanitized_cells = parser.sanitize_cells_in_bbox(
         page=doc["pages"][0],
         bbox=bbox,
-        iou_cutoff=0.9,
-        delta_y0=1.0,
+        cell_overlap=0.9,
+        horizontal_cell_tolerance=1.0,
         enforce_same_font=False,
+        space_width_factor_for_merge=1.5,
+        space_width_factor_for_merge_with_space=0.33,
     )
     print("#-cells: ", len(sanitized_cells))
     print(tabulate(sanitized_cells["data"]))

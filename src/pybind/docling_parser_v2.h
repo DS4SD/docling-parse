@@ -52,7 +52,7 @@ namespace docling
     
     nlohmann::json sanitize_cells_in_bbox(nlohmann::json& page,
 					  std::array<double, 4> bbox,
-					  double iou_cutoff,
+					  double cell_overlap,
 					  double horizontal_cell_tolerance,
 					  bool enforce_same_font,
 					  double space_width_factor_for_merge, //=1.5,
@@ -364,14 +364,14 @@ namespace docling
 
   nlohmann::json docling_parser_v2::sanitize_cells_in_bbox(nlohmann::json& page,
 							   std::array<double, 4> bbox,
-							   double iou_cutoff,
+							   double cell_overlap,
 							   double horizontal_cell_tolerance,
 							   bool enforce_same_font,
 							   double space_width_factor_for_merge, //=1.5,
 							   double space_width_factor_for_merge_with_space) //=0.33);
   {
     LOG_S(INFO) << __FUNCTION__
-		<< ", iou_cutoff: " << iou_cutoff
+		<< ", cell_overlap: " << cell_overlap
 		<< ", horizontal_cell_tolerance: " << horizontal_cell_tolerance
 		<< ", enforce_same_font: " << enforce_same_font;
     
@@ -407,14 +407,14 @@ namespace docling
 
     LOG_S(INFO) << "init done ... --> #-cells: " << cells.size();
     
-    // get all cells with an iou overlap over iou_cutoff
+    // get all cells with an overlap over cell_overlap
     pdflib::pdf_resource<pdflib::PAGE_CELLS> selected_cells;    
     for(int i=0; i<cells.size(); i++)
       {
-	double iou = utils::values::compute_overlap(cells[i].x0, cells[i].y0, cells[i].x1, cells[i].y1,
-						    x0, y0, x1, y1);
+	double overlap = utils::values::compute_overlap(cells[i].x0, cells[i].y0, cells[i].x1, cells[i].y1,
+							x0, y0, x1, y1);
 
-	if(iou>iou_cutoff-1.e-3)
+	if(overlap>cell_overlap-1.e-3)
 	  {
 	    selected_cells.push_back(cells[i]);
 	  }

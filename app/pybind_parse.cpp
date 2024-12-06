@@ -415,14 +415,14 @@ Sanitize table cells with specified parameters and return the processed JSON.
 	 [](docling::docling_parser_v2 &self,
 	    nlohmann::json &page,
 	    const std::array<double, 4> &bbox,
-	    double iou_cutoff,
+	    double cell_overlap,
 	    double horizontal_cell_tolerance,
 	    bool enforce_same_font,
 	    double space_width_factor_for_merge = 1.5,
 	    double space_width_factor_for_merge_with_space = 0.33) -> nlohmann::json {
 	   return self.sanitize_cells_in_bbox(page,
 					      bbox,
-					      iou_cutoff,
+					      cell_overlap,
 					      horizontal_cell_tolerance,
 					      enforce_same_font,
 					      space_width_factor_for_merge,
@@ -431,7 +431,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
 	 },
 	 pybind11::arg("page"),
 	 pybind11::arg("bbox"),
-	 pybind11::arg("iou_cutoff")=0.99,
+	 pybind11::arg("cell_overlap")=0.99,
 	 pybind11::arg("horizontal_cell_tolerance")=1.0,
 	 pybind11::arg("enforce_same_font")=true,
 	 pybind11::arg("space_width_factor_for_merge")=1.5,
@@ -442,7 +442,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
     Parameters:
         page (dict): The JSON object representing the page.
         bbox (Tuple[float, float, float, float]): Bounding box specified as [x_min, y_min, x_max, y_max].
-        iou_cutoff (float): Intersection-over-Union cutoff for filtering cells.
+        cell_overlap (float: 0.0-1.0): Overlap of cell (%) with bounding-box.
         horizontal_cell_tolerance (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<horizontal_cell_tolerance), default = 1.0.
         enforce_same_font (bool): Whether to enforce the same font across cells. Default is True
         space_width_factor_for_merge (float): Factor for merging cells based on space width. Default is 1.5.
