@@ -42,7 +42,7 @@ def parse_args():
         type=tuple(float, float, float, float),
         required=True,
         help="bounding box as tuple(float, float, float, float)",
-    )    
+    )
 
     # Parse the command-line arguments
     args = parser.parse_args()
@@ -71,12 +71,12 @@ def main():
 
         doc_key = "key"
         success = parser.load_document(doc_key, pdf_file)
-        
+
         if success == False:
             return
 
         parser.unload_document(doc_key)
-        
+
     except Exception as exc:
         logging.error(f"Could not parse pdf-document: {exc}")
         return
