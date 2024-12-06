@@ -12,7 +12,7 @@ import io
 import json
 import os
 
-from docling_parse.pdf_parsers import pdf_parser_v1  # type: ignore[attr-defined]
+from docling_parse.pdf_parsers import pdf_parser_v1  # type: ignore[import]
 
 
 def verify_reference_output(true_doc, pred_doc):

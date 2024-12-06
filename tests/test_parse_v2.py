@@ -13,7 +13,7 @@ import io
 import json
 import os
 
-from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[attr-defined]
+from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 from docling_parse.utils import create_pil_image_of_page_v2
 
 

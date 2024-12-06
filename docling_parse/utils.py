@@ -1,18 +1,19 @@
 import json
 import logging
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Union
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
+from PIL.ImageFont import FreeTypeFont
 
 
 def _draw_text_in_bounding_bbox(
-    img,
-    draw: ImageDraw.Draw,
+    img: Image.Image,
+    draw: ImageDraw.ImageDraw,
     bbox: Tuple[float, float, float, float],
     text: str,
-    font: Optional[ImageFont.ImageFont] = None,
+    font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
     fill: str = "black",
-):
+) -> ImageDraw.ImageDraw:
     """
     Draws text inside a bounding box by creating a temporary image,
     resizing it, and pasting it into the original image at bbox.
@@ -75,7 +76,7 @@ def _draw_text_in_bounding_bbox(
 
     # Paste the resized text image onto the original image
     # draw.bitmap((paste_x, paste_y), resized_img)#, fill=None)
-    img.paste((paste_x, paste_y), "black", resized_img)  # , fill=None)
+    img.paste((paste_x, paste_y), resized_img)  # , "black")  # , fill=None)
 
     # draw.text((50, 50), text, font=font, fill=(0,0,0,255))
 
@@ -340,30 +341,18 @@ def create_pil_image_of_page_v2(
     """
     # Create a blank white image with RGBA mode
     img = Image.new("RGBA", (round(W), round(H)), (255, 255, 255, 255))
+    draw = ImageDraw.Draw(img)
+    """
     overlay = Image.new(
         "RGBA", (round(W), round(H)), (255, 255, 255, 0)
     )  # Transparent overlay
     draw = ImageDraw.Draw(overlay)
+    """
 
     # Draw each rectangle by connecting its four points
     if draw_images:
         for row in images:
 
-            """
-            x0 = row[images_header.index("x0")]
-            y0 = row[images_header.index("y0")]
-            x1 = row[images_header.index("x1")]
-            y1 = row[images_header.index("y1")]
-
-            # Define the four corners of the rectangle
-            bl = (x0, H - y0)
-            br = (x1, H - y0)
-            tr = (x1, H - y1)
-            tl = (x0, H - y1)
-
-            # Draw the rectangle as a polygon
-            draw.polygon([bl, br, tr, tl], outline="green", fill="yellow")
-            """
             bbox = [
                 row[images_header.index("x0")],
                 row[images_header.index("y0")],
@@ -409,19 +398,14 @@ def create_pil_image_of_page_v2(
                     alpha=cell_alpha,
                 )
 
-            """
-            if "glyph" in row[cells_header.index("text")]:
-                logging.info(f" skip cell -> {row}")
-                continue
-            """
-
             # Fixme: the _draw_text_in_bounding_bbox is not yet working
             text = row[cells_header.index(f"text")]
-            if False and draw_cells_text and len(text) > 0:
+            if draw_cells_text and len(text) > 0:
                 draw = _draw_text_in_bounding_bbox(
-                    overlay,
+                    # overlay,
+                    img,
                     draw,
-                    bbox=[rect[0][0], rect[0][1], rect[2][0], rect[2][1]],
+                    bbox=(rect[0][0], rect[0][1], rect[2][0], rect[2][1]),
                     text=text,
                 )
 
@@ -532,6 +516,6 @@ def create_pil_image_of_page_v2(
         draw.polygon([bl, br, tr, tl], outline=outl_color, width=cropbox_width)
 
     # Composite the overlay with the base image
-    img = Image.alpha_composite(img, overlay)
+    # img = Image.alpha_composite(img, overlay)
 
     return img

@@ -109,6 +109,9 @@ show_error_codes = true
 python_version = "3.9"
 # plugins = ["pydantic.mypy"]
 
+#[mypy-docling_parse.*]
+#ignore_missing_imports = True
+
 [[tool.mypy.overrides]]
 module = [
     "tabulate.*",

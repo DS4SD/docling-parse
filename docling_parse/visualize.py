@@ -4,7 +4,7 @@ import logging
 import os
 from typing import Dict, Optional
 
-from docling_parse.pdf_parsers import (  # type: ignore[attr-defined]
+from docling_parse.pdf_parsers import (  # type: ignore[import]
     pdf_parser_v1,
     pdf_parser_v2,
 )
@@ -333,14 +333,17 @@ def visualise_v2(
 
         for category in categories:
 
-            img_orig = create_pil_image_of_page_v2(page, category=category)
+            img = create_pil_image_of_page_v2(
+                page, category=category, draw_cells_text=display_text
+            )
 
             if interactive:
-                img_orig.show()
+                img.show()
 
             if output_dir is not None and page_num == -1:
                 oname = os.path.join(
-                    output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
+                    output_dir,
+                    f"{os.path.basename(pdf_path)}_page={pi}.v2.{category}.png",
                 )
                 logging.info(f"output: {oname}")
 
@@ -349,7 +352,7 @@ def visualise_v2(
             elif output_dir is not None and page_num != -1:
                 oname = os.path.join(
                     output_dir,
-                    f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
+                    f"{os.path.basename(pdf_path)}_page={pi}.v2.{category}.png",
                 )
                 logging.info(f"output: {oname}")
 
