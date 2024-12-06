@@ -9,7 +9,7 @@ from PIL.ImageFont import FreeTypeFont
 def _draw_text_in_bounding_bbox(
     img: Image.Image,
     draw: ImageDraw.ImageDraw,
-    bbox: Tuple[float, float, float, float],
+    bbox: Tuple[int, int, int, int],
     text: str,
     font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
     fill: str = "black",
@@ -25,11 +25,15 @@ def _draw_text_in_bounding_bbox(
     - font: An optional ImageFont.ImageFont object. Defaults to Pillow's built-in font.
     - fill: Fill color for the text.
     """
-
     x0, y0, x1, y1 = bbox
-    width, height = abs(x1 - x0), abs(y1 - y0)
 
-    logging.info(f"cell-width: {width}, cell-height: {height}")
+    if x0 >= x1 or y0 >= y1:
+        return draw
+
+    width, height = (x1 - x0), (y1 - y0)
+
+    if width <= 2 or height <= 2:
+        return draw
 
     # Use the default font if no font is provided
     if font is None:
@@ -38,53 +42,18 @@ def _draw_text_in_bounding_bbox(
     # Create a temporary image for the text
     tmp_img = Image.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
     tmp_draw = ImageDraw.Draw(tmp_img)
-    # text_width = draw.textlength(text, font=font)
     _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
-    # text_width, text_height = tmp_draw.text((0,0), text, font=font)
-    # tmp_draw.show()
-
-    logging.info(f" -> text_width: {text_width}, text_height: {text_height}")
 
     # Create a properly sized temporary image
-    tmp_img = Image.new("RGBA", (text_width, text_height), (255, 255, 255, 0))
-    # tmp_img = Image.new("RGBA", (text_width, text_height), (0,0,0, 255))
+    tmp_img = Image.new("RGBA", (text_width, text_height), (255, 255, 255, 255))
     tmp_draw = ImageDraw.Draw(tmp_img)
     tmp_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
-    # tmp_img.show()
 
-    # Resize the text image to fit within the polygon's bounding box
-    scale_x = float(width) / float(text_width)
-    scale_y = float(height) / float(text_height)
-    scale = min(scale_x, scale_y)  # Maintain aspect ratio
-    new_width = int(text_width * scale)
-    new_height = int(text_height * scale)
-    logging.info(
-        f" -> scale: {scale}, new_width: {new_width}, new_height: {new_height}"
-    )
-
-    if new_width < 3 or new_height < 3:
-        return draw
-
-    resized_img = tmp_img.resize((new_width, new_height), Image.Resampling.LANCZOS)
-    resized_img.show()
-
-    # Calculate position to center the resized image in the bounding box
-    paste_x = int(x0 + (width - new_width) / 2)
-    paste_y = int(y0 + (height - new_height) / 2)
-
-    logging.info(f" -> paste_x: {paste_x}, paste_y: {paste_y}, text: {text}")
+    # Resize image
+    res_img = tmp_img.resize((width, height), Image.Resampling.LANCZOS)
 
     # Paste the resized text image onto the original image
-    # draw.bitmap((paste_x, paste_y), resized_img)#, fill=None)
-    img.paste((paste_x, paste_y), resized_img)  # , "black")  # , fill=None)
-
-    # draw.text((50, 50), text, font=font, fill=(0,0,0,255))
-
-    # Composite the overlay with the base image
-    # img = Image.alpha_composite(img, overlay)
-
-    img.show()
-    exit(-1)
+    img.paste(im=res_img, box=bbox, mask=None)
 
     return draw
 
@@ -405,7 +374,13 @@ def create_pil_image_of_page_v2(
                     # overlay,
                     img,
                     draw,
-                    bbox=(rect[0][0], rect[0][1], rect[2][0], rect[2][1]),
+                    # bbox=(round(rect[0][0]), round(rect[0][1]), round(rect[2][0]), round(rect[2][1])),
+                    bbox=(
+                        round(rect[3][0]),
+                        round(rect[3][1]),
+                        round(rect[1][0]),
+                        round(rect[1][1]),
+                    ),
                     text=text,
                 )
 
