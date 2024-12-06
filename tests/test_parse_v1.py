@@ -36,7 +36,7 @@ def verify_reference_output(true_doc, pred_doc):
 
             assert (
                 pred_text == true_text
-            ), f"pred_text!=true_text => {pred_text}!={true_text}"
+            ), f"pred_text!=true_text => {pred_text}!={true_text}, {pred_text.encode()}!={true_text.encode()}"
 
             pred_bbox = pred_cell["box"]["device"]
             true_bbox = true_cell["box"]["device"]
