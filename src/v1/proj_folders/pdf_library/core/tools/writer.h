@@ -413,7 +413,7 @@ namespace pdf_lib
       dbox[1] = std::max(page_r0.second , dbox[1]);
       dbox[2] = std::min(page_dim.first , dbox[2]);
       dbox[3] = std::min(page_dim.second, dbox[3]);
-
+      
       /*
       logging_lib::success("pdf-parser") << "new image-bbox: ";
       for(int j=0; j<4; j++)

@@ -7,6 +7,59 @@ namespace utils
 {
   namespace string
   {
+    bool is_valid_utf8(const std::string& val)
+    {
+      return utf8::is_valid(val.begin(), val.end());
+    }
+
+    std::string fix_into_valid_utf8(const std::string& val)
+    {
+      std::string res;
+      if (!is_valid_utf8(val))
+	{
+	  utf8::replace_invalid(val.begin(), val.end(), std::back_inserter(res));
+	}
+      else
+	{
+	  res = val; // Copy the original string if it's already valid
+	}
+      
+    return res;
+    }
+
+    int count_unicode_characters(const std::string& utf8_string)
+    {
+      int count = 0;
+
+      std::size_t i = 0;
+      while (i < utf8_string.size())
+	{
+	  unsigned char c = static_cast<unsigned char>(utf8_string[i]);
+
+	  // Check the number of leading 1 bits in the byte
+	  if ((c & 0x80) == 0) { 
+	    // 1-byte character (ASCII)
+            i += 1;
+	  } else if ((c & 0xE0) == 0xC0) { 
+            // 2-byte character
+            i += 2;
+	  } else if ((c & 0xF0) == 0xE0) { 
+            // 3-byte character
+            i += 3;
+	  } else if ((c & 0xF8) == 0xF0) { 
+            // 4-byte character
+            i += 4;
+	  } else {
+            // Invalid UTF-8 byte
+	    return -1;
+	  }
+	  
+	  ++count; // Increment character count
+	}
+
+      return count;
+    }
+    
     bool is_integer(const std::string & s)
     {
       return std::regex_match(s, std::regex("(-)?[0-9]+"));
@@ -116,7 +169,31 @@ namespace utils
       return vec_to_utf8(vec);
     }
 
+    std::string replace(std::string& text, const std::string& word_0, const std::string& word_1)
+    {
+      if(word_0==word_1)
+	{
+	  return text;
+	}
+
+      std::size_t pos=0;
+      while(pos<text.size())
+	{			          
+	  pos = text.find(word_0, pos);
+	  if(pos==std::string::npos)
+	    {
+	      break;
+	    }
+
+	  text.replace(pos, word_0.size(), word_1);
+	  pos += word_1.size();
+	}
+      
+      return text;
+    }
+    
   }
+
 }
 
 #endif

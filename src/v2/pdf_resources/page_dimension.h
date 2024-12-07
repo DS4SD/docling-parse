@@ -13,8 +13,11 @@ namespace pdflib
 
     pdf_resource();
     ~pdf_resource();
-
+    
+    void set_page_boundaries(std::string page_boundary);
+    
     nlohmann::json get();
+    bool init_from(nlohmann::json& data);
 
     double get_angle() { return angle; }
 
@@ -23,11 +26,13 @@ namespace pdflib
 
     void execute(nlohmann::json& json_resources,
 		 QPDFObjectHandle qpdf_resources);
-
+    
   private:
 
     bool                  initialised;
 
+    std::string page_boundary;
+    
     int                   angle;
     std::array<double, 4> bbox;
 
@@ -40,6 +45,8 @@ namespace pdflib
 
   pdf_resource<PAGE_DIMENSION>::pdf_resource():
     initialised(false),
+    page_boundary(""),
+    
     angle(0),
     bbox({0,0,0,0}),
 
@@ -53,10 +60,33 @@ namespace pdflib
   pdf_resource<PAGE_DIMENSION>::~pdf_resource()
   {}
 
+  void pdf_resource<PAGE_DIMENSION>::set_page_boundaries(std::string page_boundary_)
+  {
+    page_boundary = page_boundary_;
+    
+    if(page_boundary=="media_box")
+      {
+	bbox = {0.0, 0.0, media_bbox[2]-media_bbox[0], media_bbox[3]-media_bbox[1]};
+      }
+    else if(page_boundary=="crop_box")
+      {
+	bbox = {0.0, 0.0, crop_bbox[2]-crop_bbox[0], crop_bbox[3]-crop_bbox[1]};
+      }
+    else
+      {
+	LOG_S(ERROR) << "unsupported page-boundary: " << page_boundary;
+
+	page_boundary = "crop_box";	
+	bbox = {0.0, 0.0, crop_bbox[2]-crop_bbox[0], crop_bbox[3]-crop_bbox[1]};
+      }
+  }
+  
   nlohmann::json pdf_resource<PAGE_DIMENSION>::get()
   {
     nlohmann::json result;
     {
+      result["page_boundary"] = page_boundary;
+      
       result["bbox"] = bbox;
       result["angle"] = angle;
       
@@ -73,6 +103,45 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_DIMENSION>::init_from(nlohmann::json& data)
+  {
+    //LOG_S(INFO) << "reading: " << data.dump(2);
+    LOG_S(INFO) << __FUNCTION__;
+    
+    if(data.count("bbox")==1 and
+       data.count("angle")==1 and
+
+       data.count("rectangles")==1 and
+
+       data["rectangles"].count("media-bbox")==1 and
+       data["rectangles"].count("crop-bbox")==1 and
+       data["rectangles"].count("bleed-bbox")==1 and
+       data["rectangles"].count("trim-bbox")==1 and
+       data["rectangles"].count("art-bbox")==1)
+      {
+	bbox = data["bbox"].get<std::array<double, 4> >();
+	angle = data["angle"].get<int>();
+	
+	media_bbox = data["rectangles"]["media-bbox"].get<std::array<double, 4> >();
+	crop_bbox = data["rectangles"]["crop-bbox"].get<std::array<double, 4> >();
+	bleed_bbox = data["rectangles"]["bleed-bbox"].get<std::array<double, 4> >();
+	trim_bbox = data["rectangles"]["trim-bbox"].get<std::array<double, 4> >();
+	art_bbox = data["rectangles"]["art-bbox"].get<std::array<double, 4> >();
+	
+	return true;
+      }
+    else
+      {
+	std::stringstream ss;
+	ss << "could not read: " << data.dump(2);
+	
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());
+      }
+    
+    return false;
+  }
+  
   // Table 30, p 85
   void pdf_resource<PAGE_DIMENSION>::execute(nlohmann::json& json_resources,
 					     QPDFObjectHandle qpdf_resources)

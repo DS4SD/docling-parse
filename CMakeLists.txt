@@ -192,18 +192,24 @@ target_link_libraries(parse_v2 ${DEPENDENCIES} ${LIB_LINK})
 # https://pybind11.readthedocs.io/en/stable/compiling.html#configuration-variables
 find_package(pybind11 CONFIG REQUIRED)
 
-pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
+#pybind11_add_module(docling_parse "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
+pybind11_add_module(pdf_parsers "${TOPLEVEL_PREFIX_PATH}/app/pybind_parse.cpp")
 
-add_dependencies(docling_parse parse_v1 parse_v2)
+#add_dependencies(docling_parse parse_v1 parse_v2)
+add_dependencies(pdf_parsers parse_v1 parse_v2)
 
-target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
+#target_include_directories(docling_parse INTERFACE ${DEPENDENCIES})
+target_include_directories(pdf_parsers INTERFACE ${DEPENDENCIES})
 
-target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${CMAKE_PROJECT_VERSION})
+#target_compile_definitions(docling_parse PRIVATE VERSION_INFO=${CMAKE_PROJECT_VERSION})
+target_compile_definitions(pdf_parsers PRIVATE VERSION_INFO=${CMAKE_PROJECT_VERSION})
 
-target_link_libraries(docling_parse PRIVATE parse_v1 parse_v2)
+#target_link_libraries(docling_parse PRIVATE parse_v1 parse_v2)
+target_link_libraries(pdf_parsers PRIVATE parse_v1 parse_v2)
 
 # *****************
 # ***  Install  ***
 # *****************
 
-install(TARGETS docling_parse DESTINATION "${TOPLEVEL_PREFIX_PATH}/docling_parse")
+#install(TARGETS docling_parse DESTINATION "${TOPLEVEL_PREFIX_PATH}/docling_parse")
+install(TARGETS pdf_parsers DESTINATION "${TOPLEVEL_PREFIX_PATH}/docling_parse")

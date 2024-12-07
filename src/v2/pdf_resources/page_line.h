@@ -15,7 +15,8 @@ namespace pdflib
     ~pdf_resource();
 
     nlohmann::json get();
-
+    bool init_from(nlohmann::json& data);
+      
     std::vector<int>& get_i() { return i; }    
 
     std::vector<double>& get_x() { return x; }
@@ -66,6 +67,27 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_LINE>::init_from(nlohmann::json& data)
+  {
+    if(data.count("x")==1 and
+       data.count("y")==1 and
+       data.count("i")==1)
+      {
+	x = data["x"].get<std::vector<double> >();
+	y = data["y"].get<std::vector<double> >();
+	i = data["i"].get<std::vector<int> >();
+	
+	return true;
+      }
+    else
+      {
+	LOG_S(WARNING) << "did not contain `x`, `y` or `i` in data: "
+		       << data.dump(2);	
+      }
+    
+    return false;
+  }
+  
   void pdf_resource<PAGE_LINE>::append(double x_, double y_)
   {
     x.push_back(x_);
