@@ -154,21 +154,21 @@ namespace pdflib
 					   std::map<std::string, double>& timings)
   {
     LOG_S(INFO) << __FUNCTION__ << ": " << data.dump(2);
-
+    
     std::string PDFS_RESOURCES_DIR = "../docling_parse/pdf_resources_v2/";
-    LOG_S(WARNING) << "default pdf-resource-dir: " << PDFS_RESOURCES_DIR;
-
-    if(data.count(RESOURCE_DIR_KEY)==0)
-      {
-	LOG_S(WARNING) << "resource-dir-key is missing '" << RESOURCE_DIR_KEY << "' in data: \n" << data.dump(2);
-      }
+    LOG_S(INFO) << "default pdf-resource-dir: " << PDFS_RESOURCES_DIR;
+    
+    //if(data.count(RESOURCE_DIR_KEY)==0)
+    //{
+    //LOG_S(WARNING) << "resource-dir-key is missing '" << RESOURCE_DIR_KEY << "' in data: \n" << data.dump(2);
+    //}
     
     //std::string pdf_resources_dir = data.value("pdf-resource-directory", PDFS_RESOURCES_DIR);
     std::string pdf_resources_dir = data.value(RESOURCE_DIR_KEY, PDFS_RESOURCES_DIR);
     pdf_resources_dir += (pdf_resources_dir.back()=='/'? "" : "/");
-
+    
     std::string glyphs_dir, cids_dir, encodings_dir, bfonts_dir;
-
+    
     if(utils::filesystem::is_dir(pdf_resources_dir))
       {
 	LOG_S(INFO) << "pdf_resources_dir: " << pdf_resources_dir;
@@ -184,9 +184,9 @@ namespace pdflib
 	LOG_S(ERROR) << message;
 	throw std::logic_error(message);
       }
-
+    
     utils::timer timer;
-
+    
     {
       timer.reset();
 
@@ -1209,32 +1209,52 @@ namespace pdflib
         auto qpdf_obj = qpdf_font.getKey("/ToUnicode");
         //assert(qpdf_obj.isStream());
 
-	if(not qpdf_obj.isStream())
+	if(qpdf_obj.isStream())
 	  {
-	    std::string message = "not qpdf_obj.isStream()";
+	    std::vector<qpdf_instruction> stream;
+	    
+	    // decode the stream
+	    {
+	      qpdf_stream_decoder decoder(stream);
+	      decoder.decode(qpdf_obj);
+	      
+	      //decoder.print();
+	    }
+	    
+	    // interprete the stream
+	    {
+	      cmap_parser parser;
+	      parser.parse(stream);
+	      
+	      //parser.print();
+	      
+	      cmap_numb_to_char = parser.get();
+	    }
+	  }
+	else if(qpdf_obj.isString())
+	  {
+	    auto _ = to_json(qpdf_obj);	    
+	    std::string message = "qpdf_obj.isString(): " + _.dump(2);
+
 	    LOG_S(ERROR) << message;
 	    throw std::logic_error(message);
 	  }
-	
-        std::vector<qpdf_instruction> stream;
+	else if(qpdf_obj.isName())
+	  {
+	    auto _ = to_json(qpdf_obj);	    
+	    std::string message = "qpdf_obj.isName(): " + _.dump(2);
 
-        // decode the stream
-        {
-          qpdf_stream_decoder decoder(stream);
-          decoder.decode(qpdf_obj);
+	    LOG_S(ERROR) << message;
+	    //throw std::logic_error(message);	    
+	  }    
+	else
+	  {
+	    auto _ = to_json(qpdf_obj);	    
+	    std::string message = "qpdf_obj is unknown: " + _.dump(2);
 
-          //decoder.print();
-        }
-
-        // interprete the stream
-        {
-          cmap_parser parser;
-          parser.parse(stream);
-
-          //parser.print();
-
-          cmap_numb_to_char = parser.get();
-        }
+	    LOG_S(ERROR) << message;
+	    throw std::logic_error(message);
+	  }
 
         /*
         {

@@ -112,7 +112,6 @@ namespace pdflib
         nlohmann::json& val = pair.value();
 
         LOG_S(INFO) << "decoding font: " << key;// << "\n" << val.dump(2);
-        //assert(qpdf_fonts.hasKey(key));
 
 	if(qpdf_fonts.hasKey(key))
 	  {
@@ -121,7 +120,7 @@ namespace pdflib
 	    
 	    if(page_fonts.count(key)==1)
 	      {
-		LOG_S(ERROR) << "We are overwriting a font!";
+		LOG_S(WARNING) << "We are overwriting a font!";
 	      }
 	    
 	    page_fonts[key] = page_font;

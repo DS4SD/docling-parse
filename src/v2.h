@@ -39,6 +39,7 @@
 #include <v2/utils.h>
 
 #include <v2/qpdf/to_json.h>
+#include <v2/qpdf/annots.h>
 #include <v2/qpdf/instruction.h>
 #include <v2/qpdf/stream_decoder.h>
 

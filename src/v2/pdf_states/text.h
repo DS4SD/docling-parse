@@ -174,15 +174,23 @@ namespace pdflib
       {
 	LOG_S(ERROR) << "#-instructions " << instructions.size()
 		     << " exceeds expected value " << num_instr << " for "
-		     << __FUNCTION__;
+		     << name;
 	LOG_S(ERROR) << " => we can continue but might have incorrect results!";
 	
 	return true;
       }
     
-    LOG_S(ERROR) << "#-instructions " << instructions.size()
-		 << " does not match expected value " << num_instr << " for "
-		 << __FUNCTION__;
+    if(instructions.size()<num_instr) // fatal ...
+      {
+	std::stringstream ss;
+	ss << "#-instructions " << instructions.size()
+	   << " does not match expected value " << num_instr
+	   << " for PDF operation: "
+	   << name;
+	
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());	
+      }
 
     return false;
   }
@@ -260,7 +268,14 @@ namespace pdflib
       }
     else
       {
-        LOG_S(ERROR) << "unknown page-font: " << font_name;
+        LOG_S(ERROR) << "unknown page-font: '" << font_name << "'";
+
+	auto font_keys = page_fonts.keys();
+	LOG_S(WARNING) << "known fonts: " << font_keys.size();
+	for(auto key:font_keys)
+	  {
+	    LOG_S(WARNING) << " -> font-key: '" << key << "'";
+	  }
       }
   }
 

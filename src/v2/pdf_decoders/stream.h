@@ -192,7 +192,7 @@ namespace pdflib
   {
     LOG_S(INFO) << __FUNCTION__;
 
-    assert(page_fonts.keys()==cgs().page_fonts.keys());
+    //assert(page_fonts.keys()==cgs().page_fonts.keys());
 
     for(int l=0; l<stream.size(); l++)
       {
@@ -433,7 +433,7 @@ namespace pdflib
 
           if(not page_xobjects.has(xobj_name))
             {
-              LOG_S(ERROR) << "unknown xobject with name " << xobj_name;
+              LOG_S(ERROR) << "unknown xobject with name `" << xobj_name << "`";
               return;
             }
 
@@ -443,18 +443,18 @@ namespace pdflib
             {
             case XOBJECT_IMAGE:
               {
-                LOG_S(INFO) << "Do_Image: image with " << xobj_name;
+                LOG_S(INFO) << "Do_Image: image with `" << xobj_name << "`";
                 cgs().Do_image(xobj);
               }
               break;
 
             case XOBJECT_FORM:
               {
-                LOG_S(INFO) << "Do_Form: XObject with name" << xobj_name;
+                LOG_S(INFO) << "Do_Form: XObject with name `" << xobj_name << "`";
 
-                pdf_resource<PAGE_FONTS>     page_fonts_;
-                pdf_resource<PAGE_GRPHS>     page_grphs_;
-                pdf_resource<PAGE_XOBJECTS>  page_xobjects_;
+                pdf_resource<PAGE_FONTS>     page_fonts_ = page_fonts;
+                pdf_resource<PAGE_GRPHS>     page_grphs_ = page_grphs;
+                pdf_resource<PAGE_XOBJECTS>  page_xobjects_ = page_xobjects;
 
                 // parse the resources of the xobject
                 {

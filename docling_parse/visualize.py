@@ -1,19 +1,19 @@
 import argparse
-import io
-import json
+import hashlib
+import logging
 import os
+from typing import Dict, Optional
 
-from tabulate import tabulate
+from docling_parse.pdf_parsers import (  # type: ignore[import]
+    pdf_parser_v1,
+    pdf_parser_v2,
+)
+from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
 
-from docling_parse import pdf_parser_v1, pdf_parser_v2
-
-try:
-    from PIL import Image, ImageDraw
-
-    PIL_INSTALLED = True
-except ImportError:
-    PIL_INSTALLED = False
-    print("Pillow is not installed. Skipping image processing.")
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def parse_args():
@@ -39,6 +39,28 @@ def parse_args():
         required=False,
         default="v2",
         help="Version [v1, v2]",
+    )
+
+    # Restrict page-boundary
+    parser.add_argument(
+        "-b",
+        "--page-boundary",
+        type=str,
+        choices=["crop_box", "media_box"],
+        required=True,
+        default="crop_box",
+        help="page-boundary [crop_box, media_box]",
+    )
+
+    # Restrict page-boundary
+    parser.add_argument(
+        "-c",
+        "--category",
+        type=str,
+        choices=["both", "original", "sanitized"],
+        required=True,
+        default="both",
+        help="category [`both`, `original`, `sanitized`]",
     )
 
     # Add an argument for the path to the PDF file
@@ -89,7 +111,7 @@ def parse_args():
     # Check if the output directory exists, create it if not
     if (args.output_dir is not None) and (not os.path.exists(args.output_dir)):
         os.makedirs(args.output_dir)
-        print(f"Output directory '{args.output_dir}' created.")
+        logging.info(f"Output directory '{args.output_dir}' created.")
 
     return (
         args.log_level,
@@ -99,6 +121,8 @@ def parse_args():
         args.output_dir,
         int(args.page),
         args.display_text,
+        args.page_boundary,
+        args.category,
     )
 
 
@@ -131,66 +155,7 @@ def visualise_v1(
 
     for pi, page in enumerate(doc["pages"]):
 
-        H = page["height"]
-        W = page["width"]
-
-        # Create a blank white image
-        img = Image.new("RGB", (round(W), round(H)), "white")
-        draw = ImageDraw.Draw(img)
-
-        for cell in page["cells"]:
-            bbox = cell["box"]["device"]
-
-            x0 = bbox[0]
-            y0 = bbox[1]
-            x1 = bbox[2]
-            y1 = bbox[3]
-
-            # Define the four corners of the rectangle
-            bl = (x0, H - y0)
-            br = (x1, H - y0)
-            tr = (x1, H - y1)
-            tl = (x0, H - y1)
-
-            # Draw the rectangle as a polygon
-            draw.polygon([bl, br, tr, tl], outline="black", fill="blue")
-
-        for image in page["images"]:
-
-            bbox = image["box"]
-
-            x0 = bbox[0]
-            y0 = bbox[1]
-            x1 = bbox[2]
-            y1 = bbox[3]
-
-            # Define the four corners of the rectangle
-            bl = (x0, H - y0)
-            br = (x1, H - y0)
-            tr = (x1, H - y1)
-            tl = (x0, H - y1)
-
-            # Draw the rectangle as a polygon
-            draw.polygon([bl, br, tr, tl], outline="black", fill="yellow")
-
-        for path in page["paths"]:
-            i = path["sub-paths"]
-            x = path["x-values"]
-            y = path["y-values"]
-
-            for l in range(0, len(i), 2):
-                if l + 1 >= len(i):
-                    continue
-
-                i0 = i[l + 0]
-                i1 = i[l + 1]
-
-                for k in range(i0, i1 - 1):
-                    draw.line(
-                        (x[k], H - y[k], x[k + 1], H - y[k + 1]),
-                        fill="black",
-                        width=3,
-                    )
+        img = create_pil_image_of_page_v1(page)
 
         if interactive:
             img.show()
@@ -199,7 +164,7 @@ def visualise_v1(
             oname = os.path.join(
                 output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v1.png"
             )
-            print(f"output: {oname}")
+            logging.info(f"output: {oname}")
 
             img.save(oname)
 
@@ -207,27 +172,9 @@ def visualise_v1(
             oname = os.path.join(
                 output_dir, f"{os.path.basename(pdf_path)}_page={page_num}.v1.png"
             )
-            print(f"output: {oname}")
+            logging.info(f"output: {oname}")
 
             img.save(oname)
-
-
-def draw_annotations(draw, annot, H, W):
-
-    if "/Rect" in annot:
-        bbox = annot["/Rect"]
-
-        bl = (bbox[0], H - bbox[1])
-        br = (bbox[2], H - bbox[1])
-        tr = (bbox[2], H - bbox[3])
-        tl = (bbox[0], H - bbox[3])
-
-        # Draw the rectangle as a polygon
-        draw.polygon([bl, br, tr, tl], outline="white", fill="green")
-
-    if "/Kids" in annot:
-        for _ in annot["/Kids"]:
-            draw_annotations(draw, annot, H, W)
 
 
 def visualise_v2(
@@ -237,155 +184,116 @@ def visualise_v2(
     output_dir: str,
     page_num: int,
     display_text: bool,
+    page_boundary: str = "crop_box",  # media_box
+    category: str = "both",  # "both", "sanitized", "original"
 ):
+    categories = []
+    if category == "both":
+        categories = ["sanitized", "original"]
+    else:
+        categories = [category]
 
     parser = pdf_parser_v2(log_level)
     # parser.set_loglevel_with_label(log_level)
 
-    doc_key = "key"
+    hash_obj = hashlib.sha256(str(pdf_path).encode())
+    doc_key = str(hash_obj.hexdigest())
+
+    # doc_key = "key"
+    logging.info(f"{doc_key}: {pdf_path}")
+
     success = parser.load_document(doc_key, pdf_path)
 
     if success == False:
         return
 
-    doc = None
+    logging.info(f"page_boundary: {page_boundary}")
+
+    doc: Optional[Dict] = None
 
     try:
         if page_num == -1:
-            doc = parser.parse_pdf_from_key(doc_key)
+            doc = parser.parse_pdf_from_key(doc_key, page_boundary)
         else:
-            doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
+            doc = parser.parse_pdf_from_key_on_page(doc_key, page_num, page_boundary)
+
     except Exception as exc:
-        print(f"Could not parse pdf-document: {exc}")
+        logging.info(f"Could not parse pdf-document: {exc}")
         doc = None
 
-    if doc == None:
+    if doc is None:
         return
 
     parser.unload_document(doc_key)
 
-    for pi, page in enumerate(doc["pages"]):
+    for pi, page in enumerate(doc.get("pages", [])):
 
-        for _ in ["original", "sanitized"]:
+        for category in categories:
 
-            dimension = page[_]["dimension"]
+            img = create_pil_image_of_page_v2(
+                page, category=category, draw_cells_text=display_text
+            )
 
-            cells = page[_]["cells"]["data"]
-            cells_header = page[_]["cells"]["header"]
+            if interactive:
+                img.show()
 
-            images = page[_]["images"]["data"]
-            images_header = page[_]["images"]["header"]
+            if output_dir is not None and page_num == -1:
+                oname = os.path.join(
+                    output_dir,
+                    f"{os.path.basename(pdf_path)}_page={pi}.v2.{category}.png",
+                )
+                logging.info(f"output: {oname}")
 
-            lines = page[_]["lines"]
+                img.save(oname)
 
-            annots = page["annotations"]
+            elif output_dir is not None and page_num != -1:
+                oname = os.path.join(
+                    output_dir,
+                    f"{os.path.basename(pdf_path)}_page={pi}.v2.{category}.png",
+                )
+                logging.info(f"output: {oname}")
 
-            if PIL_INSTALLED:
-
-                W = dimension["width"]
-                H = dimension["height"]
-
-                # Create a blank white image
-                img = Image.new("RGB", (round(W), round(H)), "white")
-                draw = ImageDraw.Draw(img)
-
-                # Draw each rectangle by connecting its four points
-                for row in images:
-
-                    x0 = row[images_header.index("x0")]
-                    y0 = row[images_header.index("y0")]
-                    x1 = row[images_header.index("x1")]
-                    y1 = row[images_header.index("y1")]
-
-                    # Define the four corners of the rectangle
-                    bl = (x0, H - y0)
-                    br = (x1, H - y0)
-                    tr = (x1, H - y1)
-                    tl = (x0, H - y1)
-
-                    # Draw the rectangle as a polygon
-                    draw.polygon([bl, br, tr, tl], outline="green", fill="yellow")
-
-                # Draw each rectangle by connecting its four points
-                for row in cells:
-
-                    x = []
-                    y = []
-                    for i in range(0, 4):
-                        x.append(row[cells_header.index(f"r_x{i}")])
-                        y.append(row[cells_header.index(f"r_y{i}")])
-
-                    rect = [
-                        (x[0], H - y[0]),
-                        (x[1], H - y[1]),
-                        (x[2], H - y[2]),
-                        (x[3], H - y[3]),
-                    ]
-
-                    if display_text:
-                        print(row[cells_header.index("text")])
-
-                    if "glyph" in row[cells_header.index("text")]:
-                        print(f" skip cell -> {row}")
-                        continue
-
-                    # You can change the outline and fill color
-                    draw.polygon(rect, outline="red", fill="blue")
-
-                # Draw widgets
-                for annot in annots:
-                    draw_annotations(draw, annot, H, W)
-
-                # Draw each rectangle by connecting its four points
-                for line in lines:
-
-                    i = line["i"]
-                    x = line["x"]
-                    y = line["y"]
-
-                    for l in range(0, len(i), 2):
-                        i0 = i[l + 0]
-                        i1 = i[l + 1]
-
-                        for k in range(i0, i1 - 1):
-                            draw.line(
-                                (x[k], H - y[k], x[k + 1], H - y[k + 1]),
-                                fill="black",
-                                width=1,
-                            )
-
-                # Show the image
-                if interactive:
-                    img.show()
-
-                if output_dir is not None and page_num == -1:
-                    oname = os.path.join(
-                        output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v2.{_}.png"
-                    )
-                    print(f"output: {oname}")
-
-                    img.save(oname)
-
-                elif output_dir is not None and page_num != -1:
-                    oname = os.path.join(
-                        output_dir,
-                        f"{os.path.basename(pdf_path)}_page={page_num}.v2.{_}.png",
-                    )
-                    print(f"output: {oname}")
-
-                    img.save(oname)
+                img.save(oname)
 
     return 0
 
 
 def main():
 
-    log_level, version, pdf, interactive, output_dir, page, display_text = parse_args()
+    (
+        log_level,
+        version,
+        pdf_path,
+        interactive,
+        output_dir,
+        page_num,
+        display_text,
+        page_boundary,
+        category,
+    ) = parse_args()
+
+    logging.info(f"page_boundary: {page_boundary}")
 
     if version == "v1":
-        visualise_v1(log_level, pdf, interactive, output_dir, page, display_text)
+        visualise_v1(
+            log_level=log_level,
+            pdf_path=pdf_path,
+            interactive=interactive,
+            output_dir=output_dir,
+            page_num=page_num,
+            display_text=display_text,
+        )
     elif version == "v2":
-        visualise_v2(log_level, pdf, interactive, output_dir, page, display_text)
+        visualise_v2(
+            log_level=log_level,
+            pdf_path=pdf_path,
+            interactive=interactive,
+            output_dir=output_dir,
+            page_num=page_num,
+            display_text=display_text,
+            page_boundary=page_boundary,
+            category=category,
+        )
     else:
         return -1
 

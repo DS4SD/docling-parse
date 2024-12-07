@@ -9,6 +9,8 @@ namespace pdflib
   template<>
   class pdf_resource<PAGE_IMAGES>
   {
+    typedef typename std::vector<pdf_resource<PAGE_IMAGE> >::iterator itr_type;
+    
   public:
 
     pdf_resource();
@@ -23,6 +25,11 @@ namespace pdflib
 
     void push_back(pdf_resource<PAGE_IMAGE>& image);    
 
+    itr_type begin() { return images.begin(); }
+    itr_type end() { return images.end(); }
+
+    itr_type erase(itr_type itr) { return images.erase(itr); }
+    
   private:
 
     std::vector<pdf_resource<PAGE_IMAGE> > images;
