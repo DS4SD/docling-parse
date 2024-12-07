@@ -1,4 +1,5 @@
 import logging
+from enum import Enum
 from typing import Dict, List, Optional, Tuple, Union
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
@@ -155,6 +156,84 @@ def create_pil_image_of_page_v1(
     img = Image.alpha_composite(img, overlay)
 
     return img
+
+
+class BBoxDirection(Enum):
+    Bottom2Top = "Bottom2Top"
+    Right2Left = "Right2Left"
+    Top2Bottom = "Top2Bottom"
+    Left2Right = "Left2Right"
+
+    def rotation_to_bottom2top(direction: "BBoxDirection"):
+
+        if direction == BBoxDirection.Bottom2Top:
+            return 0.0
+        elif direction == BBoxDirection.Right2Left:
+            return 90.0
+        elif direction == BBoxDirection.Top2Bottom:
+            return 180.0
+        elif direction == BBoxDirection.Left2Right:
+            return -90.0
+
+
+def get_orientation_bbox_v2(
+    data: List[Tuple], header: list[str], bbox: Tuple[float, float, float, float]
+) -> BBoxDirection:
+
+    x0 = header.index("x0")
+    y0 = header.index("y0")
+
+    x1 = header.index("x1")
+    y1 = header.index("y1")
+
+    r_x0 = header.index("r_x0")
+    r_y0 = header.index("r_y0")
+
+    header.index("r_x1")
+    header.index("r_y1")
+
+    r_x2 = header.index("r_x2")
+    r_y2 = header.index("r_y2")
+
+    header.index("r_x3")
+    header.index("r_y3")
+
+    ti = header.index("text")
+
+    hist = {}
+    for direction in BBoxDirection:
+        hist[direction] = 0
+
+    for row in data:
+
+        if (
+            bbox[0] <= row[x0]
+            and row[x1] <= bbox[2]
+            and bbox[1] <= row[y0]
+            and row[y1] <= bbox[3]
+        ):
+
+            if row[r_x0] < row[r_x2] and row[r_y0] < row[r_y2]:
+                hist[BBoxDirection.Bottom2Top] += len(row[ti])
+
+            elif row[r_x2] < row[r_x0] and row[r_y0] < row[r_y2]:
+                hist[BBoxDirection.Right2Left] += len(row[ti])
+
+            elif row[r_x2] < row[r_x0] and row[r_y2] < row[r_y0]:
+                hist[BBoxDirection.Top2Bottom] += len(row[ti])
+
+            elif row[r_x0] < row[r_x2] and row[r_y2] < row[r_y0]:
+                hist[BBoxDirection.Right2Left] += len(row[ti])
+
+    max_dir = BBoxDirection.Bottom2Top
+    max_val = 0
+    for key, val in hist.items():
+        logging.info(f"{key}: {val}")
+        if val > max_val:
+            max_val = val
+            max_dir = key
+
+    return max_dir
 
 
 def filter_columns_v2(data: List[Tuple], header: list[str], new_header: list[str]):

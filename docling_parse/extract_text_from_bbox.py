@@ -9,6 +9,7 @@ from docling_parse.utils import (
     create_pil_image_of_page_v2,
     draw_bbox_on_page_v2,
     filter_columns_v2,
+    get_orientation_bbox_v2,
 )
 
 # Configure logging
@@ -55,6 +56,17 @@ def parse_args():
         help="bounding box as str x0,y0,x1,y1",
     )
 
+    # Restrict page-boundary
+    parser.add_argument(
+        "-c",
+        "--category",
+        type=str,
+        choices=["original", "sanitized"],
+        required=False,
+        default="sanitized",
+        help="category [`original`, `sanitized`]",
+    )
+
     # Parse the command-line arguments
     args = parser.parse_args()
 
@@ -66,12 +78,13 @@ def parse_args():
         args.input_pdf,
         int(args.page),
         list(map(float, args.bbox.split(","))),
+        args.category,
     )
 
 
 def main():
 
-    log_level, pdf_file, page_num, bbox = parse_args()
+    log_level, pdf_file, page_num, bbox, category = parse_args()
 
     parser = pdf_parser_v2(log_level)
 
@@ -117,11 +130,16 @@ def main():
     logging.info("#-cells: " + str(len(sanitized_cells["data"])))
     logging.info(f"selected cells: \n\n{table}\n\n")
 
-    img = create_pil_image_of_page_v2(doc["pages"][0])
+    img = create_pil_image_of_page_v2(doc["pages"][0], category=category)
     # img.show()
 
     img = draw_bbox_on_page_v2(img, page, list(map(int, bbox)))
     img.show()
+
+    orientation = get_orientation_bbox_v2(
+        data=sanitized_cells["data"], header=sanitized_cells["header"], bbox=bbox
+    )
+    logging.info(f"orientation: {orientation}")
 
 
 if __name__ == "__main__":
