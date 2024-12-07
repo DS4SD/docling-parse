@@ -1,9 +1,20 @@
 import argparse
+import logging
 import os
 
 from tabulate import tabulate
 
-from docling_parse import pdf_parser_v2  # type: ignore[attr-defined]
+from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
+from docling_parse.utils import (
+    create_pil_image_of_page_v2,
+    draw_bbox_on_page_v2,
+    filter_columns_v2,
+)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def parse_args():
@@ -39,9 +50,9 @@ def parse_args():
     parser.add_argument(
         "-b",
         "--bbox",
-        type=tuple(float, float, float, float),
+        type=str,  # Tuple[int, int, int, int],
         required=True,
-        help="bounding box as tuple(float, float, float, float)",
+        help="bounding box as str x0,y0,x1,y1",
     )
 
     # Parse the command-line arguments
@@ -54,7 +65,7 @@ def parse_args():
         args.log_level,
         args.input_pdf,
         int(args.page),
-        args.bbox,
+        list(map(float, args.bbox.split(","))),
     )
 
 
@@ -67,13 +78,14 @@ def main():
     doc = None
 
     try:
-        doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
-
         doc_key = "key"
         success = parser.load_document(doc_key, pdf_file)
 
         if success == False:
+            logging.error("Not successful in loading document")
             return
+
+        doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
 
         parser.unload_document(doc_key)
 
@@ -81,10 +93,11 @@ def main():
         logging.error(f"Could not parse pdf-document: {exc}")
         return
 
+    page = doc["pages"][0]
     parser.set_loglevel_with_label("info")
 
     sanitized_cells = parser.sanitize_cells_in_bbox(
-        page=doc["pages"][0],
+        page=page,
         bbox=bbox,
         cell_overlap=0.9,
         horizontal_cell_tolerance=1.0,
@@ -92,8 +105,23 @@ def main():
         space_width_factor_for_merge=1.5,
         space_width_factor_for_merge_with_space=0.33,
     )
-    print("#-cells: ", len(sanitized_cells))
-    print(tabulate(sanitized_cells["data"]))
+
+    new_data, new_header = filter_columns_v2(
+        sanitized_cells["data"],
+        sanitized_cells["header"],
+        new_header=["x0", "y0", "x1", "y1", "text"],
+    )
+
+    table = tabulate(new_data, new_header)
+
+    logging.info("#-cells: " + str(len(sanitized_cells["data"])))
+    logging.info(f"selected cells: \n\n{table}\n\n")
+
+    img = create_pil_image_of_page_v2(doc["pages"][0])
+    # img.show()
+
+    img = draw_bbox_on_page_v2(img, page, list(map(int, bbox)))
+    img.show()
 
 
 if __name__ == "__main__":

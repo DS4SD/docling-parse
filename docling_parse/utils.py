@@ -1,4 +1,3 @@
-import json
 import logging
 from typing import Dict, List, Optional, Tuple, Union
 
@@ -158,6 +157,67 @@ def create_pil_image_of_page_v1(
     return img
 
 
+def filter_columns_v2(data: List[Tuple], header: list[str], new_header: list[str]):
+
+    new_data = []
+    for row in data:
+
+        new_row = []
+        for _ in new_header:
+            new_row.append(row[header.index(_)])
+        new_data.append(new_row)
+
+    return new_data, new_header
+
+
+def draw_bbox_on_page_v2(
+    img: Image.Image,
+    page: Dict,
+    bbox: Tuple[int, int, int, int],
+    category: str = "sanitized",  # original
+    page_boundary: str = "crop_box",  # media_box
+    ocolor: str = "red",
+    fcolor: str = "white",
+    alpha: float = 1.0,
+) -> Image.Image:
+
+    if category not in ["original", "sanitized"]:
+        raise ValueError(
+            f"category {category} needs to be of `original` or `sanitized`."
+        )
+
+    if page_boundary not in ["crop_box", "media_box"]:
+        raise ValueError(
+            f"page_boundary {page_boundary} needs to be of `crop_box` or `media_box`."
+        )
+
+    draw = ImageDraw.Draw(img)
+
+    dimension = page[category]["dimension"]
+    # logging.info(f"dimensions: {json.dumps(dimension, indent=2)}")
+
+    dimension["width"]
+    H = dimension["height"]
+
+    # logging.info(f"width: {W}, height: {H}")
+
+    bl = (bbox[0], H - bbox[1])
+    br = (bbox[2], H - bbox[1])
+    tr = (bbox[2], H - bbox[3])
+    tl = (bbox[0], H - bbox[3])
+
+    _ = int(max(0, min(255, int(alpha * 255))))
+
+    # Convert cell color to RGBA with alpha
+    outl_color = ImageColor.getrgb(ocolor) + (_,)
+    ImageColor.getrgb(fcolor) + (_,)
+
+    # Draw the rectangle as a polygon
+    draw.polygon([bl, br, tr, tl], outline=outl_color)  # , fill=fill_color)
+
+    return img
+
+
 def create_pil_image_of_page_v2(
     page: Dict,
     category: str = "sanitized",  # original
@@ -286,7 +346,7 @@ def create_pil_image_of_page_v2(
                 )
 
     dimension = page[category]["dimension"]
-    logging.info(f"dimensions: {json.dumps(dimension, indent=2)}")
+    # logging.info(f"dimensions: {json.dumps(dimension, indent=2)}")
 
     cells = page[category]["cells"]["data"]
     cells_header = page[category]["cells"]["header"]
@@ -301,22 +361,11 @@ def create_pil_image_of_page_v2(
     W = dimension["width"]
     H = dimension["height"]
 
-    logging.info(f"width: {W}, height: {H}")
+    # logging.info(f"width: {W}, height: {H}")
 
-    """
-    # Create a blank white image
-    img = Image.new("RGB", (round(W), round(H)), "white")
-    draw = ImageDraw.Draw(img)
-    """
     # Create a blank white image with RGBA mode
     img = Image.new("RGBA", (round(W), round(H)), (255, 255, 255, 255))
     draw = ImageDraw.Draw(img)
-    """
-    overlay = Image.new(
-        "RGBA", (round(W), round(H)), (255, 255, 255, 0)
-    )  # Transparent overlay
-    draw = ImageDraw.Draw(overlay)
-    """
 
     # Draw each rectangle by connecting its four points
     if draw_images:
@@ -367,14 +416,11 @@ def create_pil_image_of_page_v2(
                     alpha=cell_alpha,
                 )
 
-            # Fixme: the _draw_text_in_bounding_bbox is not yet working
             text = row[cells_header.index(f"text")]
             if draw_cells_text and len(text) > 0:
                 draw = _draw_text_in_bounding_bbox(
-                    # overlay,
                     img,
                     draw,
-                    # bbox=(round(rect[0][0]), round(rect[0][1]), round(rect[2][0]), round(rect[2][1])),
                     bbox=(
                         round(rect[3][0]),
                         round(rect[3][1]),
@@ -482,8 +528,6 @@ def create_pil_image_of_page_v2(
         br = (x1, H - y0)
         tr = (x1, H - y1)
         tl = (x0, H - y1)
-
-        logging.info(page_bbox)
 
         outl_color = ImageColor.getrgb(cropbox_outline) + (int(cropbox_alpha * 255),)
 
