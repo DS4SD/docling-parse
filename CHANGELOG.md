@@ -1,3 +1,13 @@
+## [v3.0.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.0.0) - 2024-12-09
+
+### Feature
+
+* Massive quality improvements to v2 parser and new sanitize_cells API ([#73](https://github.com/DS4SD/docling-parse/issues/73)) ([`1fccb29`](https://github.com/DS4SD/docling-parse/commit/1fccb29d3f827450c2d259b3b9e433321a3f8751))
+
+### Breaking
+
+* Massive quality improvements to v2 parser and new sanitize_cells API ([#73](https://github.com/DS4SD/docling-parse/issues/73)) ([`1fccb29`](https://github.com/DS4SD/docling-parse/commit/1fccb29d3f827450c2d259b3b9e433321a3f8751))
+
 ## [v2.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v2.1.2) - 2024-11-22
 
 ### Fix
