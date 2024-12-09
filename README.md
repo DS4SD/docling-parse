@@ -48,9 +48,7 @@ Convert a PDF (look in the [visualise.py](docling_parse/visualise.py) for a more
 from docling_parse.docling_parse import pdf_parser_v2
 
 # Do this only once to load fonts (avoid initialising it many times)
-parser = pdf_parser_v2()
-
-# parser.set_loglevel(1) # 1=error, 2=warning, 3=success, 4=info
+parser = pdf_parser_v2("error") # info, warning, error, fatal
 
 doc_file = "my-doc.pdf" # filename
 doc_key = f"key={pdf_doc}" # unique document key (eg hash, UUID, etc)
@@ -167,7 +165,7 @@ If you dont have an input file, then a template input file will be printed on th
 To build the package, simply run (make sure [poetry](https://python-poetry.org/) is [installed](https://python-poetry.org/docs/#installing-with-the-official-installer)),
 
 ```
-poetry build
+poetry install
 ```
 
 To test the package, run:

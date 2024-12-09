@@ -4,7 +4,7 @@ repos:
     hooks:
       - id: system
         name: Black
-        entry: poetry run black docling_parse
+        entry: poetry run black docling_parse tests
         pass_filenames: false
         language: system
         files: '\.py$'
@@ -12,10 +12,34 @@ repos:
     hooks:
       - id: system
         name: isort
-        entry: poetry run isort docling_parse
+        entry: poetry run isort docling_parse tests
         pass_filenames: false
         language: system
         files: '\.py$'
+  - repo: local
+    hooks:
+      - id: autoflake
+        name: autoflake
+        entry: poetry run autoflake docling_parse
+        pass_filenames: false
+        language: system
+        files: '\.py$'
+  - repo: local
+    hooks:
+      - id: mypy
+        name: MyPy
+        entry: poetry run mypy docling_parse tests
+        pass_filenames: false
+        language: system
+        files: '\.py$'
+#  - repo: local
+#    hooks:
+#      - id: pytest
+#        name: Pytest
+#        entry: poetry run pytest tests/
+#        pass_filenames: false
+#        language: system
+#        files: '\.py$'	
   - repo: local
     hooks:
       - id: system

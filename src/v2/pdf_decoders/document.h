@@ -28,9 +28,9 @@ namespace pdflib
     bool process_document_from_file(std::string& _filename);
     bool process_document_from_bytesio(std::string& _buffer);
 
-    void decode_document();
+    void decode_document(std::string page_boundary);
 
-    void decode_document(std::vector<int>& page_numbers);
+    void decode_document(std::vector<int>& page_numbers, std::string page_boundary);
 
   private:
 
@@ -86,7 +86,6 @@ namespace pdflib
     
     number_of_pages(-1),
 
-    //json_toc(nlohmann::json::value_t::null),
     json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
   {}
@@ -96,8 +95,9 @@ namespace pdflib
 
   nlohmann::json pdf_decoder<DOCUMENT>::get()
   {
+    LOG_S(INFO) << "get() [in pdf_decoder<DOCUMENT>]";
+    
     {
-      //json_document["table_of_contents"] = json_toc;      
       json_document["annotations"] = json_annots;
     }
     
@@ -128,7 +128,6 @@ namespace pdflib
         qpdf_root  = qpdf_document.getRoot();
         qpdf_pages = qpdf_root.getKey("/Pages");
 
-	//json_toc = extract_toc_in_json(qpdf_root);
 	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
 	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
@@ -140,9 +139,9 @@ namespace pdflib
 	  info["#-pages"] = number_of_pages;
 	}
       }
-    catch (std::exception & e)
+    catch(const std::exception& exc)
       {
-        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf";        
+        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf: " << exc.what();        
         return false;
       }
 
@@ -169,7 +168,6 @@ namespace pdflib
         qpdf_root  = qpdf_document.getRoot();
         qpdf_pages = qpdf_root.getKey("/Pages");
 
-	//json_toc = extract_toc_in_json(qpdf_root);
 	json_annots = extract_document_annotations_in_json(qpdf_document, qpdf_root);
 	
         number_of_pages = qpdf_pages.getKey("/Count").getIntValue();    
@@ -181,9 +179,9 @@ namespace pdflib
 	  info["#-pages"] = number_of_pages;
 	}
       }
-    catch (std::exception & e)
+    catch(const std::exception & exc)
       {
-        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf";        
+        LOG_S(ERROR) << "filename: " << filename << " can not be processed by qpdf: " << exc.what();        
         return false;
       }
 
@@ -192,11 +190,11 @@ namespace pdflib
     return true;
   }
   
-  void pdf_decoder<DOCUMENT>::decode_document()
+  void pdf_decoder<DOCUMENT>::decode_document(std::string page_boundary)
   {
     LOG_S(INFO) << "start decoding all pages ...";        
     utils::timer timer;
-
+    
     nlohmann::json& json_pages = json_document["pages"];
     json_pages = nlohmann::json::array({});
     
@@ -209,7 +207,7 @@ namespace pdflib
 	
         pdf_decoder<PAGE> page_decoder(page);
 
-        auto timings_ = page_decoder.decode_page();
+        auto timings_ = page_decoder.decode_page(page_boundary);
 	update_timings(timings_, set_timer);
 	set_timer = false;
 
@@ -224,7 +222,7 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();
   }
 
-  void pdf_decoder<DOCUMENT>::decode_document(std::vector<int>& page_numbers)
+  void pdf_decoder<DOCUMENT>::decode_document(std::vector<int>& page_numbers, std::string page_boundary)
   {
     LOG_S(INFO) << "start decoding selected pages ...";        
     utils::timer timer;
@@ -246,7 +244,7 @@ namespace pdflib
 	    
 	    pdf_decoder<PAGE> page_decoder(pages.at(page_number));
 	    
-	    auto timings_ = page_decoder.decode_page();
+	    auto timings_ = page_decoder.decode_page(page_boundary);
 	    
 	    update_timings(timings_, set_timer);
 	    set_timer=false;

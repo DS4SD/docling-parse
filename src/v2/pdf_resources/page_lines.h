@@ -9,12 +9,15 @@ namespace pdflib
   template<>
   class pdf_resource<PAGE_LINES>
   {
+    typedef typename std::vector<pdf_resource<PAGE_LINE> >::iterator itr_type;
+    
   public:
 
     pdf_resource();
     ~pdf_resource();
 
     nlohmann::json get();
+    bool init_from(nlohmann::json& data);
 
     pdf_resource<PAGE_LINE>& operator[](size_t i);
 
@@ -23,6 +26,11 @@ namespace pdflib
 
     pdf_resource<PAGE_LINE>& back();
     void push_back(pdf_resource<PAGE_LINE>& line);
+
+    itr_type begin() { return lines.begin(); }
+    itr_type end() { return lines.end(); }
+    
+    itr_type erase(itr_type itr) { return lines.erase(itr); }
     
   private:
 
@@ -50,6 +58,36 @@ namespace pdflib
     return result;
   }
 
+  bool pdf_resource<PAGE_LINES>::init_from(nlohmann::json& data)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+    
+    bool result=true;
+    
+    if(data.is_array())
+      {
+	lines.clear();
+	lines.resize(data.size());
+
+	for(int i=0; i<data.size(); i++)	  
+	  {
+	    result = (result and lines.at(i).init_from(data[i]));
+	  }
+      }
+    else
+      {
+	std::stringstream ss;
+	ss << "can not initialise pdf_resource<PAGE_LINES> from "
+	   << data.dump(2);
+
+	LOG_S(ERROR) << ss.str();
+	throw std::logic_error(ss.str());	
+      }
+    
+    return result;
+  }
+
+  
   pdf_resource<PAGE_LINE>& pdf_resource<PAGE_LINES>::operator[](size_t i)
   {    
     return lines.at(i);
