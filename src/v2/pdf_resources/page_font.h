@@ -1413,6 +1413,10 @@ namespace pdflib
 
     std::vector<std::string> keys = { "/Encoding", "/Differences" };
 
+    // Create a regex object
+    std::regex re_01(R"(\/(.+)\.(.+))");
+    std::regex re_02(R"((\/)?(uni|UNI)([0-9A-Ea-e]{4}))");
+    
     if(utils::json::has(keys, json_font))
       {
         auto diffs = utils::json::get(keys, json_font);
@@ -1433,12 +1437,24 @@ namespace pdflib
                   {
                     name = diffs[l].get<std::string>();
 
-                    std::string name_ = "";
-                    if(name.size()>0 and name[0]=='/')
+		    // Object to hold the match results
+		    std::smatch match;
+		    
+                    std::string name_ = "", font_subname = "";
+		    if(std::regex_search(name, match, re_01))
+		      {
+			name_ = match[1].str();
+			font_subname = utils::string::to_lower(match[2].str());
+
+			LOG_S(WARNING) << name << " => (" << name_ << ", " << font_subname << ")"; 
+		      }                    
+		    else if(name.size()>0 and name[0]=='/')
                       {
                         name_ = name.substr(1, name.size()-1);
                       }
-                    
+		    else
+		      {}
+		    
                     if(name_to_descr.count(name)==1 and // only for TYPE_3 fonts
                        cmap_numb_to_char.count(numb)==1)
                       {
@@ -1459,16 +1475,42 @@ namespace pdflib
 			//diff_numb_to_char[numb] = "glyph["+font_name+"|"+name+"]";
 		      }
 		    */
-		    
+		    else if(glyphs.has(name) and font_subname=="sups")
+                      {
+                        diff_numb_to_char[numb] = "$^{" + glyphs[name] + "}";
+                        LOG_S(INFO) << "differences[" << numb << "] -> " << name
+				    << " -> " << diff_numb_to_char[numb];
+                      }
+		    else if(glyphs.has(name) and font_subname=="subs")
+                      {
+                        diff_numb_to_char[numb] = "$_{" + glyphs[name] + "}";
+                        LOG_S(INFO) << "differences[" << numb << "] -> " << name
+				    << " -> " << diff_numb_to_char[numb];
+                      }		    
                     else if(glyphs.has(name))
                       {
                         diff_numb_to_char[numb] = glyphs[name];
-                        //LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                        LOG_S(INFO) << "differences[" << numb << "] -> " << name
+				    << " -> " << diff_numb_to_char[numb];
                       }
-                    else if(glyphs.has(name_))
+
+		    else if(glyphs.has(name_) and font_subname=="sups")
+                      {
+                        diff_numb_to_char[numb] = "$^{" + glyphs[name_] + "}";
+                        LOG_S(INFO) << "differences[" << numb << "] -> " << name_
+				    << " -> " << diff_numb_to_char[numb];
+                      }
+		    else if(glyphs.has(name_) and font_subname=="subs")
+                      {
+                        diff_numb_to_char[numb] = "$_{" + glyphs[name_] + "}";
+                        LOG_S(INFO) << "differences[" << numb << "] -> " << name_
+				    << " -> " << diff_numb_to_char[numb];
+                      }		    
+		    else if(glyphs.has(name_))
                       {
                         diff_numb_to_char[numb] = glyphs[name_];
-                        //LOG_S(INFO) << "differences["<<numb<<"] -> " << name << " -> " << diff_numb_to_char[numb];
+                        LOG_S(INFO) << "differences[" << numb << "] -> " << name_
+				    << " -> " << diff_numb_to_char[numb];
                       }
 		    /*
                     else if(name_.size()>0)
@@ -1477,6 +1519,26 @@ namespace pdflib
                         LOG_S(WARNING) << "differences["<<numb<<"] -> " << name_;
                       }
 		    */
+		    else if(std::regex_search(name, match, re_02))
+		      {
+			std::string unicode_hex = match[3].str();
+			// LOG_S(WARNING) << "name: " << name << ", unicode_hex: " << unicode_hex << ", len: " << unicode_hex.size();
+			
+			diff_numb_to_char[numb] = utils::string::hex_to_utf8(unicode_hex, 4);
+			LOG_S(WARNING) << "differences["<<numb<<"] -> "
+				       << diff_numb_to_char[numb]
+				       << " (from " << name << ")";
+		      }
+		    else if(std::regex_search(name_, match, re_02))
+		      {
+			std::string unicode_hex = match[3].str();
+			// LOG_S(WARNING) << "name: " << name_ << ", unicode_hex: " << unicode_hex << ", len: " << unicode_hex.size();
+			
+			diff_numb_to_char[numb] = utils::string::hex_to_utf8(unicode_hex, 4);
+			LOG_S(WARNING) << "differences["<<numb<<"] -> "
+				       << diff_numb_to_char[numb]
+				       << " (from " << name << ")";
+		      }
                     else
                       {
                         diff_numb_to_char[numb] = name;

@@ -70,6 +70,15 @@ namespace utils
       return std::regex_match(s, std::regex("(-)?[0-9]+(\\.[0-9]+)?"));
     }
 
+    std::string to_lower(std::string text)
+    {
+      // Convert the string to lowercase
+      std::transform(text.begin(), text.end(), text.begin(),
+		     [](unsigned char c) { return std::tolower(c); });
+
+      return text;
+    }
+    
     std::string strip(std::string& line)
     {
       std::string result = line;
