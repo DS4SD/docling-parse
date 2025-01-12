@@ -87,7 +87,7 @@ namespace pdflib
 
     for(auto& item:instructions)
       {
-	LOG_S(INFO) << item.key << ": " << item.val; 
+	//LOG_S(INFO) << item.key << ": " << item.val; 
 	
         if(item.key!="operator")
           {
@@ -95,6 +95,8 @@ namespace pdflib
           }
         else
           {
+	    LOG_S(INFO) << item.key << ": " << item.val; 
+	    
             if(item.val=="CMapName")
               {
                 parse_cmap_name(parameters);
@@ -135,7 +137,6 @@ namespace pdflib
             parameters.clear();
           }
       }
-
   }
 
   uint32_t cmap_parser::to_uint32(QPDFObjectHandle handle)
@@ -171,8 +172,6 @@ namespace pdflib
                                    size_t number_of_chars)
   {
     //logging_lib::info("pdf-parser") << __FUNCTION__ << "\n";
-
-    //assert(handle.isString());
     if(not handle.isString())
       {
         std::string message = "not handle.isString()";
@@ -181,7 +180,7 @@ namespace pdflib
       }
 
     std::string unparsed = handle.unparse();
-    //logging_lib::info("pdf-parser") << "unparsed : " << unparsed << "\n";
+    LOG_S(INFO) << " unparsed: '" << unparsed << "'";
 
     // FIXME this might be too short
     std::string result(64, ' ');
@@ -212,10 +211,10 @@ namespace pdflib
           }
         catch(...)
           {
-            LOG_S(ERROR) << "ERROR: Not able to parse the unicode hex-string \""
+            LOG_S(ERROR) << "Not able to parse the unicode hex-string \""
                          << unparsed << "\"";
 
-            result = "GLYPH<"+unparsed+">";
+            result = "GLYPH(cmap:" + unparsed + ")";
           }
       }
     else
@@ -228,8 +227,10 @@ namespace pdflib
             uint32_t i32=0;
 
             for(size_t j=0; j<number_of_chars; j+=1)
-              i32 = (i32 << 8) + static_cast<unsigned char>(tmp.at(i+j));
-
+	      {
+		i32 = (i32 << 8) + static_cast<unsigned char>(tmp.at(i+j));
+	      }
+	    
             try
               {
                 itr = utf8::append(i32, itr);
@@ -249,12 +250,12 @@ namespace pdflib
 
   void cmap_parser::parse_cmap_name(std::vector<qpdf_instruction>& parameters)
   {
-    LOG_S(INFO) << __FUNCTION__ << ": skipping ...";
+    LOG_S(WARNING) << __FUNCTION__ << ": skipping ...";
   }
 
   void cmap_parser::parse_cmap_type(std::vector<qpdf_instruction>& parameters)
   {
-    LOG_S(INFO) << __FUNCTION__ << ": skipping ...";
+    LOG_S(WARNING) << __FUNCTION__ << ": skipping ...";
   }
 
   void cmap_parser::parse_begincodespacerange(std::vector<qpdf_instruction>& parameters)
@@ -266,6 +267,7 @@ namespace pdflib
       {
         std::string message = "parameters.size() < " + std::to_string(num_params);
         LOG_S(ERROR) << message;
+
         throw std::logic_error(message);
       }
     else if(parameters.size()>num_params)
@@ -274,6 +276,7 @@ namespace pdflib
       }
     
     csr_cnt = parameters[0].to_int();
+
     LOG_S(INFO) << __FUNCTION__ << " csr_cnt: " << csr_cnt;
   }
 
@@ -310,6 +313,7 @@ namespace pdflib
       {
         std::string message = "parameters.size() < " + std::to_string(num_params);
         LOG_S(ERROR) << message;
+
         throw std::logic_error(message);
       }
     else if(parameters.size()>num_params)
@@ -339,10 +343,18 @@ namespace pdflib
   // the target is always 2 byte
   std::string cmap_parser::get_target(QPDFObjectHandle my_handle)
   {
+    //for(int i=0; i<4; i++)
+    //{
+    //LOG_S(INFO) << __FUNCTION__ << "\t" << i << ": " << int(my_handle[i]);
+    //}
+    
     std::string target = to_utf8(my_handle, 2);
 
-    //LOG_S(INFO) << __FUNCTION__ << "\t" << my_handle.getStringValue() << "\t" << target;
-
+    //{
+    //std::string _ = my_handle.getStringValue();    
+    //LOG_S(INFO) << __FUNCTION__ << "\t" << _ << "\t" << _.size() << "\t" << target;
+    //}
+    
     return target;
   }
 
@@ -383,12 +395,16 @@ namespace pdflib
 
         if(target.isString())
           {
+	    //LOG_S(INFO) << "source_beg: " << source_start << ", source_end: " << source_end << ": " << target;
+	    
             // FIXME we probably need to fix the 2 in the to_utf8(..)
             //std::string tmp = target.getUTF8Value();
             std::string tmp = get_target(target);//to_utf8(target, 2);
+	    LOG_S(INFO) << "source_beg: " << source_start << ", source_end: " << source_end << ": " << tmp;
 
             tmp.erase(std::remove_if(tmp.begin(), tmp.end(), [] (char x) { return x==0;} ), tmp.end());
-
+	    LOG_S(INFO) << "source_beg: " << source_start << ", source_end: " << source_end << ": " << tmp;
+	    
             set_range(source_start, source_end, tmp);
           }
         else if(target.isArray())
@@ -408,6 +424,12 @@ namespace pdflib
                 target_strs.push_back(tgt);
               }
 
+	    LOG_S(INFO) << "source_beg: " << source_start << ", source_end: " << source_end << ": ";
+	    for(auto _:target_strs)
+	      {
+		LOG_S(INFO) << " => " << _;
+	      }
+	    
             set_range(source_start, source_end, target_strs);
           }
         else
@@ -438,6 +460,7 @@ namespace pdflib
         LOG_S(ERROR) << "overwriting number cmap[" << c << "]: " << _map.at(c) << " with " << tgt;
       }
 
+    LOG_S(INFO) << "orig: " << src << " -> cmap-ind:" << c << " -> target: " << tgt;
     _map[c] = tgt;
   }
 
@@ -445,7 +468,7 @@ namespace pdflib
                               const std::string src_end,
                               const std::string tgt)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    //LOG_S(INFO) << __FUNCTION__;
     
     auto itr_beg = src_begin.begin();
     uint32_t begin = utf8::next(itr_beg, src_begin.end());
@@ -465,9 +488,9 @@ namespace pdflib
                        << "'" << src_end << "' -> " << end;;
       }
 
-    //LOG_S(INFO) << __FUNCTION__ << "\t"
-    //<< "beg: " << begin << ", "
-    //<< "end: " << end;
+    LOG_S(INFO) << __FUNCTION__ << "\t"
+		<< "beg: " << begin << ", "
+		<< "end: " << end;
     
     std::string mapping(tgt);
     std::vector<uint32_t> tgts;
@@ -504,6 +527,7 @@ namespace pdflib
 
 		    if(utf8::is_valid(tmp.begin(), tmp.end()))
 		      {
+			LOG_S(INFO) << "cmap-ind:" << (begin+i) << " -> target: " << tmp;
 			_map[begin + i] = tmp;
 		      }
 		    else
@@ -554,6 +578,7 @@ namespace pdflib
                     //_map[begin + i] = tmp;
 		    if(utf8::is_valid(tmp.begin(), tmp.end()))
 		      {
+			LOG_S(INFO) << "cmap-ind:" << (begin+i) << " -> target: " << tmp;
 			_map[begin + i] = tmp;
 		      }
 		    else
@@ -585,7 +610,7 @@ namespace pdflib
                               const std::string src_end,
                               const std::vector<std::string> tgt)
   {
-    LOG_S(INFO) << __FUNCTION__;
+    //LOG_S(INFO) << __FUNCTION__;
 
     auto itr_begin = src_begin.begin();
     uint32_t begin = utf8::next(itr_begin, src_begin.end());
@@ -604,6 +629,7 @@ namespace pdflib
 
 	if(i<tgt.size())
 	  {
+	    LOG_S(INFO) << "cmap-ind:" << (begin+i) << " -> target: " << tgt.at(i);
 	    _map[begin + i] = tgt.at(i);
 	  }
 	else

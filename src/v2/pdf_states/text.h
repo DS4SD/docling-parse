@@ -378,7 +378,7 @@ namespace pdflib
         double      width_ = font.get_width(item.first);
         std::string chars_ = font.get_string(item.first);
 
-        //LOG_S(INFO) << item.first << " --> " << item.second << "\twidth_: " << width_ << "\tchars_: '" << chars_ << "'";
+        LOG_S(INFO) << item.first << " --> " << item.second << "\twidth_: " << width_ << "\tchars_: '" << chars_ << "'";
 
         double char_width = (width_ / 1000.0 * font_size * h_scaling);
 
@@ -453,8 +453,12 @@ namespace pdflib
 
     double font_descent = font.get_descent();
     double font_ascent  = font.get_ascent();
+    double font_capheight  = font.get_capheight();
 
-    LOG_S(INFO) << "font_descent: " << font_descent << ", font_ascent: " << font_ascent;
+    LOG_S(INFO) << "font_descent: " << font_descent << ", "
+		<< "font_ascent: " << font_ascent << ", "
+      		<< "font_capheight: " << font_capheight << ", "
+		<< "capheight/ascent: " << font_capheight/font_ascent << "";
     
     double space_width=0;
     {
@@ -474,7 +478,10 @@ namespace pdflib
 
       cell.widget = false;
       
-      std::array<double, 8> rect = compute_rect(font_descent, font_ascent, width);
+      //std::array<double, 8> rect = compute_rect(font_descent, font_ascent, width);
+
+      double ratio = font_capheight/font_ascent;
+      std::array<double, 8> rect = compute_rect(font_descent*ratio, font_ascent*ratio, width);
       {
         cell.r_x0 = rect[0];
         cell.r_y0 = rect[1];

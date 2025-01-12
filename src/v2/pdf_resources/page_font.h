@@ -40,6 +40,9 @@ namespace pdflib
     double get_ascent();
     double get_descent();
 
+    double get_capheight();
+    double get_xheight();
+    
     std::string get_utf8_string(std::string line, bool is_hex_str);
 
     // only needed for the cmap-resource files
@@ -61,6 +64,8 @@ namespace pdflib
     void init_font_name();
     void init_font_bbox();
 
+    //void init_fontfile3();
+    
     void init_ascent_and_descent();
 
     void init_default_width();
@@ -93,7 +98,9 @@ namespace pdflib
 
     nlohmann::json   json_font;
     nlohmann::json   desc_font; // derived from json_font, only for '/Type-0'
+
     QPDFObjectHandle qpdf_font;
+    //QPDFObjectHandle qpdf_desc_font; // derived from json_font, only for '/Type-0'
 
     std::string        encoding_name;
     font_encoding_name encoding;
@@ -109,6 +116,11 @@ namespace pdflib
     double ascent;
     double descent;
 
+    double capheight;
+    double xheight;
+
+    double stemv, stemh;
+    
     int fchar, lchar;
 
     bool   has_default_width=false;
@@ -351,6 +363,16 @@ namespace pdflib
     return descent;
   }
 
+  double pdf_resource<PAGE_FONT>::get_capheight()
+  {
+    return capheight;
+  }
+
+  double pdf_resource<PAGE_FONT>::get_xheight()
+  {
+    return xheight;
+  }
+  
   std::string pdf_resource<PAGE_FONT>::get_string(uint32_t c)
   {
     //LOG_S(INFO) << __FUNCTION__ << "\t" << c;
@@ -577,6 +599,8 @@ namespace pdflib
     init_font_name();
     init_font_bbox();
 
+    //init_fontfile3();
+      
     init_ascent_and_descent();
 
     init_default_width();
@@ -632,6 +656,34 @@ namespace pdflib
 	      {
 		encoding = CMAP_RESOURCES;
 	      }
+	    else if(encoding_name.find("stream") != std::string::npos)
+	      {
+		LOG_S(WARNING) << "font-encoding [" << name << "] contains stream, "
+			       << "falling back to STANDARD encoding";
+		
+		/*
+		encoding = to_encoding_name(encoding_name);
+		auto qpdf_obj = qpdf_font.getKey("/Encoding");
+
+		if(qpdf_obj.isStream())
+		  {
+		    std::vector<qpdf_instruction> stream;
+		    
+		    // decode the stream
+		    {
+		      qpdf_stream_decoder decoder(stream);
+		      decoder.decode(qpdf_obj);
+		      
+		      decoder.print();
+		    }
+		  }
+		else
+		  {
+		    LOG_S(WARNING) << "could not init stream ...";
+		  }
+		*/
+		encoding = STANDARD;
+	      }
 	    else
 	      {
 		encoding = to_encoding_name(encoding_name);
@@ -671,17 +723,19 @@ namespace pdflib
         if(subtype==TYPE_0 and utils::json::has(keys_0, json_font))
           {
             auto desc_fonts = utils::json::get(keys_0, json_font);
-            //assert(desc_fonts.size()==1);
 
 	    if(desc_fonts.size()==1)
 	      {
 		LOG_S(INFO) << "found the descendant font";// << desc_font.dump(2);
-		desc_font = desc_fonts[0];		
+		desc_font = desc_fonts[0];
+
+		//qpdf_desc_font = qpdf_font.getKey(keys_0.at(0)).getArrayItem(0);		
 	      }
 	    else
 	      {
 		std::string message = "no descendant font!";
 		LOG_S(ERROR) << message;
+		
 		throw std::logic_error(message);
 	      }
           }
@@ -823,6 +877,85 @@ namespace pdflib
                 << font_bbox[3] << "]";
   }
 
+  /*
+  void pdf_resource<PAGE_FONT>::init_fontfile3()
+  {
+    LOG_S(INFO) << __FUNCTION__ << "\t" << json_font.dump(2);
+
+    std::vector<std::string> keys_0 = {"/FontDescriptor", "/FontFile3"};
+    std::vector<std::string> keys_1 = {"/FontFile3"};
+
+    if(utils::json::has(keys_0, json_font))
+      {
+	auto qpdf_obj = qpdf_font.getKey("/FontDescriptor").getKey("/FontFile3");
+
+	if(qpdf_obj.isStream())
+	  {
+	    std::vector<qpdf_instruction> stream;
+	    
+	    // decode the stream
+	    {
+	      qpdf_stream_decoder decoder(stream);
+	      decoder.decode(qpdf_obj);
+	      
+	      decoder.print();
+	    }
+	  }
+	else
+	  {
+	    LOG_S(WARNING) << "fontfile3 is not a stream ...";
+	  }
+      }
+    else if(utils::json::has(keys_0, desc_font))
+      {
+	auto qpdf_obj = qpdf_desc_font.getKey("/FontDescriptor").getKey("/FontFile3");
+
+	if(qpdf_obj.isStream())
+	  {
+	    std::vector<qpdf_instruction> stream;
+	    
+	    // decode the stream
+	    {
+	      qpdf_stream_decoder decoder(stream);
+	      decoder.decode(qpdf_obj);
+	      
+	      decoder.print();
+	    }
+	  }
+	else
+	  {
+	    LOG_S(WARNING) << "fontfile3 is not a stream ...";
+	  }
+      }    
+    else if(utils::json::has(keys_1, json_font))
+      {
+	auto qpdf_obj = qpdf_font.getKey("/FontFile3");
+
+	if(qpdf_obj.isStream())
+	  {
+	    std::vector<qpdf_instruction> stream;
+	    
+	    // decode the stream
+	    {
+	      qpdf_stream_decoder decoder(stream);
+	      decoder.decode(qpdf_obj);
+	      
+	      decoder.print();
+	    }
+	  }
+	else
+	  {
+	    LOG_S(WARNING) << "fontfile3 is not a stream ...";
+	  }
+      }
+    
+    else
+      {
+	LOG_S(WARNING) << "no fontfile3 detected ...";
+      }
+  }
+  */
+  
   void pdf_resource<PAGE_FONT>::init_ascent_and_descent()
   {
     LOG_S(INFO) << __FUNCTION__;
@@ -935,6 +1068,57 @@ namespace pdflib
 	    LOG_S(WARNING) << " -> falling back on font-bbox for ascent (=" << ascent << ")";
 	  }
       }
+
+    capheight=0;
+    {
+      std::vector<std::string> keys = {"/FontDescriptor", "/CapHeight"};
+      
+      //bool capheight_defined=false;
+      if(utils::json::has(keys, json_font))
+        {
+          capheight = utils::json::get(keys, json_font);
+          //capheight_defined=true;
+
+          LOG_S(INFO) << "capheight: " << capheight;
+        }
+      else if(utils::json::has(keys, desc_font))
+        {
+          capheight = utils::json::get(keys, desc_font);
+          //capheight_defined=true;
+
+          LOG_S(INFO) << "capheight: " << capheight;
+        }
+      else
+        {
+          LOG_S(WARNING) << "'capheight' was not explicitely defined -> defaulting to ascent";
+	  capheight = ascent;
+        }
+    }
+
+    xheight=0;
+    {
+      std::vector<std::string> keys = {"/FontDescriptor", "/XHeight"};
+      
+      //bool xheight_defined=false;
+      if(utils::json::has(keys, json_font))
+        {
+          xheight = utils::json::get(keys, json_font);
+          //xheight_defined=true;
+
+          LOG_S(INFO) << "xheight: " << xheight;
+        }
+      else if(utils::json::has(keys, desc_font))
+        {
+          xheight = utils::json::get(keys, desc_font);
+          //xheight_defined=true;
+
+          LOG_S(INFO) << "xheight: " << xheight;
+        }
+      else
+        {
+          LOG_S(WARNING) << "'xheight' was not explicitely defined ...";
+        }
+    }    
   }
 
   void pdf_resource<PAGE_FONT>::init_default_width()

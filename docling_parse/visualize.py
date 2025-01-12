@@ -47,7 +47,7 @@ def parse_args():
         "--page-boundary",
         type=str,
         choices=["crop_box", "media_box"],
-        required=True,
+        required=False,
         default="crop_box",
         help="page-boundary [crop_box, media_box]",
     )
