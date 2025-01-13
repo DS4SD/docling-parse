@@ -52,6 +52,8 @@ tabulate = ">=0.9.0,<1.0.0"
 pywin32 = { version = ">=305", markers = "sys_platform == 'win32'" }
 autoflake = "^2.3.1"
 pillow = "^10.4.0"
+pydantic = "^2.10.5"
+docling-core = "^2.14.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
