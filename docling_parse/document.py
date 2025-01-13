@@ -1,8 +1,8 @@
-"""Models for PaginatedDocument."""
+"""Datastructures for PaginatedDocument."""
 
 import logging
 from enum import Enum
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from PIL import Image as PILImage
@@ -47,10 +47,10 @@ class BoundingRectangle(BaseModel):
 
     def to_polygon(self):
         return [
-            (r_x0, r_y0),
-            (r_x1, r_y1),
-            (r_x2, r_y2),
-            (r_x3, r_y3),
+            (self.r_x0, self.r_y0),
+            (self.r_x1, self.r_y1),
+            (self.r_x2, self.r_y2),
+            (self.r_x3, self.r_y3),
         ]
 
     def to_bottom_left_origin(self, page_height: float) -> "BoundingRectangle":
@@ -111,6 +111,8 @@ class PageCell(BaseModel):
 
     widget: bool
 
+    # FIXME: could use something more sofisticated?
+    rgba: Tuple[int, int, int, int] = [0, 0, 0, 255]
 
 class PageImage(BaseModel):
 
@@ -120,19 +122,63 @@ class PageImage(BaseModel):
 
 class PageLine(BaseModel):
 
-    i: List[int]
-    x: List[float]
-    y: List[float]
+    #i: List[int]
+    #x: List[float]
+    #y: List[float]
 
+    line_parent_id: int
+    points: List[Tuple[float, float]]
 
+    coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
+
+    # FIXME: could use something more sofisticated?
+    rgba: Tuple[int, int, int, int] = [0, 0, 0, 255]
+    width: float = 1.0
+
+    def __len__(self) -> int:
+        return len(self.points)
+    
+    def iterate_segments(self) -> Tuple[Tuple[float, float], Tuple[float, float]]:
+
+        for k in range(0, len(self.points)-1):
+            yield (self.points[k], self.points[k+1])
+
+    def to_bottom_left_origin(self, page_height: float) -> "BoundingRectangle":
+        """to_bottom_left_origin.
+
+        :param page_height:
+
+        """
+        if self.coord_origin == CoordOrigin.BOTTOMLEFT:
+            return self
+        elif self.coord_origin == CoordOrigin.TOPLEFT:
+            for i, point in enumerate(self.points):
+                self.points[i] = (point[0], page_height-point[1])
+
+            self.coord_origin = CoordOrigin.BOTTOMLEFT                
+
+    def to_top_left_origin(self, page_height: float) -> "BoundingRectangle":
+        """to_top_left_origin.
+
+        :param page_height:
+
+        """
+        if self.coord_origin == CoordOrigin.TOPLEFT:
+            return self
+        elif self.coord_origin == CoordOrigin.BOTTOMLEFT:
+            for i, point in enumerate(self.points):
+                self.points[i] = (point[0], page_height-point[1])
+
+            self.coord_origin = CoordOrigin.TOPLEFT
+    
 class PageBoundaryLabel(str, Enum):
     """PageBoundaryLabel."""
 
-    ART = "art_bbox"
-    BLEED = "bleed_bbox"
+    ART = "art_box"
+    BLEED = "bleed_box"
     CROP = "crop_box"
-    MEDIA = "media_bbox"
-    TRIM = "trim_bbox"
+    MEDIA = "media_box"
+    TRIM = "trim_box"
 
     def __str__(self):
         """Get string value."""
@@ -233,7 +279,7 @@ class SegmentedPage(BaseModel):
 
         def _get_rgba(name: str, alpha: float):
             assert 0.0 <= alpha and alpha <= 1.0, "0.0 <= alpha and alpha <= 1.0"
-            rgba = ImageColor.getrgb(cell_bl_outline) + (int(cell_bl_alpha * 255),)
+            rgba = ImageColor.getrgb(name) + (int(alpha * 255),)
             return rgba
 
         page_bbox = self.dimension.crop_bbox
@@ -302,22 +348,14 @@ class SegmentedPage(BaseModel):
             # Draw each rectangle by connecting its four points
             for line in self.lines:
 
-                for l in range(0, len(line.i), 2):
-                    i0: int = line.i[l + 0]
-                    i1: int = line.i[l + 1]
-
-                    for k in range(i0, i1 - 1):
-                        draw.line(
-                            (
-                                line.x[k],
-                                H - line.y[k],
-                                line.x[k + 1],
-                                H - line.y[k + 1],
-                            ),
-                            fill=fill,
-                            width=line_width,
-                        )
-
+                line.to_top_left_origin(page_height=H)                
+                for segment in line.iterate_segments():                    
+                    draw.line(
+                        (segment[0][0], segment[0][1], segment[1][0], segment[1][1]),
+                        fill=fill,
+                        width=line_width,
+                    )                    
+                
         return result
 
 
