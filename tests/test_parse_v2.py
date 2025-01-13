@@ -13,13 +13,13 @@ import io
 import json
 import os
 
+from docling_parse.document import (
+    ParsedPaginatedDocument,
+    from_pdf_parser_v2_to_parsed_paginated_document,
+)
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 from docling_parse.utils import create_pil_image_of_page_v2
 
-from docling_parse.document import (
-    ParsedPaginatedDocument,
-    from_pdf_parser_v2_to_parsed_paginated_document
-)
 
 def verify_annots(true_annots, pred_annots):
 
@@ -471,6 +471,7 @@ def test_sanitize_cells_in_bbox():
         keys = parser.list_loaded_keys()
         assert len(keys) == 0, "len(keys)==0"
 
+
 def test_paginated_document_conversion():
 
     parser = pdf_parser_v2(level="fatal")
@@ -493,12 +494,15 @@ def test_paginated_document_conversion():
 
             rname = os.path.basename(pdf_doc)
             fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
-            
+
             doc: dict = parser.parse_pdf_from_key_on_page(key=doc_key, page=page)
-            
-            paginated_doc: PaginatedDocument = from_pdf_parser_v2_to_parsed_paginated_document(doc_dict = doc)
-            
+
+            paginated_doc: PaginatedDocument = (
+                from_pdf_parser_v2_to_parsed_paginated_document(doc_dict=doc)
+            )
+
         parser.unload_document(doc_key)
+
 
 def test_paginated_document_rendering():
 
@@ -522,16 +526,17 @@ def test_paginated_document_rendering():
 
             rname = os.path.basename(pdf_doc)
             fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
-            
+
             doc: dict = parser.parse_pdf_from_key_on_page(key=doc_key, page=page)
-            
-            paginated_doc: ParsedPaginatedDocument = from_pdf_parser_v2_to_parsed_paginated_document(doc_dict = doc)
+
+            paginated_doc: ParsedPaginatedDocument = (
+                from_pdf_parser_v2_to_parsed_paginated_document(doc_dict=doc)
+            )
 
             img = paginated_doc.pages[1].original.render()
             img.show()
 
             img = paginated_doc.pages[1].sanitized.render()
             img.show()
-            
+
         parser.unload_document(doc_key)
-    
