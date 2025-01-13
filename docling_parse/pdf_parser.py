@@ -1,43 +1,27 @@
 """Parser for PDF files"""
 
-import io
-import json
-import os
-
 from io import BytesIO
-
-import logging
-from enum import Enum
-from typing import Dict, List, Optional, Tuple
+from typing import List, Tuple
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
-from PIL import Image as PILImage
-from PIL import ImageColor, ImageDraw
-from pydantic import AnyUrl, BaseModel
-
-from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 
 from docling_parse.document import (
     BoundingRectangle,
-
+    PageBoundaryLabel,
     PageCell,
+    PageDimension,
     PageImage,
     PageLine,
-
-    PageBoundaryLabel,
-
-    PageDimension,
-    SegmentedPage,
-    ParsedPageLabel,
-
     ParsedPage,
-    
     ParsedPaginatedDocument,
+    SegmentedPage,
 )
+from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
+
 
 class pdf_parser:
 
-    def __init__(self, loglevel:str = "fatal"):
+    def __init__(self, loglevel: str = "fatal"):
         """
         Set the log level using a string label.
 
@@ -47,7 +31,7 @@ class pdf_parser:
         """
         self.parser = pdf_parser_v2(level=loglevel)
 
-    def set_loglevel_with_label(self, loglevel:str):
+    def set_loglevel_with_label(self, loglevel: str):
         """Set the log level using a string label.
 
         Parameters:
@@ -56,8 +40,8 @@ class pdf_parser:
            )")
         """
         self.parser.set_loglevel_with_label(level=loglevel)
-        
-    def is_loaded(self, key:str) -> bool:
+
+    def is_loaded(self, key: str) -> bool:
         """Check if a document with the given key is loaded.
 
         Parameters:
@@ -67,7 +51,7 @@ class pdf_parser:
             bool: True if the document is loaded, False otherwise.)")
         """
         return self.parser.is_loaded(key=key)
-        
+
     def list_loaded_keys(self) -> List[str]:
         """List the keys of the loaded documents.
 
@@ -75,9 +59,8 @@ class pdf_parser:
             List[str]: A list of keys for the currently loaded documents.)")
         """
         return self.parser.list_loaded_keys()
-        
-        
-    def load_document(self, key:str, filename:str) -> bool:
+
+    def load_document(self, key: str, filename: str) -> bool:
         """Load a document by key and filename.
 
         Parameters:
@@ -88,8 +71,8 @@ class pdf_parser:
             bool: True if the document was successfully loaded, False otherwise.)")
         """
         return self.parser.load_document(key=key, filename=filename)
-        
-    def load_document_from_bytesio(self, key:str, data:BytesIO) -> bool:
+
+    def load_document_from_bytesio(self, key: str, data: BytesIO) -> bool:
         """Load a document by key from a BytesIO-like object.
 
         Parameters:
@@ -100,8 +83,8 @@ class pdf_parser:
              bool: True if the document was successfully loaded, False otherwise.)")
         """
         return self.parser.load_document(key=key, bytes_io=data)
-    
-    def unload_document(self, key:str) -> bool:
+
+    def unload_document(self, key: str) -> bool:
         """Unload a document by its unique key.
 
         Parameters:
@@ -111,8 +94,8 @@ class pdf_parser:
             bool: True if the document was successfully unloaded, False otherwise.)")
         """
         return self.parser.unload_document(key)
-        
-    def number_of_pages(self, key:str) -> int:
+
+    def number_of_pages(self, key: str) -> int:
         """Get the number of pages in the document identified by its unique key.
 
         Parameters:
@@ -122,29 +105,42 @@ class pdf_parser:
             int: The number of pages in the document.)")
         """
         return self.number_of_pages(key=key)
-        
-    def parse(self, key:str, page_no:int=-1, page_boundary: PageBoundaryLabel=PageBoundaryLabel.CROP) -> ParsedPaginatedDocument:
-        """
-    Parse the PDF document identified by its unique key and return a JSON representation.
 
-    Parameters:
-        key (str): The unique key of the document.
-        page_boundary (str): The page boundary specification for parsing. One of [`crop_box`, `media_box`].
-
-    Returns:
-        dict: A JSON representation of the parsed PDF document.)")
+    def parse(
+        self,
+        key: str,
+        page_no: int = -1,
+        page_boundary: PageBoundaryLabel = PageBoundaryLabel.CROP,
+    ) -> ParsedPaginatedDocument:
         """
-        if page_no==-1:
-            doc_dict = self.parser.parse_pdf_from_key(key=key, page_boundary=page_boundary.value)
-            return self._to_parsed_paginated_document(doc_dict = doc_dict)
-            
-        elif page_no>=1 and page_no<=self.get_number_of_pages(key):
-            doc_dict = self.parser.parse_pdf_from_key_on_page(key=key, page=page_no-1, page_boundary=page_boundary)
-            return self._to_parsed_paginated_document(doc_dict = doc_dict, page_no=page_no)
+        Parse the PDF document identified by its unique key and return a JSON representation.
+
+        Parameters:
+            key (str): The unique key of the document.
+            page_boundary (str): The page boundary specification for parsing. One of [`crop_box`, `media_box`].
+
+        Returns:
+            dict: A JSON representation of the parsed PDF document.)")
+        """
+        if page_no == -1:
+            doc_dict = self.parser.parse_pdf_from_key(
+                key=key, page_boundary=page_boundary.value
+            )
+            return self._to_parsed_paginated_document(doc_dict=doc_dict)
+
+        elif page_no >= 1 and page_no <= self.number_of_pages(key):
+            doc_dict = self.parser.parse_pdf_from_key_on_page(
+                key=key, page=page_no - 1, page_boundary=page_boundary
+            )
+            return self._to_parsed_paginated_document(
+                doc_dict=doc_dict, page_no=page_no
+            )
 
         else:
-            raise ValueError(f"incorrect page_no: {page_no} for key={key} (min:1, max:{self.get_number_of_pages(key)})")
-            
+            raise ValueError(
+                f"incorrect page_no: {page_no} for key={key} (min:1, max:{self.number_of_pages(key)})"
+            )
+
     def _to_dimension(self, dimension: dict) -> PageDimension:
 
         page_boundary: PageBoundaryLabel = PageBoundaryLabel(dimension["page_boundary"])
@@ -156,7 +152,7 @@ class pdf_parser:
             t=dimension["bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         rect = BoundingRectangle(
             r_x0=bbox.l,
             r_y0=bbox.b,
@@ -168,7 +164,7 @@ class pdf_parser:
             r_y3=bbox.t,
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         art_bbox = BoundingBox(
             l=dimension["rectangles"]["art-bbox"][0],
             b=dimension["rectangles"]["art-bbox"][1],
@@ -176,7 +172,7 @@ class pdf_parser:
             t=dimension["rectangles"]["art-bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         media_bbox = BoundingBox(
             l=dimension["rectangles"]["media-bbox"][0],
             b=dimension["rectangles"]["media-bbox"][1],
@@ -184,7 +180,7 @@ class pdf_parser:
             t=dimension["rectangles"]["media-bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         bleed_bbox = BoundingBox(
             l=dimension["rectangles"]["bleed-bbox"][0],
             b=dimension["rectangles"]["bleed-bbox"][1],
@@ -192,7 +188,7 @@ class pdf_parser:
             t=dimension["rectangles"]["bleed-bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         trim_bbox = BoundingBox(
             l=dimension["rectangles"]["trim-bbox"][0],
             b=dimension["rectangles"]["trim-bbox"][1],
@@ -200,7 +196,7 @@ class pdf_parser:
             t=dimension["rectangles"]["trim-bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         crop_bbox = BoundingBox(
             l=dimension["rectangles"]["crop-bbox"][0],
             b=dimension["rectangles"]["crop-bbox"][1],
@@ -208,7 +204,7 @@ class pdf_parser:
             t=dimension["rectangles"]["crop-bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-        
+
         return PageDimension(
             angle=dimension["angle"],
             page_boundary=dimension["page_boundary"],
@@ -225,10 +221,10 @@ class pdf_parser:
 
         assert "data" in cells, '"data" in cells'
         assert "header" in cells, '"header" in cells'
-        
+
         data = cells["data"]
         header = cells["header"]
-        
+
         result: List[PageCell] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
@@ -252,18 +248,17 @@ class pdf_parser:
                 rendering_mode="",
             )
             result.append(cell)
-            
-        return result
 
+        return result
 
     def _to_images(self, images: dict) -> List[PageImage]:
 
         assert "data" in images, '"data" in images'
         assert "header" in images, '"header" in images'
-        
+
         data = images["data"]
         header = images["header"]
-        
+
         result: List[PageImage] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
@@ -278,9 +273,8 @@ class pdf_parser:
             )
             image = PageImage(rect=rect, uri=None)
             result.append(image)
-            
-        return result
 
+        return result
 
     def _to_lines(self, data: dict) -> List[PageLine]:
 
@@ -291,15 +285,14 @@ class pdf_parser:
                 i0: int = item["i"][l + 0]
                 i1: int = item["i"][l + 1]
 
-                points: List[Tuple[float, float]] = []                
+                points: List[Tuple[float, float]] = []
                 for k in range(i0, i1):
                     points.append((item["x"][k], item["y"][k]))
-                
+
                 line = PageLine(line_parent_id=l, points=points)
                 result.append(line)
-                
-        return result
 
+        return result
 
     def _to_segmented_page(self, page: dict) -> SegmentedPage:
 
@@ -310,7 +303,6 @@ class pdf_parser:
             lines=self._to_lines(page["lines"]),
         )
 
-
     def _to_parsed_page(self, page: dict) -> ParsedPage:
 
         return ParsedPage(
@@ -318,12 +310,13 @@ class pdf_parser:
             sanitized=self._to_segmented_page(page["sanitized"]),
         )
 
-    def _to_parsed_paginated_document(self, doc_dict: dict,page_no: int = 1) -> ParsedPaginatedDocument:
-        
+    def _to_parsed_paginated_document(
+        self, doc_dict: dict, page_no: int = 1
+    ) -> ParsedPaginatedDocument:
+
         parsed_doc = ParsedPaginatedDocument()
 
         for pi, page in enumerate(doc_dict["pages"]):
             parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)
-            
+
         return parsed_doc
-            

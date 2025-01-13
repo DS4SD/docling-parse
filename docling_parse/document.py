@@ -2,7 +2,7 @@
 
 import logging
 from enum import Enum
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Generator, List, Optional, Tuple
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from PIL import Image as PILImage
@@ -112,7 +112,8 @@ class PageCell(BaseModel):
     widget: bool
 
     # FIXME: could use something more sofisticated?
-    rgba: Tuple[int, int, int, int] = [0, 0, 0, 255]
+    rgba: Tuple[int, int, int, int] = (0, 0, 0, 255)
+
 
 class PageImage(BaseModel):
 
@@ -122,9 +123,9 @@ class PageImage(BaseModel):
 
 class PageLine(BaseModel):
 
-    #i: List[int]
-    #x: List[float]
-    #y: List[float]
+    # i: List[int]
+    # x: List[float]
+    # y: List[float]
 
     line_parent_id: int
     points: List[Tuple[float, float]]
@@ -132,18 +133,20 @@ class PageLine(BaseModel):
     coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
 
     # FIXME: could use something more sofisticated?
-    rgba: Tuple[int, int, int, int] = [0, 0, 0, 255]
+    rgba: Tuple[int, int, int, int] = (0, 0, 0, 255)
     width: float = 1.0
 
     def __len__(self) -> int:
         return len(self.points)
-    
-    def iterate_segments(self) -> Tuple[Tuple[float, float], Tuple[float, float]]:
 
-        for k in range(0, len(self.points)-1):
-            yield (self.points[k], self.points[k+1])
+    def iterate_segments(
+        self,
+    ) -> Generator[Tuple[Tuple[float, float], Tuple[float, float]]]:
 
-    def to_bottom_left_origin(self, page_height: float) -> "BoundingRectangle":
+        for k in range(0, len(self.points) - 1):
+            yield (self.points[k], self.points[k + 1])
+
+    def to_bottom_left_origin(self, page_height: float):
         """to_bottom_left_origin.
 
         :param page_height:
@@ -153,11 +156,11 @@ class PageLine(BaseModel):
             return self
         elif self.coord_origin == CoordOrigin.TOPLEFT:
             for i, point in enumerate(self.points):
-                self.points[i] = (point[0], page_height-point[1])
+                self.points[i] = (point[0], page_height - point[1])
 
-            self.coord_origin = CoordOrigin.BOTTOMLEFT                
+            self.coord_origin = CoordOrigin.BOTTOMLEFT
 
-    def to_top_left_origin(self, page_height: float) -> "BoundingRectangle":
+    def to_top_left_origin(self, page_height: float):
         """to_top_left_origin.
 
         :param page_height:
@@ -167,10 +170,11 @@ class PageLine(BaseModel):
             return self
         elif self.coord_origin == CoordOrigin.BOTTOMLEFT:
             for i, point in enumerate(self.points):
-                self.points[i] = (point[0], page_height-point[1])
+                self.points[i] = (point[0], page_height - point[1])
 
             self.coord_origin = CoordOrigin.TOPLEFT
-    
+
+
 class PageBoundaryLabel(str, Enum):
     """PageBoundaryLabel."""
 
@@ -233,8 +237,8 @@ class SegmentedPage(BaseModel):
         page_boundary: PageBoundaryLabel = PageBoundaryLabel.CROP,  # media_box
         draw_cells_bbox: bool = True,
         draw_cells_text: bool = False,
-        draw_cells_bl: bool = False,
-        draw_cells_tr: bool = False,
+        draw_cells_bl: bool = True,
+        draw_cells_tr: bool = True,
         cell_outline: str = "black",
         cell_color: str = "blue",
         cell_alpha: float = 1.0,
@@ -317,8 +321,8 @@ class SegmentedPage(BaseModel):
                     logging.warning("implement draw_cells_text")
 
                 if draw_cells_bl:
-                    fill = (_get_rgba(name=cell_bl_color, alpha=cell_bl_alpha),)
-                    outline = (_get_rgba(name=cell_bl_outline, alpha=cell_bl_alpha),)
+                    fill = _get_rgba(name=cell_bl_color, alpha=cell_bl_alpha)
+                    outline = _get_rgba(name=cell_bl_outline, alpha=cell_bl_alpha)
 
                     # Define the bounding box for the dot
                     dot_bbox = [
@@ -330,8 +334,8 @@ class SegmentedPage(BaseModel):
                     draw.ellipse(dot_bbox, fill=fill, outline=outline)
 
                 if draw_cells_tr:
-                    fill = (_get_rgba(name=cell_tr_color, alpha=cell_tr_alpha),)
-                    outline = (_get_rgba(name=cell_tr_outline, alpha=cell_tr_alpha),)
+                    fill = _get_rgba(name=cell_tr_color, alpha=cell_tr_alpha)
+                    outline = _get_rgba(name=cell_tr_outline, alpha=cell_tr_alpha)
 
                     # Define the bounding box for the dot
                     dot_bbox = [
@@ -348,14 +352,14 @@ class SegmentedPage(BaseModel):
             # Draw each rectangle by connecting its four points
             for line in self.lines:
 
-                line.to_top_left_origin(page_height=H)                
-                for segment in line.iterate_segments():                    
+                line.to_top_left_origin(page_height=H)
+                for segment in line.iterate_segments():
                     draw.line(
                         (segment[0][0], segment[0][1], segment[1][0], segment[1][1]),
                         fill=fill,
                         width=line_width,
-                    )                    
-                
+                    )
+
         return result
 
 
@@ -379,183 +383,3 @@ class ParsedPage(BaseModel):
 class ParsedPaginatedDocument(BaseModel):
 
     pages: Dict[int, ParsedPage] = {}
-
-
-def _to_dimension(dimension: dict) -> PageDimension:
-
-    page_boundary: PageBoundaryLabel = PageBoundaryLabel(dimension["page_boundary"])
-
-    bbox = BoundingBox(
-        l=dimension["bbox"][0],
-        b=dimension["bbox"][1],
-        r=dimension["bbox"][2],
-        t=dimension["bbox"][3],
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    rect = BoundingRectangle(
-        r_x0=bbox.l,
-        r_y0=bbox.b,
-        r_x1=bbox.r,
-        r_y1=bbox.b,
-        r_x2=bbox.r,
-        r_y2=bbox.t,
-        r_x3=bbox.l,
-        r_y3=bbox.t,
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    art_bbox = BoundingBox(
-        l=dimension["rectangles"]["art-bbox"][0],
-        b=dimension["rectangles"]["art-bbox"][1],
-        r=dimension["rectangles"]["art-bbox"][2],
-        t=dimension["rectangles"]["art-bbox"][3],
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    media_bbox = BoundingBox(
-        l=dimension["rectangles"]["media-bbox"][0],
-        b=dimension["rectangles"]["media-bbox"][1],
-        r=dimension["rectangles"]["media-bbox"][2],
-        t=dimension["rectangles"]["media-bbox"][3],
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    bleed_bbox = BoundingBox(
-        l=dimension["rectangles"]["bleed-bbox"][0],
-        b=dimension["rectangles"]["bleed-bbox"][1],
-        r=dimension["rectangles"]["bleed-bbox"][2],
-        t=dimension["rectangles"]["bleed-bbox"][3],
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    trim_bbox = BoundingBox(
-        l=dimension["rectangles"]["trim-bbox"][0],
-        b=dimension["rectangles"]["trim-bbox"][1],
-        r=dimension["rectangles"]["trim-bbox"][2],
-        t=dimension["rectangles"]["trim-bbox"][3],
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    crop_bbox = BoundingBox(
-        l=dimension["rectangles"]["crop-bbox"][0],
-        b=dimension["rectangles"]["crop-bbox"][1],
-        r=dimension["rectangles"]["crop-bbox"][2],
-        t=dimension["rectangles"]["crop-bbox"][3],
-        coord_origin=CoordOrigin.BOTTOMLEFT,
-    )
-
-    return PageDimension(
-        angle=dimension["angle"],
-        page_boundary=dimension["page_boundary"],
-        bbox=bbox,
-        rect=rect,
-        art_bbox=art_bbox,
-        media_bbox=media_bbox,
-        trim_bbox=trim_bbox,
-        crop_bbox=crop_bbox,
-        bleed_bbox=bleed_bbox,
-    )
-
-
-def _to_cells(cells: dict) -> List[PageCell]:
-
-    assert "data" in cells, '"data" in cells'
-    assert "header" in cells, '"header" in cells'
-
-    data = cells["data"]
-    header = cells["header"]
-
-    result: List[PageCell] = []
-    for ind, row in enumerate(data):
-        rect = BoundingRectangle(
-            r_x0=row[header.index(f"r_x0")],
-            r_y0=row[header.index(f"r_y0")],
-            r_x1=row[header.index(f"r_x1")],
-            r_y1=row[header.index(f"r_y1")],
-            r_x2=row[header.index(f"r_x2")],
-            r_y2=row[header.index(f"r_y2")],
-            r_x3=row[header.index(f"r_x3")],
-            r_y3=row[header.index(f"r_y3")],
-        )
-        cell = PageCell(
-            rect=rect,
-            text=row[header.index(f"text")],
-            orig=row[header.index(f"text")],
-            font_key=row[header.index(f"font-key")],
-            font_name=row[header.index(f"font-name")],
-            widget=row[header.index(f"widget")],
-            ordering=ind,
-            rendering_mode="",
-        )
-        result.append(cell)
-
-    return result
-
-
-def _to_images(images: dict) -> List[PageImage]:
-
-    assert "data" in images, '"data" in images'
-    assert "header" in images, '"header" in images'
-
-    data = images["data"]
-    header = images["header"]
-
-    result: List[PageImage] = []
-    for ind, row in enumerate(data):
-        rect = BoundingRectangle(
-            r_x0=row[header.index(f"x0")],
-            r_y0=row[header.index(f"y0")],
-            r_x1=row[header.index(f"x1")],
-            r_y1=row[header.index(f"y0")],
-            r_x2=row[header.index(f"x1")],
-            r_y2=row[header.index(f"y1")],
-            r_x3=row[header.index(f"x0")],
-            r_y3=row[header.index(f"y1")],
-        )
-        image = PageImage(rect=rect, uri=None)
-        result.append(image)
-
-    return result
-
-
-def _to_lines(data: dict) -> List[PageLine]:
-
-    result: List[PageLine] = []
-    for ind, item in enumerate(data):
-
-        line = PageLine(i=item["i"], x=item["x"], y=item["y"])
-
-    return result
-
-
-def _to_segmented_page(page: dict) -> SegmentedPage:
-
-    return SegmentedPage(
-        dimension=_to_dimension(page["dimension"]),
-        cells=_to_cells(page["cells"]),
-        images=_to_images(page["images"]),
-        lines=_to_lines(page["lines"]),
-    )
-
-
-def _to_parsed_page(page: dict) -> ParsedPage:
-
-    paginated_page = ParsedPage(
-        original=_to_segmented_page(page["original"]),
-        sanitized=_to_segmented_page(page["sanitized"]),
-    )
-
-    return paginated_page
-
-
-def from_pdf_parser_v2_to_parsed_paginated_document(
-    doc_dict: dict,
-) -> ParsedPaginatedDocument:
-
-    parsed_doc = ParsedPaginatedDocument()
-
-    for pi, page in enumerate(doc_dict["pages"]):
-        parsed_doc.pages[pi + 1] = _to_parsed_page(page)
-
-    return parsed_doc
