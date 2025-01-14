@@ -1,13 +1,20 @@
 """Datastructures for PaginatedDocument."""
 
 import logging
+import math
 from enum import Enum
-from typing import Dict, Generator, List, Optional, Tuple
+from typing import Dict, Iterator, List, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from PIL import Image as PILImage
-from PIL import ImageColor, ImageDraw
+from PIL import ImageColor, ImageDraw, ImageFont
+from PIL.ImageFont import FreeTypeFont
 from pydantic import AnyUrl, BaseModel
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 class BoundingRectangle(BaseModel):
@@ -36,6 +43,21 @@ class BoundingRectangle(BaseModel):
         """height."""
         return abs(self.r_y2 - self.r_y0)
 
+    @property
+    def angle(self):
+        """width."""
+        p_0 = ((self.r_x0 + self.r_x3) / 2.0, (self.r_y0 + self.r_y3) / 2.0)
+        p_1 = ((self.r_x1 + self.r_x2) / 2.0, (self.r_y1 + self.r_y1) / 2.0)
+
+        delta_x, delta_y = p_1[0] - p_0[0], p_1[1] - p_0[1]
+
+        if abs(delta_x) > 1e-3:
+            return math.atan(delta_y / delta_x)
+        elif delta_y > 0:
+            return 3.142592 / 2.0
+        else:
+            return -3.142592 / 2.0
+
     def to_bounding_box(self) -> BoundingBox:
         return BoundingBox(
             l=self.r_x0,
@@ -45,7 +67,7 @@ class BoundingRectangle(BaseModel):
             coord_origin=self.coord_origin,
         )
 
-    def to_polygon(self):
+    def to_polygon(self) -> List[Tuple[float, float]]:
         return [
             (self.r_x0, self.r_y0),
             (self.r_x1, self.r_y1),
@@ -117,16 +139,14 @@ class PageCell(BaseModel):
 
 class PageImage(BaseModel):
 
+    ordering: int
     rect: BoundingRectangle
     uri: Optional[AnyUrl]
 
 
 class PageLine(BaseModel):
 
-    # i: List[int]
-    # x: List[float]
-    # y: List[float]
-
+    ordering: int
     line_parent_id: int
     points: List[Tuple[float, float]]
 
@@ -141,7 +161,7 @@ class PageLine(BaseModel):
 
     def iterate_segments(
         self,
-    ) -> Generator[Tuple[Tuple[float, float], Tuple[float, float]]]:
+    ) -> Iterator[Tuple[Tuple[float, float], Tuple[float, float]]]:
 
         for k in range(0, len(self.points) - 1):
             yield (self.points[k], self.points[k + 1])
@@ -194,7 +214,7 @@ class PageDimension(BaseModel):
     angle: float
     page_boundary: PageBoundaryLabel
 
-    bbox: BoundingBox
+    # bbox: BoundingBox
     rect: BoundingRectangle
 
     art_bbox: BoundingBox
@@ -207,14 +227,14 @@ class PageDimension(BaseModel):
     def width(self):
         """width."""
         # FIXME: think about angle, page_boundary and coord_origin ...
-        return self.bbox.width
+        return self.crop_bbox.width
 
     @property
     def height(self):
         """height."""
 
         # FIXME: think about angle, page_boundary and coord_origin ...
-        return self.bbox.height
+        return self.crop_bbox.height
 
     @property
     def origin(self):
@@ -232,13 +252,48 @@ class SegmentedPage(BaseModel):
     images: List[PageImage]
     lines: List[PageLine]
 
+    def crop_text(self, bbox: BoundingBox, eps: float = 1.0):
+
+        selection = []
+        for page_cell in self.cells:
+            cell_bbox = page_cell.rect.to_bottom_left_origin(
+                page_height=self.dimension.height
+            ).to_bounding_box()
+
+            if (
+                bbox.l <= cell_bbox.l
+                and cell_bbox.r <= bbox.r
+                and bbox.b <= cell_bbox.b
+                and cell_bbox.t <= bbox.t
+            ):
+                selection.append(page_cell.copy())
+
+        selection = sorted(selection, key=lambda x: x.ordering)
+
+        text = ""
+        for i, cell in enumerate(selection):
+
+            if i == 0:
+                text += cell.text
+            else:
+                prev = selection[i - 1]
+
+                if (
+                    abs(cell.rect.r_x0 - prev.rect.r_x1) < eps
+                    and abs(cell.rect.r_y0 - prev.rect.r_y1) < eps
+                ):
+                    text += cell.text
+                else:
+                    text += " "
+                    text += cell.text
+
     def render(
         self,
         page_boundary: PageBoundaryLabel = PageBoundaryLabel.CROP,  # media_box
-        draw_cells_bbox: bool = True,
-        draw_cells_text: bool = False,
-        draw_cells_bl: bool = True,
-        draw_cells_tr: bool = True,
+        draw_cells_bbox: bool = False,
+        draw_cells_text: bool = True,
+        draw_cells_bl: bool = False,
+        draw_cells_tr: bool = False,
         cell_outline: str = "black",
         cell_color: str = "blue",
         cell_alpha: float = 1.0,
@@ -286,6 +341,69 @@ class SegmentedPage(BaseModel):
             rgba = ImageColor.getrgb(name) + (int(alpha * 255),)
             return rgba
 
+        def _draw_text_in_bounding_bbox(
+            img: PILImage.Image,
+            # `draw: ImageDraw.ImageDraw,
+            bbox: Tuple[float, float, float, float],
+            text: str,
+            font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
+            fill: str = "black",
+        ) -> PILImage.Image:  # ImageDraw.ImageDraw:
+            """
+            Draws text inside a bounding box by creating a temporary image,
+            resizing it, and pasting it into the original image at bbox.
+
+            Parameters:
+            - draw: The ImageDraw.Draw object.
+            - bbox: Tuple (x0, y0, x1, y1) representing the bounding box (all floats).
+            - text: The text to draw.
+            - font: An optional ImageFont.ImageFont object. Defaults to Pillow's built-in font.
+            - fill: Fill color for the text.
+            """
+            x0, y0, x1, y1 = bbox
+
+            """
+            if x0 >= x1 or y0 >= y1:
+                logging.warning(f"skipping to draw text: {text}")
+                return img # draw
+            """
+
+            width, height = round(x1 - x0), round(y0 - y1)
+
+            if width <= 2 or height <= 2:
+                logging.warning(f"skipping to draw text: {text}")
+                return img  # draw
+
+            # Use the default font if no font is provided
+            if font is None:
+                font = ImageFont.load_default()
+
+            # Create a temporary image for the text
+            tmp_img = PILImage.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
+            tmp_draw = ImageDraw.Draw(tmp_img)
+            _, _, text_width, text_height = tmp_draw.textbbox(
+                (0, 0), text=text, font=font
+            )
+
+            # Create a properly sized temporary image
+            tmp_img = PILImage.new(
+                "RGBA", (text_width, text_height), (255, 255, 255, 255)
+            )
+            tmp_draw = ImageDraw.Draw(tmp_img)
+            tmp_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
+
+            # Resize image
+            res_img = tmp_img.resize((width, height), PILImage.Resampling.LANCZOS)
+
+            # Paste the resized text image onto the original image
+            img.paste(
+                im=res_img,
+                box=(round(x0), round(y1), round(x0) + width, round(y1) + height),
+                mask=None,
+            )
+
+            return img  # draw
+
         page_bbox = self.dimension.crop_bbox
 
         W = page_bbox.width
@@ -309,7 +427,6 @@ class SegmentedPage(BaseModel):
 
             # Draw each rectangle by connecting its four points
             for page_cell in self.cells:
-
                 poly = page_cell.rect.to_top_left_origin(page_height=H).to_polygon()
 
                 if draw_cells_bbox:
@@ -318,7 +435,11 @@ class SegmentedPage(BaseModel):
                     draw.polygon(poly, outline=outline, fill=fill)
 
                 if draw_cells_text:
-                    logging.warning("implement draw_cells_text")
+                    result = _draw_text_in_bounding_bbox(
+                        img=result,
+                        bbox=(poly[0][0], poly[0][1], poly[2][0], poly[2][1]),
+                        text=page_cell.text,
+                    )
 
                 if draw_cells_bl:
                     fill = _get_rgba(name=cell_bl_color, alpha=cell_bl_alpha)
@@ -383,3 +504,10 @@ class ParsedPage(BaseModel):
 class ParsedPaginatedDocument(BaseModel):
 
     pages: Dict[int, ParsedPage] = {}
+
+    def iterate_pages(
+        self,
+    ) -> Iterator[Tuple[int, ParsedPage]]:
+
+        for page_no, page in self.pages.items():
+            yield (page_no, page)

@@ -145,6 +145,7 @@ class pdf_parser:
 
         page_boundary: PageBoundaryLabel = PageBoundaryLabel(dimension["page_boundary"])
 
+        """
         bbox = BoundingBox(
             l=dimension["bbox"][0],
             b=dimension["bbox"][1],
@@ -152,18 +153,7 @@ class pdf_parser:
             t=dimension["bbox"][3],
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
-
-        rect = BoundingRectangle(
-            r_x0=bbox.l,
-            r_y0=bbox.b,
-            r_x1=bbox.r,
-            r_y1=bbox.b,
-            r_x2=bbox.r,
-            r_y2=bbox.t,
-            r_x3=bbox.l,
-            r_y3=bbox.t,
-            coord_origin=CoordOrigin.BOTTOMLEFT,
-        )
+        """
 
         art_bbox = BoundingBox(
             l=dimension["rectangles"]["art-bbox"][0],
@@ -205,10 +195,22 @@ class pdf_parser:
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
 
+        rect = BoundingRectangle(
+            r_x0=crop_bbox.l,
+            r_y0=crop_bbox.b,
+            r_x1=crop_bbox.r,
+            r_y1=crop_bbox.b,
+            r_x2=crop_bbox.r,
+            r_y2=crop_bbox.t,
+            r_x3=crop_bbox.l,
+            r_y3=crop_bbox.t,
+            coord_origin=CoordOrigin.BOTTOMLEFT,
+        )
+
         return PageDimension(
             angle=dimension["angle"],
             page_boundary=dimension["page_boundary"],
-            bbox=bbox,
+            # bbox=bbox,
             rect=rect,
             art_bbox=art_bbox,
             media_bbox=media_bbox,
@@ -271,7 +273,7 @@ class pdf_parser:
                 r_x3=row[header.index(f"x0")],
                 r_y3=row[header.index(f"y1")],
             )
-            image = PageImage(rect=rect, uri=None)
+            image = PageImage(ordering=ind, rect=rect, uri=None)
             result.append(image)
 
         return result
@@ -289,7 +291,7 @@ class pdf_parser:
                 for k in range(i0, i1):
                     points.append((item["x"][k], item["y"][k]))
 
-                line = PageLine(line_parent_id=l, points=points)
+                line = PageLine(ordering=ind, line_parent_id=l, points=points)
                 result.append(line)
 
         return result
