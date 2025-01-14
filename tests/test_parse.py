@@ -2,14 +2,14 @@
 
 import glob
 
-from docling_parse.pdf_parser import pdf_parser
+from docling_parse.pdf_parser import DoclingPdfParser
 
 REGRESSION_FOLDER = "tests/data/regression/*.pdf"
 
 
 def test_reference_documents_from_filenames_with_keys():
 
-    parser = pdf_parser(loglevel="fatal")
+    parser = DoclingPdfParser(loglevel="fatal")
 
     pdf_docs = glob.glob(REGRESSION_FOLDER)
 

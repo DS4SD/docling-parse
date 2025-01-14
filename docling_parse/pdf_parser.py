@@ -7,19 +7,19 @@ from docling_core.types.doc.base import BoundingBox, CoordOrigin
 
 from docling_parse.document import (
     BoundingRectangle,
-    PageBoundaryLabel,
-    PageCell,
+    PageBoundaryType,
+    PdfCell,
     PageDimension,
-    PageImage,
-    PageLine,
+    PdfBitmapResource,
+    PdfLine,
     ParsedPage,
-    ParsedPaginatedDocument,
+    ParsedPdfDocument,
     SegmentedPage,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 
 
-class pdf_parser:
+class DoclingPdfParser:
 
     def __init__(self, loglevel: str = "fatal"):
         """
@@ -110,8 +110,8 @@ class pdf_parser:
         self,
         key: str,
         page_no: int = -1,
-        page_boundary: PageBoundaryLabel = PageBoundaryLabel.CROP,
-    ) -> ParsedPaginatedDocument:
+        page_boundary: PageBoundaryType = PageBoundaryType.CROP_BOX,
+    ) -> ParsedPdfDocument:
         """
         Parse the PDF document identified by its unique key and return a JSON representation.
 
@@ -143,7 +143,7 @@ class pdf_parser:
 
     def _to_dimension(self, dimension: dict) -> PageDimension:
 
-        page_boundary: PageBoundaryLabel = PageBoundaryLabel(dimension["page_boundary"])
+        boundary_type: PageBoundaryType = PageBoundaryType(dimension["page_boundary"])
 
         """
         bbox = BoundingBox(
@@ -195,6 +195,8 @@ class pdf_parser:
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
 
+        # Fixme: The boundary type to which this rect refers should accept a user argument
+        # TODO: Why is this a BoundingRectangle not a BoundingBox?
         rect = BoundingRectangle(
             r_x0=crop_bbox.l,
             r_y0=crop_bbox.b,
@@ -209,7 +211,7 @@ class pdf_parser:
 
         return PageDimension(
             angle=dimension["angle"],
-            page_boundary=dimension["page_boundary"],
+            boundary_type=boundary_type,
             # bbox=bbox,
             rect=rect,
             art_bbox=art_bbox,
@@ -219,7 +221,7 @@ class pdf_parser:
             bleed_bbox=bleed_bbox,
         )
 
-    def _to_cells(self, cells: dict) -> List[PageCell]:
+    def _to_cells(self, cells: dict) -> List[PdfCell]:
 
         assert "data" in cells, '"data" in cells'
         assert "header" in cells, '"header" in cells'
@@ -227,7 +229,7 @@ class pdf_parser:
         data = cells["data"]
         header = cells["header"]
 
-        result: List[PageCell] = []
+        result: List[PdfCell] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
                 r_x0=row[header.index(f"r_x0")],
@@ -239,7 +241,7 @@ class pdf_parser:
                 r_x3=row[header.index(f"r_x3")],
                 r_y3=row[header.index(f"r_y3")],
             )
-            cell = PageCell(
+            cell = PdfCell(
                 rect=rect,
                 text=row[header.index(f"text")],
                 orig=row[header.index(f"text")],
@@ -253,7 +255,7 @@ class pdf_parser:
 
         return result
 
-    def _to_images(self, images: dict) -> List[PageImage]:
+    def _to_images(self, images: dict) -> List[PdfBitmapResource]:
 
         assert "data" in images, '"data" in images'
         assert "header" in images, '"header" in images'
@@ -261,7 +263,7 @@ class pdf_parser:
         data = images["data"]
         header = images["header"]
 
-        result: List[PageImage] = []
+        result: List[PdfBitmapResource] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
                 r_x0=row[header.index(f"x0")],
@@ -273,14 +275,14 @@ class pdf_parser:
                 r_x3=row[header.index(f"x0")],
                 r_y3=row[header.index(f"y1")],
             )
-            image = PageImage(ordering=ind, rect=rect, uri=None)
+            image = PdfBitmapResource(ordering=ind, rect=rect, uri=None)
             result.append(image)
 
         return result
 
-    def _to_lines(self, data: dict) -> List[PageLine]:
+    def _to_lines(self, data: dict) -> List[PdfLine]:
 
-        result: List[PageLine] = []
+        result: List[PdfLine] = []
         for ind, item in enumerate(data):
 
             for l in range(0, len(item["i"]), 2):
@@ -291,7 +293,7 @@ class pdf_parser:
                 for k in range(i0, i1):
                     points.append((item["x"][k], item["y"][k]))
 
-                line = PageLine(ordering=ind, line_parent_id=l, points=points)
+                line = PdfLine(ordering=ind, line_parent_id=l, points=points)
                 result.append(line)
 
         return result
@@ -314,9 +316,9 @@ class pdf_parser:
 
     def _to_parsed_paginated_document(
         self, doc_dict: dict, page_no: int = 1
-    ) -> ParsedPaginatedDocument:
+    ) -> ParsedPdfDocument:
 
-        parsed_doc = ParsedPaginatedDocument()
+        parsed_doc = ParsedPdfDocument()
 
         for pi, page in enumerate(doc_dict["pages"]):
             parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)

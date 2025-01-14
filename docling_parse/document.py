@@ -3,19 +3,35 @@
 import logging
 import math
 from enum import Enum
-from typing import Dict, Iterator, List, Optional, Tuple, Union
+from typing import Dict, Iterator, List, Optional, Tuple, Union, Annotated, NamedTuple
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from PIL import Image as PILImage
 from PIL import ImageColor, ImageDraw, ImageFont
 from PIL.ImageFont import FreeTypeFont
-from pydantic import AnyUrl, BaseModel
+from pydantic import AnyUrl, BaseModel, Field
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+ColorChannelValue = Annotated[int, Field(ge=0, le=255)]
+
+class ColorRGBA(BaseModel):
+    r: ColorChannelValue
+    g: ColorChannelValue
+    b: ColorChannelValue
+    a: ColorChannelValue = 255
+
+    def as_tuple(self) -> tuple[int, int, int, int]:
+        return (self.r, self.g, self.b, self.a)
+
+    def __iter__(self):
+        yield from (self.r, self.g, self.b, self.a)
+class Coord2D(NamedTuple):
+    x: float
+    y: float
 
 class BoundingRectangle(BaseModel):
 
@@ -59,6 +75,7 @@ class BoundingRectangle(BaseModel):
             return -3.142592 / 2.0
 
     def to_bounding_box(self) -> BoundingBox:
+        # FIXME: This code looks dangerous in assuming x0,y0 is bottom-left most and x2,y2 is top-right most...
         return BoundingBox(
             l=self.r_x0,
             b=self.r_y0,
@@ -117,8 +134,10 @@ class BoundingRectangle(BaseModel):
                 coord_origin=CoordOrigin.TOPLEFT,
             )
 
+class PdfBaseElement(BaseModel):
+    ordering: int
 
-class PageCell(BaseModel):
+class PdfCell(PdfBaseElement):
 
     rect: BoundingRectangle
 
@@ -133,21 +152,18 @@ class PageCell(BaseModel):
 
     widget: bool
 
-    # FIXME: could use something more sofisticated?
-    rgba: Tuple[int, int, int, int] = (0, 0, 0, 255)
+    rgba: ColorRGBA = (0, 0, 0, 255)
 
 
-class PageImage(BaseModel):
+class PdfBitmapResource(PdfBaseElement):
 
-    ordering: int
     rect: BoundingRectangle
     uri: Optional[AnyUrl]
 
 
-class PageLine(BaseModel):
+class PdfLine(PdfBaseElement):
 
-    ordering: int
-    line_parent_id: int
+    #line_parent_id: int
     points: List[Tuple[float, float]]
 
     coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
@@ -195,14 +211,14 @@ class PageLine(BaseModel):
             self.coord_origin = CoordOrigin.TOPLEFT
 
 
-class PageBoundaryLabel(str, Enum):
+class PageBoundaryType(str, Enum):
     """PageBoundaryLabel."""
 
-    ART = "art_box"
-    BLEED = "bleed_box"
-    CROP = "crop_box"
-    MEDIA = "media_box"
-    TRIM = "trim_box"
+    ART_BOX = "art_box"
+    BLEED_BOX = "bleed_box"
+    CROP_BOX = "crop_box"
+    MEDIA_BOX = "media_box"
+    TRIM_BOX = "trim_box"
 
     def __str__(self):
         """Get string value."""
@@ -212,7 +228,7 @@ class PageBoundaryLabel(str, Enum):
 class PageDimension(BaseModel):
 
     angle: float
-    page_boundary: PageBoundaryLabel
+    boundary_type: PageBoundaryType
 
     # bbox: BoundingBox
     rect: BoundingRectangle
@@ -226,21 +242,21 @@ class PageDimension(BaseModel):
     @property
     def width(self):
         """width."""
-        # FIXME: think about angle, page_boundary and coord_origin ...
+        # FIXME: think about angle, boundary_type and coord_origin ...
         return self.crop_bbox.width
 
     @property
     def height(self):
         """height."""
 
-        # FIXME: think about angle, page_boundary and coord_origin ...
+        # FIXME: think about angle, boundary_type and coord_origin ...
         return self.crop_bbox.height
 
     @property
     def origin(self):
         """height."""
 
-        # FIXME: think about angle, page_boundary and coord_origin ...
+        # FIXME: think about angle, boundary_type and coord_origin ...
         return (self.crop_bbox.l, self.crop_bbox.b)
 
 
@@ -248,9 +264,9 @@ class SegmentedPage(BaseModel):
 
     dimension: PageDimension
 
-    cells: List[PageCell]
-    images: List[PageImage]
-    lines: List[PageLine]
+    cells: List[PdfCell]
+    images: List[PdfBitmapResource]
+    lines: List[PdfLine]
 
     def crop_text(self, bbox: BoundingBox, eps: float = 1.0):
 
@@ -289,7 +305,7 @@ class SegmentedPage(BaseModel):
 
     def render(
         self,
-        page_boundary: PageBoundaryLabel = PageBoundaryLabel.CROP,  # media_box
+        boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX,  # media_box
         draw_cells_bbox: bool = False,
         draw_cells_text: bool = True,
         draw_cells_bl: bool = False,
@@ -484,15 +500,15 @@ class SegmentedPage(BaseModel):
         return result
 
 
-class ParsedPageLabel(str, Enum):
-    """ParsedPageLabel."""
-
-    ORIGINAL = "orginal"
-    SANITIZED = "sanitized"
-
-    def __str__(self):
-        """Get string value."""
-        return str(self.value)
+# class ParsedPageLabel(str, Enum):
+#     """ParsedPageLabel."""
+#
+#     ORIGINAL = "orginal"
+#     SANITIZED = "sanitized"
+#
+#     def __str__(self):
+#         """Get string value."""
+#         return str(self.value)
 
 
 class ParsedPage(BaseModel):
@@ -501,7 +517,7 @@ class ParsedPage(BaseModel):
     sanitized: SegmentedPage
 
 
-class ParsedPaginatedDocument(BaseModel):
+class ParsedPdfDocument(BaseModel):
 
     pages: Dict[int, ParsedPage] = {}
 
