@@ -519,6 +519,7 @@ class ParsedPage(BaseModel):
 
 class ParsedPdfDocument(BaseModel):
 
+
     pages: Dict[int, ParsedPage] = {}
 
     def iterate_pages(

@@ -1,9 +1,11 @@
 """Parser for PDF files"""
-
+import hashlib
 from io import BytesIO
-from typing import List, Tuple
+from pathlib import Path
+from typing import List, Tuple, Union, Dict, Iterator
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
+from pydantic import BaseModel, TypeAdapter
 
 from docling_parse.document import (
     BoundingRectangle,
@@ -19,127 +21,57 @@ from docling_parse.document import (
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 
 
-class DoclingPdfParser:
+class PdfDocument:
 
-    def __init__(self, loglevel: str = "fatal"):
-        """
-        Set the log level using a string label.
-
-        Parameters:
-            level (str): Logging level as a string.
-                     One of ['fatal', 'error', 'warning', 'info']
-        """
-        self.parser = pdf_parser_v2(level=loglevel)
-
-    def set_loglevel_with_label(self, loglevel: str):
-        """Set the log level using a string label.
-
-        Parameters:
-        level (str): Logging level as a string.
-                     One of ['fatal', 'error', 'warning', 'info']
-           )")
-        """
-        self.parser.set_loglevel_with_label(level=loglevel)
-
-    def is_loaded(self, key: str) -> bool:
-        """Check if a document with the given key is loaded.
-
-        Parameters:
-            key (str): The unique key of the document to check.
-
-        Returns:
-            bool: True if the document is loaded, False otherwise.)")
-        """
-        return self.parser.is_loaded(key=key)
-
-    def list_loaded_keys(self) -> List[str]:
-        """List the keys of the loaded documents.
-
-        Returns:
-            List[str]: A list of keys for the currently loaded documents.)")
-        """
-        return self.parser.list_loaded_keys()
-
-    def load_document(self, key: str, filename: str) -> bool:
-        """Load a document by key and filename.
-
-        Parameters:
-            key (str): The unique key to identify the document.
-            filename (str): The path to the document file to load.
-
-        Returns:
-            bool: True if the document was successfully loaded, False otherwise.)")
-        """
-        return self.parser.load_document(key=key, filename=filename)
-
-    def load_document_from_bytesio(self, key: str, data: BytesIO) -> bool:
-        """Load a document by key from a BytesIO-like object.
-
-        Parameters:
-            key (str): The unique key to identify the document.
-             bytes_io (Any): A BytesIO-like object containing the document data.
-
-        Returns:
-             bool: True if the document was successfully loaded, False otherwise.)")
-        """
-        return self.parser.load_document(key=key, bytes_io=data)
-
-    def unload_document(self, key: str) -> bool:
-        """Unload a document by its unique key.
-
-        Parameters:
-            key (str): The unique key of the document to unload.
-
-        Returns:
-            bool: True if the document was successfully unloaded, False otherwise.)")
-        """
-        return self.parser.unload_document(key)
-
-    def number_of_pages(self, key: str) -> int:
-        """Get the number of pages in the document identified by its unique key.
-
-        Parameters:
-            key (str): The unique key of the document.
-
-        Returns:
-            int: The number of pages in the document.)")
-        """
-        return self.number_of_pages(key=key)
-
-    def parse(
+    def iterate_pages(
         self,
-        key: str,
-        page_no: int = -1,
-        page_boundary: PageBoundaryType = PageBoundaryType.CROP_BOX,
-    ) -> ParsedPdfDocument:
-        """
-        Parse the PDF document identified by its unique key and return a JSON representation.
+    ) -> Iterator[Tuple[int, ParsedPage]]:
+        for page_no in range(self.number_of_pages()):
+            yield page_no + 1, self.get_page(page_no + 1)
 
-        Parameters:
-            key (str): The unique key of the document.
-            page_boundary (str): The page boundary specification for parsing. One of [`crop_box`, `media_box`].
+    def __init__(self, parser: "pdf_parser_v2", key: str, boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX):
+        self._parser: pdf_parser_v2 = parser
+        self._key = key
+        self._boundary_type = boundary_type
+        self._pages: Dict[int, ParsedPage] = {}
 
-        Returns:
-            dict: A JSON representation of the parsed PDF document.)")
-        """
-        if page_no == -1:
-            doc_dict = self.parser.parse_pdf_from_key(
-                key=key, page_boundary=page_boundary.value
-            )
-            return self._to_parsed_paginated_document(doc_dict=doc_dict)
+    def is_loaded(self) -> bool:
+        return self._parser.is_loaded(key=self._key)
 
-        elif page_no >= 1 and page_no <= self.number_of_pages(key):
-            doc_dict = self.parser.parse_pdf_from_key_on_page(
-                key=key, page=page_no - 1, page_boundary=page_boundary
-            )
-            return self._to_parsed_paginated_document(
-                doc_dict=doc_dict, page_no=page_no
-            )
+    def unload(self) -> bool:
+        if self.is_loaded():
+            return self._parser.unload_document(self._key)
+        self._pages.clear()
 
+    def number_of_pages(self) -> int:
+        if self.is_loaded():
+            return self._parser.number_of_pages(key=self._key)
         else:
-            raise ValueError(
-                f"incorrect page_no: {page_no} for key={key} (min:1, max:{self.number_of_pages(key)})"
-            )
+            raise RuntimeError("This document is not loaded.")
+
+    def get_page(self, page_no: int):
+        if page_no in self._pages.keys():
+            return self._pages[page_no]
+        else:
+            if 1 <= page_no <= self.number_of_pages():
+                doc_dict = self._parser.parse_pdf_from_key_on_page(
+                    key=self._key, page=page_no - 1, page_boundary=self._boundary_type
+                )
+                for pi, page in enumerate(doc_dict["pages"]): # only one page is expected
+                    self._pages[page_no] = self._to_parsed_page(page) # put on cache
+                    return self._pages[page_no]
+
+            else:
+                raise ValueError(
+                    f"incorrect page_no: {page_no} for key={self._key} (min:1, max:{self.number_of_pages()})"
+                )
+
+    def load_all_pages(self):
+        doc_dict = self._parser.parse_pdf_from_key(
+            key=self._key, page_boundary=self._boundary_type
+        )
+        for pi, page in enumerate(doc_dict["pages"]):
+            self._pages[pi + 1] = self._to_parsed_page(page)  # put on cache
 
     def _to_dimension(self, dimension: dict) -> PageDimension:
 
@@ -324,3 +256,94 @@ class DoclingPdfParser:
             parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)
 
         return parsed_doc
+
+
+class DoclingPdfParser:
+
+    def __init__(self, loglevel: str = "fatal"):
+        """
+        Set the log level using a string label.
+
+        Parameters:
+            level (str): Logging level as a string.
+                     One of ['fatal', 'error', 'warning', 'info']
+        """
+        self.parser = pdf_parser_v2(level=loglevel)
+
+    def set_loglevel(self, loglevel: str):
+        """Set the log level using a string label.
+
+        Parameters:
+        level (str): Logging level as a string.
+                     One of ['fatal', 'error', 'warning', 'info']
+           )")
+        """
+        self.parser.set_loglevel_with_label(level=loglevel)
+
+
+    def list_loaded_keys(self) -> List[str]:
+        """List the keys of the loaded documents.
+
+        Returns:
+            List[str]: A list of keys for the currently loaded documents.)")
+        """
+        return self.parser.list_loaded_keys()
+
+    def load(self, path_or_stream: Union[str, Path, BytesIO], lazy: bool = True, boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX) -> PdfDocument:
+        #success: bool
+        #key: str
+
+        if isinstance(path_or_stream, str):
+            path_or_stream = Path(path_or_stream)
+
+
+        if isinstance(path_or_stream, Path):
+            key = f"key={str(path_or_stream)}" # use filepath as internal handle
+            success = self._load_document(key=key, filename=str(path_or_stream))
+
+        elif isinstance(path_or_stream, BytesIO):
+            hasher = hashlib.md5()
+
+            while chunk := path_or_stream.read(8192):
+                hasher.update(chunk)
+            path_or_stream.seek(0)
+            hash = hasher.hexdigest()
+
+            key = f"key={hash}" # use md5 hash as internal handle
+            success = self._load_document_from_bytesio(key=key, data=path_or_stream)
+
+        if success:
+            result_doc = PdfDocument(parser=self.parser, key=key, boundary_type=boundary_type)
+            if not lazy: # eagerly parse the pages at init time if desired
+                result_doc.load_all_pages()
+
+            return result_doc
+        else:
+            raise RuntimeError(f"Failed to load document with key {key}")
+
+
+    def _load_document(self, key: str, filename: str) -> bool:
+        """Load a document by key and filename.
+
+        Parameters:
+            key (str): The unique key to identify the document.
+            filename (str): The path to the document file to load.
+
+        Returns:
+            bool: True if the document was successfully loaded, False otherwise.)")
+        """
+        return self.parser.load_document(key=key, filename=filename)
+
+    def _load_document_from_bytesio(self, key: str, data: BytesIO) -> bool:
+        """Load a document by key from a BytesIO-like object.
+
+        Parameters:
+            key (str): The unique key to identify the document.
+             bytes_io (Any): A BytesIO-like object containing the document data.
+
+        Returns:
+             bool: True if the document was successfully loaded, False otherwise.)")
+        """
+        return self.parser.load_document(key=key, bytes_io=data)
+
+
