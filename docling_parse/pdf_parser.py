@@ -1,21 +1,21 @@
 """Parser for PDF files"""
+
 import hashlib
 from io import BytesIO
 from pathlib import Path
-from typing import List, Tuple, Union, Dict, Iterator
+from typing import Dict, Iterator, List, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
-from pydantic import BaseModel, TypeAdapter
 
 from docling_parse.document import (
     BoundingRectangle,
     PageBoundaryType,
-    PdfCell,
     PageDimension,
-    PdfBitmapResource,
-    PdfLine,
     ParsedPage,
     ParsedPdfDocument,
+    PdfBitmapResource,
+    PdfCell,
+    PdfLine,
     SegmentedPage,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
@@ -29,7 +29,12 @@ class PdfDocument:
         for page_no in range(self.number_of_pages()):
             yield page_no + 1, self.get_page(page_no + 1)
 
-    def __init__(self, parser: "pdf_parser_v2", key: str, boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX):
+    def __init__(
+        self,
+        parser: "pdf_parser_v2",
+        key: str,
+        boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX,
+    ):
         self._parser: pdf_parser_v2 = parser
         self._key = key
         self._boundary_type = boundary_type
@@ -39,9 +44,12 @@ class PdfDocument:
         return self._parser.is_loaded(key=self._key)
 
     def unload(self) -> bool:
+        self._pages.clear()
+
         if self.is_loaded():
             return self._parser.unload_document(self._key)
-        self._pages.clear()
+        else:
+            return False
 
     def number_of_pages(self) -> int:
         if self.is_loaded():
@@ -57,8 +65,10 @@ class PdfDocument:
                 doc_dict = self._parser.parse_pdf_from_key_on_page(
                     key=self._key, page=page_no - 1, page_boundary=self._boundary_type
                 )
-                for pi, page in enumerate(doc_dict["pages"]): # only one page is expected
-                    self._pages[page_no] = self._to_parsed_page(page) # put on cache
+                for pi, page in enumerate(
+                    doc_dict["pages"]
+                ):  # only one page is expected
+                    self._pages[page_no] = self._to_parsed_page(page)  # put on cache
                     return self._pages[page_no]
 
             else:
@@ -225,7 +235,11 @@ class PdfDocument:
                 for k in range(i0, i1):
                     points.append((item["x"][k], item["y"][k]))
 
-                line = PdfLine(ordering=ind, line_parent_id=l, points=points)
+                line = PdfLine(
+                    ordering=ind,
+                    points=points,
+                    # line_parent_id=l,
+                )
                 result.append(line)
 
         return result
@@ -280,7 +294,6 @@ class DoclingPdfParser:
         """
         self.parser.set_loglevel_with_label(level=loglevel)
 
-
     def list_loaded_keys(self) -> List[str]:
         """List the keys of the loaded documents.
 
@@ -289,16 +302,20 @@ class DoclingPdfParser:
         """
         return self.parser.list_loaded_keys()
 
-    def load(self, path_or_stream: Union[str, Path, BytesIO], lazy: bool = True, boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX) -> PdfDocument:
-        #success: bool
-        #key: str
+    def load(
+        self,
+        path_or_stream: Union[str, Path, BytesIO],
+        lazy: bool = True,
+        boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX,
+    ) -> PdfDocument:
+        # success: bool
+        # key: str
 
         if isinstance(path_or_stream, str):
             path_or_stream = Path(path_or_stream)
 
-
         if isinstance(path_or_stream, Path):
-            key = f"key={str(path_or_stream)}" # use filepath as internal handle
+            key = f"key={str(path_or_stream)}"  # use filepath as internal handle
             success = self._load_document(key=key, filename=str(path_or_stream))
 
         elif isinstance(path_or_stream, BytesIO):
@@ -309,18 +326,19 @@ class DoclingPdfParser:
             path_or_stream.seek(0)
             hash = hasher.hexdigest()
 
-            key = f"key={hash}" # use md5 hash as internal handle
+            key = f"key={hash}"  # use md5 hash as internal handle
             success = self._load_document_from_bytesio(key=key, data=path_or_stream)
 
         if success:
-            result_doc = PdfDocument(parser=self.parser, key=key, boundary_type=boundary_type)
-            if not lazy: # eagerly parse the pages at init time if desired
+            result_doc = PdfDocument(
+                parser=self.parser, key=key, boundary_type=boundary_type
+            )
+            if not lazy:  # eagerly parse the pages at init time if desired
                 result_doc.load_all_pages()
 
             return result_doc
         else:
             raise RuntimeError(f"Failed to load document with key {key}")
-
 
     def _load_document(self, key: str, filename: str) -> bool:
         """Load a document by key and filename.
@@ -345,5 +363,3 @@ class DoclingPdfParser:
              bool: True if the document was successfully loaded, False otherwise.)")
         """
         return self.parser.load_document(key=key, bytes_io=data)
-
-

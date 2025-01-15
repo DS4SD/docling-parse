@@ -3,7 +3,7 @@
 import logging
 import math
 from enum import Enum
-from typing import Dict, Iterator, List, Optional, Tuple, Union, Annotated, NamedTuple
+from typing import Annotated, Dict, Iterator, List, NamedTuple, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from PIL import Image as PILImage
@@ -18,6 +18,7 @@ logging.basicConfig(
 
 ColorChannelValue = Annotated[int, Field(ge=0, le=255)]
 
+
 class ColorRGBA(BaseModel):
     r: ColorChannelValue
     g: ColorChannelValue
@@ -29,9 +30,12 @@ class ColorRGBA(BaseModel):
 
     def __iter__(self):
         yield from (self.r, self.g, self.b, self.a)
+
+
 class Coord2D(NamedTuple):
     x: float
     y: float
+
 
 class BoundingRectangle(BaseModel):
 
@@ -134,8 +138,10 @@ class BoundingRectangle(BaseModel):
                 coord_origin=CoordOrigin.TOPLEFT,
             )
 
+
 class PdfBaseElement(BaseModel):
     ordering: int
+
 
 class PdfCell(PdfBaseElement):
 
@@ -152,7 +158,7 @@ class PdfCell(PdfBaseElement):
 
     widget: bool
 
-    rgba: ColorRGBA = (0, 0, 0, 255)
+    rgba: ColorRGBA = ColorRGBA(r=0, g=0, b=0, a=255)
 
 
 class PdfBitmapResource(PdfBaseElement):
@@ -163,8 +169,9 @@ class PdfBitmapResource(PdfBaseElement):
 
 class PdfLine(PdfBaseElement):
 
-    #line_parent_id: int
+    # line_parent_id: int
     points: List[Tuple[float, float]]
+    # line_parent_id: int
 
     coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
 
@@ -518,7 +525,6 @@ class ParsedPage(BaseModel):
 
 
 class ParsedPdfDocument(BaseModel):
-
 
     pages: Dict[int, ParsedPage] = {}
 
