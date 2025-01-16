@@ -142,9 +142,10 @@ class BoundingRectangle(BaseModel):
 class PdfBaseElement(BaseModel):
     ordering: int
 
+
 class PdfColoredElement(PdfBaseElement):
-    rgba: ColorRGBA = ColorRGBA(r=0, g=0, b=0, a=255)    
-    
+    rgba: ColorRGBA = ColorRGBA(r=0, g=0, b=0, a=255)
+
 
 class PdfCell(PdfColoredElement):
 
@@ -166,6 +167,7 @@ class PdfCell(PdfColoredElement):
     def to_top_left_origin(self, page_height: float):
         self.rect = self.rect.to_top_left_origin(page_height=page_height)
 
+
 class PdfBitmapResource(PdfBaseElement):
 
     rect: BoundingRectangle
@@ -176,13 +178,14 @@ class PdfBitmapResource(PdfBaseElement):
 
     def to_top_left_origin(self, page_height: float):
         self.rect = self.rect.to_top_left_origin(page_height=page_height)
-        
+
+
 class PdfLine(PdfColoredElement):
 
     parent_id: int
     points: List[Tuple[float, float]]
     width: float = 1.0
-    
+
     coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
 
     def __len__(self) -> int:
@@ -315,6 +318,13 @@ class SegmentedPage(BaseModel):
                 else:
                     text += " "
                     text += cell.text
+
+    def export_to_textlines(self, add_location: bool = True) -> List[str]:
+        lines: List[str] = []
+        for cell in self.cells:
+            lines.append(f"{cell.text}")
+
+        return lines
 
     def render(
         self,
@@ -511,17 +521,6 @@ class SegmentedPage(BaseModel):
                     )
 
         return result
-
-
-# class ParsedPageLabel(str, Enum):
-#     """ParsedPageLabel."""
-#
-#     ORIGINAL = "orginal"
-#     SANITIZED = "sanitized"
-#
-#     def __str__(self):
-#         """Get string value."""
-#         return str(self.value)
 
 
 class ParsedPage(BaseModel):

@@ -4,14 +4,13 @@ import logging
 import os
 from typing import Dict, Optional
 
+from docling_parse.document import ParsedPage
+from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 from docling_parse.pdf_parsers import (  # type: ignore[import]
     pdf_parser_v1,
     pdf_parser_v2,
 )
 from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
-
-from docling_parse.document import PageBoundaryType, ParsedPage
-from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
 # Configure logging
 logging.basicConfig(
@@ -277,15 +276,26 @@ def visualise_py(
 
     pdf_page: ParsedPage = pdf_doc.get_page(page_no=page_num)
 
-    if category=="both":
-        pdf_page.original.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
-        pdf_page.sanitized.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
-    elif category=="sanitized":
-        pdf_page.sanitized.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
-    elif category=="original":
-        pdf_page.original.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
-    
-    
+    if category == "both":
+        pdf_page.original.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+        pdf_page.sanitized.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+    elif category == "sanitized":
+        pdf_page.sanitized.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+    elif category == "original":
+        pdf_page.original.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+
+    lines = pdf_page.sanitized.export_to_textlines()
+    print("\n".join(lines))
+
+
 def main():
 
     (
@@ -335,7 +345,6 @@ def main():
         )
     else:
         return -1
-        
 
 
 if __name__ == "__main__":

@@ -71,10 +71,11 @@ class PdfDocument:
                     self._pages[page_no] = self._to_parsed_page(page)  # put on cache
                     return self._pages[page_no]
 
-            else:
-                raise ValueError(
-                    f"incorrect page_no: {page_no} for key={self._key} (min:1, max:{self.number_of_pages()})"
-                )
+        raise ValueError(
+            f"incorrect page_no: {page_no} for key={self._key} (min:1, max:{self.number_of_pages()})"
+        )
+
+        return ParsedPage()
 
     def load_all_pages(self):
         doc_dict = self._parser.parse_pdf_from_key(
@@ -238,7 +239,7 @@ class PdfDocument:
                 line = PdfLine(
                     ordering=ind,
                     parent_id=l,
-                    points=points,                    
+                    points=points,
                 )
                 result.append(line)
 
