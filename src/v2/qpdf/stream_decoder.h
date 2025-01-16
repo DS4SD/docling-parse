@@ -95,10 +95,25 @@ namespace pdflib
       row.key = obj.getTypeName();
       row.val = obj.unparse();
       row.obj = obj;
-
       //LOG_S(INFO) << std::setw(12) << row.key << " | " << row.val;
     }
 
+    /*
+    if(row.is_null() or row.is_array() or row.is_dict())
+      {
+	LOG_S(WARNING) << "null: " << row.is_null() << ", array: " << row.is_array() << ", dict: " << row.is_dict();
+      }
+    */
+
+    // if the row is null, reinterprete it as an empty array. We encountered
+    // this usecase for a parameter of the d operator (see Table 56) that is
+    // null but in reality should be an empty array.
+    if(row.is_null()) 
+      {
+	row.key = "parameter";
+	row.val = "[]";
+      }
+    
     stream.push_back(row);
   }
 

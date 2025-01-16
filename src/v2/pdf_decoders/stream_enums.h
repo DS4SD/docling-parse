@@ -225,7 +225,7 @@ namespace pdflib
 
       else
         {
-          //LOG_S(ERROR) << "unsupported operator with name: " << name;
+          LOG_S(ERROR) << "unsupported operator with name: " << name;
           return null;
         }
     }

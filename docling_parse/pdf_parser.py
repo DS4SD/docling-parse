@@ -57,7 +57,7 @@ class PdfDocument:
         else:
             raise RuntimeError("This document is not loaded.")
 
-    def get_page(self, page_no: int):
+    def get_page(self, page_no: int) -> ParsedPage:
         if page_no in self._pages.keys():
             return self._pages[page_no]
         else:

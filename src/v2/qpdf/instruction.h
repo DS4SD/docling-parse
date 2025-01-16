@@ -20,6 +20,11 @@ namespace pdflib
     bool is_number();
     bool is_string();
 
+    bool is_null();
+    bool is_array();
+    bool is_dict();
+    
+    
     int    to_int();
     double to_double();
 
@@ -67,6 +72,21 @@ namespace pdflib
     return (obj.isName() or obj.isString());
   }
 
+  bool qpdf_instruction::is_null()
+  {
+    return obj.isNull();
+  }
+
+  bool qpdf_instruction::is_array()
+  {
+    return obj.isArray();
+  }
+
+  bool qpdf_instruction::is_dict()
+  {
+    return obj.isDictionary();
+  }
+  
   int qpdf_instruction::to_int()  
   { 
     if(not obj.isInteger())

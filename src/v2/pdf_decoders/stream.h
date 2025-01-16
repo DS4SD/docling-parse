@@ -224,7 +224,7 @@ namespace pdflib
 	    
 	    for(auto itr=parameters.begin(); itr!=parameters.end(); )
 	      {
-		if(itr->key=="null" and itr->val=="null")
+		if(itr->key=="null" and itr->val=="null") // this can happen if you have an empty array/dict
 		  {
 		    LOG_S(ERROR) << "\t" << std::setw(12) << itr->key << " | " << itr->val << " => erasing ...";
 		    itr = parameters.erase(itr);

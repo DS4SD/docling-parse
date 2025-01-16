@@ -10,6 +10,9 @@ from docling_parse.pdf_parsers import (  # type: ignore[import]
 )
 from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
 
+from docling_parse.document import PageBoundaryType, ParsedPage
+from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -35,9 +38,9 @@ def parse_args():
         "-v",
         "--version",
         type=str,
-        choices=["v1", "v2"],
+        choices=["py", "v1", "v2"],
         required=False,
-        default="v2",
+        default="py",
         help="Version [v1, v2]",
     )
 
@@ -258,6 +261,31 @@ def visualise_v2(
     return 0
 
 
+def visualise_py(
+    log_level: str,
+    pdf_path: str,
+    interactive: str,
+    output_dir: str,
+    page_num: int,
+    display_text: bool,
+    page_boundary: str = "crop_box",  # media_box
+    category: str = "both",  # "both", "sanitized", "original"
+):
+    parser = DoclingPdfParser(loglevel=log_level)
+
+    pdf_doc: PdfDocument = parser.load(path_or_stream=pdf_path, lazy=True)
+
+    pdf_page: ParsedPage = pdf_doc.get_page(page_no=page_num)
+
+    if category=="both":
+        pdf_page.original.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
+        pdf_page.sanitized.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
+    elif category=="sanitized":
+        pdf_page.sanitized.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
+    elif category=="original":
+        pdf_page.original.render(draw_cells_bbox=(not display_text), draw_cells_text=display_text).show()
+    
+    
 def main():
 
     (
@@ -294,8 +322,20 @@ def main():
             page_boundary=page_boundary,
             category=category,
         )
+    elif version == "py":
+        visualise_py(
+            log_level=log_level,
+            pdf_path=pdf_path,
+            interactive=interactive,
+            output_dir=output_dir,
+            page_num=page_num,
+            display_text=display_text,
+            page_boundary=page_boundary,
+            category=category,
+        )
     else:
         return -1
+        
 
 
 if __name__ == "__main__":
