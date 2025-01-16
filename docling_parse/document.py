@@ -142,15 +142,17 @@ class BoundingRectangle(BaseModel):
 class PdfBaseElement(BaseModel):
     ordering: int
 
+class PdfColoredElement(PdfBaseElement):
+    rgba: ColorRGBA = ColorRGBA(r=0, g=0, b=0, a=255)    
+    
 
-class PdfCell(PdfBaseElement):
+class PdfCell(PdfColoredElement):
 
     rect: BoundingRectangle
 
     text: str
     orig: str
 
-    ordering: int
     rendering_mode: str
 
     font_key: str
@@ -158,26 +160,30 @@ class PdfCell(PdfBaseElement):
 
     widget: bool
 
-    rgba: ColorRGBA = ColorRGBA(r=0, g=0, b=0, a=255)
+    def to_bottom_left_origin(self, page_height: float):
+        self.rect = self.rect.to_bottom_left_origin(page_height=page_height)
 
+    def to_top_left_origin(self, page_height: float):
+        self.rect = self.rect.to_top_left_origin(page_height=page_height)
 
 class PdfBitmapResource(PdfBaseElement):
 
     rect: BoundingRectangle
     uri: Optional[AnyUrl]
 
+    def to_bottom_left_origin(self, page_height: float):
+        self.rect = self.rect.to_bottom_left_origin(page_height=page_height)
 
-class PdfLine(PdfBaseElement):
+    def to_top_left_origin(self, page_height: float):
+        self.rect = self.rect.to_top_left_origin(page_height=page_height)
+        
+class PdfLine(PdfColoredElement):
 
-    # line_parent_id: int
+    parent_id: int
     points: List[Tuple[float, float]]
-    # line_parent_id: int
-
-    coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
-
-    # FIXME: could use something more sofisticated?
-    rgba: Tuple[int, int, int, int] = (0, 0, 0, 255)
     width: float = 1.0
+    
+    coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
 
     def __len__(self) -> int:
         return len(self.points)

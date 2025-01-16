@@ -23,7 +23,7 @@ def test_reference_documents_from_filenames():
         print(pdf_doc_path)
 
         pdf_doc: PdfDocument = parser.load(
-            pagth_or_stream=pdf_doc_path,
+            path_or_stream=pdf_doc_path,
             boundary_type=PageBoundaryType.CROP_BOX,  # default: CROP_BOX
             lazy=False,
         )  # default: True

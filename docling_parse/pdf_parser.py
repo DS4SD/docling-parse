@@ -237,8 +237,8 @@ class PdfDocument:
 
                 line = PdfLine(
                     ordering=ind,
-                    points=points,
-                    # line_parent_id=l,
+                    parent_id=l,
+                    points=points,                    
                 )
                 result.append(line)
 
