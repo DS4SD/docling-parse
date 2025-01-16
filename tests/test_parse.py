@@ -29,6 +29,8 @@ def test_reference_documents_from_filenames():
         )  # default: True
         assert pdf_doc is not None
 
+        # PdfDocument.iterate_pages() will automatically populate pages as they are yielded.
+        # No need to call PdfDocument.load_all_pages() before.
         for page_no, page in pdf_doc.iterate_pages():
             print(" -> Page ", page_no, end=" ")
             print("has ", len(page.sanitized.cells), "cells.")
@@ -47,9 +49,11 @@ def test_load_lazy_or_eager():
 
     pdf_doc_case2: PdfDocument = parser.load(path_or_stream=filename, lazy=False)
 
-    # The lazy doc has no pages populated, the eager one has them.
+    # The lazy doc has no pages populated, since they were never iterated so far.
+    # The eager doc one has the pages pre-populated before first iteration.
     assert pdf_doc_case1._pages != pdf_doc_case2._pages
 
+    # This method triggers the pre-loading on the lazy document after creation.
     pdf_doc_case1.load_all_pages()
 
     # After loading the pages of the lazy doc, the two documents are equal.
@@ -71,6 +75,9 @@ def test_load_two_distinct_docs():
     pdf_doc_case1.load_all_pages()
     pdf_doc_case2.load_all_pages()
 
+    # The two PdfDocument instances must be non-equal. This confirms
+    # that no internal state is overwritten by accident when loading more than
+    # one document with the same DoclingPdfParser instance.
     assert pdf_doc_case1._pages != pdf_doc_case2._pages
 
 
@@ -82,7 +89,7 @@ def test_serialize_and_reload():
     pdf_doc: PdfDocument = parser.load(path_or_stream=filename, lazy=True)
 
     # TODO a proper serialization model must be still established for a full PdfDocument
-
+    # We can serialize the pages dict the following way.
     page_adapter = TypeAdapter(Dict[int, ParsedPage])
 
     json_pages = page_adapter.dump_json(pdf_doc._pages)
