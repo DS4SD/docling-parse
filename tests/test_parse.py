@@ -73,7 +73,7 @@ def verify_cells(
         for l in range(0, 4):
             assert (
                 abs(true_rect[l][0] - pred_rect[l][0]) < eps
-            ), "abs(true_rect[l][0]-pred_rect[l][0])<eps"
+            ), f"abs(true_rect[l][0]-pred_rect[l][0])<eps -> abs({true_rect[l][0]}-{pred_rect[l][0]})<{eps}"
             assert (
                 abs(true_rect[l][1] - pred_rect[l][1]) < eps
             ), "abs(true_rect[l][1]-pred_rect[l][1])<eps"
@@ -188,7 +188,7 @@ def test_reference_documents_from_filenames():
     assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
 
     for pdf_doc_path in pdf_docs:
-        print(f"parsing {pdf_doc_path}")
+        # print(f"parsing {pdf_doc_path}")
 
         pdf_doc: PdfDocument = parser.load(
             path_or_stream=pdf_doc_path,
@@ -200,10 +200,7 @@ def test_reference_documents_from_filenames():
         # PdfDocument.iterate_pages() will automatically populate pages as they are yielded.
         # No need to call PdfDocument.load_all_pages() before.
         for page_no, pred_page in pdf_doc.iterate_pages():
-            print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
-
-            # res = page.original.render()
-            # res.show()
+            # print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
 
             if True:
                 rname = os.path.basename(pdf_doc_path)
@@ -232,6 +229,9 @@ def test_reference_documents_from_filenames():
 
                     true_page = SegmentedPdfPage.load_from_json(fname)
                     verify_SegmentedPdfPage(true_page, pred_page.sanitized)
+
+            res = pred_page.original.render()
+            # res.show()
 
     assert True
 
