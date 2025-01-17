@@ -185,7 +185,7 @@ def test_reference_documents_from_filenames_with_keys():
         # print("testing: ", pdf_doc)
 
         # print(" => load_document ...")
-        success = parser.load_document(doc_key, pdf_doc)
+        parser.load_document(doc_key, pdf_doc)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"
@@ -235,7 +235,7 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
         # print("testing: ", pdf_doc)
 
         # print(" => load_document ...")
-        success = parser.load_document(doc_key, pdf_doc)
+        parser.load_document(doc_key, pdf_doc)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"
@@ -289,7 +289,7 @@ def test_reference_documents_from_bytesio_with_keys():
         bytes_io = io.BytesIO(file_content)
 
         doc_key = f"key={pdf_doc}"
-        success = parser.load_document_from_bytesio(doc_key, bytes_io)
+        parser.load_document_from_bytesio(doc_key, bytes_io)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"
@@ -340,7 +340,7 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
         bytes_io = io.BytesIO(file_content)
 
         doc_key = f"key={pdf_doc}"
-        success = parser.load_document_from_bytesio(doc_key, bytes_io)
+        parser.load_document_from_bytesio(doc_key, bytes_io)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"
@@ -385,7 +385,7 @@ def test_visualisation():
 
         doc_key = f"key={pdf_doc}"
 
-        success = parser.load_document(doc_key, pdf_doc)
+        parser.load_document(doc_key, pdf_doc)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"
@@ -421,7 +421,7 @@ def test_sanitize_cells_in_bbox():
 
         doc_key = f"key={pdf_doc}"
 
-        success = parser.load_document(doc_key, pdf_doc)
+        parser.load_document(doc_key, pdf_doc)
 
         keys = parser.list_loaded_keys()
         assert len(keys) == 1, "len(keys)==1"

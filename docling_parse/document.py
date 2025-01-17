@@ -563,6 +563,55 @@ class SegmentedPdfPage(BaseModel):
 
         return result
 
+    def _get_rgba(self, name: str, alpha: float):
+        assert 0.0 <= alpha and alpha <= 1.0, "0.0 <= alpha and alpha <= 1.0"
+        rgba = ImageColor.getrgb(name) + (int(alpha * 255),)
+        return rgba
+
+    def _render_images(
+        self,
+        draw: ImageDraw.ImageDraw,
+        page_height: float,
+        image_fill: str,
+        image_outline: str,
+        image_alpha: float,
+    ) -> ImageDraw.ImageDraw:
+
+        for page_image in self.images:
+            poly = page_image.rect.to_top_left_origin(
+                page_height=page_height
+            ).to_polygon()
+
+            fill = self._get_rgba(name=image_fill, alpha=image_alpha)
+            outline = self._get_rgba(name=image_outline, alpha=image_alpha)
+
+            draw.polygon(poly, outline=outline, fill=fill)
+
+        return draw
+
+    def _render_lines(
+        self,
+        draw: ImageDraw.ImageDraw,
+        page_height: float,
+        line_color: str,
+        line_alpha: float,
+    ) -> ImageDraw.ImageDraw:
+
+        fill = self._get_rgba(name=line_color, alpha=line_alpha)
+
+        # Draw each rectangle by connecting its four points
+        for line in self.lines:
+
+            line.to_top_left_origin(page_height=page_height)
+            for segment in line.iterate_segments():
+                draw.line(
+                    (segment[0][0], segment[0][1], segment[1][0], segment[1][1]),
+                    fill=fill,
+                    width=max(1, round(line.width)),
+                )
+
+        return draw
+
 
 class ParsedPdfPage(BaseModel):
 

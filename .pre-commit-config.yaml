@@ -20,7 +20,7 @@ repos:
     hooks:
       - id: autoflake
         name: autoflake
-        entry: poetry run autoflake docling_parse
+        entry: poetry run autoflake docling_parse tests
         pass_filenames: false
         language: system
         files: '\.py$'

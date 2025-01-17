@@ -1,14 +1,12 @@
 #!/usr/bin/env python
-
 import glob
+import os
 from typing import Dict, List
 
 from pydantic import TypeAdapter
 
 from docling_parse.document import (
     PageBoundaryType,
-    PageDimension,
-    ParsedPdfDocument,
     ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
@@ -17,8 +15,9 @@ from docling_parse.document import (
 )
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
-GENERATE = True
+GENERATE = False
 
+GROUNDTRUTH_FOLDER = "tests/data/groundtruth/"
 REGRESSION_FOLDER = "tests/data/regression/*.pdf"
 
 
@@ -76,6 +75,9 @@ def verify_cells(
             assert (
                 abs(true_rect[l][1] - pred_rect[l][1]) < eps
             ), "abs(true_rect[l][1]-pred_rect[l][1])<eps"
+
+        print("true-text: ", true_cell.text)
+        print("pred-text: ", pred_cell.text)
 
         assert true_cell.text == pred_cell.text, "true_cell.text == pred_cell.text"
         assert true_cell.orig == pred_cell.orig, "true_cell.orig == pred_cell.orig"
@@ -192,14 +194,12 @@ def test_reference_documents_from_filenames():
         assert pdf_doc is not None
 
         for page_no, pred_page in pdf_doc.iterate_pages():
-            print(
-                f" -> Page {pred_page_no} has {len(pred_page.sanitized.cells)} cells."
-            )
+            print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
             # res = page.original.render()
             # res.show()
 
             if True:
-                rname = os.path.basename(pdf_doc)
+                rname = os.path.basename(pdf_doc_path)
                 fname = os.path.join(
                     GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.original.py.json"
                 )
@@ -207,12 +207,13 @@ def test_reference_documents_from_filenames():
                 if GENERATE or (not os.path.exists(fname)):
                     pred_page.original.save_as_json(fname)
                 else:
-                    true_page = ParsedPdfPage.load_from_json(fname)
+                    print(f"loading from {fname}")
 
-                verify_SegmentedPdfPage(true_page, pred_page.original)
+                    true_page = SegmentedPdfPage.load_from_json(fname)
+                    verify_SegmentedPdfPage(true_page, pred_page.original)
 
             if True:
-                rname = os.path.basename(pdf_doc)
+                rname = os.path.basename(pdf_doc_path)
                 fname = os.path.join(
                     GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.sanitized.py.json"
                 )
@@ -220,9 +221,10 @@ def test_reference_documents_from_filenames():
                 if GENERATE or (not os.path.exists(fname)):
                     pred_page.sanitized.save_as_json(fname)
                 else:
-                    true_page = ParsedPdfPage.load_from_json(fname)
+                    print(f"loading from {fname}")
 
-                verify_SegmentedPdfPage(true_page, pred_page.sanitized)
+                    true_page = SegmentedPdfPage.load_from_json(fname)
+                    verify_SegmentedPdfPage(true_page, pred_page.sanitized)
 
     assert True
 
@@ -272,9 +274,9 @@ def test_serialize_and_reload():
 
     # TODO a proper serialization model must be still established for a full PdfDocument
 
-    page_adapter = TypeAdapter(Dict[int, ParsedPage])
+    page_adapter = TypeAdapter(Dict[int, ParsedPdfPage])
 
     json_pages = page_adapter.dump_json(pdf_doc._pages)
-    reloaded_pages: Dict[int, ParsedPage] = page_adapter.validate_json(json_pages)
+    reloaded_pages: Dict[int, ParsedPdfPage] = page_adapter.validate_json(json_pages)
 
     assert reloaded_pages == pdf_doc._pages
