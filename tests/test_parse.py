@@ -230,7 +230,7 @@ def test_reference_documents_from_filenames():
                     true_page = SegmentedPdfPage.load_from_json(fname)
                     verify_SegmentedPdfPage(true_page, pred_page.sanitized)
 
-            res = pred_page.original.render()
+            pred_page.original.render()
             # res.show()
 
     assert True
