@@ -11,12 +11,12 @@ from docling_parse.document import (
     BoundingRectangle,
     PageBoundaryType,
     PageDimension,
-    ParsedPage,
     ParsedPdfDocument,
+    ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
     PdfLine,
-    SegmentedPage,
+    SegmentedPdfPage,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 
@@ -25,7 +25,7 @@ class PdfDocument:
 
     def iterate_pages(
         self,
-    ) -> Iterator[Tuple[int, ParsedPage]]:
+    ) -> Iterator[Tuple[int, ParsedPdfPage]]:
         for page_no in range(self.number_of_pages()):
             yield page_no + 1, self.get_page(page_no + 1)
 
@@ -38,7 +38,7 @@ class PdfDocument:
         self._parser: pdf_parser_v2 = parser
         self._key = key
         self._boundary_type = boundary_type
-        self._pages: Dict[int, ParsedPage] = {}
+        self._pages: Dict[int, ParsedPdfPage] = {}
 
     def is_loaded(self) -> bool:
         return self._parser.is_loaded(key=self._key)
@@ -57,7 +57,7 @@ class PdfDocument:
         else:
             raise RuntimeError("This document is not loaded.")
 
-    def get_page(self, page_no: int) -> ParsedPage:
+    def get_page(self, page_no: int) -> ParsedPdfPage:
         if page_no in self._pages.keys():
             return self._pages[page_no]
         else:
@@ -75,7 +75,7 @@ class PdfDocument:
             f"incorrect page_no: {page_no} for key={self._key} (min:1, max:{self.number_of_pages()})"
         )
 
-        return ParsedPage()
+        return ParsedPdfPage()
 
     def load_all_pages(self):
         doc_dict = self._parser.parse_pdf_from_key(
@@ -245,18 +245,18 @@ class PdfDocument:
 
         return result
 
-    def _to_segmented_page(self, page: dict) -> SegmentedPage:
+    def _to_segmented_page(self, page: dict) -> SegmentedPdfPage:
 
-        return SegmentedPage(
+        return SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
             cells=self._to_cells(page["cells"]),
             images=self._to_images(page["images"]),
             lines=self._to_lines(page["lines"]),
         )
 
-    def _to_parsed_page(self, page: dict) -> ParsedPage:
+    def _to_parsed_page(self, page: dict) -> ParsedPdfPage:
 
-        return ParsedPage(
+        return ParsedPdfPage(
             original=self._to_segmented_page(page["original"]),
             sanitized=self._to_segmented_page(page["sanitized"]),
         )

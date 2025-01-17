@@ -239,8 +239,10 @@ namespace pdflib
     while (std::getline(file, line))
       {
         if(line.size()==0 or (line.front()=='#'))
-          continue;
-
+	  {
+	    continue;
+	  }
+	
         size_t ind = line.find("FontName");
         if(ind!=std::string::npos)
           {

@@ -1,8 +1,10 @@
 """Datastructures for PaginatedDocument."""
 
+import json
 import logging
 import math
 from enum import Enum
+from pathlib import Path
 from typing import Annotated, Dict, Iterator, List, NamedTuple, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
@@ -276,13 +278,38 @@ class PageDimension(BaseModel):
         return (self.crop_bbox.l, self.crop_bbox.b)
 
 
-class SegmentedPage(BaseModel):
+class SegmentedPdfPage(BaseModel):
 
     dimension: PageDimension
 
     cells: List[PdfCell]
     images: List[PdfBitmapResource]
     lines: List[PdfLine]
+
+    def export_to_dict(
+        self,
+        mode: str = "json",
+        by_alias: bool = True,
+        exclude_none: bool = True,
+    ) -> Dict:
+        """Export to dict."""
+        return self.model_dump(mode=mode, by_alias=by_alias, exclude_none=exclude_none)
+
+    def save_as_json(
+        self,
+        filename: Path,
+        indent: int = 2,
+    ):
+        """Save as json."""
+        out = self.export_to_dict()
+        with open(filename, "w", encoding="utf-8") as fw:
+            json.dump(out, fw, indent=indent)
+
+    @classmethod
+    def load_from_json(cls, filename: Path) -> "SegmentedPdfPage":
+        """load_from_json."""
+        with open(filename, "r", encoding="utf-8") as f:
+            return cls.model_validate_json(f.read())
 
     def crop_text(self, bbox: BoundingBox, eps: float = 1.0):
 
@@ -319,10 +346,24 @@ class SegmentedPage(BaseModel):
                     text += " "
                     text += cell.text
 
-    def export_to_textlines(self, add_location: bool = True) -> List[str]:
+    def export_to_textlines(
+        self,
+        add_location: bool = True,
+        add_fontkey: bool = False,
+        add_fontname: bool = False,
+    ) -> List[str]:
         lines: List[str] = []
         for cell in self.cells:
-            lines.append(f"{cell.text}")
+
+            line = ""
+            if add_fontkey:
+                line += f"{cell.font_key} "
+
+            if add_fontname:
+                line += f"{cell.font_name} "
+
+            line += f"{cell.text}"
+            lines.append(line)
 
         return lines
 
@@ -523,19 +564,65 @@ class SegmentedPage(BaseModel):
         return result
 
 
-class ParsedPage(BaseModel):
+class ParsedPdfPage(BaseModel):
 
-    original: SegmentedPage
-    sanitized: SegmentedPage
+    original: SegmentedPdfPage
+    sanitized: SegmentedPdfPage
+
+    def export_to_dict(
+        self,
+        mode: str = "json",
+        by_alias: bool = True,
+        exclude_none: bool = True,
+    ) -> Dict:
+        """Export to dict."""
+        return self.model_dump(mode=mode, by_alias=by_alias, exclude_none=exclude_none)
+
+    def save_as_json(
+        self,
+        filename: Path,
+        indent: int = 2,
+    ):
+        """Save as json."""
+        out = self.export_to_dict()
+        with open(filename, "w", encoding="utf-8") as fw:
+            json.dump(out, fw, indent=indent)
+
+    @classmethod
+    def load_from_json(cls, filename: Path) -> "ParsedPdfPage":
+        """load_from_json."""
+        with open(filename, "r", encoding="utf-8") as f:
+            return cls.model_validate_json(f.read())
 
 
 class ParsedPdfDocument(BaseModel):
 
-    pages: Dict[int, ParsedPage] = {}
+    pages: Dict[int, ParsedPdfPage] = {}
 
     def iterate_pages(
         self,
-    ) -> Iterator[Tuple[int, ParsedPage]]:
+    ) -> Iterator[Tuple[int, ParsedPdfPage]]:
 
         for page_no, page in self.pages.items():
             yield (page_no, page)
+
+    def export_to_dict(
+        self,
+        mode: str = "json",
+        by_alias: bool = True,
+        exclude_none: bool = True,
+    ) -> Dict:
+        """Export to dict."""
+        return self.model_dump(mode=mode, by_alias=by_alias, exclude_none=exclude_none)
+
+    def save_as_json(self, filename: Path, indent: int = 2):
+        """Save as json."""
+        out = self.export_to_dict()
+        with open(filename, "w", encoding="utf-8") as fw:
+            json.dump(out, fw, indent=indent)
+
+    @classmethod
+    def load_from_json(cls, filename: Path) -> "ParsedPdfDocument":
+        """load_from_json."""
+        with open(filename, "r", encoding="utf-8") as f:
+            return cls.model_validate_json(f.read())

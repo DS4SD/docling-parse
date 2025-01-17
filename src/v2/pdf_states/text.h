@@ -540,21 +540,21 @@ namespace pdflib
 
   std::vector<std::pair<uint32_t, std::string> > pdf_state<TEXT>::analyse_string(qpdf_instruction instruction)
   {
-    //LOG_S(INFO) << __FUNCTION__;
+    LOG_S(INFO) << __FUNCTION__ << " fontname: " << font_name << ", key: " << instruction.key << " => val: " << instruction.val;
 
     auto& font = page_fonts[font_name];
 
     font_encoding_name encoding = font.get_encoding();
 
     std::string values = instruction.to_char_string();
-    //LOG_S(INFO) << "values: " << values.size() << "\t" << values;
+    LOG_S(INFO) << "values: " << values.size() << "\t" << values;
 
     std::vector<std::pair<uint32_t, std::string> > result;
 
     if(encoding == IDENTITY_H or
        encoding == IDENTITY_V  ) // 2-byte string
       {
-	//LOG_S(INFO) << "detected encoding: " << to_string(encoding);
+	LOG_S(INFO) << "detected encoding: " << to_string(encoding);
 
         //assert(values.size()%2==0);
 
@@ -596,7 +596,7 @@ namespace pdflib
       }
     else if(encoding == CMAP_RESOURCES)
       {
-	//LOG_S(INFO) << "detected encoding: " << to_string(encoding);
+	LOG_S(INFO) << "detected encoding: " << to_string(encoding);
 
 	int l=0; 
 
@@ -649,7 +649,7 @@ namespace pdflib
       }
     else
       {
-	//LOG_S(INFO) << "detected encoding: " << to_string(encoding);
+	LOG_S(INFO) << "detected encoding: " << to_string(encoding);
 
         for(int l=0; l<values.size(); l+=1)
           {

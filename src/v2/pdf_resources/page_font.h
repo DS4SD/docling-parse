@@ -877,10 +877,11 @@ namespace pdflib
                 << font_bbox[3] << "]";
   }
 
+
   /*
   void pdf_resource<PAGE_FONT>::init_fontfile3()
   {
-    LOG_S(INFO) << __FUNCTION__ << "\t" << json_font.dump(2);
+    LOG_S(INFO) << __FUNCTION__;// << "\t" << json_font.dump(2);
 
     std::vector<std::string> keys_0 = {"/FontDescriptor", "/FontFile3"};
     std::vector<std::string> keys_1 = {"/FontFile3"};
@@ -905,6 +906,22 @@ namespace pdflib
 	  {
 	    LOG_S(WARNING) << "fontfile3 is not a stream ...";
 	  }
+
+	{
+	  auto buffer = qpdf_obj.getRawStreamData();
+	  
+	  LOG_S(INFO) << "buffer-size: " << buffer->getSize();
+	  LOG_S(INFO) << "buffer: " << buffer->getBuffer();
+	}
+
+	{
+	  auto buffer = qpdf_obj.getStreamData(qpdf_dl_generalized);
+	  
+	  LOG_S(INFO) << "buffer-size: " << buffer->getSize();
+	  LOG_S(INFO) << "buffer: " << buffer->getBuffer();
+	}
+	
+	assert(false);
       }
     else if(utils::json::has(keys_0, desc_font))
       {
@@ -948,7 +965,6 @@ namespace pdflib
 	    LOG_S(WARNING) << "fontfile3 is not a stream ...";
 	  }
       }
-    
     else
       {
 	LOG_S(WARNING) << "no fontfile3 detected ...";

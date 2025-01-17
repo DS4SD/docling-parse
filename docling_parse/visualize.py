@@ -4,8 +4,7 @@ import logging
 import os
 from typing import Dict, Optional
 
-from docling_parse.document import ParsedPage
-from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
+from docling_parse.pdf_parser import DoclingPdfParser, ParsedPdfPage, PdfDocument
 from docling_parse.pdf_parsers import (  # type: ignore[import]
     pdf_parser_v1,
     pdf_parser_v2,
@@ -274,7 +273,7 @@ def visualise_py(
 
     pdf_doc: PdfDocument = parser.load(path_or_stream=pdf_path, lazy=True)
 
-    pdf_page: ParsedPage = pdf_doc.get_page(page_no=page_num)
+    pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_num)
 
     if category == "both":
         pdf_page.original.render(
@@ -292,8 +291,13 @@ def visualise_py(
             draw_cells_bbox=(not display_text), draw_cells_text=display_text
         ).show()
 
-    lines = pdf_page.sanitized.export_to_textlines()
+    lines = pdf_page.sanitized.export_to_textlines(add_fontkey=True)
     print("\n".join(lines))
+
+    """
+    lines = pdf_page.original.export_to_textlines(add_fontkey=True)
+    print("\n".join(lines))
+    """
 
 
 def main():
