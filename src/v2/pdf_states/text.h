@@ -480,7 +480,12 @@ namespace pdflib
       
       //std::array<double, 8> rect = compute_rect(font_descent, font_ascent, width);
 
-      double ratio = font_capheight/font_ascent;
+      double ratio = 1.0;
+      if(0.05<=font_capheight/font_ascent and font_capheight/font_ascent<=1.0)
+	{
+	  ratio = font_capheight/font_ascent;
+	}
+      
       std::array<double, 8> rect = compute_rect(font_descent*ratio, font_ascent*ratio, width);
       {
         cell.r_x0 = rect[0];
