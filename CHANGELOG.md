@@ -1,3 +1,9 @@
+## [v3.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.1.0) - 2025-01-17
+
+### Feature
+
+* Update for complex fonts, rendering, and experimental high-level API ([#82](https://github.com/DS4SD/docling-parse/issues/82)) ([`525ed8e`](https://github.com/DS4SD/docling-parse/commit/525ed8e38003c846f5ad9c9089bfa845db0d8117))
+
 ## [v3.0.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.0.0) - 2024-12-09
 
 ### Feature
