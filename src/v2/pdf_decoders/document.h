@@ -34,6 +34,8 @@ namespace pdflib
 
   private:
 
+    void update_qpdf_logger();
+    
     void update_timings(std::map<std::string, double>& timings_, bool set_timer);
 
   private:
@@ -68,10 +70,11 @@ namespace pdflib
     
     number_of_pages(-1),
 
-    //json_toc(nlohmann::json::value_t::null),
     json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
-  {}
+  {
+    update_qpdf_logger();
+  }
   
   pdf_decoder<DOCUMENT>::pdf_decoder(std::map<std::string, double>& timings_):
     filename(""),
@@ -88,11 +91,32 @@ namespace pdflib
 
     json_annots(nlohmann::json::value_t::null),
     json_document(nlohmann::json::value_t::null)
-  {}
+  {
+    update_qpdf_logger();
+  }
 
   pdf_decoder<DOCUMENT>::~pdf_decoder()
   {}
 
+  void pdf_decoder<DOCUMENT>::update_qpdf_logger()
+  {
+    if(loguru::g_stderr_verbosity==loguru::Verbosity_INFO or
+       loguru::g_stderr_verbosity==loguru::Verbosity_WARNING)
+      {
+	// ignore ...	
+      }
+    else if(loguru::g_stderr_verbosity==loguru::Verbosity_ERROR or
+	    loguru::g_stderr_verbosity==loguru::Verbosity_FATAL)
+      {
+	qpdf_document.setSuppressWarnings(true);
+	//qpdf_document.setMaxWarnings(0); only for later versions ...
+      }
+    else
+      {
+
+      }
+  }
+  
   nlohmann::json pdf_decoder<DOCUMENT>::get()
   {
     LOG_S(INFO) << "get() [in pdf_decoder<DOCUMENT>]";

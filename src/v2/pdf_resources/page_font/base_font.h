@@ -226,6 +226,8 @@ namespace pdflib
       }
     initialised = true;
 
+    LOG_S(WARNING) << "initialising base-font: " << filename;
+    
     std::ifstream file(filename.c_str());
 
     std::regex  expr("C\\s(-?\\d+)\\s;\\s[A-Z]+\\s(\\d+)\\s;\\s[A-Z]+\\s([A-Za-z0-9]+).*");
@@ -296,14 +298,15 @@ namespace pdflib
       }
 
     {
-      LOG_S(INFO) << "initialised font: " << properties.dump(2);
+      LOG_S(INFO) << "initialised base-font: " << properties.dump(2);
 
-      /*
       for(auto itr=numb_to_name.begin(); itr!=numb_to_name.end(); itr++)
         {
-          LOG_S(INFO) << itr->first << "\t" << itr->second << "\t" << numb_to_utf8[itr->first] << "\t" << numb_to_width[itr->first];
+          LOG_S(INFO) << itr->first << "\t"
+		      << itr->second << "\t"
+		      << numb_to_utf8[itr->first] << "\t"
+		      << numb_to_width[itr->first];
         }
-      */
     }
   }
 

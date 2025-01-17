@@ -211,22 +211,34 @@ namespace pdflib
     QPDFObjectHandle arr = instructions[0].obj;
 
     //assert(arr.isArray());
-    if(not arr.isArray()) { LOG_S(ERROR) << "instructions[0].obj is not an array"; return; }
-    
-    for(int l=0; l<arr.getArrayNItems(); l++)
+    //if(not arr.isArray()) { LOG_S(ERROR) << "instructions[0].obj is not an array"; return; }
+    if(arr.isArray())
       {
-	QPDFObjectHandle item = arr.getArrayItem(l);
-
-	//assert(item.isNumber());
-	if(item.isNumber())
+	for(int l=0; l<arr.getArrayNItems(); l++)
 	  {
-	    double val = item.getNumericValue();
-	    dash_array.push_back(val);
+	    QPDFObjectHandle item = arr.getArrayItem(l);
+	    
+	    //assert(item.isNumber());
+	    if(item.isNumber())
+	      {
+		double val = item.getNumericValue();
+		dash_array.push_back(val);
+	      }
+	    else
+	      {
+		LOG_S(WARNING) << "skipping items for dash_array ...";
+	      }
 	  }
-	else
-	  {
-	    LOG_S(WARNING) << "skipping items for dash_array ...";
-	  }
+      }
+    else if(arr.isNull())
+      {
+	LOG_S(WARNING) << "instructions[0].obj is null, re-interpreting it as an empty array";
+	dash_array = {};
+      }
+    else
+      {
+	LOG_S(ERROR) << "instructions[0].obj is not an array nor null, defualting to an empty array";
+	dash_array = {};
       }
     
     if(instructions[1].is_integer())

@@ -303,6 +303,8 @@ def create_pil_image_of_page_v2(
     page_boundary: str = "crop_box",  # media_box
     draw_cells_bbox: bool = True,
     draw_cells_text: bool = False,
+    draw_cells_bl: bool = False,
+    draw_cells_tr: bool = False,
     cell_outline: str = "black",
     cell_color: str = "blue",
     cell_alpha: float = 1.0,
@@ -439,8 +441,6 @@ def create_pil_image_of_page_v2(
 
     W = dimension["width"]
     H = dimension["height"]
-
-    # logging.info(f"width: {W}, height: {H}")
 
     # Create a blank white image with RGBA mode
     img = Image.new("RGBA", (round(W), round(H)), (255, 255, 255, 255))

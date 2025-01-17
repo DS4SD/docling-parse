@@ -4,6 +4,7 @@ import logging
 import os
 from typing import Dict, Optional
 
+from docling_parse.pdf_parser import DoclingPdfParser, ParsedPdfPage, PdfDocument
 from docling_parse.pdf_parsers import (  # type: ignore[import]
     pdf_parser_v1,
     pdf_parser_v2,
@@ -35,9 +36,9 @@ def parse_args():
         "-v",
         "--version",
         type=str,
-        choices=["v1", "v2"],
+        choices=["py", "v1", "v2"],
         required=False,
-        default="v2",
+        default="py",
         help="Version [v1, v2]",
     )
 
@@ -47,7 +48,7 @@ def parse_args():
         "--page-boundary",
         type=str,
         choices=["crop_box", "media_box"],
-        required=True,
+        required=False,
         default="crop_box",
         help="page-boundary [crop_box, media_box]",
     )
@@ -258,6 +259,47 @@ def visualise_v2(
     return 0
 
 
+def visualise_py(
+    log_level: str,
+    pdf_path: str,
+    interactive: str,
+    output_dir: str,
+    page_num: int,
+    display_text: bool,
+    page_boundary: str = "crop_box",  # media_box
+    category: str = "both",  # "both", "sanitized", "original"
+):
+    parser = DoclingPdfParser(loglevel=log_level)
+
+    pdf_doc: PdfDocument = parser.load(path_or_stream=pdf_path, lazy=True)
+
+    pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_num)
+
+    if category == "both":
+        pdf_page.original.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+        pdf_page.sanitized.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+    elif category == "sanitized":
+        pdf_page.sanitized.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+    elif category == "original":
+        pdf_page.original.render(
+            draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        ).show()
+
+    lines = pdf_page.sanitized.export_to_textlines(add_fontkey=True)
+    print("\n".join(lines))
+
+    """
+    lines = pdf_page.original.export_to_textlines(add_fontkey=True)
+    print("\n".join(lines))
+    """
+
+
 def main():
 
     (
@@ -285,6 +327,17 @@ def main():
         )
     elif version == "v2":
         visualise_v2(
+            log_level=log_level,
+            pdf_path=pdf_path,
+            interactive=interactive,
+            output_dir=output_dir,
+            page_num=page_num,
+            display_text=display_text,
+            page_boundary=page_boundary,
+            category=category,
+        )
+    elif version == "py":
+        visualise_py(
             log_level=log_level,
             pdf_path=pdf_path,
             interactive=interactive,
