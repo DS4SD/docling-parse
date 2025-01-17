@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Annotated, Dict, Iterator, List, NamedTuple, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
+from docling_core.types.doc.document import ImageRef
 from PIL import Image as PILImage
 from PIL import ImageColor, ImageDraw, ImageFont
 from PIL.ImageFont import FreeTypeFont
@@ -173,7 +174,7 @@ class PdfCell(PdfColoredElement):
 class PdfBitmapResource(PdfBaseElement):
 
     rect: BoundingRectangle
-    uri: Optional[AnyUrl]
+    uri: Optional[AnyUrl] = None
 
     def to_bottom_left_origin(self, page_height: float):
         self.rect = self.rect.to_bottom_left_origin(page_height=page_height)
@@ -243,12 +244,11 @@ class PageBoundaryType(str, Enum):
         return str(self.value)
 
 
-class PageDimension(BaseModel):
+class PdfPageDimension(BaseModel):
 
     angle: float
     boundary_type: PageBoundaryType
 
-    # bbox: BoundingBox
     rect: BoundingRectangle
 
     art_bbox: BoundingBox
@@ -280,11 +280,13 @@ class PageDimension(BaseModel):
 
 class SegmentedPdfPage(BaseModel):
 
-    dimension: PageDimension
+    dimension: PdfPageDimension
 
     cells: List[PdfCell]
-    images: List[PdfBitmapResource]
+    bitmap_resources: List[PdfBitmapResource]
     lines: List[PdfLine]
+
+    image: Optional[ImageRef] = None
 
     def export_to_dict(
         self,
@@ -495,8 +497,10 @@ class SegmentedPdfPage(BaseModel):
 
         # Draw each rectangle by connecting its four points
         if draw_images:
-            for page_image in self.images:
-                poly = page_image.rect.to_top_left_origin(page_height=H).to_polygon()
+            for bitmap_resource in self.bitmap_resources:
+                poly = bitmap_resource.rect.to_top_left_origin(
+                    page_height=H
+                ).to_polygon()
 
                 fill = _get_rgba(name=image_fill, alpha=image_alpha)
                 outline = _get_rgba(name=image_outline, alpha=image_alpha)
@@ -577,14 +581,35 @@ class SegmentedPdfPage(BaseModel):
         image_alpha: float,
     ) -> ImageDraw.ImageDraw:
 
-        for page_image in self.images:
-            poly = page_image.rect.to_top_left_origin(
+        for bitmap_resource in self.bitmap_resources:
+            poly = bitmap_resource.rect.to_top_left_origin(
                 page_height=page_height
             ).to_polygon()
 
             fill = self._get_rgba(name=image_fill, alpha=image_alpha)
             outline = self._get_rgba(name=image_outline, alpha=image_alpha)
 
+            draw.polygon(poly, outline=outline, fill=fill)
+
+        return draw
+
+    def _render_cells_bbox(
+        self,
+        draw: ImageDraw.ImageDraw,
+        page_height: float,
+        cell_fill: str,
+        cell_outline: str,
+        cell_alpha: float,
+    ) -> ImageDraw.ImageDraw:
+
+        fill = self._get_rgba(name=cell_fill, alpha=cell_alpha)
+        outline = self._get_rgba(name=cell_outline, alpha=cell_alpha)
+
+        # Draw each rectangle by connecting its four points
+        for page_cell in self.cells:
+            poly = page_cell.rect.to_top_left_origin(
+                page_height=page_height
+            ).to_polygon()
             draw.polygon(poly, outline=outline, fill=fill)
 
         return draw

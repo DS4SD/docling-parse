@@ -11,12 +11,12 @@ from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from docling_parse.document import (
     BoundingRectangle,
     PageBoundaryType,
-    PageDimension,
     ParsedPdfDocument,
     ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
     PdfLine,
+    PdfPageDimension,
     SegmentedPdfPage,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
@@ -85,7 +85,7 @@ class PdfDocument:
         for pi, page in enumerate(doc_dict["pages"]):
             self._pages[pi + 1] = self._to_parsed_page(page)  # put on cache
 
-    def _to_dimension(self, dimension: dict) -> PageDimension:
+    def _to_dimension(self, dimension: dict) -> PdfPageDimension:
 
         boundary_type: PageBoundaryType = PageBoundaryType(dimension["page_boundary"])
 
@@ -153,10 +153,9 @@ class PdfDocument:
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
 
-        return PageDimension(
+        return PdfPageDimension(
             angle=dimension["angle"],
             boundary_type=boundary_type,
-            # bbox=bbox,
             rect=rect,
             art_bbox=art_bbox,
             media_bbox=media_bbox,
@@ -199,7 +198,7 @@ class PdfDocument:
 
         return result
 
-    def _to_images(self, images: dict) -> List[PdfBitmapResource]:
+    def _to_bitmap_resources(self, images: dict) -> List[PdfBitmapResource]:
 
         assert "data" in images, '"data" in images'
         assert "header" in images, '"header" in images'
@@ -251,7 +250,7 @@ class PdfDocument:
         return SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
             cells=self._to_cells(page["cells"]),
-            images=self._to_images(page["images"]),
+            bitmap_resources=self._to_bitmap_resources(page["images"]),
             lines=self._to_lines(page["lines"]),
         )
 

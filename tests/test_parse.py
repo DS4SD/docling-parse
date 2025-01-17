@@ -21,24 +21,26 @@ GROUNDTRUTH_FOLDER = "tests/data/groundtruth/"
 REGRESSION_FOLDER = "tests/data/regression/*.pdf"
 
 
-def verify_images(
-    true_images: List[PdfBitmapResource],
-    pred_images: List[PdfBitmapResource],
+def verify_bitmap_resources(
+    true_bitmap_resources: List[PdfBitmapResource],
+    pred_bitmap_resources: List[PdfBitmapResource],
     eps: float,
 ) -> bool:
 
-    assert len(true_images) == len(pred_images), "len(true_images)==len(pred_images)"
+    assert len(true_bitmap_resources) == len(
+        pred_bitmap_resources
+    ), "len(true_bitmap_resources)==len(pred_bitmap_resources)"
 
-    for i, true_image in enumerate(true_images):
+    for i, true_bitmap_resource in enumerate(true_bitmap_resources):
 
-        pred_image = pred_images[i]
+        pred_bitmap_resource = pred_bitmap_resources[i]
 
         assert (
-            true_image.ordering == pred_image.ordering
-        ), "true_image.ordering == pred_image.ordering"
+            true_bitmap_resource.ordering == pred_bitmap_resource.ordering
+        ), "true_bitmap_resource.ordering == pred_bitmap_resource.ordering"
 
-        true_rect = true_image.rect.to_polygon()
-        pred_rect = pred_image.rect.to_polygon()
+        true_rect = true_bitmap_resource.rect.to_polygon()
+        pred_rect = pred_bitmap_resource.rect.to_polygon()
 
         for l in range(0, 4):
             assert (
@@ -76,8 +78,8 @@ def verify_cells(
                 abs(true_rect[l][1] - pred_rect[l][1]) < eps
             ), "abs(true_rect[l][1]-pred_rect[l][1])<eps"
 
-        print("true-text: ", true_cell.text)
-        print("pred-text: ", pred_cell.text)
+        # print("true-text: ", true_cell.text)
+        # print("pred-text: ", pred_cell.text)
 
         assert true_cell.text == pred_cell.text, "true_cell.text == pred_cell.text"
         assert true_cell.orig == pred_cell.orig, "true_cell.orig == pred_cell.orig"
@@ -162,7 +164,9 @@ def verify_SegmentedPdfPage(true_page: SegmentedPdfPage, pred_page: SegmentedPdf
 
     eps = min(true_page.dimension.width / 100.0, true_page.dimension.height / 100.0)
 
-    verify_images(true_page.images, pred_page.images, eps=eps)
+    verify_bitmap_resources(
+        true_page.bitmap_resources, pred_page.bitmap_resources, eps=eps
+    )
 
     verify_cells(true_page.cells, pred_page.cells, eps=eps)
 
@@ -194,7 +198,7 @@ def test_reference_documents_from_filenames():
         assert pdf_doc is not None
 
         # PdfDocument.iterate_pages() will automatically populate pages as they are yielded.
-        # No need to call PdfDocument.load_all_pages() before.        
+        # No need to call PdfDocument.load_all_pages() before.
         for page_no, pred_page in pdf_doc.iterate_pages():
             print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
 
@@ -281,7 +285,7 @@ def test_serialize_and_reload():
     pdf_doc: PdfDocument = parser.load(path_or_stream=filename, lazy=True)
 
     # We can serialize the pages dict the following way.
-    page_adapter = TypeAdapter(Dict[int, ParsedPage])
+    page_adapter = TypeAdapter(Dict[int, ParsedPdfPage])
 
     json_pages = page_adapter.dump_json(pdf_doc._pages)
     reloaded_pages: Dict[int, ParsedPdfPage] = page_adapter.validate_json(json_pages)
