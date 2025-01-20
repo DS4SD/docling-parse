@@ -74,9 +74,6 @@ delocate = "^0.11.0"
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.2"
 
-[tool.poetry.scripts]
-docling-parse = "docling_parse.run:main"
-
 [build-system]
 requires = ["poetry-core", "pybind11>=2.13.1"]
 build-backend = "poetry.core.masonry.api"
@@ -117,7 +114,7 @@ python_version = "3.9"
 [[tool.mypy.overrides]]
 module = [
     "tabulate.*",
-    "botocore.*",	
+    "botocore.*",
     "boto3.*",
 ]
 ignore_missing_imports = true
