@@ -1,0 +1,2236 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 612.0,
+      "r_y1": 0.0,
+      "r_x2": 612.0,
+      "r_y2": 792.0,
+      "r_x3": 0.0,
+      "r_y3": 792.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 174.0,
+        "r_y0": 714.795,
+        "r_x1": 176.49,
+        "r_y1": 714.795,
+        "r_x2": 176.49,
+        "r_y2": 724.245,
+        "r_x3": 174.0,
+        "r_y3": 724.245,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/RZVUGV+Calibri",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 305.999,
+        "r_y0": 714.795,
+        "r_x1": 308.49,
+        "r_y1": 714.795,
+        "r_x2": 308.49,
+        "r_y2": 724.245,
+        "r_x3": 305.999,
+        "r_y3": 724.245,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/RZVUGV+Calibri",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 539.999,
+        "r_y0": 714.795,
+        "r_x1": 542.489,
+        "r_y1": 714.795,
+        "r_x2": 542.489,
+        "r_y2": 724.245,
+        "r_x3": 539.999,
+        "r_y3": 724.245,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/RZVUGV+Calibri",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 36.867,
+        "r_x1": 74.247,
+        "r_y1": 36.867,
+        "r_x2": 74.247,
+        "r_y2": 45.393,
+        "r_x3": 72.0,
+        "r_y3": 45.393,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/RZVUGV+Calibri",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 212.999,
+        "r_y0": 36.867,
+        "r_x1": 401.366,
+        "r_y1": 36.867,
+        "r_x2": 401.366,
+        "r_y2": 45.393,
+        "r_x3": 212.999,
+        "r_y3": 45.393,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Ins&Bond Quote_4911 Augusta Ave_03.01.24 ",
+      "orig": "Ins&Bond Quote_4911 Augusta Ave_03.01.24 ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/RZVUGV+Calibri",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 512.998,
+        "r_y0": 36.867,
+        "r_x1": 542.246,
+        "r_y1": 36.867,
+        "r_x2": 542.246,
+        "r_y2": 45.393,
+        "r_x3": 512.998,
+        "r_y3": 45.393,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "page 1 ",
+      "orig": "page 1 ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/RZVUGV+Calibri",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 674.4,
+        "r_x1": 544.068,
+        "r_y1": 674.4,
+        "r_x2": 544.068,
+        "r_y2": 696.768,
+        "r_x3": 72.0,
+        "r_y3": 696.768,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Insurance and Bond Quote - 4911 Augusta Ave ",
+      "orig": "Insurance and Bond Quote - 4911 Augusta Ave ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 649.706,
+        "r_x1": 237.955,
+        "r_y1": 649.706,
+        "r_x2": 237.955,
+        "r_y2": 659.995,
+        "r_x3": 72.0,
+        "r_y3": 659.995,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "To:  Brandon Shaw, Ryan McKenzie ",
+      "orig": "To:  Brandon Shaw, Ryan McKenzie ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 625.106,
+        "r_x1": 175.315,
+        "r_y1": 625.106,
+        "r_x2": 175.315,
+        "r_y2": 635.395,
+        "r_x3": 72.0,
+        "r_y3": 635.395,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Bid Date - 03/01/2024 ",
+      "orig": "Bid Date - 03/01/2024 ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 600.626,
+        "r_x1": 254.635,
+        "r_y1": 600.626,
+        "r_x2": 254.635,
+        "r_y2": 610.915,
+        "r_x3": 72.0,
+        "r_y3": 610.915,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Prepared By: Edward Dwomoh-Appiah   ",
+      "orig": "Prepared By: Edward Dwomoh-Appiah   ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 576.026,
+        "r_x1": 154.195,
+        "r_y1": 576.026,
+        "r_x2": 154.195,
+        "r_y2": 586.315,
+        "r_x3": 72.0,
+        "r_y3": 586.315,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date:  02/26/2024 ",
+      "orig": "Date:  02/26/2024 ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 551.666,
+        "r_x1": 289.195,
+        "r_y1": 551.666,
+        "r_x2": 289.195,
+        "r_y2": 561.955,
+        "r_x3": 72.0,
+        "r_y3": 561.955,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Contract Entity: Clark Construction Group, LLC ",
+      "orig": "Contract Entity: Clark Construction Group, LLC ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 538.946,
+        "r_x1": 175.263,
+        "r_y1": 538.946,
+        "r_x2": 175.263,
+        "r_y2": 549.235,
+        "r_x3": 72.0,
+        "r_y3": 549.235,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Owner: Aurelie Capital",
+      "orig": "Owner: Aurelie Capital",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 175.2,
+        "r_y0": 538.946,
+        "r_x1": 177.955,
+        "r_y1": 538.946,
+        "r_x2": 177.955,
+        "r_y2": 548.827,
+        "r_x3": 175.2,
+        "r_y3": 548.827,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 526.346,
+        "r_x1": 245.755,
+        "r_y1": 526.346,
+        "r_x2": 245.755,
+        "r_y2": 536.635,
+        "r_x3": 72.0,
+        "r_y3": 536.635,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Estimated Contract Value (CV): $60M ",
+      "orig": "Estimated Contract Value (CV): $60M ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 513.746,
+        "r_x1": 228.115,
+        "r_y1": 513.746,
+        "r_x2": 228.115,
+        "r_y2": 524.035,
+        "r_x3": 72.0,
+        "r_y3": 524.035,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Construction Duration:  36 months ",
+      "orig": "Construction Duration:  36 months ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 501.026,
+        "r_x1": 181.075,
+        "r_y1": 501.026,
+        "r_x2": 181.075,
+        "r_y2": 511.315,
+        "r_x3": 72.0,
+        "r_y3": 511.315,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "1 - year warranty period ",
+      "orig": "1 - year warranty period ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 488.426,
+        "r_x1": 208.555,
+        "r_y1": 488.426,
+        "r_x2": 208.555,
+        "r_y2": 498.715,
+        "r_x3": 72.0,
+        "r_y3": 498.715,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Class B, General Construction ",
+      "orig": "Class B, General Construction ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 475.706,
+        "r_x1": 189.595,
+        "r_y1": 475.706,
+        "r_x2": 189.595,
+        "r_y2": 485.995,
+        "r_x3": 72.0,
+        "r_y3": 485.995,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Location:  Richmond, VA ",
+      "orig": "Location:  Richmond, VA ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 463.106,
+        "r_x1": 157.913,
+        "r_y1": 463.106,
+        "r_x2": 157.913,
+        "r_y2": 473.395,
+        "r_x3": 72.0,
+        "r_y3": 473.395,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Design-Build?  No ",
+      "orig": "Design-Build?  No ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 450.506,
+        "r_x1": 159.113,
+        "r_y1": 450.506,
+        "r_x2": 159.113,
+        "r_y2": 460.795,
+        "r_x3": 72.0,
+        "r_y3": 460.795,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Joint-Venture?  No ",
+      "orig": "Joint-Venture?  No ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 437.786,
+        "r_x1": 74.755,
+        "r_y1": 437.786,
+        "r_x2": 74.755,
+        "r_y2": 448.076,
+        "r_x3": 72.0,
+        "r_y3": 448.076,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 425.186,
+        "r_x1": 74.755,
+        "r_y1": 425.186,
+        "r_x2": 74.755,
+        "r_y2": 435.476,
+        "r_x3": 72.0,
+        "r_y3": 435.476,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 412.466,
+        "r_x1": 247.435,
+        "r_y1": 412.466,
+        "r_x2": 247.435,
+        "r_y2": 422.347,
+        "r_x3": 72.0,
+        "r_y3": 422.347,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Liability Insurance - GL Only CCIP ",
+      "orig": "Liability Insurance - GL Only CCIP ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 399.866,
+        "r_x1": 315.715,
+        "r_y1": 399.866,
+        "r_x2": 315.715,
+        "r_y2": 409.747,
+        "r_x3": 72.0,
+        "r_y3": 409.747,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Rate:  $20.00/$1,000  of  total  contract  value  (CV). ",
+      "orig": "Rate:  $20.00/$1,000  of  total  contract  value  (CV). ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 318.12,
+        "r_y0": 399.866,
+        "r_x1": 542.755,
+        "r_y1": 399.866,
+        "r_x2": 542.755,
+        "r_y2": 410.156,
+        "r_x3": 318.12,
+        "r_y3": 410.156,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Per  the  assumed  $60,000,000 CV,  your  liability ",
+      "orig": "Per  the  assumed  $60,000,000 CV,  your  liability ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 387.266,
+        "r_x1": 121.555,
+        "r_y1": 387.266,
+        "r_x2": 121.555,
+        "r_y2": 397.556,
+        "r_x3": 72.0,
+        "r_y3": 397.556,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "estimate is ",
+      "orig": "estimate is ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 121.56,
+        "r_y0": 387.266,
+        "r_x1": 179.275,
+        "r_y1": 387.266,
+        "r_x2": 179.275,
+        "r_y2": 397.147,
+        "r_x3": 121.56,
+        "r_y3": 397.147,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$1,200,000.  ",
+      "orig": "$1,200,000.  ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 374.546,
+        "r_x1": 74.755,
+        "r_y1": 374.546,
+        "r_x2": 74.755,
+        "r_y2": 384.427,
+        "r_x3": 72.0,
+        "r_y3": 384.427,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 361.946,
+        "r_x1": 542.754,
+        "r_y1": 361.946,
+        "r_x2": 542.754,
+        "r_y2": 372.236,
+        "r_x3": 72.0,
+        "r_y3": 372.236,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "This  rate  covers  Clark  and  all  eligible  subcontractors  which  would  be  our  preferred structure ",
+      "orig": "This  rate  covers  Clark  and  all  eligible  subcontractors  which  would  be  our  preferred structure ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 349.226,
+        "r_x1": 542.754,
+        "r_y1": 349.226,
+        "r_x2": 542.754,
+        "r_y2": 359.516,
+        "r_x3": 72.0,
+        "r_y3": 359.516,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "for insuring this  project.  This  estimate was  developed  from  pricing  indications  reflective  of  the  current ",
+      "orig": "for insuring this  project.  This  estimate was  developed  from  pricing  indications  reflective  of  the  current ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 336.626,
+        "r_x1": 542.754,
+        "r_y1": 336.626,
+        "r_x2": 542.754,
+        "r_y2": 346.916,
+        "r_x3": 72.0,
+        "r_y3": 346.916,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "market  conditions.   Note  the  net  cost  of  the  project  liability  insurance  would  be  this  rate  less  the ",
+      "orig": "market  conditions.   Note  the  net  cost  of  the  project  liability  insurance  would  be  this  rate  less  the ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 323.906,
+        "r_x1": 514.074,
+        "r_y1": 323.906,
+        "r_x2": 514.074,
+        "r_y2": 334.196,
+        "r_x3": 72.0,
+        "r_y3": 334.196,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "avoided/credited subcontractor GL insurance costs.   This contemplates a $50K project deductible.   ",
+      "orig": "avoided/credited subcontractor GL insurance costs.   This contemplates a $50K project deductible.   ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 311.306,
+        "r_x1": 74.755,
+        "r_y1": 311.306,
+        "r_x2": 74.755,
+        "r_y2": 321.596,
+        "r_x3": 72.0,
+        "r_y3": 321.596,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 298.706,
+        "r_x1": 74.755,
+        "r_y1": 298.706,
+        "r_x2": 74.755,
+        "r_y2": 308.996,
+        "r_x3": 72.0,
+        "r_y3": 308.996,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 285.986,
+        "r_x1": 122.526,
+        "r_y1": 285.986,
+        "r_x2": 122.526,
+        "r_y2": 295.867,
+        "r_x3": 72.0,
+        "r_y3": 295.867,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "P&P Bond",
+      "orig": "P&P Bond",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 122.4,
+        "r_y0": 285.986,
+        "r_x1": 125.155,
+        "r_y1": 285.986,
+        "r_x2": 125.155,
+        "r_y2": 296.276,
+        "r_x3": 122.4,
+        "r_y3": 296.276,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 37,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 273.386,
+        "r_x1": 125.275,
+        "r_y1": 273.386,
+        "r_x2": 125.275,
+        "r_y2": 283.676,
+        "r_x3": 72.0,
+        "r_y3": 283.676,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "P&P Bond: ",
+      "orig": "P&P Bond: ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 38,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 125.28,
+        "r_y0": 273.386,
+        "r_x1": 186.109,
+        "r_y1": 273.386,
+        "r_x2": 186.109,
+        "r_y2": 283.267,
+        "r_x3": 125.28,
+        "r_y3": 283.267,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " $6.76/$1,000",
+      "orig": " $6.76/$1,000",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 39,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 186.12,
+        "r_y0": 273.386,
+        "r_x1": 392.635,
+        "r_y1": 273.386,
+        "r_x2": 392.635,
+        "r_y2": 283.676,
+        "r_x3": 186.12,
+        "r_y3": 283.676,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " of total contract value (CV).  Per the assumed ",
+      "orig": " of total contract value (CV).  Per the assumed ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 40,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 392.64,
+        "r_y0": 273.386,
+        "r_x1": 466.115,
+        "r_y1": 273.386,
+        "r_x2": 466.115,
+        "r_y2": 283.267,
+        "r_x3": 392.64,
+        "r_y3": 283.267,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$60,000,000 CV",
+      "orig": "$60,000,000 CV",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 41,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 466.2,
+        "r_y0": 273.386,
+        "r_x1": 542.755,
+        "r_y1": 273.386,
+        "r_x2": 542.755,
+        "r_y2": 283.676,
+        "r_x3": 466.2,
+        "r_y3": 283.676,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": ", your P&P bond ",
+      "orig": ", your P&P bond ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 42,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 260.666,
+        "r_x1": 121.554,
+        "r_y1": 260.666,
+        "r_x2": 121.554,
+        "r_y2": 270.956,
+        "r_x3": 72.0,
+        "r_y3": 270.956,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "estimate is ",
+      "orig": "estimate is ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 43,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 121.56,
+        "r_y0": 260.666,
+        "r_x1": 162.829,
+        "r_y1": 260.666,
+        "r_x2": 162.829,
+        "r_y2": 270.547,
+        "r_x3": 121.56,
+        "r_y3": 270.547,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$405,600",
+      "orig": "$405,600",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 44,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 162.84,
+        "r_y0": 260.666,
+        "r_x1": 168.234,
+        "r_y1": 260.666,
+        "r_x2": 168.234,
+        "r_y2": 270.956,
+        "r_x3": 162.84,
+        "r_y3": 270.956,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": ". ",
+      "orig": ". ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 45,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 248.066,
+        "r_x1": 74.754,
+        "r_y1": 248.066,
+        "r_x2": 74.754,
+        "r_y2": 258.356,
+        "r_x3": 72.0,
+        "r_y3": 258.356,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 46,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 235.466,
+        "r_x1": 542.754,
+        "r_y1": 235.466,
+        "r_x2": 542.754,
+        "r_y2": 245.756,
+        "r_x3": 72.0,
+        "r_y3": 245.756,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Any change in duration, CV, warranty period, or delivery type assumptions provided above may impact the ",
+      "orig": "Any change in duration, CV, warranty period, or delivery type assumptions provided above may impact the ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 47,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 222.746,
+        "r_x1": 542.754,
+        "r_y1": 222.746,
+        "r_x2": 542.754,
+        "r_y2": 233.036,
+        "r_x3": 72.0,
+        "r_y3": 233.036,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "rate.  The bond premium will be billed in full up front and will be adjusted at completion based on the final ",
+      "orig": "rate.  The bond premium will be billed in full up front and will be adjusted at completion based on the final ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 48,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 210.146,
+        "r_x1": 92.754,
+        "r_y1": 210.146,
+        "r_x2": 92.754,
+        "r_y2": 220.436,
+        "r_x3": 72.0,
+        "r_y3": 220.436,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "CV. ",
+      "orig": "CV. ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 49,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 197.426,
+        "r_x1": 74.755,
+        "r_y1": 197.426,
+        "r_x2": 74.755,
+        "r_y2": 207.307,
+        "r_x3": 72.0,
+        "r_y3": 207.307,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 50,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 184.826,
+        "r_x1": 74.755,
+        "r_y1": 184.826,
+        "r_x2": 74.755,
+        "r_y2": 194.707,
+        "r_x3": 72.0,
+        "r_y3": 194.707,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 51,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 172.226,
+        "r_x1": 135.966,
+        "r_y1": 172.226,
+        "r_x2": 135.966,
+        "r_y2": 182.107,
+        "r_x3": 72.0,
+        "r_y3": 182.107,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Builders Risk",
+      "orig": "Builders Risk",
+      "rendering_mode": "",
+      "font_key": "/R14",
+      "font_name": "/LHLUEV+TimesNewRoman,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 52,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 135.96,
+        "r_y0": 172.226,
+        "r_x1": 144.475,
+        "r_y1": 172.226,
+        "r_x2": 144.475,
+        "r_y2": 182.516,
+        "r_x3": 135.96,
+        "r_y3": 182.516,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": ":  ",
+      "orig": ":  ",
+      "rendering_mode": "",
+      "font_key": "/R12",
+      "font_name": "/ALEULP+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 53,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 71.995,
+        "r_y0": 159.506,
+        "r_x1": 528.354,
+        "r_y1": 159.506,
+        "r_x2": 528.354,
+        "r_y2": 169.542,
+        "r_x3": 71.995,
+        "r_y3": 169.542,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "An Owner provided builder's risk policy must be on an all-risk form with minimum LEG2 coverage for ",
+      "orig": "An Owner provided builder's risk policy must be on an all-risk form with minimum LEG2 coverage for ",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 54,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.001,
+        "r_y0": 146.906,
+        "r_x1": 533.155,
+        "r_y1": 146.906,
+        "r_x2": 533.155,
+        "r_y2": 156.942,
+        "r_x3": 72.001,
+        "r_y3": 156.942,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "damage resulting from faulty workmanship and must not contain any provisions that limit CCG's ability ",
+      "orig": "damage resulting from faulty workmanship and must not contain any provisions that limit CCG's ability ",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 55,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.001,
+        "r_y0": 134.186,
+        "r_x1": 541.075,
+        "r_y1": 134.186,
+        "r_x2": 541.075,
+        "r_y2": 144.222,
+        "r_x3": 72.001,
+        "r_y3": 144.222,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "to recoup its actual costs, including overhead, profit and delay related general conditions, incurred in the ",
+      "orig": "to recoup its actual costs, including overhead, profit and delay related general conditions, incurred in the ",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 56,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.001,
+        "r_y0": 121.586,
+        "r_x1": 517.075,
+        "r_y1": 121.586,
+        "r_x2": 517.075,
+        "r_y2": 131.622,
+        "r_x3": 72.001,
+        "r_y3": 131.622,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "course of repair of covered builder's risk losses.  The Owner procured policy, or a specimen of such ",
+      "orig": "course of repair of covered builder's risk losses.  The Owner procured policy, or a specimen of such ",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 57,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 71.995,
+        "r_y0": 108.986,
+        "r_x1": 533.635,
+        "r_y1": 108.986,
+        "r_x2": 533.635,
+        "r_y2": 119.022,
+        "r_x3": 71.995,
+        "r_y3": 119.022,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "policy that the Owner plans to purchase, must be reviewed by risk management prior to execution of the ",
+      "orig": "policy that the Owner plans to purchase, must be reviewed by risk management prior to execution of the ",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 58,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 96.266,
+        "r_x1": 108.783,
+        "r_y1": 96.266,
+        "r_x2": 108.783,
+        "r_y2": 106.302,
+        "r_x3": 72.0,
+        "r_y3": 106.302,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "contract",
+      "orig": "contract",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 59,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 108.84,
+        "r_y0": 98.64,
+        "r_x1": 116.63,
+        "r_y1": 98.64,
+        "r_x2": 116.63,
+        "r_y2": 104.565,
+        "r_x3": 108.84,
+        "r_y3": 104.565,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": ".  ",
+      "orig": ".  ",
+      "rendering_mode": "",
+      "font_key": "/R18",
+      "font_name": "/XSDTZW+Arial,Italic",
+      "widget": false
+    },
+    {
+      "ordering": 60,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 116.635,
+        "r_y0": 96.266,
+        "r_x1": 530.035,
+        "r_y1": 96.266,
+        "r_x2": 530.035,
+        "r_y2": 106.302,
+        "r_x3": 116.635,
+        "r_y3": 106.302,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Please note that if the Owner's policy does not meet Clark's satisfaction, the Owner will need ",
+      "orig": "Please note that if the Owner's policy does not meet Clark's satisfaction, the Owner will need ",
+      "rendering_mode": "",
+      "font_key": "/R16",
+      "font_name": "/GGGJOQ+TimesNewRoman,Italic",
+      "widget": false
+    }
+  ],
+  "bitmap_resources": [
+    {
+      "ordering": 0,
+      "rect": {
+        "r_x0": 73.56,
+        "r_y0": 716.76,
+        "r_x1": 174.0,
+        "r_y1": 716.76,
+        "r_x2": 174.0,
+        "r_y2": 756.0,
+        "r_x3": 73.56,
+        "r_y3": 756.0,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          70.56,
+          668.52
+        ],
+        [
+          541.44,
+          668.52
+        ],
+        [
+          541.44,
+          669.48
+        ],
+        [
+          70.56,
+          669.48
+        ],
+        [
+          70.56,
+          668.52
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          72.0,
+          412.56
+        ],
+        [
+          244.68,
+          412.56
+        ],
+        [
+          244.68,
+          413.64
+        ],
+        [
+          72.0,
+          413.64
+        ],
+        [
+          72.0,
+          412.56
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          72.0,
+          286.08
+        ],
+        [
+          122.4,
+          286.08
+        ],
+        [
+          122.4,
+          287.16
+        ],
+        [
+          72.0,
+          287.16
+        ],
+        [
+          72.0,
+          286.08
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          72.0,
+          172.32
+        ],
+        [
+          135.96,
+          172.32
+        ],
+        [
+          135.96,
+          173.4
+        ],
+        [
+          72.0,
+          173.4
+        ],
+        [
+          72.0,
+          172.32
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          108.84,
+          96.24
+        ],
+        [
+          116.64,
+          96.24
+        ],
+        [
+          116.64,
+          108.84
+        ],
+        [
+          108.84,
+          108.84
+        ],
+        [
+          108.84,
+          96.24
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.0,
+          767.04
+        ],
+        [
+          24.96,
+          767.04
+        ],
+        [
+          24.96,
+          768.0
+        ],
+        [
+          24.0,
+          768.0
+        ],
+        [
+          24.0,
+          767.04
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.0,
+          767.04
+        ],
+        [
+          24.96,
+          767.04
+        ],
+        [
+          24.96,
+          768.0
+        ],
+        [
+          24.0,
+          768.0
+        ],
+        [
+          24.0,
+          767.04
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.96,
+          767.04
+        ],
+        [
+          587.04,
+          767.04
+        ],
+        [
+          587.04,
+          768.0
+        ],
+        [
+          24.96,
+          768.0
+        ],
+        [
+          24.96,
+          767.04
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          587.04,
+          767.04
+        ],
+        [
+          588.0,
+          767.04
+        ],
+        [
+          588.0,
+          768.0
+        ],
+        [
+          587.04,
+          768.0
+        ],
+        [
+          587.04,
+          767.04
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          587.04,
+          767.04
+        ],
+        [
+          588.0,
+          767.04
+        ],
+        [
+          588.0,
+          768.0
+        ],
+        [
+          587.04,
+          768.0
+        ],
+        [
+          587.04,
+          767.04
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.0,
+          24.96
+        ],
+        [
+          24.96,
+          24.96
+        ],
+        [
+          24.96,
+          767.04
+        ],
+        [
+          24.0,
+          767.04
+        ],
+        [
+          24.0,
+          24.96
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          587.04,
+          24.96
+        ],
+        [
+          588.0,
+          24.96
+        ],
+        [
+          588.0,
+          767.04
+        ],
+        [
+          587.04,
+          767.04
+        ],
+        [
+          587.04,
+          24.96
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.0,
+          24.0
+        ],
+        [
+          24.96,
+          24.0
+        ],
+        [
+          24.96,
+          24.96
+        ],
+        [
+          24.0,
+          24.96
+        ],
+        [
+          24.0,
+          24.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.0,
+          24.0
+        ],
+        [
+          24.96,
+          24.0
+        ],
+        [
+          24.96,
+          24.96
+        ],
+        [
+          24.0,
+          24.96
+        ],
+        [
+          24.0,
+          24.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          24.96,
+          24.0
+        ],
+        [
+          587.04,
+          24.0
+        ],
+        [
+          587.04,
+          24.96
+        ],
+        [
+          24.96,
+          24.96
+        ],
+        [
+          24.96,
+          24.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          587.04,
+          24.0
+        ],
+        [
+          588.0,
+          24.0
+        ],
+        [
+          588.0,
+          24.96
+        ],
+        [
+          587.04,
+          24.96
+        ],
+        [
+          587.04,
+          24.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          587.04,
+          24.0
+        ],
+        [
+          588.0,
+          24.0
+        ],
+        [
+          588.0,
+          24.96
+        ],
+        [
+          587.04,
+          24.96
+        ],
+        [
+          587.04,
+          24.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

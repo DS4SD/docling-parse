@@ -1,0 +1,4003 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 122.727,
+      "r_y0": 328.366,
+      "r_x1": 490.906,
+      "r_y1": 328.366,
+      "r_x2": 490.906,
+      "r_y2": 749.728,
+      "r_x3": 122.727,
+      "r_y3": 749.728,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 122.727,
+      "t": 749.728,
+      "r": 490.906,
+      "b": 328.366,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 122.727,
+      "t": 749.728,
+      "r": 490.906,
+      "b": 328.366,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 122.727,
+      "t": 749.728,
+      "r": 490.906,
+      "b": 328.366,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 122.727,
+      "t": 749.728,
+      "r": 490.906,
+      "b": 328.366,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 378.413,
+        "r_x1": 168.184,
+        "r_y1": 378.413,
+        "r_x2": 168.184,
+        "r_y2": 387.653,
+        "r_x3": 60.033,
+        "r_y3": 387.653,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "About A-PDF Watermark   ",
+      "orig": "About A-PDF Watermark   ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/JMFDGH+ArialNarrow-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 363.683,
+        "r_x1": 324.676,
+        "r_y1": 363.683,
+        "r_x2": 324.676,
+        "r_y2": 371.018,
+        "r_x3": 60.033,
+        "r_y3": 371.018,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "A-PDF Watermark is a fast desktop utility program that lets you add ",
+      "orig": "A-PDF Watermark is a fast desktop utility program that lets you add ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 348.083,
+        "r_x1": 324.034,
+        "r_y1": 348.083,
+        "r_x2": 324.034,
+        "r_y2": 355.418,
+        "r_x3": 60.033,
+        "r_y3": 355.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "images, texts, shape, and PDF (style) watermark to a batch of Acrobat ",
+      "orig": "images, texts, shape, and PDF (style) watermark to a batch of Acrobat ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 332.483,
+        "r_x1": 122.322,
+        "r_y1": 332.483,
+        "r_x2": 122.322,
+        "r_y2": 339.819,
+        "r_x3": 60.033,
+        "r_y3": 339.819,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "PDF documents. ",
+      "orig": "PDF documents. ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 316.884,
+        "r_x1": 62.283,
+        "r_y1": 316.884,
+        "r_x2": 62.283,
+        "r_y2": 324.219,
+        "r_x3": 60.033,
+        "r_y3": 324.219,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 301.284,
+        "r_x1": 325.413,
+        "r_y1": 301.284,
+        "r_x2": 325.413,
+        "r_y2": 308.619,
+        "r_x3": 60.033,
+        "r_y3": 308.619,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "With A-PDF Watermark, you can create, edit and manage the text, ",
+      "orig": "With A-PDF Watermark, you can create, edit and manage the text, ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 285.684,
+        "r_x1": 324.201,
+        "r_y1": 285.684,
+        "r_x2": 324.201,
+        "r_y2": 293.02,
+        "r_x3": 60.033,
+        "r_y3": 293.02,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "image, shape, PDF watermark. Text watermark support either static or ",
+      "orig": "image, shape, PDF watermark. Text watermark support either static or ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 270.085,
+        "r_x1": 323.817,
+        "r_y1": 270.085,
+        "r_x2": 323.817,
+        "r_y2": 277.42,
+        "r_x3": 60.033,
+        "r_y3": 277.42,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "dynamic text, with dynamic text, you can use PDF file name, metadata ",
+      "orig": "dynamic text, with dynamic text, you can use PDF file name, metadata ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 254.485,
+        "r_x1": 323.372,
+        "r_y1": 254.485,
+        "r_x2": 323.372,
+        "r_y2": 261.82,
+        "r_x3": 60.033,
+        "r_y3": 261.82,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "information, and date time as the watermark. Image watermark supports ",
+      "orig": "information, and date time as the watermark. Image watermark supports ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 238.885,
+        "r_x1": 325.242,
+        "r_y1": 238.885,
+        "r_x2": 325.242,
+        "r_y2": 246.22,
+        "r_x3": 60.033,
+        "r_y3": 246.22,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "almost all of image formats includes TIFF, JPEG, JPEG 2000, GIF, ",
+      "orig": "almost all of image formats includes TIFF, JPEG, JPEG 2000, GIF, ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 223.285,
+        "r_x1": 325.282,
+        "r_y1": 223.285,
+        "r_x2": 325.282,
+        "r_y2": 230.621,
+        "r_x3": 60.033,
+        "r_y3": 230.621,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "BMP, PNG, ICO, WMF, EMF etc. You can create watermark using ",
+      "orig": "BMP, PNG, ICO, WMF, EMF etc. You can create watermark using ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 207.686,
+        "r_x1": 324.754,
+        "r_y1": 207.686,
+        "r_x2": 324.754,
+        "r_y2": 215.021,
+        "r_x3": 60.033,
+        "r_y3": 215.021,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "company logos, signatures, product pictures or any artwork in image ",
+      "orig": "company logos, signatures, product pictures or any artwork in image ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 192.086,
+        "r_x1": 92.044,
+        "r_y1": 192.086,
+        "r_x2": 92.044,
+        "r_y2": 199.421,
+        "r_x3": 60.033,
+        "r_y3": 199.421,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "formats. ",
+      "orig": "formats. ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 176.486,
+        "r_x1": 62.283,
+        "r_y1": 176.486,
+        "r_x2": 62.283,
+        "r_y2": 183.822,
+        "r_x3": 60.033,
+        "r_y3": 183.822,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 160.887,
+        "r_x1": 324.854,
+        "r_y1": 160.887,
+        "r_x2": 324.854,
+        "r_y2": 168.222,
+        "r_x3": 60.033,
+        "r_y3": 168.222,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "A-PDF Watermark features include adding manipulate watermarks in ",
+      "orig": "A-PDF Watermark features include adding manipulate watermarks in ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.033,
+        "r_y0": 145.287,
+        "r_x1": 323.852,
+        "r_y1": 145.287,
+        "r_x2": 323.852,
+        "r_y2": 152.622,
+        "r_x3": 60.033,
+        "r_y3": 152.622,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "manipulate PDF files once; placing watermark in fixed position or tile, ",
+      "orig": "manipulate PDF files once; placing watermark in fixed position or tile, ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.034,
+        "r_y0": 129.687,
+        "r_x1": 323.235,
+        "r_y1": 129.687,
+        "r_x2": 323.235,
+        "r_y2": 137.023,
+        "r_x3": 60.034,
+        "r_y3": 137.023,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "on  top  or  bottom  of  content;  making  watermark  rotation  and ",
+      "orig": "on  top  or  bottom  of  content;  making  watermark  rotation  and ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.034,
+        "r_y0": 114.088,
+        "r_x1": 267.821,
+        "r_y1": 114.088,
+        "r_x2": 267.821,
+        "r_y2": 121.423,
+        "r_x3": 60.034,
+        "r_y3": 121.423,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "transparence.    A command line version is included also. ",
+      "orig": "transparence.    A command line version is included also. ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.034,
+        "r_y0": 98.488,
+        "r_x1": 62.284,
+        "r_y1": 98.488,
+        "r_x2": 62.284,
+        "r_y2": 105.823,
+        "r_x3": 60.034,
+        "r_y3": 105.823,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.034,
+        "r_y0": 82.888,
+        "r_x1": 325.275,
+        "r_y1": 82.888,
+        "r_x2": 325.275,
+        "r_y2": 90.223,
+        "r_x3": 60.034,
+        "r_y3": 90.223,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "A-PDF Watermark does NOT require Adobe Acrobat, and produces ",
+      "orig": "A-PDF Watermark does NOT require Adobe Acrobat, and produces ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.034,
+        "r_y0": 67.288,
+        "r_x1": 323.247,
+        "r_y1": 67.288,
+        "r_x2": 323.247,
+        "r_y2": 74.624,
+        "r_x3": 60.034,
+        "r_y3": 74.624,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "documents  compatible  with  Adobe  Acrobat  Reader  Version  5  and ",
+      "orig": "documents  compatible  with  Adobe  Acrobat  Reader  Version  5  and ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 60.034,
+        "r_y0": 51.689,
+        "r_x1": 86.478,
+        "r_y1": 51.444,
+        "r_x2": 86.478,
+        "r_y2": 60.002,
+        "r_x3": 60.034,
+        "r_y3": 59.024,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "above. ",
+      "orig": "above. ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JMFDIJ+TimesNewRomanPSMT",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 379.769,
+        "r_x1": 81.67,
+        "r_y1": 379.769,
+        "r_x2": 81.67,
+        "r_y2": 383.077,
+        "r_x3": 80.349,
+        "r_y3": 383.077,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 371.95,
+        "r_x1": 81.67,
+        "r_y1": 371.95,
+        "r_x2": 81.67,
+        "r_y2": 375.258,
+        "r_x3": 80.349,
+        "r_y3": 375.258,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 364.132,
+        "r_x1": 81.67,
+        "r_y1": 364.132,
+        "r_x2": 81.67,
+        "r_y2": 367.44,
+        "r_x3": 80.349,
+        "r_y3": 367.44,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 356.314,
+        "r_x1": 81.67,
+        "r_y1": 356.314,
+        "r_x2": 81.67,
+        "r_y2": 359.621,
+        "r_x3": 80.349,
+        "r_y3": 359.621,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 348.495,
+        "r_x1": 81.67,
+        "r_y1": 348.495,
+        "r_x2": 81.67,
+        "r_y2": 351.803,
+        "r_x3": 80.349,
+        "r_y3": 351.803,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 340.677,
+        "r_x1": 81.67,
+        "r_y1": 340.677,
+        "r_x2": 81.67,
+        "r_y2": 343.985,
+        "r_x3": 80.349,
+        "r_y3": 343.985,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 332.858,
+        "r_x1": 81.67,
+        "r_y1": 332.858,
+        "r_x2": 81.67,
+        "r_y2": 336.166,
+        "r_x3": 80.349,
+        "r_y3": 336.166,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 330.188,
+        "r_y0": 106.907,
+        "r_x1": 331.509,
+        "r_y1": 106.907,
+        "r_x2": 331.509,
+        "r_y2": 110.214,
+        "r_x3": 330.188,
+        "r_y3": 110.214,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 98.306,
+        "r_x1": 81.67,
+        "r_y1": 98.306,
+        "r_x2": 81.67,
+        "r_y2": 101.614,
+        "r_x3": 80.349,
+        "r_y3": 101.614,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 90.488,
+        "r_x1": 81.67,
+        "r_y1": 90.488,
+        "r_x2": 81.67,
+        "r_y2": 93.796,
+        "r_x3": 80.349,
+        "r_y3": 93.796,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 82.669,
+        "r_x1": 81.67,
+        "r_y1": 82.669,
+        "r_x2": 81.67,
+        "r_y2": 85.977,
+        "r_x3": 80.349,
+        "r_y3": 85.977,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 80.349,
+        "r_y0": 74.851,
+        "r_x1": 81.67,
+        "r_y1": 74.851,
+        "r_x2": 81.67,
+        "r_y2": 78.159,
+        "r_x3": 80.349,
+        "r_y3": 78.159,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/R8",
+      "font_name": "/KPSHBO+TimesNewRoman",
+      "widget": false
+    }
+  ],
+  "bitmap_resources": [],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          51.26,
+          170.958
+        ],
+        [
+          88.402,
+          115.146
+        ],
+        [
+          321.713,
+          265.5
+        ],
+        [
+          284.572,
+          321.312
+        ],
+        [
+          51.26,
+          170.958
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          140.149,
+          203.254
+        ],
+        [
+          149.885,
+          209.568
+        ],
+        [
+          151.448,
+          210.531
+        ],
+        [
+          152.83,
+          211.373
+        ],
+        [
+          154.092,
+          211.974
+        ],
+        [
+          155.174,
+          212.335
+        ],
+        [
+          156.556,
+          212.696
+        ],
+        [
+          157.939,
+          212.816
+        ],
+        [
+          159.321,
+          212.816
+        ],
+        [
+          160.703,
+          212.576
+        ],
+        [
+          162.086,
+          212.155
+        ],
+        [
+          163.408,
+          211.613
+        ],
+        [
+          164.67,
+          210.892
+        ],
+        [
+          165.932,
+          210.05
+        ],
+        [
+          167.194,
+          208.967
+        ],
+        [
+          168.396,
+          207.704
+        ],
+        [
+          169.598,
+          206.201
+        ],
+        [
+          170.8,
+          204.456
+        ],
+        [
+          171.762,
+          202.893
+        ],
+        [
+          172.543,
+          201.389
+        ],
+        [
+          173.144,
+          199.886
+        ],
+        [
+          173.625,
+          198.442
+        ],
+        [
+          173.926,
+          196.758
+        ],
+        [
+          174.106,
+          195.074
+        ],
+        [
+          174.046,
+          193.511
+        ],
+        [
+          173.805,
+          192.007
+        ],
+        [
+          173.445,
+          190.925
+        ],
+        [
+          172.904,
+          189.782
+        ],
+        [
+          172.243,
+          188.639
+        ],
+        [
+          171.401,
+          187.497
+        ],
+        [
+          170.62,
+          186.655
+        ],
+        [
+          169.598,
+          185.752
+        ],
+        [
+          168.456,
+          184.85
+        ],
+        [
+          167.074,
+          183.888
+        ],
+        [
+          157.097,
+          177.333
+        ],
+        [
+          140.149,
+          203.254
+        ],
+        [
+          140.149,
+          203.254
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          148.323,
+          202.351
+        ],
+        [
+          159.561,
+          185.211
+        ],
+        [
+          163.468,
+          187.797
+        ],
+        [
+          164.55,
+          188.459
+        ],
+        [
+          165.391,
+          189.12
+        ],
+        [
+          166.052,
+          189.662
+        ],
+        [
+          166.533,
+          190.143
+        ],
+        [
+          167.014,
+          190.744
+        ],
+        [
+          167.435,
+          191.346
+        ],
+        [
+          167.735,
+          191.947
+        ],
+        [
+          167.976,
+          192.609
+        ],
+        [
+          168.096,
+          193.33
+        ],
+        [
+          168.096,
+          194.112
+        ],
+        [
+          167.976,
+          195.014
+        ],
+        [
+          167.735,
+          196.037
+        ],
+        [
+          167.375,
+          197.119
+        ],
+        [
+          166.774,
+          198.322
+        ],
+        [
+          166.052,
+          199.645
+        ],
+        [
+          165.151,
+          201.089
+        ],
+        [
+          164.249,
+          202.472
+        ],
+        [
+          163.288,
+          203.675
+        ],
+        [
+          162.446,
+          204.637
+        ],
+        [
+          161.605,
+          205.359
+        ],
+        [
+          160.824,
+          205.9
+        ],
+        [
+          160.042,
+          206.381
+        ],
+        [
+          159.261,
+          206.682
+        ],
+        [
+          158.48,
+          206.862
+        ],
+        [
+          157.698,
+          206.982
+        ],
+        [
+          156.917,
+          206.922
+        ],
+        [
+          156.076,
+          206.742
+        ],
+        [
+          155.234,
+          206.501
+        ],
+        [
+          154.874,
+          206.321
+        ],
+        [
+          154.453,
+          206.14
+        ],
+        [
+          154.032,
+          205.9
+        ],
+        [
+          153.491,
+          205.599
+        ],
+        [
+          152.89,
+          205.238
+        ],
+        [
+          152.229,
+          204.817
+        ],
+        [
+          151.508,
+          204.396
+        ],
+        [
+          150.727,
+          203.915
+        ],
+        [
+          148.323,
+          202.351
+        ],
+        [
+          148.323,
+          202.351
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          188.169,
+          197.721
+        ],
+        [
+          183.121,
+          194.413
+        ],
+        [
+          170.86,
+          213.117
+        ],
+        [
+          175.548,
+          216.184
+        ],
+        [
+          177.291,
+          213.538
+        ],
+        [
+          177.291,
+          214.801
+        ],
+        [
+          177.411,
+          215.883
+        ],
+        [
+          177.592,
+          216.725
+        ],
+        [
+          177.832,
+          217.447
+        ],
+        [
+          178.133,
+          218.048
+        ],
+        [
+          178.553,
+          218.59
+        ],
+        [
+          179.034,
+          219.071
+        ],
+        [
+          179.575,
+          219.492
+        ],
+        [
+          180.477,
+          219.973
+        ],
+        [
+          181.438,
+          220.334
+        ],
+        [
+          182.46,
+          220.574
+        ],
+        [
+          183.542,
+          220.695
+        ],
+        [
+          184.804,
+          215.342
+        ],
+        [
+          183.962,
+          215.282
+        ],
+        [
+          183.181,
+          215.162
+        ],
+        [
+          182.46,
+          214.921
+        ],
+        [
+          181.919,
+          214.62
+        ],
+        [
+          181.378,
+          214.26
+        ],
+        [
+          181.017,
+          213.839
+        ],
+        [
+          180.717,
+          213.357
+        ],
+        [
+          180.477,
+          212.876
+        ],
+        [
+          180.356,
+          212.275
+        ],
+        [
+          180.356,
+          211.613
+        ],
+        [
+          180.477,
+          210.892
+        ],
+        [
+          180.657,
+          210.05
+        ],
+        [
+          180.837,
+          209.568
+        ],
+        [
+          181.138,
+          208.967
+        ],
+        [
+          181.438,
+          208.306
+        ],
+        [
+          181.859,
+          207.524
+        ],
+        [
+          182.4,
+          206.622
+        ],
+        [
+          182.941,
+          205.719
+        ],
+        [
+          183.602,
+          204.637
+        ],
+        [
+          184.383,
+          203.494
+        ],
+        [
+          188.169,
+          197.721
+        ],
+        [
+          188.169,
+          197.721
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          192.797,
+          219.372
+        ],
+        [
+          187.689,
+          217.146
+        ],
+        [
+          187.508,
+          217.988
+        ],
+        [
+          187.328,
+          218.71
+        ],
+        [
+          187.268,
+          219.492
+        ],
+        [
+          187.208,
+          220.214
+        ],
+        [
+          187.268,
+          220.935
+        ],
+        [
+          187.328,
+          221.597
+        ],
+        [
+          187.508,
+          222.258
+        ],
+        [
+          187.749,
+          222.92
+        ],
+        [
+          188.049,
+          223.581
+        ],
+        [
+          188.41,
+          224.183
+        ],
+        [
+          188.891,
+          224.844
+        ],
+        [
+          189.432,
+          225.446
+        ],
+        [
+          190.093,
+          226.047
+        ],
+        [
+          190.814,
+          226.649
+        ],
+        [
+          191.595,
+          227.31
+        ],
+        [
+          192.497,
+          227.912
+        ],
+        [
+          194.059,
+          228.874
+        ],
+        [
+          195.562,
+          229.656
+        ],
+        [
+          196.824,
+          230.137
+        ],
+        [
+          198.026,
+          230.377
+        ],
+        [
+          199.048,
+          230.498
+        ],
+        [
+          200.009,
+          230.438
+        ],
+        [
+          200.851,
+          230.257
+        ],
+        [
+          201.632,
+          229.956
+        ],
+        [
+          201.993,
+          229.716
+        ],
+        [
+          202.413,
+          229.415
+        ],
+        [
+          202.834,
+          228.994
+        ],
+        [
+          203.255,
+          228.573
+        ],
+        [
+          203.736,
+          228.032
+        ],
+        [
+          204.216,
+          227.37
+        ],
+        [
+          204.697,
+          226.709
+        ],
+        [
+          205.238,
+          225.927
+        ],
+        [
+          208.964,
+          220.093
+        ],
+        [
+          209.686,
+          218.951
+        ],
+        [
+          210.407,
+          217.988
+        ],
+        [
+          211.008,
+          217.206
+        ],
+        [
+          211.549,
+          216.605
+        ],
+        [
+          212.09,
+          216.124
+        ],
+        [
+          212.691,
+          215.643
+        ],
+        [
+          213.352,
+          215.162
+        ],
+        [
+          214.133,
+          214.681
+        ],
+        [
+          209.145,
+          211.433
+        ],
+        [
+          208.484,
+          211.914
+        ],
+        [
+          207.702,
+          212.576
+        ],
+        [
+          207.342,
+          212.876
+        ],
+        [
+          207.101,
+          213.057
+        ],
+        [
+          206.861,
+          212.034
+        ],
+        [
+          206.5,
+          211.072
+        ],
+        [
+          206.079,
+          210.23
+        ],
+        [
+          205.599,
+          209.388
+        ],
+        [
+          204.998,
+          208.606
+        ],
+        [
+          204.337,
+          207.945
+        ],
+        [
+          203.615,
+          207.283
+        ],
+        [
+          202.834,
+          206.742
+        ],
+        [
+          202.113,
+          206.261
+        ],
+        [
+          201.392,
+          205.9
+        ],
+        [
+          200.67,
+          205.599
+        ],
+        [
+          199.949,
+          205.359
+        ],
+        [
+          199.228,
+          205.238
+        ],
+        [
+          198.567,
+          205.178
+        ],
+        [
+          197.846,
+          205.178
+        ],
+        [
+          197.185,
+          205.238
+        ],
+        [
+          196.523,
+          205.419
+        ],
+        [
+          195.922,
+          205.599
+        ],
+        [
+          195.321,
+          205.84
+        ],
+        [
+          194.781,
+          206.201
+        ],
+        [
+          194.24,
+          206.561
+        ],
+        [
+          193.759,
+          207.043
+        ],
+        [
+          193.278,
+          207.524
+        ],
+        [
+          192.917,
+          208.125
+        ],
+        [
+          192.437,
+          208.907
+        ],
+        [
+          192.136,
+          209.749
+        ],
+        [
+          191.896,
+          210.591
+        ],
+        [
+          191.836,
+          211.433
+        ],
+        [
+          191.836,
+          212.335
+        ],
+        [
+          192.016,
+          213.177
+        ],
+        [
+          192.316,
+          213.959
+        ],
+        [
+          192.737,
+          214.741
+        ],
+        [
+          193.278,
+          215.583
+        ],
+        [
+          193.999,
+          216.485
+        ],
+        [
+          194.901,
+          217.507
+        ],
+        [
+          195.983,
+          218.53
+        ],
+        [
+          196.704,
+          219.251
+        ],
+        [
+          197.425,
+          219.913
+        ],
+        [
+          198.026,
+          220.574
+        ],
+        [
+          198.567,
+          221.116
+        ],
+        [
+          199.048,
+          221.657
+        ],
+        [
+          199.468,
+          222.138
+        ],
+        [
+          199.769,
+          222.559
+        ],
+        [
+          200.069,
+          222.98
+        ],
+        [
+          199.769,
+          223.461
+        ],
+        [
+          199.288,
+          224.123
+        ],
+        [
+          198.747,
+          224.544
+        ],
+        [
+          198.266,
+          224.905
+        ],
+        [
+          197.725,
+          225.025
+        ],
+        [
+          197.064,
+          225.025
+        ],
+        [
+          196.343,
+          224.784
+        ],
+        [
+          195.562,
+          224.423
+        ],
+        [
+          194.6,
+          223.882
+        ],
+        [
+          193.999,
+          223.401
+        ],
+        [
+          193.518,
+          222.98
+        ],
+        [
+          193.098,
+          222.499
+        ],
+        [
+          192.857,
+          221.958
+        ],
+        [
+          192.677,
+          221.416
+        ],
+        [
+          192.617,
+          220.815
+        ],
+        [
+          192.677,
+          220.093
+        ],
+        [
+          192.797,
+          219.372
+        ],
+        [
+          192.797,
+          219.372
+        ],
+        [
+          192.797,
+          219.372
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          202.173,
+          219.732
+        ],
+        [
+          201.752,
+          219.191
+        ],
+        [
+          201.151,
+          218.59
+        ],
+        [
+          200.43,
+          217.808
+        ],
+        [
+          199.649,
+          216.966
+        ],
+        [
+          198.807,
+          216.124
+        ],
+        [
+          198.146,
+          215.402
+        ],
+        [
+          197.725,
+          214.801
+        ],
+        [
+          197.425,
+          214.32
+        ],
+        [
+          197.245,
+          213.658
+        ],
+        [
+          197.185,
+          213.057
+        ],
+        [
+          197.305,
+          212.455
+        ],
+        [
+          197.605,
+          211.914
+        ],
+        [
+          197.966,
+          211.433
+        ],
+        [
+          198.447,
+          211.072
+        ],
+        [
+          198.988,
+          210.831
+        ],
+        [
+          199.589,
+          210.651
+        ],
+        [
+          200.19,
+          210.591
+        ],
+        [
+          200.851,
+          210.651
+        ],
+        [
+          201.452,
+          210.831
+        ],
+        [
+          202.053,
+          211.192
+        ],
+        [
+          202.714,
+          211.673
+        ],
+        [
+          203.255,
+          212.275
+        ],
+        [
+          203.736,
+          212.997
+        ],
+        [
+          204.096,
+          213.778
+        ],
+        [
+          204.276,
+          214.38
+        ],
+        [
+          204.337,
+          215.041
+        ],
+        [
+          204.337,
+          215.643
+        ],
+        [
+          204.216,
+          216.184
+        ],
+        [
+          204.036,
+          216.665
+        ],
+        [
+          203.736,
+          217.206
+        ],
+        [
+          203.375,
+          217.928
+        ],
+        [
+          202.834,
+          218.77
+        ],
+        [
+          202.173,
+          219.732
+        ],
+        [
+          202.173,
+          219.732
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          203.495,
+          234.527
+        ],
+        [
+          206.26,
+          236.331
+        ],
+        [
+          205.358,
+          237.775
+        ],
+        [
+          204.637,
+          238.857
+        ],
+        [
+          204.156,
+          239.88
+        ],
+        [
+          203.736,
+          240.842
+        ],
+        [
+          203.555,
+          241.624
+        ],
+        [
+          203.495,
+          242.406
+        ],
+        [
+          203.615,
+          243.127
+        ],
+        [
+          203.796,
+          243.969
+        ],
+        [
+          204.216,
+          244.751
+        ],
+        [
+          204.697,
+          245.533
+        ],
+        [
+          205.418,
+          246.315
+        ],
+        [
+          206.2,
+          247.037
+        ],
+        [
+          207.161,
+          247.758
+        ],
+        [
+          208.303,
+          248.42
+        ],
+        [
+          209.445,
+          248.961
+        ],
+        [
+          210.587,
+          249.503
+        ],
+        [
+          211.789,
+          249.863
+        ],
+        [
+          213.412,
+          245.954
+        ],
+        [
+          212.09,
+          245.413
+        ],
+        [
+          210.888,
+          244.751
+        ],
+        [
+          210.407,
+          244.39
+        ],
+        [
+          210.046,
+          243.969
+        ],
+        [
+          209.806,
+          243.609
+        ],
+        [
+          209.686,
+          243.188
+        ],
+        [
+          209.686,
+          242.767
+        ],
+        [
+          209.806,
+          242.225
+        ],
+        [
+          210.046,
+          241.624
+        ],
+        [
+          210.467,
+          240.962
+        ],
+        [
+          211.308,
+          239.639
+        ],
+        [
+          215.095,
+          242.105
+        ],
+        [
+          217.619,
+          238.196
+        ],
+        [
+          213.893,
+          235.73
+        ],
+        [
+          223.569,
+          220.875
+        ],
+        [
+          218.52,
+          217.627
+        ],
+        [
+          208.844,
+          232.422
+        ],
+        [
+          206.019,
+          230.618
+        ],
+        [
+          203.495,
+          234.527
+        ],
+        [
+          203.495,
+          234.527
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          226.514,
+          249.623
+        ],
+        [
+          229.098,
+          245.653
+        ],
+        [
+          225.612,
+          243.428
+        ],
+        [
+          230.601,
+          235.85
+        ],
+        [
+          230.961,
+          235.309
+        ],
+        [
+          231.262,
+          234.828
+        ],
+        [
+          231.562,
+          234.407
+        ],
+        [
+          231.803,
+          234.046
+        ],
+        [
+          231.983,
+          233.745
+        ],
+        [
+          232.163,
+          233.505
+        ],
+        [
+          232.344,
+          233.324
+        ],
+        [
+          232.404,
+          233.264
+        ],
+        [
+          232.824,
+          233.024
+        ],
+        [
+          233.305,
+          232.903
+        ],
+        [
+          233.786,
+          232.964
+        ],
+        [
+          234.327,
+          233.204
+        ],
+        [
+          234.687,
+          233.505
+        ],
+        [
+          235.048,
+          233.926
+        ],
+        [
+          235.529,
+          234.407
+        ],
+        [
+          236.01,
+          235.008
+        ],
+        [
+          238.955,
+          231.46
+        ],
+        [
+          238.294,
+          230.558
+        ],
+        [
+          237.452,
+          229.656
+        ],
+        [
+          236.49,
+          228.874
+        ],
+        [
+          235.469,
+          228.092
+        ],
+        [
+          234.808,
+          227.731
+        ],
+        [
+          234.086,
+          227.37
+        ],
+        [
+          233.425,
+          227.13
+        ],
+        [
+          232.704,
+          226.949
+        ],
+        [
+          232.043,
+          226.829
+        ],
+        [
+          231.442,
+          226.829
+        ],
+        [
+          230.841,
+          226.889
+        ],
+        [
+          230.36,
+          227.07
+        ],
+        [
+          229.879,
+          227.31
+        ],
+        [
+          229.338,
+          227.611
+        ],
+        [
+          228.858,
+          228.032
+        ],
+        [
+          228.377,
+          228.513
+        ],
+        [
+          227.956,
+          229.054
+        ],
+        [
+          227.415,
+          229.776
+        ],
+        [
+          226.754,
+          230.738
+        ],
+        [
+          225.913,
+          231.941
+        ],
+        [
+          220.564,
+          240.12
+        ],
+        [
+          218.28,
+          238.557
+        ],
+        [
+          215.696,
+          242.526
+        ],
+        [
+          217.979,
+          244.03
+        ],
+        [
+          215.575,
+          247.758
+        ],
+        [
+          218.701,
+          253.953
+        ],
+        [
+          223.028,
+          247.337
+        ],
+        [
+          226.514,
+          249.623
+        ],
+        [
+          226.514,
+          249.623
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          138.406,
+          204.938
+        ],
+        [
+          148.142,
+          211.252
+        ],
+        [
+          149.705,
+          212.215
+        ],
+        [
+          151.087,
+          213.057
+        ],
+        [
+          152.349,
+          213.658
+        ],
+        [
+          153.431,
+          214.019
+        ],
+        [
+          154.813,
+          214.38
+        ],
+        [
+          156.196,
+          214.5
+        ],
+        [
+          157.578,
+          214.5
+        ],
+        [
+          158.96,
+          214.26
+        ],
+        [
+          160.343,
+          213.839
+        ],
+        [
+          161.665,
+          213.297
+        ],
+        [
+          162.927,
+          212.576
+        ],
+        [
+          164.189,
+          211.734
+        ],
+        [
+          165.451,
+          210.651
+        ],
+        [
+          166.653,
+          209.388
+        ],
+        [
+          167.855,
+          207.885
+        ],
+        [
+          169.057,
+          206.14
+        ],
+        [
+          170.019,
+          204.577
+        ],
+        [
+          170.8,
+          203.073
+        ],
+        [
+          171.401,
+          201.57
+        ],
+        [
+          171.882,
+          200.126
+        ],
+        [
+          172.183,
+          198.442
+        ],
+        [
+          172.363,
+          196.758
+        ],
+        [
+          172.303,
+          195.195
+        ],
+        [
+          172.062,
+          193.691
+        ],
+        [
+          171.702,
+          192.609
+        ],
+        [
+          171.161,
+          191.466
+        ],
+        [
+          170.5,
+          190.323
+        ],
+        [
+          169.658,
+          189.18
+        ],
+        [
+          168.877,
+          188.338
+        ],
+        [
+          167.855,
+          187.436
+        ],
+        [
+          166.713,
+          186.534
+        ],
+        [
+          165.331,
+          185.572
+        ],
+        [
+          155.354,
+          179.017
+        ],
+        [
+          138.406,
+          204.938
+        ],
+        [
+          138.406,
+          204.938
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          146.58,
+          204.035
+        ],
+        [
+          157.819,
+          186.895
+        ],
+        [
+          161.725,
+          189.481
+        ],
+        [
+          162.807,
+          190.143
+        ],
+        [
+          163.648,
+          190.804
+        ],
+        [
+          164.309,
+          191.346
+        ],
+        [
+          164.79,
+          191.827
+        ],
+        [
+          165.271,
+          192.428
+        ],
+        [
+          165.692,
+          193.03
+        ],
+        [
+          165.992,
+          193.631
+        ],
+        [
+          166.233,
+          194.293
+        ],
+        [
+          166.353,
+          195.014
+        ],
+        [
+          166.353,
+          195.796
+        ],
+        [
+          166.233,
+          196.698
+        ],
+        [
+          165.992,
+          197.721
+        ],
+        [
+          165.632,
+          198.803
+        ],
+        [
+          165.031,
+          200.006
+        ],
+        [
+          164.309,
+          201.329
+        ],
+        [
+          163.408,
+          202.772
+        ],
+        [
+          162.506,
+          204.156
+        ],
+        [
+          161.545,
+          205.359
+        ],
+        [
+          160.703,
+          206.321
+        ],
+        [
+          159.862,
+          207.043
+        ],
+        [
+          159.081,
+          207.584
+        ],
+        [
+          158.299,
+          208.065
+        ],
+        [
+          157.518,
+          208.366
+        ],
+        [
+          156.737,
+          208.546
+        ],
+        [
+          155.955,
+          208.666
+        ],
+        [
+          155.174,
+          208.606
+        ],
+        [
+          154.333,
+          208.426
+        ],
+        [
+          153.491,
+          208.185
+        ],
+        [
+          153.131,
+          208.005
+        ],
+        [
+          152.71,
+          207.824
+        ],
+        [
+          152.289,
+          207.584
+        ],
+        [
+          151.748,
+          207.283
+        ],
+        [
+          151.147,
+          206.922
+        ],
+        [
+          150.486,
+          206.501
+        ],
+        [
+          149.765,
+          206.08
+        ],
+        [
+          148.984,
+          205.599
+        ],
+        [
+          146.58,
+          204.035
+        ],
+        [
+          146.58,
+          204.035
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          186.487,
+          199.405
+        ],
+        [
+          181.438,
+          196.097
+        ],
+        [
+          169.178,
+          214.801
+        ],
+        [
+          173.865,
+          217.868
+        ],
+        [
+          175.608,
+          215.222
+        ],
+        [
+          175.608,
+          216.485
+        ],
+        [
+          175.729,
+          217.567
+        ],
+        [
+          175.909,
+          218.409
+        ],
+        [
+          176.149,
+          219.131
+        ],
+        [
+          176.45,
+          219.732
+        ],
+        [
+          176.87,
+          220.274
+        ],
+        [
+          177.351,
+          220.755
+        ],
+        [
+          177.892,
+          221.176
+        ],
+        [
+          178.794,
+          221.657
+        ],
+        [
+          179.755,
+          222.018
+        ],
+        [
+          180.777,
+          222.258
+        ],
+        [
+          181.859,
+          222.379
+        ],
+        [
+          183.121,
+          217.026
+        ],
+        [
+          182.28,
+          216.966
+        ],
+        [
+          181.498,
+          216.846
+        ],
+        [
+          180.777,
+          216.605
+        ],
+        [
+          180.236,
+          216.304
+        ],
+        [
+          179.695,
+          215.943
+        ],
+        [
+          179.335,
+          215.522
+        ],
+        [
+          179.034,
+          215.041
+        ],
+        [
+          178.794,
+          214.56
+        ],
+        [
+          178.674,
+          213.959
+        ],
+        [
+          178.674,
+          213.297
+        ],
+        [
+          178.794,
+          212.576
+        ],
+        [
+          178.974,
+          211.734
+        ],
+        [
+          179.154,
+          211.252
+        ],
+        [
+          179.455,
+          210.651
+        ],
+        [
+          179.755,
+          209.989
+        ],
+        [
+          180.176,
+          209.208
+        ],
+        [
+          180.717,
+          208.306
+        ],
+        [
+          181.258,
+          207.403
+        ],
+        [
+          181.919,
+          206.321
+        ],
+        [
+          182.7,
+          205.178
+        ],
+        [
+          186.487,
+          199.405
+        ],
+        [
+          186.487,
+          199.405
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          191.054,
+          221.056
+        ],
+        [
+          185.946,
+          218.83
+        ],
+        [
+          185.765,
+          219.672
+        ],
+        [
+          185.585,
+          220.394
+        ],
+        [
+          185.525,
+          221.176
+        ],
+        [
+          185.465,
+          221.898
+        ],
+        [
+          185.525,
+          222.619
+        ],
+        [
+          185.585,
+          223.281
+        ],
+        [
+          185.765,
+          223.942
+        ],
+        [
+          186.006,
+          224.604
+        ],
+        [
+          186.306,
+          225.265
+        ],
+        [
+          186.667,
+          225.867
+        ],
+        [
+          187.148,
+          226.528
+        ],
+        [
+          187.689,
+          227.13
+        ],
+        [
+          188.35,
+          227.731
+        ],
+        [
+          189.071,
+          228.333
+        ],
+        [
+          189.852,
+          228.994
+        ],
+        [
+          190.754,
+          229.596
+        ],
+        [
+          192.316,
+          230.558
+        ],
+        [
+          193.819,
+          231.34
+        ],
+        [
+          195.081,
+          231.821
+        ],
+        [
+          196.283,
+          232.061
+        ],
+        [
+          197.305,
+          232.182
+        ],
+        [
+          198.266,
+          232.122
+        ],
+        [
+          199.108,
+          231.941
+        ],
+        [
+          199.889,
+          231.64
+        ],
+        [
+          200.25,
+          231.4
+        ],
+        [
+          200.67,
+          231.099
+        ],
+        [
+          201.091,
+          230.678
+        ],
+        [
+          201.512,
+          230.257
+        ],
+        [
+          201.993,
+          229.716
+        ],
+        [
+          202.473,
+          229.054
+        ],
+        [
+          202.954,
+          228.393
+        ],
+        [
+          203.495,
+          227.611
+        ],
+        [
+          207.221,
+          221.777
+        ],
+        [
+          207.943,
+          220.635
+        ],
+        [
+          208.664,
+          219.672
+        ],
+        [
+          209.265,
+          218.89
+        ],
+        [
+          209.806,
+          218.289
+        ],
+        [
+          210.347,
+          217.808
+        ],
+        [
+          210.948,
+          217.327
+        ],
+        [
+          211.609,
+          216.846
+        ],
+        [
+          212.39,
+          216.364
+        ],
+        [
+          207.402,
+          213.117
+        ],
+        [
+          206.741,
+          213.598
+        ],
+        [
+          205.959,
+          214.26
+        ],
+        [
+          205.599,
+          214.56
+        ],
+        [
+          205.358,
+          214.741
+        ],
+        [
+          205.118,
+          213.718
+        ],
+        [
+          204.757,
+          212.756
+        ],
+        [
+          204.337,
+          211.914
+        ],
+        [
+          203.856,
+          211.072
+        ],
+        [
+          203.255,
+          210.29
+        ],
+        [
+          202.594,
+          209.629
+        ],
+        [
+          201.872,
+          208.967
+        ],
+        [
+          201.091,
+          208.426
+        ],
+        [
+          200.37,
+          207.945
+        ],
+        [
+          199.649,
+          207.584
+        ],
+        [
+          198.927,
+          207.283
+        ],
+        [
+          198.206,
+          207.043
+        ],
+        [
+          197.485,
+          206.922
+        ],
+        [
+          196.824,
+          206.862
+        ],
+        [
+          196.103,
+          206.862
+        ],
+        [
+          195.442,
+          206.922
+        ],
+        [
+          194.781,
+          207.103
+        ],
+        [
+          194.18,
+          207.283
+        ],
+        [
+          193.579,
+          207.524
+        ],
+        [
+          193.038,
+          207.885
+        ],
+        [
+          192.497,
+          208.245
+        ],
+        [
+          192.016,
+          208.726
+        ],
+        [
+          191.535,
+          209.208
+        ],
+        [
+          191.174,
+          209.809
+        ],
+        [
+          190.694,
+          210.591
+        ],
+        [
+          190.393,
+          211.433
+        ],
+        [
+          190.153,
+          212.275
+        ],
+        [
+          190.093,
+          213.117
+        ],
+        [
+          190.093,
+          214.019
+        ],
+        [
+          190.273,
+          214.861
+        ],
+        [
+          190.573,
+          215.643
+        ],
+        [
+          190.994,
+          216.425
+        ],
+        [
+          191.535,
+          217.267
+        ],
+        [
+          192.256,
+          218.169
+        ],
+        [
+          193.158,
+          219.191
+        ],
+        [
+          194.24,
+          220.214
+        ],
+        [
+          194.961,
+          220.935
+        ],
+        [
+          195.682,
+          221.597
+        ],
+        [
+          196.283,
+          222.258
+        ],
+        [
+          196.824,
+          222.8
+        ],
+        [
+          197.305,
+          223.341
+        ],
+        [
+          197.725,
+          223.822
+        ],
+        [
+          198.026,
+          224.243
+        ],
+        [
+          198.326,
+          224.664
+        ],
+        [
+          198.026,
+          225.145
+        ],
+        [
+          197.545,
+          225.807
+        ],
+        [
+          197.004,
+          226.228
+        ],
+        [
+          196.523,
+          226.589
+        ],
+        [
+          195.983,
+          226.709
+        ],
+        [
+          195.321,
+          226.709
+        ],
+        [
+          194.6,
+          226.468
+        ],
+        [
+          193.819,
+          226.107
+        ],
+        [
+          192.857,
+          225.566
+        ],
+        [
+          192.256,
+          225.085
+        ],
+        [
+          191.775,
+          224.664
+        ],
+        [
+          191.355,
+          224.183
+        ],
+        [
+          191.114,
+          223.642
+        ],
+        [
+          190.934,
+          223.1
+        ],
+        [
+          190.874,
+          222.499
+        ],
+        [
+          190.934,
+          221.777
+        ],
+        [
+          191.054,
+          221.056
+        ],
+        [
+          191.054,
+          221.056
+        ],
+        [
+          191.054,
+          221.056
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          200.43,
+          221.416
+        ],
+        [
+          200.009,
+          220.875
+        ],
+        [
+          199.408,
+          220.274
+        ],
+        [
+          198.687,
+          219.492
+        ],
+        [
+          197.906,
+          218.65
+        ],
+        [
+          197.064,
+          217.808
+        ],
+        [
+          196.403,
+          217.086
+        ],
+        [
+          195.983,
+          216.485
+        ],
+        [
+          195.682,
+          216.004
+        ],
+        [
+          195.502,
+          215.342
+        ],
+        [
+          195.442,
+          214.741
+        ],
+        [
+          195.562,
+          214.139
+        ],
+        [
+          195.862,
+          213.598
+        ],
+        [
+          196.223,
+          213.117
+        ],
+        [
+          196.704,
+          212.756
+        ],
+        [
+          197.245,
+          212.515
+        ],
+        [
+          197.846,
+          212.335
+        ],
+        [
+          198.447,
+          212.275
+        ],
+        [
+          199.108,
+          212.335
+        ],
+        [
+          199.709,
+          212.515
+        ],
+        [
+          200.31,
+          212.876
+        ],
+        [
+          200.971,
+          213.357
+        ],
+        [
+          201.512,
+          213.959
+        ],
+        [
+          201.993,
+          214.681
+        ],
+        [
+          202.353,
+          215.462
+        ],
+        [
+          202.534,
+          216.064
+        ],
+        [
+          202.594,
+          216.725
+        ],
+        [
+          202.594,
+          217.327
+        ],
+        [
+          202.473,
+          217.868
+        ],
+        [
+          202.293,
+          218.349
+        ],
+        [
+          201.993,
+          218.89
+        ],
+        [
+          201.632,
+          219.612
+        ],
+        [
+          201.091,
+          220.454
+        ],
+        [
+          200.43,
+          221.416
+        ],
+        [
+          200.43,
+          221.416
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          201.752,
+          236.211
+        ],
+        [
+          204.517,
+          238.015
+        ],
+        [
+          203.615,
+          239.459
+        ],
+        [
+          202.894,
+          240.541
+        ],
+        [
+          202.413,
+          241.564
+        ],
+        [
+          201.993,
+          242.526
+        ],
+        [
+          201.812,
+          243.308
+        ],
+        [
+          201.752,
+          244.09
+        ],
+        [
+          201.872,
+          244.811
+        ],
+        [
+          202.053,
+          245.653
+        ],
+        [
+          202.473,
+          246.435
+        ],
+        [
+          202.954,
+          247.217
+        ],
+        [
+          203.675,
+          247.999
+        ],
+        [
+          204.457,
+          248.721
+        ],
+        [
+          205.418,
+          249.442
+        ],
+        [
+          206.56,
+          250.104
+        ],
+        [
+          207.702,
+          250.645
+        ],
+        [
+          208.844,
+          251.186
+        ],
+        [
+          210.046,
+          251.547
+        ],
+        [
+          211.669,
+          247.638
+        ],
+        [
+          210.347,
+          247.097
+        ],
+        [
+          209.145,
+          246.435
+        ],
+        [
+          208.664,
+          246.074
+        ],
+        [
+          208.303,
+          245.653
+        ],
+        [
+          208.063,
+          245.293
+        ],
+        [
+          207.943,
+          244.872
+        ],
+        [
+          207.943,
+          244.451
+        ],
+        [
+          208.063,
+          243.909
+        ],
+        [
+          208.303,
+          243.308
+        ],
+        [
+          208.724,
+          242.646
+        ],
+        [
+          209.565,
+          241.323
+        ],
+        [
+          213.352,
+          243.789
+        ],
+        [
+          215.876,
+          239.88
+        ],
+        [
+          212.15,
+          237.414
+        ],
+        [
+          221.826,
+          222.559
+        ],
+        [
+          216.777,
+          219.311
+        ],
+        [
+          207.101,
+          234.106
+        ],
+        [
+          204.276,
+          232.302
+        ],
+        [
+          201.752,
+          236.211
+        ],
+        [
+          201.752,
+          236.211
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          224.831,
+          251.307
+        ],
+        [
+          227.415,
+          247.337
+        ],
+        [
+          223.929,
+          245.112
+        ],
+        [
+          228.918,
+          237.534
+        ],
+        [
+          229.278,
+          236.993
+        ],
+        [
+          229.579,
+          236.512
+        ],
+        [
+          229.879,
+          236.091
+        ],
+        [
+          230.12,
+          235.73
+        ],
+        [
+          230.3,
+          235.429
+        ],
+        [
+          230.48,
+          235.189
+        ],
+        [
+          230.661,
+          235.008
+        ],
+        [
+          230.721,
+          234.948
+        ],
+        [
+          231.142,
+          234.708
+        ],
+        [
+          231.622,
+          234.587
+        ],
+        [
+          232.103,
+          234.648
+        ],
+        [
+          232.644,
+          234.888
+        ],
+        [
+          233.005,
+          235.189
+        ],
+        [
+          233.365,
+          235.61
+        ],
+        [
+          233.846,
+          236.091
+        ],
+        [
+          234.327,
+          236.692
+        ],
+        [
+          237.272,
+          233.144
+        ],
+        [
+          236.611,
+          232.242
+        ],
+        [
+          235.769,
+          231.34
+        ],
+        [
+          234.808,
+          230.558
+        ],
+        [
+          233.786,
+          229.776
+        ],
+        [
+          233.125,
+          229.415
+        ],
+        [
+          232.404,
+          229.054
+        ],
+        [
+          231.743,
+          228.814
+        ],
+        [
+          231.021,
+          228.633
+        ],
+        [
+          230.36,
+          228.513
+        ],
+        [
+          229.759,
+          228.513
+        ],
+        [
+          229.158,
+          228.573
+        ],
+        [
+          228.677,
+          228.754
+        ],
+        [
+          228.197,
+          228.994
+        ],
+        [
+          227.656,
+          229.295
+        ],
+        [
+          227.175,
+          229.716
+        ],
+        [
+          226.694,
+          230.197
+        ],
+        [
+          226.273,
+          230.738
+        ],
+        [
+          225.732,
+          231.46
+        ],
+        [
+          225.071,
+          232.422
+        ],
+        [
+          224.23,
+          233.625
+        ],
+        [
+          218.881,
+          241.804
+        ],
+        [
+          216.597,
+          240.241
+        ],
+        [
+          214.013,
+          244.21
+        ],
+        [
+          216.297,
+          245.714
+        ],
+        [
+          213.893,
+          249.442
+        ],
+        [
+          217.018,
+          255.637
+        ],
+        [
+          221.345,
+          249.021
+        ],
+        [
+          224.831,
+          251.307
+        ],
+        [
+          224.831,
+          251.307
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}
