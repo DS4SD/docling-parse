@@ -87,7 +87,7 @@ def test_reference_documents_from_filenames_with_keys():
         rname = os.path.basename(pdf_doc)
         fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v1.json")
 
-        if GENERATE or (not os.path.exists(fname)):
+        if not os.getenv("CI") and (GENERATE or (not os.path.exists(fname))):
             with open(fname, "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))
 
