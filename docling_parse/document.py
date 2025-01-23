@@ -153,7 +153,7 @@ class PdfColoredElement(PdfBaseElement):
 class PdfCell(PdfColoredElement):
 
     rect: BoundingRectangle
-    
+
     rect_fontbbox: Optional[BoundingRectangle] = None
     rect_capheight: Optional[BoundingRectangle] = None
 
@@ -366,7 +366,7 @@ class SegmentedPdfPage(BaseModel):
                 line += f"({cell.rect.r_x1:03.02f}, {cell.rect.r_y1:03.02f}) "
                 line += f"({cell.rect.r_x2:03.02f}, {cell.rect.r_y2:03.02f}) "
                 line += f"({cell.rect.r_x3:03.02f}, {cell.rect.r_y3:03.02f}) "
-            
+
             if add_fontkey:
                 line += f"{cell.font_key} "
 
