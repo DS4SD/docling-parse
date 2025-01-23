@@ -663,6 +663,8 @@ namespace pdflib
             v += values[l];
 
             std::pair<uint32_t, std::string> item(c,v);
+	    LOG_S(INFO) << item.first << ": " << item.second;
+	    
             result.push_back(item);
           }
       }
