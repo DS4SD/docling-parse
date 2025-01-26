@@ -12,7 +12,7 @@ env:
 jobs:
   build_sdist:
     name: Build sdist artifacts
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout
@@ -44,7 +44,7 @@ jobs:
         python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
 
         os:
-          - name: "ubuntu-latest"
+          - name: "ubuntu-22.04"
             platform: "linux"
             platform_id: "manylinux_x86_64"
 
@@ -202,13 +202,13 @@ jobs:
           cp wheelhouse/*.whl ./dist/
 
       - name: Set up QEMU [linux]
-        if: matrix.os.name == 'ubuntu-latest'
+        if: startsWith(matrix.os.name, 'ubuntu')
         uses: docker/setup-qemu-action@v3
         with:
             platforms: all
         
       - name: Build wheels [linux]
-        if: matrix.os.name == 'ubuntu-latest'
+        if: startsWith(matrix.os.name, 'ubuntu')
         env:
           # CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
           CIBW_ARCHS: auto x86_64 aarch64
