@@ -1,3 +1,9 @@
+## [v3.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v3.1.1) - 2025-01-21
+
+### Fix
+
+* Move autoflake to dev dependencies ([#86](https://github.com/DS4SD/docling-parse/issues/86)) ([`eed5080`](https://github.com/DS4SD/docling-parse/commit/eed50805ebb00a9fdf48bb99caf5f38d4d9959f7))
+
 ## [v3.1.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.1.0) - 2025-01-17
 
 ### Feature

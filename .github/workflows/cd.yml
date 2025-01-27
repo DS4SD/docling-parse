@@ -11,7 +11,7 @@ jobs:
   code-checks:
     uses: ./.github/workflows/checks.yml
   pre-release-check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       TARGET_TAG_V: ${{ steps.version_check.outputs.TRGT_VERSION }}
     steps:
@@ -31,7 +31,7 @@ jobs:
     needs: [code-checks, pre-release-check]
     if: needs.pre-release-check.outputs.TARGET_TAG_V != ''
     environment: auto-release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     concurrency: release
     steps:
       - uses: actions/create-github-app-token@v1
