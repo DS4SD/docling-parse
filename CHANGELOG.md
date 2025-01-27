@@ -1,3 +1,9 @@
+## [v3.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v3.1.2) - 2025-01-27
+
+### Fix
+
+* Added more updates to better font-parsing ([#87](https://github.com/DS4SD/docling-parse/issues/87)) ([`de18986`](https://github.com/DS4SD/docling-parse/commit/de18986f03f1e56ebb750ccdc2b955eeeebbde3b))
+
 ## [v3.1.1](https://github.com/DS4SD/docling-parse/releases/tag/v3.1.1) - 2025-01-21
 
 ### Fix
