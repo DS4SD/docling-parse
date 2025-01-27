@@ -1,0 +1,2507 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 612.0,
+      "r_y1": 0.0,
+      "r_x2": 612.0,
+      "r_y2": 792.0,
+      "r_x3": 0.0,
+      "r_y3": 792.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 482.748,
+        "r_y0": 760.571,
+        "r_x1": 529.978,
+        "r_y1": 760.571,
+        "r_x2": 529.978,
+        "r_y2": 769.922,
+        "r_x3": 482.748,
+        "r_y3": 769.922,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Prot\u00e9g\u00e9 B",
+      "orig": "Prot\u00e9g\u00e9 B",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 529.978,
+        "r_y0": 760.794,
+        "r_x1": 590.998,
+        "r_y1": 760.794,
+        "r_x2": 590.998,
+        "r_y2": 769.175,
+        "r_x3": 529.978,
+        "r_y3": 769.175,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " une fois rempli",
+      "orig": " une fois rempli",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 22.999,
+        "r_y0": 736.657,
+        "r_x1": 229.723,
+        "r_y1": 736.657,
+        "r_x2": 229.723,
+        "r_y2": 747.878,
+        "r_x3": 22.999,
+        "r_y3": 747.878,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Partie D \u2014 Calcul du remboursement",
+      "orig": "Partie D \u2014 Calcul du remboursement",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 711.143,
+        "r_x1": 390.771,
+        "r_y1": 711.143,
+        "r_x2": 390.771,
+        "r_y2": 721.429,
+        "r_x3": 34.998,
+        "r_y3": 721.429,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Produits admissibles transf\u00e9r\u00e9s dans une province non participante",
+      "orig": "Produits admissibles transf\u00e9r\u00e9s dans une province non participante",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 573.89,
+        "r_y0": 681.628,
+        "r_x1": 581.11,
+        "r_y1": 681.628,
+        "r_x2": 581.11,
+        "r_y2": 690.979,
+        "r_x3": 573.89,
+        "r_y3": 690.979,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "A",
+      "orig": "A",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 690.107,
+        "r_x1": 281.78,
+        "r_y1": 690.107,
+        "r_x2": 281.78,
+        "r_y2": 699.419,
+        "r_x3": 35.0,
+        "r_y3": 699.419,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Pour les produits au taux de 13 %, inscrivez le montant ",
+      "orig": "Pour les produits au taux de 13 %, inscrivez le montant ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 679.107,
+        "r_x1": 74.46,
+        "r_y1": 679.107,
+        "r_x2": 74.46,
+        "r_y2": 688.419,
+        "r_x3": 35.0,
+        "r_y3": 688.419,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "de TVH :",
+      "orig": "de TVH :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 403.717,
+        "r_y0": 681.607,
+        "r_x1": 409.277,
+        "r_y1": 681.607,
+        "r_x2": 409.277,
+        "r_y2": 690.919,
+        "r_x3": 403.717,
+        "r_y3": 690.919,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 414.996,
+        "r_y0": 680.629,
+        "r_x1": 422.004,
+        "r_y1": 680.629,
+        "r_x2": 422.004,
+        "r_y2": 691.803,
+        "r_x3": 414.996,
+        "r_y3": 691.803,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u00d7",
+      "orig": "\u00d7",
+      "rendering_mode": "",
+      "font_key": "/TT3",
+      "font_name": "/AAAAAD+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 426.77,
+        "r_y0": 680.857,
+        "r_x1": 446.23,
+        "r_y1": 680.857,
+        "r_x2": 446.23,
+        "r_y2": 690.169,
+        "r_x3": 426.77,
+        "r_y3": 690.169,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "8/13",
+      "orig": "8/13",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 450.996,
+        "r_y0": 680.629,
+        "r_x1": 458.004,
+        "r_y1": 680.629,
+        "r_x2": 458.004,
+        "r_y2": 691.803,
+        "r_x3": 450.996,
+        "r_y3": 691.803,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "=",
+      "orig": "=",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 559.719,
+        "r_y0": 681.607,
+        "r_x1": 565.279,
+        "r_y1": 681.607,
+        "r_x2": 565.279,
+        "r_y2": 690.919,
+        "r_x3": 559.719,
+        "r_y3": 690.919,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 573.889,
+        "r_y0": 648.628,
+        "r_x1": 581.109,
+        "r_y1": 648.628,
+        "r_x2": 581.109,
+        "r_y2": 657.979,
+        "r_x3": 573.889,
+        "r_y3": 657.979,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "B",
+      "orig": "B",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.999,
+        "r_y0": 657.107,
+        "r_x1": 281.779,
+        "r_y1": 657.107,
+        "r_x2": 281.779,
+        "r_y2": 666.419,
+        "r_x3": 34.999,
+        "r_y3": 666.419,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Pour les produits au taux de 15 %, inscrivez le montant ",
+      "orig": "Pour les produits au taux de 15 %, inscrivez le montant ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.999,
+        "r_y0": 646.107,
+        "r_x1": 74.459,
+        "r_y1": 646.107,
+        "r_x2": 74.459,
+        "r_y2": 655.419,
+        "r_x3": 34.999,
+        "r_y3": 655.419,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "de TVH :",
+      "orig": "de TVH :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 403.717,
+        "r_y0": 648.609,
+        "r_x1": 409.277,
+        "r_y1": 648.609,
+        "r_x2": 409.277,
+        "r_y2": 657.921,
+        "r_x3": 403.717,
+        "r_y3": 657.921,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 414.996,
+        "r_y0": 647.631,
+        "r_x1": 422.004,
+        "r_y1": 647.631,
+        "r_x2": 422.004,
+        "r_y2": 658.805,
+        "r_x3": 414.996,
+        "r_y3": 658.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u00d7",
+      "orig": "\u00d7",
+      "rendering_mode": "",
+      "font_key": "/TT3",
+      "font_name": "/AAAAAD+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 423.99,
+        "r_y0": 647.859,
+        "r_x1": 449.01,
+        "r_y1": 647.859,
+        "r_x2": 449.01,
+        "r_y2": 657.171,
+        "r_x3": 423.99,
+        "r_y3": 657.171,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "10/15",
+      "orig": "10/15",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 450.996,
+        "r_y0": 647.631,
+        "r_x1": 458.004,
+        "r_y1": 647.631,
+        "r_x2": 458.004,
+        "r_y2": 658.805,
+        "r_x3": 450.996,
+        "r_y3": 658.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "=",
+      "orig": "=",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 559.719,
+        "r_y0": 648.609,
+        "r_x1": 565.279,
+        "r_y1": 648.609,
+        "r_x2": 565.279,
+        "r_y2": 657.921,
+        "r_x3": 559.719,
+        "r_y3": 657.921,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 618.141,
+        "r_x1": 570.511,
+        "r_y1": 618.141,
+        "r_x2": 570.511,
+        "r_y2": 628.427,
+        "r_x3": 34.998,
+        "r_y3": 628.427,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Produits admissibles transf\u00e9r\u00e9s dans une province participante dont le taux de la TVH est moins \u00e9lev\u00e9",
+      "orig": "Produits admissibles transf\u00e9r\u00e9s dans une province participante dont le taux de la TVH est moins \u00e9lev\u00e9",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 573.89,
+        "r_y0": 576.627,
+        "r_x1": 581.11,
+        "r_y1": 576.627,
+        "r_x2": 581.11,
+        "r_y2": 585.978,
+        "r_x3": 573.89,
+        "r_y3": 585.978,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "C",
+      "orig": "C",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 596.606,
+        "r_x1": 287.59,
+        "r_y1": 596.606,
+        "r_x2": 287.59,
+        "r_y2": 605.918,
+        "r_x3": 35.0,
+        "r_y3": 605.918,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Pour les produits transf\u00e9r\u00e9s d\u2019une province qui a un taux ",
+      "orig": "Pour les produits transf\u00e9r\u00e9s d\u2019une province qui a un taux ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 585.606,
+        "r_x1": 276.24,
+        "r_y1": 585.606,
+        "r_x2": 276.24,
+        "r_y2": 594.918,
+        "r_x3": 35.0,
+        "r_y3": 594.918,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "de TVH de 15 % \u00e0 une province qui a un taux de TVH ",
+      "orig": "de TVH de 15 % \u00e0 une province qui a un taux de TVH ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 574.606,
+        "r_x1": 207.85,
+        "r_y1": 574.606,
+        "r_x2": 207.85,
+        "r_y2": 583.918,
+        "r_x3": 35.0,
+        "r_y3": 583.918,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "de 13 %, inscrivez le montant de TVH :",
+      "orig": "de 13 %, inscrivez le montant de TVH :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 403.717,
+        "r_y0": 576.606,
+        "r_x1": 409.277,
+        "r_y1": 576.606,
+        "r_x2": 409.277,
+        "r_y2": 585.918,
+        "r_x3": 403.717,
+        "r_y3": 585.918,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 414.996,
+        "r_y0": 575.628,
+        "r_x1": 422.004,
+        "r_y1": 575.628,
+        "r_x2": 422.004,
+        "r_y2": 586.802,
+        "r_x3": 414.996,
+        "r_y3": 586.802,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u00d7",
+      "orig": "\u00d7",
+      "rendering_mode": "",
+      "font_key": "/TT3",
+      "font_name": "/AAAAAD+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 426.77,
+        "r_y0": 575.856,
+        "r_x1": 446.23,
+        "r_y1": 575.856,
+        "r_x2": 446.23,
+        "r_y2": 585.168,
+        "r_x3": 426.77,
+        "r_y3": 585.168,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "2/15",
+      "orig": "2/15",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 450.996,
+        "r_y0": 575.628,
+        "r_x1": 458.004,
+        "r_y1": 575.628,
+        "r_x2": 458.004,
+        "r_y2": 586.802,
+        "r_x3": 450.996,
+        "r_y3": 586.802,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "=",
+      "orig": "=",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 559.719,
+        "r_y0": 576.606,
+        "r_x1": 565.279,
+        "r_y1": 576.606,
+        "r_x2": 565.279,
+        "r_y2": 585.918,
+        "r_x3": 559.719,
+        "r_y3": 585.918,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 573.89,
+        "r_y0": 543.626,
+        "r_x1": 581.11,
+        "r_y1": 543.626,
+        "r_x2": 581.11,
+        "r_y2": 552.977,
+        "r_x3": 573.89,
+        "r_y3": 552.977,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "D",
+      "orig": "D",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 552.575,
+        "r_x1": 134.49,
+        "r_y1": 552.575,
+        "r_x2": 134.49,
+        "r_y2": 561.887,
+        "r_x3": 35.0,
+        "r_y3": 561.887,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Additionnez les lignes ",
+      "orig": "Additionnez les lignes ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 134.49,
+        "r_y0": 552.566,
+        "r_x1": 141.71,
+        "r_y1": 552.566,
+        "r_x2": 141.71,
+        "r_y2": 561.917,
+        "r_x3": 134.49,
+        "r_y3": 561.917,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "A",
+      "orig": "A",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 141.71,
+        "r_y0": 552.575,
+        "r_x1": 152.83,
+        "r_y1": 552.575,
+        "r_x2": 152.83,
+        "r_y2": 561.887,
+        "r_x3": 141.71,
+        "r_y3": 561.887,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " \u00e0 ",
+      "orig": " \u00e0 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 152.83,
+        "r_y0": 552.566,
+        "r_x1": 160.05,
+        "r_y1": 552.566,
+        "r_x2": 160.05,
+        "r_y2": 561.917,
+        "r_x3": 152.83,
+        "r_y3": 561.917,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "C",
+      "orig": "C",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 160.05,
+        "r_y0": 552.575,
+        "r_x1": 415.72,
+        "r_y1": 552.575,
+        "r_x2": 415.72,
+        "r_y2": 561.887,
+        "r_x3": 160.05,
+        "r_y3": 561.887,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": ". Ce r\u00e9sultat est le montant total de votre remboursement ",
+      "orig": ". Ce r\u00e9sultat est le montant total de votre remboursement ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.0,
+        "r_y0": 541.575,
+        "r_x1": 227.33,
+        "r_y1": 541.575,
+        "r_x2": 227.33,
+        "r_y2": 550.887,
+        "r_x3": 35.0,
+        "r_y3": 550.887,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "de la taxe, ce qui doit \u00eatre sup\u00e9rieur \u00e0 25 $.",
+      "orig": "de la taxe, ce qui doit \u00eatre sup\u00e9rieur \u00e0 25 $.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 37,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 559.719,
+        "r_y0": 543.605,
+        "r_x1": 565.279,
+        "r_y1": 543.605,
+        "r_x2": 565.279,
+        "r_y2": 552.917,
+        "r_x3": 559.719,
+        "r_y3": 552.917,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "$",
+      "orig": "$",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 38,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 22.999,
+        "r_y0": 511.654,
+        "r_x1": 143.695,
+        "r_y1": 511.654,
+        "r_x2": 143.695,
+        "r_y2": 522.875,
+        "r_x3": 22.999,
+        "r_y3": 522.875,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Partie E \u2014 Attestation",
+      "orig": "Partie E \u2014 Attestation",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 39,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 489.106,
+        "r_x1": 586.088,
+        "r_y1": 489.106,
+        "r_x2": 586.088,
+        "r_y2": 498.418,
+        "r_x3": 34.998,
+        "r_y3": 498.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "J\u2019atteste que les renseignements fournis dans cette demande et dans tout document joint sont exacts et complets et que les ",
+      "orig": "J\u2019atteste que les renseignements fournis dans cette demande et dans tout document joint sont exacts et complets et que les ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 40,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 478.106,
+        "r_x1": 583.818,
+        "r_y1": 478.106,
+        "r_x2": 583.818,
+        "r_y2": 487.418,
+        "r_x3": 34.998,
+        "r_y3": 487.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "montants demand\u00e9s comme remboursement n\u2019ont pas d\u00e9j\u00e0 \u00e9t\u00e9 rembours\u00e9s, cr\u00e9dit\u00e9s ou vers\u00e9s au demandeur identifi\u00e9 \u00e0 la ",
+      "orig": "montants demand\u00e9s comme remboursement n\u2019ont pas d\u00e9j\u00e0 \u00e9t\u00e9 rembours\u00e9s, cr\u00e9dit\u00e9s ou vers\u00e9s au demandeur identifi\u00e9 \u00e0 la ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 41,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 467.106,
+        "r_x1": 555.488,
+        "r_y1": 467.106,
+        "r_x2": 555.488,
+        "r_y2": 476.418,
+        "r_x3": 34.998,
+        "r_y3": 476.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "partie A et n\u2019ont pas d\u00e9j\u00e0 \u00e9t\u00e9 demand\u00e9s comme cr\u00e9dits de taxe sur les intrants dans la d\u00e9claration de la TPS/TVH du ",
+      "orig": "partie A et n\u2019ont pas d\u00e9j\u00e0 \u00e9t\u00e9 demand\u00e9s comme cr\u00e9dits de taxe sur les intrants dans la d\u00e9claration de la TPS/TVH du ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 42,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 456.106,
+        "r_x1": 91.138,
+        "r_y1": 456.106,
+        "r_x2": 91.138,
+        "r_y2": 465.418,
+        "r_x3": 34.998,
+        "r_y3": 465.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "demandeur. ",
+      "orig": "demandeur. ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 43,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 435.106,
+        "r_x1": 576.298,
+        "r_y1": 435.106,
+        "r_x2": 576.298,
+        "r_y2": 444.418,
+        "r_x3": 34.998,
+        "r_y3": 444.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "J\u2019atteste \u00e9galement que le demandeur n\u2019a pas le droit de demander les montants comme cr\u00e9dit de taxe sur les intrants ou ",
+      "orig": "J\u2019atteste \u00e9galement que le demandeur n\u2019a pas le droit de demander les montants comme cr\u00e9dit de taxe sur les intrants ou ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 44,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 424.106,
+        "r_x1": 581.318,
+        "r_y1": 424.106,
+        "r_x2": 581.318,
+        "r_y2": 433.418,
+        "r_x3": 34.998,
+        "r_y3": 433.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "d\u2019obtenir autrement un remboursement ou une remise des montants et que le demandeur n\u2019a pas re\u00e7u de note de cr\u00e9dit, ni ",
+      "orig": "d\u2019obtenir autrement un remboursement ou une remise des montants et que le demandeur n\u2019a pas re\u00e7u de note de cr\u00e9dit, ni ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 45,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 413.106,
+        "r_x1": 585.298,
+        "r_y1": 413.106,
+        "r_x2": 585.298,
+        "r_y2": 422.418,
+        "r_x3": 34.998,
+        "r_y3": 422.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u00e9mis de note de d\u00e9bit pour un remboursement, un ajustement ou un cr\u00e9dit pour tout montant demand\u00e9 dans cette demande ",
+      "orig": "\u00e9mis de note de d\u00e9bit pour un remboursement, un ajustement ou un cr\u00e9dit pour tout montant demand\u00e9 dans cette demande ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 46,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 402.106,
+        "r_x1": 121.698,
+        "r_y1": 402.106,
+        "r_x2": 121.698,
+        "r_y2": 411.418,
+        "r_x3": 34.998,
+        "r_y3": 411.418,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "de remboursement.",
+      "orig": "de remboursement.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 47,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 83.374,
+        "r_y0": 363.576,
+        "r_x1": 195.624,
+        "r_y1": 363.576,
+        "r_x2": 195.624,
+        "r_y2": 372.888,
+        "r_x3": 83.374,
+        "r_y3": 372.888,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Nom (en lettres moul\u00e9es)",
+      "orig": "Nom (en lettres moul\u00e9es)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 48,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 345.498,
+        "r_y0": 363.576,
+        "r_x1": 365.498,
+        "r_y1": 363.576,
+        "r_x2": 365.498,
+        "r_y2": 372.888,
+        "r_x3": 345.498,
+        "r_y3": 372.888,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Titre",
+      "orig": "Titre",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 49,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 37.418,
+        "r_y0": 320.606,
+        "r_x1": 133.578,
+        "r_y1": 320.606,
+        "r_x2": 133.578,
+        "r_y2": 329.918,
+        "r_x3": 37.418,
+        "r_y3": 329.918,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Num\u00e9ro de t\u00e9l\u00e9phone",
+      "orig": "Num\u00e9ro de t\u00e9l\u00e9phone",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 50,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 155.718,
+        "r_y0": 321.576,
+        "r_x1": 181.288,
+        "r_y1": 321.576,
+        "r_x2": 181.288,
+        "r_y2": 330.888,
+        "r_x3": 155.718,
+        "r_y3": 330.888,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Poste",
+      "orig": "Poste",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 51,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 204.483,
+        "r_y0": 321.105,
+        "r_x1": 458.513,
+        "r_y1": 321.105,
+        "r_x2": 458.513,
+        "r_y2": 330.417,
+        "r_x3": 204.483,
+        "r_y3": 330.417,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Signature du demandeur ou de son repr\u00e9sentant autoris\u00e9",
+      "orig": "Signature du demandeur ou de son repr\u00e9sentant autoris\u00e9",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 52,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 466.993,
+        "r_y0": 321.575,
+        "r_x1": 580.943,
+        "r_y1": 321.575,
+        "r_x2": 580.943,
+        "r_y2": 330.887,
+        "r_x3": 466.993,
+        "r_y3": 330.887,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "     Ann\u00e9e       Mois   Jour ",
+      "orig": "     Ann\u00e9e       Mois   Jour ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 53,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 294.96,
+        "r_x1": 581.815,
+        "r_y1": 294.96,
+        "r_x2": 581.815,
+        "r_y2": 302.409,
+        "r_x3": 20.999,
+        "r_y3": 302.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Les renseignements personnels (y compris le NAS) sont recueillis et utilis\u00e9s aux fins d\u2019appliquer ou d\u2019ex\u00e9cuter la partie IX de la Loi sur la taxe d\u2019accise, et des ",
+      "orig": "Les renseignements personnels (y compris le NAS) sont recueillis et utilis\u00e9s aux fins d\u2019appliquer ou d\u2019ex\u00e9cuter la partie IX de la Loi sur la taxe d\u2019accise, et des ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 54,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 285.96,
+        "r_x1": 553.599,
+        "r_y1": 285.96,
+        "r_x2": 553.599,
+        "r_y2": 293.409,
+        "r_x3": 20.999,
+        "r_y3": 293.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "programmes et activit\u00e9s connexes incluant l\u2019administration de la taxe, les remboursements, les choix, la v\u00e9rification, l\u2019observation et la perception. Les ",
+      "orig": "programmes et activit\u00e9s connexes incluant l\u2019administration de la taxe, les remboursements, les choix, la v\u00e9rification, l\u2019observation et la perception. Les ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 55,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 276.96,
+        "r_x1": 579.927,
+        "r_y1": 276.96,
+        "r_x2": 579.927,
+        "r_y2": 284.409,
+        "r_x3": 20.999,
+        "r_y3": 284.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "renseignements recueillis peuvent \u00eatre communiqu\u00e9s \u00e0 une autre institution gouvernementale f\u00e9d\u00e9rale, provinciale, territoriale, autochtone ou \u00e9trang\u00e8re dans ",
+      "orig": "renseignements recueillis peuvent \u00eatre communiqu\u00e9s \u00e0 une autre institution gouvernementale f\u00e9d\u00e9rale, provinciale, territoriale, autochtone ou \u00e9trang\u00e8re dans ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 56,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 267.96,
+        "r_x1": 579.631,
+        "r_y1": 267.96,
+        "r_x2": 579.631,
+        "r_y2": 275.409,
+        "r_x3": 20.999,
+        "r_y3": 275.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "la mesure o\u00f9 le droit l\u2019autorise. Le d\u00e9faut de fournir ces renseignements pourrait entra\u00eener un paiement d\u2019int\u00e9r\u00eats ou de p\u00e9nalit\u00e9s, ou d\u2019autres mesures. Selon ",
+      "orig": "la mesure o\u00f9 le droit l\u2019autorise. Le d\u00e9faut de fournir ces renseignements pourrait entra\u00eener un paiement d\u2019int\u00e9r\u00eats ou de p\u00e9nalit\u00e9s, ou d\u2019autres mesures. Selon ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 57,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 258.96,
+        "r_x1": 551.199,
+        "r_y1": 258.96,
+        "r_x2": 551.199,
+        "r_y2": 266.409,
+        "r_x3": 20.999,
+        "r_y3": 266.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "la Loi sur la protection des renseignements personnels, les particuliers ont le droit \u00e0 la protection, \u00e0 l\u2019acc\u00e8s et \u00e0 la correction de leurs renseignements ",
+      "orig": "la Loi sur la protection des renseignements personnels, les particuliers ont le droit \u00e0 la protection, \u00e0 l\u2019acc\u00e8s et \u00e0 la correction de leurs renseignements ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 58,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 249.96,
+        "r_x1": 569.255,
+        "r_y1": 249.96,
+        "r_x2": 569.255,
+        "r_y2": 257.409,
+        "r_x3": 20.999,
+        "r_y3": 257.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "personnels et de d\u00e9poser une plainte aupr\u00e8s du Commissaire \u00e0 la protection de la vie priv\u00e9e du Canada concernant le traitement de leurs renseignements ",
+      "orig": "personnels et de d\u00e9poser une plainte aupr\u00e8s du Commissaire \u00e0 la protection de la vie priv\u00e9e du Canada concernant le traitement de leurs renseignements ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 59,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 240.96,
+        "r_x1": 365.143,
+        "r_y1": 240.96,
+        "r_x2": 365.143,
+        "r_y2": 248.409,
+        "r_x3": 20.999,
+        "r_y3": 248.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "personnels. Consultez le Fichier de renseignements personnels ARC PPU 241 sur Info Source \u00e0 ",
+      "orig": "personnels. Consultez le Fichier de renseignements personnels ARC PPU 241 sur Info Source \u00e0 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 60,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 365.143,
+        "r_y0": 240.952,
+        "r_x1": 464.287,
+        "r_y1": 240.952,
+        "r_x2": 464.287,
+        "r_y2": 248.433,
+        "r_x3": 365.143,
+        "r_y3": 248.433,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "canada.ca/arc-info-source",
+      "orig": "canada.ca/arc-info-source",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 61,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 464.287,
+        "r_y0": 240.96,
+        "r_x1": 466.511,
+        "r_y1": 240.96,
+        "r_x2": 466.511,
+        "r_y2": 248.409,
+        "r_x3": 464.287,
+        "r_y3": 248.409,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": ".",
+      "orig": ".",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 62,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 19.088,
+        "r_x1": 74.351,
+        "r_y1": 19.088,
+        "r_x2": 74.351,
+        "r_y2": 26.537,
+        "r_x3": 20.999,
+        "r_y3": 26.537,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "GST495 F (24)",
+      "orig": "GST495 F (24)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 63,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 547.855,
+        "r_y0": 19.464,
+        "r_x1": 590.999,
+        "r_y1": 19.464,
+        "r_x2": 590.999,
+        "r_y2": 26.913,
+        "r_x3": 547.855,
+        "r_y3": 26.913,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Page 4 de 5",
+      "orig": "Page 4 de 5",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 64,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 495.0,
+        "r_y0": 774.003,
+        "r_x1": 591.001,
+        "r_y1": 774.003,
+        "r_x2": 591.001,
+        "r_y2": 789.001,
+        "r_x3": 495.0,
+        "r_y3": 789.001,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "/Off",
+      "orig": "/Off",
+      "rendering_mode": "",
+      "font_key": "Form-font",
+      "font_name": "Form-font",
+      "widget": true
+    }
+  ],
+  "bitmap_resources": [],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          20.749,
+          753.001
+        ],
+        [
+          591.248,
+          753.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          305.747,
+          677.999
+        ],
+        [
+          399.246,
+          677.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          383.998,
+          689.998
+        ],
+        [
+          383.998,
+          677.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          461.749,
+          677.999
+        ],
+        [
+          555.248,
+          677.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          540.0,
+          689.998
+        ],
+        [
+          540.0,
+          677.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          305.747,
+          645.001
+        ],
+        [
+          399.246,
+          645.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          383.998,
+          657.0
+        ],
+        [
+          383.998,
+          645.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          461.749,
+          645.001
+        ],
+        [
+          555.248,
+          645.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          540.0,
+          657.0
+        ],
+        [
+          540.0,
+          645.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          305.747,
+          572.998
+        ],
+        [
+          399.246,
+          572.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          383.998,
+          584.997
+        ],
+        [
+          383.998,
+          572.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          461.749,
+          572.998
+        ],
+        [
+          555.248,
+          572.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          540.0,
+          584.997
+        ],
+        [
+          540.0,
+          572.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          569.999,
+          539.997
+        ],
+        [
+          585.0,
+          539.997
+        ],
+        [
+          585.0,
+          557.997
+        ],
+        [
+          569.999,
+          557.997
+        ],
+        [
+          569.999,
+          539.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          461.749,
+          539.997
+        ],
+        [
+          555.248,
+          539.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          540.0,
+          551.996
+        ],
+        [
+          540.0,
+          539.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          20.749,
+          527.998
+        ],
+        [
+          591.248,
+          527.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          374.998
+        ],
+        [
+          246.249,
+          374.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          254.749,
+          374.998
+        ],
+        [
+          456.248,
+          374.998
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          197.997,
+          332.997
+        ],
+        [
+          32.998,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          137.999,
+          350.997
+        ],
+        [
+          137.999,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          203.748,
+          332.997
+        ],
+        [
+          459.247,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          464.998,
+          347.998
+        ],
+        [
+          464.998,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          479.999,
+          341.997
+        ],
+        [
+          479.999,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          494.997,
+          341.997
+        ],
+        [
+          494.997,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          509.998,
+          341.997
+        ],
+        [
+          509.998,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          524.999,
+          347.998
+        ],
+        [
+          524.999,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          539.997,
+          341.997
+        ],
+        [
+          539.997,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          554.998,
+          347.998
+        ],
+        [
+          554.998,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          569.999,
+          341.997
+        ],
+        [
+          569.999,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          584.997,
+          347.998
+        ],
+        [
+          584.997,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          584.997,
+          332.997
+        ],
+        [
+          464.998,
+          332.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          20.749,
+          305.997
+        ],
+        [
+          591.248,
+          305.997
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          365.143,
+          241.934
+        ],
+        [
+          464.287,
+          241.934
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

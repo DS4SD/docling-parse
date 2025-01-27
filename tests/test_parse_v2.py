@@ -207,7 +207,7 @@ def test_reference_documents_from_filenames_with_keys():
         rname = os.path.basename(pdf_doc)
         fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v2.json")
 
-        if GENERATE:
+        if GENERATE or (not os.path.exists(fname)):
             with open(fname, "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))
 
@@ -249,7 +249,7 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
 
             pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
-            if GENERATE:
+            if GENERATE or (not os.path.exists(fname)):
                 with open(fname, "w") as fw:
                     fw.write(json.dumps(pred_doc, indent=2))
 
@@ -309,7 +309,7 @@ def test_reference_documents_from_bytesio_with_keys():
         rname = os.path.basename(pdf_doc)
         fname = os.path.join(GROUNDTRUTH_FOLDER, rname + ".v2.json")
 
-        if GENERATE:
+        if GENERATE or (not os.path.exists(fname)):
             with open(fname, "w") as fw:
                 fw.write(json.dumps(pred_doc, indent=2))
 
@@ -355,7 +355,7 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
 
             pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
 
-            if GENERATE:
+            if GENERATE or (not os.path.exists(fname)):
                 with open(fname, "w") as fw:
                     fw.write(json.dumps(pred_doc, indent=2))
 

@@ -1,0 +1,1405 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 595.303937007874,
+      "r_y1": 0.0,
+      "r_x2": 595.303937007874,
+      "r_y2": 841.889763779528,
+      "r_x3": 0.0,
+      "r_y3": 841.889763779528,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 841.889763779528,
+      "r": 595.303937007874,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 841.889763779528,
+      "r": 595.303937007874,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 841.889763779528,
+      "r": 595.303937007874,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 841.889763779528,
+      "r": 595.303937007874,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 841.889763779528,
+      "r": 595.303937007874,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 767.053,
+        "r_x1": 104.528,
+        "r_y1": 767.053,
+        "r_x2": 104.528,
+        "r_y2": 782.461,
+        "r_x3": 59.6,
+        "r_y3": 782.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Ng\u1ecdn n\u00fai",
+      "orig": "Ng\u1ecdn n\u00fai",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 155.9,
+        "r_y0": 767.053,
+        "r_x1": 210.488,
+        "r_y1": 767.053,
+        "r_x2": 210.488,
+        "r_y2": 782.461,
+        "r_x3": 155.9,
+        "r_y3": 782.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0110\u1ed9 cao (m)",
+      "orig": "\u0110\u1ed9 cao (m)",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 252.3,
+        "r_y0": 767.053,
+        "r_x1": 296.7,
+        "r_y1": 767.053,
+        "r_x2": 296.7,
+        "r_y2": 782.461,
+        "r_x3": 252.3,
+        "r_y3": 782.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0110\u1ea5t n\u01b0\u1edbc",
+      "orig": "\u0110\u1ea5t n\u01b0\u1edbc",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 767.053,
+        "r_x1": 390.292,
+        "r_y1": 767.053,
+        "r_x2": 390.292,
+        "r_y2": 782.461,
+        "r_x3": 348.7,
+        "r_y3": 782.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0110\u1ecba h\u00ecnh",
+      "orig": "\u0110\u1ecba h\u00ecnh",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 767.053,
+        "r_x1": 480.692,
+        "r_y1": 767.053,
+        "r_x2": 480.692,
+        "r_y2": 782.461,
+        "r_x3": 445.1,
+        "r_y3": 782.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Du l\u1ecbch",
+      "orig": "Du l\u1ecbch",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 747.253,
+        "r_x1": 125.18,
+        "r_y1": 747.253,
+        "r_x2": 125.18,
+        "r_y2": 762.661,
+        "r_x3": 59.6,
+        "r_y3": 762.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mount Felora",
+      "orig": "Mount Felora",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 219.9,
+        "r_y0": 747.253,
+        "r_x1": 266.904,
+        "r_y1": 747.253,
+        "r_x2": 266.904,
+        "r_y2": 762.661,
+        "r_x3": 219.9,
+        "r_y3": 762.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "3,850 \u00c1o",
+      "orig": "3,850 \u00c1o",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 747.253,
+        "r_x1": 435.292,
+        "r_y1": 747.253,
+        "r_x2": 435.292,
+        "r_y2": 762.661,
+        "r_x3": 348.7,
+        "r_y3": 762.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0110\u00e1 v\u00f4i, \u0111\u1ec9nh nh\u1ecdn",
+      "orig": "\u0110\u00e1 v\u00f4i, \u0111\u1ec9nh nh\u1ecdn",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 747.253,
+        "r_x1": 523.076,
+        "r_y1": 747.253,
+        "r_x2": 523.076,
+        "r_y2": 762.661,
+        "r_x3": 445.1,
+        "r_y3": 762.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Tham quan, leo ",
+      "orig": "Tham quan, leo ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 733.453,
+        "r_x1": 505.316,
+        "r_y1": 733.453,
+        "r_x2": 505.316,
+        "r_y2": 748.861,
+        "r_x3": 445.1,
+        "r_y3": 748.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "n\u00fai, c\u1eafm tr\u1ea1i",
+      "orig": "n\u00fai, c\u1eafm tr\u1ea1i",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 713.653,
+        "r_x1": 125.78,
+        "r_y1": 713.653,
+        "r_x2": 125.78,
+        "r_y2": 729.061,
+        "r_x3": 59.6,
+        "r_y3": 729.061,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mount Zalgar",
+      "orig": "Mount Zalgar",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 219.9,
+        "r_y0": 713.653,
+        "r_x1": 297.888,
+        "r_y1": 713.653,
+        "r_x2": 297.888,
+        "r_y2": 729.061,
+        "r_x3": 219.9,
+        "r_y3": 729.061,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "4,200 Nh\u1eadt B\u1ea3n",
+      "orig": "4,200 Nh\u1eadt B\u1ea3n",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 713.653,
+        "r_x1": 419.176,
+        "r_y1": 713.653,
+        "r_x2": 419.176,
+        "r_y2": 729.061,
+        "r_x3": 348.7,
+        "r_y3": 729.061,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "L\u1eeda n\u00fai, dung ",
+      "orig": "L\u1eeda n\u00fai, dung ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 699.853,
+        "r_x1": 375.328,
+        "r_y1": 699.853,
+        "r_x2": 375.328,
+        "r_y2": 715.261,
+        "r_x3": 348.7,
+        "r_y3": 715.261,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "nham",
+      "orig": "nham",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 713.653,
+        "r_x1": 534.692,
+        "r_y1": 713.653,
+        "r_x2": 534.692,
+        "r_y2": 729.061,
+        "r_x3": 445.1,
+        "r_y3": 729.061,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Leo n\u00fai, ch\u1ee5p \u1ea3nh ",
+      "orig": "Leo n\u00fai, ch\u1ee5p \u1ea3nh ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 699.853,
+        "r_x1": 488.012,
+        "r_y1": 699.853,
+        "r_x2": 488.012,
+        "r_y2": 715.261,
+        "r_x3": 445.1,
+        "r_y3": 715.261,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "c\u1ea3nh \u0111\u1eb9p",
+      "orig": "c\u1ea3nh \u0111\u1eb9p",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 680.053,
+        "r_x1": 132.188,
+        "r_y1": 680.053,
+        "r_x2": 132.188,
+        "r_y2": 695.461,
+        "r_x3": 59.6,
+        "r_y3": 695.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mount Vindara",
+      "orig": "Mount Vindara",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 225.9,
+        "r_y0": 680.053,
+        "r_x1": 280.92,
+        "r_y1": 680.053,
+        "r_x2": 280.92,
+        "r_y2": 695.461,
+        "r_x3": 225.9,
+        "r_y3": 695.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "5,15 Nepal",
+      "orig": "5,15 Nepal",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 680.053,
+        "r_x1": 429.592,
+        "r_y1": 680.053,
+        "r_x2": 429.592,
+        "r_y2": 695.461,
+        "r_x3": 348.7,
+        "r_y3": 695.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Tuy\u1ebft ph\u1ee7, b\u0103ng ",
+      "orig": "Tuy\u1ebft ph\u1ee7, b\u0103ng ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 666.253,
+        "r_x1": 372.628,
+        "r_y1": 666.253,
+        "r_x2": 372.628,
+        "r_y2": 681.661,
+        "r_x3": 348.7,
+        "r_y3": 681.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "tuy\u1ebft",
+      "orig": "tuy\u1ebft",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 680.053,
+        "r_x1": 522.692,
+        "r_y1": 680.053,
+        "r_x2": 522.692,
+        "r_y2": 695.461,
+        "r_x3": 445.1,
+        "r_y3": 695.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Leo n\u00fai chuy\u00ean ",
+      "orig": "Leo n\u00fai chuy\u00ean ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 666.253,
+        "r_x1": 523.688,
+        "r_y1": 666.253,
+        "r_x2": 523.688,
+        "r_y2": 681.661,
+        "r_x3": 445.1,
+        "r_y3": 681.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "nghi\u1ec7p, trekking",
+      "orig": "nghi\u1ec7p, trekking",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 646.453,
+        "r_x1": 135.176,
+        "r_y1": 646.453,
+        "r_x2": 135.176,
+        "r_y2": 661.861,
+        "r_x3": 59.6,
+        "r_y3": 661.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mount Radenor",
+      "orig": "Mount Radenor",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 219.9,
+        "r_y0": 646.453,
+        "r_x1": 278.208,
+        "r_y1": 646.453,
+        "r_x2": 278.208,
+        "r_y2": 661.861,
+        "r_x3": 219.9,
+        "r_y3": 661.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "3,730 Chile",
+      "orig": "3,730 Chile",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 646.453,
+        "r_x1": 430.78,
+        "r_y1": 646.453,
+        "r_x2": 430.78,
+        "r_y2": 661.861,
+        "r_x3": 348.7,
+        "r_y3": 661.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "V\u00f9ng r\u1eebng nhi\u1ec7t ",
+      "orig": "V\u00f9ng r\u1eebng nhi\u1ec7t ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 632.653,
+        "r_x1": 364.324,
+        "r_y1": 632.653,
+        "r_x2": 364.324,
+        "r_y2": 648.061,
+        "r_x3": 348.7,
+        "r_y3": 648.061,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0111\u1edbi",
+      "orig": "\u0111\u1edbi",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 646.453,
+        "r_x1": 524.684,
+        "r_y1": 646.453,
+        "r_x2": 524.684,
+        "r_y2": 661.861,
+        "r_x3": 445.1,
+        "r_y3": 661.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Kh\u00e1m ph\u00e1 thi\u00ean ",
+      "orig": "Kh\u00e1m ph\u00e1 thi\u00ean ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 632.653,
+        "r_x1": 516.704,
+        "r_y1": 632.653,
+        "r_x2": 516.704,
+        "r_y2": 648.061,
+        "r_x3": 445.1,
+        "r_y3": 648.061,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "nhi\u00ean, c\u1eafm tr\u1ea1i",
+      "orig": "nhi\u00ean, c\u1eafm tr\u1ea1i",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 612.853,
+        "r_x1": 138.092,
+        "r_y1": 612.853,
+        "r_x2": 138.092,
+        "r_y2": 628.261,
+        "r_x3": 59.6,
+        "r_y3": 628.261,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mount Volundra",
+      "orig": "Mount Volundra",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 219.9,
+        "r_y0": 612.853,
+        "r_x1": 287.508,
+        "r_y1": 612.853,
+        "r_x2": 287.508,
+        "r_y2": 628.261,
+        "r_x3": 219.9,
+        "r_y3": 628.261,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "2,600 Iceland",
+      "orig": "2,600 Iceland",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 612.853,
+        "r_x1": 422.476,
+        "r_y1": 612.853,
+        "r_x2": 422.476,
+        "r_y2": 628.261,
+        "r_x3": 348.7,
+        "r_y3": 628.261,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mi\u1ec7ng n\u00fai l\u1eeda, ",
+      "orig": "Mi\u1ec7ng n\u00fai l\u1eeda, ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 599.053,
+        "r_x1": 422.776,
+        "r_y1": 599.053,
+        "r_x2": 422.776,
+        "r_y2": 614.461,
+        "r_x3": 348.7,
+        "r_y3": 614.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "su\u1ed1i n\u01b0\u1edbc n\u00f3ng",
+      "orig": "su\u1ed1i n\u01b0\u1edbc n\u00f3ng",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 612.853,
+        "r_x1": 530.672,
+        "r_y1": 612.853,
+        "r_x2": 530.672,
+        "r_y2": 628.261,
+        "r_x3": 445.1,
+        "r_y3": 628.261,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Du l\u1ecbch sinh th\u00e1i, ",
+      "orig": "Du l\u1ecbch sinh th\u00e1i, ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 599.053,
+        "r_x1": 495.392,
+        "r_y1": 599.053,
+        "r_x2": 495.392,
+        "r_y2": 614.461,
+        "r_x3": 445.1,
+        "r_y3": 614.461,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "tham quan",
+      "orig": "tham quan",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 59.6,
+        "r_y0": 579.253,
+        "r_x1": 133.172,
+        "r_y1": 579.253,
+        "r_x2": 133.172,
+        "r_y2": 594.661,
+        "r_x3": 59.6,
+        "r_y3": 594.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Mount Golanar",
+      "orig": "Mount Golanar",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 219.9,
+        "r_y0": 579.253,
+        "r_x1": 276.288,
+        "r_y1": 579.253,
+        "r_x2": 276.288,
+        "r_y2": 594.661,
+        "r_x3": 219.9,
+        "r_y3": 594.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "4,500 Ph\u00e1p",
+      "orig": "4,500 Ph\u00e1p",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 579.253,
+        "r_x1": 428.584,
+        "r_y1": 579.253,
+        "r_x2": 428.584,
+        "r_y2": 594.661,
+        "r_x3": 348.7,
+        "r_y3": 594.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0110\u00e1 granit, m\u1ea1ch ",
+      "orig": "\u0110\u00e1 granit, m\u1ea1ch ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 37,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 348.7,
+        "r_y0": 565.453,
+        "r_x1": 402.508,
+        "r_y1": 565.453,
+        "r_x2": 402.508,
+        "r_y2": 580.861,
+        "r_x3": 348.7,
+        "r_y3": 580.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "n\u01b0\u1edbc ng\u1ea7m",
+      "orig": "n\u01b0\u1edbc ng\u1ea7m",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 38,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 579.253,
+        "r_x1": 534.38,
+        "r_y1": 579.253,
+        "r_x2": 534.38,
+        "r_y2": 594.661,
+        "r_x3": 445.1,
+        "r_y3": 594.661,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u0110i b\u1ed9, tham quan, ",
+      "orig": "\u0110i b\u1ed9, tham quan, ",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    },
+    {
+      "ordering": 39,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 445.1,
+        "r_y0": 565.453,
+        "r_x1": 500.192,
+        "r_y1": 565.453,
+        "r_x2": 500.192,
+        "r_y2": 580.861,
+        "r_x3": 445.1,
+        "r_y3": 580.861,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "ngh\u1ec9 d\u01b0\u1ee1ng",
+      "orig": "ngh\u1ec9 d\u01b0\u1ee1ng",
+      "rendering_mode": "",
+      "font_key": "/F1",
+      "font_name": "/BAAAAA+LiberationSerif",
+      "widget": false
+    }
+  ],
+  "bitmap_resources": [],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          784.939
+        ],
+        [
+          538.85,
+          784.939
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          765.139
+        ],
+        [
+          538.85,
+          765.139
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          731.539
+        ],
+        [
+          538.85,
+          731.539
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          697.939
+        ],
+        [
+          538.85,
+          697.939
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          664.339
+        ],
+        [
+          538.85,
+          664.339
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          630.739
+        ],
+        [
+          538.85,
+          630.739
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          597.139
+        ],
+        [
+          538.85,
+          597.139
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.45,
+          563.539
+        ],
+        [
+          538.85,
+          563.539
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.7,
+          785.189
+        ],
+        [
+          56.7,
+          563.289
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          153.1,
+          785.189
+        ],
+        [
+          153.1,
+          563.289
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          249.5,
+          785.189
+        ],
+        [
+          249.5,
+          563.289
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          345.8,
+          785.189
+        ],
+        [
+          345.8,
+          563.289
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          442.2,
+          785.189
+        ],
+        [
+          442.2,
+          563.289
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          538.6,
+          785.189
+        ],
+        [
+          538.6,
+          563.289
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

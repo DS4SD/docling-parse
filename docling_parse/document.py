@@ -154,6 +154,9 @@ class PdfCell(PdfColoredElement):
 
     rect: BoundingRectangle
 
+    rect_fontbbox: Optional[BoundingRectangle] = None
+    rect_capheight: Optional[BoundingRectangle] = None
+
     text: str
     orig: str
 
@@ -358,6 +361,12 @@ class SegmentedPdfPage(BaseModel):
         for cell in self.cells:
 
             line = ""
+            if add_location:
+                line += f"({cell.rect.r_x0:03.02f}, {cell.rect.r_y0:03.02f}) "
+                line += f"({cell.rect.r_x1:03.02f}, {cell.rect.r_y1:03.02f}) "
+                line += f"({cell.rect.r_x2:03.02f}, {cell.rect.r_y2:03.02f}) "
+                line += f"({cell.rect.r_x3:03.02f}, {cell.rect.r_y3:03.02f}) "
+
             if add_fontkey:
                 line += f"{cell.font_key} "
 
@@ -453,8 +462,8 @@ class SegmentedPdfPage(BaseModel):
             width, height = round(x1 - x0), round(y0 - y1)
 
             if width <= 2 or height <= 2:
-                logging.warning(f"skipping to draw text: {text}")
-                return img  # draw
+                # logging.warning(f"skipping to draw text (width: {x1-x0}, height: {y1-y0}): {text}")
+                return img
 
             # Use the default font if no font is provided
             if font is None:

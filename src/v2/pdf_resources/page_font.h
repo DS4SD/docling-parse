@@ -463,10 +463,23 @@ namespace pdflib
 
   std::string pdf_resource<PAGE_FONT>::get_correct_character(uint32_t c)
   {
-    // sometimes, a font has differences-map and a cmap
+    // Sometimes, a font has differences-map and a cmap
     // defined at the same time. So far, it seems that the
     // differences should take precedent over the cmap. This
-    // is however not really clear (eg p 292)
+    // is however not really clear (eg p 292). Notice also that
+    // we init the cmap before we init the difference and that the
+    // difference inherits the content of a the cmap. It is a bit
+    // messy and unclear her.
+
+    /*
+    if(diff_numb_to_char.count(c)>0 and cmap_numb_to_char.count(c)>0)
+      {
+	LOG_S(WARNING) << "there might be some confusion here: "
+		       << "diff["<<c<<"]: " << diff_numb_to_char.at(c) << " "
+		       << "cmap["<<c<<"]: " << cmap_numb_to_char.at(c);
+      }
+    */
+    
     if(diff_initialized and diff_numb_to_char.count(c)>0)
       {
         return diff_numb_to_char.at(c);
@@ -474,7 +487,7 @@ namespace pdflib
     else if(cmap_initialized and cmap_numb_to_char.count(c)>0)
       {
         return cmap_numb_to_char.at(c);
-      }    
+      }         
     else if(bfonts.has_corresponding_font(font_name))
       {
         // check if the font-name is registered as a 'special' font, eg
@@ -878,6 +891,7 @@ namespace pdflib
   }
 
 
+
   /*
   void pdf_resource<PAGE_FONT>::init_fontfile3()
   {
@@ -911,18 +925,35 @@ namespace pdflib
 	  auto buffer = qpdf_obj.getRawStreamData();
 	  
 	  LOG_S(INFO) << "buffer-size: " << buffer->getSize();
-	  LOG_S(INFO) << "buffer: " << buffer->getBuffer();
+	  //LOG_S(INFO) << "buffer: " << buffer->getBuffer();
+
+	  std::string filename = "fontfile.zip";
+	  std::ofstream outFile(filename, std::ios::binary);
+	  if (!outFile) {
+	    LOG_S(ERROR) << "opening file for writing: " << filename << std::endl;
+	    return;
+	  }
+
+	  outFile.write(reinterpret_cast<const char*>(buffer->getBuffer()), buffer->getSize());
+	  outFile.close();
+	  
+	  if (!outFile) {
+	    LOG_S(ERROR) << "Error occurred while writing to the file: " << filename << std::endl;
+	  } else {
+	    LOG_S(INFO) << "Buffer successfully written to " << filename << std::endl;
+	  }
 	}
 
 	{
-	  auto buffer = qpdf_obj.getStreamData(qpdf_dl_generalized);
+	auto buffer = qpdf_obj.getStreamData(qpdf_dl_generalized);
 	  
-	  LOG_S(INFO) << "buffer-size: " << buffer->getSize();
-	  LOG_S(INFO) << "buffer: " << buffer->getBuffer();
+	LOG_S(INFO) << "buffer-size: " << buffer->getSize();
+	//LOG_S(INFO) << "buffer: " << buffer->getBuffer();
 	}
 	
-	assert(false);
+	//assert(false);
       }
+
     else if(utils::json::has(keys_0, desc_font))
       {
 	auto qpdf_obj = qpdf_desc_font.getKey("/FontDescriptor").getKey("/FontFile3");
@@ -963,8 +994,9 @@ namespace pdflib
 	else
 	  {
 	    LOG_S(WARNING) << "fontfile3 is not a stream ...";
-	  }
+	  }	  
       }
+
     else
       {
 	LOG_S(WARNING) << "no fontfile3 detected ...";
@@ -1616,6 +1648,7 @@ namespace pdflib
     // Create a regex object
     std::regex re_01(R"(\/(.+)\.(.+))");
     std::regex re_02(R"((\/)?(uni|UNI)([0-9A-Ea-e]{4}))");
+    std::regex re_03(R"((\/)(g|G)\d+)");
     
     if(utils::json::has(keys, json_font))
       {
@@ -1654,10 +1687,13 @@ namespace pdflib
                       }
 		    else
 		      {}
+
+		    LOG_S(INFO) << name << ", in cmap: " << cmap_numb_to_char.count(numb) << ", #-names: " << name_to_descr.size() << ", type: " << subtype;
 		    
-                    if(name_to_descr.count(name)==1 and // only for TYPE_3 fonts
+                    if(subtype==TYPE_3 and //name_to_descr.count(name)==1 and // only for TYPE_3 fonts
                        cmap_numb_to_char.count(numb)==1)
                       {
+			LOG_S(WARNING) << "overloading difference from cmap";
                         diff_numb_to_char[numb] = cmap_numb_to_char[numb];
                       }
 
@@ -1738,6 +1774,13 @@ namespace pdflib
 			LOG_S(WARNING) << "differences["<<numb<<"] -> "
 				       << diff_numb_to_char[numb]
 				       << " (from " << name << ")";
+		      }
+		    else if(std::regex_match(name, match, re_03) and cmap_numb_to_char.count(numb)==1) // if the name is of type /g23 of /G23 and we have a match in the cmap
+		      {
+			LOG_S(WARNING) << "overloading difference from cmap";
+                        diff_numb_to_char[numb] = cmap_numb_to_char[numb];
+			//diff_numb_to_char[numb] = name;
+			//LOG_S(ERROR) << "weird differences["<<numb<<"] -> " << name;
 		      }
                     else
                       {

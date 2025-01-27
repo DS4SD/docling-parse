@@ -1,0 +1,1729 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 612.0,
+      "r_y1": 0.0,
+      "r_x2": 612.0,
+      "r_y2": 792.0,
+      "r_x3": 0.0,
+      "r_y3": 792.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 482.748,
+        "r_y0": 760.571,
+        "r_x1": 529.978,
+        "r_y1": 760.571,
+        "r_x2": 529.978,
+        "r_y2": 769.922,
+        "r_x3": 482.748,
+        "r_y3": 769.922,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Prot\u00e9g\u00e9 B",
+      "orig": "Prot\u00e9g\u00e9 B",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 529.978,
+        "r_y0": 760.794,
+        "r_x1": 590.998,
+        "r_y1": 760.794,
+        "r_x2": 590.998,
+        "r_y2": 769.175,
+        "r_x3": 529.978,
+        "r_y3": 769.175,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " une fois rempli",
+      "orig": " une fois rempli",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 22.999,
+        "r_y0": 736.657,
+        "r_x1": 242.383,
+        "r_y1": 736.657,
+        "r_x2": 242.383,
+        "r_y2": 747.878,
+        "r_x3": 22.999,
+        "r_y3": 747.878,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Partie A \u2014 Identification du demandeur",
+      "orig": "Partie A \u2014 Identification du demandeur",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 246.5,
+        "r_y0": 737.11,
+        "r_x1": 274.28,
+        "r_y1": 737.11,
+        "r_x2": 274.28,
+        "r_y2": 746.422,
+        "r_x3": 246.5,
+        "r_y3": 746.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "(suite)",
+      "orig": "(suite)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 711.627,
+        "r_x1": 132.81,
+        "r_y1": 711.627,
+        "r_x2": 132.81,
+        "r_y2": 721.913,
+        "r_x3": 34.998,
+        "r_y3": 721.913,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Adresse physique ",
+      "orig": "Adresse physique ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 132.81,
+        "r_y0": 711.637,
+        "r_x1": 297.535,
+        "r_y1": 711.637,
+        "r_x2": 297.535,
+        "r_y2": 721.88,
+        "r_x3": 132.81,
+        "r_y3": 721.88,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "(si diff\u00e9rente de l\u2019adresse postale)",
+      "orig": "(si diff\u00e9rente de l\u2019adresse postale)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 689.078,
+        "r_x1": 152.738,
+        "r_y1": 689.078,
+        "r_x2": 152.738,
+        "r_y2": 698.39,
+        "r_x3": 34.998,
+        "r_y3": 698.39,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "N\u00a1 d\u2019unit\u00e9 \u2014 n\u00a1 et rue, RR :",
+      "orig": "N\u00a1 d\u2019unit\u00e9 \u2014 n\u00a1 et rue, RR :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 662.078,
+        "r_x1": 59.448,
+        "r_y1": 662.078,
+        "r_x2": 59.448,
+        "r_y2": 671.39,
+        "r_x3": 34.998,
+        "r_y3": 671.39,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Ville :",
+      "orig": "Ville :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 634.078,
+        "r_x1": 155.048,
+        "r_y1": 634.078,
+        "r_x2": 155.048,
+        "r_y2": 643.39,
+        "r_x3": 34.998,
+        "r_y3": 643.39,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Province, territoire ou \u00e9tat :",
+      "orig": "Province, territoire ou \u00e9tat :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 608.078,
+        "r_x1": 126.158,
+        "r_y1": 608.078,
+        "r_x2": 126.158,
+        "r_y2": 617.39,
+        "r_x3": 34.998,
+        "r_y3": 617.39,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Code postal ou ZIP :",
+      "orig": "Code postal ou ZIP :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 581.078,
+        "r_x1": 62.788,
+        "r_y1": 581.078,
+        "r_x2": 62.788,
+        "r_y2": 590.39,
+        "r_x3": 34.998,
+        "r_y3": 590.39,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Pays :",
+      "orig": "Pays :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 22.999,
+        "r_y0": 547.657,
+        "r_x1": 296.623,
+        "r_y1": 547.657,
+        "r_x2": 296.623,
+        "r_y2": 558.878,
+        "r_x3": 22.999,
+        "r_y3": 558.878,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Partie B \u2014 Dates d\u2019arriv\u00e9e, de d\u00e9part et de retrait",
+      "orig": "Partie B \u2014 Dates d\u2019arriv\u00e9e, de d\u00e9part et de retrait",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 524.109,
+        "r_x1": 522.688,
+        "r_y1": 524.109,
+        "r_x2": 522.688,
+        "r_y2": 533.421,
+        "r_x3": 34.998,
+        "r_y3": 533.421,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Inscrivez les dates de votre arriv\u00e9e, de votre d\u00e9part et de votre retrait des produits d\u2019une province participante.",
+      "orig": "Inscrivez les dates de votre arriv\u00e9e, de votre d\u00e9part et de votre retrait des produits d\u2019une province participante.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 486.609,
+        "r_x1": 232.548,
+        "r_y1": 486.609,
+        "r_x2": 232.548,
+        "r_y2": 495.921,
+        "r_x3": 34.998,
+        "r_y3": 495.921,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date d\u2019arriv\u00e9e dans la province participante :",
+      "orig": "Date d\u2019arriv\u00e9e dans la province participante :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 262.997,
+        "r_y0": 503.58,
+        "r_x1": 374.167,
+        "r_y1": 503.58,
+        "r_x2": 374.167,
+        "r_y2": 512.892,
+        "r_x3": 262.997,
+        "r_y3": 512.892,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "     Ann\u00e9e       Mois   Jour",
+      "orig": "     Ann\u00e9e       Mois   Jour",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 462.579,
+        "r_x1": 549.588,
+        "r_y1": 462.579,
+        "r_x2": 549.588,
+        "r_y2": 471.891,
+        "r_x3": 34.998,
+        "r_y3": 471.891,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date d\u2019arriv\u00e9e de votre ",
+      "orig": "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date d\u2019arriv\u00e9e de votre ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 451.57,
+        "r_x1": 77.238,
+        "r_y1": 451.57,
+        "r_x2": 77.238,
+        "r_y2": 460.921,
+        "r_x3": 34.998,
+        "r_y3": 460.921,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "premi\u00e8re",
+      "orig": "premi\u00e8re",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 77.238,
+        "r_y0": 451.579,
+        "r_x1": 105.578,
+        "r_y1": 451.579,
+        "r_x2": 105.578,
+        "r_y2": 460.891,
+        "r_x3": 77.238,
+        "r_y3": 460.891,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " visite.",
+      "orig": " visite.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 414.609,
+        "r_x1": 226.208,
+        "r_y1": 414.609,
+        "r_x2": 226.208,
+        "r_y2": 423.921,
+        "r_x3": 34.998,
+        "r_y3": 423.921,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date de d\u00e9part de la province participante :",
+      "orig": "Date de d\u00e9part de la province participante :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 262.997,
+        "r_y0": 428.578,
+        "r_x1": 374.167,
+        "r_y1": 428.578,
+        "r_x2": 374.167,
+        "r_y2": 437.89,
+        "r_x3": 262.997,
+        "r_y3": 437.89,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "     Ann\u00e9e       Mois   Jour",
+      "orig": "     Ann\u00e9e       Mois   Jour",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 387.58,
+        "r_x1": 553.808,
+        "r_y1": 387.58,
+        "r_x2": 553.808,
+        "r_y2": 396.892,
+        "r_x3": 34.998,
+        "r_y3": 396.892,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date de d\u00e9part de votre ",
+      "orig": "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la date de d\u00e9part de votre ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 376.571,
+        "r_x1": 74.458,
+        "r_y1": 376.571,
+        "r_x2": 74.458,
+        "r_y2": 385.922,
+        "r_x3": 34.998,
+        "r_y3": 385.922,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "derni\u00e8re",
+      "orig": "derni\u00e8re",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 74.458,
+        "r_y0": 376.58,
+        "r_x1": 102.798,
+        "r_y1": 376.58,
+        "r_x2": 102.798,
+        "r_y2": 385.892,
+        "r_x3": 74.458,
+        "r_y3": 385.892,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " visite.",
+      "orig": " visite.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 345.11,
+        "r_x1": 231.768,
+        "r_y1": 345.11,
+        "r_x2": 231.768,
+        "r_y2": 354.422,
+        "r_x3": 34.998,
+        "r_y3": 354.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date o\u00f9 les produits ont \u00e9t\u00e9 transf\u00e9r\u00e9s de la ",
+      "orig": "Date o\u00f9 les produits ont \u00e9t\u00e9 transf\u00e9r\u00e9s de la ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 334.11,
+        "r_x1": 132.818,
+        "r_y1": 334.11,
+        "r_x2": 132.818,
+        "r_y2": 343.422,
+        "r_x3": 34.998,
+        "r_y3": 343.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "province participante :",
+      "orig": "province participante :",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 262.997,
+        "r_y0": 353.579,
+        "r_x1": 374.167,
+        "r_y1": 353.579,
+        "r_x2": 374.167,
+        "r_y2": 362.891,
+        "r_x3": 262.997,
+        "r_y3": 362.891,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "     Ann\u00e9e       Mois   Jour",
+      "orig": "     Ann\u00e9e       Mois   Jour",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 312.578,
+        "r_x1": 447.628,
+        "r_y1": 312.578,
+        "r_x2": 447.628,
+        "r_y2": 321.89,
+        "r_x3": 34.998,
+        "r_y3": 321.89,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la ",
+      "orig": "Si ce remboursement comprend plus d\u2019une visite dans une province participante, inscrivez la ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 447.628,
+        "r_y0": 312.569,
+        "r_x1": 487.088,
+        "r_y1": 312.569,
+        "r_x2": 487.088,
+        "r_y2": 321.92,
+        "r_x3": 447.628,
+        "r_y3": 321.92,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "derni\u00e8re",
+      "orig": "derni\u00e8re",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 487.088,
+        "r_y0": 312.578,
+        "r_x1": 581.278,
+        "r_y1": 312.578,
+        "r_x2": 581.278,
+        "r_y2": 321.89,
+        "r_x3": 487.088,
+        "r_y3": 321.89,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " date de retrait d\u2019une ",
+      "orig": " date de retrait d\u2019une ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 301.578,
+        "r_x1": 130.038,
+        "r_y1": 301.578,
+        "r_x2": 130.038,
+        "r_y2": 310.89,
+        "r_x3": 34.998,
+        "r_y3": 310.89,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "province participante.",
+      "orig": "province participante.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 19.087,
+        "r_x1": 74.351,
+        "r_y1": 19.087,
+        "r_x2": 74.351,
+        "r_y2": 26.536,
+        "r_x3": 20.999,
+        "r_y3": 26.536,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "GST495 F (24)",
+      "orig": "GST495 F (24)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 547.855,
+        "r_y0": 19.463,
+        "r_x1": 590.999,
+        "r_y1": 19.463,
+        "r_x2": 590.999,
+        "r_y2": 26.912,
+        "r_x3": 547.855,
+        "r_y3": 26.912,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Page 2 de 5",
+      "orig": "Page 2 de 5",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 495.0,
+        "r_y0": 774.003,
+        "r_x1": 591.001,
+        "r_y1": 774.003,
+        "r_x2": 591.001,
+        "r_y2": 789.001,
+        "r_x3": 495.0,
+        "r_y3": 789.001,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "/Off",
+      "orig": "/Off",
+      "rendering_mode": "",
+      "font_key": "Form-font",
+      "font_name": "Form-font",
+      "widget": true
+    }
+  ],
+  "bitmap_resources": [],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          20.749,
+          753.001
+        ],
+        [
+          591.248,
+          753.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          685.0
+        ],
+        [
+          585.247,
+          685.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          658.0
+        ],
+        [
+          585.247,
+          658.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          261.747,
+          631.0
+        ],
+        [
+          432.247,
+          631.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          604.0
+        ],
+        [
+          342.247,
+          604.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          577.0
+        ],
+        [
+          432.247,
+          577.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          20.749,
+          564.001
+        ],
+        [
+          591.248,
+          564.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          483.001
+        ],
+        [
+          381.246,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.997,
+          498.002
+        ],
+        [
+          260.997,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          275.998,
+          492.001
+        ],
+        [
+          275.998,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          290.996,
+          492.001
+        ],
+        [
+          290.996,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          305.997,
+          492.001
+        ],
+        [
+          305.997,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          320.998,
+          498.002
+        ],
+        [
+          320.998,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          335.996,
+          492.001
+        ],
+        [
+          335.996,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          350.997,
+          498.002
+        ],
+        [
+          350.997,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          365.998,
+          492.001
+        ],
+        [
+          365.998,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          380.996,
+          498.002
+        ],
+        [
+          380.996,
+          483.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          407.999
+        ],
+        [
+          381.246,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.997,
+          423.0
+        ],
+        [
+          260.997,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          275.998,
+          416.999
+        ],
+        [
+          275.998,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          290.996,
+          416.999
+        ],
+        [
+          290.996,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          305.997,
+          416.999
+        ],
+        [
+          305.997,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          320.998,
+          423.0
+        ],
+        [
+          320.998,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          335.996,
+          416.999
+        ],
+        [
+          335.996,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          350.997,
+          423.0
+        ],
+        [
+          350.997,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          365.998,
+          416.999
+        ],
+        [
+          365.998,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          380.996,
+          423.0
+        ],
+        [
+          380.996,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.747,
+          333.0
+        ],
+        [
+          381.246,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          260.997,
+          348.001
+        ],
+        [
+          260.997,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          275.998,
+          342.0
+        ],
+        [
+          275.998,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          290.996,
+          342.0
+        ],
+        [
+          290.996,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          305.997,
+          342.0
+        ],
+        [
+          305.997,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          320.998,
+          348.001
+        ],
+        [
+          320.998,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          335.996,
+          342.0
+        ],
+        [
+          335.996,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          350.997,
+          348.001
+        ],
+        [
+          350.997,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          365.998,
+          342.0
+        ],
+        [
+          365.998,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          380.996,
+          348.001
+        ],
+        [
+          380.996,
+          333.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

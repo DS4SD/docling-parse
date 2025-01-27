@@ -1,0 +1,8869 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 612.0,
+      "r_y1": 0.0,
+      "r_x2": 612.0,
+      "r_y2": 792.0,
+      "r_x3": 0.0,
+      "r_y3": 792.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 482.748,
+        "r_y0": 760.571,
+        "r_x1": 529.978,
+        "r_y1": 760.571,
+        "r_x2": 529.978,
+        "r_y2": 769.922,
+        "r_x3": 482.748,
+        "r_y3": 769.922,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Prot\u00e9g\u00e9 B",
+      "orig": "Prot\u00e9g\u00e9 B",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 529.978,
+        "r_y0": 760.794,
+        "r_x1": 590.998,
+        "r_y1": 760.794,
+        "r_x2": 590.998,
+        "r_y2": 769.175,
+        "r_x3": 529.978,
+        "r_y3": 769.175,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " une fois rempli",
+      "orig": " une fois rempli",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 22.999,
+        "r_y0": 736.657,
+        "r_x1": 235.099,
+        "r_y1": 736.657,
+        "r_x2": 235.099,
+        "r_y2": 747.878,
+        "r_x3": 22.999,
+        "r_y3": 747.878,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Partie C - D\u00e9tails des visites et re\u00e7us",
+      "orig": "Partie C - D\u00e9tails des visites et re\u00e7us",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 713.11,
+        "r_x1": 561.928,
+        "r_y1": 713.11,
+        "r_x2": 561.928,
+        "r_y2": 722.422,
+        "r_x3": 34.998,
+        "r_y3": 722.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Dans le tableau ci-dessous, indiquez les d\u00e9tails de chaque visite dans une province participante. Indiquez les dates de ",
+      "orig": "Dans le tableau ci-dessous, indiquez les d\u00e9tails de chaque visite dans une province participante. Indiquez les dates de ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 702.11,
+        "r_x1": 577.748,
+        "r_y1": 702.11,
+        "r_x2": 577.748,
+        "r_y2": 711.422,
+        "r_x3": 34.998,
+        "r_y3": 711.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "chaque visite et les d\u00e9tails de chaque re\u00e7u faisant l'objet de la demande pour les achats effectu\u00e9s au cours de cette visite. ",
+      "orig": "chaque visite et les d\u00e9tails de chaque re\u00e7u faisant l'objet de la demande pour les achats effectu\u00e9s au cours de cette visite. ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 691.11,
+        "r_x1": 575.518,
+        "r_y1": 691.11,
+        "r_x2": 575.518,
+        "r_y2": 700.422,
+        "r_x3": 34.998,
+        "r_y3": 700.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Si vous avez besoin de plus d'espace pour indiquez des d\u00e9tails additionnels, ajoutez une feuille de papier suppl\u00e9mentaire ",
+      "orig": "Si vous avez besoin de plus d'espace pour indiquez des d\u00e9tails additionnels, ajoutez une feuille de papier suppl\u00e9mentaire ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 680.11,
+        "r_x1": 251.748,
+        "r_y1": 680.11,
+        "r_x2": 251.748,
+        "r_y2": 689.422,
+        "r_x3": 34.998,
+        "r_y3": 689.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "avec les m\u00eames renseignements que la partie C.",
+      "orig": "avec les m\u00eames renseignements que la partie C.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.033,
+        "r_y0": 642.61,
+        "r_x1": 99.963,
+        "r_y1": 642.61,
+        "r_x2": 99.963,
+        "r_y2": 651.922,
+        "r_x3": 38.033,
+        "r_y3": 651.922,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date d'arriv\u00e9e",
+      "orig": "Date d'arriv\u00e9e",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 117.989,
+        "r_y0": 648.11,
+        "r_x1": 155.789,
+        "r_y1": 648.11,
+        "r_x2": 155.789,
+        "r_y2": 657.422,
+        "r_x3": 117.989,
+        "r_y3": 657.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date de ",
+      "orig": "Date de ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 121.329,
+        "r_y0": 637.11,
+        "r_x1": 149.679,
+        "r_y1": 637.11,
+        "r_x2": 149.679,
+        "r_y2": 646.422,
+        "r_x3": 121.329,
+        "r_y3": 646.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "d\u00e9part",
+      "orig": "d\u00e9part",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 173.035,
+        "r_y0": 659.11,
+        "r_x1": 264.745,
+        "r_y1": 659.11,
+        "r_x2": 264.745,
+        "r_y2": 668.422,
+        "r_x3": 173.035,
+        "r_y3": 668.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date o\u00f9 les produits ",
+      "orig": "Date o\u00f9 les produits ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 171.635,
+        "r_y0": 648.11,
+        "r_x1": 266.135,
+        "r_y1": 648.11,
+        "r_x2": 266.135,
+        "r_y2": 657.422,
+        "r_x3": 171.635,
+        "r_y3": 657.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "ont \u00e9t\u00e9 transf\u00e9r\u00e9s de ",
+      "orig": "ont \u00e9t\u00e9 transf\u00e9r\u00e9s de ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 193.325,
+        "r_y0": 637.11,
+        "r_x1": 244.455,
+        "r_y1": 637.11,
+        "r_x2": 244.455,
+        "r_y2": 646.422,
+        "r_x3": 193.325,
+        "r_y3": 646.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "la province ",
+      "orig": "la province ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 191.655,
+        "r_y0": 626.11,
+        "r_x1": 243.345,
+        "r_y1": 626.11,
+        "r_x2": 243.345,
+        "r_y2": 635.422,
+        "r_x3": 191.655,
+        "r_y3": 635.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "participante",
+      "orig": "participante",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 283.487,
+        "r_y0": 648.58,
+        "r_x1": 321.287,
+        "r_y1": 648.58,
+        "r_x2": 321.287,
+        "r_y2": 657.892,
+        "r_x3": 283.487,
+        "r_y3": 657.892,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Date de ",
+      "orig": "Date de ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 280.427,
+        "r_y0": 637.58,
+        "r_x1": 321.557,
+        "r_y1": 637.58,
+        "r_x2": 321.557,
+        "r_y2": 646.892,
+        "r_x3": 280.427,
+        "r_y3": 646.892,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "r\u00e9ception",
+      "orig": "r\u00e9ception",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 343.914,
+        "r_y0": 659.11,
+        "r_x1": 477.864,
+        "r_y1": 659.11,
+        "r_x2": 477.864,
+        "r_y2": 668.422,
+        "r_x3": 343.914,
+        "r_y3": 668.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Br\u00e8ve description des achats. ",
+      "orig": "Br\u00e8ve description des achats. ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 344.474,
+        "r_y0": 648.11,
+        "r_x1": 477.314,
+        "r_y1": 648.11,
+        "r_x2": 477.314,
+        "r_y2": 657.422,
+        "r_x3": 344.474,
+        "r_y3": 657.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Pour les achats de v\u00e9hicules, ",
+      "orig": "Pour les achats de v\u00e9hicules, ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 333.524,
+        "r_y0": 637.11,
+        "r_x1": 488.264,
+        "r_y1": 637.11,
+        "r_x2": 488.264,
+        "r_y2": 646.422,
+        "r_x3": 333.524,
+        "r_y3": 646.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "inscrivez le num\u00e9ro d'identification ",
+      "orig": "inscrivez le num\u00e9ro d'identification ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 343.924,
+        "r_y0": 626.11,
+        "r_x1": 475.084,
+        "r_y1": 626.11,
+        "r_x2": 475.084,
+        "r_y2": 635.422,
+        "r_x3": 343.924,
+        "r_y3": 635.422,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "du v\u00e9hicule (NIV) au complet.",
+      "orig": "du v\u00e9hicule (NIV) au complet.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 515.885,
+        "r_y0": 642.61,
+        "r_x1": 558.115,
+        "r_y1": 642.61,
+        "r_x2": 558.115,
+        "r_y2": 651.922,
+        "r_x3": 515.885,
+        "r_y3": 651.922,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "TPS/TVH",
+      "orig": "TPS/TVH",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 606.27,
+        "r_x1": 44.278,
+        "r_y1": 606.27,
+        "r_x2": 44.278,
+        "r_y2": 615.582,
+        "r_x3": 38.718,
+        "r_y3": 615.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "1",
+      "orig": "1",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 582.269,
+        "r_x1": 44.278,
+        "r_y1": 582.269,
+        "r_x2": 44.278,
+        "r_y2": 591.581,
+        "r_x3": 38.718,
+        "r_y3": 591.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "2",
+      "orig": "2",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 581.631,
+        "r_x1": 497.003,
+        "r_y1": 581.631,
+        "r_x2": 497.003,
+        "r_y2": 592.805,
+        "r_x3": 489.995,
+        "r_y3": 592.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 558.268,
+        "r_x1": 44.278,
+        "r_y1": 558.268,
+        "r_x2": 44.278,
+        "r_y2": 567.58,
+        "r_x3": 38.718,
+        "r_y3": 567.58,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "3",
+      "orig": "3",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 557.63,
+        "r_x1": 497.003,
+        "r_y1": 557.63,
+        "r_x2": 497.003,
+        "r_y2": 568.804,
+        "r_x3": 489.995,
+        "r_y3": 568.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 534.27,
+        "r_x1": 44.278,
+        "r_y1": 534.27,
+        "r_x2": 44.278,
+        "r_y2": 543.582,
+        "r_x3": 38.718,
+        "r_y3": 543.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "4",
+      "orig": "4",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 533.632,
+        "r_x1": 497.003,
+        "r_y1": 533.632,
+        "r_x2": 497.003,
+        "r_y2": 544.806,
+        "r_x3": 489.995,
+        "r_y3": 544.806,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 510.269,
+        "r_x1": 44.278,
+        "r_y1": 510.269,
+        "r_x2": 44.278,
+        "r_y2": 519.581,
+        "r_x3": 38.718,
+        "r_y3": 519.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "5",
+      "orig": "5",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 509.631,
+        "r_x1": 497.003,
+        "r_y1": 509.631,
+        "r_x2": 497.003,
+        "r_y2": 520.805,
+        "r_x3": 489.995,
+        "r_y3": 520.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 486.268,
+        "r_x1": 44.278,
+        "r_y1": 486.268,
+        "r_x2": 44.278,
+        "r_y2": 495.58,
+        "r_x3": 38.718,
+        "r_y3": 495.58,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "6",
+      "orig": "6",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 485.63,
+        "r_x1": 497.003,
+        "r_y1": 485.63,
+        "r_x2": 497.003,
+        "r_y2": 496.804,
+        "r_x3": 489.995,
+        "r_y3": 496.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 462.27,
+        "r_x1": 44.278,
+        "r_y1": 462.27,
+        "r_x2": 44.278,
+        "r_y2": 471.582,
+        "r_x3": 38.718,
+        "r_y3": 471.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "7",
+      "orig": "7",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 461.632,
+        "r_x1": 497.003,
+        "r_y1": 461.632,
+        "r_x2": 497.003,
+        "r_y2": 472.806,
+        "r_x3": 489.995,
+        "r_y3": 472.806,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 438.269,
+        "r_x1": 44.278,
+        "r_y1": 438.269,
+        "r_x2": 44.278,
+        "r_y2": 447.581,
+        "r_x3": 38.718,
+        "r_y3": 447.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "8",
+      "orig": "8",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 437.631,
+        "r_x1": 497.003,
+        "r_y1": 437.631,
+        "r_x2": 497.003,
+        "r_y2": 448.805,
+        "r_x3": 489.995,
+        "r_y3": 448.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 38.718,
+        "r_y0": 414.268,
+        "r_x1": 44.278,
+        "r_y1": 414.268,
+        "r_x2": 44.278,
+        "r_y2": 423.58,
+        "r_x3": 38.718,
+        "r_y3": 423.58,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "9",
+      "orig": "9",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 37,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 413.63,
+        "r_x1": 497.003,
+        "r_y1": 413.63,
+        "r_x2": 497.003,
+        "r_y2": 424.804,
+        "r_x3": 489.995,
+        "r_y3": 424.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 38,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 390.27,
+        "r_x1": 47.059,
+        "r_y1": 390.27,
+        "r_x2": 47.059,
+        "r_y2": 399.582,
+        "r_x3": 35.939,
+        "r_y3": 399.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "10",
+      "orig": "10",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 39,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 389.632,
+        "r_x1": 497.003,
+        "r_y1": 389.632,
+        "r_x2": 497.003,
+        "r_y2": 400.806,
+        "r_x3": 489.995,
+        "r_y3": 400.806,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 40,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 366.269,
+        "r_x1": 47.059,
+        "r_y1": 366.269,
+        "r_x2": 47.059,
+        "r_y2": 375.581,
+        "r_x3": 35.939,
+        "r_y3": 375.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "11",
+      "orig": "11",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 41,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 365.631,
+        "r_x1": 497.003,
+        "r_y1": 365.631,
+        "r_x2": 497.003,
+        "r_y2": 376.805,
+        "r_x3": 489.995,
+        "r_y3": 376.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 42,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 342.268,
+        "r_x1": 47.059,
+        "r_y1": 342.268,
+        "r_x2": 47.059,
+        "r_y2": 351.58,
+        "r_x3": 35.939,
+        "r_y3": 351.58,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "12",
+      "orig": "12",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 43,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 341.63,
+        "r_x1": 497.003,
+        "r_y1": 341.63,
+        "r_x2": 497.003,
+        "r_y2": 352.804,
+        "r_x3": 489.995,
+        "r_y3": 352.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 44,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 318.27,
+        "r_x1": 47.059,
+        "r_y1": 318.27,
+        "r_x2": 47.059,
+        "r_y2": 327.582,
+        "r_x3": 35.939,
+        "r_y3": 327.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "13",
+      "orig": "13",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 45,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 317.632,
+        "r_x1": 497.003,
+        "r_y1": 317.632,
+        "r_x2": 497.003,
+        "r_y2": 328.806,
+        "r_x3": 489.995,
+        "r_y3": 328.806,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 46,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 294.269,
+        "r_x1": 47.059,
+        "r_y1": 294.269,
+        "r_x2": 47.059,
+        "r_y2": 303.581,
+        "r_x3": 35.939,
+        "r_y3": 303.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "14",
+      "orig": "14",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 47,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 293.631,
+        "r_x1": 497.003,
+        "r_y1": 293.631,
+        "r_x2": 497.003,
+        "r_y2": 304.805,
+        "r_x3": 489.995,
+        "r_y3": 304.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 48,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 270.268,
+        "r_x1": 47.059,
+        "r_y1": 270.268,
+        "r_x2": 47.059,
+        "r_y2": 279.58,
+        "r_x3": 35.939,
+        "r_y3": 279.58,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "15",
+      "orig": "15",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 49,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 269.63,
+        "r_x1": 497.003,
+        "r_y1": 269.63,
+        "r_x2": 497.003,
+        "r_y2": 280.804,
+        "r_x3": 489.995,
+        "r_y3": 280.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 50,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 246.27,
+        "r_x1": 47.059,
+        "r_y1": 246.27,
+        "r_x2": 47.059,
+        "r_y2": 255.582,
+        "r_x3": 35.939,
+        "r_y3": 255.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "16",
+      "orig": "16",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 51,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 245.632,
+        "r_x1": 497.003,
+        "r_y1": 245.632,
+        "r_x2": 497.003,
+        "r_y2": 256.806,
+        "r_x3": 489.995,
+        "r_y3": 256.806,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 52,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 222.269,
+        "r_x1": 47.059,
+        "r_y1": 222.269,
+        "r_x2": 47.059,
+        "r_y2": 231.581,
+        "r_x3": 35.939,
+        "r_y3": 231.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "17",
+      "orig": "17",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 53,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 221.631,
+        "r_x1": 497.003,
+        "r_y1": 221.631,
+        "r_x2": 497.003,
+        "r_y2": 232.805,
+        "r_x3": 489.995,
+        "r_y3": 232.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 54,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 198.268,
+        "r_x1": 47.059,
+        "r_y1": 198.268,
+        "r_x2": 47.059,
+        "r_y2": 207.58,
+        "r_x3": 35.939,
+        "r_y3": 207.58,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "18",
+      "orig": "18",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 55,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 197.63,
+        "r_x1": 497.003,
+        "r_y1": 197.63,
+        "r_x2": 497.003,
+        "r_y2": 208.804,
+        "r_x3": 489.995,
+        "r_y3": 208.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 56,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 174.27,
+        "r_x1": 47.059,
+        "r_y1": 174.27,
+        "r_x2": 47.059,
+        "r_y2": 183.582,
+        "r_x3": 35.939,
+        "r_y3": 183.582,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "19",
+      "orig": "19",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 57,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 173.632,
+        "r_x1": 497.003,
+        "r_y1": 173.632,
+        "r_x2": 497.003,
+        "r_y2": 184.806,
+        "r_x3": 489.995,
+        "r_y3": 184.806,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 58,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 35.939,
+        "r_y0": 150.269,
+        "r_x1": 47.059,
+        "r_y1": 150.269,
+        "r_x2": 47.059,
+        "r_y2": 159.581,
+        "r_x3": 35.939,
+        "r_y3": 159.581,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "20",
+      "orig": "20",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 59,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 149.631,
+        "r_x1": 497.003,
+        "r_y1": 149.631,
+        "r_x2": 497.003,
+        "r_y2": 160.805,
+        "r_x3": 489.995,
+        "r_y3": 160.805,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "+",
+      "orig": "+",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 60,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 34.998,
+        "r_y0": 127.069,
+        "r_x1": 61.668,
+        "r_y1": 127.069,
+        "r_x2": 61.668,
+        "r_y2": 136.42,
+        "r_x3": 34.998,
+        "r_y3": 136.42,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Total ",
+      "orig": "Total ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/AAAAAB+Helvetica-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 61,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 61.668,
+        "r_y0": 127.078,
+        "r_x1": 290.098,
+        "r_y1": 127.078,
+        "r_x2": 290.098,
+        "r_y2": 136.39,
+        "r_x3": 61.668,
+        "r_y3": 136.39,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "(Inscrivez ce montant \u00e0 la colonne 1 de la partie D.)",
+      "orig": "(Inscrivez ce montant \u00e0 la colonne 1 de la partie D.)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 62,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 489.995,
+        "r_y0": 125.63,
+        "r_x1": 497.003,
+        "r_y1": 125.63,
+        "r_x2": 497.003,
+        "r_y2": 136.804,
+        "r_x3": 489.995,
+        "r_y3": 136.804,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "=",
+      "orig": "=",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 63,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 20.999,
+        "r_y0": 19.087,
+        "r_x1": 74.351,
+        "r_y1": 19.087,
+        "r_x2": 74.351,
+        "r_y2": 26.536,
+        "r_x3": 20.999,
+        "r_y3": 26.536,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "GST495 F (24)",
+      "orig": "GST495 F (24)",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 64,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 547.855,
+        "r_y0": 19.463,
+        "r_x1": 590.999,
+        "r_y1": 19.463,
+        "r_x2": 590.999,
+        "r_y2": 26.912,
+        "r_x3": 547.855,
+        "r_y3": 26.912,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Page 3 de 5",
+      "orig": "Page 3 de 5",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/AAAAAC+Helvetica",
+      "widget": false
+    },
+    {
+      "ordering": 65,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 495.0,
+        "r_y0": 774.003,
+        "r_x1": 591.001,
+        "r_y1": 774.003,
+        "r_x2": 591.001,
+        "r_y2": 789.001,
+        "r_x3": 495.0,
+        "r_y3": 789.001,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "/Off",
+      "orig": "/Off",
+      "rendering_mode": "",
+      "font_key": "Form-font",
+      "font_name": "Form-font",
+      "widget": true
+    }
+  ],
+  "bitmap_resources": [],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          20.749,
+          753.001
+        ],
+        [
+          591.248,
+          753.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          672.001
+        ],
+        [
+          105.248,
+          672.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          672.251
+        ],
+        [
+          32.998,
+          623.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          672.001
+        ],
+        [
+          165.249,
+          672.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          624.002
+        ],
+        [
+          165.249,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          672.251
+        ],
+        [
+          104.998,
+          623.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          672.001
+        ],
+        [
+          270.25,
+          672.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          624.002
+        ],
+        [
+          270.25,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          672.251
+        ],
+        [
+          164.999,
+          623.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          672.001
+        ],
+        [
+          330.248,
+          672.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          624.002
+        ],
+        [
+          330.248,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          672.251
+        ],
+        [
+          269.997,
+          623.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          672.001
+        ],
+        [
+          489.249,
+          672.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          624.002
+        ],
+        [
+          489.249,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          672.251
+        ],
+        [
+          329.998,
+          623.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          624.002
+        ],
+        [
+          585.0,
+          624.002
+        ],
+        [
+          585.0,
+          672.001
+        ],
+        [
+          488.999,
+          672.001
+        ],
+        [
+          488.999,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          624.002
+        ],
+        [
+          105.248,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          624.252
+        ],
+        [
+          32.998,
+          599.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          624.002
+        ],
+        [
+          165.249,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          624.252
+        ],
+        [
+          104.998,
+          599.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          624.002
+        ],
+        [
+          270.25,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          624.252
+        ],
+        [
+          164.999,
+          599.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          624.002
+        ],
+        [
+          330.248,
+          624.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          624.252
+        ],
+        [
+          269.997,
+          599.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          600.001
+        ],
+        [
+          489.249,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          624.252
+        ],
+        [
+          329.998,
+          599.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          600.001
+        ],
+        [
+          585.25,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          624.252
+        ],
+        [
+          488.999,
+          599.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          624.252
+        ],
+        [
+          585.0,
+          599.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          615.002
+        ],
+        [
+          563.998,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          600.001
+        ],
+        [
+          105.248,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          600.251
+        ],
+        [
+          32.998,
+          575.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          600.001
+        ],
+        [
+          165.249,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          600.251
+        ],
+        [
+          104.998,
+          575.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          600.001
+        ],
+        [
+          270.25,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          600.251
+        ],
+        [
+          164.999,
+          575.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          600.001
+        ],
+        [
+          330.248,
+          600.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 37,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          600.251
+        ],
+        [
+          269.997,
+          575.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 38,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          576.0
+        ],
+        [
+          489.249,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 39,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          600.251
+        ],
+        [
+          329.998,
+          575.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 40,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          576.0
+        ],
+        [
+          585.25,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 41,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          600.251
+        ],
+        [
+          488.999,
+          575.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 42,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          600.251
+        ],
+        [
+          585.0,
+          575.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 43,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          591.001
+        ],
+        [
+          563.998,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 44,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          576.0
+        ],
+        [
+          105.248,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 45,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          576.25
+        ],
+        [
+          32.998,
+          551.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 46,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          576.0
+        ],
+        [
+          165.249,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 47,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          576.25
+        ],
+        [
+          104.998,
+          551.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 48,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          576.0
+        ],
+        [
+          270.25,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 49,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          576.25
+        ],
+        [
+          164.999,
+          551.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 50,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          576.0
+        ],
+        [
+          330.248,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 51,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          576.25
+        ],
+        [
+          269.997,
+          551.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 52,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          551.999
+        ],
+        [
+          489.249,
+          551.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 53,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          576.25
+        ],
+        [
+          329.998,
+          551.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 54,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          551.999
+        ],
+        [
+          585.25,
+          551.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 55,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          576.25
+        ],
+        [
+          488.999,
+          551.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 56,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          576.25
+        ],
+        [
+          585.0,
+          551.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 57,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          567.0
+        ],
+        [
+          563.998,
+          551.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 58,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          552.002
+        ],
+        [
+          105.248,
+          552.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 59,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          528.001
+        ],
+        [
+          105.248,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 60,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          552.252
+        ],
+        [
+          32.998,
+          527.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 61,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          552.002
+        ],
+        [
+          165.249,
+          552.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 62,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          528.001
+        ],
+        [
+          165.249,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 63,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          552.252
+        ],
+        [
+          104.998,
+          527.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 64,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          552.002
+        ],
+        [
+          270.25,
+          552.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 65,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          528.001
+        ],
+        [
+          270.25,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 66,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          552.252
+        ],
+        [
+          164.999,
+          527.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 67,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          552.002
+        ],
+        [
+          330.248,
+          552.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 68,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          528.001
+        ],
+        [
+          330.248,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 69,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          552.252
+        ],
+        [
+          269.997,
+          527.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 70,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          528.001
+        ],
+        [
+          489.249,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 71,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          552.252
+        ],
+        [
+          329.998,
+          527.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 72,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          528.001
+        ],
+        [
+          585.25,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 73,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          552.252
+        ],
+        [
+          488.999,
+          527.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 74,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          552.252
+        ],
+        [
+          585.0,
+          527.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 75,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          543.002
+        ],
+        [
+          563.998,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 76,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          528.001
+        ],
+        [
+          105.248,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 77,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          504.0
+        ],
+        [
+          105.248,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 78,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          528.251
+        ],
+        [
+          32.998,
+          503.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 79,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          528.001
+        ],
+        [
+          165.249,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 80,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          504.0
+        ],
+        [
+          165.249,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 81,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          528.251
+        ],
+        [
+          104.998,
+          503.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 82,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          528.001
+        ],
+        [
+          270.25,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 83,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          504.0
+        ],
+        [
+          270.25,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 84,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          528.251
+        ],
+        [
+          164.999,
+          503.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 85,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          528.001
+        ],
+        [
+          330.248,
+          528.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 86,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          504.0
+        ],
+        [
+          330.248,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 87,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          528.251
+        ],
+        [
+          269.997,
+          503.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 88,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          504.0
+        ],
+        [
+          489.249,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 89,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          528.251
+        ],
+        [
+          329.998,
+          503.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 90,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          504.0
+        ],
+        [
+          585.25,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 91,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          528.251
+        ],
+        [
+          488.999,
+          503.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 92,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          528.251
+        ],
+        [
+          585.0,
+          503.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 93,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          519.001
+        ],
+        [
+          563.998,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 94,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          504.0
+        ],
+        [
+          105.248,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 95,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          504.25
+        ],
+        [
+          32.998,
+          479.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 96,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          504.0
+        ],
+        [
+          165.249,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 97,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          504.25
+        ],
+        [
+          104.998,
+          479.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 98,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          504.0
+        ],
+        [
+          270.25,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 99,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          504.25
+        ],
+        [
+          164.999,
+          479.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 100,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          504.0
+        ],
+        [
+          330.248,
+          504.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 101,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          504.25
+        ],
+        [
+          269.997,
+          479.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 102,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          479.999
+        ],
+        [
+          489.249,
+          479.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 103,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          504.25
+        ],
+        [
+          329.998,
+          479.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 104,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          479.999
+        ],
+        [
+          585.25,
+          479.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 105,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          504.25
+        ],
+        [
+          488.999,
+          479.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 106,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          504.25
+        ],
+        [
+          585.0,
+          479.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 107,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          495.0
+        ],
+        [
+          563.998,
+          479.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 108,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          480.002
+        ],
+        [
+          105.248,
+          480.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 109,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          480.252
+        ],
+        [
+          32.998,
+          455.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 110,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          480.002
+        ],
+        [
+          165.249,
+          480.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 111,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          480.252
+        ],
+        [
+          104.998,
+          455.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 112,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          480.002
+        ],
+        [
+          270.25,
+          480.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 113,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          480.252
+        ],
+        [
+          164.999,
+          455.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 114,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          480.002
+        ],
+        [
+          330.248,
+          480.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 115,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          480.252
+        ],
+        [
+          269.997,
+          455.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 116,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          456.001
+        ],
+        [
+          489.249,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 117,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          480.252
+        ],
+        [
+          329.998,
+          455.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 118,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          456.001
+        ],
+        [
+          585.25,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 119,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          480.252
+        ],
+        [
+          488.999,
+          455.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 120,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          480.252
+        ],
+        [
+          585.0,
+          455.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 121,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          471.002
+        ],
+        [
+          563.998,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 122,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          456.001
+        ],
+        [
+          105.248,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 123,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          456.251
+        ],
+        [
+          32.998,
+          431.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 124,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          456.001
+        ],
+        [
+          165.249,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 125,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          456.251
+        ],
+        [
+          104.998,
+          431.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 126,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          456.001
+        ],
+        [
+          270.25,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 127,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          456.251
+        ],
+        [
+          164.999,
+          431.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 128,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          456.001
+        ],
+        [
+          330.248,
+          456.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 129,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          456.251
+        ],
+        [
+          269.997,
+          431.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 130,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          432.0
+        ],
+        [
+          489.249,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 131,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          456.251
+        ],
+        [
+          329.998,
+          431.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 132,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          432.0
+        ],
+        [
+          585.25,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 133,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          456.251
+        ],
+        [
+          488.999,
+          431.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 134,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          456.251
+        ],
+        [
+          585.0,
+          431.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 135,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          447.001
+        ],
+        [
+          563.998,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 136,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          432.0
+        ],
+        [
+          105.248,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 137,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          407.999
+        ],
+        [
+          105.248,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 138,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          432.25
+        ],
+        [
+          32.998,
+          407.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 139,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          432.0
+        ],
+        [
+          165.249,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 140,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          407.999
+        ],
+        [
+          165.249,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 141,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          432.25
+        ],
+        [
+          104.998,
+          407.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 142,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          432.0
+        ],
+        [
+          270.25,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 143,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          407.999
+        ],
+        [
+          270.25,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 144,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          432.25
+        ],
+        [
+          164.999,
+          407.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 145,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          432.0
+        ],
+        [
+          330.248,
+          432.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 146,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          407.999
+        ],
+        [
+          330.248,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 147,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          432.25
+        ],
+        [
+          269.997,
+          407.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 148,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          407.999
+        ],
+        [
+          489.249,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 149,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          432.25
+        ],
+        [
+          329.998,
+          407.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 150,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          407.999
+        ],
+        [
+          585.25,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 151,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          432.25
+        ],
+        [
+          488.999,
+          407.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 152,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          432.25
+        ],
+        [
+          585.0,
+          407.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 153,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          423.0
+        ],
+        [
+          563.998,
+          407.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 154,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          408.002
+        ],
+        [
+          105.248,
+          408.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 155,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          408.252
+        ],
+        [
+          32.998,
+          383.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 156,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          408.002
+        ],
+        [
+          165.249,
+          408.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 157,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          408.252
+        ],
+        [
+          104.998,
+          383.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 158,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          408.002
+        ],
+        [
+          270.25,
+          408.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 159,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          408.252
+        ],
+        [
+          164.999,
+          383.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 160,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          408.002
+        ],
+        [
+          330.248,
+          408.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 161,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          408.252
+        ],
+        [
+          269.997,
+          383.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 162,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          384.001
+        ],
+        [
+          489.249,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 163,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          408.252
+        ],
+        [
+          329.998,
+          383.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 164,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          384.001
+        ],
+        [
+          585.25,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 165,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          408.252
+        ],
+        [
+          488.999,
+          383.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 166,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          408.252
+        ],
+        [
+          585.0,
+          383.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 167,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          399.002
+        ],
+        [
+          563.998,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 168,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          384.001
+        ],
+        [
+          105.248,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 169,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          384.251
+        ],
+        [
+          32.998,
+          359.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 170,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          384.001
+        ],
+        [
+          165.249,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 171,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          384.251
+        ],
+        [
+          104.998,
+          359.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 172,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          384.001
+        ],
+        [
+          270.25,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 173,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          384.251
+        ],
+        [
+          164.999,
+          359.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 174,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          384.001
+        ],
+        [
+          330.248,
+          384.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 175,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          384.251
+        ],
+        [
+          269.997,
+          359.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 176,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          360.0
+        ],
+        [
+          489.249,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 177,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          384.251
+        ],
+        [
+          329.998,
+          359.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 178,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          360.0
+        ],
+        [
+          585.25,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 179,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          384.251
+        ],
+        [
+          488.999,
+          359.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 180,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          384.251
+        ],
+        [
+          585.0,
+          359.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 181,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          375.001
+        ],
+        [
+          563.998,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 182,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          360.0
+        ],
+        [
+          105.248,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 183,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          360.25
+        ],
+        [
+          32.998,
+          335.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 184,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          360.0
+        ],
+        [
+          165.249,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 185,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          360.25
+        ],
+        [
+          104.998,
+          335.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 186,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          360.0
+        ],
+        [
+          270.25,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 187,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          360.25
+        ],
+        [
+          164.999,
+          335.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 188,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          360.0
+        ],
+        [
+          330.248,
+          360.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 189,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          360.25
+        ],
+        [
+          269.997,
+          335.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 190,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          335.999
+        ],
+        [
+          489.249,
+          335.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 191,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          360.25
+        ],
+        [
+          329.998,
+          335.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 192,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          335.999
+        ],
+        [
+          585.25,
+          335.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 193,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          360.25
+        ],
+        [
+          488.999,
+          335.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 194,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          360.25
+        ],
+        [
+          585.0,
+          335.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 195,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          351.0
+        ],
+        [
+          563.998,
+          335.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 196,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          336.002
+        ],
+        [
+          105.248,
+          336.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 197,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          336.252
+        ],
+        [
+          32.998,
+          311.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 198,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          336.002
+        ],
+        [
+          165.249,
+          336.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 199,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          336.252
+        ],
+        [
+          104.998,
+          311.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 200,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          336.002
+        ],
+        [
+          270.25,
+          336.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 201,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          336.252
+        ],
+        [
+          164.999,
+          311.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 202,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          336.002
+        ],
+        [
+          330.248,
+          336.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 203,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          336.252
+        ],
+        [
+          269.997,
+          311.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 204,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          312.001
+        ],
+        [
+          489.249,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 205,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          336.252
+        ],
+        [
+          329.998,
+          311.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 206,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          312.001
+        ],
+        [
+          585.25,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 207,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          336.252
+        ],
+        [
+          488.999,
+          311.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 208,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          336.252
+        ],
+        [
+          585.0,
+          311.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 209,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          327.002
+        ],
+        [
+          563.998,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 210,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          312.001
+        ],
+        [
+          105.248,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 211,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          312.251
+        ],
+        [
+          32.998,
+          287.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 212,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          312.001
+        ],
+        [
+          165.249,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 213,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          312.251
+        ],
+        [
+          104.998,
+          287.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 214,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          312.001
+        ],
+        [
+          270.25,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 215,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          312.251
+        ],
+        [
+          164.999,
+          287.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 216,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          312.001
+        ],
+        [
+          330.248,
+          312.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 217,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          312.251
+        ],
+        [
+          269.997,
+          287.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 218,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          288.0
+        ],
+        [
+          489.249,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 219,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          312.251
+        ],
+        [
+          329.998,
+          287.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 220,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          288.0
+        ],
+        [
+          585.25,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 221,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          312.251
+        ],
+        [
+          488.999,
+          287.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 222,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          312.251
+        ],
+        [
+          585.0,
+          287.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 223,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          303.001
+        ],
+        [
+          563.998,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 224,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          288.0
+        ],
+        [
+          105.248,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 225,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          263.999
+        ],
+        [
+          105.248,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 226,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          288.25
+        ],
+        [
+          32.998,
+          263.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 227,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          288.0
+        ],
+        [
+          165.249,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 228,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          263.999
+        ],
+        [
+          165.249,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 229,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          288.25
+        ],
+        [
+          104.998,
+          263.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 230,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          288.0
+        ],
+        [
+          270.25,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 231,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          263.999
+        ],
+        [
+          270.25,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 232,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          288.25
+        ],
+        [
+          164.999,
+          263.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 233,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          288.0
+        ],
+        [
+          330.248,
+          288.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 234,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          263.999
+        ],
+        [
+          330.248,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 235,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          288.25
+        ],
+        [
+          269.997,
+          263.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 236,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          263.999
+        ],
+        [
+          489.249,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 237,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          288.25
+        ],
+        [
+          329.998,
+          263.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 238,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          263.999
+        ],
+        [
+          585.25,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 239,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          288.25
+        ],
+        [
+          488.999,
+          263.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 240,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          288.25
+        ],
+        [
+          585.0,
+          263.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 241,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          279.0
+        ],
+        [
+          563.998,
+          263.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 242,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          264.002
+        ],
+        [
+          105.248,
+          264.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 243,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          264.252
+        ],
+        [
+          32.998,
+          239.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 244,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          264.002
+        ],
+        [
+          165.249,
+          264.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 245,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          264.252
+        ],
+        [
+          104.998,
+          239.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 246,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          264.002
+        ],
+        [
+          270.25,
+          264.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 247,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          264.252
+        ],
+        [
+          164.999,
+          239.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 248,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          264.002
+        ],
+        [
+          330.248,
+          264.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 249,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          264.252
+        ],
+        [
+          269.997,
+          239.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 250,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          240.001
+        ],
+        [
+          489.249,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 251,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          264.252
+        ],
+        [
+          329.998,
+          239.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 252,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          240.001
+        ],
+        [
+          585.25,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 253,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          264.252
+        ],
+        [
+          488.999,
+          239.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 254,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          264.252
+        ],
+        [
+          585.0,
+          239.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 255,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          255.002
+        ],
+        [
+          563.998,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 256,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          240.001
+        ],
+        [
+          105.248,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 257,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          240.251
+        ],
+        [
+          32.998,
+          215.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 258,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          240.001
+        ],
+        [
+          165.249,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 259,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          240.251
+        ],
+        [
+          104.998,
+          215.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 260,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          240.001
+        ],
+        [
+          270.25,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 261,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          240.251
+        ],
+        [
+          164.999,
+          215.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 262,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          240.001
+        ],
+        [
+          330.248,
+          240.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 263,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          240.251
+        ],
+        [
+          269.997,
+          215.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 264,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          216.0
+        ],
+        [
+          489.249,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 265,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          240.251
+        ],
+        [
+          329.998,
+          215.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 266,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          216.0
+        ],
+        [
+          585.25,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 267,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          240.251
+        ],
+        [
+          488.999,
+          215.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 268,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          240.251
+        ],
+        [
+          585.0,
+          215.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 269,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          231.001
+        ],
+        [
+          563.998,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 270,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          216.0
+        ],
+        [
+          105.248,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 271,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          216.25
+        ],
+        [
+          32.998,
+          191.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 272,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          216.0
+        ],
+        [
+          165.249,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 273,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          216.25
+        ],
+        [
+          104.998,
+          191.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 274,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          216.0
+        ],
+        [
+          270.25,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 275,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          216.25
+        ],
+        [
+          164.999,
+          191.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 276,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          216.0
+        ],
+        [
+          330.248,
+          216.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 277,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          216.25
+        ],
+        [
+          269.997,
+          191.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 278,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          191.999
+        ],
+        [
+          489.249,
+          191.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 279,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          216.25
+        ],
+        [
+          329.998,
+          191.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 280,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          191.999
+        ],
+        [
+          585.25,
+          191.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 281,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          216.25
+        ],
+        [
+          488.999,
+          191.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 282,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          216.25
+        ],
+        [
+          585.0,
+          191.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 283,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          207.0
+        ],
+        [
+          563.998,
+          191.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 284,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          192.002
+        ],
+        [
+          105.248,
+          192.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 285,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          192.252
+        ],
+        [
+          32.998,
+          167.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 286,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          192.002
+        ],
+        [
+          165.249,
+          192.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 287,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          192.252
+        ],
+        [
+          104.998,
+          167.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 288,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          192.002
+        ],
+        [
+          270.25,
+          192.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 289,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          192.252
+        ],
+        [
+          164.999,
+          167.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 290,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          192.002
+        ],
+        [
+          330.248,
+          192.002
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 291,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          192.252
+        ],
+        [
+          269.997,
+          167.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 292,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          168.001
+        ],
+        [
+          489.249,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 293,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          192.252
+        ],
+        [
+          329.998,
+          167.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 294,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          168.001
+        ],
+        [
+          585.25,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 295,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          192.252
+        ],
+        [
+          488.999,
+          167.751
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 296,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          192.252
+        ],
+        [
+          585.0,
+          167.753
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 297,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          183.002
+        ],
+        [
+          563.998,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 298,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          168.001
+        ],
+        [
+          105.248,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 299,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          144.0
+        ],
+        [
+          105.248,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 300,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          168.251
+        ],
+        [
+          32.998,
+          143.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 301,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          168.001
+        ],
+        [
+          165.249,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 302,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.748,
+          144.0
+        ],
+        [
+          165.249,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 303,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          104.998,
+          168.251
+        ],
+        [
+          104.998,
+          143.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 304,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          168.001
+        ],
+        [
+          270.25,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 305,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.749,
+          144.0
+        ],
+        [
+          270.25,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 306,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          164.999,
+          168.251
+        ],
+        [
+          164.999,
+          143.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 307,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          168.001
+        ],
+        [
+          330.248,
+          168.001
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 308,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.747,
+          144.0
+        ],
+        [
+          330.248,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 309,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          269.997,
+          168.251
+        ],
+        [
+          269.997,
+          143.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 310,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.748,
+          144.0
+        ],
+        [
+          489.249,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 311,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          329.998,
+          168.251
+        ],
+        [
+          329.998,
+          143.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 312,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          144.0
+        ],
+        [
+          585.25,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 313,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          168.251
+        ],
+        [
+          488.999,
+          143.75
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 314,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          168.251
+        ],
+        [
+          585.0,
+          143.752
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 315,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          159.001
+        ],
+        [
+          563.998,
+          144.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 316,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.748,
+          119.999
+        ],
+        [
+          489.249,
+          119.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 317,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          32.998,
+          144.25
+        ],
+        [
+          32.998,
+          119.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 318,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.749,
+          119.999
+        ],
+        [
+          585.25,
+          119.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 319,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          585.0,
+          144.25
+        ],
+        [
+          585.0,
+          119.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 320,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          488.999,
+          144.25
+        ],
+        [
+          488.999,
+          119.749
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 321,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          563.998,
+          135.0
+        ],
+        [
+          563.998,
+          119.999
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

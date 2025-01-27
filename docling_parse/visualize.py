@@ -292,7 +292,7 @@ def visualise_py(
         ).show()
 
     lines = pdf_page.sanitized.export_to_textlines(add_fontkey=True)
-    print("\n".join(lines))
+    print("text-lines: \n", "\n".join(lines))
 
     """
     lines = pdf_page.original.export_to_textlines(add_fontkey=True)

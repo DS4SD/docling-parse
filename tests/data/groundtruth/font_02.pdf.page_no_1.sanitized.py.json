@@ -1,0 +1,1524 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 612.0,
+      "r_y1": 0.0,
+      "r_x2": 612.0,
+      "r_y2": 792.0,
+      "r_x3": 0.0,
+      "r_y3": 792.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 792.0,
+      "r": 612.0,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 739.609,
+        "r_x1": 535.263,
+        "r_y1": 739.609,
+        "r_x2": 535.263,
+        "r_y2": 752.337,
+        "r_x3": 72.0,
+        "r_y3": 752.337,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "MOHAVE COMMUNITY COLLEGE                                                                                           BIO181 ",
+      "orig": "MOHAVE COMMUNITY COLLEGE                                                                                           BIO181 ",
+      "rendering_mode": "",
+      "font_key": "/TT0",
+      "font_name": "/WHNUJL+Century",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 296.76,
+        "r_y0": 48.53,
+        "r_x1": 318.178,
+        "r_y1": 48.53,
+        "r_x2": 318.178,
+        "r_y2": 58.905,
+        "r_x3": 296.76,
+        "r_y3": 58.905,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "133 ",
+      "orig": "133 ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 71.997,
+        "r_y0": 35.812,
+        "r_x1": 75.066,
+        "r_y1": 35.812,
+        "r_x2": 75.066,
+        "r_y2": 46.187,
+        "r_x3": 71.997,
+        "r_y3": 46.187,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 529.92,
+        "r_y0": 589.979,
+        "r_x1": 532.349,
+        "r_y1": 589.979,
+        "r_x2": 532.349,
+        "r_y2": 603.164,
+        "r_x3": 529.92,
+        "r_y3": 603.164,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 567.028,
+        "r_x1": 283.59,
+        "r_y1": 567.028,
+        "r_x2": 283.59,
+        "r_y2": 578.923,
+        "r_x3": 72.0,
+        "r_y3": 578.923,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "3. Mix reagents by pipetting gently up and down.  ",
+      "orig": "3. Mix reagents by pipetting gently up and down.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 541.352,
+        "r_x1": 292.44,
+        "r_y1": 541.352,
+        "r_x2": 292.44,
+        "r_y2": 553.246,
+        "r_x3": 72.0,
+        "r_y3": 553.246,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "4. Incubate all of the reaction tubes for 1 hour at 37 ",
+      "orig": "4. Incubate all of the reaction tubes for 1 hour at 37 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 292.44,
+        "r_y0": 545.703,
+        "r_x1": 295.881,
+        "r_y1": 545.703,
+        "r_x2": 295.881,
+        "r_y2": 553.442,
+        "r_x3": 292.44,
+        "r_y3": 553.442,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "o",
+      "orig": "o",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 295.92,
+        "r_y0": 541.348,
+        "r_x1": 308.071,
+        "r_y1": 541.348,
+        "r_x2": 308.071,
+        "r_y2": 553.243,
+        "r_x3": 295.92,
+        "r_y3": 553.243,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "C.  ",
+      "orig": "C.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 71.999,
+        "r_y0": 515.672,
+        "r_x1": 392.546,
+        "r_y1": 515.672,
+        "r_x2": 392.546,
+        "r_y2": 527.566,
+        "r_x3": 71.999,
+        "r_y3": 527.566,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "NOTE: Your instructor will freeze your completed restriction digests at -20 ",
+      "orig": "NOTE: Your instructor will freeze your completed restriction digests at -20 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 392.52,
+        "r_y0": 520.023,
+        "r_x1": 395.961,
+        "r_y1": 520.023,
+        "r_x2": 395.961,
+        "r_y2": 527.762,
+        "r_x3": 392.52,
+        "r_y3": 527.762,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "o",
+      "orig": "o",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 396.0,
+        "r_y0": 515.668,
+        "r_x1": 512.91,
+        "r_y1": 515.668,
+        "r_x2": 512.91,
+        "r_y2": 527.563,
+        "r_x3": 396.0,
+        "r_y3": 527.563,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "C until the next lab period.  ",
+      "orig": "C until the next lab period.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 490.914,
+        "r_x1": 219.84,
+        "r_y1": 490.914,
+        "r_x2": 219.84,
+        "r_y2": 501.204,
+        "r_x3": 72.0,
+        "r_y3": 501.204,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "III. Electrophorese Digests ",
+      "orig": "III. Electrophorese Digests ",
+      "rendering_mode": "",
+      "font_key": "/TT3",
+      "font_name": "/ESBWRV+Cambria-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 463.255,
+        "r_x1": 113.463,
+        "r_y1": 463.255,
+        "r_x2": 113.463,
+        "r_y2": 474.003,
+        "r_x3": 72.0,
+        "r_y3": 474.003,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Reagents:  ",
+      "orig": "Reagents:  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 90.0,
+        "r_y0": 441.664,
+        "r_x1": 94.14,
+        "r_y1": 441.664,
+        "r_x2": 94.14,
+        "r_y2": 449.343,
+        "r_x3": 90.0,
+        "r_y3": 449.343,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u2022",
+      "orig": "\u2022",
+      "rendering_mode": "",
+      "font_key": "/C2_0",
+      "font_name": "/IQGUVN+SymbolMT",
+      "widget": false
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 94.077,
+        "r_y0": 441.029,
+        "r_x1": 96.579,
+        "r_y1": 441.029,
+        "r_x2": 96.579,
+        "r_y2": 449.487,
+        "r_x3": 94.077,
+        "r_y3": 449.487,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 108.0,
+        "r_y0": 438.298,
+        "r_x1": 254.817,
+        "r_y1": 438.298,
+        "r_x2": 254.817,
+        "r_y2": 449.046,
+        "r_x3": 108.0,
+        "r_y3": 449.046,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Restriction digests from Part II, on ice ",
+      "orig": "Restriction digests from Part II, on ice ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 90.0,
+        "r_y0": 430.621,
+        "r_x1": 94.14,
+        "r_y1": 430.621,
+        "r_x2": 94.14,
+        "r_y2": 438.3,
+        "r_x3": 90.0,
+        "r_y3": 438.3,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u2022",
+      "orig": "\u2022",
+      "rendering_mode": "",
+      "font_key": "/C2_0",
+      "font_name": "/IQGUVN+SymbolMT",
+      "widget": false
+    },
+    {
+      "ordering": 17,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 94.077,
+        "r_y0": 429.986,
+        "r_x1": 96.579,
+        "r_y1": 429.986,
+        "r_x2": 96.579,
+        "r_y2": 438.444,
+        "r_x3": 94.077,
+        "r_y3": 438.444,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 18,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 108.0,
+        "r_y0": 427.255,
+        "r_x1": 184.689,
+        "r_y1": 427.255,
+        "r_x2": 184.689,
+        "r_y2": 438.003,
+        "r_x3": 108.0,
+        "r_y3": 438.003,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "10x loading dye, 10 ",
+      "orig": "10x loading dye, 10 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 19,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 184.563,
+        "r_y0": 427.255,
+        "r_x1": 189.495,
+        "r_y1": 427.255,
+        "r_x2": 189.495,
+        "r_y2": 438.003,
+        "r_x3": 184.563,
+        "r_y3": 438.003,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\ud835\udf07\ud835\udf07",
+      "orig": "\ud835\udf07\ud835\udf07",
+      "rendering_mode": "",
+      "font_key": "/C2_1",
+      "font_name": "/KPUMXJ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 20,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 189.72,
+        "r_y0": 427.255,
+        "r_x1": 196.497,
+        "r_y1": 427.255,
+        "r_x2": 196.497,
+        "r_y2": 438.003,
+        "r_x3": 189.72,
+        "r_y3": 438.003,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "L ",
+      "orig": "L ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 21,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 402.658,
+        "r_x1": 167.58,
+        "r_y1": 402.658,
+        "r_x2": 167.58,
+        "r_y2": 413.406,
+        "r_x3": 72.0,
+        "r_y3": 413.406,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Supplies and Equipment ",
+      "orig": "Supplies and Equipment ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 22,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 90.0,
+        "r_y0": 380.941,
+        "r_x1": 94.14,
+        "r_y1": 380.941,
+        "r_x2": 94.14,
+        "r_y2": 388.62,
+        "r_x3": 90.0,
+        "r_y3": 388.62,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u2022",
+      "orig": "\u2022",
+      "rendering_mode": "",
+      "font_key": "/C2_0",
+      "font_name": "/IQGUVN+SymbolMT",
+      "widget": false
+    },
+    {
+      "ordering": 23,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 94.077,
+        "r_y0": 380.306,
+        "r_x1": 96.579,
+        "r_y1": 380.306,
+        "r_x2": 96.579,
+        "r_y2": 388.764,
+        "r_x3": 94.077,
+        "r_y3": 388.764,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 24,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 108.0,
+        "r_y0": 377.575,
+        "r_x1": 381.663,
+        "r_y1": 377.575,
+        "r_x2": 381.663,
+        "r_y2": 388.323,
+        "r_x3": 108.0,
+        "r_y3": 388.323,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Gel electrophoresis chamber with agarose gel in gel tray, power supply ",
+      "orig": "Gel electrophoresis chamber with agarose gel in gel tray, power supply ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 25,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 90.0,
+        "r_y0": 369.898,
+        "r_x1": 94.14,
+        "r_y1": 369.898,
+        "r_x2": 94.14,
+        "r_y2": 377.577,
+        "r_x3": 90.0,
+        "r_y3": 377.577,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u2022",
+      "orig": "\u2022",
+      "rendering_mode": "",
+      "font_key": "/C2_0",
+      "font_name": "/IQGUVN+SymbolMT",
+      "widget": false
+    },
+    {
+      "ordering": 26,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 94.077,
+        "r_y0": 369.263,
+        "r_x1": 96.579,
+        "r_y1": 369.263,
+        "r_x2": 96.579,
+        "r_y2": 377.721,
+        "r_x3": 94.077,
+        "r_y3": 377.721,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 27,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 108.0,
+        "r_y0": 366.532,
+        "r_x1": 127.98,
+        "r_y1": 366.532,
+        "r_x2": 127.98,
+        "r_y2": 377.28,
+        "r_x3": 108.0,
+        "r_y3": 377.28,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "1-20 ",
+      "orig": "1-20 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 28,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 127.917,
+        "r_y0": 366.532,
+        "r_x1": 132.849,
+        "r_y1": 366.532,
+        "r_x2": 132.849,
+        "r_y2": 377.28,
+        "r_x3": 127.917,
+        "r_y3": 377.28,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\ud835\udf07\ud835\udf07",
+      "orig": "\ud835\udf07\ud835\udf07",
+      "rendering_mode": "",
+      "font_key": "/C2_1",
+      "font_name": "/KPUMXJ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 29,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 132.84,
+        "r_y0": 366.532,
+        "r_x1": 139.617,
+        "r_y1": 366.532,
+        "r_x2": 139.617,
+        "r_y2": 377.28,
+        "r_x3": 132.84,
+        "r_y3": 377.28,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "L ",
+      "orig": "L ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/CDTQPZ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 30,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 139.68,
+        "r_y0": 366.532,
+        "r_x1": 246.06,
+        "r_y1": 366.532,
+        "r_x2": 246.06,
+        "r_y2": 377.28,
+        "r_x3": 139.68,
+        "r_y3": 377.28,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Micropipette and pipet tips ",
+      "orig": "Micropipette and pipet tips ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 31,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 342.777,
+        "r_x1": 136.827,
+        "r_y1": 342.777,
+        "r_x2": 136.827,
+        "r_y2": 352.244,
+        "r_x3": 72.0,
+        "r_y3": 352.244,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Load the Gel ",
+      "orig": "Load the Gel ",
+      "rendering_mode": "",
+      "font_key": "/TT3",
+      "font_name": "/ESBWRV+Cambria-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 32,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 313.708,
+        "r_x1": 201.111,
+        "r_y1": 313.708,
+        "r_x2": 201.111,
+        "r_y2": 325.603,
+        "r_x3": 72.0,
+        "r_y3": 325.603,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "1. Use a micropipette to add 2 ",
+      "orig": "1. Use a micropipette to add 2 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 33,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 201.111,
+        "r_y0": 313.708,
+        "r_x1": 206.57,
+        "r_y1": 313.708,
+        "r_x2": 206.57,
+        "r_y2": 325.603,
+        "r_x3": 201.111,
+        "r_y3": 325.603,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\ud835\udf07\ud835\udf07",
+      "orig": "\ud835\udf07\ud835\udf07",
+      "rendering_mode": "",
+      "font_key": "/C2_1",
+      "font_name": "/KPUMXJ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 34,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 206.639,
+        "r_y0": 313.708,
+        "r_x1": 211.988,
+        "r_y1": 313.708,
+        "r_x2": 211.988,
+        "r_y2": 325.603,
+        "r_x3": 206.639,
+        "r_y3": 325.603,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "L",
+      "orig": "L",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/CDTQPZ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 35,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 211.918,
+        "r_y0": 313.708,
+        "r_x1": 530.737,
+        "r_y1": 313.708,
+        "r_x2": 530.737,
+        "r_y2": 325.603,
+        "r_x3": 211.918,
+        "r_y3": 325.603,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " of 10\u00d7 loading dye to a reaction tube. Use the pipet tip and gently pipet up ",
+      "orig": " of 10\u00d7 loading dye to a reaction tube. Use the pipet tip and gently pipet up ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 36,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 301.946,
+        "r_x1": 537.846,
+        "r_y1": 301.946,
+        "r_x2": 537.846,
+        "r_y2": 313.841,
+        "r_x3": 72.0,
+        "r_y3": 313.841,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "and down a couple of times to mix the 10\u00d7 loading dye with the digested DNA. Use a new pipet tip and repeat ",
+      "orig": "and down a couple of times to mix the 10\u00d7 loading dye with the digested DNA. Use a new pipet tip and repeat ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 37,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 290.183,
+        "r_x1": 140.794,
+        "r_y1": 290.183,
+        "r_x2": 140.794,
+        "r_y2": 302.078,
+        "r_x3": 72.0,
+        "r_y3": 302.078,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "for each digest.  ",
+      "orig": "for each digest.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 38,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 264.506,
+        "r_x1": 359.316,
+        "r_y1": 264.506,
+        "r_x2": 359.316,
+        "r_y2": 276.401,
+        "r_x3": 72.0,
+        "r_y3": 276.401,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "2. Use a micropipette to load the contents of each reaction tube (20 ",
+      "orig": "2. Use a micropipette to load the contents of each reaction tube (20 ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 39,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 359.406,
+        "r_y0": 264.506,
+        "r_x1": 364.864,
+        "r_y1": 264.506,
+        "r_x2": 364.864,
+        "r_y2": 276.401,
+        "r_x3": 359.406,
+        "r_y3": 276.401,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\ud835\udf07\ud835\udf07",
+      "orig": "\ud835\udf07\ud835\udf07",
+      "rendering_mode": "",
+      "font_key": "/C2_1",
+      "font_name": "/KPUMXJ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 40,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 364.924,
+        "r_y0": 264.506,
+        "r_x1": 370.272,
+        "r_y1": 264.506,
+        "r_x2": 370.272,
+        "r_y2": 276.401,
+        "r_x3": 364.924,
+        "r_y3": 276.401,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "L",
+      "orig": "L",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/CDTQPZ+CambriaMath",
+      "widget": false
+    },
+    {
+      "ordering": 41,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 370.202,
+        "r_y0": 264.506,
+        "r_x1": 527.035,
+        "r_y1": 264.506,
+        "r_x2": 527.035,
+        "r_y2": 276.401,
+        "r_x3": 370.202,
+        "r_y3": 276.401,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " total) into a separate well in the gel. ",
+      "orig": " total) into a separate well in the gel. ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 42,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 252.743,
+        "r_x1": 510.031,
+        "r_y1": 252.743,
+        "r_x2": 510.031,
+        "r_y2": 264.638,
+        "r_x3": 72.0,
+        "r_y3": 264.638,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Use a fresh pipet tip for each reaction tube and write down the order in which the samples are loaded.  ",
+      "orig": "Use a fresh pipet tip for each reaction tube and write down the order in which the samples are loaded.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 43,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 227.066,
+        "r_x1": 74.191,
+        "r_y1": 227.066,
+        "r_x2": 74.191,
+        "r_y2": 238.961,
+        "r_x3": 72.0,
+        "r_y3": 238.961,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 44,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 201.27,
+        "r_x1": 449.912,
+        "r_y1": 201.27,
+        "r_x2": 449.912,
+        "r_y2": 213.165,
+        "r_x3": 72.0,
+        "r_y3": 213.165,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "NOTE: Be careful not to punch the tip of the pipet through the bottom or side of the well. ",
+      "orig": "NOTE: Be careful not to punch the tip of the pipet through the bottom or side of the well. ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 45,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 175.593,
+        "r_x1": 74.191,
+        "r_y1": 175.593,
+        "r_x2": 74.191,
+        "r_y2": 187.488,
+        "r_x3": 72.0,
+        "r_y3": 187.488,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 46,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 149.916,
+        "r_x1": 137.547,
+        "r_y1": 149.916,
+        "r_x2": 137.547,
+        "r_y2": 161.811,
+        "r_x3": 72.0,
+        "r_y3": 161.811,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "While loading,  ",
+      "orig": "While loading,  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 47,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 125.993,
+        "r_y0": 127.238,
+        "r_x1": 130.575,
+        "r_y1": 127.238,
+        "r_x2": 130.575,
+        "r_y2": 135.736,
+        "r_x3": 125.993,
+        "r_y3": 135.736,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u2022",
+      "orig": "\u2022",
+      "rendering_mode": "",
+      "font_key": "/C2_0",
+      "font_name": "/IQGUVN+SymbolMT",
+      "widget": false
+    },
+    {
+      "ordering": 48,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 130.555,
+        "r_y0": 126.535,
+        "r_x1": 133.324,
+        "r_y1": 126.535,
+        "r_x2": 133.324,
+        "r_y2": 135.895,
+        "r_x3": 130.555,
+        "r_y3": 135.895,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 49,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 143.991,
+        "r_y0": 123.512,
+        "r_x1": 540.693,
+        "r_y1": 123.512,
+        "r_x2": 540.693,
+        "r_y2": 135.407,
+        "r_x3": 143.991,
+        "r_y3": 135.407,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "steady the pipet over the well using two hands. You may wish to place one or both elbows on ",
+      "orig": "steady the pipet over the well using two hands. You may wish to place one or both elbows on ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 50,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 143.991,
+        "r_y0": 111.869,
+        "r_x1": 298.939,
+        "r_y1": 111.869,
+        "r_x2": 298.939,
+        "r_y2": 123.764,
+        "r_x3": 143.991,
+        "r_y3": 123.764,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "the lab bench to steady your hands.  ",
+      "orig": "the lab bench to steady your hands.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 51,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 125.983,
+        "r_y0": 103.234,
+        "r_x1": 130.565,
+        "r_y1": 103.234,
+        "r_x2": 130.565,
+        "r_y2": 111.732,
+        "r_x3": 125.983,
+        "r_y3": 111.732,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "\u2022",
+      "orig": "\u2022",
+      "rendering_mode": "",
+      "font_key": "/C2_0",
+      "font_name": "/IQGUVN+SymbolMT",
+      "widget": false
+    },
+    {
+      "ordering": 52,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 130.545,
+        "r_y0": 102.532,
+        "r_x1": 133.314,
+        "r_y1": 102.532,
+        "r_x2": 133.314,
+        "r_y2": 111.892,
+        "r_x3": 130.545,
+        "r_y3": 111.892,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": " ",
+      "orig": " ",
+      "rendering_mode": "",
+      "font_key": "/TT1",
+      "font_name": "/IPNJVN+ArialMT",
+      "widget": false
+    },
+    {
+      "ordering": 53,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 143.981,
+        "r_y0": 99.509,
+        "r_x1": 536.734,
+        "r_y1": 99.509,
+        "r_x2": 536.734,
+        "r_y2": 111.404,
+        "r_x3": 143.981,
+        "r_y3": 111.404,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "be careful to expel any air in the pipet tip end before loading the gel. If an air bubble forms a ",
+      "orig": "be careful to expel any air in the pipet tip end before loading the gel. If an air bubble forms a ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    },
+    {
+      "ordering": 54,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 143.981,
+        "r_y0": 87.865,
+        "r_x1": 499.318,
+        "r_y1": 87.865,
+        "r_x2": 499.318,
+        "r_y2": 99.76,
+        "r_x3": 143.981,
+        "r_y3": 99.76,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "cap over the well, the sample will flow into the buffer around the edges of the well.  ",
+      "orig": "cap over the well, the sample will flow into the buffer around the edges of the well.  ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/IVHLVN+Cambria",
+      "widget": false
+    }
+  ],
+  "bitmap_resources": [
+    {
+      "ordering": 0,
+      "rect": {
+        "r_x0": 72.0,
+        "r_y0": 595.8001326,
+        "r_x1": 529.8621912,
+        "r_y1": 595.8001326,
+        "r_x2": 529.8621912,
+        "r_y2": 720.000122,
+        "r_x3": 72.0,
+        "r_y3": 720.000122,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          45.8,
+          731.25
+        ],
+        [
+          582.8,
+          731.25
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

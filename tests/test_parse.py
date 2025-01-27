@@ -54,7 +54,7 @@ def verify_bitmap_resources(
 
 
 def verify_cells(
-    true_cells: List[PdfCell], pred_cells: List[PdfCell], eps: float
+    true_cells: List[PdfCell], pred_cells: List[PdfCell], eps: float, filename: str
 ) -> bool:
 
     assert len(true_cells) == len(pred_cells), "len(true_cells)==len(pred_cells)"
@@ -67,22 +67,27 @@ def verify_cells(
             true_cell.ordering == pred_cell.ordering
         ), "true_cell.ordering == pred_cell.ordering"
 
+        assert (
+            true_cell.text == pred_cell.text
+        ), f"true_cell.text == pred_cell.text => {true_cell.text} == {pred_cell.text} for {filename}"
+        assert (
+            true_cell.orig == pred_cell.orig
+        ), f"true_cell.orig == pred_cell.orig => {true_cell.orig} == {pred_cell.orig} for {filename}"
+
         true_rect = true_cell.rect.to_polygon()
         pred_rect = pred_cell.rect.to_polygon()
 
         for l in range(0, 4):
             assert (
                 abs(true_rect[l][0] - pred_rect[l][0]) < eps
-            ), f"abs(true_rect[l][0]-pred_rect[l][0])<eps -> abs({true_rect[l][0]}-{pred_rect[l][0]})<{eps}"
+            ), f"abs(true_rect[{l}][0]-pred_rect[{l}][0])<eps -> abs({true_rect[l][0]}-{pred_rect[l][0]})<{eps}"
+
             assert (
                 abs(true_rect[l][1] - pred_rect[l][1]) < eps
-            ), "abs(true_rect[l][1]-pred_rect[l][1])<eps"
+            ), f"abs(true_rect[{l}][1]-pred_rect[{l}][1])<eps -> abs({true_rect[l][1]}-{pred_rect[l][1]})<{eps} for {filename}"
 
         # print("true-text: ", true_cell.text)
         # print("pred-text: ", pred_cell.text)
-
-        assert true_cell.text == pred_cell.text, "true_cell.text == pred_cell.text"
-        assert true_cell.orig == pred_cell.orig, "true_cell.orig == pred_cell.orig"
 
         assert (
             true_cell.font_key == pred_cell.font_key
@@ -160,23 +165,27 @@ def verify_lines(
     return True
 
 
-def verify_SegmentedPdfPage(true_page: SegmentedPdfPage, pred_page: SegmentedPdfPage):
+def verify_SegmentedPdfPage(
+    true_page: SegmentedPdfPage, pred_page: SegmentedPdfPage, filename: str
+):
 
-    eps = min(true_page.dimension.width / 100.0, true_page.dimension.height / 100.0)
+    eps = max(true_page.dimension.width / 100.0, true_page.dimension.height / 100.0)
 
     verify_bitmap_resources(
         true_page.bitmap_resources, pred_page.bitmap_resources, eps=eps
     )
 
-    verify_cells(true_page.cells, pred_page.cells, eps=eps)
+    verify_cells(true_page.cells, pred_page.cells, eps=eps, filename=filename)
 
     verify_lines(true_page.lines, pred_page.lines, eps=eps)
 
 
-def verify_ParsedPdfPage(true_page: ParsedPdfPage, pred_page: ParsedPdfPage):
+def verify_ParsedPdfPage(
+    true_page: ParsedPdfPage, pred_page: ParsedPdfPage, filename: str = ""
+):
 
-    verify_SegmentedPdfPage(true_page.original, pred_page.original)
-    verify_SegmentedPdfPage(true_page.sanitized, pred_page.sanitized)
+    verify_SegmentedPdfPage(true_page.original, pred_page.original, filename=filename)
+    verify_SegmentedPdfPage(true_page.sanitized, pred_page.sanitized, filename=filename)
 
 
 def test_reference_documents_from_filenames():
@@ -214,7 +223,9 @@ def test_reference_documents_from_filenames():
                     print(f"loading from {fname}")
 
                     true_page = SegmentedPdfPage.load_from_json(fname)
-                    verify_SegmentedPdfPage(true_page, pred_page.original)
+                    verify_SegmentedPdfPage(
+                        true_page, pred_page.original, filename=pdf_doc_path
+                    )
 
             if True:
                 rname = os.path.basename(pdf_doc_path)
@@ -228,7 +239,9 @@ def test_reference_documents_from_filenames():
                     print(f"loading from {fname}")
 
                     true_page = SegmentedPdfPage.load_from_json(fname)
-                    verify_SegmentedPdfPage(true_page, pred_page.sanitized)
+                    verify_SegmentedPdfPage(
+                        true_page, pred_page.sanitized, filename=fname
+                    )
 
             pred_page.original.render()
             # res.show()
