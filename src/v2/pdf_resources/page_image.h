@@ -16,6 +16,8 @@ namespace pdflib
 
     nlohmann::json get();
 
+    void rotate(int angle, std::pair<double, double> delta);
+    
   public:
 
     static std::vector<std::string> header;
@@ -54,6 +56,21 @@ namespace pdflib
     return image;
   }
 
+  void pdf_resource<PAGE_IMAGE>::rotate(int angle, std::pair<double, double> delta)
+  {
+    utils::values::rotate_inplace(angle, x0, y0);
+    utils::values::rotate_inplace(angle, x1, y1);
+
+    utils::values::translate_inplace(delta, x0, y0);
+    utils::values::translate_inplace(delta, x1, y1);
+
+    double y_min = std::min(y0, y1);
+    double y_max = std::max(y0, y1);
+
+    y0 = y_min;
+    y1 = y_max;    
+  }
+  
 }
 
 #endif
