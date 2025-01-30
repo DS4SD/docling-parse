@@ -1,0 +1,392 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 792.0001999984344,
+      "r_y1": 0.0,
+      "r_x2": 792.0001999984344,
+      "r_y2": 611.9997411784093,
+      "r_x3": 0.0,
+      "r_y3": 611.9997411784093,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 611.9997411784093,
+      "r": 792.0001999984344,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 0.0,
+      "t": 611.9997411784093,
+      "r": 792.0001999984344,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 611.9997411784093,
+      "r": 792.0001999984344,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 611.9997411784093,
+      "r": 792.0001999984344,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 0.0,
+      "t": 611.9997411784093,
+      "r": 792.0001999984344,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 178.62,
+        "r_y0": 249.662,
+        "r_x1": 619.512,
+        "r_y1": 249.662,
+        "r_x2": 619.512,
+        "r_y2": 270.912,
+        "r_x3": 178.62,
+        "r_y3": 270.912,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Confidential Information Memorandum",
+      "orig": "Confidential Information Memorandum",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/JJJPAA+Arial,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 357.54,
+        "r_y0": 206.28,
+        "r_x1": 440.66,
+        "r_y1": 206.28,
+        "r_x2": 440.66,
+        "r_y2": 218.658,
+        "r_x3": 357.54,
+        "r_y3": 218.657,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "August 2016",
+      "orig": "August 2016",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/JJJPAA+Arial,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.58,
+        "r_y0": 533.982,
+        "r_x1": 641.854,
+        "r_y1": 533.982,
+        "r_x2": 641.854,
+        "r_y2": 543.279,
+        "r_x3": 119.58,
+        "r_y3": 543.279,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "This document has been prepared by Exo U Inc. and is intended to provide preliminary information to interested ",
+      "orig": "This document has been prepared by Exo U Inc. and is intended to provide preliminary information to interested ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JJJPDB+Arial",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.58,
+        "r_y0": 521.382,
+        "r_x1": 622.495,
+        "r_y1": 521.382,
+        "r_x2": 622.495,
+        "r_y2": 530.679,
+        "r_x3": 119.58,
+        "r_y3": 530.679,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "parties to formulate the basis of their transaction intent. The information contained herein is confidential and ",
+      "orig": "parties to formulate the basis of their transaction intent. The information contained herein is confidential and ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JJJPDB+Arial",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.58,
+        "r_y0": 508.782,
+        "r_x1": 651.287,
+        "r_y1": 508.782,
+        "r_x2": 651.287,
+        "r_y2": 518.079,
+        "r_x3": 119.58,
+        "r_y3": 518.079,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "proprietary to Exo U Inc. Accordingly, the reader agrees to treat all information as strictly confidential and shall not ",
+      "orig": "proprietary to Exo U Inc. Accordingly, the reader agrees to treat all information as strictly confidential and shall not ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JJJPDB+Arial",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.58,
+        "r_y0": 496.182,
+        "r_x1": 645.581,
+        "r_y1": 496.182,
+        "r_x2": 645.581,
+        "r_y2": 505.479,
+        "r_x3": 119.58,
+        "r_y3": 505.479,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "disclose, either in part or in whole, to any party not directly involved in the investment and/or transaction decision.",
+      "orig": "disclose, either in part or in whole, to any party not directly involved in the investment and/or transaction decision.",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JJJPDB+Arial",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.579,
+        "r_y0": 470.982,
+        "r_x1": 666.631,
+        "r_y1": 470.982,
+        "r_x2": 666.631,
+        "r_y2": 480.279,
+        "r_x3": 119.579,
+        "r_y3": 480.279,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "This document is not intended for general circulation or publication and cannot be reproduced in any form without the ",
+      "orig": "This document is not intended for general circulation or publication and cannot be reproduced in any form without the ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JJJPDB+Arial",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.579,
+        "r_y0": 458.382,
+        "r_x1": 270.3,
+        "r_y1": 458.382,
+        "r_x2": 270.3,
+        "r_y2": 467.679,
+        "r_x3": 119.579,
+        "r_y3": 467.679,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "written permission of Exo U Inc. ",
+      "orig": "written permission of Exo U Inc. ",
+      "rendering_mode": "",
+      "font_key": "/TT4",
+      "font_name": "/JJJPDB+Arial",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 270.179,
+        "r_y0": 458.382,
+        "r_x1": 645.745,
+        "r_y1": 458.382,
+        "r_x2": 645.744,
+        "r_y2": 467.679,
+        "r_x3": 270.179,
+        "r_y3": 467.679,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "This document does not constitute a prospectus, offering memorandum or ",
+      "orig": "This document does not constitute a prospectus, offering memorandum or ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/JJJPAA+Arial,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.579,
+        "r_y0": 445.782,
+        "r_x1": 647.353,
+        "r_y1": 445.782,
+        "r_x2": 647.353,
+        "r_y2": 455.079,
+        "r_x3": 119.579,
+        "r_y3": 455.079,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "public offering. No guarantees are made or implied with regards to the investment and/or transaction that ",
+      "orig": "public offering. No guarantees are made or implied with regards to the investment and/or transaction that ",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/JJJPAA+Arial,Bold",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 119.579,
+        "r_y0": 433.182,
+        "r_x1": 226.977,
+        "r_y1": 433.182,
+        "r_x2": 226.977,
+        "r_y2": 442.479,
+        "r_x3": 119.579,
+        "r_y3": 442.479,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "may ultimately result.",
+      "orig": "may ultimately result.",
+      "rendering_mode": "",
+      "font_key": "/TT2",
+      "font_name": "/JJJPAA+Arial,Bold",
+      "widget": false
+    }
+  ],
+  "bitmap_resources": [
+    {
+      "ordering": 0,
+      "rect": {
+        "r_x0": 234.9600776268472,
+        "r_y0": 304.6799277064168,
+        "r_x1": 570.7801004305771,
+        "r_y1": 304.6799277064168,
+        "r_x2": 570.7801004305771,
+        "r_y2": 374.45981796215085,
+        "r_x3": 234.9600776268472,
+        "r_y3": 374.45981796215085,
+        "coord_origin": "BOTTOMLEFT"
+      }
+    }
+  ],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          36.0,
+          576.0
+        ],
+        [
+          36.0,
+          36.0
+        ],
+        [
+          756.0,
+          36.0
+        ],
+        [
+          756.0,
+          576.0
+        ],
+        [
+          36.0,
+          576.0
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

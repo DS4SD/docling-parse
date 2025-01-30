@@ -42,6 +42,8 @@ namespace pdflib
 
     void decode_annots();
 
+    void rotate_contents();
+    
     void sanitise_contents(std::string page_boundary);
 
   private:
@@ -155,6 +157,8 @@ namespace pdflib
     decode_contents();
 
     decode_annots();
+
+    rotate_contents();
     
     sanitise_contents(page_boundary);
     
@@ -429,6 +433,31 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();    
   }
 
+  void pdf_decoder<PAGE>::rotate_contents()
+  {
+    LOG_S(INFO) << __FUNCTION__;
+
+    if(page_dimension.get_angle()==0)
+      {
+	return;
+      }
+
+    int angle = page_dimension.get_angle();
+
+    if((angle%90)!=0)
+      {
+	LOG_S(ERROR) << "the /Rotate angle should be a multiple of 90 ...";
+      }
+    
+    // see Table 30
+    LOG_S(WARNING) << "rotating contents clock-wise with angle: " << angle;
+    
+    std::pair<double, double> delta = page_dimension.rotate(angle);
+    page_cells.rotate(angle, delta);
+    page_lines.rotate(angle, delta);
+    page_images.rotate(angle, delta);
+  }
+  
   void pdf_decoder<PAGE>::sanitise_contents(std::string page_boundary)
   {
     LOG_S(INFO) << __FUNCTION__;    

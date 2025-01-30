@@ -19,6 +19,8 @@ namespace pdflib
     nlohmann::json get();
     bool init_from(nlohmann::json& data);
 
+    void rotate(int angle, std::pair<double, double> delta);
+    
     pdf_resource<PAGE_LINE>& operator[](size_t i);
 
     void clear();
@@ -87,6 +89,15 @@ namespace pdflib
     return result;
   }
 
+  void pdf_resource<PAGE_LINES>::rotate(int angle, std::pair<double, double> delta)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+
+    for(auto& line:lines)
+      {
+	line.rotate(angle, delta);
+      }
+  }
   
   pdf_resource<PAGE_LINE>& pdf_resource<PAGE_LINES>::operator[](size_t i)
   {    

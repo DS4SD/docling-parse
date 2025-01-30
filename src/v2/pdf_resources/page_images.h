@@ -18,6 +18,8 @@ namespace pdflib
 
     nlohmann::json get();
 
+    void rotate(int angle, std::pair<double, double> delta);
+    
     pdf_resource<PAGE_IMAGE>& operator[](size_t i);
 
     void clear();
@@ -58,6 +60,16 @@ namespace pdflib
     return result;
   }
 
+  void pdf_resource<PAGE_IMAGES>::rotate(int angle, std::pair<double, double> delta)
+  {
+    LOG_S(INFO) << __FUNCTION__;
+
+    for(auto& image:images)
+      {
+	image.rotate(angle, delta);
+      }
+  }
+  
   pdf_resource<PAGE_IMAGE>& pdf_resource<PAGE_IMAGES>::operator[](size_t i)
   {
     return images.at(i);

@@ -69,6 +69,35 @@ namespace utils
       return (area_union > 0) ? (area_inter / area_union) : 0.0;
     }
 
+    void rotate_inplace(int angle, double& x0, double& y0)
+    {
+      double phi = -3.141592*angle/180.0;
+      
+      double x1 = x0, y1 = y0;
+
+      x0 = std::cos(phi)*x1 - std::sin(phi)*y1;
+      y0 = std::sin(phi)*x1 + std::cos(phi)*y1;
+    }
+
+    void translate_inplace(std::pair<double, double> delta, double& x0, double& y0)
+    {
+      x0 += delta.first;
+      y0 += delta.second;
+    }    
+    
+    void rotate_inplace(int angle, std::array<double, 4>& bbox)
+    {
+      double phi = -3.141592*angle/180.0;
+      
+      std::array<double, 4> tmp = bbox;
+
+      bbox[0] = std::cos(phi)*tmp[0] - std::sin(phi)*tmp[1];
+      bbox[1] = std::sin(phi)*tmp[0] + std::cos(phi)*tmp[1];
+
+      bbox[2] = std::cos(phi)*tmp[2] - std::sin(phi)*tmp[3];
+      bbox[3] = std::sin(phi)*tmp[2] + std::cos(phi)*tmp[3];
+    }
+    
   }
   
 }

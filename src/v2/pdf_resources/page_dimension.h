@@ -19,13 +19,15 @@ namespace pdflib
     nlohmann::json get();
     bool init_from(nlohmann::json& data);
 
-    double get_angle() { return angle; }
+    int get_angle() { return angle; }
 
     std::array<double, 4> get_crop_bbox() { return crop_bbox; }
     std::array<double, 4> get_media_bbox() { return media_bbox; }
 
     void execute(nlohmann::json& json_resources,
 		 QPDFObjectHandle qpdf_resources);
+
+    std::pair<double, double> rotate(int angle);
     
   private:
 
@@ -103,6 +105,56 @@ namespace pdflib
     return result;
   }
 
+  std::pair<double, double> pdf_resource<PAGE_DIMENSION>::rotate(int my_angle)
+  {
+    angle -= my_angle;
+    
+    utils::values::rotate_inplace(my_angle, media_bbox);
+    LOG_S(INFO) << "media: "
+		<< media_bbox[0] << ", "
+		<< media_bbox[1] << ", "
+		<< media_bbox[2] << ", "
+		<< media_bbox[3];
+    
+    utils::values::rotate_inplace(my_angle, crop_bbox);
+
+    LOG_S(INFO) << "crop: "
+		<< crop_bbox[0] << ", "
+		<< crop_bbox[1] << ", "
+		<< crop_bbox[2] << ", "
+		<< crop_bbox[3];
+	
+    utils::values::rotate_inplace(my_angle, bleed_bbox);
+    utils::values::rotate_inplace(my_angle, trim_bbox);
+    utils::values::rotate_inplace(my_angle, art_bbox);
+
+    utils::values::rotate_inplace(my_angle, bbox);
+    
+    std::pair<double, double> delta = {0.0, std::abs(media_bbox[3])};
+    
+    media_bbox[3] += 2*delta.second;
+    crop_bbox[3] += 2*delta.second;
+    bleed_bbox[3] += 2*delta.second;
+    trim_bbox[3] += 2*delta.second;
+    art_bbox[3] += 2*delta.second;
+    
+    bbox[3] += 2*delta.second;
+
+    LOG_S(INFO) << "crop: "
+		<< crop_bbox[0] << ", "
+		<< crop_bbox[1] << ", "
+		<< crop_bbox[2] << ", "
+		<< crop_bbox[3];
+
+    LOG_S(INFO) << "crop: "
+		<< bbox[0] << ", "
+		<< bbox[1] << ", "
+		<< bbox[2] << ", "
+		<< bbox[3];
+    
+    return delta;
+  }
+  
   bool pdf_resource<PAGE_DIMENSION>::init_from(nlohmann::json& data)
   {
     //LOG_S(INFO) << "reading: " << data.dump(2);
