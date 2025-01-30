@@ -23,14 +23,14 @@ This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conv
     <td rowspan="2"><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.png" alt="screenshot" width="100"/></td>
     <td>Not Supported</td>
     <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v1.png" alt="v1 snippet" width="100"/></td>
-    <td>~0.250 page/sec</td>
+    <td>~0.250 sec/page </td>
   </tr>
   <tr>
     <th>V2</th>
     <!-- The "Original" column image spans from the previous row -->
     <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.original.png" alt="v1 word" width="100"/></td>
     <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.sanitized.png" alt="v2 snippet" width="100"/></td>
-    <td>~0.050 page/sec <br><br>[~5-10X faster than v1]</td>
+    <td>~0.050 sec/page <br><br>[~5-10X faster than v1]</td>
   </tr>
 </table>
 
