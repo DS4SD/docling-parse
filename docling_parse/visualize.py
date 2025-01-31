@@ -291,11 +291,15 @@ def visualise_py(
                 draw_cells_bbox=(not display_text), draw_cells_text=display_text
             ).show()
 
-        lines = pdf_page.original.export_to_textlines(add_fontkey=True, add_fontname=False)
+        lines = pdf_page.original.export_to_textlines(
+            add_fontkey=True, add_fontname=False
+        )
         print(f"text-lines (original, page_no: {page_no}):")
         print("\n".join(lines))
 
-        lines = pdf_page.sanitized.export_to_textlines(add_fontkey=True, add_fontname=False)
+        lines = pdf_page.sanitized.export_to_textlines(
+            add_fontkey=True, add_fontname=False
+        )
         print(f"text-lines (sanitized, page_no: {page_no}):")
         print("\n".join(lines))
 
