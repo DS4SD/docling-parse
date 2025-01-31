@@ -368,10 +368,10 @@ class SegmentedPdfPage(BaseModel):
                 line += f"({cell.rect.r_x3:06.02f}, {cell.rect.r_y3:06.02f}) "
 
             if add_fontkey:
-                line += f"{cell.font_key} "
+                line += f"{cell.font_key:>10} "
 
             if add_fontname:
-                line += f"{cell.font_name} "
+                line += f"{cell.font_name:>10} "
 
             line += f"{cell.text}"
             lines.append(line)
