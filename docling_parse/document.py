@@ -362,10 +362,10 @@ class SegmentedPdfPage(BaseModel):
 
             line = ""
             if add_location:
-                line += f"({cell.rect.r_x0:03.02f}, {cell.rect.r_y0:03.02f}) "
-                line += f"({cell.rect.r_x1:03.02f}, {cell.rect.r_y1:03.02f}) "
-                line += f"({cell.rect.r_x2:03.02f}, {cell.rect.r_y2:03.02f}) "
-                line += f"({cell.rect.r_x3:03.02f}, {cell.rect.r_y3:03.02f}) "
+                line += f"({cell.rect.r_x0:06.02f}, {cell.rect.r_y0:06.02f}) "
+                line += f"({cell.rect.r_x1:06.02f}, {cell.rect.r_y1:06.02f}) "
+                line += f"({cell.rect.r_x2:06.02f}, {cell.rect.r_y2:06.02f}) "
+                line += f"({cell.rect.r_x3:06.02f}, {cell.rect.r_y3:06.02f}) "
 
             if add_fontkey:
                 line += f"{cell.font_key} "
@@ -386,7 +386,7 @@ class SegmentedPdfPage(BaseModel):
         draw_cells_bl: bool = False,
         draw_cells_tr: bool = False,
         cell_outline: str = "black",
-        cell_color: str = "blue",
+        cell_color: str = "cyan",
         cell_alpha: float = 1.0,
         cell_bl_color: str = "red",
         cell_bl_outline: str = "red",

@@ -18,6 +18,16 @@ namespace pdflib
     bool init_from(nlohmann::json& data);
 
     void rotate(int angle, std::pair<double, double> delta);
+
+    double length();
+
+    int number_of_chars();
+
+    double average_char_width();
+    
+    bool is_adjacent_to(pdf_resource<PAGE_CELL>& other, double delta);
+
+    bool merge_with(pdf_resource<PAGE_CELL>& other, double delta);
     
   public:
 
@@ -46,8 +56,8 @@ namespace pdflib
 
     double space_width;
 
-    std::vector<std::string> chars;
-    std::vector<double>      widths;
+    //std::vector<std::string> chars;
+    //std::vector<double>      widths;
 
     std::string enc_name;
 
@@ -225,6 +235,76 @@ namespace pdflib
     return false;
   }
 
+  double pdf_resource<PAGE_CELL>::length()
+  {
+    return std::sqrt(std::pow(r_x1-r_x0, 2) + std::pow(r_y1-r_y0, 2));
+  }
+
+  int pdf_resource<PAGE_CELL>::number_of_chars()
+  {
+    return utils::string::count_unicode_characters(text);
+  }
+
+  double pdf_resource<PAGE_CELL>::average_char_width()
+  {
+    double len = length();
+    int num_chars = number_of_chars();
+    
+    return (num_chars>0? len/num_chars : 0.0);
+  }
+  
+  bool pdf_resource<PAGE_CELL>::is_adjacent_to(pdf_resource<PAGE_CELL>& other, double eps)
+  {
+    //if(eps<0.0)
+    //{
+    //eps = average_char_width()/2.0;
+    //}
+    
+    double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
+    double d1 = std::sqrt((r_x2-other.r_x3)*(r_x2-other.r_x3) + (r_y2-other.r_y3)*(r_y2-other.r_y3));
+
+    return ((d0<eps) and (d1<eps));
+  }
+
+  bool pdf_resource<PAGE_CELL>::merge_with(pdf_resource<PAGE_CELL>& other, double delta)
+  {
+    double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
+
+    if(delta<d0)
+      {
+	text += " ";
+      }    
+    text += other.text;
+    
+    r_x1 = other.r_x1;
+    r_y1 = other.r_y1;
+
+    r_x2 = other.r_x2;
+    r_y2 = other.r_y2;
+
+    x0 = r_x0;
+    x0 = std::min(x0, r_x1);
+    x0 = std::min(x0, r_x2);
+    x0 = std::min(x0, r_x3);
+
+    y0 = r_y0;
+    y0 = std::min(y0, r_y1);
+    y0 = std::min(y0, r_y2);
+    y0 = std::min(y0, r_y3);
+
+    x1 = r_x0;
+    x1 = std::max(x0, r_x1);
+    x1 = std::max(x0, r_x2);
+    x1 = std::max(x0, r_x3);
+
+    y1 = r_y0;
+    y1 = std::max(y0, r_y1);
+    y1 = std::max(y0, r_y2);
+    y1 = std::max(y0, r_y3);        
+
+    return true;
+  }
+  
 }
 
 #endif
