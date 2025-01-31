@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-import re
 import glob
 import os
+import re
 from typing import Dict, List
 
 from pydantic import TypeAdapter
@@ -53,17 +53,19 @@ def verify_bitmap_resources(
 
     return True
 
+
 def normalize_text(text: str) -> str:
     """
     Removes multiple consecutive spaces from the given text and replaces them with a single space.
-    
+
     Args:
         text (str): The input string.
-    
+
     Returns:
         str: The processed string with multiple spaces replaced by a single space.
     """
-    return re.sub(r'\s+', ' ', text).strip()
+    return re.sub(r"\s+", " ", text).strip()
+
 
 def verify_cells(
     true_cells: List[PdfCell], pred_cells: List[PdfCell], eps: float, filename: str
@@ -80,12 +82,14 @@ def verify_cells(
         ), "true_cell.ordering == pred_cell.ordering"
 
         assert (
-            #true_cell.text == pred_cell.text
-            normalize_text(true_cell.text) == normalize_text(pred_cell.text)
+            # true_cell.text == pred_cell.text
+            normalize_text(true_cell.text)
+            == normalize_text(pred_cell.text)
         ), f"true_cell.text == pred_cell.text => {true_cell.text} == {pred_cell.text} for {filename}"
         assert (
-            #true_cell.orig == pred_cell.orig
-            normalize_text(true_cell.orig) == normalize_text(pred_cell.orig)
+            # true_cell.orig == pred_cell.orig
+            normalize_text(true_cell.orig)
+            == normalize_text(pred_cell.orig)
         ), f"true_cell.orig == pred_cell.orig => {true_cell.orig} == {pred_cell.orig} for {filename}"
 
         true_rect = true_cell.rect.to_polygon()
@@ -225,7 +229,7 @@ def test_reference_documents_from_filenames():
         for page_no, pred_page in pdf_doc.iterate_pages():
             # print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
 
-            if False:
+            if True:
                 rname = os.path.basename(pdf_doc_path)
                 fname = os.path.join(
                     GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.original.py.json"
@@ -256,6 +260,9 @@ def test_reference_documents_from_filenames():
                     verify_SegmentedPdfPage(
                         true_page, pred_page.sanitized, filename=fname
                     )
+
+                    # true_page.render().show()
+                    # pred_page.sanitized.render().show()
 
             pred_page.original.render()
             # res.show()

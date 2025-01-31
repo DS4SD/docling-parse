@@ -321,16 +321,16 @@
       "rect": {
         "r_x0": 52.887,
         "r_y0": 454.733,
-        "r_x1": 71.957,
+        "r_x1": 115.256,
         "r_y1": 454.733,
-        "r_x2": 71.957,
+        "r_x2": 115.256,
         "r_y2": 464.442,
         "r_x3": 52.887,
         "r_y3": 464.442,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "Przyk",
-      "orig": "Przyk",
+      "text": "Przyk adowy wygl",
+      "orig": "Przyk adowy wygl",
       "rendering_mode": "",
       "font_key": "/Tc2",
       "font_name": "/AAAAAC+Swis721CnPL-Roman",
@@ -371,32 +371,6 @@
         "a": 255
       },
       "rect": {
-        "r_x0": 73.863,
-        "r_y0": 454.733,
-        "r_x1": 115.256,
-        "r_y1": 454.733,
-        "r_x2": 115.256,
-        "r_y2": 464.442,
-        "r_x3": 73.863,
-        "r_y3": 464.442,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "adowy wygl",
-      "orig": "adowy wygl",
-      "rendering_mode": "",
-      "font_key": "/Tc2",
-      "font_name": "/AAAAAC+Swis721CnPL-Roman",
-      "widget": false
-    },
-    {
-      "ordering": 13,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
         "r_x0": 115.256,
         "r_y0": 454.733,
         "r_x1": 119.316,
@@ -415,7 +389,7 @@
       "widget": false
     },
     {
-      "ordering": 14,
+      "ordering": 13,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -441,7 +415,7 @@
       "widget": false
     },
     {
-      "ordering": 15,
+      "ordering": 14,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -467,7 +441,7 @@
       "widget": false
     },
     {
-      "ordering": 16,
+      "ordering": 15,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -493,7 +467,7 @@
       "widget": false
     },
     {
-      "ordering": 17,
+      "ordering": 16,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -519,7 +493,7 @@
       "widget": false
     },
     {
-      "ordering": 18,
+      "ordering": 17,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -545,7 +519,7 @@
       "widget": false
     },
     {
-      "ordering": 19,
+      "ordering": 18,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -571,7 +545,7 @@
       "widget": false
     },
     {
-      "ordering": 20,
+      "ordering": 19,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -597,7 +571,7 @@
       "widget": false
     },
     {
-      "ordering": 21,
+      "ordering": 20,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -623,7 +597,7 @@
       "widget": false
     },
     {
-      "ordering": 22,
+      "ordering": 21,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -649,7 +623,7 @@
       "widget": false
     },
     {
-      "ordering": 23,
+      "ordering": 22,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -675,7 +649,7 @@
       "widget": false
     },
     {
-      "ordering": 24,
+      "ordering": 23,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -685,9 +659,9 @@
       "rect": {
         "r_x0": 404.16,
         "r_y0": 454.733,
-        "r_x1": 508.892,
+        "r_x1": 508.894,
         "r_y1": 454.733,
-        "r_x2": 508.892,
+        "r_x2": 508.894,
         "r_y2": 464.442,
         "r_x3": 404.16,
         "r_y3": 464.442,
@@ -701,7 +675,7 @@
       "widget": false
     },
     {
-      "ordering": 25,
+      "ordering": 24,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -727,7 +701,7 @@
       "widget": false
     },
     {
-      "ordering": 26,
+      "ordering": 25,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -753,7 +727,7 @@
       "widget": false
     },
     {
-      "ordering": 27,
+      "ordering": 26,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -779,7 +753,7 @@
       "widget": false
     },
     {
-      "ordering": 28,
+      "ordering": 27,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -805,7 +779,7 @@
       "widget": false
     },
     {
-      "ordering": 29,
+      "ordering": 28,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -831,7 +805,7 @@
       "widget": false
     },
     {
-      "ordering": 30,
+      "ordering": 29,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -857,7 +831,7 @@
       "widget": false
     },
     {
-      "ordering": 31,
+      "ordering": 30,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -883,7 +857,7 @@
       "widget": false
     },
     {
-      "ordering": 32,
+      "ordering": 31,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -909,7 +883,7 @@
       "widget": false
     },
     {
-      "ordering": 33,
+      "ordering": 32,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -935,7 +909,7 @@
       "widget": false
     },
     {
-      "ordering": 34,
+      "ordering": 33,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -961,7 +935,7 @@
       "widget": false
     },
     {
-      "ordering": 35,
+      "ordering": 34,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -987,7 +961,7 @@
       "widget": false
     },
     {
-      "ordering": 36,
+      "ordering": 35,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1013,7 +987,7 @@
       "widget": false
     },
     {
-      "ordering": 37,
+      "ordering": 36,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1023,23 +997,23 @@
       "rect": {
         "r_x0": 52.887,
         "r_y0": 192.987,
-        "r_x1": 94.598,
+        "r_x1": 116.947,
         "r_y1": 192.987,
-        "r_x2": 94.598,
+        "r_x2": 116.947,
         "r_y2": 202.695,
         "r_x3": 52.887,
         "r_y3": 202.695,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "3. Kolektor t",
-      "orig": "3. Kolektor t",
+      "text": "3. Kolektor t oczny",
+      "orig": "3. Kolektor t oczny",
       "rendering_mode": "",
       "font_key": "/Tc2",
       "font_name": "/AAAAAC+Swis721CnPL-Roman",
       "widget": false
     },
     {
-      "ordering": 38,
+      "ordering": 37,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1065,33 +1039,7 @@
       "widget": false
     },
     {
-      "ordering": 39,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
-        "r_x0": 96.503,
-        "r_y0": 192.987,
-        "r_x1": 116.947,
-        "r_y1": 192.987,
-        "r_x2": 116.947,
-        "r_y2": 202.695,
-        "r_x3": 96.503,
-        "r_y3": 202.695,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "oczny",
-      "orig": "oczny",
-      "rendering_mode": "",
-      "font_key": "/Tc2",
-      "font_name": "/AAAAAC+Swis721CnPL-Roman",
-      "widget": false
-    },
-    {
-      "ordering": 40,
+      "ordering": 38,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1117,7 +1065,7 @@
       "widget": false
     },
     {
-      "ordering": 41,
+      "ordering": 39,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1143,7 +1091,7 @@
       "widget": false
     },
     {
-      "ordering": 42,
+      "ordering": 40,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1153,23 +1101,23 @@
       "rect": {
         "r_x0": 121.212,
         "r_y0": 183.449,
-        "r_x1": 141.381,
+        "r_x1": 241.067,
         "r_y1": 183.449,
-        "r_x2": 141.381,
+        "r_x2": 241.067,
         "r_y2": 193.157,
         "r_x3": 121.212,
         "r_y3": 193.157,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "dzyko",
-      "orig": "dzyko",
+      "text": "dzyko nierzowe lub zawory kulowe",
+      "orig": "dzyko nierzowe lub zawory kulowe",
       "rendering_mode": "",
       "font_key": "/Tc2",
       "font_name": "/AAAAAC+Swis721CnPL-Roman",
       "widget": false
     },
     {
-      "ordering": 43,
+      "ordering": 41,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1195,33 +1143,7 @@
       "widget": false
     },
     {
-      "ordering": 44,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
-        "r_x0": 143.286,
-        "r_y0": 183.449,
-        "r_x1": 241.067,
-        "r_y1": 183.449,
-        "r_x2": 241.067,
-        "r_y2": 193.157,
-        "r_x3": 143.286,
-        "r_y3": 193.157,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "nierzowe lub zawory kulowe",
-      "orig": "nierzowe lub zawory kulowe",
-      "rendering_mode": "",
-      "font_key": "/Tc2",
-      "font_name": "/AAAAAC+Swis721CnPL-Roman",
-      "widget": false
-    },
-    {
-      "ordering": 45,
+      "ordering": 42,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1247,7 +1169,7 @@
       "widget": false
     },
     {
-      "ordering": 46,
+      "ordering": 43,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1273,7 +1195,7 @@
       "widget": false
     },
     {
-      "ordering": 47,
+      "ordering": 44,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1299,7 +1221,7 @@
       "widget": false
     },
     {
-      "ordering": 48,
+      "ordering": 45,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1325,7 +1247,7 @@
       "widget": false
     },
     {
-      "ordering": 49,
+      "ordering": 46,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1351,7 +1273,7 @@
       "widget": false
     },
     {
-      "ordering": 50,
+      "ordering": 47,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1377,7 +1299,7 @@
       "widget": false
     },
     {
-      "ordering": 51,
+      "ordering": 48,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1403,7 +1325,7 @@
       "widget": false
     },
     {
-      "ordering": 52,
+      "ordering": 49,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1429,7 +1351,7 @@
       "widget": false
     },
     {
-      "ordering": 53,
+      "ordering": 50,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1455,7 +1377,7 @@
       "widget": false
     },
     {
-      "ordering": 54,
+      "ordering": 51,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1465,23 +1387,23 @@
       "rect": {
         "r_x0": 358.966,
         "r_y0": 212.063,
-        "r_x1": 394.335,
+        "r_x1": 422.743,
         "r_y1": 212.063,
-        "r_x2": 394.335,
+        "r_x2": 422.743,
         "r_y2": 221.772,
         "r_x3": 358.966,
         "r_y3": 221.772,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "nienia na t",
-      "orig": "nienia na t",
+      "text": "nienia na t oczeniu",
+      "orig": "nienia na t oczeniu",
       "rendering_mode": "",
       "font_key": "/Tc2",
       "font_name": "/AAAAAC+Swis721CnPL-Roman",
       "widget": false
     },
     {
-      "ordering": 55,
+      "ordering": 52,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1507,33 +1429,7 @@
       "widget": false
     },
     {
-      "ordering": 56,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
-        "r_x0": 396.24,
-        "r_y0": 212.063,
-        "r_x1": 422.743,
-        "r_y1": 212.063,
-        "r_x2": 422.743,
-        "r_y2": 221.772,
-        "r_x3": 396.24,
-        "r_y3": 221.772,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "oczeniu",
-      "orig": "oczeniu",
-      "rendering_mode": "",
-      "font_key": "/Tc2",
-      "font_name": "/AAAAAC+Swis721CnPL-Roman",
-      "widget": false
-    },
-    {
-      "ordering": 57,
+      "ordering": 53,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1559,7 +1455,7 @@
       "widget": false
     },
     {
-      "ordering": 58,
+      "ordering": 54,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1585,7 +1481,7 @@
       "widget": false
     },
     {
-      "ordering": 59,
+      "ordering": 55,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1611,7 +1507,7 @@
       "widget": false
     },
     {
-      "ordering": 60,
+      "ordering": 56,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1637,7 +1533,7 @@
       "widget": false
     },
     {
-      "ordering": 61,
+      "ordering": 57,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1663,7 +1559,7 @@
       "widget": false
     },
     {
-      "ordering": 62,
+      "ordering": 58,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1689,7 +1585,7 @@
       "widget": false
     },
     {
-      "ordering": 63,
+      "ordering": 59,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1715,7 +1611,7 @@
       "widget": false
     },
     {
-      "ordering": 64,
+      "ordering": 60,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1741,7 +1637,7 @@
       "widget": false
     },
     {
-      "ordering": 65,
+      "ordering": 61,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1767,7 +1663,7 @@
       "widget": false
     },
     {
-      "ordering": 66,
+      "ordering": 62,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1793,7 +1689,7 @@
       "widget": false
     },
     {
-      "ordering": 67,
+      "ordering": 63,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1819,7 +1715,7 @@
       "widget": false
     },
     {
-      "ordering": 68,
+      "ordering": 64,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1845,7 +1741,7 @@
       "widget": false
     },
     {
-      "ordering": 69,
+      "ordering": 65,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1855,23 +1751,23 @@
       "rect": {
         "r_x0": 52.887,
         "r_y0": 121.1,
-        "r_x1": 164.945,
+        "r_x1": 213.565,
         "r_y1": 121.1,
-        "r_x2": 164.945,
+        "r_x2": 213.565,
         "r_y2": 130.809,
         "r_x3": 52.887,
         "r_y3": 130.809,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "     - zawory zwrotne po stronie t",
-      "orig": "     - zawory zwrotne po stronie t",
+      "text": "     - zawory zwrotne po stronie t ocznej pomp,",
+      "orig": "     - zawory zwrotne po stronie t ocznej pomp,",
       "rendering_mode": "",
       "font_key": "/Tc2",
       "font_name": "/AAAAAC+Swis721CnPL-Roman",
       "widget": false
     },
     {
-      "ordering": 70,
+      "ordering": 66,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1897,33 +1793,7 @@
       "widget": false
     },
     {
-      "ordering": 71,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
-        "r_x0": 166.85,
-        "r_y0": 121.1,
-        "r_x1": 213.565,
-        "r_y1": 121.1,
-        "r_x2": 213.565,
-        "r_y2": 130.809,
-        "r_x3": 166.85,
-        "r_y3": 130.809,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "ocznej pomp,",
-      "orig": "ocznej pomp,",
-      "rendering_mode": "",
-      "font_key": "/Tc2",
-      "font_name": "/AAAAAC+Swis721CnPL-Roman",
-      "widget": false
-    },
-    {
-      "ordering": 72,
+      "ordering": 67,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1949,7 +1819,7 @@
       "widget": false
     },
     {
-      "ordering": 73,
+      "ordering": 68,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -1975,7 +1845,7 @@
       "widget": false
     },
     {
-      "ordering": 74,
+      "ordering": 69,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2001,7 +1871,7 @@
       "widget": false
     },
     {
-      "ordering": 75,
+      "ordering": 70,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2027,7 +1897,7 @@
       "widget": false
     },
     {
-      "ordering": 76,
+      "ordering": 71,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2053,7 +1923,7 @@
       "widget": false
     },
     {
-      "ordering": 77,
+      "ordering": 72,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2079,7 +1949,7 @@
       "widget": false
     },
     {
-      "ordering": 78,
+      "ordering": 73,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2105,7 +1975,7 @@
       "widget": false
     },
     {
-      "ordering": 79,
+      "ordering": 74,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2115,23 +1985,23 @@
       "rect": {
         "r_x0": 85.293,
         "r_y0": 75.319,
-        "r_x1": 109.565,
+        "r_x1": 188.043,
         "r_y1": 75.319,
-        "r_x2": 109.565,
+        "r_x2": 188.043,
         "r_y2": 85.027,
         "r_x3": 85.293,
         "r_y3": 85.027,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "cznik p",
-      "orig": "cznik p",
+      "text": "cznik p ywakowy w zbiorniku.",
+      "orig": "cznik p ywakowy w zbiorniku.",
       "rendering_mode": "",
       "font_key": "/Tc2",
       "font_name": "/AAAAAC+Swis721CnPL-Roman",
       "widget": false
     },
     {
-      "ordering": 80,
+      "ordering": 75,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2157,33 +2027,7 @@
       "widget": false
     },
     {
-      "ordering": 81,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
-        "r_x0": 111.47,
-        "r_y0": 75.319,
-        "r_x1": 188.043,
-        "r_y1": 75.319,
-        "r_x2": 188.043,
-        "r_y2": 85.027,
-        "r_x3": 111.47,
-        "r_y3": 85.027,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "ywakowy w zbiorniku.",
-      "orig": "ywakowy w zbiorniku.",
-      "rendering_mode": "",
-      "font_key": "/Tc2",
-      "font_name": "/AAAAAC+Swis721CnPL-Roman",
-      "widget": false
-    },
-    {
-      "ordering": 82,
+      "ordering": 76,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2193,23 +2037,23 @@
       "rect": {
         "r_x0": 66.403,
         "r_y0": 767.265,
-        "r_x1": 211.026,
+        "r_x1": 230.811,
         "r_y1": 767.265,
-        "r_x2": 211.026,
+        "r_x2": 230.811,
         "r_y2": 787.778,
         "r_x3": 66.403,
         "r_y3": 787.778,
         "coord_origin": "BOTTOMLEFT"
       },
-      "text": "Zestawy r\u00f3wnoleg",
-      "orig": "Zestawy r\u00f3wnoleg",
+      "text": "Zestawy r\u00f3wnoleg e ",
+      "orig": "Zestawy r\u00f3wnoleg e ",
       "rendering_mode": "",
       "font_key": "/Tc7",
       "font_name": "/AAAAAH+Swis721CnPL-Bold",
       "widget": false
     },
     {
-      "ordering": 83,
+      "ordering": 77,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2219,9 +2063,9 @@
       "rect": {
         "r_x0": 211.026,
         "r_y0": 767.265,
-        "r_x1": 216.407,
+        "r_x1": 215.954,
         "r_y1": 767.265,
-        "r_x2": 216.407,
+        "r_x2": 215.954,
         "r_y2": 787.778,
         "r_x3": 211.026,
         "r_y3": 787.778,
@@ -2235,33 +2079,7 @@
       "widget": false
     },
     {
-      "ordering": 84,
-      "rgba": {
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "rect": {
-        "r_x0": 216.407,
-        "r_y0": 767.265,
-        "r_x1": 231.264,
-        "r_y1": 767.265,
-        "r_x2": 231.264,
-        "r_y2": 787.778,
-        "r_x3": 216.407,
-        "r_y3": 787.778,
-        "coord_origin": "BOTTOMLEFT"
-      },
-      "text": "e ",
-      "orig": "e ",
-      "rendering_mode": "",
-      "font_key": "/Tc7",
-      "font_name": "/AAAAAH+Swis721CnPL-Bold",
-      "widget": false
-    },
-    {
-      "ordering": 85,
+      "ordering": 78,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2287,7 +2105,7 @@
       "widget": false
     },
     {
-      "ordering": 86,
+      "ordering": 79,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2313,7 +2131,7 @@
       "widget": false
     },
     {
-      "ordering": 87,
+      "ordering": 80,
       "rgba": {
         "r": 0,
         "g": 0,
@@ -2323,9 +2141,9 @@
       "rect": {
         "r_x0": 488.901,
         "r_y0": 767.265,
-        "r_x1": 526.389,
+        "r_x1": 525.936,
         "r_y1": 767.265,
-        "r_x2": 526.389,
+        "r_x2": 525.936,
         "r_y2": 787.778,
         "r_x3": 488.901,
         "r_y3": 787.778,

@@ -274,12 +274,12 @@ def visualise_py(
     pdf_doc: PdfDocument = parser.load(path_or_stream=pdf_path, lazy=True)
 
     page_nos = [page_num]
-    if page_num==-1:
-        page_nos = [(page_ind+1) for page_ind in range(0, pdf_doc.number_of_pages())]
+    if page_num == -1:
+        page_nos = [(page_ind + 1) for page_ind in range(0, pdf_doc.number_of_pages())]
 
     for page_no in page_nos:
         print(f"parsing {pdf_path} on page: {page_no}")
-        
+
         pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_no)
 
         if category in ["sanitized", "both"]:
@@ -294,7 +294,7 @@ def visualise_py(
         lines = pdf_page.original.export_to_textlines(add_fontkey=True)
         print(f"text-lines (original, page_no: {page_no}):")
         print("\n".join(lines))
-        
+
         lines = pdf_page.sanitized.export_to_textlines(add_fontkey=True)
         print(f"text-lines (sanitized, page_no: {page_no}):")
         print("\n".join(lines))

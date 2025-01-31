@@ -355,7 +355,7 @@ class SegmentedPdfPage(BaseModel):
         self,
         add_location: bool = True,
         add_fontkey: bool = False,
-        add_fontname: bool = False,
+        add_fontname: bool = True,
     ) -> List[str]:
         lines: List[str] = []
         for cell in self.cells:
