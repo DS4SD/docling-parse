@@ -273,26 +273,35 @@ def visualise_py(
 
     pdf_doc: PdfDocument = parser.load(path_or_stream=pdf_path, lazy=True)
 
-    pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_num)
+    page_nos = [page_num]
+    if page_num == -1:
+        page_nos = [(page_ind + 1) for page_ind in range(0, pdf_doc.number_of_pages())]
 
-    if category == "both":
-        pdf_page.original.render(
-            draw_cells_bbox=(not display_text), draw_cells_text=display_text
-        ).show()
-        pdf_page.sanitized.render(
-            draw_cells_bbox=(not display_text), draw_cells_text=display_text
-        ).show()
-    elif category == "sanitized":
-        pdf_page.sanitized.render(
-            draw_cells_bbox=(not display_text), draw_cells_text=display_text
-        ).show()
-    elif category == "original":
-        pdf_page.original.render(
-            draw_cells_bbox=(not display_text), draw_cells_text=display_text
-        ).show()
+    for page_no in page_nos:
+        print(f"parsing {pdf_path} on page: {page_no}")
 
-    lines = pdf_page.sanitized.export_to_textlines(add_fontkey=True)
-    print("text-lines: \n", "\n".join(lines))
+        pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_no)
+
+        if category in ["sanitized", "both"]:
+            pdf_page.sanitized.render(
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            ).show()
+        elif category in ["original", "both"]:
+            pdf_page.original.render(
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            ).show()
+
+        lines = pdf_page.original.export_to_textlines(
+            add_fontkey=True, add_fontname=False
+        )
+        print(f"text-lines (original, page_no: {page_no}):")
+        print("\n".join(lines))
+
+        lines = pdf_page.sanitized.export_to_textlines(
+            add_fontkey=True, add_fontname=False
+        )
+        print(f"text-lines (sanitized, page_no: {page_no}):")
+        print("\n".join(lines))
 
     """
     lines = pdf_page.original.export_to_textlines(add_fontkey=True)

@@ -403,8 +403,8 @@ namespace pdflib
 		  cell.rendering_mode = 0;
 
 		  cell.space_width = 0;
-		  cell.chars  = {};//chars;
-		  cell.widths = {};//widths;
+		  //cell.chars  = {};//chars;
+		  //cell.widths = {};//widths;
 		  
 		  cell.enc_name = "Form-font"; //font.get_encoding_name();
 		  
@@ -475,36 +475,26 @@ namespace pdflib
 
     {
       lines = page_lines;
-
-      /*
-      pdf_sanitator<PAGE_LINES> sanitator(page_dimension,
-                                          page_lines);
-      sanitator.sanitize(liness);      
-      */
     }
 
     {
       images = page_images;
-
-      /*
-      pdf_sanitator<PAGE_IMAGES> sanitator(page_dimension,
-                                          page_lines);
-      sanitator.sanitize(liness);      
-      */
     }
 
     // sanitise the cells
     {
-      /*
-      pdf_sanitator<PAGE_CELLS> sanitator(page_dimension,
-                                          page_lines);
-      */
       pdf_sanitator<PAGE_CELLS> sanitator;
+
+      sanitator.remove_duplicate_chars(page_cells, 0.5);
+
+      sanitator.sanitize_text(page_cells);
+      
       cells = page_cells;
       
       double horizontal_cell_tolerance=1.0;
       bool enforce_same_font=true;
-      double space_width_factor_for_merge=1.5;
+      //double space_width_factor_for_merge=1.5;
+      double space_width_factor_for_merge=1.0;
       double space_width_factor_for_merge_with_space=0.33;
       
       sanitator.sanitize_bbox(cells,
@@ -513,7 +503,7 @@ namespace pdflib
 			      space_width_factor_for_merge,
 			      space_width_factor_for_merge_with_space);
       
-      sanitator.sanitize_text(cells);
+      //sanitator.sanitize_text(cells);
       
       LOG_S(INFO) << "#-page-cells: " << page_cells.size();
       LOG_S(INFO) << "#-sani-cells: " << cells.size();
