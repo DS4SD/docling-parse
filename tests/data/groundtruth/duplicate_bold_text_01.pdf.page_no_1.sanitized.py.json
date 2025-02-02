@@ -1,0 +1,769 @@
+{
+  "dimension": {
+    "angle": 0.0,
+    "boundary_type": "crop_box",
+    "rect": {
+      "r_x0": 0.0,
+      "r_y0": 0.0,
+      "r_x1": 595.22,
+      "r_y1": 0.0,
+      "r_x2": 595.22,
+      "r_y2": 842.0,
+      "r_x3": 0.0,
+      "r_y3": 842.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "art_bbox": {
+      "l": 0.0,
+      "t": 842.0,
+      "r": 595.22,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "bleed_bbox": {
+      "l": 56.665,
+      "t": 761.157,
+      "r": 538.555,
+      "b": 80.843,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "crop_bbox": {
+      "l": 0.0,
+      "t": 842.0,
+      "r": 595.22,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "media_bbox": {
+      "l": 0.0,
+      "t": 842.0,
+      "r": 595.22,
+      "b": 0.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    "trim_bbox": {
+      "l": 56.665,
+      "t": 761.157,
+      "r": 538.555,
+      "b": 80.843,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  },
+  "cells": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 292.81,
+        "r_y0": 106.642,
+        "r_x1": 302.41,
+        "r_y1": 106.642,
+        "r_x2": 302.41,
+        "r_y2": 115.809,
+        "r_x3": 292.81,
+        "r_y3": 115.809,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "51",
+      "orig": "51",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 136.924,
+        "r_y0": 680.691,
+        "r_x1": 458.274,
+        "r_y1": 680.691,
+        "r_x2": 458.274,
+        "r_y2": 689.751,
+        "r_x3": 136.924,
+        "r_y3": 689.751,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "IN THE NAME OF ALLAH, THE ALL-MERCIFUL, THE MOST MERCIFUL",
+      "orig": "IN THE NAME OF ALLAH, THE ALL-MERCIFUL, THE MOST MERCIFUL",
+      "rendering_mode": "",
+      "font_key": "/T1_1",
+      "font_name": "/ANIICK+MinionPro-BoldIt",
+      "widget": false
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 130.863,
+        "r_y0": 658.683,
+        "r_x1": 466.792,
+        "r_y1": 658.683,
+        "r_x2": 466.792,
+        "r_y2": 668.766,
+        "r_x3": 130.863,
+        "r_y3": 668.766,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "All praise be to Allah, the Lord of all the worlds, and blessings and peace be ",
+      "orig": "All praise be to Allah, the Lord of all the worlds, and blessings and peace be ",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 135.418,
+        "r_y0": 642.683,
+        "r_x1": 459.786,
+        "r_y1": 642.683,
+        "r_x2": 459.786,
+        "r_y2": 652.766,
+        "r_x3": 135.418,
+        "r_y3": 652.766,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "upon our master, Muhammad, and his household and all his companions",
+      "orig": "upon our master, Muhammad, and his household and all his companions",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 266.998,
+        "r_y0": 571.852,
+        "r_x1": 328.218,
+        "r_y1": 571.852,
+        "r_x2": 328.218,
+        "r_y2": 589.998,
+        "r_x3": 266.998,
+        "r_y3": 589.998,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "Preface",
+      "orig": "Preface",
+      "rendering_mode": "",
+      "font_key": "/T1_2",
+      "font_name": "/ANIIDK+MinionPro-Bold",
+      "widget": false
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 134.618,
+        "r_y0": 538.078,
+        "r_x1": 477.518,
+        "r_y1": 538.078,
+        "r_x2": 477.518,
+        "r_y2": 549.078,
+        "r_x3": 134.618,
+        "r_y3": 549.078,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "The purpose of this standard is to explain the Shari'ah rulings relating to ",
+      "orig": "The purpose of this standard is to explain the Shari'ah rulings relating to ",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 120.445,
+        "r_y0": 522.078,
+        "r_x1": 477.505,
+        "r_y1": 522.078,
+        "r_x2": 477.505,
+        "r_y2": 533.078,
+        "r_x3": 120.445,
+        "r_y3": 533.078,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "trading in currencies, as well as the conditions and precepts laid down by ",
+      "orig": "trading in currencies, as well as the conditions and precepts laid down by ",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 120.445,
+        "r_y0": 506.078,
+        "r_x1": 477.505,
+        "r_y1": 506.078,
+        "r_x2": 477.505,
+        "r_y2": 517.078,
+        "r_x3": 120.445,
+        "r_y3": 517.078,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "the Shari'ah as to what is permissible in currency trading and what is not. ",
+      "orig": "the Shari'ah as to what is permissible in currency trading and what is not. ",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 120.445,
+        "r_y0": 490.078,
+        "r_x1": 477.481,
+        "r_y1": 490.078,
+        "r_x2": 477.481,
+        "r_y2": 501.078,
+        "r_x3": 120.445,
+        "r_y3": 501.078,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "The standard also explains some of the practices being applied by Islamic ",
+      "orig": "The standard also explains some of the practices being applied by Islamic ",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 120.445,
+        "r_y0": 474.078,
+        "r_x1": 222.745,
+        "r_y1": 474.078,
+        "r_x2": 222.745,
+        "r_y2": 485.078,
+        "r_x3": 120.445,
+        "r_y3": 485.078,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "financial Institutions.",
+      "orig": "financial Institutions.",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 222.743,
+        "r_y0": 479.288,
+        "r_x1": 230.942,
+        "r_y1": 479.288,
+        "r_x2": 230.942,
+        "r_y2": 485.701,
+        "r_x3": 222.743,
+        "r_y3": 485.701,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "(1)",
+      "orig": "(1)",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 120.445,
+        "r_y0": 161.282,
+        "r_x1": 477.014,
+        "r_y1": 161.282,
+        "r_x2": 477.014,
+        "r_y2": 170.449,
+        "r_x3": 120.445,
+        "r_y3": 170.449,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "(1) The word (Institution/Institutions) is used here to refer, in short, to Islamic financial ",
+      "orig": "(1) The word (Institution/Institutions) is used here to refer, in short, to Islamic financial ",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "rect": {
+        "r_x0": 134.618,
+        "r_y0": 149.282,
+        "r_x1": 280.248,
+        "r_y1": 149.282,
+        "r_x2": 280.248,
+        "r_y2": 158.449,
+        "r_x3": 134.618,
+        "r_y3": 158.449,
+        "coord_origin": "BOTTOMLEFT"
+      },
+      "text": "institutions including Islamic Banks.",
+      "orig": "institutions including Islamic Banks.",
+      "rendering_mode": "",
+      "font_key": "/T1_0",
+      "font_name": "/ANIIBJ+MinionPro-Regular",
+      "widget": false
+    }
+  ],
+  "bitmap_resources": [],
+  "lines": [
+    {
+      "ordering": 0,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          120.445,
+          175.709
+        ],
+        [
+          262.177,
+          175.709
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 1,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          50.665,
+          761.157
+        ],
+        [
+          35.665,
+          761.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 2,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          544.555,
+          761.157
+        ],
+        [
+          559.555,
+          761.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 3,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          50.665,
+          80.843
+        ],
+        [
+          35.665,
+          80.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 4,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          544.555,
+          80.843
+        ],
+        [
+          559.555,
+          80.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 5,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.665,
+          767.157
+        ],
+        [
+          56.665,
+          782.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 6,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.665,
+          74.843
+        ],
+        [
+          56.665,
+          59.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 7,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          538.555,
+          767.157
+        ],
+        [
+          538.555,
+          782.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 8,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          538.555,
+          74.843
+        ],
+        [
+          538.555,
+          59.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 9,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          50.665,
+          761.157
+        ],
+        [
+          35.665,
+          761.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 10,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          544.555,
+          761.157
+        ],
+        [
+          559.555,
+          761.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 11,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          50.665,
+          80.843
+        ],
+        [
+          35.665,
+          80.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 12,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          544.555,
+          80.843
+        ],
+        [
+          559.555,
+          80.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 13,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.665,
+          767.157
+        ],
+        [
+          56.665,
+          782.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 14,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          56.665,
+          74.843
+        ],
+        [
+          56.665,
+          59.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 15,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          538.555,
+          767.157
+        ],
+        [
+          538.555,
+          782.157
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    },
+    {
+      "ordering": 16,
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      "parent_id": 0,
+      "points": [
+        [
+          538.555,
+          74.843
+        ],
+        [
+          538.555,
+          59.843
+        ]
+      ],
+      "width": 1.0,
+      "coord_origin": "BOTTOMLEFT"
+    }
+  ]
+}

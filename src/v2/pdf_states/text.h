@@ -367,22 +367,33 @@ namespace pdflib
 
     std::vector<pdf_resource<PAGE_CELL> > cells={};
 
+    /*
     double space_width=0;
     {
       double w0 = font.get_space_width();
       space_width = (w0 / 1000.0 * font_size * h_scaling);// + (char_spacing+word_spacing)*h_scaling;
     }
-
+    */
+    
     for(auto item:items)
       {
         double      width_ = font.get_width(item.first);
         std::string chars_ = font.get_string(item.first);
 
-        LOG_S(INFO) << item.first << " --> " << item.second << "\twidth_: " << width_ << "\tchars_: '" << chars_ << "'";
+        /*
+	  LOG_S(INFO) << item.first << " --> "
+	  << item.second << "\twidth_: "
+	  << width_ << "\tchars_: '" << chars_ << "'";
+	 */
 
         double char_width = (width_ / 1000.0 * font_size * h_scaling);
 
-	//LOG_S(INFO) << "char_width: " << char_width << ", width_: " << width_ << ", font_size: " << font_size << ", h_scaling: " << h_scaling;	
+	/*
+	  LOG_S(INFO) << "char_width: "
+	  << char_width << ", width_: " << width_
+	  << ", font_size: " << font_size
+	  << ", h_scaling: " << h_scaling;	
+	 */
 	
         double delta_width=0;
         if(chars_==" ")
@@ -395,7 +406,9 @@ namespace pdflib
           }
 
 	//LOG_S(INFO) << "delta_width: " << delta_width;
-	
+
+	// this is the old way of adding cells
+	/*
         if(delta_width >= space_width)
           {
             //LOG_S(WARNING) << "delta_width (="<<delta_width<<") >= space_width ("<<space_width<<")";
@@ -424,6 +437,24 @@ namespace pdflib
             text  += chars_;
             width += width_new;
           }
+	*/
+
+	if(true) // adding char by char ...
+	  {
+            text  += chars_;
+            width += char_width;
+
+            //add_cell(font, text, char_width, stack_size, cells);
+            add_cell(font, text, width, stack_size, cells);
+
+            move_cursor(delta_width, 0);
+
+            chars  = {};
+            widths = {};
+
+            text  = "";
+            width = 0;
+          }
       }
 
     //LOG_S(INFO) << "text-line: " << text;
@@ -431,15 +462,6 @@ namespace pdflib
       {
         add_cell(font, text, width, stack_size, cells);
       }
-
-    //std::cout << "continue: ";
-
-    //std::string answer;
-    //std::cin >> answer;
-    //if(answer=="n")
-    //{
-    //throw std::logic_error(__FUNCTION__);
-    //}
 
     return cells;
   }
@@ -477,8 +499,6 @@ namespace pdflib
       pdf_resource<PAGE_CELL> cell;
 
       cell.widget = false;
-      
-      //std::array<double, 8> rect = compute_rect(font_descent, font_ascent, width);
 
       double ratio = 1.0;
       if(0.05<=font_capheight/font_ascent and font_capheight/font_ascent<=1.0)
@@ -510,8 +530,8 @@ namespace pdflib
       cell.rendering_mode = rendering_mode;
 
       cell.space_width = space_width;
-      cell.chars  = {};//chars;
-      cell.widths = {};//widths;
+      //cell.chars  = {};//chars;
+      //cell.widths = {};//widths;
 
       cell.enc_name = font.get_encoding_name();
 

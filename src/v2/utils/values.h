@@ -69,6 +69,11 @@ namespace utils
       return (area_union > 0) ? (area_inter / area_union) : 0.0;
     }
 
+    double distance(double x0, double y0, double x1, double y1)
+    {
+      return std::sqrt(std::pow(x0-x1, 2)+std::pow(y0-y1, 2));
+    }
+    
     void rotate_inplace(int angle, double& x0, double& y0)
     {
       double phi = -3.141592*angle/180.0;

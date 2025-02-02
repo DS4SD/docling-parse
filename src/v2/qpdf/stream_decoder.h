@@ -32,11 +32,15 @@ namespace pdflib
   private:
 
     std::vector<qpdf_instruction>& stream;
+
+    std::regex value_pattern_0;    
   };
 
   qpdf_stream_decoder::qpdf_stream_decoder(std::vector<qpdf_instruction>& stream_):
     QPDFObjectHandle::ParserCallbacks(),
-    stream(stream_)
+    stream(stream_),
+
+    value_pattern_0(R"(^(\d\.\d+)(\-\d+)$)")
   {}
 
   qpdf_stream_decoder::~qpdf_stream_decoder()
@@ -95,6 +99,7 @@ namespace pdflib
       row.key = obj.getTypeName();
       row.val = obj.unparse();
       row.obj = obj;
+
       //LOG_S(INFO) << std::setw(12) << row.key << " | " << row.val;
     }
 
@@ -105,6 +110,8 @@ namespace pdflib
       }
     */
 
+    std::smatch match;
+    
     // if the row is null, reinterprete it as an empty array. We encountered
     // this usecase for a parameter of the d operator (see Table 56) that is
     // null but in reality should be an empty array.
@@ -112,6 +119,19 @@ namespace pdflib
       {
 	row.key = "parameter";
 	row.val = "[]";
+      }
+    else if (std::regex_match(row.val, match, value_pattern_0))
+      {
+	LOG_S(WARNING) << std::setw(12) << row.key << " | " << row.val << " => new matched value: " << match[1];
+
+	double value = std::stod(match[1].str());
+	
+	// Creating a real (floating-point) QPDFObjectHandle
+	QPDFObjectHandle new_obj = QPDFObjectHandle::newReal(value);
+
+	row.key = new_obj.getTypeName();
+	row.val = new_obj.unparse();
+	row.obj = new_obj;
       }
     
     stream.push_back(row);
