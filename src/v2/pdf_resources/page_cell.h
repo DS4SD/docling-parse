@@ -296,7 +296,7 @@ namespace pdflib
     x1 = std::max(x1, r_x1);
     x1 = std::max(x1, r_x2);
     x1 = std::max(x1, r_x3);
-
+    
     y1 = r_y0;
     y1 = std::max(y1, r_y1);
     y1 = std::max(y1, r_y2);
