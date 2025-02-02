@@ -1,3 +1,17 @@
+## [v3.2.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.2.0) - 2025-02-02
+
+### Feature
+
+* Added the pure chars and fixed the duplicate text ([#91](https://github.com/DS4SD/docling-parse/issues/91)) ([`9718762`](https://github.com/DS4SD/docling-parse/commit/97187622095793eb8a780f1e74680c6867b39a6e))
+
+### Fix
+
+* Added the fix for rotated pages ([#90](https://github.com/DS4SD/docling-parse/issues/90)) ([`d663eec`](https://github.com/DS4SD/docling-parse/commit/d663eec5fdc06ab7159b97f7d7b45f3a3ba72975))
+
+### Documentation
+
+* Fix unit of measure of processing speed ([#89](https://github.com/DS4SD/docling-parse/issues/89)) ([`760b932`](https://github.com/DS4SD/docling-parse/commit/760b932b6770d928380ee83cdd9d14b901f695f8))
+
 ## [v3.1.2](https://github.com/DS4SD/docling-parse/releases/tag/v3.1.2) - 2025-01-27
 
 ### Fix
