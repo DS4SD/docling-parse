@@ -59,28 +59,32 @@ def verify_dimensions(true_dimension, pred_dimension):
     return True
 
 
-def verify_cells(true_cells, true_header, pred_cells, pred_header):
+def verify_cells(true_cells, true_header, pred_cells, pred_header, pdf_doc):
 
-    assert true_header == pred_header, "true_header==pred_header"
+    assert true_header == pred_header, f"true_header==pred_header for {pdf_doc}"
 
-    assert len(pred_cells) == len(true_cells), "len(pred_cells)==len(true_cells)"
+    assert len(pred_cells) == len(
+        true_cells
+    ), f"len(pred_cells)==len(true_cells) for {pdf_doc}"
 
     for row_i, row_j in zip(pred_cells, true_cells):
-        assert len(row_i) == len(row_j), "len(pred_cells)==len(true_cells)"
+        assert len(row_i) == len(
+            row_j
+        ), f"len(pred_cells)==len(true_cells) for {pdf_doc}"
 
         for i, _ in enumerate(pred_header):
 
             if isinstance(row_i[i], float):
                 assert (
                     abs(row_i[i] - row_j[i]) <= 1.0e-2
-                ), f"{_}: {row_i[i]}=={row_j[i]}"
+                ), f"{_}: {row_i[i]}=={row_j[i]} for {pdf_doc} with \npred: {row_i} and \ntrue: {row_j}"
             else:
                 assert row_i[i] == row_j[i], f"{_}: {row_i[i]}=={row_j[i]}"
 
     return True
 
 
-def verify_images(true_images, true_header, pred_images, pred_header):
+def verify_images(true_images, true_header, pred_images, pred_header, pdf_doc):
 
     assert true_header == pred_header, "true_header==pred_header"
 
@@ -119,7 +123,7 @@ def verify_lines(true_lines, pred_lines):
     return True
 
 
-def verify_reference_output(true_doc, pred_doc):
+def verify_reference_output(true_doc, pred_doc, pdf_doc):
 
     num_true_pages = len(true_doc["pages"])
     num_pred_pages = len(pred_doc["pages"])
@@ -149,8 +153,8 @@ def verify_reference_output(true_doc, pred_doc):
             true_header = true_page[_]["cells"]["header"]
 
             assert verify_cells(
-                true_cells, true_header, pred_cells, pred_header
-            ), f"verify {_} cells"
+                true_cells, true_header, pred_cells, pred_header, pdf_doc
+            ), f"verify {_} cells for {pdf_doc}"
 
             pred_images = pred_page[_]["images"]["data"]
             true_images = true_page[_]["images"]["data"]
@@ -159,8 +163,8 @@ def verify_reference_output(true_doc, pred_doc):
             true_header = true_page[_]["images"]["header"]
 
             assert verify_images(
-                true_images, true_header, pred_images, pred_header
-            ), f"verify {_} images"
+                true_images, true_header, pred_images, pred_header, pdf_doc
+            ), f"verify {_} images for {pdf_doc}"
 
             pred_lines = pred_page[_]["lines"]
             true_lines = true_page[_]["lines"]
@@ -217,7 +221,7 @@ def test_reference_documents_from_filenames_with_keys():
                 true_doc = json.load(fr)
 
             assert verify_reference_output(
-                true_doc, pred_doc
+                true_doc, pred_doc, pdf_doc
             ), "verify_reference_output(true_doc, pred_doc)"
 
 
@@ -259,7 +263,7 @@ def test_reference_documents_from_filenames_with_keys_page_by_page():
                     true_doc = json.load(fr)
 
                 assert verify_reference_output(
-                    true_doc, pred_doc
+                    true_doc, pred_doc, pdf_doc
                 ), "verify_reference_output(true_doc, pred_doc)"
 
         # print(" => unload_document ...")
@@ -319,7 +323,7 @@ def test_reference_documents_from_bytesio_with_keys():
                 true_doc = json.load(fr)
 
             assert verify_reference_output(
-                true_doc, pred_doc
+                true_doc, pred_doc, pdf_doc
             ), "verify_reference_output(true_doc, pred_doc)"
 
 
@@ -365,7 +369,7 @@ def test_reference_documents_from_bytesio_with_keys_page_by_page():
                     true_doc = json.load(fr)
 
                 assert verify_reference_output(
-                    true_doc, pred_doc
+                    true_doc, pred_doc, pdf_doc
                 ), "verify_reference_output(true_doc, pred_doc)"
 
         parser.unload_document(doc_key)
