@@ -89,7 +89,7 @@ def parse_args():
         action="store_true",
         help="Enable interactive mode (default: False)",
     )
-    
+
     # Add an argument for the output directory, defaulting to "./tmp"
     parser.add_argument(
         "-o",
@@ -298,14 +298,14 @@ def visualise_py(
 
             if interactive:
                 img.show()
-            
+
             if log_text:
                 lines = pdf_page.original.export_to_textlines(
                     add_fontkey=True, add_fontname=False
                 )
                 print(f"text-lines (original, page_no: {page_no}):")
                 print("\n".join(lines))
-        
+
         if category in ["sanitized", "both"]:
             img = pdf_page.sanitized.render(
                 draw_cells_bbox=(not display_text), draw_cells_text=display_text
@@ -320,7 +320,7 @@ def visualise_py(
                 )
                 print(f"text-lines (sanitized, page_no: {page_no}):")
                 print("\n".join(lines))
-            
+
 
 def main():
 
