@@ -83,6 +83,13 @@ def parse_args():
         help="Enable interactive mode (default: False)",
     )
 
+    # Add an optional boolean argument for interactive mode
+    parser.add_argument(
+        "--log-text",
+        action="store_true",
+        help="Enable interactive mode (default: False)",
+    )
+    
     # Add an argument for the output directory, defaulting to "./tmp"
     parser.add_argument(
         "-o",
@@ -122,6 +129,7 @@ def parse_args():
         args.output_dir,
         int(args.page),
         args.display_text,
+        args.log_text,
         args.page_boundary,
         args.category,
     )
@@ -266,6 +274,7 @@ def visualise_py(
     output_dir: str,
     page_num: int,
     display_text: bool,
+    log_text: bool,
     page_boundary: str = "crop_box",  # media_box
     category: str = "both",  # "both", "sanitized", "original"
 ):
@@ -282,32 +291,36 @@ def visualise_py(
 
         pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_no)
 
+        if category in ["original", "both"]:
+            img = pdf_page.original.render(
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            )
+
+            if interactive:
+                img.show()
+            
+            if log_text:
+                lines = pdf_page.original.export_to_textlines(
+                    add_fontkey=True, add_fontname=False
+                )
+                print(f"text-lines (original, page_no: {page_no}):")
+                print("\n".join(lines))
+        
         if category in ["sanitized", "both"]:
-            pdf_page.sanitized.render(
+            img = pdf_page.sanitized.render(
                 draw_cells_bbox=(not display_text), draw_cells_text=display_text
-            ).show()
-        elif category in ["original", "both"]:
-            pdf_page.original.render(
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
-            ).show()
+            )
 
-        lines = pdf_page.original.export_to_textlines(
-            add_fontkey=True, add_fontname=False
-        )
-        print(f"text-lines (original, page_no: {page_no}):")
-        print("\n".join(lines))
+            if interactive:
+                img.show()
 
-        lines = pdf_page.sanitized.export_to_textlines(
-            add_fontkey=True, add_fontname=False
-        )
-        print(f"text-lines (sanitized, page_no: {page_no}):")
-        print("\n".join(lines))
-
-    """
-    lines = pdf_page.original.export_to_textlines(add_fontkey=True)
-    print("\n".join(lines))
-    """
-
+            if log_text:
+                lines = pdf_page.sanitized.export_to_textlines(
+                    add_fontkey=True, add_fontname=False
+                )
+                print(f"text-lines (sanitized, page_no: {page_no}):")
+                print("\n".join(lines))
+            
 
 def main():
 
@@ -319,6 +332,7 @@ def main():
         output_dir,
         page_num,
         display_text,
+        log_text,
         page_boundary,
         category,
     ) = parse_args()
@@ -353,6 +367,7 @@ def main():
             output_dir=output_dir,
             page_num=page_num,
             display_text=display_text,
+            log_text=log_text,
             page_boundary=page_boundary,
             category=category,
         )
