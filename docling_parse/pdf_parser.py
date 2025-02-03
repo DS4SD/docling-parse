@@ -174,7 +174,6 @@ class PdfDocument:
 
         result: List[PdfCell] = []
         for ind, row in enumerate(data):
-            print(row)
             rect = BoundingRectangle(
                 r_x0=row[header.index(f"r_x0")],
                 r_y0=row[header.index(f"r_y0")],
@@ -192,6 +191,7 @@ class PdfDocument:
                 font_key=row[header.index(f"font-key")],
                 font_name=row[header.index(f"font-name")],
                 widget=row[header.index(f"widget")],
+                left_to_right=row[header.index(f"left_to_right")],
                 ordering=ind,
                 rendering_mode="",
             )

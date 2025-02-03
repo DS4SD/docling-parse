@@ -98,7 +98,7 @@ def verify_cells(
         for l in range(0, 4):
             assert (
                 abs(true_rect[l][0] - pred_rect[l][0]) < eps
-            ), f"abs(true_rect[{l}][0]-pred_rect[{l}][0])<eps -> abs({true_rect[l][0]}-{pred_rect[l][0]})<{eps}"
+            ), f"abs(true_rect[{l}][0]-pred_rect[{l}][0])<eps -> abs({true_rect[l][0]}-{pred_rect[l][0]})<{eps} for {filename}"
 
             assert (
                 abs(true_rect[l][1] - pred_rect[l][1]) < eps
@@ -210,7 +210,7 @@ def test_reference_documents_from_filenames():
 
     parser = DoclingPdfParser(loglevel="fatal")
 
-    pdf_docs = glob.glob(REGRESSION_FOLDER)
+    pdf_docs = sorted(glob.glob(REGRESSION_FOLDER))
 
     assert len(pdf_docs) > 0, "len(pdf_docs)==0 -> nothing to test"
 

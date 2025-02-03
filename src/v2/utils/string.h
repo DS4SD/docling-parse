@@ -200,6 +200,107 @@ namespace utils
       
       return text;
     }
+
+    // Function to check if a Unicode character is punctuation or whitespace
+    bool is_punctuation_or_space(char32_t ch)
+    {
+      static const std::unordered_set<char32_t> punctuationAndSpaces = {
+        U' ', U'\t', U'\n', U'\r', U'\f', U'\v',  // Whitespace characters
+        U'.', U',', U';', U':', U'!', U'?',       // Basic punctuation
+        U'(', U')', U'[', U']', U'{', U'}',       // Brackets
+        U'\'', U'\"', U'`', U'‘', U'’', U'“', U'”', // Quotes
+        U'-', U'–', U'—', U'_',                  // Hyphens and dashes
+        U'/', U'\\', U'|', U'@', U'#', U'%', U'&', U'*', U'+', U'=', U'<', U'>'
+      };
+      
+      // Check if character is in the punctuation set
+      if(punctuationAndSpaces.count(ch))
+	{
+	  return true;
+	}
+      
+      // Additional Unicode punctuation ranges
+      return (ch >= 0x2000 && ch <= 0x206F) ||  // General Punctuation block
+	(ch >= 0x3000 && ch <= 0x303F) ||  // CJK Symbols and Punctuation
+	(ch >= 0xFE50 && ch <= 0xFE6F) ||  // Small Form Variants
+	(ch >= 0xFF00 && ch <= 0xFF0F) ||  // Fullwidth punctuation
+	(ch >= 0xFF1A && ch <= 0xFF1F) ||  // More fullwidth punctuation
+	(ch >= 0xFF3B && ch <= 0xFF5E);    // Fullwidth brackets and symbols
+    }
+
+    bool is_punctuation_or_space(const std::string& val)
+    {
+      if(val.size()==0)
+	{
+	  return false;
+	}
+      
+      if(utf8::is_valid(val.begin(), val.end()))
+	{
+	  std::vector<uint32_t> utf32_chars={};
+	  utf8::utf8to32(val.begin(), val.end(), std::back_inserter(utf32_chars));
+	  
+	  if(utf32_chars.size()==1)
+	    {
+	      return is_punctuation_or_space(utf32_chars.at(0));
+	    }
+	  else
+	    {
+	      return false;
+	    }
+	}
+      
+      return false;
+    }
+    
+    // Function to check if a Unicode character belongs to an RTL script
+    bool is_rtl_char(uint32_t ch)
+    {
+      return 
+        // Arabic script
+        (ch >= 0x0600 && ch <= 0x06FF) ||  // Arabic
+        (ch >= 0x0750 && ch <= 0x077F) ||  // Arabic Supplement
+        (ch >= 0x08A0 && ch <= 0x08FF) ||  // Arabic Extended-A
+        (ch >= 0xFB50 && ch <= 0xFDFF) ||  // Arabic Presentation Forms-A
+        (ch >= 0xFE70 && ch <= 0xFEFF) ||  // Arabic Presentation Forms-B
+
+        // Hebrew script
+        (ch >= 0x0590 && ch <= 0x05FF) ||  // Hebrew
+        (ch >= 0xFB1D && ch <= 0xFB4F) ||  // Hebrew Presentation Forms
+
+        // Syriac script
+        (ch >= 0x0700 && ch <= 0x074F) ||  // Syriac
+
+        // Thaana script
+        (ch >= 0x0780 && ch <= 0x07BF) ||  // Thaana
+
+        // N'Ko script
+        (ch >= 0x07C0 && ch <= 0x07FF);    // N’Ko
+    }
+    
+    bool is_right_to_left(const std::string& val)
+    {
+      if(val.size()==0)
+	{
+	  return false;
+	}
+      
+      if(utf8::is_valid(val.begin(), val.end()))
+	{
+	  std::vector<uint32_t> utf32_chars = {};
+	  utf8::utf8to32(val.begin(), val.end(), std::back_inserter(utf32_chars));
+
+	  bool result = true;
+	  for(auto _:utf32_chars)
+	    {
+	      result = (result and is_rtl_char(_));
+	    }
+
+	  return result;
+	}
+
+      return false;
+    }
     
   }
 

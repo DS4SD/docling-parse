@@ -142,7 +142,8 @@ namespace pdflib
 		   utils::values::distance(cells[i].r_x2, cells[i].r_y2, cells[j].r_x2, cells[j].r_y2)<eps and
 		   utils::values::distance(cells[i].r_x3, cells[i].r_y3, cells[j].r_x3, cells[j].r_y3)<eps)
 		  {
-		    LOG_S(INFO) << "removing: " << cells[j].text << "(" << cells[i].r_x0 << ", " << cells[i].r_y0 << ") ";
+		    LOG_S(WARNING) << "removing duplicate: " << cells[j].text
+				   << "(" << cells[i].r_x0 << ", " << cells[i].r_y0 << ") ";
 		    
 		    cells[j].active = false;
 		    erased_cell = true;		    
@@ -356,6 +357,11 @@ namespace pdflib
 		    continue;
 		  }
 
+		if(not cells[i].has_same_reading_orientation(cells[j]))
+		  {
+		    continue;
+		  }
+		
 		double delta_0 = cells[i].average_char_width()*space_width_factor_for_merge;
 		double delta_1 = cells[i].average_char_width()*space_width_factor_for_merge_with_space;
 		

@@ -473,14 +473,28 @@ namespace pdflib
   {
     LOG_S(INFO) << __FUNCTION__ << " with text='" << text << "', width=" << width;
 
+    bool left_to_right = (not utils::string::is_right_to_left(text));
+    
     double font_descent = font.get_descent();
     double font_ascent  = font.get_ascent();
     double font_capheight  = font.get_capheight();
 
-    LOG_S(INFO) << "font_descent: " << font_descent << ", "
-		<< "font_ascent: " << font_ascent << ", "
-      		<< "font_capheight: " << font_capheight << ", "
-		<< "capheight/ascent: " << font_capheight/font_ascent << "";
+    if(left_to_right)
+      {
+	LOG_S(INFO) << "font_descent: " << font_descent << ", "
+		    << "font_ascent: " << font_ascent << ", "
+		    << "font_capheight: " << font_capheight << ", "
+		    << "capheight/ascent: " << font_capheight/font_ascent << ", "
+		    << "left_to_right: " << left_to_right << ", text: " << text;
+      }
+    else
+      {
+	LOG_S(WARNING) << "font_descent: " << font_descent << ", "
+		       << "font_ascent: " << font_ascent << ", "
+		       << "font_capheight: " << font_capheight << ", "
+		       << "capheight/ascent: " << font_capheight/font_ascent << ", "
+		       << "left_to_right: " << left_to_right << ", text: " << text;
+      }
     
     double space_width=0;
     {
@@ -498,6 +512,9 @@ namespace pdflib
     {
       pdf_resource<PAGE_CELL> cell;
 
+      cell.active = true;
+      cell.left_to_right = left_to_right;
+      
       cell.widget = false;
 
       double ratio = 1.0;
@@ -530,8 +547,6 @@ namespace pdflib
       cell.rendering_mode = rendering_mode;
 
       cell.space_width = space_width;
-      //cell.chars  = {};//chars;
-      //cell.widths = {};//widths;
 
       cell.enc_name = font.get_encoding_name();
 

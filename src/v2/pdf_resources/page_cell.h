@@ -27,6 +27,8 @@ namespace pdflib
     
     bool is_adjacent_to(pdf_resource<PAGE_CELL>& other, double delta);
 
+    bool has_same_reading_orientation(pdf_resource<PAGE_CELL>& other);
+    
     bool merge_with(pdf_resource<PAGE_CELL>& other, double delta);
     
   public:
@@ -34,7 +36,8 @@ namespace pdflib
     static std::vector<std::string> header;
 
     bool active;
-
+    bool left_to_right;
+    
     double x0;
     double y0;
     double x1;
@@ -81,7 +84,8 @@ namespace pdflib
   };
 
   pdf_resource<PAGE_CELL>::pdf_resource():
-    active(true)
+    active(true),
+    left_to_right(true)
     {}
 
   pdf_resource<PAGE_CELL>::~pdf_resource()
@@ -128,7 +132,8 @@ namespace pdflib
     //"block-count",
     //"instr-count",
 
-    "widget"
+    "widget",
+    "left_to_right"
   };
 
   void pdf_resource<PAGE_CELL>::rotate(int angle, std::pair<double, double> delta)
@@ -180,7 +185,8 @@ namespace pdflib
       cell.push_back(font_key); // 17
       cell.push_back(font_name); // 18
 
-      cell.push_back(widget); //19
+      cell.push_back(widget); // 19
+      cell.push_back(left_to_right); // 20
     }
     assert(cell.size()==header.size());
 
@@ -219,6 +225,7 @@ namespace pdflib
         font_name = data.at(18).get<std::string>();
 
 	widget = data.at(19).get<bool>();
+	left_to_right = data.at(20).get<bool>();
 
         return true;
       }
@@ -255,26 +262,50 @@ namespace pdflib
   
   bool pdf_resource<PAGE_CELL>::is_adjacent_to(pdf_resource<PAGE_CELL>& other, double eps)
   {
-    //if(eps<0.0)
-    //{
-    //eps = average_char_width()/2.0;
-    //}
-    
     double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
     double d1 = std::sqrt((r_x2-other.r_x3)*(r_x2-other.r_x3) + (r_y2-other.r_y3)*(r_y2-other.r_y3));
 
     return ((d0<eps) and (d1<eps));
   }
 
+  bool pdf_resource<PAGE_CELL>::has_same_reading_orientation(pdf_resource<PAGE_CELL>& other)
+  {
+    // it might need is_punctuation function instead of just the space
+    bool is_punc = utils::string::is_punctuation_or_space(text);
+    bool other_is_punc = utils::string::is_punctuation_or_space(other.text);
+    
+    return ((left_to_right==other.left_to_right) or (text==" " or other.text==" ")); 
+  }
+  
   bool pdf_resource<PAGE_CELL>::merge_with(pdf_resource<PAGE_CELL>& other, double delta)
   {
+    if(not has_same_reading_orientation(other))
+      {
+	LOG_S(ERROR) << "inconsistent merging of cells!";
+      }
+    
     double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
 
-    if(delta<d0)
+    if((not left_to_right) or (not other.left_to_right))
       {
-	text += " ";
-      }    
-    text += other.text;
+	if(delta<d0)
+	  {
+	    text = " " + text;
+	  }    
+	text = other.text + text;
+
+	left_to_right = false;
+      }
+    else
+      {
+	if(delta<d0)
+	  {
+	    text += " ";
+	  }    
+	text += other.text;
+
+	left_to_right = true;
+      }
     
     r_x1 = other.r_x1;
     r_y1 = other.r_y1;
