@@ -142,8 +142,12 @@ namespace pdflib
 		   utils::values::distance(cells[i].r_x2, cells[i].r_y2, cells[j].r_x2, cells[j].r_y2)<eps and
 		   utils::values::distance(cells[i].r_x3, cells[i].r_y3, cells[j].r_x3, cells[j].r_y3)<eps)
 		  {
-		    LOG_S(WARNING) << "removing duplicate: " << cells[j].text
-				   << "(" << cells[i].r_x0 << ", " << cells[i].r_y0 << ") ";
+		    LOG_S(WARNING) << "removing duplicate char with text: '" << cells[j].text << "' "
+				   << "with r_0: (" << cells[i].r_x0 << ", " << cells[i].r_y0 << ") "
+				   << "with r_2: (" << cells[i].r_x2 << ", " << cells[i].r_y2 << ") "
+				   << "with r'_0: (" << cells[j].r_x0 << ", " << cells[j].r_y0 << ") "
+				   << "with r'_2: (" << cells[j].r_x2 << ", " << cells[j].r_y2 << ") ";
+
 		    
 		    cells[j].active = false;
 		    erased_cell = true;		    
