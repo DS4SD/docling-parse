@@ -274,7 +274,8 @@ namespace pdflib
     bool is_punc = utils::string::is_punctuation_or_space(text);
     bool other_is_punc = utils::string::is_punctuation_or_space(other.text);
     
-    return ((left_to_right==other.left_to_right) or (text==" " or other.text==" ")); 
+    //return ((left_to_right==other.left_to_right) or (text==" " or other.text==" "));
+    return ((left_to_right==other.left_to_right) or (is_punc or other_is_punc)); 
   }
   
   bool pdf_resource<PAGE_CELL>::merge_with(pdf_resource<PAGE_CELL>& other, double delta)
