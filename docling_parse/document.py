@@ -167,7 +167,7 @@ class PdfCell(PdfColoredElement):
 
     widget: bool
     left_to_right: bool
-    
+
     def to_bottom_left_origin(self, page_height: float):
         self.rect = self.rect.to_bottom_left_origin(page_height=page_height)
 
