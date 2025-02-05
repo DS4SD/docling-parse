@@ -185,6 +185,28 @@ namespace pdflib
 	    utils::string::replace(text, pair.first, pair.second);
 	  }
       }
+
+    {
+      std::regex pattern(R"(^\/([A-Za-z])_([A-Za-z])(_([A-Za-z]))?$)");
+
+      for(int i=0; i<cells.size(); i++)
+	{
+	  std::string text = cells.at(i).text;
+	  
+	  std::smatch match;
+	  if(std::regex_match(text, match, pattern))
+	    {
+	      std::string replacement = match[1].str() + match[2].str();
+	      if(match[3].matched)
+		{
+		  replacement += match[4].str();
+		}
+	      
+	      LOG_S(WARNING) << "replacing `" << text << "` with `" << replacement << "`";	    
+	      cells.at(i).text = replacement;
+	    }
+	}      
+    }
   }
   
   void pdf_sanitator<PAGE_CELLS>::sanitize_bbox(pdf_resource<PAGE_CELLS>& cells,
