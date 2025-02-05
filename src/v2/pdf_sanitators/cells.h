@@ -50,6 +50,7 @@ namespace pdflib
     
   private:
 
+    /*
     // FIXME: we might at some point move this into a file into the resources ...
     const static inline std::vector<std::pair<std::string, std::string> > replacements = {
       {R"(\f_f_i)", "ffi"},
@@ -106,7 +107,7 @@ namespace pdflib
       
       {"\u2212", "-"},
     };
-    
+    */
   };
 
   pdf_sanitator<PAGE_CELLS>::pdf_sanitator()
@@ -179,7 +180,7 @@ namespace pdflib
       {
 	std::string& text = cells.at(i).text;
 
-	for(const std::pair<std::string, std::string>& pair:replacements)
+	for(const std::pair<std::string, std::string>& pair:text_constants::replacements)
 	  {
 	    utils::string::replace(text, pair.first, pair.second);
 	  }

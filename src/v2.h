@@ -76,6 +76,7 @@
 #include <v2/pdf_resources/page_images.h>
 
 #include <v2/pdf_sanitator.h>
+#include <v2/pdf_sanitators/constants.h>
 #include <v2/pdf_sanitators/lines.h>
 #include <v2/pdf_sanitators/cells.h>
 #include <v2/pdf_sanitators/page_dimension.h>
