@@ -23274,11 +23274,11 @@
       },
       "timings": {
         "decode_annots": 0.0,
-        "decode_contents": 0.005024,
+        "decode_contents": 0.004977,
         "decode_dimensions": 1e-06,
-        "decode_page": 0.008656,
-        "decode_resources": 0.000554,
-        "sanitise_contents": 0.002659
+        "decode_page": 0.008408,
+        "decode_resources": 0.000553,
+        "sanitise_contents": 0.002466
       }
     },
     {
@@ -34527,11 +34527,11 @@
       },
       "timings": {
         "decode_annots": 0.0,
-        "decode_contents": 0.011509,
+        "decode_contents": 0.011349,
         "decode_dimensions": 0.0,
-        "decode_page": 0.029856,
-        "decode_resources": 0.000959,
-        "sanitise_contents": 0.015387
+        "decode_page": 0.029242,
+        "decode_resources": 0.000929,
+        "sanitise_contents": 0.014944
       }
     },
     {
@@ -109714,25 +109714,25 @@
       },
       "timings": {
         "decode_annots": 0.0,
-        "decode_contents": 0.008049,
+        "decode_contents": 0.008003,
         "decode_dimensions": 0.0,
-        "decode_page": 0.047012,
-        "decode_resources": 0.000778,
-        "sanitise_contents": 0.038144
+        "decode_page": 0.045829,
+        "decode_resources": 0.00076,
+        "sanitise_contents": 0.037025
       }
     }
   ],
   "timings": {
     "decode_annots": 0.0,
-    "decode_contents": 0.024582,
+    "decode_contents": 0.024329,
     "decode_dimensions": 1e-06,
-    "decode_document": 0.087086,
-    "decode_page": 0.085524,
-    "decode_resources": 0.002291,
-    "decoding page 0": 0.008786,
-    "decoding page 1": 0.02999,
-    "decoding page 2": 0.048048,
-    "process_document_from_bytesio": 0.002312,
-    "sanitise_contents": 0.05619
+    "decode_document": 0.08501,
+    "decode_page": 0.083479,
+    "decode_resources": 0.002242,
+    "decoding page 0": 0.008537,
+    "decoding page 1": 0.029376,
+    "decoding page 2": 0.046833,
+    "process_document_from_bytesio": 0.002298,
+    "sanitise_contents": 0.054435000000000004
   }
 }
