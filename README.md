@@ -45,7 +45,7 @@ pip install docling-parse
 Convert a PDF (look in the [visualize.py](docling_parse/visualize.py) for a more detailed information)
 
 ```python
-from docling_parse.docling_parse import pdf_parser_v2
+from docling_parse.pdf_parsers import pdf_parser_v2
 
 # Do this only once to load fonts (avoid initialising it many times)
 parser = pdf_parser_v2("error") # info, warning, error, fatal
