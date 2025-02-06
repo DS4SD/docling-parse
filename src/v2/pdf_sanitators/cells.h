@@ -50,6 +50,7 @@ namespace pdflib
     
   private:
 
+    /*
     // FIXME: we might at some point move this into a file into the resources ...
     const static inline std::vector<std::pair<std::string, std::string> > replacements = {
       {R"(\f_f_i)", "ffi"},
@@ -106,7 +107,7 @@ namespace pdflib
       
       {"\u2212", "-"},
     };
-    
+    */
   };
 
   pdf_sanitator<PAGE_CELLS>::pdf_sanitator()
@@ -142,7 +143,12 @@ namespace pdflib
 		   utils::values::distance(cells[i].r_x2, cells[i].r_y2, cells[j].r_x2, cells[j].r_y2)<eps and
 		   utils::values::distance(cells[i].r_x3, cells[i].r_y3, cells[j].r_x3, cells[j].r_y3)<eps)
 		  {
-		    LOG_S(INFO) << "removing: " << cells[j].text << "(" << cells[i].r_x0 << ", " << cells[i].r_y0 << ") ";
+		    LOG_S(WARNING) << "removing duplicate char with text: '" << cells[j].text << "' "
+				   << "with r_0: (" << cells[i].r_x0 << ", " << cells[i].r_y0 << ") "
+				   << "with r_2: (" << cells[i].r_x2 << ", " << cells[i].r_y2 << ") "
+				   << "with r'_0: (" << cells[j].r_x0 << ", " << cells[j].r_y0 << ") "
+				   << "with r'_2: (" << cells[j].r_x2 << ", " << cells[j].r_y2 << ") ";
+
 		    
 		    cells[j].active = false;
 		    erased_cell = true;		    
@@ -174,11 +180,33 @@ namespace pdflib
       {
 	std::string& text = cells.at(i).text;
 
-	for(const std::pair<std::string, std::string>& pair:replacements)
+	for(const std::pair<std::string, std::string>& pair:text_constants::replacements)
 	  {
 	    utils::string::replace(text, pair.first, pair.second);
 	  }
       }
+
+    {
+      std::regex pattern(R"(^\/([A-Za-z])_([A-Za-z])(_([A-Za-z]))?$)");
+
+      for(int i=0; i<cells.size(); i++)
+	{
+	  std::string text = cells.at(i).text;
+	  
+	  std::smatch match;
+	  if(std::regex_match(text, match, pattern))
+	    {
+	      std::string replacement = match[1].str() + match[2].str();
+	      if(match[3].matched)
+		{
+		  replacement += match[4].str();
+		}
+	      
+	      LOG_S(WARNING) << "replacing `" << text << "` with `" << replacement << "`";	    
+	      cells.at(i).text = replacement;
+	    }
+	}      
+    }
   }
   
   void pdf_sanitator<PAGE_CELLS>::sanitize_bbox(pdf_resource<PAGE_CELLS>& cells,
@@ -356,6 +384,11 @@ namespace pdflib
 		    continue;
 		  }
 
+		if(not cells[i].has_same_reading_orientation(cells[j]))
+		  {
+		    continue;
+		  }
+		
 		double delta_0 = cells[i].average_char_width()*space_width_factor_for_merge;
 		double delta_1 = cells[i].average_char_width()*space_width_factor_for_merge_with_space;
 		

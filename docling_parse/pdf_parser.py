@@ -191,6 +191,7 @@ class PdfDocument:
                 font_key=row[header.index(f"font-key")],
                 font_name=row[header.index(f"font-name")],
                 widget=row[header.index(f"widget")],
+                left_to_right=row[header.index(f"left_to_right")],
                 ordering=ind,
                 rendering_mode="",
             )
