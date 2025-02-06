@@ -1,3 +1,13 @@
+## [v3.3.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.3.0) - 2025-02-06
+
+### Feature
+
+* Add support for RtL ([#94](https://github.com/DS4SD/docling-parse/issues/94)) ([`25b1e64`](https://github.com/DS4SD/docling-parse/commit/25b1e64846390bf2af7afc4d95bf3a634742aeb1))
+
+### Fix
+
+* Update vizualisation script ([#95](https://github.com/DS4SD/docling-parse/issues/95)) ([`b634c11`](https://github.com/DS4SD/docling-parse/commit/b634c11571a06a843aefde8cd1b8772ae74c8e6f))
+
 ## [v3.2.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.2.0) - 2025-02-02
 
 ### Feature
