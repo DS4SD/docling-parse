@@ -42,7 +42,7 @@ Install the package from Pypi
 pip install docling-parse
 ```
 
-Convert a PDF (look in the [visualise.py](docling_parse/visualise.py) for a more detailed information)
+Convert a PDF (look in the [visualize.py](docling_parse/visualize.py) for a more detailed information)
 
 ```python
 from docling_parse.docling_parse import pdf_parser_v2
