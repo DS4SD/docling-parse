@@ -89,16 +89,6 @@ class PdfDocument:
 
         boundary_type: PageBoundaryType = PageBoundaryType(dimension["page_boundary"])
 
-        """
-        bbox = BoundingBox(
-            l=dimension["bbox"][0],
-            b=dimension["bbox"][1],
-            r=dimension["bbox"][2],
-            t=dimension["bbox"][3],
-            coord_origin=CoordOrigin.BOTTOMLEFT,
-        )
-        """
-
         art_bbox = BoundingBox(
             l=dimension["rectangles"]["art-bbox"][0],
             b=dimension["rectangles"]["art-bbox"][1],

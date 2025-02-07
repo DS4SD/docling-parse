@@ -14,6 +14,8 @@ from PIL import ImageColor, ImageDraw, ImageFont
 from PIL.ImageFont import FreeTypeFont
 from pydantic import AnyUrl, BaseModel, Field
 
+from docling_parse.pdf_parsers import pdf_sanitizer  # type: ignore[import]
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -290,6 +292,10 @@ class SegmentedPdfPage(BaseModel):
     bitmap_resources: List[PdfBitmapResource]
     lines: List[PdfLine]
 
+    char_cells: List[PdfCell] = []
+    word_cells: List[PdfCell] = []
+    line_cells: List[PdfCell] = []
+    
     image: Optional[ImageRef] = None
 
     def export_to_dict(
@@ -317,6 +323,36 @@ class SegmentedPdfPage(BaseModel):
         with open(filename, "r", encoding="utf-8") as f:
             return cls.model_validate_json(f.read())
 
+    def create_word_cells(self):
+        if len(self.char_cells)==0:
+            self.char_cells = self.cells
+
+        if len(self.word_cells)==0:            
+            sanitizer = pdf_sanitizer("info")
+
+            _cells = []
+            for cell in self.cells:
+                _cells.append(cell.export_to_dict())
+                
+            _words = sanitizer.find_word_cells(cells = _cells)
+            for word in _words:
+                print(word)
+            
+    def create_line_cells(self):
+        if len(self.char_cells)==0:
+            self.char_cells = self.cells
+
+        if len(self.line_cells)==0:            
+            sanitizer = pdf_sanitizer("info")
+
+            _cells = []
+            for cell in self.cells:
+                _cells.append(cell.export_to_dict())
+            
+            _lines = sanitizer.find_line_cells(cells = _cells)
+            for line in _lines:
+                print(line)        
+        
     def crop_text(self, bbox: BoundingBox, eps: float = 1.0):
 
         selection = []

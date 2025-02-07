@@ -8,6 +8,7 @@
 
 #include <pybind/docling_parser_v1.h>
 #include <pybind/docling_parser_v2.h>
+#include <pybind/docling_sanitizer.h>
 
 PYBIND11_MODULE(pdf_parsers, m) {
 
@@ -450,4 +451,57 @@ Sanitize table cells with specified parameters and return the processed JSON.
 
     Returns:
         dict: A JSON object representing the sanitized table cells in the bounding box.)");  
+
+
+  // purely for backward compatibility 
+  pybind11::class_<docling::docling_sanitizer>(m, "pdf_sanitizer")
+    .def(pybind11::init())
+
+    .def(pybind11::init<const std::string&>(),
+	 pybind11::arg("level"),
+	 R"(
+    Construct docling_sanitizer with logging level.
+
+    Parameters:
+        level (str): Logging level as a string.
+                     One of ['fatal', 'error', 'warning', 'info'])")
+    
+    .def("set_loglevel",
+	 [](docling::docling_sanitizer &self, int level) -> void {
+	   self.set_loglevel(level);
+	 },
+	 pybind11::arg("level"),
+	 R"(
+    Set the log level using an integer.
+
+    Parameters:
+        level (int): Logging level as an integer.
+                     One of [`fatal`=0, `error`=1, `warning`=2, `info`=3])")
+    
+    .def("set_loglevel_with_label",
+	 [](docling::docling_sanitizer &self, const std::string &level) -> void {
+            self.set_loglevel_with_label(level);
+	 },
+	 pybind11::arg("level"),
+	 R"(
+    Set the log level using a string label.
+
+    Parameters:
+        level (str): Logging level as a string.
+                     One of ['fatal', 'error', 'warning', 'info']
+           )")
+
+    
+    .def("sanitize_cells",
+	 [](docling::docling_sanitizer &self,
+	    nlohmann::json &cells) -> nlohmann::json {
+	   return self.sanitize_cells(cells);
+	 },
+	 pybind11::arg("original_cells"),
+	 R"(
+    Sanitize table cells in a given bounding box with specified parameters and return the processed JSON.
+
+    Parameters:
+        original_cells (dict): The original table cells as a JSON object.)");
+
 }
