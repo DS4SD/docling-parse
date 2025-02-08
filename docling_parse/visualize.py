@@ -58,10 +58,11 @@ def parse_args():
         "-c",
         "--category",
         type=str,
-        choices=["both", "original", "sanitized"],
+        #choices=["both", "original", "sanitized"],
+        choices=["both", "char", "word", "line"],
         required=True,
         default="both",
-        help="category [`both`, `original`, `sanitized`]",
+        help="category [`both`, `char`, `word`, `line`]",
     )
 
     # Add an argument for the path to the PDF file
@@ -291,36 +292,76 @@ def visualise_py(
 
         pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_no)
 
-        if category in ["original", "both"]:
+        if category in ["original", "char"]:
+            """
             img = pdf_page.original.render(
                 draw_cells_bbox=(not display_text), draw_cells_text=display_text
             )
-
+            """
+            img = pdf_page.render(label="char",
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            )
+            
             if interactive:
                 img.show()
 
             if log_text:
-                lines = pdf_page.original.export_to_textlines(
+                lines = pdf_page.export_to_textlines(label="char",
                     add_fontkey=True, add_fontname=False
                 )
                 print(f"text-lines (original, page_no: {page_no}):")
                 print("\n".join(lines))
 
-        if category in ["sanitized", "both"]:
+        if category in ["sanitized", "word"]:
+            """
             img = pdf_page.sanitized.render(
                 draw_cells_bbox=(not display_text), draw_cells_text=display_text
             )
-
+            """
+            img = pdf_page.render(label="word",
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            )
+            
             if interactive:
                 img.show()
 
             if log_text:
+                """
                 lines = pdf_page.sanitized.export_to_textlines(
                     add_fontkey=True, add_fontname=False
                 )
-                print(f"text-lines (sanitized, page_no: {page_no}):")
+                """
+                lines = pdf_page.export_to_textlines(label="word",
+                    add_fontkey=True, add_fontname=False
+                )
+
+                print(f"text-words (sanitized, page_no: {page_no}):")
                 print("\n".join(lines))
 
+        if category in ["sanitized", "line"]:
+            """
+            img = pdf_page.sanitized.render(
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            )
+            """
+            img = pdf_page.render(label="line",
+                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+            )
+            
+            if interactive:
+                img.show()
+
+            if log_text:
+                """
+                lines = pdf_page.sanitized.export_to_textlines(
+                    add_fontkey=True, add_fontname=False
+                )
+                """
+                lines = pdf_page.export_to_textlines(label="line",
+                    add_fontkey=True, add_fontname=False
+                )                
+                print(f"text-lines (sanitized, page_no: {page_no}):")
+                print("\n".join(lines))                
 
 def main():
 

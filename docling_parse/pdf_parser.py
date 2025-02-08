@@ -58,7 +58,7 @@ class PdfDocument:
         else:
             raise RuntimeError("This document is not loaded.")
 
-    def get_page(self, page_no: int) -> ParsedPdfPage:
+    def get_page(self, page_no: int) -> SegmentedPdfPage:
         if page_no in self._pages.keys():
             return self._pages[page_no]
         else:
@@ -69,7 +69,8 @@ class PdfDocument:
                 for pi, page in enumerate(
                     doc_dict["pages"]
                 ):  # only one page is expected
-                    self._pages[page_no] = self._to_parsed_page(page)  # put on cache
+                    #self._pages[page_no] = self._to_parsed_page(page)  # put on cache
+                    self._pages[page_no] = self._to_segmented_page(page["original"])  # put on cache
                     return self._pages[page_no]
 
         raise ValueError(
@@ -161,7 +162,7 @@ class PdfDocument:
 
         data = cells["data"]
         header = cells["header"]
-
+        
         result: List[PdfCell] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
@@ -183,7 +184,7 @@ class PdfDocument:
                 widget=row[header.index(f"widget")],
                 left_to_right=row[header.index(f"left_to_right")],
                 ordering=ind,
-                rendering_mode="",
+                rendering_mode=row[header.index(f"rendering-mode")],
             )
             result.append(cell)
 
@@ -240,18 +241,21 @@ class PdfDocument:
 
         return SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
-            cells=self._to_cells(page["cells"]),
+            # cells=self._to_cells(page["cells"]),
+            char_cells=self._to_cells(page["cells"]),
             bitmap_resources=self._to_bitmap_resources(page["images"]),
             lines=self._to_lines(page["lines"]),
         )
 
+    """
     def _to_parsed_page(self, page: dict) -> ParsedPdfPage:
 
         return ParsedPdfPage(
             original=self._to_segmented_page(page["original"]),
             sanitized=self._to_segmented_page(page["sanitized"]),
         )
-
+    """
+    
     def _to_parsed_paginated_document(
         self, doc_dict: dict, page_no: int = 1
     ) -> ParsedPdfDocument:
@@ -259,7 +263,8 @@ class PdfDocument:
         parsed_doc = ParsedPdfDocument()
 
         for pi, page in enumerate(doc_dict["pages"]):
-            parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)
+            # parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)
+            parsed_doc.pages[page_no + pi] = self._to_segmented_page(page["original"])
 
         return parsed_doc
 

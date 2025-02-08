@@ -491,17 +491,70 @@ Sanitize table cells with specified parameters and return the processed JSON.
                      One of ['fatal', 'error', 'warning', 'info']
            )")
 
-    
-    .def("sanitize_cells",
+    .def("set_char_cells",
 	 [](docling::docling_sanitizer &self,
-	    nlohmann::json &cells) -> nlohmann::json {
-	   return self.sanitize_cells(cells);
+	    nlohmann::json& data) -> nlohmann::json {
+	   return self.set_char_cells(data);
 	 },
-	 pybind11::arg("original_cells"),
+	 pybind11::arg("data"),
 	 R"(
-    Sanitize table cells in a given bounding box with specified parameters and return the processed JSON.
+    Set char cells
 
     Parameters:
-        original_cells (dict): The original table cells as a JSON object.)");
+        data: A JSON object (for with data and header) or a list or records
 
+    Returns:
+        dict: A JSON object representing the sanitized word cells in the bounding box.)")
+    
+    .def("create_word_cells",
+	 [](docling::docling_sanitizer &self,
+	    double horizontal_cell_tolerance,
+	    bool enforce_same_font,
+	    double space_width_factor_for_merge = 1.0) -> nlohmann::json {
+	   return self.create_line_cells(horizontal_cell_tolerance,
+					 enforce_same_font,
+					 space_width_factor_for_merge);
+	 },
+	 pybind11::arg("horizontal_cell_tolerance")=1.0,
+	 pybind11::arg("enforce_same_font")=true,
+	 pybind11::arg("space_width_factor_for_merge")=1.0,
+	 R"(
+    Create word cells
+
+    Parameters:
+        horizontal_cell_tolerance (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<horizontal_cell_tolerance), default = 1.0.
+        enforce_same_font (bool): Whether to enforce the same font across cells. Default is True
+        space_width_factor_for_merge (float): Factor for merging cells based on space width. Default is 0.33.
+
+    Returns:
+        dict: A JSON object representing the sanitized word cells in the bounding box.)")
+    
+    .def("create_line_cells",
+	 [](docling::docling_sanitizer &self,
+	    double horizontal_cell_tolerance,
+	    bool enforce_same_font,
+	    double space_width_factor_for_merge = 1.0,
+	    double space_width_factor_for_merge_with_space = 0.33) -> nlohmann::json {
+	   return self.create_line_cells(horizontal_cell_tolerance,
+					 enforce_same_font,
+					 space_width_factor_for_merge,
+					 space_width_factor_for_merge_with_space);
+	 },
+	 pybind11::arg("horizontal_cell_tolerance")=1.0,
+	 pybind11::arg("enforce_same_font")=true,
+	 pybind11::arg("space_width_factor_for_merge")=1.0,
+	 pybind11::arg("space_width_factor_for_merge_with_space")=0.33,
+	 R"(
+    Create line cells
+
+    Parameters:
+        horizontal_cell_tolerance (float): Vertical adjustment parameter to judge if two cells need to be merged (yes if abs(cell_i.r_y1-cell_i.r_y0)<horizontal_cell_tolerance), default = 1.0.
+        enforce_same_font (bool): Whether to enforce the same font across cells. Default is True
+        space_width_factor_for_merge (float): Factor for merging cells based on space width. Default is 1.0.
+        space_width_factor_for_merge_with_space (float): Factor for merging cells with space width. Default is 0.33.
+
+    Returns:
+        dict: A JSON object representing the sanitized line cells in the bounding box.)");  
+    
+    
 }
