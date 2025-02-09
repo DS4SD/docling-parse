@@ -1,15 +1,18 @@
 import argparse
-import hashlib
 import logging
 import os
-from typing import Dict, Optional
 
-from docling_parse.pdf_parser import DoclingPdfParser, ParsedPdfPage, PdfDocument
+from docling_parse.document import SegmentedPageLabel, SegmentedPdfPage
+from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
+
+"""
 from docling_parse.pdf_parsers import (  # type: ignore[import]
     pdf_parser_v1,
     pdf_parser_v2,
 )
-from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
+"""
+
+# from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
 
 # Configure logging
 logging.basicConfig(
@@ -31,6 +34,7 @@ def parse_args():
         help="Log level [info, warning, error, fatal]",
     )
 
+    """
     # Restrict version to specific values
     parser.add_argument(
         "-v",
@@ -41,6 +45,7 @@ def parse_args():
         default="py",
         help="Version [v1, v2]",
     )
+    """
 
     # Restrict page-boundary
     parser.add_argument(
@@ -58,11 +63,11 @@ def parse_args():
         "-c",
         "--category",
         type=str,
-        #choices=["both", "original", "sanitized"],
-        choices=["both", "char", "word", "line"],
+        # choices=["both", "original", "sanitized"],
+        choices=["all", "char", "word", "line"],
         required=True,
         default="both",
-        help="category [`both`, `char`, `word`, `line`]",
+        help="category [`all`, `char`, `word`, `line`]",
     )
 
     # Add an argument for the path to the PDF file
@@ -124,7 +129,7 @@ def parse_args():
 
     return (
         args.log_level,
-        args.version,
+        # args.version,
         args.input_pdf,
         args.interactive,
         args.output_dir,
@@ -136,6 +141,7 @@ def parse_args():
     )
 
 
+"""
 def visualise_v1(
     log_level: str,
     pdf_path: str,
@@ -185,8 +191,9 @@ def visualise_v1(
             logging.info(f"output: {oname}")
 
             img.save(oname)
+"""
 
-
+"""
 def visualise_v2(
     log_level: str,
     pdf_path: str,
@@ -266,6 +273,7 @@ def visualise_v2(
                 img.save(oname)
 
     return 0
+"""
 
 
 def visualise_py(
@@ -277,7 +285,7 @@ def visualise_py(
     display_text: bool,
     log_text: bool,
     page_boundary: str = "crop_box",  # media_box
-    category: str = "both",  # "both", "sanitized", "original"
+    category: str = "char",  # "both", "sanitized", "original"
 ):
     parser = DoclingPdfParser(loglevel=log_level)
 
@@ -290,84 +298,66 @@ def visualise_py(
     for page_no in page_nos:
         print(f"parsing {pdf_path} on page: {page_no}")
 
-        pdf_page: ParsedPdfPage = pdf_doc.get_page(page_no=page_no)
+        pdf_page: SegmentedPdfPage = pdf_doc.get_page(page_no=page_no)
 
-        if category in ["original", "char"]:
-            """
-            img = pdf_page.original.render(
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        if category in ["all", "char"]:
+
+            img = pdf_page.render(
+                label=SegmentedPageLabel.CHAR,
+                draw_cells_bbox=(not display_text),
+                draw_cells_text=display_text,
             )
-            """
-            img = pdf_page.render(label="char",
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
-            )
-            
+
             if interactive:
                 img.show()
 
             if log_text:
-                lines = pdf_page.export_to_textlines(label="char",
-                    add_fontkey=True, add_fontname=False
+                lines = pdf_page.export_to_textlines(
+                    label=SegmentedPageLabel.CHAR, add_fontkey=True, add_fontname=False
                 )
                 print(f"text-lines (original, page_no: {page_no}):")
                 print("\n".join(lines))
 
-        if category in ["sanitized", "word"]:
-            """
-            img = pdf_page.sanitized.render(
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        if category in ["all", "word"]:
+            img = pdf_page.render(
+                label=SegmentedPageLabel.WORD,
+                draw_cells_bbox=(not display_text),
+                draw_cells_text=display_text,
             )
-            """
-            img = pdf_page.render(label="word",
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
-            )
-            
+
             if interactive:
                 img.show()
 
             if log_text:
-                """
-                lines = pdf_page.sanitized.export_to_textlines(
-                    add_fontkey=True, add_fontname=False
+                lines = pdf_page.export_to_textlines(
+                    label=SegmentedPageLabel.WORD, add_fontkey=True, add_fontname=False
                 )
-                """
-                lines = pdf_page.export_to_textlines(label="word",
-                    add_fontkey=True, add_fontname=False
-                )
-
                 print(f"text-words (sanitized, page_no: {page_no}):")
                 print("\n".join(lines))
 
-        if category in ["sanitized", "line"]:
-            """
-            img = pdf_page.sanitized.render(
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
+        if category in ["all", "line"]:
+            img = pdf_page.render(
+                label=SegmentedPageLabel.LINE,
+                draw_cells_bbox=(not display_text),
+                draw_cells_text=display_text,
             )
-            """
-            img = pdf_page.render(label="line",
-                draw_cells_bbox=(not display_text), draw_cells_text=display_text
-            )
-            
+
             if interactive:
                 img.show()
 
             if log_text:
-                """
-                lines = pdf_page.sanitized.export_to_textlines(
-                    add_fontkey=True, add_fontname=False
+                lines = pdf_page.export_to_textlines(
+                    label=SegmentedPageLabel.LINE, add_fontkey=True, add_fontname=False
                 )
-                """
-                lines = pdf_page.export_to_textlines(label="line",
-                    add_fontkey=True, add_fontname=False
-                )                
                 print(f"text-lines (sanitized, page_no: {page_no}):")
-                print("\n".join(lines))                
+                print("\n".join(lines))
+
 
 def main():
 
     (
         log_level,
-        version,
+        # version,
         pdf_path,
         interactive,
         output_dir,
@@ -380,6 +370,19 @@ def main():
 
     logging.info(f"page_boundary: {page_boundary}")
 
+    visualise_py(
+        log_level=log_level,
+        pdf_path=pdf_path,
+        interactive=interactive,
+        output_dir=output_dir,
+        page_num=page_num,
+        display_text=display_text,
+        log_text=log_text,
+        page_boundary=page_boundary,
+        category=category,
+    )
+
+    """
     if version == "v1":
         visualise_v1(
             log_level=log_level,
@@ -414,6 +417,7 @@ def main():
         )
     else:
         return -1
+    """
 
 
 if __name__ == "__main__":

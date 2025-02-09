@@ -7,7 +7,7 @@ from typing import Dict, List
 from pydantic import TypeAdapter
 
 from docling_parse.document import (
-    PageBoundaryType,
+    PageBoundaryLabel,
     ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
@@ -193,7 +193,9 @@ def verify_SegmentedPdfPage(
         true_page.bitmap_resources, pred_page.bitmap_resources, eps=eps
     )
 
-    verify_cells(true_page.cells, pred_page.cells, eps=eps, filename=filename)
+    verify_cells(true_page.char_cells, pred_page.char_cells, eps=eps, filename=filename)
+    verify_cells(true_page.word_cells, pred_page.word_cells, eps=eps, filename=filename)
+    verify_cells(true_page.line_cells, pred_page.line_cells, eps=eps, filename=filename)
 
     verify_lines(true_page.lines, pred_page.lines, eps=eps)
 
@@ -219,7 +221,7 @@ def test_reference_documents_from_filenames():
 
         pdf_doc: PdfDocument = parser.load(
             path_or_stream=pdf_doc_path,
-            boundary_type=PageBoundaryType.CROP_BOX,  # default: CROP_BOX
+            boundary_type=PageBoundaryLabel.CROP_BOX,  # default: CROP_BOX
             lazy=False,
         )  # default: True
         assert pdf_doc is not None

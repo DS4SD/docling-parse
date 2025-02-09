@@ -24,7 +24,7 @@ namespace docling
 
     nlohmann::json create_word_cells(double horizontal_cell_tolerance=1.00,
 				     bool enforce_same_font=true,
-				     double space_width_factor_for_merge=0.33);
+				     double space_width_factor_for_merge=0.05);
 
     nlohmann::json create_line_cells(double horizontal_cell_tolerance=1.00,
 				     bool enforce_same_font=true,
@@ -249,6 +249,8 @@ namespace docling
     // do a deep copy
     word_cells = char_cells;
 
+    LOG_S(INFO) << "#-wordcells: " << word_cells.size();
+    
     // remove all spaces 
     auto itr = word_cells.begin();
     while(itr!=word_cells.end())
@@ -263,6 +265,8 @@ namespace docling
 	  }
       }
 
+    LOG_S(INFO) << "#-wordcells: " << word_cells.size();
+    
     // > space_width_factor_for_merge, so nothing gets merged with a space
     double space_width_factor_for_merge_with_space = 2.0*space_width_factor_for_merge; 
     
@@ -272,7 +276,7 @@ namespace docling
 				 space_width_factor_for_merge,
 				 space_width_factor_for_merge_with_space);
 
-    LOG_S(INFO) << "found " << word_cells.size() << " word-cells";
+    LOG_S(INFO) << "#-wordcells: " << word_cells.size();
 
     return to_records("word");
   }

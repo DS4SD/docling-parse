@@ -517,7 +517,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
 	 },
 	 pybind11::arg("horizontal_cell_tolerance")=1.0,
 	 pybind11::arg("enforce_same_font")=true,
-	 pybind11::arg("space_width_factor_for_merge")=1.0,
+	 pybind11::arg("space_width_factor_for_merge")=0.33,
 	 R"(
     Create word cells
 

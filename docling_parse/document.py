@@ -21,6 +21,33 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+
+class SegmentedPageLabel(str, Enum):
+    """SegmentedPageLabel."""
+
+    CHAR = "char"
+    WORD = "word"
+    LINE = "line"
+
+    def __str__(self):
+        """Get string value."""
+        return str(self.value)
+
+
+class PageBoundaryLabel(str, Enum):
+    """PageBoundaryLabel."""
+
+    ART_BOX = "art_box"
+    BLEED_BOX = "bleed_box"
+    CROP_BOX = "crop_box"
+    MEDIA_BOX = "media_box"
+    TRIM_BOX = "trim_box"
+
+    def __str__(self):
+        """Get string value."""
+        return str(self.value)
+
+
 ColorChannelValue = Annotated[int, Field(ge=0, le=255)]
 
 
@@ -158,7 +185,7 @@ class PdfCell(PdfColoredElement):
 
     # rect_fontbbox: Optional[BoundingRectangle] = None
     # rect_capheight: Optional[BoundingRectangle] = None
-    
+
     text: str
     orig: str
 
@@ -236,34 +263,10 @@ class PdfLine(PdfColoredElement):
             self.coord_origin = CoordOrigin.TOPLEFT
 
 
-class SegmentationType(str, Enum):
-    """SegmentationType."""
-
-    CHAR = "char"
-    WORD = "word"
-    LINE = "line"
-
-    def __str__(self):
-        """Get string value."""
-        return str(self.value)
-            
-class PageBoundaryType(str, Enum):
-    """PageBoundaryLabel."""
-
-    ART_BOX = "art_box"
-    BLEED_BOX = "bleed_box"
-    CROP_BOX = "crop_box"
-    MEDIA_BOX = "media_box"
-    TRIM_BOX = "trim_box"
-
-    def __str__(self):
-        """Get string value."""
-        return str(self.value)
-
 class PdfPageDimension(BaseModel):
 
     angle: float
-    boundary_type: PageBoundaryType
+    boundary_type: PageBoundaryLabel
 
     rect: BoundingRectangle
 
@@ -299,27 +302,30 @@ class SegmentedPdfPage(BaseModel):
     dimension: PdfPageDimension
 
     # cells: List[PdfCell]
-    bitmap_resources: List[PdfBitmapResource]
-    lines: List[PdfLine]
+    bitmap_resources: List[PdfBitmapResource] = []
+    lines: List[PdfLine] = []
 
     char_cells: List[PdfCell] = []
     word_cells: List[PdfCell] = []
     line_cells: List[PdfCell] = []
-    
+
     image: Optional[ImageRef] = None
 
     def create_word_cells(self):
 
-        if len(self.word_cells)>0:
+        if len(self.word_cells) > 0:
             return
 
         sanitizer = pdf_sanitizer(level="info")
-        
-        char_data = [item.model_dump(mode="json", by_alias=True, exclude_none=True) for item in self.char_cells]
+
+        char_data = [
+            item.model_dump(mode="json", by_alias=True, exclude_none=True)
+            for item in self.char_cells
+        ]
         sanitizer.set_char_cells(data=char_data)
-        
-        data = sanitizer.create_word_cells()
-        
+
+        data = sanitizer.create_word_cells(space_width_factor_for_merge=0.33)
+
         self.word_cells = []
         for item in data:
             print(item)
@@ -328,22 +334,25 @@ class SegmentedPdfPage(BaseModel):
 
     def create_line_cells(self):
 
-        if len(self.line_cells)>0:
+        if len(self.line_cells) > 0:
             return
-        
+
         sanitizer = pdf_sanitizer(level="info")
-        
-        char_data = [item.model_dump(mode="json", by_alias=True, exclude_none=True) for item in self.char_cells]
+
+        char_data = [
+            item.model_dump(mode="json", by_alias=True, exclude_none=True)
+            for item in self.char_cells
+        ]
         sanitizer.set_char_cells(data=char_data)
-        
+
         data = sanitizer.create_line_cells()
-        
+
         self.line_cells = []
         for item in data:
             print(item)
             cell = PdfCell.model_validate(item)
-            self.line_cells.append(cell)            
-            
+            self.line_cells.append(cell)
+
     def export_to_dict(
         self,
         mode: str = "json",
@@ -369,26 +378,26 @@ class SegmentedPdfPage(BaseModel):
         with open(filename, "r", encoding="utf-8") as f:
             return cls.model_validate_json(f.read())
 
-    def yield_cells(self, label: SegmentationType) -> Iterator[PdfCell]:
+    def yield_cells(self, label: SegmentedPageLabel) -> Iterator[PdfCell]:
 
-        if label==SegmentationType.CHAR:            
+        if label == SegmentedPageLabel.CHAR:
             for _ in self.char_cells:
                 yield _
-            
-        elif label==SegmentationType.WORD:
+
+        elif label == SegmentedPageLabel.WORD:
             self.create_word_cells()
             for _ in self.word_cells:
                 yield _
 
-        elif label==SegmentationType.LINE:
+        elif label == SegmentedPageLabel.LINE:
             self.create_line_cells()
             for _ in self.line_cells:
                 yield _
 
         else:
             raise ValueError(f"incompatible {label}")
-                
-    def crop_text(self, label: SegmentationType, bbox: BoundingBox, eps: float = 1.0):
+
+    def crop_text(self, label: SegmentedPageLabel, bbox: BoundingBox, eps: float = 1.0):
 
         selection = []
         for page_cell in self.yield_cells(label):
@@ -425,7 +434,7 @@ class SegmentedPdfPage(BaseModel):
 
     def export_to_textlines(
         self,
-        label: SegmentationType,
+        label: SegmentedPageLabel,
         add_location: bool = True,
         add_fontkey: bool = False,
         add_fontname: bool = True,
@@ -454,8 +463,8 @@ class SegmentedPdfPage(BaseModel):
 
     def render(
         self,
-        label: SegmentationType,
-        boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX,  # media_box
+        label: SegmentedPageLabel,
+        boundary_type: PageBoundaryLabel = PageBoundaryLabel.CROP_BOX,  # media_box
         draw_cells_bbox: bool = False,
         draw_cells_text: bool = True,
         draw_cells_bl: bool = False,
@@ -471,10 +480,10 @@ class SegmentedPdfPage(BaseModel):
         cell_tr_outline: str = "green",
         cell_tr_alpha: float = 1.0,
         cell_tr_radius: float = 3.0,
-        draw_images: bool = True,
-        image_outline: str = "black",
-        image_fill: str = "yellow",
-        image_alpha: float = 1.0,
+        draw_bitmap_resources: bool = True,
+        bitmap_resources_outline: str = "black",
+        bitmap_resources_fill: str = "yellow",
+        bitmap_resources_alpha: float = 1.0,
         draw_lines: bool = True,
         line_color: str = "black",
         line_width: int = 1,
@@ -493,7 +502,7 @@ class SegmentedPdfPage(BaseModel):
             cell_alpha,
             cell_bl_alpha,
             cell_tr_alpha,
-            image_alpha,
+            bitmap_resources_alpha,
             line_alpha,
             annotations_alpha,
             cropbox_alpha,
@@ -502,152 +511,74 @@ class SegmentedPdfPage(BaseModel):
                 logging.error(f"alpha value {_} needs to be in [0, 1]")
                 _ = max(0, min(1.0, _))
 
-        def _get_rgba(name: str, alpha: float):
-            assert 0.0 <= alpha and alpha <= 1.0, "0.0 <= alpha and alpha <= 1.0"
-            rgba = ImageColor.getrgb(name) + (int(alpha * 255),)
-            return rgba
-
-        def _draw_text_in_bounding_bbox(
-            img: PILImage.Image,
-            # `draw: ImageDraw.ImageDraw,
-            bbox: Tuple[float, float, float, float],
-            text: str,
-            font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
-            fill: str = "black",
-        ) -> PILImage.Image:  # ImageDraw.ImageDraw:
-            """
-            Draws text inside a bounding box by creating a temporary image,
-            resizing it, and pasting it into the original image at bbox.
-
-            Parameters:
-            - draw: The ImageDraw.Draw object.
-            - bbox: Tuple (x0, y0, x1, y1) representing the bounding box (all floats).
-            - text: The text to draw.
-            - font: An optional ImageFont.ImageFont object. Defaults to Pillow's built-in font.
-            - fill: Fill color for the text.
-            """
-            x0, y0, x1, y1 = bbox
-
-            """
-            if x0 >= x1 or y0 >= y1:
-                logging.warning(f"skipping to draw text: {text}")
-                return img # draw
-            """
-
-            width, height = round(x1 - x0), round(y0 - y1)
-
-            if width <= 2 or height <= 2:
-                # logging.warning(f"skipping to draw text (width: {x1-x0}, height: {y1-y0}): {text}")
-                return img
-
-            # Use the default font if no font is provided
-            if font is None:
-                font = ImageFont.load_default()
-
-            # Create a temporary image for the text
-            tmp_img = PILImage.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
-            tmp_draw = ImageDraw.Draw(tmp_img)
-            _, _, text_width, text_height = tmp_draw.textbbox(
-                (0, 0), text=text, font=font
-            )
-
-            # Create a properly sized temporary image
-            tmp_img = PILImage.new(
-                "RGBA", (text_width, text_height), (255, 255, 255, 255)
-            )
-            tmp_draw = ImageDraw.Draw(tmp_img)
-            tmp_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
-
-            # Resize image
-            res_img = tmp_img.resize((width, height), PILImage.Resampling.LANCZOS)
-
-            # Paste the resized text image onto the original image
-            img.paste(
-                im=res_img,
-                box=(round(x0), round(y1), round(x0) + width, round(y1) + height),
-                mask=None,
-            )
-
-            return img  # draw
-
         page_bbox = self.dimension.crop_bbox
 
-        W = page_bbox.width
-        H = page_bbox.height
+        page_width = page_bbox.width
+        page_height = page_bbox.height
 
         # Create a blank white image with RGBA mode
-        result = PILImage.new("RGBA", (round(W), round(H)), (255, 255, 255, 255))
+        result = PILImage.new(
+            "RGBA", (round(page_width), round(page_height)), (255, 255, 255, 255)
+        )
         draw = ImageDraw.Draw(result)
 
         # Draw each rectangle by connecting its four points
-        if draw_images:
-            for bitmap_resource in self.bitmap_resources:
-                poly = bitmap_resource.rect.to_top_left_origin(
-                    page_height=H
-                ).to_polygon()
+        if draw_bitmap_resources:
 
-                fill = _get_rgba(name=image_fill, alpha=image_alpha)
-                outline = _get_rgba(name=image_outline, alpha=image_alpha)
+            draw = self._render_bitmap_resources(
+                draw=draw,
+                page_height=page_height,
+                bitmap_resources_fill=bitmap_resources_fill,
+                bitmap_resources_outline=bitmap_resources_outline,
+                bitmap_resources_alpha=bitmap_resources_alpha,
+            )
 
-                draw.polygon(poly, outline=outline, fill=fill)
+        if draw_cells_text:
+            result = self._render_cells_text(
+                label=label, img=result, page_height=page_height
+            )
 
-        if draw_cells_bbox or draw_cells_text:
+        elif draw_cells_bbox:
+            self._render_cells_bbox(
+                label=label,
+                draw=draw,
+                page_height=page_height,
+                cell_fill=cell_color,
+                cell_outline=cell_outline,
+                cell_alpha=cell_alpha,
+            )
 
-            # Draw each rectangle by connecting its four points
-            for page_cell in self.yield_cells(label=label):
-                poly = page_cell.rect.to_top_left_origin(page_height=H).to_polygon()
+        if draw_cells_bl:
+            self._draw_cells_bl(
+                label=label,
+                draw=draw,
+                page_height=page_height,
+                cell_bl_color=cell_bl_color,
+                cell_bl_outline=cell_bl_outline,
+                cell_bl_alpha=cell_bl_alpha,
+                cell_bl_radius=cell_bl_radius,
+            )
 
-                if draw_cells_bbox:
-                    fill = _get_rgba(name=cell_color, alpha=cell_alpha)
-                    outline = _get_rgba(name=cell_outline, alpha=cell_alpha)
-                    draw.polygon(poly, outline=outline, fill=fill)
-
-                if draw_cells_text:
-                    result = _draw_text_in_bounding_bbox(
-                        img=result,
-                        bbox=(poly[0][0], poly[0][1], poly[2][0], poly[2][1]),
-                        text=page_cell.text,
-                    )
-
-                if draw_cells_bl:
-                    fill = _get_rgba(name=cell_bl_color, alpha=cell_bl_alpha)
-                    outline = _get_rgba(name=cell_bl_outline, alpha=cell_bl_alpha)
-
-                    # Define the bounding box for the dot
-                    dot_bbox = [
-                        (poly[0][0] - cell_bl_radius, poly[0][1] - cell_bl_radius),
-                        (poly[0][0] + cell_bl_radius, poly[0][1] + cell_bl_radius),
-                    ]
-
-                    # Draw the red dot
-                    draw.ellipse(dot_bbox, fill=fill, outline=outline)
-
-                if draw_cells_tr:
-                    fill = _get_rgba(name=cell_tr_color, alpha=cell_tr_alpha)
-                    outline = _get_rgba(name=cell_tr_outline, alpha=cell_tr_alpha)
-
-                    # Define the bounding box for the dot
-                    dot_bbox = [
-                        (poly[2][0] - cell_tr_radius, poly[2][1] - cell_tr_radius),
-                        (poly[2][0] + cell_tr_radius, poly[2][1] + cell_tr_radius),
-                    ]
-
-                    # Draw the red dot
-                    draw.ellipse(dot_bbox, fill=fill, outline=outline)
+        if draw_cells_tr:
+            self._draw_cells_tr(
+                label=label,
+                draw=draw,
+                page_height=page_height,
+                cell_tr_color=cell_tr_color,
+                cell_tr_outline=cell_tr_outline,
+                cell_tr_alpha=cell_tr_alpha,
+                cell_tr_radius=cell_tr_radius,
+            )
 
         if draw_lines:
-            fill = _get_rgba(name=line_color, alpha=line_alpha)
 
-            # Draw each rectangle by connecting its four points
-            for line in self.lines:
-
-                line.to_top_left_origin(page_height=H)
-                for segment in line.iterate_segments():
-                    draw.line(
-                        (segment[0][0], segment[0][1], segment[1][0], segment[1][1]),
-                        fill=fill,
-                        width=line_width,
-                    )
+            draw = self._render_lines(
+                draw=draw,
+                page_height=page_height,
+                line_color=line_color,
+                line_alpha=line_alpha,
+                line_width=line_width,
+            )
 
         return result
 
@@ -656,13 +587,13 @@ class SegmentedPdfPage(BaseModel):
         rgba = ImageColor.getrgb(name) + (int(alpha * 255),)
         return rgba
 
-    def _render_images(
+    def _render_bitmap_resources(
         self,
         draw: ImageDraw.ImageDraw,
         page_height: float,
-        image_fill: str,
-        image_outline: str,
-        image_alpha: float,
+        bitmap_resources_fill: str,
+        bitmap_resources_outline: str,
+        bitmap_resources_alpha: float,
     ) -> ImageDraw.ImageDraw:
 
         for bitmap_resource in self.bitmap_resources:
@@ -670,8 +601,12 @@ class SegmentedPdfPage(BaseModel):
                 page_height=page_height
             ).to_polygon()
 
-            fill = self._get_rgba(name=image_fill, alpha=image_alpha)
-            outline = self._get_rgba(name=image_outline, alpha=image_alpha)
+            fill = self._get_rgba(
+                name=bitmap_resources_fill, alpha=bitmap_resources_alpha
+            )
+            outline = self._get_rgba(
+                name=bitmap_resources_outline, alpha=bitmap_resources_alpha
+            )
 
             draw.polygon(poly, outline=outline, fill=fill)
 
@@ -679,6 +614,7 @@ class SegmentedPdfPage(BaseModel):
 
     def _render_cells_bbox(
         self,
+        label: SegmentedPageLabel,
         draw: ImageDraw.ImageDraw,
         page_height: float,
         cell_fill: str,
@@ -690,11 +626,141 @@ class SegmentedPdfPage(BaseModel):
         outline = self._get_rgba(name=cell_outline, alpha=cell_alpha)
 
         # Draw each rectangle by connecting its four points
-        for page_cell in self.cells:
+        for page_cell in self.yield_cells(label=label):
             poly = page_cell.rect.to_top_left_origin(
                 page_height=page_height
             ).to_polygon()
             draw.polygon(poly, outline=outline, fill=fill)
+
+        return draw
+
+    def _draw_text_in_bounding_bbox(
+        self,
+        img: PILImage.Image,
+        bbox: Tuple[float, float, float, float],
+        text: str,
+        font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
+        fill: str = "black",
+    ) -> PILImage.Image:  # ImageDraw.ImageDraw:
+        """
+        Draws text inside a bounding box by creating a temporary image,
+        resizing it, and pasting it into the original image at bbox.
+
+        Parameters:
+        - draw: The ImageDraw.Draw object.
+        - bbox: Tuple (x0, y0, x1, y1) representing the bounding box (all floats).
+        - text: The text to draw.
+        - font: An optional ImageFont.ImageFont object. Defaults to Pillow's built-in font.
+        - fill: Fill color for the text.
+        """
+        x0, y0, x1, y1 = bbox
+
+        width, height = round(x1 - x0), round(y0 - y1)
+
+        if width <= 2 or height <= 2:
+            # logging.warning(f"skipping to draw text (width: {x1-x0}, height: {y1-y0}): {text}")
+            return img
+
+        # Use the default font if no font is provided
+        if font is None:
+            font = ImageFont.load_default()
+
+        # Create a temporary image for the text
+        tmp_img = PILImage.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
+        tmp_draw = ImageDraw.Draw(tmp_img)
+        _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
+
+        # Create a properly sized temporary image
+        tmp_img = PILImage.new("RGBA", (text_width, text_height), (255, 255, 255, 255))
+        tmp_draw = ImageDraw.Draw(tmp_img)
+        tmp_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
+
+        # Resize image
+        res_img = tmp_img.resize((width, height), PILImage.Resampling.LANCZOS)
+
+        # Paste the resized text image onto the original image
+        img.paste(
+            im=res_img,
+            box=(round(x0), round(y1), round(x0) + width, round(y1) + height),
+            mask=None,
+        )
+
+        return img  # draw
+
+    def _render_cells_text(
+        self, label: SegmentedPageLabel, img: PILImage.Image, page_height: float
+    ) -> PILImage.Image:
+        # Draw each rectangle by connecting its four points
+        for page_cell in self.yield_cells(label=label):
+            poly = page_cell.rect.to_top_left_origin(
+                page_height=page_height
+            ).to_polygon()
+
+            result = self._draw_text_in_bounding_bbox(
+                img=img,
+                bbox=(poly[0][0], poly[0][1], poly[2][0], poly[2][1]),
+                text=page_cell.text,
+            )
+
+        return img
+
+    def _draw_cells_bl(
+        self,
+        label: SegmentedPageLabel,
+        draw: ImageDraw.ImageDraw,
+        page_height: float,
+        cell_bl_color: str,
+        cell_bl_outline: str,
+        cell_bl_alpha: float,
+        cell_bl_radius: float,
+    ) -> ImageDraw.ImageDraw:
+
+        fill = self._get_rgba(name=cell_bl_color, alpha=cell_bl_alpha)
+        outline = self._get_rgba(name=cell_bl_outline, alpha=cell_bl_alpha)
+
+        # Draw each rectangle by connecting its four points
+        for page_cell in self.yield_cells(label=label):
+            poly = page_cell.rect.to_top_left_origin(
+                page_height=page_height
+            ).to_polygon()
+            # Define the bounding box for the dot
+            dot_bbox = [
+                (poly[0][0] - cell_bl_radius, poly[0][1] - cell_bl_radius),
+                (poly[0][0] + cell_bl_radius, poly[0][1] + cell_bl_radius),
+            ]
+
+            # Draw the red dot
+            draw.ellipse(dot_bbox, fill=fill, outline=outline)
+
+        return draw
+
+    def _draw_cells_tr(
+        self,
+        label: SegmentedPageLabel,
+        draw: ImageDraw.ImageDraw,
+        page_height: float,
+        cell_tr_color: str,
+        cell_tr_outline: str,
+        cell_tr_alpha: float,
+        cell_tr_radius: float,
+    ) -> ImageDraw.ImageDraw:
+
+        fill = self._get_rgba(name=cell_tr_color, alpha=cell_tr_alpha)
+        outline = self._get_rgba(name=cell_tr_outline, alpha=cell_tr_alpha)
+
+        # Draw each rectangle by connecting its four points
+        for page_cell in self.yield_cells(label=label):
+            poly = page_cell.rect.to_top_left_origin(
+                page_height=page_height
+            ).to_polygon()
+            # Define the bounding box for the dot
+            dot_bbox = [
+                (poly[0][0] - cell_tr_radius, poly[0][1] - cell_tr_radius),
+                (poly[0][0] + cell_tr_radius, poly[0][1] + cell_tr_radius),
+            ]
+
+            # Draw the red dot
+            draw.ellipse(dot_bbox, fill=fill, outline=outline)
 
         return draw
 
@@ -704,6 +770,7 @@ class SegmentedPdfPage(BaseModel):
         page_height: float,
         line_color: str,
         line_alpha: float,
+        line_width: float,
     ) -> ImageDraw.ImageDraw:
 
         fill = self._get_rgba(name=line_color, alpha=line_alpha)
@@ -720,6 +787,7 @@ class SegmentedPdfPage(BaseModel):
                 )
 
         return draw
+
 
 # to be deleted
 class ParsedPdfPage(BaseModel):
@@ -760,8 +828,8 @@ class ParsedPdfDocument(BaseModel):
 
     def iterate_pages(
         self,
-    ) -> Iterator[Tuple[int, ParsedPdfPage]]:
-        
+    ) -> Iterator[Tuple[int, SegmentedPdfPage]]:
+
         for page_no, page in self.pages.items():
             yield (page_no, page)
 
