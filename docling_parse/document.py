@@ -328,7 +328,6 @@ class SegmentedPdfPage(BaseModel):
 
         self.word_cells = []
         for item in data:
-            print(item)
             cell = PdfCell.model_validate(item)
             self.word_cells.append(cell)
 
@@ -349,10 +348,19 @@ class SegmentedPdfPage(BaseModel):
 
         self.line_cells = []
         for item in data:
-            print(item)
             cell = PdfCell.model_validate(item)
             self.line_cells.append(cell)
 
+    def get_cells_in_bbox(self, label: SegmentedPageLabel, bbox: BoundingBox, ios: float = 0.8) -> List[PdfCell]:
+
+        cells = []
+        for page_cell in self.yield_cells(label):
+            cell_bbox = page_cell.get_bbox()
+            if cell_bbox.intersection_over_self(bbox)>ios:
+                cells.append(page_cell)
+
+        return cells
+    
     def export_to_dict(
         self,
         mode: str = "json",

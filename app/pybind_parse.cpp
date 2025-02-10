@@ -511,7 +511,7 @@ Sanitize table cells with specified parameters and return the processed JSON.
 	    double horizontal_cell_tolerance,
 	    bool enforce_same_font,
 	    double space_width_factor_for_merge = 1.0) -> nlohmann::json {
-	   return self.create_line_cells(horizontal_cell_tolerance,
+	   return self.create_word_cells(horizontal_cell_tolerance,
 					 enforce_same_font,
 					 space_width_factor_for_merge);
 	 },
