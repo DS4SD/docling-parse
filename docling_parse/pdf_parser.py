@@ -17,6 +17,7 @@ from docling_parse.document import (
     PdfLine,
     PdfPageDimension,
     SegmentedPdfPage,
+    SegmentedPdfPageLabel,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 
@@ -68,9 +69,10 @@ class PdfDocument:
                 for pi, page in enumerate(
                     doc_dict["pages"]
                 ):  # only one page is expected
-                    # self._pages[page_no] = self._to_parsed_page(page)  # put on cache
                     self._pages[page_no] = self._to_segmented_page(
-                        page["original"]
+                        page = page["original"],
+                        create_words = True,
+                        create_lines = True
                     )  # put on cache
                     return self._pages[page_no]
 
@@ -85,7 +87,10 @@ class PdfDocument:
             key=self._key, page_boundary=self._boundary_type
         )
         for pi, page in enumerate(doc_dict["pages"]):
-            self._pages[pi + 1] = self._to_parsed_page(page)  # put on cache
+            assert "original" in page, "'original' in page"
+
+            # will need to be changed once we remove the original/sanitized from C++
+            self._pages[pi + 1] = self._to_segmented_page(page["original"], create_words=True, create_lines=True)  # put on cache
 
     def _to_dimension(self, dimension: dict) -> PdfPageDimension:
 
@@ -238,25 +243,35 @@ class PdfDocument:
 
         return result
 
-    def _to_segmented_page(self, page: dict) -> SegmentedPdfPage:
-
-        return SegmentedPdfPage(
+    def _to_segmented_page(self, page: dict, create_words: bool, create_lines: bool) -> SegmentedPdfPage:
+        
+        segmented_page = SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
-            # cells=self._to_cells(page["cells"]),
             char_cells=self._to_cells(page["cells"]),
+            word_cells=[],
+            line_cells=[],
             bitmap_resources=self._to_bitmap_resources(page["images"]),
             lines=self._to_lines(page["lines"]),
         )
 
-    def _to_parsed_paginated_document(
-        self, doc_dict: dict, page_no: int = 1
+        if create_words:
+            segmented_page.create_word_cells()
+
+        if create_lines:
+            segmented_page.create_line_cells()
+
+        return segmented_page
+        
+    def _to_parsed_document(
+            self, doc_dict: dict, page_no: int = 1, create_words: bool=False, create_lines: bool=True
     ) -> ParsedPdfDocument:
 
         parsed_doc = ParsedPdfDocument()
 
         for pi, page in enumerate(doc_dict["pages"]):
-            # parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)
-            parsed_doc.pages[page_no + pi] = self._to_segmented_page(page["original"])
+            parsed_doc.pages[page_no + pi] = self._to_segmented_page(page["original"],
+                                                                     create_words=create_words,
+                                                                     create_lines=create_lines)
 
         return parsed_doc
 

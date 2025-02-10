@@ -13,6 +13,7 @@ from docling_parse.document import (
     PdfCell,
     PdfLine,
     SegmentedPdfPage,
+    SegmentedPdfPageLabel,
 )
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
@@ -231,6 +232,7 @@ def test_reference_documents_from_filenames():
         for page_no, pred_page in pdf_doc.iterate_pages():
             # print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
 
+            """
             if True:
                 rname = os.path.basename(pdf_doc_path)
                 fname = os.path.join(
@@ -265,10 +267,33 @@ def test_reference_documents_from_filenames():
 
                     # true_page.render().show()
                     # pred_page.sanitized.render().show()
+            """
 
-            pred_page.original.render()
-            # res.show()
+            rname = os.path.basename(pdf_doc_path)
+            fname = os.path.join(
+                GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.py.json"
+            )
 
+            if GENERATE or (not os.path.exists(fname)):
+                pred_page.save_as_json(fname)
+            else:
+                print(f"loading from {fname}")
+                
+                true_page = SegmentedPdfPage.load_from_json(fname)
+                verify_SegmentedPdfPage(
+                    true_page, pred_page, filename=fname
+                )
+                
+                # true_page.render().show()
+                # pred_page.sanitized.render().show()
+                
+            img = pred_page.render(label = SegmentedPdfPageLabel.CHAR)
+            img.show()
+            img = pred_page.render(label = SegmentedPdfPageLabel.WORD)
+            img.show()
+            img = pred_page.render(label = SegmentedPdfPageLabel.LINE)
+            img.show()
+            
     assert True
 
 

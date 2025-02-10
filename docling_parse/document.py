@@ -22,8 +22,8 @@ logging.basicConfig(
 )
 
 
-class SegmentedPageLabel(str, Enum):
-    """SegmentedPageLabel."""
+class SegmentedPdfPageLabel(str, Enum):
+    """SegmentedPdfPageLabel."""
 
     CHAR = "char"
     WORD = "word"
@@ -304,7 +304,6 @@ class SegmentedPdfPage(BaseModel):
 
     dimension: PdfPageDimension
 
-    # cells: List[PdfCell]
     bitmap_resources: List[PdfBitmapResource] = []
     lines: List[PdfLine] = []
 
@@ -355,7 +354,7 @@ class SegmentedPdfPage(BaseModel):
             self.line_cells.append(cell)
 
     def get_cells_in_bbox(
-        self, label: SegmentedPageLabel, bbox: BoundingBox, ios: float = 0.8
+        self, label: SegmentedPdfPageLabel, bbox: BoundingBox, ios: float = 0.8
     ) -> List[PdfCell]:
 
         cells = []
@@ -391,18 +390,18 @@ class SegmentedPdfPage(BaseModel):
         with open(filename, "r", encoding="utf-8") as f:
             return cls.model_validate_json(f.read())
 
-    def yield_cells(self, label: SegmentedPageLabel) -> Iterator[PdfCell]:
+    def yield_cells(self, label: SegmentedPdfPageLabel) -> Iterator[PdfCell]:
 
-        if label == SegmentedPageLabel.CHAR:
+        if label == SegmentedPdfPageLabel.CHAR:
             for _ in self.char_cells:
                 yield _
 
-        elif label == SegmentedPageLabel.WORD:
+        elif label == SegmentedPdfPageLabel.WORD:
             self.create_word_cells()
             for _ in self.word_cells:
                 yield _
 
-        elif label == SegmentedPageLabel.LINE:
+        elif label == SegmentedPdfPageLabel.LINE:
             self.create_line_cells()
             for _ in self.line_cells:
                 yield _
@@ -410,7 +409,7 @@ class SegmentedPdfPage(BaseModel):
         else:
             raise ValueError(f"incompatible {label}")
 
-    def crop_text(self, label: SegmentedPageLabel, bbox: BoundingBox, eps: float = 1.0):
+    def crop_text(self, label: SegmentedPdfPageLabel, bbox: BoundingBox, eps: float = 1.0):
 
         selection = []
         for page_cell in self.yield_cells(label):
@@ -447,7 +446,7 @@ class SegmentedPdfPage(BaseModel):
 
     def export_to_textlines(
         self,
-        label: SegmentedPageLabel,
+        label: SegmentedPdfPageLabel,
         add_location: bool = True,
         add_fontkey: bool = False,
         add_fontname: bool = True,
@@ -476,7 +475,7 @@ class SegmentedPdfPage(BaseModel):
 
     def render(
         self,
-        label: SegmentedPageLabel,
+        label: SegmentedPdfPageLabel,
         boundary_type: PageBoundaryLabel = PageBoundaryLabel.CROP_BOX,  # media_box
         draw_cells_bbox: bool = False,
         draw_cells_text: bool = True,
@@ -627,7 +626,7 @@ class SegmentedPdfPage(BaseModel):
 
     def _render_cells_bbox(
         self,
-        label: SegmentedPageLabel,
+        label: SegmentedPdfPageLabel,
         draw: ImageDraw.ImageDraw,
         page_height: float,
         cell_fill: str,
@@ -701,7 +700,7 @@ class SegmentedPdfPage(BaseModel):
         return img  # draw
 
     def _render_cells_text(
-        self, label: SegmentedPageLabel, img: PILImage.Image, page_height: float
+        self, label: SegmentedPdfPageLabel, img: PILImage.Image, page_height: float
     ) -> PILImage.Image:
         # Draw each rectangle by connecting its four points
         for page_cell in self.yield_cells(label=label):
@@ -719,7 +718,7 @@ class SegmentedPdfPage(BaseModel):
 
     def _draw_cells_bl(
         self,
-        label: SegmentedPageLabel,
+        label: SegmentedPdfPageLabel,
         draw: ImageDraw.ImageDraw,
         page_height: float,
         cell_bl_color: str,
@@ -749,7 +748,7 @@ class SegmentedPdfPage(BaseModel):
 
     def _draw_cells_tr(
         self,
-        label: SegmentedPageLabel,
+        label: SegmentedPdfPageLabel,
         draw: ImageDraw.ImageDraw,
         page_height: float,
         cell_tr_color: str,
