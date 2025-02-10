@@ -197,6 +197,9 @@ class PdfCell(PdfColoredElement):
     widget: bool
     left_to_right: bool
 
+    def to_bounding_box(self) -> BoundingBox:
+        return self.rect.to_bounding_box()
+
     def to_bottom_left_origin(self, page_height: float):
         self.rect = self.rect.to_bottom_left_origin(page_height=page_height)
 
@@ -351,16 +354,18 @@ class SegmentedPdfPage(BaseModel):
             cell = PdfCell.model_validate(item)
             self.line_cells.append(cell)
 
-    def get_cells_in_bbox(self, label: SegmentedPageLabel, bbox: BoundingBox, ios: float = 0.8) -> List[PdfCell]:
+    def get_cells_in_bbox(
+        self, label: SegmentedPageLabel, bbox: BoundingBox, ios: float = 0.8
+    ) -> List[PdfCell]:
 
         cells = []
         for page_cell in self.yield_cells(label):
-            cell_bbox = page_cell.get_bbox()
-            if cell_bbox.intersection_over_self(bbox)>ios:
+            cell_bbox = page_cell.to_bounding_box()
+            if cell_bbox.intersection_over_self(bbox) > ios:
                 cells.append(page_cell)
 
         return cells
-    
+
     def export_to_dict(
         self,
         mode: str = "json",
