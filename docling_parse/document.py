@@ -313,12 +313,12 @@ class SegmentedPdfPage(BaseModel):
 
     image: Optional[ImageRef] = None
 
-    def create_word_cells(self):
+    def create_word_cells(self, loglevel: str = "fatal"):
 
         if len(self.word_cells) > 0:
             return
 
-        sanitizer = pdf_sanitizer(level="info")
+        sanitizer = pdf_sanitizer(level=loglevel)
 
         char_data = [
             item.model_dump(mode="json", by_alias=True, exclude_none=True)
@@ -333,12 +333,12 @@ class SegmentedPdfPage(BaseModel):
             cell = PdfCell.model_validate(item)
             self.word_cells.append(cell)
 
-    def create_line_cells(self):
+    def create_line_cells(self, loglevel: str = "fatal"):
 
         if len(self.line_cells) > 0:
             return
 
-        sanitizer = pdf_sanitizer(level="info")
+        sanitizer = pdf_sanitizer(level=loglevel)
 
         char_data = [
             item.model_dump(mode="json", by_alias=True, exclude_none=True)

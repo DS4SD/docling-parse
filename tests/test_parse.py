@@ -288,11 +288,11 @@ def test_reference_documents_from_filenames():
                 # pred_page.sanitized.render().show()
                 
             img = pred_page.render(label = SegmentedPdfPageLabel.CHAR)
-            img.show()
+            # img.show()
             img = pred_page.render(label = SegmentedPdfPageLabel.WORD)
-            img.show()
+            # img.show()
             img = pred_page.render(label = SegmentedPdfPageLabel.LINE)
-            img.show()
+            # img.show()
             
     assert True
 
