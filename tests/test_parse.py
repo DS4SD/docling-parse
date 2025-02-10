@@ -7,8 +7,6 @@ from typing import Dict, List
 from pydantic import TypeAdapter
 
 from docling_parse.document import (
-    PageBoundaryLabel,
-    ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
     PdfLine,
@@ -201,14 +199,6 @@ def verify_SegmentedPdfPage(
     verify_lines(true_page.lines, pred_page.lines, eps=eps)
 
 
-def verify_ParsedPdfPage(
-    true_page: ParsedPdfPage, pred_page: ParsedPdfPage, filename: str = ""
-):
-
-    # verify_SegmentedPdfPage(true_page.original, pred_page.original, filename=filename)
-    verify_SegmentedPdfPage(true_page.sanitized, pred_page.sanitized, filename=filename)
-
-
 def test_reference_documents_from_filenames():
 
     parser = DoclingPdfParser(loglevel="fatal")
@@ -278,22 +268,20 @@ def test_reference_documents_from_filenames():
                 pred_page.save_as_json(fname)
             else:
                 print(f"loading from {fname}")
-                
+
                 true_page = SegmentedPdfPage.load_from_json(fname)
-                verify_SegmentedPdfPage(
-                    true_page, pred_page, filename=fname
-                )
-                
+                verify_SegmentedPdfPage(true_page, pred_page, filename=fname)
+
                 # true_page.render().show()
                 # pred_page.sanitized.render().show()
-                
-            img = pred_page.render(label = SegmentedPdfPageLabel.CHAR)
+
+            img = pred_page.render(label=SegmentedPdfPageLabel.CHAR)
             # img.show()
-            img = pred_page.render(label = SegmentedPdfPageLabel.WORD)
+            img = pred_page.render(label=SegmentedPdfPageLabel.WORD)
             # img.show()
-            img = pred_page.render(label = SegmentedPdfPageLabel.LINE)
+            img = pred_page.render(label=SegmentedPdfPageLabel.LINE)
             # img.show()
-            
+
     assert True
 
 

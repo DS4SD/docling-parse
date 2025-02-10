@@ -34,8 +34,8 @@ class SegmentedPdfPageLabel(str, Enum):
         return str(self.value)
 
 
-class PageBoundaryLabel(str, Enum):
-    """PageBoundaryLabel."""
+class PdfPageBoundaryLabel(str, Enum):
+    """PdfPageBoundaryLabel."""
 
     ART_BOX = "art_box"
     BLEED_BOX = "bleed_box"
@@ -269,7 +269,7 @@ class PdfLine(PdfColoredElement):
 class PdfPageDimension(BaseModel):
 
     angle: float
-    boundary_type: PageBoundaryLabel
+    boundary_type: PdfPageBoundaryLabel
 
     rect: BoundingRectangle
 
@@ -409,7 +409,9 @@ class SegmentedPdfPage(BaseModel):
         else:
             raise ValueError(f"incompatible {label}")
 
-    def crop_text(self, label: SegmentedPdfPageLabel, bbox: BoundingBox, eps: float = 1.0):
+    def crop_text(
+        self, label: SegmentedPdfPageLabel, bbox: BoundingBox, eps: float = 1.0
+    ):
 
         selection = []
         for page_cell in self.yield_cells(label):
@@ -476,7 +478,7 @@ class SegmentedPdfPage(BaseModel):
     def render(
         self,
         label: SegmentedPdfPageLabel,
-        boundary_type: PageBoundaryLabel = PageBoundaryLabel.CROP_BOX,  # media_box
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,  # media_box
         draw_cells_bbox: bool = False,
         draw_cells_text: bool = True,
         draw_cells_bl: bool = False,
@@ -801,6 +803,7 @@ class SegmentedPdfPage(BaseModel):
         return draw
 
 
+"""
 # to be deleted
 class ParsedPdfPage(BaseModel):
 
@@ -813,7 +816,6 @@ class ParsedPdfPage(BaseModel):
         by_alias: bool = True,
         exclude_none: bool = True,
     ) -> Dict:
-        """Export to dict."""
         return self.model_dump(mode=mode, by_alias=by_alias, exclude_none=exclude_none)
 
     def save_as_json(
@@ -821,16 +823,15 @@ class ParsedPdfPage(BaseModel):
         filename: Path,
         indent: int = 2,
     ):
-        """Save as json."""
         out = self.export_to_dict()
         with open(filename, "w", encoding="utf-8") as fw:
             json.dump(out, fw, indent=indent)
 
     @classmethod
     def load_from_json(cls, filename: Path) -> "ParsedPdfPage":
-        """load_from_json."""
         with open(filename, "r", encoding="utf-8") as f:
             return cls.model_validate_json(f.read())
+"""
 
 
 class ParsedPdfDocument(BaseModel):

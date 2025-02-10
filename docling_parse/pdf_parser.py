@@ -10,14 +10,13 @@ from docling_core.types.doc.base import BoundingBox, CoordOrigin
 
 from docling_parse.document import (
     BoundingRectangle,
-    PageBoundaryLabel,
     ParsedPdfDocument,
     PdfBitmapResource,
     PdfCell,
     PdfLine,
+    PdfPageBoundaryLabel,
     PdfPageDimension,
     SegmentedPdfPage,
-    SegmentedPdfPageLabel,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 
@@ -34,7 +33,7 @@ class PdfDocument:
         self,
         parser: "pdf_parser_v2",
         key: str,
-        boundary_type: PageBoundaryLabel = PageBoundaryLabel.CROP_BOX,
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
     ):
         self._parser: pdf_parser_v2 = parser
         self._key = key
@@ -70,9 +69,7 @@ class PdfDocument:
                     doc_dict["pages"]
                 ):  # only one page is expected
                     self._pages[page_no] = self._to_segmented_page(
-                        page = page["original"],
-                        create_words = True,
-                        create_lines = True
+                        page=page["original"], create_words=True, create_lines=True
                     )  # put on cache
                     return self._pages[page_no]
 
@@ -90,11 +87,15 @@ class PdfDocument:
             assert "original" in page, "'original' in page"
 
             # will need to be changed once we remove the original/sanitized from C++
-            self._pages[pi + 1] = self._to_segmented_page(page["original"], create_words=True, create_lines=True)  # put on cache
+            self._pages[pi + 1] = self._to_segmented_page(
+                page["original"], create_words=True, create_lines=True
+            )  # put on cache
 
     def _to_dimension(self, dimension: dict) -> PdfPageDimension:
 
-        boundary_type: PageBoundaryLabel = PageBoundaryLabel(dimension["page_boundary"])
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel(
+            dimension["page_boundary"]
+        )
 
         art_bbox = BoundingBox(
             l=dimension["rectangles"]["art-bbox"][0],
@@ -243,8 +244,10 @@ class PdfDocument:
 
         return result
 
-    def _to_segmented_page(self, page: dict, create_words: bool, create_lines: bool) -> SegmentedPdfPage:
-        
+    def _to_segmented_page(
+        self, page: dict, create_words: bool, create_lines: bool
+    ) -> SegmentedPdfPage:
+
         segmented_page = SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
             char_cells=self._to_cells(page["cells"]),
@@ -261,17 +264,21 @@ class PdfDocument:
             segmented_page.create_line_cells()
 
         return segmented_page
-        
+
     def _to_parsed_document(
-            self, doc_dict: dict, page_no: int = 1, create_words: bool=False, create_lines: bool=True
+        self,
+        doc_dict: dict,
+        page_no: int = 1,
+        create_words: bool = False,
+        create_lines: bool = True,
     ) -> ParsedPdfDocument:
 
         parsed_doc = ParsedPdfDocument()
 
         for pi, page in enumerate(doc_dict["pages"]):
-            parsed_doc.pages[page_no + pi] = self._to_segmented_page(page["original"],
-                                                                     create_words=create_words,
-                                                                     create_lines=create_lines)
+            parsed_doc.pages[page_no + pi] = self._to_segmented_page(
+                page["original"], create_words=create_words, create_lines=create_lines
+            )
 
         return parsed_doc
 
@@ -315,7 +322,7 @@ class DoclingPdfParser:
         self,
         path_or_stream: Union[str, Path, BytesIO],
         lazy: bool = True,
-        boundary_type: PageBoundaryLabel = PageBoundaryLabel.CROP_BOX,
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
     ) -> PdfDocument:
         # success: bool
         # key: str

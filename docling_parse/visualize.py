@@ -2,17 +2,8 @@ import argparse
 import logging
 import os
 
-from docling_parse.document import SegmentedPageLabel, SegmentedPdfPage
+from docling_parse.document import SegmentedPdfPage, SegmentedPdfPageLabel
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
-
-"""
-from docling_parse.pdf_parsers import (  # type: ignore[import]
-    pdf_parser_v1,
-    pdf_parser_v2,
-)
-"""
-
-# from docling_parse.utils import create_pil_image_of_page_v1, create_pil_image_of_page_v2
 
 # Configure logging
 logging.basicConfig(
@@ -33,19 +24,6 @@ def parse_args():
         default="error",
         help="Log level [info, warning, error, fatal]",
     )
-
-    """
-    # Restrict version to specific values
-    parser.add_argument(
-        "-v",
-        "--version",
-        type=str,
-        choices=["py", "v1", "v2"],
-        required=False,
-        default="py",
-        help="Version [v1, v2]",
-    )
-    """
 
     # Restrict page-boundary
     parser.add_argument(
@@ -129,7 +107,6 @@ def parse_args():
 
     return (
         args.log_level,
-        # args.version,
         args.input_pdf,
         args.interactive,
         args.output_dir,
@@ -139,141 +116,6 @@ def parse_args():
         args.page_boundary,
         args.category,
     )
-
-
-"""
-def visualise_v1(
-    log_level: str,
-    pdf_path: str,
-    interactive: str,
-    output_dir: str,
-    page_num: int,
-    display_text: bool,
-):
-
-    parser = pdf_parser_v1()
-    parser.set_loglevel_with_label(log_level)
-
-    doc_key = "key"
-    success = parser.load_document(doc_key, pdf_path)
-
-    if success == False:
-        return
-
-    doc = None
-
-    if page_num == -1:
-        doc = parser.parse_pdf_from_key(doc_key)
-    else:
-        doc = parser.parse_pdf_from_key_on_page(doc_key, page_num)
-
-    parser.unload_document(doc_key)
-
-    for pi, page in enumerate(doc["pages"]):
-
-        img = create_pil_image_of_page_v1(page)
-
-        if interactive:
-            img.show()
-
-        if output_dir is not None and page_num == -1:
-            oname = os.path.join(
-                output_dir, f"{os.path.basename(pdf_path)}_page={pi}.v1.png"
-            )
-            logging.info(f"output: {oname}")
-
-            img.save(oname)
-
-        elif output_dir is not None and page_num != -1:
-            oname = os.path.join(
-                output_dir, f"{os.path.basename(pdf_path)}_page={page_num}.v1.png"
-            )
-            logging.info(f"output: {oname}")
-
-            img.save(oname)
-"""
-
-"""
-def visualise_v2(
-    log_level: str,
-    pdf_path: str,
-    interactive: str,
-    output_dir: str,
-    page_num: int,
-    display_text: bool,
-    page_boundary: str = "crop_box",  # media_box
-    category: str = "both",  # "both", "sanitized", "original"
-):
-    categories = []
-    if category == "both":
-        categories = ["sanitized", "original"]
-    else:
-        categories = [category]
-
-    parser = pdf_parser_v2(log_level)
-    # parser.set_loglevel_with_label(log_level)
-
-    hash_obj = hashlib.sha256(str(pdf_path).encode())
-    doc_key = str(hash_obj.hexdigest())
-
-    # doc_key = "key"
-    logging.info(f"{doc_key}: {pdf_path}")
-
-    success = parser.load_document(doc_key, pdf_path)
-
-    if success == False:
-        return
-
-    logging.info(f"page_boundary: {page_boundary}")
-
-    doc: Optional[Dict] = None
-
-    try:
-        if page_num == -1:
-            doc = parser.parse_pdf_from_key(doc_key, page_boundary)
-        else:
-            doc = parser.parse_pdf_from_key_on_page(doc_key, page_num, page_boundary)
-
-    except Exception as exc:
-        logging.info(f"Could not parse pdf-document: {exc}")
-        doc = None
-
-    if doc is None:
-        return
-
-    parser.unload_document(doc_key)
-
-    for pi, page in enumerate(doc.get("pages", [])):
-
-        for category in categories:
-
-            img = create_pil_image_of_page_v2(
-                page, category=category, draw_cells_text=display_text
-            )
-
-            if interactive:
-                img.show()
-
-            if output_dir is not None and page_num == -1:
-                oname = os.path.join(
-                    output_dir,
-                    f"{os.path.basename(pdf_path)}_page={pi}.v2.{category}.png",
-                )
-                logging.info(f"output: {oname}")
-
-                img.save(oname)
-
-            elif output_dir is not None and page_num != -1:
-                oname = os.path.join(
-                    output_dir,
-                    f"{os.path.basename(pdf_path)}_page={pi}.v2.{category}.png",
-                )
-                logging.info(f"output: {oname}")
-
-                img.save(oname)
-
-    return 0
-"""
 
 
 def visualise_py(
@@ -303,7 +145,7 @@ def visualise_py(
         if category in ["all", "char"]:
 
             img = pdf_page.render(
-                label=SegmentedPageLabel.CHAR,
+                label=SegmentedPdfPageLabel.CHAR,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -313,14 +155,16 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=SegmentedPageLabel.CHAR, add_fontkey=True, add_fontname=False
+                    label=SegmentedPdfPageLabel.CHAR,
+                    add_fontkey=True,
+                    add_fontname=False,
                 )
                 print(f"text-lines (original, page_no: {page_no}):")
                 print("\n".join(lines))
 
         if category in ["all", "word"]:
             img = pdf_page.render(
-                label=SegmentedPageLabel.WORD,
+                label=SegmentedPdfPageLabel.WORD,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -330,14 +174,16 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=SegmentedPageLabel.WORD, add_fontkey=True, add_fontname=False
+                    label=SegmentedPdfPageLabel.WORD,
+                    add_fontkey=True,
+                    add_fontname=False,
                 )
                 print(f"text-words (sanitized, page_no: {page_no}):")
                 print("\n".join(lines))
 
         if category in ["all", "line"]:
             img = pdf_page.render(
-                label=SegmentedPageLabel.LINE,
+                label=SegmentedPdfPageLabel.LINE,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -347,7 +193,9 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=SegmentedPageLabel.LINE, add_fontkey=True, add_fontname=False
+                    label=SegmentedPdfPageLabel.LINE,
+                    add_fontkey=True,
+                    add_fontname=False,
                 )
                 print(f"text-lines (sanitized, page_no: {page_no}):")
                 print("\n".join(lines))
@@ -381,43 +229,6 @@ def main():
         page_boundary=page_boundary,
         category=category,
     )
-
-    """
-    if version == "v1":
-        visualise_v1(
-            log_level=log_level,
-            pdf_path=pdf_path,
-            interactive=interactive,
-            output_dir=output_dir,
-            page_num=page_num,
-            display_text=display_text,
-        )
-    elif version == "v2":
-        visualise_v2(
-            log_level=log_level,
-            pdf_path=pdf_path,
-            interactive=interactive,
-            output_dir=output_dir,
-            page_num=page_num,
-            display_text=display_text,
-            page_boundary=page_boundary,
-            category=category,
-        )
-    elif version == "py":
-        visualise_py(
-            log_level=log_level,
-            pdf_path=pdf_path,
-            interactive=interactive,
-            output_dir=output_dir,
-            page_num=page_num,
-            display_text=display_text,
-            log_text=log_text,
-            page_boundary=page_boundary,
-            category=category,
-        )
-    else:
-        return -1
-    """
 
 
 if __name__ == "__main__":
