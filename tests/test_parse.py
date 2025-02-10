@@ -10,12 +10,13 @@ from docling_parse.document import (
     PdfBitmapResource,
     PdfCell,
     PdfLine,
+    PdfPageBoundaryLabel,
     SegmentedPdfPage,
     SegmentedPdfPageLabel,
 )
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
-GENERATE = False
+GENERATE = True
 
 GROUNDTRUTH_FOLDER = "tests/data/groundtruth/"
 REGRESSION_FOLDER = "tests/data/regression/*.pdf"
@@ -212,7 +213,7 @@ def test_reference_documents_from_filenames():
 
         pdf_doc: PdfDocument = parser.load(
             path_or_stream=pdf_doc_path,
-            boundary_type=PageBoundaryLabel.CROP_BOX,  # default: CROP_BOX
+            boundary_type=PdfPageBoundaryLabel.CROP_BOX,  # default: CROP_BOX
             lazy=False,
         )  # default: True
         assert pdf_doc is not None
@@ -334,9 +335,9 @@ def test_serialize_and_reload():
     pdf_doc: PdfDocument = parser.load(path_or_stream=filename, lazy=True)
 
     # We can serialize the pages dict the following way.
-    page_adapter = TypeAdapter(Dict[int, ParsedPdfPage])
+    page_adapter = TypeAdapter(Dict[int, SegmentedPdfPage])
 
     json_pages = page_adapter.dump_json(pdf_doc._pages)
-    reloaded_pages: Dict[int, ParsedPdfPage] = page_adapter.validate_json(json_pages)
+    reloaded_pages: Dict[int, SegmentedPdfPage] = page_adapter.validate_json(json_pages)
 
     assert reloaded_pages == pdf_doc._pages

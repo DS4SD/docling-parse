@@ -28,9 +28,9 @@ namespace pdflib
     bool process_document_from_file(std::string& _filename);
     bool process_document_from_bytesio(std::string& _buffer);
 
-    void decode_document(std::string page_boundary);
+    void decode_document(std::string page_boundary, bool do_sanitization);
 
-    void decode_document(std::vector<int>& page_numbers, std::string page_boundary);
+    void decode_document(std::vector<int>& page_numbers, std::string page_boundary, bool do_sanitization);
 
   private:
 
@@ -214,7 +214,8 @@ namespace pdflib
     return true;
   }
   
-  void pdf_decoder<DOCUMENT>::decode_document(std::string page_boundary)
+  void pdf_decoder<DOCUMENT>::decode_document(std::string page_boundary,
+					      bool do_sanitization)
   {
     LOG_S(INFO) << "start decoding all pages ...";        
     utils::timer timer;
@@ -231,7 +232,7 @@ namespace pdflib
 	
         pdf_decoder<PAGE> page_decoder(page);
 
-        auto timings_ = page_decoder.decode_page(page_boundary);
+        auto timings_ = page_decoder.decode_page(page_boundary, do_sanitization);
 	update_timings(timings_, set_timer);
 	set_timer = false;
 
@@ -246,7 +247,9 @@ namespace pdflib
     timings[__FUNCTION__] = timer.get_time();
   }
 
-  void pdf_decoder<DOCUMENT>::decode_document(std::vector<int>& page_numbers, std::string page_boundary)
+  void pdf_decoder<DOCUMENT>::decode_document(std::vector<int>& page_numbers,
+					      std::string page_boundary,
+					      bool do_sanitization)
   {
     LOG_S(INFO) << "start decoding selected pages ...";        
     utils::timer timer;
@@ -268,7 +271,7 @@ namespace pdflib
 	    
 	    pdf_decoder<PAGE> page_decoder(pages.at(page_number));
 	    
-	    auto timings_ = page_decoder.decode_page(page_boundary);
+	    auto timings_ = page_decoder.decode_page(page_boundary, do_sanitization);
 	    
 	    update_timings(timings_, set_timer);
 	    set_timer=false;

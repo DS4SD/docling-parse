@@ -38,9 +38,14 @@ namespace docling
     nlohmann::json get_annotations(std::string key);
     nlohmann::json get_table_of_contents(std::string key);
     
-    nlohmann::json parse_pdf_from_key(std::string key, std::string page_boundary);
+    nlohmann::json parse_pdf_from_key(std::string key,
+				      std::string page_boundary,
+				      bool do_sanitization);
 
-    nlohmann::json parse_pdf_from_key_on_page(std::string key, int page, std::string page_boundary);
+    nlohmann::json parse_pdf_from_key_on_page(std::string key,
+					      int page,
+					      std::string page_boundary,
+					      bool do_sanitization);
 
     nlohmann::json sanitize_cells(nlohmann::json& original_cells,
 				  nlohmann::json& page_dim,
@@ -284,7 +289,9 @@ namespace docling
     return (itr->second)->get_table_of_contents();
   }
 
-  nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key, std::string page_boundary)
+  nlohmann::json docling_parser_v2::parse_pdf_from_key(std::string key,
+						       std::string page_boundary,
+						       bool do_sanitization)
   {
     LOG_S(INFO) << __FUNCTION__;
     
@@ -296,7 +303,7 @@ namespace docling
       }
     
     auto& decoder = itr->second;
-    decoder->decode_document(page_boundary);
+    decoder->decode_document(page_boundary, do_sanitization);
 
     LOG_S(INFO) << "decoding done for key: " << key;
 
@@ -308,8 +315,10 @@ namespace docling
     return decoder->get();
   }
 
-  nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key, int page,
-							       std::string page_boundary)
+  nlohmann::json docling_parser_v2::parse_pdf_from_key_on_page(std::string key,
+							       int page,
+							       std::string page_boundary,
+							       bool do_sanitization)
   {
     LOG_S(INFO) << __FUNCTION__;
     
@@ -323,7 +332,7 @@ namespace docling
     auto& decoder = itr->second;
     
     std::vector<int> pages = {page};
-    decoder->decode_document(pages, page_boundary);
+    decoder->decode_document(pages, page_boundary, do_sanitization);
 
     LOG_S(INFO) << "decoding done for for key: " << key << " and page: " << page;
 

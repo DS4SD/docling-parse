@@ -336,17 +336,20 @@ PYBIND11_MODULE(pdf_parsers, m) {
     .def("parse_pdf_from_key",
 	 [](docling::docling_parser_v2 &self,
 	    const std::string &key,
-	    const std::string &page_boundary) -> nlohmann::json {
-	   return self.parse_pdf_from_key(key, page_boundary);
+	    const std::string &page_boundary,
+	    bool do_sanitization) -> nlohmann::json {
+	   return self.parse_pdf_from_key(key, page_boundary, do_sanitization);
 	 },
 	 pybind11::arg("key"),
 	 pybind11::arg("page_boundary") = "crop_box", // media_box
+	 pybind11::arg("do_sanitization") = true, // media_box
 	 R"(
     Parse the PDF document identified by its unique key and return a JSON representation.
 
     Parameters:
         key (str): The unique key of the document.
         page_boundary (str): The page boundary specification for parsing. One of [`crop_box`, `media_box`].
+        do_sanitization: Sanitize the chars into lines [default=true].
 
     Returns:
         dict: A JSON representation of the parsed PDF document.)")
@@ -355,12 +358,14 @@ PYBIND11_MODULE(pdf_parsers, m) {
 	 [](docling::docling_parser_v2 &self,
 	    const std::string &key,
 	    int page,
-	    const std::string &page_boundary) -> nlohmann::json {
-	   return self.parse_pdf_from_key_on_page(key, page, page_boundary);
+	    const std::string &page_boundary,
+	    bool do_sanitization) -> nlohmann::json {
+	   return self.parse_pdf_from_key_on_page(key, page, page_boundary, do_sanitization);
 	 },
 	 pybind11::arg("key"),
 	 pybind11::arg("page"),
 	 pybind11::arg("page_boundary") = "crop_box", // media_box
+	 pybind11::arg("do_sanitization") = true, // media_box
 	 R"(
     Parse a specific page of the PDF document identified by its unique key and return a JSON representation.
 
@@ -368,6 +373,7 @@ PYBIND11_MODULE(pdf_parsers, m) {
         key (str): The unique key of the document.
         page (int): The page number to parse.
         page_boundary (str): The page boundary specification for parsing [choices: crop_box, media_box].
+        do_sanitization: Sanitize the chars into lines [default=true].
 
     Returns:
         dict: A JSON representation of the parsed page.)")

@@ -57,19 +57,26 @@ class PdfDocument:
         else:
             raise RuntimeError("This document is not loaded.")
 
-    def get_page(self, page_no: int) -> SegmentedPdfPage:
+    def get_page(
+        self, page_no: int, create_words: bool = True, create_lines: bool = True
+    ) -> SegmentedPdfPage:
         if page_no in self._pages.keys():
             return self._pages[page_no]
         else:
             if 1 <= page_no <= self.number_of_pages():
                 doc_dict = self._parser.parse_pdf_from_key_on_page(
-                    key=self._key, page=page_no - 1, page_boundary=self._boundary_type
+                    key=self._key,
+                    page=page_no - 1,
+                    page_boundary=self._boundary_type,
+                    do_sanitization=False,
                 )
                 for pi, page in enumerate(
                     doc_dict["pages"]
                 ):  # only one page is expected
                     self._pages[page_no] = self._to_segmented_page(
-                        page=page["original"], create_words=True, create_lines=True
+                        page=page["original"],
+                        create_words=create_words,
+                        create_lines=create_lines,
                     )  # put on cache
                     return self._pages[page_no]
 
@@ -79,20 +86,20 @@ class PdfDocument:
 
         return SegmentedPdfPage()
 
-    def load_all_pages(self):
+    def load_all_pages(self, create_words: bool = True, create_lines: bool = True):
         doc_dict = self._parser.parse_pdf_from_key(
-            key=self._key, page_boundary=self._boundary_type
+            key=self._key, page_boundary=self._boundary_type, do_sanitization=False
         )
         for pi, page in enumerate(doc_dict["pages"]):
             assert "original" in page, "'original' in page"
 
             # will need to be changed once we remove the original/sanitized from C++
             self._pages[pi + 1] = self._to_segmented_page(
-                page["original"], create_words=True, create_lines=True
+                page["original"], create_words=create_words, create_lines=create_lines
             )  # put on cache
 
     def _to_dimension(self, dimension: dict) -> PdfPageDimension:
-
+        
         boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel(
             dimension["page_boundary"]
         )
