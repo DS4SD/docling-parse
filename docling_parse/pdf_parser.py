@@ -99,7 +99,7 @@ class PdfDocument:
             )  # put on cache
 
     def _to_dimension(self, dimension: dict) -> PdfPageDimension:
-        
+
         boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel(
             dimension["page_boundary"]
         )
