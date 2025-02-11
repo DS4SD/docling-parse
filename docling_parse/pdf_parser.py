@@ -331,8 +331,6 @@ class DoclingPdfParser:
         lazy: bool = True,
         boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
     ) -> PdfDocument:
-        # success: bool
-        # key: str
 
         if isinstance(path_or_stream, str):
             path_or_stream = Path(path_or_stream)

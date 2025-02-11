@@ -905,10 +905,27 @@ class ParsedPdfPage(BaseModel):
 """
 
 
+class PdfTableOfContentsItem(BaseModel):
+
+    text: str
+    orig: str = ""
+
+    marker: str = ""
+
+    children: List["PdfTableOfContentsItem"] = []
+
+
+class PdfTableOfContents(BaseModel):
+
+    root: PdfTableOfContentsItem
+
+
 class ParsedPdfDocument(BaseModel):
 
     # pages: Dict[int, ParsedPdfPage] = {}
     pages: Dict[int, SegmentedPdfPage] = {}
+
+    table_of_contents: Optional[PdfTableOfContents] = None
 
     def iterate_pages(
         self,
