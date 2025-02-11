@@ -16,7 +16,7 @@ from docling_parse.document import (
 )
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
-GENERATE = True
+GENERATE = False
 
 GROUNDTRUTH_FOLDER = "tests/data/groundtruth/"
 REGRESSION_FOLDER = "tests/data/regression/*.pdf"
@@ -222,43 +222,6 @@ def test_reference_documents_from_filenames():
         # No need to call PdfDocument.load_all_pages() before.
         for page_no, pred_page in pdf_doc.iterate_pages():
             # print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
-
-            """
-            if True:
-                rname = os.path.basename(pdf_doc_path)
-                fname = os.path.join(
-                    GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.original.py.json"
-                )
-
-                if GENERATE or (not os.path.exists(fname)):
-                    pred_page.original.save_as_json(fname)
-                else:
-                    print(f"loading from {fname}")
-
-                    true_page = SegmentedPdfPage.load_from_json(fname)
-                    verify_SegmentedPdfPage(
-                        true_page, pred_page.original, filename=pdf_doc_path
-                    )
-
-            if True:
-                rname = os.path.basename(pdf_doc_path)
-                fname = os.path.join(
-                    GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.sanitized.py.json"
-                )
-
-                if GENERATE or (not os.path.exists(fname)):
-                    pred_page.sanitized.save_as_json(fname)
-                else:
-                    print(f"loading from {fname}")
-
-                    true_page = SegmentedPdfPage.load_from_json(fname)
-                    verify_SegmentedPdfPage(
-                        true_page, pred_page.sanitized, filename=fname
-                    )
-
-                    # true_page.render().show()
-                    # pred_page.sanitized.render().show()
-            """
 
             rname = os.path.basename(pdf_doc_path)
             fname = os.path.join(
