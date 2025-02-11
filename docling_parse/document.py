@@ -7,6 +7,7 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated, Dict, Iterator, List, NamedTuple, Optional, Tuple, Union
 
+import numpy as np
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from docling_core.types.doc.document import ImageRef
 from PIL import Image as PILImage
@@ -86,29 +87,50 @@ class BoundingRectangle(BaseModel):
     coord_origin: CoordOrigin = CoordOrigin.BOTTOMLEFT
 
     @property
-    def width(self):
+    def width(self) -> float:
         """width."""
-        return self.r_x2 - self.r_x0
+        return np.sqrt((self.r_x1 - self.r_x0) ** 2 + (self.r_y1 - self.r_y0) ** 2)
 
     @property
-    def height(self):
+    def height(self) -> float:
         """height."""
-        return abs(self.r_y2 - self.r_y0)
+        return np.sqrt((self.r_x3 - self.r_x0) ** 2 + (self.r_y3 - self.r_y0) ** 2)
 
     @property
-    def angle(self):
+    def angle(self) -> float:
         """width."""
         p_0 = ((self.r_x0 + self.r_x3) / 2.0, (self.r_y0 + self.r_y3) / 2.0)
-        p_1 = ((self.r_x1 + self.r_x2) / 2.0, (self.r_y1 + self.r_y1) / 2.0)
+        p_1 = ((self.r_x1 + self.r_x2) / 2.0, (self.r_y1 + self.r_y2) / 2.0)
 
         delta_x, delta_y = p_1[0] - p_0[0], p_1[1] - p_0[1]
 
-        if abs(delta_x) > 1e-3:
+        if abs(delta_x) > 1.0e-3:
             return math.atan(delta_y / delta_x)
         elif delta_y > 0:
             return 3.142592 / 2.0
         else:
             return -3.142592 / 2.0
+
+    @property
+    def angle_360(self) -> int:
+
+        p_0 = ((self.r_x0 + self.r_x3) / 2.0, (self.r_y0 + self.r_y3) / 2.0)
+        p_1 = ((self.r_x1 + self.r_x2) / 2.0, (self.r_y1 + self.r_y2) / 2.0)
+
+        delta_x, delta_y = p_1[0] - p_0[0], p_1[1] - p_0[1]
+
+        if abs(delta_y) < 1.0e-2:
+            return 0
+        elif abs(delta_x) < 1.0e-2:
+            return 90
+        else:
+            return round(-math.atan(delta_y / delta_x) / np.pi * 180)
+
+    @property
+    def centre(self):
+        return (self.r_x0 + self.r_x1 + self.r_x2 + self.r_x3) / 4.0, (
+            self.r_y0 + self.r_y1 + self.r_y2 + self.r_y3
+        ) / 4.0
 
     def to_bounding_box(self) -> BoundingBox:
         # FIXME: This code looks dangerous in assuming x0,y0 is bottom-left most and x2,y2 is top-right most...
@@ -648,6 +670,58 @@ class SegmentedPdfPage(BaseModel):
 
         return draw
 
+    def _draw_text_in_rectangle(
+        self,
+        img: PILImage.Image,
+        rect: BoundingRectangle,
+        text: str,
+        font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
+        fill: str = "black",
+    ) -> PILImage.Image:
+
+        width = round(rect.width)
+        height = round(rect.height)
+        rot_angle = rect.angle_360
+
+        centre = rect.centre
+        centre_x, centre_y = round(centre[0]), round(centre[1])
+
+        # print(f"width: {width}, height: {height}, angle: {rot_angle}, text: {text}")
+
+        if width <= 2 or height <= 2:
+            # logging.warning(f"skipping to draw text (width: {x1-x0}, height: {y1-y0}): {text}")
+            return img
+
+        # Use the default font if no font is provided
+        if font is None:
+            font = ImageFont.load_default()
+
+        # Create a temporary image for the text
+        tmp_img = PILImage.new("RGBA", (1, 1), (255, 255, 255, 0))  # Dummy size
+        tmp_draw = ImageDraw.Draw(tmp_img)
+        _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
+
+        # Create a properly sized temporary image
+        text_img = PILImage.new("RGBA", (text_width, text_height), (255, 255, 255, 255))
+        text_draw = ImageDraw.Draw(text_img)
+        text_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
+
+        # Resize image
+        text_img = text_img.resize((width, height), PILImage.Resampling.LANCZOS)
+
+        # Rotate img_1
+        rotated_img = text_img.rotate(rot_angle, expand=True)
+
+        # Compute new position for pasting
+        rotated_w, rotated_h = rotated_img.size
+        paste_x = centre_x - rotated_w // 2
+        paste_y = centre_y - rotated_h // 2
+
+        # Paste rotated image onto img_2
+        img.paste(rotated_img, (paste_x, paste_y), rotated_img)
+
+        return img
+
     def _draw_text_in_bounding_bbox(
         self,
         img: PILImage.Image,
@@ -655,18 +729,7 @@ class SegmentedPdfPage(BaseModel):
         text: str,
         font: Optional[Union[FreeTypeFont, ImageFont.ImageFont]] = None,
         fill: str = "black",
-    ) -> PILImage.Image:  # ImageDraw.ImageDraw:
-        """
-        Draws text inside a bounding box by creating a temporary image,
-        resizing it, and pasting it into the original image at bbox.
-
-        Parameters:
-        - draw: The ImageDraw.Draw object.
-        - bbox: Tuple (x0, y0, x1, y1) representing the bounding box (all floats).
-        - text: The text to draw.
-        - font: An optional ImageFont.ImageFont object. Defaults to Pillow's built-in font.
-        - fill: Fill color for the text.
-        """
+    ) -> PILImage.Image:
         x0, y0, x1, y1 = bbox
 
         width, height = round(x1 - x0), round(y0 - y1)
@@ -706,6 +769,7 @@ class SegmentedPdfPage(BaseModel):
     ) -> PILImage.Image:
         # Draw each rectangle by connecting its four points
         for page_cell in self.yield_cells(label=label):
+            """
             poly = page_cell.rect.to_top_left_origin(
                 page_height=page_height
             ).to_polygon()
@@ -713,6 +777,13 @@ class SegmentedPdfPage(BaseModel):
             result = self._draw_text_in_bounding_bbox(
                 img=img,
                 bbox=(poly[0][0], poly[0][1], poly[2][0], poly[2][1]),
+                text=page_cell.text,
+            )
+            """
+            rect = page_cell.rect.to_top_left_origin(page_height=page_height)
+            result = self._draw_text_in_rectangle(
+                img=img,
+                rect=rect,
                 text=page_cell.text,
             )
 
