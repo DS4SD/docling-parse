@@ -17,22 +17,34 @@ Simple package to extract text, paths and bitmap images with coordinates from pr
     <th>line</th>
   </tr>
   <tr>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.orig.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.char.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.word.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.line.png" alt="screenshot" width="200"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.orig.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.char.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.word.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.line.png" alt="screenshot" width="150"/></td>
   </tr>
   <tr>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.orig.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.char.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.word.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.line.png" alt="screenshot" width="200"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.orig.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.char.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.word.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.line.png" alt="screenshot" width="150"/></td>
   </tr>
   <tr>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.orig.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.char.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.word.png" alt="screenshot" width="200"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.line.png" alt="screenshot" width="200"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.orig.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.char.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.word.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.line.png" alt="screenshot" width="150"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.orig.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.char.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.word.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.line.png" alt="screenshot" width="150"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/table_of_contents_04.pdf.page_4.orig.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_04.pdf.page_4.char.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_04.pdf.page_4.word.png" alt="screenshot" width="150"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_04.pdf.page_4.line.png" alt="screenshot" width="150"/></td>
   </tr>  
 </table>
 
