@@ -45,10 +45,10 @@ pip install docling-parse
 Convert a PDF (look in the [visualize.py](docling_parse/visualize.py) for a more detailed information)
 
 ```python
-from docling_parse.document import (SegmentedPdfPageLabel)
+from docling_parse.document import SegmentedPdfPageLabel
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
-parser = DoclingPdfParser(loglevel="fatal")
+parser = DoclingPdfParser()
 
 pdf_doc: PdfDocument = parser.load(
     path_or_stream="<path-to-pdf>"
