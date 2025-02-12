@@ -9,6 +9,12 @@
 
 Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion. Below, we show a few output of the latest parser with char, word and line level output for text, in addition to the extracted paths and bitmap resources.
 
+To do the visualizations yourself, simply run (change `word` into `char` or `line`),
+
+```sh
+poetry run python ./docling_parse/visualize.py -i <path-to-pdf-file> -c word --interactive
+```
+
 <table>
   <tr>
     <th>original</th>
