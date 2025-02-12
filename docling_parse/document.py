@@ -3,6 +3,7 @@
 import json
 import logging
 import math
+import re
 from enum import Enum
 from pathlib import Path
 from typing import Annotated, Dict, Iterator, List, NamedTuple, Optional, Tuple, Union
@@ -905,26 +906,66 @@ class ParsedPdfPage(BaseModel):
 """
 
 
-class PdfTableOfContentsItem(BaseModel):
+class PdfMetaData(BaseModel):
+
+    xml: str = ""
+
+    data: Dict[str, str] = {}
+
+    def initialise(self):
+
+        # Define the regex pattern
+        pattern = r"\<([a-zA-Z]+)\:([a-zA-Z]+)\>(.+?)\<\/([a-zA-Z]+)\:([a-zA-Z]+)\>"
+
+        # Find all matches
+        matches = re.findall(pattern, self.xml)
+
+        # Process matches
+        for _ in matches:
+            namespace_open, tag_open, content, namespace_close, tag_close = _
+            if namespace_open == namespace_close and tag_open == tag_close:
+                print(
+                    f"Namespace: {namespace_open}, Tag: {tag_open}, Content: {content}"
+                )
+                self.data[tag_open] = content
+
+
+class PdfTableOfContents(BaseModel):
 
     text: str
     orig: str = ""
 
     marker: str = ""
 
-    children: List["PdfTableOfContentsItem"] = []
+    children: List["PdfTableOfContents"] = []
 
+    def export_to_dict(
+        self,
+        mode: str = "json",
+        by_alias: bool = True,
+        exclude_none: bool = True,
+    ) -> Dict:
+        """Export to dict."""
+        return self.model_dump(mode=mode, by_alias=by_alias, exclude_none=exclude_none)
 
-class PdfTableOfContents(BaseModel):
+    def save_as_json(self, filename: Path, indent: int = 2):
+        """Save as json."""
+        out = self.export_to_dict()
+        with open(filename, "w", encoding="utf-8") as fw:
+            json.dump(out, fw, indent=indent)
 
-    root: PdfTableOfContentsItem
+    @classmethod
+    def load_from_json(cls, filename: Path) -> "PdfTableOfContents":
+        """load_from_json."""
+        with open(filename, "r", encoding="utf-8") as f:
+            return cls.model_validate_json(f.read())
 
 
 class ParsedPdfDocument(BaseModel):
 
-    # pages: Dict[int, ParsedPdfPage] = {}
     pages: Dict[int, SegmentedPdfPage] = {}
 
+    meta_data: Optional[PdfMetaData] = None
     table_of_contents: Optional[PdfTableOfContents] = None
 
     def iterate_pages(

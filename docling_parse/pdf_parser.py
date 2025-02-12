@@ -4,7 +4,7 @@ import hashlib
 import warnings
 from io import BytesIO
 from pathlib import Path
-from typing import Dict, Iterator, List, Tuple, Union
+from typing import Dict, Iterator, List, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 
@@ -14,8 +14,10 @@ from docling_parse.document import (
     PdfBitmapResource,
     PdfCell,
     PdfLine,
+    PdfMetaData,
     PdfPageBoundaryLabel,
     PdfPageDimension,
+    PdfTableOfContents,
     SegmentedPdfPage,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
@@ -39,6 +41,8 @@ class PdfDocument:
         self._key = key
         self._boundary_type = boundary_type
         self._pages: Dict[int, SegmentedPdfPage] = {}
+        self._toc: Optional[PdfTableOfContents] = None
+        self._meta: Optional[PdfMetaData] = None
 
     def is_loaded(self) -> bool:
         return self._parser.is_loaded(key=self._key)
@@ -56,6 +60,56 @@ class PdfDocument:
             return self._parser.number_of_pages(key=self._key)
         else:
             raise RuntimeError("This document is not loaded.")
+
+    def get_meta(self) -> Optional[PdfMetaData]:
+
+        if self._meta is not None:
+            return self._meta
+
+        if self.is_loaded():
+
+            xml = self._parser.get_meta_xml(key=self._key)
+
+            if xml is None:
+                return self._meta
+
+            if isinstance(xml, str):
+                self._meta = PdfMetaData(xml=xml)
+                self._meta.initialise()
+
+            return self._meta
+
+        else:
+            raise RuntimeError("This document is not loaded.")
+
+    def get_table_of_contents(self) -> Optional[PdfTableOfContents]:
+        if self.is_loaded():
+            toc = self._parser.get_table_of_contents(key=self._key)
+
+            if toc is None:
+                return self._toc
+
+            if self._toc is not None:
+                return self._toc
+
+            self._toc = PdfTableOfContents(text="<root>")
+            self._toc.children = self._to_table_of_contents(toc=toc)
+
+            return self._toc
+        else:
+            raise RuntimeError("This document is not loaded.")
+
+    def _to_table_of_contents(self, toc: dict) -> List[PdfTableOfContents]:
+
+        result = []
+        for item in toc:
+
+            subtoc = PdfTableOfContents(text=item["title"])
+            if "children" in item:
+                subtoc.children = self._to_table_of_contents(toc=item["children"])
+            result.append(subtoc)
+
+        return result
 
     def get_page(
         self, page_no: int, create_words: bool = True, create_lines: bool = True

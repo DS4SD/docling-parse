@@ -332,6 +332,20 @@ PYBIND11_MODULE(pdf_parsers, m) {
 
     Returns:
         dict: A JSON object representing the table of contents of the document.)")
+
+    .def("get_meta_xml",
+	 [](docling::docling_parser_v2 &self, const std::string &key) -> nlohmann::json {
+	   return self.get_meta_xml(key);
+	 },
+	 pybind11::arg("key"),
+	 R"(
+    Retrieve the meta data in string or None.
+
+    Parameters:
+        key (str): The unique key of the document.
+
+    Returns:
+        dict: A None or string of the metadata in xml of the document.)")
     
     .def("parse_pdf_from_key",
 	 [](docling::docling_parser_v2 &self,

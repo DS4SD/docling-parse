@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import glob
+import json
 import os
 import re
 from typing import Dict, List
@@ -11,6 +12,7 @@ from docling_parse.document import (
     PdfCell,
     PdfLine,
     PdfPageBoundaryLabel,
+    PdfTableOfContents,
     SegmentedPdfPage,
     SegmentedPdfPageLabel,
 )
@@ -231,13 +233,10 @@ def test_reference_documents_from_filenames():
             if GENERATE or (not os.path.exists(fname)):
                 pred_page.save_as_json(fname)
             else:
-                print(f"loading from {fname}")
+                # print(f"loading from {fname}")
 
                 true_page = SegmentedPdfPage.load_from_json(fname)
                 verify_SegmentedPdfPage(true_page, pred_page, filename=fname)
-
-                # true_page.render().show()
-                # pred_page.sanitized.render().show()
 
             img = pred_page.render(label=SegmentedPdfPageLabel.CHAR)
             # img.show()
@@ -245,6 +244,20 @@ def test_reference_documents_from_filenames():
             # img.show()
             img = pred_page.render(label=SegmentedPdfPageLabel.LINE)
             # img.show()
+
+        toc: PdfTableOfContents = pdf_doc.get_table_of_contents()
+        if toc is not None:
+            data = toc.export_to_dict()
+            print("data: \n", json.dumps(data, indent=2))
+        else:
+            print(f"toc: {toc}")
+
+        meta = pdf_doc.get_meta()
+        if meta is not None:
+            for key, val in meta.data.items():
+                print(f" => {key}: {val}")
+        else:
+            print(f"meta: {meta}")
 
     assert True
 
