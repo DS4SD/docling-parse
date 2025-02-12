@@ -7,8 +7,7 @@
 [![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux%20|%20windows-blue)](https://github.com/DS4SD/docling-parse/)
 [![License MIT](https://img.shields.io/github/license/DS4SD/docling-parse)](https://opensource.org/licenses/MIT)
 
-Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs.
-This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion.
+Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion.
 
 <table>
   <tr>
@@ -78,6 +77,36 @@ options:
   -h, --help         show this help message and exit
   -p PDF, --pdf PDF  Path to the PDF file
 ```
+
+## Examples
+
+<table>
+  <tr>
+    <th>original</th>
+    <th>char</th>
+    <th>word</th>
+    <th>line</th>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.orig.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.char.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.word.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.line.png" alt="screenshot" width="100"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.orig.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.char.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.word.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.line.png" alt="screenshot" width="100"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.orig.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.char.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.word.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.line.png" alt="screenshot" width="100"/></td>
+  </tr>  
+</table>
+
 
 ## Performance Benchmarks
 

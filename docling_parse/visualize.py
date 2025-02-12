@@ -2,6 +2,8 @@ import argparse
 import logging
 import os
 
+from pathlib import Path
+
 from docling_parse.document import SegmentedPdfPage, SegmentedPdfPageLabel
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
@@ -122,7 +124,7 @@ def visualise_py(
     log_level: str,
     pdf_path: str,
     interactive: str,
-    output_dir: str,
+    output_dir: Path,
     page_num: int,
     display_text: bool,
     log_text: bool,
@@ -150,6 +152,9 @@ def visualise_py(
                 draw_cells_text=display_text,
             )
 
+            if os.path.exists(output_dir):
+                img.save(f"{output_dir}/{os.path.basename(pdf_path)}.page_{page_no}.char.png")
+            
             if interactive:
                 img.show()
 
@@ -168,6 +173,9 @@ def visualise_py(
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
+
+            if os.path.exists(output_dir):
+                img.save(f"{output_dir}/{os.path.basename(pdf_path)}.page_{page_no}.word.png")
 
             if interactive:
                 img.show()
@@ -188,6 +196,9 @@ def visualise_py(
                 draw_cells_text=display_text,
             )
 
+            if os.path.exists(output_dir):
+                img.save(f"{output_dir}/{os.path.basename(pdf_path)}.page_{page_no}.line.png")
+            
             if interactive:
                 img.show()
 
