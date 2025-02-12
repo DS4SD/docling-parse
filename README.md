@@ -7,30 +7,33 @@
 [![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux%20|%20windows-blue)](https://github.com/DS4SD/docling-parse/)
 [![License MIT](https://img.shields.io/github/license/DS4SD/docling-parse)](https://opensource.org/licenses/MIT)
 
-Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion.
+Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion. Below, we show a few output of the latest parser with char, word and line level output for text, in addition to the extracted paths and bitmap resources.
 
 <table>
   <tr>
-    <th>Version</th>
-    <th>Original</th>
-    <th>Word-level</th>
-    <th>Snippet-level</th>
-    <th>Performance</th>
+    <th>original</th>
+    <th>char</th>
+    <th>word</th>
+    <th>line</th>
   </tr>
   <tr>
-    <th>V1</th>
-    <td rowspan="2"><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.png" alt="screenshot" width="100"/></td>
-    <td>Not Supported</td>
-    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v1.png" alt="v1 snippet" width="100"/></td>
-    <td>~0.250 sec/page </td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.orig.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.char.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.word.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.line.png" alt="screenshot" width="100"/></td>
   </tr>
   <tr>
-    <th>V2</th>
-    <!-- The "Original" column image spans from the previous row -->
-    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.original.png" alt="v1 word" width="100"/></td>
-    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.sanitized.png" alt="v2 snippet" width="100"/></td>
-    <td>~0.050 sec/page <br><br>[~5-10X faster than v1]</td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.orig.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.char.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.word.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.line.png" alt="screenshot" width="100"/></td>
   </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.orig.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.char.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.word.png" alt="screenshot" width="100"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.line.png" alt="screenshot" width="100"/></td>
+  </tr>  
 </table>
 
 ## Quick start
@@ -78,37 +81,36 @@ options:
   -p PDF, --pdf PDF  Path to the PDF file
 ```
 
-## Examples
+
+## Performance Benchmarks
+
+### Characteristics of different parser versions
 
 <table>
   <tr>
-    <th>original</th>
-    <th>char</th>
-    <th>word</th>
-    <th>line</th>
+    <th>Version</th>
+    <th>Original</th>
+    <th>Word-level</th>
+    <th>Snippet-level</th>
+    <th>Performance</th>
   </tr>
   <tr>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.orig.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.char.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.word.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.line.png" alt="screenshot" width="100"/></td>
+    <th>V1</th>
+    <td rowspan="2"><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.png" alt="screenshot" width="100"/></td>
+    <td>Not Supported</td>
+    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v1.png" alt="v1 snippet" width="100"/></td>
+    <td>~0.250 sec/page </td>
   </tr>
   <tr>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.orig.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.char.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.word.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.line.png" alt="screenshot" width="100"/></td>
+    <th>V2</th>
+    <!-- The "Original" column image spans from the previous row -->
+    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.original.png" alt="v1 word" width="100"/></td>
+    <td><img src="./docs/example_visualisations/2305.14962v1.pdf_page=0.v2.sanitized.png" alt="v2 snippet" width="100"/></td>
+    <td>~0.050 sec/page <br><br>[~5-10X faster than v1]</td>
   </tr>
-  <tr>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.orig.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.char.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.word.png" alt="screenshot" width="100"/></td>
-    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.line.png" alt="screenshot" width="100"/></td>
-  </tr>  
 </table>
 
-
-## Performance Benchmarks
+### Timings of different parser versions
 
 We ran the v1 and v2 parser on [DocLayNet](https://huggingface.co/datasets/ds4sd/DocLayNet-v1.1). We found the following overall behavior
 
