@@ -151,7 +151,7 @@ def visualise_py(
                 draw_cells_text=display_text,
             )
 
-            if os.path.exists(output_dir):
+            if os.path.exists(str(output_dir)):
                 img.save(
                     f"{output_dir}/{os.path.basename(pdf_path)}.page_{page_no}.char.png"
                 )
@@ -175,7 +175,7 @@ def visualise_py(
                 draw_cells_text=display_text,
             )
 
-            if os.path.exists(output_dir):
+            if os.path.exists(str(output_dir)):
                 img.save(
                     f"{output_dir}/{os.path.basename(pdf_path)}.page_{page_no}.word.png"
                 )
@@ -199,7 +199,7 @@ def visualise_py(
                 draw_cells_text=display_text,
             )
 
-            if os.path.exists(output_dir):
+            if os.path.exists(str(output_dir)):
                 img.save(
                     f"{output_dir}/{os.path.basename(pdf_path)}.page_{page_no}.line.png"
                 )
