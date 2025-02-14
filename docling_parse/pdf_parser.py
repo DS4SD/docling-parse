@@ -4,19 +4,20 @@ import hashlib
 import warnings
 from io import BytesIO
 from pathlib import Path
-from typing import Dict, Iterator, List, Tuple, Union
+from typing import Dict, Iterator, List, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 
 from docling_parse.document import (
     BoundingRectangle,
-    PageBoundaryType,
     ParsedPdfDocument,
-    ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
     PdfLine,
+    PdfMetaData,
+    PdfPageBoundaryLabel,
     PdfPageDimension,
+    PdfTableOfContents,
     SegmentedPdfPage,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
@@ -26,7 +27,7 @@ class PdfDocument:
 
     def iterate_pages(
         self,
-    ) -> Iterator[Tuple[int, ParsedPdfPage]]:
+    ) -> Iterator[Tuple[int, SegmentedPdfPage]]:
         for page_no in range(self.number_of_pages()):
             yield page_no + 1, self.get_page(page_no + 1)
 
@@ -34,12 +35,14 @@ class PdfDocument:
         self,
         parser: "pdf_parser_v2",
         key: str,
-        boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX,
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
     ):
         self._parser: pdf_parser_v2 = parser
         self._key = key
         self._boundary_type = boundary_type
-        self._pages: Dict[int, ParsedPdfPage] = {}
+        self._pages: Dict[int, SegmentedPdfPage] = {}
+        self._toc: Optional[PdfTableOfContents] = None
+        self._meta: Optional[PdfMetaData] = None
 
     def is_loaded(self) -> bool:
         return self._parser.is_loaded(key=self._key)
@@ -58,46 +61,102 @@ class PdfDocument:
         else:
             raise RuntimeError("This document is not loaded.")
 
-    def get_page(self, page_no: int) -> ParsedPdfPage:
+    def get_meta(self) -> Optional[PdfMetaData]:
+
+        if self._meta is not None:
+            return self._meta
+
+        if self.is_loaded():
+
+            xml = self._parser.get_meta_xml(key=self._key)
+
+            if xml is None:
+                return self._meta
+
+            if isinstance(xml, str):
+                self._meta = PdfMetaData(xml=xml)
+                self._meta.initialise()
+
+            return self._meta
+
+        else:
+            raise RuntimeError("This document is not loaded.")
+
+    def get_table_of_contents(self) -> Optional[PdfTableOfContents]:
+        if self.is_loaded():
+            toc = self._parser.get_table_of_contents(key=self._key)
+
+            if toc is None:
+                return self._toc
+
+            if self._toc is not None:
+                return self._toc
+
+            self._toc = PdfTableOfContents(text="<root>")
+            self._toc.children = self._to_table_of_contents(toc=toc)
+
+            return self._toc
+        else:
+            raise RuntimeError("This document is not loaded.")
+
+    def _to_table_of_contents(self, toc: dict) -> List[PdfTableOfContents]:
+
+        result = []
+        for item in toc:
+
+            subtoc = PdfTableOfContents(text=item["title"])
+            if "children" in item:
+                subtoc.children = self._to_table_of_contents(toc=item["children"])
+            result.append(subtoc)
+
+        return result
+
+    def get_page(
+        self, page_no: int, create_words: bool = True, create_lines: bool = True
+    ) -> SegmentedPdfPage:
         if page_no in self._pages.keys():
             return self._pages[page_no]
         else:
             if 1 <= page_no <= self.number_of_pages():
                 doc_dict = self._parser.parse_pdf_from_key_on_page(
-                    key=self._key, page=page_no - 1, page_boundary=self._boundary_type
+                    key=self._key,
+                    page=page_no - 1,
+                    page_boundary=self._boundary_type,
+                    do_sanitization=False,
                 )
                 for pi, page in enumerate(
                     doc_dict["pages"]
                 ):  # only one page is expected
-                    self._pages[page_no] = self._to_parsed_page(page)  # put on cache
+                    self._pages[page_no] = self._to_segmented_page(
+                        page=page["original"],
+                        create_words=create_words,
+                        create_lines=create_lines,
+                    )  # put on cache
                     return self._pages[page_no]
 
         raise ValueError(
             f"incorrect page_no: {page_no} for key={self._key} (min:1, max:{self.number_of_pages()})"
         )
 
-        return ParsedPdfPage()
+        return SegmentedPdfPage()
 
-    def load_all_pages(self):
+    def load_all_pages(self, create_words: bool = True, create_lines: bool = True):
         doc_dict = self._parser.parse_pdf_from_key(
-            key=self._key, page_boundary=self._boundary_type
+            key=self._key, page_boundary=self._boundary_type, do_sanitization=False
         )
         for pi, page in enumerate(doc_dict["pages"]):
-            self._pages[pi + 1] = self._to_parsed_page(page)  # put on cache
+            assert "original" in page, "'original' in page"
+
+            # will need to be changed once we remove the original/sanitized from C++
+            self._pages[pi + 1] = self._to_segmented_page(
+                page["original"], create_words=create_words, create_lines=create_lines
+            )  # put on cache
 
     def _to_dimension(self, dimension: dict) -> PdfPageDimension:
 
-        boundary_type: PageBoundaryType = PageBoundaryType(dimension["page_boundary"])
-
-        """
-        bbox = BoundingBox(
-            l=dimension["bbox"][0],
-            b=dimension["bbox"][1],
-            r=dimension["bbox"][2],
-            t=dimension["bbox"][3],
-            coord_origin=CoordOrigin.BOTTOMLEFT,
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel(
+            dimension["page_boundary"]
         )
-        """
 
         art_bbox = BoundingBox(
             l=dimension["rectangles"]["art-bbox"][0],
@@ -193,7 +252,7 @@ class PdfDocument:
                 widget=row[header.index(f"widget")],
                 left_to_right=row[header.index(f"left_to_right")],
                 ordering=ind,
-                rendering_mode="",
+                rendering_mode=row[header.index(f"rendering-mode")],
             )
             result.append(cell)
 
@@ -246,30 +305,41 @@ class PdfDocument:
 
         return result
 
-    def _to_segmented_page(self, page: dict) -> SegmentedPdfPage:
+    def _to_segmented_page(
+        self, page: dict, create_words: bool, create_lines: bool
+    ) -> SegmentedPdfPage:
 
-        return SegmentedPdfPage(
+        segmented_page = SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
-            cells=self._to_cells(page["cells"]),
+            char_cells=self._to_cells(page["cells"]),
+            word_cells=[],
+            line_cells=[],
             bitmap_resources=self._to_bitmap_resources(page["images"]),
             lines=self._to_lines(page["lines"]),
         )
 
-    def _to_parsed_page(self, page: dict) -> ParsedPdfPage:
+        if create_words:
+            segmented_page.create_word_cells()
 
-        return ParsedPdfPage(
-            original=self._to_segmented_page(page["original"]),
-            sanitized=self._to_segmented_page(page["sanitized"]),
-        )
+        if create_lines:
+            segmented_page.create_line_cells()
 
-    def _to_parsed_paginated_document(
-        self, doc_dict: dict, page_no: int = 1
+        return segmented_page
+
+    def _to_parsed_document(
+        self,
+        doc_dict: dict,
+        page_no: int = 1,
+        create_words: bool = False,
+        create_lines: bool = True,
     ) -> ParsedPdfDocument:
 
         parsed_doc = ParsedPdfDocument()
 
         for pi, page in enumerate(doc_dict["pages"]):
-            parsed_doc.pages[page_no + pi] = self._to_parsed_page(page)
+            parsed_doc.pages[page_no + pi] = self._to_segmented_page(
+                page["original"], create_words=create_words, create_lines=create_lines
+            )
 
         return parsed_doc
 
@@ -313,10 +383,8 @@ class DoclingPdfParser:
         self,
         path_or_stream: Union[str, Path, BytesIO],
         lazy: bool = True,
-        boundary_type: PageBoundaryType = PageBoundaryType.CROP_BOX,
+        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
     ) -> PdfDocument:
-        # success: bool
-        # key: str
 
         if isinstance(path_or_stream, str):
             path_or_stream = Path(path_or_stream)

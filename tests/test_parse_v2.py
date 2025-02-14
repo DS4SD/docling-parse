@@ -14,7 +14,8 @@ import json
 import os
 
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
-from docling_parse.utils import create_pil_image_of_page_v2
+
+# from docling_parse.utils import create_pil_image_of_page_v2
 
 
 def verify_annots(true_annots, pred_annots):
@@ -401,12 +402,11 @@ def test_visualisation():
             rname = os.path.basename(pdf_doc)
             fname = os.path.join(GROUNDTRUTH_FOLDER, f"{rname}.v2.p={page}.json")
 
-            pred_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
+            parser.parse_pdf_from_key_on_page(doc_key, page)
 
-            img = create_pil_image_of_page_v2(pred_doc["pages"][0])
-
-            if VISUALISE_TESTS:
-                img.show()
+            # img = create_pil_image_of_page_v2(pred_doc["pages"][0])
+            # if VISUALISE_TESTS:
+            #     img.show()
 
         parser.unload_document(doc_key)
 

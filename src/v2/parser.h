@@ -18,14 +18,14 @@ namespace plib
 
     void set_loglevel_with_label(std::string level);
     
-    void parse(std::string filename);
-    void parse(nlohmann::json config);
+    void parse(std::string filename, bool do_sanitization);
+    void parse(nlohmann::json config, bool do_sanitization);
 
     bool initialise(nlohmann::json& data);
 
   private:
     
-    void execute_parse();
+    void execute_parse(bool do_sanitization);
     
     bool parse_input(std::string filename);
 
@@ -33,6 +33,7 @@ namespace plib
                     std::string out_filename,
                     nlohmann::json& task,
 		    std::string page_boundary,
+		    bool do_sanitization,
                     bool pretty_print=true);
 
   private:
@@ -80,24 +81,24 @@ namespace plib
       }
   }
   
-  void parser::parse(std::string filename)
+  void parser::parse(std::string filename, bool do_sanitization)
   {
     if(not parse_input(filename))
       {
         return;
       }
 
-    execute_parse();
+    execute_parse(do_sanitization);
   }
 
-  void parser::parse(nlohmann::json config)
+  void parser::parse(nlohmann::json config, bool do_sanitization)
   {
     input_file = config;
 
-    execute_parse();
+    execute_parse(do_sanitization);
   }
   
-  void parser::execute_parse()
+  void parser::execute_parse(bool do_sanitization)
   {
     // initialise the fonts
     /*
@@ -137,7 +138,7 @@ namespace plib
         std::ifstream ifs(inp_filename);
         if(ifs)
           {
-            parse_file(inp_filename, out_filename, val, "crop_box");
+            parse_file(inp_filename, out_filename, val, "crop_box", do_sanitization);
           }
         else
           {
@@ -184,7 +185,8 @@ namespace plib
                           std::string out_filename,
                           nlohmann::json& task,
 			  std::string page_boundary,
-			  bool pretty_print)
+			  bool do_sanitization,
+			  bool pretty_print)			  
   {
     pdflib::pdf_decoder<pdflib::DOCUMENT> document_decoder(timings);
 
@@ -202,12 +204,12 @@ namespace plib
 
     if(task.count("page-numbers")==0)
       {
-        document_decoder.decode_document(page_boundary);
+        document_decoder.decode_document(page_boundary, do_sanitization);
       }
     else
       {
         std::vector<int> page_numbers = task["page-numbers"];
-        document_decoder.decode_document(page_numbers, page_boundary);
+        document_decoder.decode_document(page_numbers, page_boundary, do_sanitization);
       }
 
     nlohmann::json json_document = document_decoder.get();
