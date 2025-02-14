@@ -110,7 +110,7 @@ jobs:
           CIBW_ARCHS: x86_64
           CIBW_ARCHS_MACOS: x86_64
           CIBW_PLATFORM: macos
-          CIBW_SKIP: "pp* *-musllinux_* *_i686* *_s390* *arm64* *pypy*"
+          CIBW_SKIP: "pp* *-musllinux_* *_i686* *_s390* *arm64* *ppc64le* *pypy*"
           CIBW_PROJECT_REQUIRES_PYTHON: "~=${{ matrix.python-version }}.0"
           CIBW_BUILD_VERBOSITY: 3
           CMAKE_OSX_ARCHITECTURES: x86_64
@@ -211,7 +211,7 @@ jobs:
         if: startsWith(matrix.os.name, 'ubuntu')
         env:
           # CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
-          CIBW_ARCHS: auto x86_64 aarch64
+          CIBW_ARCHS: auto x86_64 aarch64 ppc64le
           CIBW_PLATFORM: linux
           CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390* *pypy*"
           CIBW_PROJECT_REQUIRES_PYTHON: "~=${{ matrix.python-version }}.0"
