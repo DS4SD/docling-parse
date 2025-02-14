@@ -1,3 +1,14 @@
+## [v3.3.1](https://github.com/DS4SD/docling-parse/releases/tag/v3.3.1) - 2025-02-13
+
+### Fix
+
+* Update Pillow constraints ([#102](https://github.com/DS4SD/docling-parse/issues/102)) ([`d9b6961`](https://github.com/DS4SD/docling-parse/commit/d9b69612fff101d22e38d5f3b8bbd18db47bf253))
+
+### Documentation
+
+* Updated import for `pdf_parser_v2` in README ([#100](https://github.com/DS4SD/docling-parse/issues/100)) ([`01238dd`](https://github.com/DS4SD/docling-parse/commit/01238ddc32a6388583ff95a7403d51870d10b599))
+* Fixed broken link in README.md ([#97](https://github.com/DS4SD/docling-parse/issues/97)) ([`8ec116e`](https://github.com/DS4SD/docling-parse/commit/8ec116ef853e427254c166aa85371caea0db4ceb))
+
 ## [v3.3.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.3.0) - 2025-02-06
 
 ### Feature
