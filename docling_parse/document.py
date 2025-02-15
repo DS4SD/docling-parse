@@ -703,7 +703,9 @@ class SegmentedPdfPage(BaseModel):
         _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
 
         # Create a properly sized temporary image
-        text_img = PILImage.new("RGBA", (text_width, text_height), (255, 255, 255, 255))
+        text_img = PILImage.new(
+            "RGBA", (round(text_width), round(text_height)), (255, 255, 255, 255)
+        )
         text_draw = ImageDraw.Draw(text_img)
         text_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
 
@@ -749,7 +751,9 @@ class SegmentedPdfPage(BaseModel):
         _, _, text_width, text_height = tmp_draw.textbbox((0, 0), text=text, font=font)
 
         # Create a properly sized temporary image
-        tmp_img = PILImage.new("RGBA", (text_width, text_height), (255, 255, 255, 255))
+        tmp_img = PILImage.new(
+            "RGBA", (round(text_width), round(text_height)), (255, 255, 255, 255)
+        )
         tmp_draw = ImageDraw.Draw(tmp_img)
         tmp_draw.text((0, 0), text, font=font, fill=(0, 0, 0, 255))
 
