@@ -1340,7 +1340,7 @@ namespace pdflib
 
     for(int l=0; l<ws.size(); )
       {
-        //LOG_S(INFO) << l << "\t" << ws[l].is_number() << "\t beg: " << ws[l].dump();
+        LOG_S(INFO) << l << "\t" << ws[l].is_number() << "\t beg: " << ws[l].dump();
 
         //assert(l<ws.size());
 	
@@ -1406,10 +1406,15 @@ namespace pdflib
                 numb_to_widths[beg+k] = w[k];
               }
           }
+        else if(ws[l].is_null())
+          {
+	    LOG_S(WARNING) << "\t ws[" << l << "] is null ... skipping now";
+	    l += 1;
+	  }
         else
           {
 	    std::stringstream message;
-	    message <<  "unknown type in " << __FUNCTION__;	    
+	    message <<  "unknown type in " << __FUNCTION__ << " for " << ws.dump(2);	    
 
 	    LOG_S(ERROR) << message.str();
 	    throw std::logic_error(message.str());
