@@ -1,3 +1,9 @@
+## [v3.4.0](https://github.com/DS4SD/docling-parse/releases/tag/v3.4.0) - 2025-02-18
+
+### Feature
+
+* Establish char_cells, word_cells and line_cells, other fixes ([#101](https://github.com/DS4SD/docling-parse/issues/101)) ([`c2f9741`](https://github.com/DS4SD/docling-parse/commit/c2f9741a5b2882aacb5e77f81f4ded47a78b5b38))
+
 ## [v3.3.1](https://github.com/DS4SD/docling-parse/releases/tag/v3.3.1) - 2025-02-13
 
 ### Fix
