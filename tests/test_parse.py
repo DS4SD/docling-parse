@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import glob
+import json
 import os
 import re
 from typing import Dict, List
@@ -7,12 +8,13 @@ from typing import Dict, List
 from pydantic import TypeAdapter
 
 from docling_parse.document import (
-    PageBoundaryType,
-    ParsedPdfPage,
     PdfBitmapResource,
     PdfCell,
     PdfLine,
+    PdfPageBoundaryLabel,
+    PdfTableOfContents,
     SegmentedPdfPage,
+    SegmentedPdfPageLabel,
 )
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
@@ -193,17 +195,11 @@ def verify_SegmentedPdfPage(
         true_page.bitmap_resources, pred_page.bitmap_resources, eps=eps
     )
 
-    verify_cells(true_page.cells, pred_page.cells, eps=eps, filename=filename)
+    verify_cells(true_page.char_cells, pred_page.char_cells, eps=eps, filename=filename)
+    verify_cells(true_page.word_cells, pred_page.word_cells, eps=eps, filename=filename)
+    verify_cells(true_page.line_cells, pred_page.line_cells, eps=eps, filename=filename)
 
     verify_lines(true_page.lines, pred_page.lines, eps=eps)
-
-
-def verify_ParsedPdfPage(
-    true_page: ParsedPdfPage, pred_page: ParsedPdfPage, filename: str = ""
-):
-
-    # verify_SegmentedPdfPage(true_page.original, pred_page.original, filename=filename)
-    verify_SegmentedPdfPage(true_page.sanitized, pred_page.sanitized, filename=filename)
 
 
 def test_reference_documents_from_filenames():
@@ -219,7 +215,7 @@ def test_reference_documents_from_filenames():
 
         pdf_doc: PdfDocument = parser.load(
             path_or_stream=pdf_doc_path,
-            boundary_type=PageBoundaryType.CROP_BOX,  # default: CROP_BOX
+            boundary_type=PdfPageBoundaryLabel.CROP_BOX,  # default: CROP_BOX
             lazy=False,
         )  # default: True
         assert pdf_doc is not None
@@ -229,43 +225,39 @@ def test_reference_documents_from_filenames():
         for page_no, pred_page in pdf_doc.iterate_pages():
             # print(f" -> Page {page_no} has {len(pred_page.sanitized.cells)} cells.")
 
-            if True:
-                rname = os.path.basename(pdf_doc_path)
-                fname = os.path.join(
-                    GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.original.py.json"
-                )
+            rname = os.path.basename(pdf_doc_path)
+            fname = os.path.join(
+                GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.py.json"
+            )
 
-                if GENERATE or (not os.path.exists(fname)):
-                    pred_page.original.save_as_json(fname)
-                else:
-                    print(f"loading from {fname}")
+            if GENERATE or (not os.path.exists(fname)):
+                pred_page.save_as_json(fname)
+            else:
+                # print(f"loading from {fname}")
 
-                    true_page = SegmentedPdfPage.load_from_json(fname)
-                    verify_SegmentedPdfPage(
-                        true_page, pred_page.original, filename=pdf_doc_path
-                    )
+                true_page = SegmentedPdfPage.load_from_json(fname)
+                verify_SegmentedPdfPage(true_page, pred_page, filename=fname)
 
-            if True:
-                rname = os.path.basename(pdf_doc_path)
-                fname = os.path.join(
-                    GROUNDTRUTH_FOLDER, rname + f".page_no_{page_no}.sanitized.py.json"
-                )
+            img = pred_page.render(label=SegmentedPdfPageLabel.CHAR)
+            # img.show()
+            img = pred_page.render(label=SegmentedPdfPageLabel.WORD)
+            # img.show()
+            img = pred_page.render(label=SegmentedPdfPageLabel.LINE)
+            # img.show()
 
-                if GENERATE or (not os.path.exists(fname)):
-                    pred_page.sanitized.save_as_json(fname)
-                else:
-                    print(f"loading from {fname}")
+        toc: PdfTableOfContents = pdf_doc.get_table_of_contents()
+        if toc is not None:
+            data = toc.export_to_dict()
+            print("data: \n", json.dumps(data, indent=2))
+        else:
+            print(f"toc: {toc}")
 
-                    true_page = SegmentedPdfPage.load_from_json(fname)
-                    verify_SegmentedPdfPage(
-                        true_page, pred_page.sanitized, filename=fname
-                    )
-
-                    # true_page.render().show()
-                    # pred_page.sanitized.render().show()
-
-            pred_page.original.render()
-            # res.show()
+        meta = pdf_doc.get_meta()
+        if meta is not None:
+            for key, val in meta.data.items():
+                print(f" => {key}: {val}")
+        else:
+            print(f"meta: {meta}")
 
     assert True
 
@@ -319,9 +311,9 @@ def test_serialize_and_reload():
     pdf_doc: PdfDocument = parser.load(path_or_stream=filename, lazy=True)
 
     # We can serialize the pages dict the following way.
-    page_adapter = TypeAdapter(Dict[int, ParsedPdfPage])
+    page_adapter = TypeAdapter(Dict[int, SegmentedPdfPage])
 
     json_pages = page_adapter.dump_json(pdf_doc._pages)
-    reloaded_pages: Dict[int, ParsedPdfPage] = page_adapter.validate_json(json_pages)
+    reloaded_pages: Dict[int, SegmentedPdfPage] = page_adapter.validate_json(json_pages)
 
     assert reloaded_pages == pdf_doc._pages

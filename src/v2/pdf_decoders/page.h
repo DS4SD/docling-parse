@@ -21,7 +21,7 @@ namespace pdflib
 
     nlohmann::json get();
 
-    std::map<std::string, double> decode_page(std::string page_boundary);
+    std::map<std::string, double> decode_page(std::string page_boundary, bool do_sanitization);
 
   private:
 
@@ -132,7 +132,7 @@ namespace pdflib
     return result;
   }
 
-  std::map<std::string, double> pdf_decoder<PAGE>::decode_page(std::string page_boundary)
+  std::map<std::string, double> pdf_decoder<PAGE>::decode_page(std::string page_boundary, bool do_sanitization)
   {
     utils::timer timer;
 
@@ -157,10 +157,34 @@ namespace pdflib
     decode_contents();
 
     decode_annots();
-
-    rotate_contents();
     
-    sanitise_contents(page_boundary);
+    rotate_contents();
+
+    // fix the orientiation
+    {
+      pdf_sanitator<PAGE_DIMENSION> sanitator(page_dimension);      
+
+      sanitator.sanitize(page_boundary); // update the top-level bbox            
+      sanitator.sanitize(page_cells, page_boundary);            
+      sanitator.sanitize(page_lines, page_boundary);            
+      sanitator.sanitize(page_images, page_boundary);            
+    }
+
+    {
+      pdf_sanitator<PAGE_CELLS> sanitator;
+      
+      sanitator.remove_duplicate_chars(page_cells, 0.5);      
+      sanitator.sanitize_text(page_cells);
+    }
+    
+    if(do_sanitization)
+      {
+	sanitise_contents(page_boundary);
+      }
+    else
+      {
+	LOG_S(WARNING) << "skipping sanitization!";
+      }
     
     timings[__FUNCTION__] = timer.get_time();
 
@@ -463,16 +487,6 @@ namespace pdflib
     LOG_S(INFO) << __FUNCTION__;    
     utils::timer timer;
 
-    // fix the orientiation
-    {
-      pdf_sanitator<PAGE_DIMENSION> sanitator(page_dimension);      
-
-      sanitator.sanitize(page_boundary); // update the top-level bbox            
-      sanitator.sanitize(page_cells, page_boundary);            
-      sanitator.sanitize(page_lines, page_boundary);            
-      sanitator.sanitize(page_images, page_boundary);            
-    }
-
     {
       lines = page_lines;
     }
@@ -485,9 +499,8 @@ namespace pdflib
     {
       pdf_sanitator<PAGE_CELLS> sanitator;
 
-      sanitator.remove_duplicate_chars(page_cells, 0.5);
-
-      sanitator.sanitize_text(page_cells);
+      //sanitator.remove_duplicate_chars(page_cells, 0.5);
+      //sanitator.sanitize_text(page_cells);
       
       cells = page_cells;
       

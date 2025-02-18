@@ -7,8 +7,102 @@
 [![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux%20|%20windows-blue)](https://github.com/DS4SD/docling-parse/)
 [![License MIT](https://img.shields.io/github/license/DS4SD/docling-parse)](https://opensource.org/licenses/MIT)
 
-Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs.
-This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion.
+Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion. Below, we show a few output of the latest parser with char, word and line level output for text, in addition to the extracted paths and bitmap resources.
+
+To do the visualizations yourself, simply run (change `word` into `char` or `line`),
+
+```sh
+poetry run python ./docling_parse/visualize.py -i <path-to-pdf-file> -c word --interactive
+```
+
+<table>
+  <tr>
+    <th>original</th>
+    <th>char</th>
+    <th>word</th>
+    <th>line</th>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.orig.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.char.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.word.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_1.line.png" alt="screenshot" width="170"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.orig.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.char.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.word.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_3.line.png" alt="screenshot" width="170"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.orig.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.char.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.word.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/ligatures_01.pdf.page_4.line.png" alt="screenshot" width="170"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.orig.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.char.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.word.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_1.line.png" alt="screenshot" width="170"/></td>
+  </tr>
+  <tr>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_4.orig.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_4.char.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_4.word.png" alt="screenshot" width="170"/></td>
+    <td><img src="./docs/visualisations/table_of_contents_01.pdf.page_4.line.png" alt="screenshot" width="170"/></td>
+  </tr>  
+</table>
+
+## Quick start
+
+Install the package from Pypi
+
+```sh
+pip install docling-parse
+```
+
+Convert a PDF (look in the [visualize.py](docling_parse/visualize.py) for a more detailed information)
+
+```python
+from docling_parse.document import SegmentedPdfPageLabel
+from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
+
+parser = DoclingPdfParser()
+
+pdf_doc: PdfDocument = parser.load(
+    path_or_stream="<path-to-pdf>"
+)
+
+# PdfDocument.iterate_pages() will automatically populate pages as they are yielded.
+for page_no, pred_page in pdf_doc.iterate_pages():
+
+    # iterate over the word-cells
+    for word in pred_page.yield_cells(label=SegmentedPdfPageLabel.WORD):
+        print(word.rect, ": ", word.text)    
+
+    # create a PIL image with the char cells
+    img = pred_page.render(label=SegmentedPdfPageLabel.CHAR)
+    img.show()
+```
+
+Use the CLI
+
+```sh
+$ docling-parse -h
+usage: docling-parse [-h] -p PDF
+
+Process a PDF file.
+
+options:
+  -h, --help         show this help message and exit
+  -p PDF, --pdf PDF  Path to the PDF file
+```
+
+
+## Performance Benchmarks
+
+### Characteristics of different parser versions
 
 <table>
   <tr>
@@ -34,80 +128,7 @@ This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conv
   </tr>
 </table>
 
-## Quick start
-
-Install the package from Pypi
-
-```sh
-pip install docling-parse
-```
-
-Convert a PDF (look in the [visualize.py](docling_parse/visualize.py) for a more detailed information)
-
-```python
-from docling_parse.pdf_parsers import pdf_parser_v2
-
-# Do this only once to load fonts (avoid initialising it many times)
-parser = pdf_parser_v2("error") # info, warning, error, fatal
-
-doc_file = "my-doc.pdf" # filename
-doc_key = f"key={pdf_doc}" # unique document key (eg hash, UUID, etc)
-
-# Load the document from file using filename doc_file. This only loads
-# the QPDF document, but no extracted data
-success = parser.load_document(doc_key, doc_file)
-
-# Open the file in binary mode and read its contents
-# with open(pdf_doc, "rb") as file:
-#      file_content = file.read()
-
-# Create a BytesIO object and write the file contents to it
-# bytes_io = io.BytesIO(file_content)
-# success = parser.load_document_from_bytesio(doc_key, bytes_io)
-
-# Parse the entire document in one go, easier, but could require
-# a lot (more) memory as parsing page-by-page
-# json_doc = parser.parse_pdf_from_key(doc_key)	
-
-# Get number of pages
-num_pages = parser.number_of_pages(doc_key)
-
-# Parse page by page to minimize memory footprint
-for page in range(0, num_pages):
-
-    # Internal memory for page is auto-deleted after this call.
-    # No need to unload a specifc page 
-    json_doc = parser.parse_pdf_from_key_on_page(doc_key, page)
-
-    if "pages" not in json_doc:  # page could not get parsed
-       continue
-
-    # parsed page is the first one!				  
-    json_page = json_doc["pages"][0] 
-    
-	# <Insert your own code>
-
-# Unload the (QPDF) document and buffers
-parser.unload_document(doc_key)
-
-# Unloads everything at once
-# parser.unload_documents()
-```
-
-Use the CLI
-
-```sh
-$ docling-parse -h
-usage: docling-parse [-h] -p PDF
-
-Process a PDF file.
-
-options:
-  -h, --help         show this help message and exit
-  -p PDF, --pdf PDF  Path to the PDF file
-```
-
-## Performance Benchmarks
+### Timings of different parser versions
 
 We ran the v1 and v2 parser on [DocLayNet](https://huggingface.co/datasets/ds4sd/DocLayNet-v1.1). We found the following overall behavior
 

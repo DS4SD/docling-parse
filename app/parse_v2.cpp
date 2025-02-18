@@ -71,6 +71,8 @@ int main(int argc, char* argv[]) {
   // Initialize loguru
   loguru::init(argc, argv);
 
+  bool do_sanitization = true;
+  
   try {
     cxxopts::Options options("PDFProcessor", "A program to process PDF files or configuration files");
 
@@ -114,7 +116,7 @@ int main(int argc, char* argv[]) {
       utils::timer timer;
 
       plib::parser parser;
-      parser.parse(config_file);
+      parser.parse(config_file, do_sanitization);
 
       LOG_S(INFO) << "total-time [sec]: " << timer.get_time();
       return 0;
@@ -160,7 +162,7 @@ int main(int argc, char* argv[]) {
       utils::timer timer;
 
       plib::parser parser(level);
-      parser.parse(config);
+      parser.parse(config, do_sanitization);
 
       LOG_S(INFO) << "total-time [sec]: " << timer.get_time();
       return 0;

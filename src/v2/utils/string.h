@@ -201,6 +201,41 @@ namespace utils
       return text;
     }
 
+    bool is_space(char32_t c)
+    {
+      static const std::unordered_set<char32_t> unicode_spaces = {
+        0x0009, 0x000A, 0x000B, 0x000C, 0x000D, 0x0020, 0x0085, 0x00A0,
+        0x1680, 0x2000, 0x2001, 0x2002, 0x2003, 0x2004, 0x2005, 0x2006,
+        0x2007, 0x2008, 0x2009, 0x200A, 0x2028, 0x2029, 0x202F, 0x205F, 0x3000
+      };
+      return unicode_spaces.count(c) > 0;
+    }
+    
+    bool is_space(const std::string& val)
+    {
+      if(val.size()==0)
+	{
+	  return false;
+	}
+      
+      if(utf8::is_valid(val.begin(), val.end()))
+	{
+	  std::vector<uint32_t> utf32_chars={};
+	  utf8::utf8to32(val.begin(), val.end(), std::back_inserter(utf32_chars));
+	  
+	  if(utf32_chars.size()==1)
+	    {
+	      return is_space(utf32_chars.at(0));
+	    }
+	  else
+	    {
+	      return false;
+	    }
+	}
+      
+      return false;      
+    }
+    
     // Function to check if a Unicode character is punctuation or whitespace
     bool is_punctuation_or_space(char32_t ch)
     {
