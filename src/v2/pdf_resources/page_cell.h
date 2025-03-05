@@ -325,7 +325,12 @@ namespace pdflib
 
     if((not left_to_right) or (not other.left_to_right))
       {
-	if(d0 >= delta and not overlap)
+        // Distance is greather than word spacing, and either cells
+        // are not overlapping, or it is clearly a new line.  (FIXME:
+        // That last part is what the very incorrectly named
+        // `horizontal_cell_tolerance` used to do in
+        // `contract_cells_into_lines_v1`)
+	if(d0 >= delta and ((not overlap) or y0 - other.y0 > 1.0))
 	  {
 	    text = " " + text;
 	  }    
@@ -335,7 +340,7 @@ namespace pdflib
       }
     else
       {
-	if(d0 >= delta and not overlap)
+	if(d0 >= delta and ((not overlap) or y0 - other.y0 > 1.0))
 	  {
 	    text += " ";
 	  }    
