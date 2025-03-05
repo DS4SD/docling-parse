@@ -262,10 +262,38 @@ namespace pdflib
   
   bool pdf_resource<PAGE_CELL>::is_adjacent_to(pdf_resource<PAGE_CELL>& other, double eps)
   {
-    double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
-    double d1 = std::sqrt((r_x2-other.r_x3)*(r_x2-other.r_x3) + (r_y2-other.r_y3)*(r_y2-other.r_y3));
+    // This assumes (even for right-to-left text) that other is to the
+    // right of this.  If two cells overlap then they are obviously
+    // adjacent, otherwise the right side corners of this must be
+    // within eps of the left side corners of other.
 
-    return ((d0<eps) and (d1<eps));
+    // Intersection of bounding rectangles (FIXME: Does not actually
+    // imply overlap for rotated cells, not immediately sure the
+    // correct and efficient way to compute that)
+    double max_x0 = std::max(x0, other.x0);
+    double min_x1 = std::min(x1, other.x1);
+    double max_y0 = std::max(y0, other.y0);
+    double min_y1 = std::min(y1, other.y1);
+    if (max_x0 < min_x1 and max_y0 < min_y1)
+      return true;
+
+    // lower_right(this) : lower_left(other)
+    double dx0 = other.r_x0 - r_x1;
+    double dy0 = other.r_y0 - r_y1;
+    double d0 = std::sqrt(dx0 * dx0 + dy0 * dy0);
+
+    if (d0 >= eps)
+      return false;
+
+    // upper_right(this) : upper_left(other)
+    double dx1 = other.r_x3 - r_x2;
+    double dy1 = other.r_y3 - r_y2;
+    double d1 = std::sqrt(dx1 * dx1 + dy1 * dy1);
+
+    if (d1 >= eps)
+      return false;
+
+    return true;
   }
 
   bool pdf_resource<PAGE_CELL>::has_same_reading_orientation(pdf_resource<PAGE_CELL>& other)
@@ -285,11 +313,19 @@ namespace pdflib
 	LOG_S(ERROR) << "inconsistent merging of cells!";
       }
     
-    double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
+    double max_x0 = std::max(x0, other.x0);
+    double min_x1 = std::min(x1, other.x1);
+    double max_y0 = std::max(y0, other.y0);
+    double min_y1 = std::min(y1, other.y1);
+    bool overlap = (max_x0 < min_x1 and max_y0 < min_y1);
+
+    double dx0 = other.r_x0 - r_x1;
+    double dy0 = other.r_y0 - r_y1;
+    double d0 = std::sqrt(dx0 * dx0 + dy0 * dy0);
 
     if((not left_to_right) or (not other.left_to_right))
       {
-	if(delta<d0)
+	if(d0 >= delta and not overlap)
 	  {
 	    text = " " + text;
 	  }    
@@ -299,7 +335,7 @@ namespace pdflib
       }
     else
       {
-	if(delta<d0)
+	if(d0 >= delta and not overlap)
 	  {
 	    text += " ";
 	  }    
