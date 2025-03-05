@@ -27,6 +27,10 @@ namespace pdflib
     
     bool is_adjacent_to(pdf_resource<PAGE_CELL>& other, double delta);
 
+    bool intersects(pdf_resource<PAGE_CELL>& other);
+
+    bool contains(double x, double y);
+
     bool has_same_reading_orientation(pdf_resource<PAGE_CELL>& other);
     
     bool merge_with(pdf_resource<PAGE_CELL>& other, double delta);
@@ -259,13 +263,64 @@ namespace pdflib
     
     return (num_chars>0? len/num_chars : 0.0);
   }
-  
+
+  bool pdf_resource<PAGE_CELL>::intersects(pdf_resource<PAGE_CELL>& other)
+  {
+    // Use point-in-polygon (via even-odd rule) to determine if
+    // bounding quadrilaterals intersect.
+    return (contains(other.r_x0, other.r_y0)
+            or contains(other.r_x1, other.r_y1)
+            or contains(other.r_x2, other.r_y2)
+            or contains(other.r_x3, other.r_y3)
+            or other.contains(r_x0, r_y0)
+            or other.contains(r_x1, r_y1)
+            or other.contains(r_x2, r_y2)
+            or other.contains(r_x3, r_y3));
+  }
+
+  inline bool inside_plane(double x, double y, double xi, double yi, double xj, double yj)
+  {
+    return ((yi > y) != (yj > y) and (x < (xj - xi) * (y - yi) / (yj - yi) + xi));
+  }
+
+  bool pdf_resource<PAGE_CELL>::contains(double x, double y)
+  {
+    // point-in-polygon via even-odd rule
+    bool inside = false;
+    if (inside_plane(x, y, r_x3, r_y3, r_x0, r_y0))
+      inside = not inside;
+    if (inside_plane(x, y, r_x0, r_y0, r_x1, r_y1))
+      inside = not inside;
+    if (inside_plane(x, y, r_x1, r_y1, r_x2, r_y2))
+      inside = not inside;
+    if (inside_plane(x, y, r_x2, r_y2, r_x3, r_y3))
+      inside = not inside;
+    return inside;
+  }
+
+
   bool pdf_resource<PAGE_CELL>::is_adjacent_to(pdf_resource<PAGE_CELL>& other, double eps)
   {
-    double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
-    double d1 = std::sqrt((r_x2-other.r_x3)*(r_x2-other.r_x3) + (r_y2-other.r_y3)*(r_y2-other.r_y3));
+    // NOTE: This assumes (even for right-to-left text) that other is
+    // to the right of this, as the calling code seems to do that.
 
-    return ((d0<eps) and (d1<eps));
+    // lower_right(this) : lower_left(other)
+    double dx0 = other.r_x0 - r_x1;
+    double dy0 = other.r_y0 - r_y1;
+    double d0 = std::sqrt(dx0 * dx0 + dy0 * dy0);
+
+    if (d0 >= eps)
+      return false;
+
+    // upper_right(this) : upper_left(other)
+    double dx1 = other.r_x3 - r_x2;
+    double dy1 = other.r_y3 - r_y2;
+    double d1 = std::sqrt(dx1 * dx1 + dy1 * dy1);
+
+    if (d1 >= eps)
+      return false;
+
+    return true;
   }
 
   bool pdf_resource<PAGE_CELL>::has_same_reading_orientation(pdf_resource<PAGE_CELL>& other)
@@ -285,11 +340,16 @@ namespace pdflib
 	LOG_S(ERROR) << "inconsistent merging of cells!";
       }
     
-    double d0 = std::sqrt((r_x1-other.r_x0)*(r_x1-other.r_x0) + (r_y1-other.r_y0)*(r_y1-other.r_y0));
+    // FIXME: Redundant calculation with is_adjacent_to
+    double dx0 = other.r_x0 - r_x1;
+    double dy0 = other.r_y0 - r_y1;
+    double d0 = std::sqrt(dx0 * dx0 + dy0 * dy0);
+
 
     if((not left_to_right) or (not other.left_to_right))
       {
-	if(delta<d0)
+        // FIXME: Reundant calculation of intersects here as well...
+	if(d0 >= delta and not intersects(other))
 	  {
 	    text = " " + text;
 	  }    
@@ -299,7 +359,7 @@ namespace pdflib
       }
     else
       {
-	if(delta<d0)
+	if(d0 >= delta and not intersects(other))
 	  {
 	    text += " ";
 	  }    

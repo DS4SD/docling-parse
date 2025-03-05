@@ -283,7 +283,7 @@ namespace pdflib
   */
 
   void pdf_sanitator<PAGE_CELLS>::contract_cells_into_lines_v2(pdf_resource<PAGE_CELLS>& cells,
-							       double horizontal_cell_tolerance,
+							       double horizontal_cell_tolerance, // FIXME: UNUSED
 							       bool enforce_same_font,
 							       double space_width_factor_for_merge,
 							       double space_width_factor_for_merge_with_space)
@@ -319,7 +319,7 @@ namespace pdflib
 		double delta_0 = cells[i].average_char_width()*space_width_factor_for_merge;
 		double delta_1 = cells[i].average_char_width()*space_width_factor_for_merge_with_space;
 		
-		if(cells[i].is_adjacent_to(cells[j], delta_0))
+		if(cells[i].is_adjacent_to(cells[j], delta_0) or cells[i].intersects(cells[j]))
 		  {
 		    cells[i].merge_with(cells[j], delta_1);
 
