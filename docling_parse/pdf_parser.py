@@ -9,18 +9,21 @@ from typing import Dict, Iterator, List, Optional, Tuple, Union
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
 
 from docling_parse.document import (
+    BitmapResource,
     BoundingRectangle,
     ParsedPdfDocument,
-    PdfBitmapResource,
-    PdfCell,
     PdfLine,
     PdfMetaData,
-    PdfPageBoundaryLabel,
-    PdfPageDimension,
+    PdfPageBoundaryType,
+    PdfPageDimensions,
     PdfTableOfContents,
+    PdfTextCell,
     SegmentedPdfPage,
+    TextCell,
+    TextDirection,
 )
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
+from docling_parse.pdf_parsers import pdf_sanitizer  # type: ignore[import]
 
 
 class PdfDocument:
@@ -35,7 +38,7 @@ class PdfDocument:
         self,
         parser: "pdf_parser_v2",
         key: str,
-        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
+        boundary_type: PdfPageBoundaryType = PdfPageBoundaryType.CROP_BOX,
     ):
         self._parser: pdf_parser_v2 = parser
         self._key = key
@@ -112,7 +115,7 @@ class PdfDocument:
         return result
 
     def get_page(
-        self, page_no: int, create_words: bool = True, create_lines: bool = True
+        self, page_no: int, create_words: bool = True, create_textlines: bool = True
     ) -> SegmentedPdfPage:
         if page_no in self._pages.keys():
             return self._pages[page_no]
@@ -130,7 +133,7 @@ class PdfDocument:
                     self._pages[page_no] = self._to_segmented_page(
                         page=page["original"],
                         create_words=create_words,
-                        create_lines=create_lines,
+                        create_textlines=create_textlines,
                     )  # put on cache
                     return self._pages[page_no]
 
@@ -149,12 +152,14 @@ class PdfDocument:
 
             # will need to be changed once we remove the original/sanitized from C++
             self._pages[pi + 1] = self._to_segmented_page(
-                page["original"], create_words=create_words, create_lines=create_lines
+                page["original"],
+                create_words=create_words,
+                create_textlines=create_lines,
             )  # put on cache
 
-    def _to_dimension(self, dimension: dict) -> PdfPageDimension:
+    def _to_dimension(self, dimension: dict) -> PdfPageDimensions:
 
-        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel(
+        boundary_type: PdfPageBoundaryType = PdfPageBoundaryType(
             dimension["page_boundary"]
         )
 
@@ -212,7 +217,7 @@ class PdfDocument:
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
 
-        return PdfPageDimension(
+        return PdfPageDimensions(
             angle=dimension["angle"],
             boundary_type=boundary_type,
             rect=rect,
@@ -223,7 +228,7 @@ class PdfDocument:
             bleed_bbox=bleed_bbox,
         )
 
-    def _to_cells(self, cells: dict) -> List[PdfCell]:
+    def _to_cells(self, cells: dict) -> List[Union[PdfTextCell, TextCell]]:
 
         assert "data" in cells, '"data" in cells'
         assert "header" in cells, '"header" in cells'
@@ -231,7 +236,7 @@ class PdfDocument:
         data = cells["data"]
         header = cells["header"]
 
-        result: List[PdfCell] = []
+        result: List[Union[PdfTextCell, TextCell]] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
                 r_x0=row[header.index(f"r_x0")],
@@ -243,22 +248,26 @@ class PdfDocument:
                 r_x3=row[header.index(f"r_x3")],
                 r_y3=row[header.index(f"r_y3")],
             )
-            cell = PdfCell(
+            cell = PdfTextCell(
                 rect=rect,
                 text=row[header.index(f"text")],
                 orig=row[header.index(f"text")],
                 font_key=row[header.index(f"font-key")],
                 font_name=row[header.index(f"font-name")],
                 widget=row[header.index(f"widget")],
-                left_to_right=row[header.index(f"left_to_right")],
-                ordering=ind,
+                text_direction=(
+                    TextDirection.LEFT_TO_RIGHT
+                    if row[header.index(f"left_to_right")]
+                    else TextDirection.RIGHT_TO_LEFT
+                ),
+                index=ind,
                 rendering_mode=row[header.index(f"rendering-mode")],
             )
             result.append(cell)
 
         return result
 
-    def _to_bitmap_resources(self, images: dict) -> List[PdfBitmapResource]:
+    def _to_bitmap_resources(self, images: dict) -> List[BitmapResource]:
 
         assert "data" in images, '"data" in images'
         assert "header" in images, '"header" in images'
@@ -266,7 +275,7 @@ class PdfDocument:
         data = images["data"]
         header = images["header"]
 
-        result: List[PdfBitmapResource] = []
+        result: List[BitmapResource] = []
         for ind, row in enumerate(data):
             rect = BoundingRectangle(
                 r_x0=row[header.index(f"x0")],
@@ -278,7 +287,7 @@ class PdfDocument:
                 r_x3=row[header.index(f"x0")],
                 r_y3=row[header.index(f"y1")],
             )
-            image = PdfBitmapResource(ordering=ind, rect=rect, uri=None)
+            image = BitmapResource(index=ind, rect=rect, uri=None)
             result.append(image)
 
         return result
@@ -297,7 +306,7 @@ class PdfDocument:
                     points.append((item["x"][k], item["y"][k]))
 
                 line = PdfLine(
-                    ordering=ind,
+                    index=ind,
                     parent_id=l,
                     points=points,
                 )
@@ -306,25 +315,76 @@ class PdfDocument:
         return result
 
     def _to_segmented_page(
-        self, page: dict, create_words: bool, create_lines: bool
+        self, page: dict, create_words: bool, create_textlines: bool
     ) -> SegmentedPdfPage:
 
         segmented_page = SegmentedPdfPage(
             dimension=self._to_dimension(page["dimension"]),
             char_cells=self._to_cells(page["cells"]),
             word_cells=[],
-            line_cells=[],
+            textline_cells=[],
             bitmap_resources=self._to_bitmap_resources(page["images"]),
             lines=self._to_lines(page["lines"]),
         )
 
         if create_words:
-            segmented_page.create_word_cells()
+            self._create_word_cells(segmented_page)
 
-        if create_lines:
-            segmented_page.create_line_cells()
-
+        if create_textlines:
+            self._create_textline_cells(segmented_page)
         return segmented_page
+
+    def _create_word_cells(
+        self, segmented_page: SegmentedPdfPage, _loglevel: str = "fatal"
+    ):
+
+        if len(segmented_page.word_cells) > 0:
+            return
+
+        sanitizer = pdf_sanitizer(level=_loglevel)
+
+        char_data = []
+        for item in segmented_page.char_cells:
+            item_dict = item.model_dump(mode="json", by_alias=True, exclude_none=True)
+            item_dict["left_to_right"] = (
+                item.text_direction == TextDirection.LEFT_TO_RIGHT
+            )
+            char_data.append(item_dict)
+
+        sanitizer.set_char_cells(data=char_data)
+
+        data = sanitizer.create_word_cells(space_width_factor_for_merge=0.33)
+
+        segmented_page.word_cells = []
+        for item in data:
+            cell = PdfTextCell.model_validate(item)
+            segmented_page.word_cells.append(cell)
+
+    def _create_textline_cells(
+        self, segmented_page: SegmentedPdfPage, _loglevel: str = "fatal"
+    ):
+
+        if len(segmented_page.textline_cells) > 0:
+            return
+
+        sanitizer = pdf_sanitizer(level=_loglevel)
+
+        char_data = []
+        for item in segmented_page.char_cells:
+            item_dict = item.model_dump(mode="json", by_alias=True, exclude_none=True)
+            item_dict["left_to_right"] = (
+                item.text_direction == TextDirection.LEFT_TO_RIGHT
+            )
+            char_data.append(item_dict)
+
+        sanitizer.set_char_cells(data=char_data)
+
+        data = sanitizer.create_line_cells()
+
+        segmented_page.textline_cells = []
+        for item in data:
+            cell = PdfTextCell.model_validate(item)
+            segmented_page.textline_cells.append(cell)
 
     def _to_parsed_document(
         self,
@@ -338,7 +398,9 @@ class PdfDocument:
 
         for pi, page in enumerate(doc_dict["pages"]):
             parsed_doc.pages[page_no + pi] = self._to_segmented_page(
-                page["original"], create_words=create_words, create_lines=create_lines
+                page["original"],
+                create_words=create_words,
+                create_textlines=create_lines,
             )
 
         return parsed_doc
@@ -383,7 +445,7 @@ class DoclingPdfParser:
         self,
         path_or_stream: Union[str, Path, BytesIO],
         lazy: bool = True,
-        boundary_type: PdfPageBoundaryLabel = PdfPageBoundaryLabel.CROP_BOX,
+        boundary_type: PdfPageBoundaryType = PdfPageBoundaryType.CROP_BOX,
     ) -> PdfDocument:
 
         if isinstance(path_or_stream, str):

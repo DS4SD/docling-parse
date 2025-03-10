@@ -3,18 +3,19 @@ import glob
 import json
 import os
 import re
-from typing import Dict, List
+from typing import Dict, List, Union
 
 from pydantic import TypeAdapter
 
 from docling_parse.document import (
-    PdfBitmapResource,
-    PdfCell,
+    BitmapResource,
     PdfLine,
-    PdfPageBoundaryLabel,
+    PdfPageBoundaryType,
     PdfTableOfContents,
+    PdfTextCell,
     SegmentedPdfPage,
-    SegmentedPdfPageLabel,
+    TextCell,
+    TextCellUnit,
 )
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
@@ -25,8 +26,8 @@ REGRESSION_FOLDER = "tests/data/regression/*.pdf"
 
 
 def verify_bitmap_resources(
-    true_bitmap_resources: List[PdfBitmapResource],
-    pred_bitmap_resources: List[PdfBitmapResource],
+    true_bitmap_resources: List[BitmapResource],
+    pred_bitmap_resources: List[BitmapResource],
     eps: float,
 ) -> bool:
 
@@ -39,7 +40,7 @@ def verify_bitmap_resources(
         pred_bitmap_resource = pred_bitmap_resources[i]
 
         assert (
-            true_bitmap_resource.ordering == pred_bitmap_resource.ordering
+            true_bitmap_resource.index == pred_bitmap_resource.index
         ), "true_bitmap_resource.ordering == pred_bitmap_resource.ordering"
 
         true_rect = true_bitmap_resource.rect.to_polygon()
@@ -70,7 +71,10 @@ def normalize_text(text: str) -> str:
 
 
 def verify_cells(
-    true_cells: List[PdfCell], pred_cells: List[PdfCell], eps: float, filename: str
+    true_cells: List[Union[PdfTextCell, TextCell]],
+    pred_cells: List[Union[PdfTextCell, TextCell]],
+    eps: float,
+    filename: str,
 ) -> bool:
 
     assert len(true_cells) == len(pred_cells), "len(true_cells)==len(pred_cells)"
@@ -80,7 +84,7 @@ def verify_cells(
         pred_cell = pred_cells[i]
 
         assert (
-            true_cell.ordering == pred_cell.ordering
+            true_cell.index == pred_cell.index
         ), "true_cell.ordering == pred_cell.ordering"
 
         assert (
@@ -109,29 +113,30 @@ def verify_cells(
         # print("true-text: ", true_cell.text)
         # print("pred-text: ", pred_cell.text)
 
-        assert (
-            true_cell.font_key == pred_cell.font_key
-        ), "true_cell.font_key == pred_cell.font_key"
-        assert (
-            true_cell.font_name == pred_cell.font_name
-        ), "true_cell.font_name == pred_cell.font_name"
+        if isinstance(true_cell, PdfTextCell) and isinstance(pred_cell, PdfTextCell):
+            assert (
+                true_cell.font_key == pred_cell.font_key
+            ), "true_cell.font_key == pred_cell.font_key"
+            assert (
+                true_cell.font_name == pred_cell.font_name
+            ), "true_cell.font_name == pred_cell.font_name"
 
-        assert (
-            true_cell.widget == pred_cell.widget
-        ), "true_cell.widget == pred_cell.widget"
+            assert (
+                true_cell.widget == pred_cell.widget
+            ), "true_cell.widget == pred_cell.widget"
 
-        assert (
-            true_cell.rgba.r == pred_cell.rgba.r
-        ), "true_cell.rgba.r == pred_cell.rgba.r"
-        assert (
-            true_cell.rgba.g == pred_cell.rgba.g
-        ), "true_cell.rgba.g == pred_cell.rgba.g"
-        assert (
-            true_cell.rgba.b == pred_cell.rgba.b
-        ), "true_cell.rgba.b == pred_cell.rgba.b"
-        assert (
-            true_cell.rgba.a == pred_cell.rgba.a
-        ), "true_cell.rgba.a == pred_cell.rgba.a"
+            assert (
+                true_cell.rgba.r == pred_cell.rgba.r
+            ), "true_cell.rgba.r == pred_cell.rgba.r"
+            assert (
+                true_cell.rgba.g == pred_cell.rgba.g
+            ), "true_cell.rgba.g == pred_cell.rgba.g"
+            assert (
+                true_cell.rgba.b == pred_cell.rgba.b
+            ), "true_cell.rgba.b == pred_cell.rgba.b"
+            assert (
+                true_cell.rgba.a == pred_cell.rgba.a
+            ), "true_cell.rgba.a == pred_cell.rgba.a"
 
     return True
 
@@ -147,7 +152,7 @@ def verify_lines(
         pred_line = pred_lines[i]
 
         assert (
-            true_line.ordering == pred_line.ordering
+            true_line.index == pred_line.index
         ), "true_line.ordering == pred_line.ordering"
 
         true_points = true_line.points
@@ -197,7 +202,9 @@ def verify_SegmentedPdfPage(
 
     verify_cells(true_page.char_cells, pred_page.char_cells, eps=eps, filename=filename)
     verify_cells(true_page.word_cells, pred_page.word_cells, eps=eps, filename=filename)
-    verify_cells(true_page.line_cells, pred_page.line_cells, eps=eps, filename=filename)
+    verify_cells(
+        true_page.textline_cells, pred_page.textline_cells, eps=eps, filename=filename
+    )
 
     verify_lines(true_page.lines, pred_page.lines, eps=eps)
 
@@ -215,7 +222,7 @@ def test_reference_documents_from_filenames():
 
         pdf_doc: PdfDocument = parser.load(
             path_or_stream=pdf_doc_path,
-            boundary_type=PdfPageBoundaryLabel.CROP_BOX,  # default: CROP_BOX
+            boundary_type=PdfPageBoundaryType.CROP_BOX,  # default: CROP_BOX
             lazy=False,
         )  # default: True
         assert pdf_doc is not None
@@ -238,11 +245,11 @@ def test_reference_documents_from_filenames():
                 true_page = SegmentedPdfPage.load_from_json(fname)
                 verify_SegmentedPdfPage(true_page, pred_page, filename=fname)
 
-            img = pred_page.render(label=SegmentedPdfPageLabel.CHAR)
+            img = pred_page.render_as_image(label=TextCellUnit.CHAR)
             # img.show()
-            img = pred_page.render(label=SegmentedPdfPageLabel.WORD)
+            img = pred_page.render_as_image(label=TextCellUnit.WORD)
             # img.show()
-            img = pred_page.render(label=SegmentedPdfPageLabel.LINE)
+            img = pred_page.render_as_image(label=TextCellUnit.LINE)
             # img.show()
 
         toc: PdfTableOfContents = pdf_doc.get_table_of_contents()

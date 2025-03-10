@@ -3,7 +3,7 @@ import logging
 import os
 from pathlib import Path
 
-from docling_parse.document import SegmentedPdfPage, SegmentedPdfPageLabel
+from docling_parse.document import SegmentedPdfPage, TextCellUnit
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
 # Configure logging
@@ -124,11 +124,11 @@ def visualise_py(
     pdf_path: str,
     interactive: str,
     output_dir: Path,
-    page_num: int,
     display_text: bool,
     log_text: bool,
     page_boundary: str = "crop_box",  # media_box
     category: str = "char",  # "both", "sanitized", "original"
+    page_num: int = -1,
 ):
     parser = DoclingPdfParser(loglevel=log_level)
 
@@ -145,8 +145,8 @@ def visualise_py(
 
         if category in ["all", "char"]:
 
-            img = pdf_page.render(
-                label=SegmentedPdfPageLabel.CHAR,
+            img = pdf_page.render_as_image(
+                label=TextCellUnit.CHAR,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -161,7 +161,7 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=SegmentedPdfPageLabel.CHAR,
+                    label=TextCellUnit.CHAR,
                     add_fontkey=True,
                     add_fontname=False,
                 )
@@ -169,8 +169,8 @@ def visualise_py(
                 print("\n".join(lines))
 
         if category in ["all", "word"]:
-            img = pdf_page.render(
-                label=SegmentedPdfPageLabel.WORD,
+            img = pdf_page.render_as_image(
+                label=TextCellUnit.WORD,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -185,7 +185,7 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=SegmentedPdfPageLabel.WORD,
+                    label=TextCellUnit.WORD,
                     add_fontkey=True,
                     add_fontname=False,
                 )
@@ -193,8 +193,8 @@ def visualise_py(
                 print("\n".join(lines))
 
         if category in ["all", "line"]:
-            img = pdf_page.render(
-                label=SegmentedPdfPageLabel.LINE,
+            img = pdf_page.render_as_image(
+                label=TextCellUnit.LINE,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -209,7 +209,7 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=SegmentedPdfPageLabel.LINE,
+                    label=TextCellUnit.LINE,
                     add_fontkey=True,
                     add_fontname=False,
                 )
@@ -239,11 +239,11 @@ def main():
         pdf_path=pdf_path,
         interactive=interactive,
         output_dir=output_dir,
-        page_num=page_num,
         display_text=display_text,
         log_text=log_text,
         page_boundary=page_boundary,
         category=category,
+        page_num=page_num,
     )
 
 
