@@ -623,7 +623,7 @@ chunking = ["semchunk (>=2.2.0,<3.0.0)", "transformers (>=4.34.0,<5.0.0)"]
 type = "git"
 url = "https://github.com/DS4SD/docling-core"
 reference = "cau/docling-parse-types"
-resolved_reference = "31db5b0225a4baa8be5f26cc50050cf4bc845204"
+resolved_reference = "3a202c0c704000404da9be478e89a306d1430cad"
 
 [[package]]
 name = "docutils"

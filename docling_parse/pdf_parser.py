@@ -372,9 +372,13 @@ class PdfDocument:
         char_data = []
         for item in segmented_page.char_cells:
             item_dict = item.model_dump(mode="json", by_alias=True, exclude_none=True)
+
+            # TODO changing representation for the C++ parser, need to update on C++ code.
             item_dict["left_to_right"] = (
                 item.text_direction == TextDirection.LEFT_TO_RIGHT
             )
+            item_dict["id"] = item.index
+
             char_data.append(item_dict)
 
         sanitizer.set_char_cells(data=char_data)
