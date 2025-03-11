@@ -7,8 +7,7 @@ from pathlib import Path
 from typing import Dict, Iterator, List, Optional, Tuple, Union
 
 from docling_core.types.doc.base import BoundingBox, CoordOrigin
-
-from docling_parse.document import (
+from docling_core.types.doc.page import (
     BitmapResource,
     BoundingRectangle,
     ParsedPdfDocument,
@@ -22,6 +21,7 @@ from docling_parse.document import (
     TextCell,
     TextDirection,
 )
+
 from docling_parse.pdf_parsers import pdf_parser_v2  # type: ignore[import]
 from docling_parse.pdf_parsers import pdf_sanitizer  # type: ignore[import]
 
@@ -499,4 +499,4 @@ class DoclingPdfParser:
         Returns:
              bool: True if the document was successfully loaded, False otherwise.)")
         """
-        return self.parser.load_document(key=key, bytes_io=data)
+        return self.parser.load_document_from_bytesio(key=key, bytes_io=data)

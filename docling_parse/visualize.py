@@ -3,7 +3,8 @@ import logging
 import os
 from pathlib import Path
 
-from docling_parse.document import SegmentedPdfPage, TextCellUnit
+from docling_core.types.doc.page import SegmentedPdfPage, TextCellUnit
+
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
 # Configure logging
