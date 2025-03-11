@@ -65,7 +65,7 @@ pip install docling-parse
 Convert a PDF (look in the [visualize.py](docling_parse/visualize.py) for a more detailed information)
 
 ```python
-from docling_parse.document import TextCellUnit
+from docling_core.types.doc.page import TextCellUnit
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
 parser = DoclingPdfParser()

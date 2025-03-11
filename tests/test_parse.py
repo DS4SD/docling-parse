@@ -5,9 +5,7 @@ import os
 import re
 from typing import Dict, List, Union
 
-from pydantic import TypeAdapter
-
-from docling_parse.document import (
+from docling_core.types.doc.page import (
     BitmapResource,
     PdfLine,
     PdfPageBoundaryType,
@@ -17,6 +15,8 @@ from docling_parse.document import (
     TextCell,
     TextCellUnit,
 )
+from pydantic import TypeAdapter
+
 from docling_parse.pdf_parser import DoclingPdfParser, PdfDocument
 
 GENERATE = False
@@ -137,6 +137,8 @@ def verify_cells(
             assert (
                 true_cell.rgba.a == pred_cell.rgba.a
             ), "true_cell.rgba.a == pred_cell.rgba.a"
+        else:
+            return False
 
     return True
 
