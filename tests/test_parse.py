@@ -83,9 +83,7 @@ def verify_cells(
 
         pred_cell = pred_cells[i]
 
-        assert (
-            true_cell.index == pred_cell.index
-        ), "true_cell.index == pred_cell.index"
+        assert true_cell.index == pred_cell.index, "true_cell.index == pred_cell.index"
 
         assert (
             # true_cell.text == pred_cell.text
@@ -153,9 +151,7 @@ def verify_lines(
 
         pred_line = pred_lines[i]
 
-        assert (
-            true_line.index == pred_line.index
-        ), "true_line.index == pred_line.index"
+        assert true_line.index == pred_line.index, "true_line.index == pred_line.index"
 
         true_points = true_line.points
         pred_points = pred_line.points
