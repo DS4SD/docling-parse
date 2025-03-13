@@ -597,33 +597,29 @@ files = [
 
 [[package]]
 name = "docling-core"
-version = "2.22.0"
+version = "2.23.0"
 description = "A python library to define and validate data types in Docling."
 optional = false
-python-versions = "^3.9"
-files = []
-develop = false
+python-versions = "<4.0,>=3.9"
+files = [
+    {file = "docling_core-2.23.0-py3-none-any.whl", hash = "sha256:de17e2821216cc1817f99e226d2bad28f226289644fbffdf442ad282c842a79a"},
+    {file = "docling_core-2.23.0.tar.gz", hash = "sha256:16a5dbca0a639aa5c49b58ceb7a98e7e1dd24cd956912c68f573f77164c96526"},
+]
 
 [package.dependencies]
-jsonref = "^1.1.0"
-jsonschema = "^4.16.0"
-latex2mathml = "^3.77.0"
-pandas = "^2.1.4"
+jsonref = ">=1.1.0,<2.0.0"
+jsonschema = ">=4.16.0,<5.0.0"
+latex2mathml = ">=3.77.0,<4.0.0"
+pandas = ">=2.1.4,<3.0.0"
 pillow = ">=10.0.0,<12.0.0"
-pydantic = ">=2.6.0,<3.0.0,!=2.10.0,!=2.10.1,!=2.10.2"
+pydantic = ">=2.6.0,<2.10.0 || >2.10.0,<2.10.1 || >2.10.1,<2.10.2 || >2.10.2,<3.0.0"
 pyyaml = ">=5.1,<7.0.0"
-tabulate = "^0.9.0"
-typer = "^0.12.5"
-typing-extensions = "^4.12.2"
+tabulate = ">=0.9.0,<0.10.0"
+typer = ">=0.12.5,<0.13.0"
+typing-extensions = ">=4.12.2,<5.0.0"
 
 [package.extras]
 chunking = ["semchunk (>=2.2.0,<3.0.0)", "transformers (>=4.34.0,<5.0.0)"]
-
-[package.source]
-type = "git"
-url = "https://github.com/DS4SD/docling-core"
-reference = "cau/docling-parse-types"
-resolved_reference = "ab290cc9b1e781475e869b1679a33516fbf95c0d"
 
 [[package]]
 name = "docutils"
@@ -2638,4 +2634,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "75dbdb6f33bc2bface5afe240cef1da70d443ab18cc4322998a82d6cdfb1ef4c"
+content-hash = "7c67ee5cea9fa21ceba2767adf752ead2799b8d670926f86ffa3989437d990b9"

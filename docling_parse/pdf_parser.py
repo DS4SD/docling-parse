@@ -10,6 +10,7 @@ from docling_core.types.doc.base import BoundingBox, CoordOrigin
 from docling_core.types.doc.page import (
     BitmapResource,
     BoundingRectangle,
+    Coord2D,
     ParsedPdfDocument,
     PdfLine,
     PdfMetaData,
@@ -301,9 +302,9 @@ class PdfDocument:
                 i0: int = item["i"][l + 0]
                 i1: int = item["i"][l + 1]
 
-                points: List[Tuple[float, float]] = []
+                points: List[Coord2D] = []
                 for k in range(i0, i1):
-                    points.append((item["x"][k], item["y"][k]))
+                    points.append(Coord2D(item["x"][k], item["y"][k]))
 
                 line = PdfLine(
                     index=ind,
