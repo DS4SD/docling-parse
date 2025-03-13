@@ -10,8 +10,8 @@ maintainers = [
     "Panos Vagenas <pva@zurich.ibm.com>",
     "Maxim Lysak <mly@zurich.ibm.com>",
 ]
-repository = "https://github.com/DS4SD/docling-parse"
-homepage = "https://github.com/DS4SD/docling-parse"
+repository = "https://github.com/docling-project/docling-parse"
+homepage = "https://github.com/docling-project/docling-parse"
 keywords= ["docling", "pdf", "parser"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
