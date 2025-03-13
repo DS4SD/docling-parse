@@ -243,11 +243,11 @@ def test_reference_documents_from_filenames():
                 true_page = SegmentedPdfPage.load_from_json(fname)
                 verify_SegmentedPdfPage(true_page, pred_page, filename=fname)
 
-            img = pred_page.render_as_image(label=TextCellUnit.CHAR)
+            img = pred_page.render_as_image(cell_unit=TextCellUnit.CHAR)
             # img.show()
-            img = pred_page.render_as_image(label=TextCellUnit.WORD)
+            img = pred_page.render_as_image(cell_unit=TextCellUnit.WORD)
             # img.show()
-            img = pred_page.render_as_image(label=TextCellUnit.LINE)
+            img = pred_page.render_as_image(cell_unit=TextCellUnit.LINE)
             # img.show()
 
         toc: PdfTableOfContents = pdf_doc.get_table_of_contents()

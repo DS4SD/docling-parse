@@ -82,7 +82,7 @@ for page_no, pred_page in pdf_doc.iterate_pages():
         print(word.rect, ": ", word.text)
 
         # create a PIL image with the char cells
-    img = pred_page.render_as_image(label=TextCellUnit.CHAR)
+    img = pred_page.render_as_image(cell_unit=TextCellUnit.CHAR)
     img.show()
 ```
 

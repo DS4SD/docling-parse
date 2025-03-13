@@ -147,7 +147,7 @@ def visualise_py(
         if category in ["all", "char"]:
 
             img = pdf_page.render_as_image(
-                label=TextCellUnit.CHAR,
+                cell_unit=TextCellUnit.CHAR,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -162,7 +162,7 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=TextCellUnit.CHAR,
+                    cell_unit=TextCellUnit.CHAR,
                     add_fontkey=True,
                     add_fontname=False,
                 )
@@ -171,7 +171,7 @@ def visualise_py(
 
         if category in ["all", "word"]:
             img = pdf_page.render_as_image(
-                label=TextCellUnit.WORD,
+                cell_unit=TextCellUnit.WORD,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -186,7 +186,7 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=TextCellUnit.WORD,
+                    cell_unit=TextCellUnit.WORD,
                     add_fontkey=True,
                     add_fontname=False,
                 )
@@ -195,7 +195,7 @@ def visualise_py(
 
         if category in ["all", "line"]:
             img = pdf_page.render_as_image(
-                label=TextCellUnit.LINE,
+                cell_unit=TextCellUnit.LINE,
                 draw_cells_bbox=(not display_text),
                 draw_cells_text=display_text,
             )
@@ -210,7 +210,7 @@ def visualise_py(
 
             if log_text:
                 lines = pdf_page.export_to_textlines(
-                    label=TextCellUnit.LINE,
+                    cell_unit=TextCellUnit.LINE,
                     add_fontkey=True,
                     add_fontname=False,
                 )

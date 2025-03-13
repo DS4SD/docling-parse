@@ -14,7 +14,7 @@ from docling_core.types.doc.page import (
     PdfLine,
     PdfMetaData,
     PdfPageBoundaryType,
-    PdfPageDimensions,
+    PdfPageGeometry,
     PdfTableOfContents,
     PdfTextCell,
     SegmentedPdfPage,
@@ -157,7 +157,7 @@ class PdfDocument:
                 create_textlines=create_lines,
             )  # put on cache
 
-    def _to_dimension(self, dimension: dict) -> PdfPageDimensions:
+    def _to_page_geometry(self, dimension: dict) -> PdfPageGeometry:
 
         boundary_type: PdfPageBoundaryType = PdfPageBoundaryType(
             dimension["page_boundary"]
@@ -217,7 +217,7 @@ class PdfDocument:
             coord_origin=CoordOrigin.BOTTOMLEFT,
         )
 
-        return PdfPageDimensions(
+        return PdfPageGeometry(
             angle=dimension["angle"],
             boundary_type=boundary_type,
             rect=rect,
@@ -319,7 +319,7 @@ class PdfDocument:
     ) -> SegmentedPdfPage:
 
         segmented_page = SegmentedPdfPage(
-            dimension=self._to_dimension(page["dimension"]),
+            dimension=self._to_page_geometry(page["dimension"]),
             char_cells=self._to_cells(page["cells"]),
             word_cells=[],
             textline_cells=[],
