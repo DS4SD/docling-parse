@@ -283,7 +283,7 @@ namespace pdflib
   */
 
   void pdf_sanitator<PAGE_CELLS>::contract_cells_into_lines_v2(pdf_resource<PAGE_CELLS>& cells,
-							       double horizontal_cell_tolerance,
+							       double horizontal_cell_tolerance, // FIXME: UNUSED
 							       bool enforce_same_font,
 							       double space_width_factor_for_merge,
 							       double space_width_factor_for_merge_with_space)
