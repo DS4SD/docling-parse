@@ -1,3 +1,17 @@
+## [v4.0.0](https://github.com/docling-project/docling-parse/releases/tag/v4.0.0) - 2025-03-14
+
+### Feature
+
+* Update API, naming, and tests. Move data model to docling-core ([#107](https://github.com/docling-project/docling-parse/issues/107)) ([`ca7d584`](https://github.com/docling-project/docling-parse/commit/ca7d584fa310271f37887027cd6d29867472d8ef))
+
+### Fix
+
+* Update mergify config for major releases ([#109](https://github.com/docling-project/docling-parse/issues/109)) ([`e6225c9`](https://github.com/docling-project/docling-parse/commit/e6225c93ce08f4410bca184b043788ce9a042913))
+
+### Breaking
+
+* Update API, naming, and tests. Move data model to docling-core ([#107](https://github.com/docling-project/docling-parse/issues/107)) ([`ca7d584`](https://github.com/docling-project/docling-parse/commit/ca7d584fa310271f37887027cd6d29867472d8ef))
+
 ## [v3.4.0](https://github.com/docling-project/docling-parse/releases/tag/v3.4.0) - 2025-02-18
 
 ### Feature
