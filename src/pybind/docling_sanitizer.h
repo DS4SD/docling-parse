@@ -218,7 +218,7 @@ namespace docling
 	  rect["r_x2"] = cell.r_x2; rect["r_y2"] = cell.r_y2;
 	  rect["r_x3"] = cell.r_x3; rect["r_y3"] = cell.r_y3;
 
-	  item["ordering"] = (order++);
+	  item["index"] = (order++);
 	  
 	  item["rect"] = rect;
 
