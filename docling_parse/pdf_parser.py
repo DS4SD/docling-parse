@@ -1,7 +1,6 @@
 """Parser for PDF files"""
 
 import hashlib
-import warnings
 from io import BytesIO
 from pathlib import Path
 from typing import Dict, Iterator, List, Optional, Tuple, Union
@@ -421,11 +420,6 @@ class DoclingPdfParser:
             level (str): Logging level as a string.
                      One of ['fatal', 'error', 'warning', 'info']
         """
-        warnings.warn(
-            "This API is currently experimental and may change in upcoming versions without notice.",
-            category=UserWarning,
-            stacklevel=2,
-        )
         self.parser = pdf_parser_v2(level=loglevel)
 
     def set_loglevel(self, loglevel: str):
@@ -442,7 +436,7 @@ class DoclingPdfParser:
         """List the keys of the loaded documents.
 
         Returns:
-            List[str]: A list of keys for the currently loaded documents.)")
+            List[str]: A list of keys for the currently loaded documents.
         """
         return self.parser.list_loaded_keys()
 
