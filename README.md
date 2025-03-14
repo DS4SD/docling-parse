@@ -4,10 +4,10 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/docling-parse)](https://pypi.org/project/docling-parse/)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Pybind11](https://img.shields.io/badge/build-pybind11-blue)](https://github.com/pybind/pybind11/)
-[![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux%20|%20windows-blue)](https://github.com/DS4SD/docling-parse/)
-[![License MIT](https://img.shields.io/github/license/DS4SD/docling-parse)](https://opensource.org/licenses/MIT)
+[![Platforms](https://img.shields.io/badge/platform-macos%20|%20linux%20|%20windows-blue)](https://github.com/docling-project/docling-parse/)
+[![License MIT](https://img.shields.io/github/license/docling-project/docling-parse)](https://opensource.org/licenses/MIT)
 
-Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/DS4SD/docling) PDF conversion. Below, we show a few output of the latest parser with char, word and line level output for text, in addition to the extracted paths and bitmap resources.
+Simple package to extract text, paths and bitmap images with coordinates from programmatic PDFs. This package is used in the [Docling](https://github.com/docling-project/docling) PDF conversion. Below, we show a few output of the latest parser with char, word and line level output for text, in addition to the extracted paths and bitmap resources.
 
 To do the visualizations yourself, simply run (change `word` into `char` or `line`),
 
@@ -130,7 +130,7 @@ options:
 
 ### Timings of different parser versions
 
-We ran the v1 and v2 parser on [DocLayNet](https://huggingface.co/datasets/ds4sd/DocLayNet-v1.1). We found the following overall behavior
+We ran the v1 and v2 parser on [DocLayNet](https://huggingface.co/datasets/docling-project/DocLayNet-v1.1). We found the following overall behavior
 
 ![parser-performance](./docs/dln-v1.png)
 
@@ -198,7 +198,7 @@ poetry run pytest ./tests -v -s
 
 ## Contributing
 
-Please read [Contributing to Docling Parse](https://github.com/DS4SD/docling-parse/blob/main/CONTRIBUTING.md) for details.
+Please read [Contributing to Docling Parse](https://github.com/docling-project/docling-parse/blob/main/CONTRIBUTING.md) for details.
 
 
 ## References

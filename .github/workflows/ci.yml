@@ -18,15 +18,15 @@ env:
 
 jobs:
   code-checks:
-    if: ${{ github.event_name == 'push' || (github.event.pull_request.head.repo.full_name != 'DS4SD/docling-parse' && github.event.pull_request.head.repo.full_name != 'ds4sd/docling-parse') }}
+    if: ${{ github.event_name == 'push' || (github.event.pull_request.head.repo.full_name != 'docling-project/docling-parse' && github.event.pull_request.head.repo.full_name != 'docling-project/docling-parse') }}
     uses: ./.github/workflows/checks.yml
   build-wheels:
-    if: ${{ github.event_name == 'push' || (github.event.pull_request.head.repo.full_name != 'DS4SD/docling-parse' && github.event.pull_request.head.repo.full_name != 'ds4sd/docling-parse') }}
+    if: ${{ github.event_name == 'push' || (github.event.pull_request.head.repo.full_name != 'docling-project/docling-parse' && github.event.pull_request.head.repo.full_name != 'docling-project/docling-parse') }}
     uses: ./.github/workflows/wheels.yml
     permissions:
       id-token: write  # needed also if not used (see publish condition)
       contents: write  # needed also if not used (see publish condition)
   rhel-build:
-    if: ${{ github.event_name == 'push' || (github.event.pull_request.head.repo.full_name != 'DS4SD/docling-parse' && github.event.pull_request.head.repo.full_name != 'ds4sd/docling-parse') }}
+    if: ${{ github.event_name == 'push' || (github.event.pull_request.head.repo.full_name != 'docling-project/docling-parse' && github.event.pull_request.head.repo.full_name != 'docling-project/docling-parse') }}
     uses: ./.github/workflows/rhel.yml
   
