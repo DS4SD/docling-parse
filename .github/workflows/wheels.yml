@@ -48,6 +48,10 @@ jobs:
             platform: "linux"
             platform_id: "manylinux_x86_64"
 
+          - name: "ubuntu-22.04-arm"
+            platform: "linux"
+            platform_id: "manylinux_aarch64"
+
           - name: "macos-13"
             platform: "macos"
             min_macos_version: "13"
@@ -210,7 +214,7 @@ jobs:
       - name: Build wheels [linux]
         if: startsWith(matrix.os.name, 'ubuntu')
         env:
-          # CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
+          CIBW_BUILD: ${{ env.python_cp_version }}-${{ matrix.os.platform_id }}
           CIBW_ARCHS: auto x86_64 aarch64
           CIBW_PLATFORM: linux
           CIBW_SKIP: "pp* *musllinux_* *_i686* *_s390* *pypy*"
