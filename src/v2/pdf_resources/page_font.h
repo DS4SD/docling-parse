@@ -110,8 +110,9 @@ namespace pdflib
     std::string font_name;
     std::string base_font;
 
-    std::array<double, 4> font_bbox;
-    std::array<double, 6> font_matrix;
+    std::array<double, 4> font_bbox {0, 0, 0, 0};
+    std::array<double, 6> font_matrix {0.001, 0, 0, 0.001, 0, 0};
+    bool has_font_matrix = false;
 
     double ascent;
     double descent;
@@ -819,46 +820,27 @@ namespace pdflib
 
     std::vector<std::string> keys_0 = {"/FontDescriptor", "/FontBBox"};
     std::vector<std::string> keys_1 = {"/FontBBox"};
+    nlohmann::json json_bbox;
     
     if(utils::json::has(keys_0, json_font))
       {
-        auto result = utils::json::get(keys_0, json_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_0, json_font);
       }
     else if(utils::json::has(keys_0, desc_font))
       {
-        auto result = utils::json::get(keys_0, desc_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_0, desc_font);
       }
     else if(utils::json::has(keys_1, json_font))
       {
         //assert(subtype==TYPE_3);
 
-        auto result = utils::json::get(keys_1, json_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_1, json_font);
       }
     else if(utils::json::has(keys_1, desc_font))
       {
         //assert(subtype==TYPE_3);
 
-        auto result = utils::json::get(keys_1, desc_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_1, desc_font);
       }
     else if(bfonts.has(base_font)==1)
       {
@@ -868,7 +850,21 @@ namespace pdflib
     else
       {
         LOG_S(ERROR) << "could not find font-bbox";
-        font_bbox = {0, 0, 0, 0};
+      }
+
+    if (json_bbox != nullptr)
+      {
+        if (json_bbox.is_array() and json_bbox.size() == 4)
+          {
+            for(int d=0; d<4; d++)
+              {
+                font_bbox[d] = json_bbox[d].get<double>();
+              }
+          }
+        else
+          {
+            LOG_S(ERROR) << "expected 4 elements in font-bbox, got: " << json_bbox;
+          }
       }
 
     LOG_S(INFO) << " -> font-bbox: [" 
@@ -888,17 +884,24 @@ namespace pdflib
     if(utils::json::has(keys_0, json_font))
       {
         //assert(subtype==TYPE_3);
-        auto result = utils::json::get(keys_0, json_font);
+        auto json_matrix = utils::json::get(keys_0, json_font);
 
-        for(int d=0; d<6; d++)
+        if (json_matrix.is_array() and json_matrix.size() == 6)
           {
-            font_matrix[d] = result[d].get<double>();
+            has_font_matrix = true;
+            for(int d=0; d<6; d++)
+              {
+                font_matrix[d] = json_matrix[d].get<double>();
+              }
+          }
+        else
+          {
+            LOG_S(ERROR) << "expected 6 elements in font-matrix, got: " << json_matrix;
           }
       }
     else
       {
         LOG_S(INFO) << "using default font-matrix";
-        font_matrix = {0.001, 0, 0, 0.001, 0, 0};
       }
 
     LOG_S(INFO) << " -> font-matrix: ["
