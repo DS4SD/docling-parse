@@ -112,7 +112,8 @@ namespace pdflib
 
     std::array<double, 4> font_bbox {0, 0, 0, 0};
     std::array<double, 6> font_matrix {0.001, 0, 0, 0.001, 0, 0};
-    bool has_font_matrix = false;
+    double type3_xscale = 1.0;
+    double type3_yscale = 1.0;
 
     double ascent;
     double descent;
@@ -888,11 +889,12 @@ namespace pdflib
 
         if (json_matrix.is_array() and json_matrix.size() == 6)
           {
-            has_font_matrix = true;
             for(int d=0; d<6; d++)
               {
                 font_matrix[d] = json_matrix[d].get<double>();
               }
+            type3_xscale = font_matrix[0] * 1000.0;
+            type3_yscale = font_matrix[3] * 1000.0;
           }
         else
           {
@@ -1190,13 +1192,10 @@ namespace pdflib
         }
     }
 
-    if (has_font_matrix)
-      {
-        ascent = ascent * font_matrix[3] * 1000.0;
-        descent = descent * font_matrix[3] * 1000.0;
-        capheight = capheight * font_matrix[3] * 1000.0;
-        xheight = xheight * font_matrix[3] * 1000.0;
-      }
+    ascent *= type3_yscale;
+    descent *= type3_yscale;
+    capheight *= type3_yscale;
+    xheight *= type3_yscale;
   }
 
   void pdf_resource<PAGE_FONT>::init_default_width()
@@ -1334,11 +1333,7 @@ namespace pdflib
 	    continue;
 	  }
 	
-        numb_to_widths[ind] = values[cnt++];
-        if (has_font_matrix)
-          {
-            numb_to_widths[ind] *= font_matrix[0] * 1000.0;
-          }
+        numb_to_widths[ind] = values[cnt++] * type3_xscale;
         //LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
       }
   }
@@ -1416,11 +1411,7 @@ namespace pdflib
             for(int id=beg; id<=end; id++)
               {
 		//LOG_S(WARNING) << "\t" << id << " -> " << w;
-                numb_to_widths[id] = w;
-                if (has_font_matrix)
-                  {
-                    numb_to_widths[id] *= font_matrix[0] * 1000.0;
-                  }
+                numb_to_widths[id] = w * type3_xscale;
               }
           }
         else if(ws[l].is_array())
@@ -1441,11 +1432,7 @@ namespace pdflib
               {
 		//LOG_S(WARNING) << "\t" << beg+k  << " -> " << w[k];
 
-                numb_to_widths[beg+k] = w[k];
-                if (has_font_matrix)
-                  {
-                    numb_to_widths[beg+k] *= font_matrix[0] * 1000.0;
-                  }
+                numb_to_widths[beg+k] = w[k] * type3_xscale;
               }
           }
         else if(ws[l].is_null())
