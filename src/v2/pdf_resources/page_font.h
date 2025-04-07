@@ -1190,7 +1190,7 @@ namespace pdflib
         }
     }
 
-    if (font_matrix[3] != 0.001)
+    if (has_font_matrix)
       {
         ascent = ascent * font_matrix[3] * 1000.0;
         descent = descent * font_matrix[3] * 1000.0;
@@ -1335,9 +1335,11 @@ namespace pdflib
 	  }
 	
         numb_to_widths[ind] = values[cnt++];
-        if (font_matrix[0] != 0.001)
-          numb_to_widths[ind] *= font_matrix[0] * 1000.0;
-	//LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
+        if (has_font_matrix)
+          {
+            numb_to_widths[ind] *= font_matrix[0] * 1000.0;
+          }
+        //LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
       }
   }
 
@@ -1415,8 +1417,10 @@ namespace pdflib
               {
 		//LOG_S(WARNING) << "\t" << id << " -> " << w;
                 numb_to_widths[id] = w;
-                if (font_matrix[0] != 0.001)
-                  numb_to_widths[id] *= font_matrix[0] * 1000.0;
+                if (has_font_matrix)
+                  {
+                    numb_to_widths[id] *= font_matrix[0] * 1000.0;
+                  }
               }
           }
         else if(ws[l].is_array())
@@ -1438,8 +1442,10 @@ namespace pdflib
 		//LOG_S(WARNING) << "\t" << beg+k  << " -> " << w[k];
 
                 numb_to_widths[beg+k] = w[k];
-                if (font_matrix[0] != 0.001)
-                  numb_to_widths[beg+k] *= font_matrix[0] * 1000.0;
+                if (has_font_matrix)
+                  {
+                    numb_to_widths[beg+k] *= font_matrix[0] * 1000.0;
+                  }
               }
           }
         else if(ws[l].is_null())
