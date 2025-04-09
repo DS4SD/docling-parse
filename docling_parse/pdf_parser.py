@@ -254,6 +254,11 @@ class PdfDocument:
                 orig=row[header.index(f"text")],
                 font_key=row[header.index(f"font-key")],
                 font_name=row[header.index(f"font-name")],
+                # Attempt to read font_size, assuming key "font-size" from C++
+                # The C++ code divides by 1000, so we multiply back if needed,
+                # or adjust based on how the C++ JSON output is structured.
+                # We'll store it directly for now.
+                font_size=row[header.index(f"font-size")] if f"font-size" in header else None,
                 widget=row[header.index(f"widget")],
                 text_direction=(
                     TextDirection.LEFT_TO_RIGHT
