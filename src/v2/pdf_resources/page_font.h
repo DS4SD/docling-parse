@@ -23,8 +23,6 @@ namespace pdflib
 
     nlohmann::json get();
 
-    double get_unit();
-
     std::string get_encoding_name();
     font_encoding_name get_encoding();
 
@@ -63,6 +61,7 @@ namespace pdflib
     void init_base_font();
     void init_font_name();
     void init_font_bbox();
+    void init_font_matrix();
 
     //void init_fontfile3();
     
@@ -111,7 +110,10 @@ namespace pdflib
     std::string font_name;
     std::string base_font;
 
-    std::array<double, 4> font_bbox;
+    std::array<double, 4> font_bbox {0, 0, 0, 0};
+    std::array<double, 6> font_matrix {0.001, 0, 0, 0.001, 0, 0};
+    double type3_xscale = 1.0;
+    double type3_yscale = 1.0;
 
     double ascent;
     double descent;
@@ -235,19 +237,6 @@ namespace pdflib
   nlohmann::json pdf_resource<PAGE_FONT>::get()
   {
     return json_font;
-  }
-
-  double pdf_resource<PAGE_FONT>::get_unit()
-  {
-    if(subtype==TYPE_3)
-      {
-	double unit = 1.0; // 1000.0	
-	LOG_S(WARNING) << "font-scale of the unit for TYPE_3: " << unit;
-	
-        return unit;
-      }
-
-    return 1.0;
   }
 
   std::string pdf_resource<PAGE_FONT>::get_encoding_name()
@@ -611,6 +600,7 @@ namespace pdflib
 
     init_font_name();
     init_font_bbox();
+    init_font_matrix();
 
     //init_fontfile3();
       
@@ -831,46 +821,27 @@ namespace pdflib
 
     std::vector<std::string> keys_0 = {"/FontDescriptor", "/FontBBox"};
     std::vector<std::string> keys_1 = {"/FontBBox"};
+    nlohmann::json json_bbox;
     
     if(utils::json::has(keys_0, json_font))
       {
-        auto result = utils::json::get(keys_0, json_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_0, json_font);
       }
     else if(utils::json::has(keys_0, desc_font))
       {
-        auto result = utils::json::get(keys_0, desc_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_0, desc_font);
       }
     else if(utils::json::has(keys_1, json_font))
       {
         //assert(subtype==TYPE_3);
 
-        auto result = utils::json::get(keys_1, json_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_1, json_font);
       }
     else if(utils::json::has(keys_1, desc_font))
       {
         //assert(subtype==TYPE_3);
 
-        auto result = utils::json::get(keys_1, desc_font);
-
-        for(int d=0; d<4; d++)
-          {
-            font_bbox[d] = result[d].get<double>();
-          }
+        json_bbox = utils::json::get(keys_1, desc_font);
       }
     else if(bfonts.has(base_font)==1)
       {
@@ -880,7 +851,21 @@ namespace pdflib
     else
       {
         LOG_S(ERROR) << "could not find font-bbox";
-        font_bbox = {0, 0, 0, 0};
+      }
+
+    if (json_bbox != nullptr)
+      {
+        if (json_bbox.is_array() and json_bbox.size() == 4)
+          {
+            for(int d=0; d<4; d++)
+              {
+                font_bbox[d] = json_bbox[d].get<double>();
+              }
+          }
+        else
+          {
+            LOG_S(ERROR) << "expected 4 elements in font-bbox, got: " << json_bbox;
+          }
       }
 
     LOG_S(INFO) << " -> font-bbox: [" 
@@ -890,6 +875,45 @@ namespace pdflib
                 << font_bbox[3] << "]";
   }
 
+
+  void pdf_resource<PAGE_FONT>::init_font_matrix()
+  {
+    LOG_S(INFO) << __FUNCTION__;// << "\t" << json_font.dump(2);
+
+    std::vector<std::string> keys_0 = {"/FontMatrix"};
+
+    if(utils::json::has(keys_0, json_font))
+      {
+        //assert(subtype==TYPE_3);
+        auto json_matrix = utils::json::get(keys_0, json_font);
+
+        if (json_matrix.is_array() and json_matrix.size() == 6)
+          {
+            for(int d=0; d<6; d++)
+              {
+                font_matrix[d] = json_matrix[d].get<double>();
+              }
+            type3_xscale = font_matrix[0] * 1000.0;
+            type3_yscale = font_matrix[3] * 1000.0;
+          }
+        else
+          {
+            LOG_S(ERROR) << "expected 6 elements in font-matrix, got: " << json_matrix;
+          }
+      }
+    else
+      {
+        LOG_S(INFO) << "using default font-matrix";
+      }
+
+    LOG_S(INFO) << " -> font-matrix: ["
+                << font_matrix[0] << ", "
+                << font_matrix[1] << ", "
+                << font_matrix[2] << ", "
+                << font_matrix[3] << ", "
+                << font_matrix[4] << ", "
+                << font_matrix[5] << "]";
+  }
 
 
   /*
@@ -1166,7 +1190,12 @@ namespace pdflib
         {
           LOG_S(WARNING) << "'xheight' was not explicitely defined ...";
         }
-    }    
+    }
+
+    ascent *= type3_yscale;
+    descent *= type3_yscale;
+    capheight *= type3_yscale;
+    xheight *= type3_yscale;
   }
 
   void pdf_resource<PAGE_FONT>::init_default_width()
@@ -1304,8 +1333,8 @@ namespace pdflib
 	    continue;
 	  }
 	
-        numb_to_widths[ind] = values[cnt++];
-	//LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
+        numb_to_widths[ind] = values[cnt++] * type3_xscale;
+        //LOG_S(INFO) << "index: " << ind << " -> width: " << numb_to_widths.at(ind);
       }
   }
 
@@ -1382,7 +1411,7 @@ namespace pdflib
             for(int id=beg; id<=end; id++)
               {
 		//LOG_S(WARNING) << "\t" << id << " -> " << w;
-                numb_to_widths[id] = w;
+                numb_to_widths[id] = w * type3_xscale;
               }
           }
         else if(ws[l].is_array())
@@ -1403,7 +1432,7 @@ namespace pdflib
               {
 		//LOG_S(WARNING) << "\t" << beg+k  << " -> " << w[k];
 
-                numb_to_widths[beg+k] = w[k];
+                numb_to_widths[beg+k] = w[k] * type3_xscale;
               }
           }
         else if(ws[l].is_null())
