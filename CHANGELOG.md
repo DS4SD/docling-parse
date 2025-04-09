@@ -1,3 +1,9 @@
+## [v4.0.1](https://github.com/docling-project/docling-parse/releases/tag/v4.0.1) - 2025-04-09
+
+### Fix
+
+* Use FontMatrix to scale Type3 font metrics ([#113](https://github.com/docling-project/docling-parse/issues/113)) ([`38ddbb5`](https://github.com/docling-project/docling-parse/commit/38ddbb5256bfa64dfe60e7f65a3dfd9fbcdf2d8c))
+
 ## [v4.0.0](https://github.com/docling-project/docling-parse/releases/tag/v4.0.0) - 2025-03-14
 
 ### Feature
